@@ -1,4 +1,4 @@
-# FOON_API
+# ffon_api: General-Purpose API for FOONs
 
 This code repository is for the USF [Robot Perception and Action Lab](https://rpal.cse.usf.edu)'s [FOON](https://www.foonets.com) project (short for the **functional object-oriented network**).
 
@@ -140,7 +140,7 @@ Please contact the main developer David Paulius at <davidpaulius@usf.edu> or <dp
 ### If you use our work or dataset, please help others find us by citing our following papers:
 
 >    Paulius, David, Yongqiang Huang, Roger Milton, William D. Buchanan, Jeanine Sam, and Yu Sun. "Functional Object-Oriented Network for Manipulation Learning." In 2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 2655-2662. IEEE, 2016. [link](https://arxiv.org/abs/1902.01537)
->
+
 >    Paulius, David, Ahmad B. Jelodar, and Yu Sun. "Functional Object-Oriented Network: Construction and Expansion" In 2018 IEEE International Conference on Robotics and Automation (ICRA), pp. 5935-5941. IEEE, 2018. [link](https://arxiv.org/abs/1807.02189)
->
+
 >    Paulius, David, Kelvin S. P. Dong, and Yu Sun. "Task Planning with a Weighted Functional Object-Oriented Network" In 2021 IEEE International Conference on Robotics and Automation (ICRA). IEEE, 2021. [link](https://arxiv.org/abs/1905.00502)
