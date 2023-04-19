@@ -1,10 +1,10 @@
-# ffon_api: General-Purpose API for FOONs
+# foon_api: General-Purpose API for FOON graphs! #
 
-This code repository is for the USF [Robot Perception and Action Lab](https://rpal.cse.usf.edu)'s [FOON](https://www.foonets.com) project (short for the **functional object-oriented network**).
+This code repository is for the [USF Robot Perception and Action Lab](https://rpal.cse.usf.edu)'s [FOON](https://www.foonets.com) project (short for the **functional object-oriented network**).
 
 Here, you will find several scripts that are needed to operate on FOON files, which are mainly subgraph files as text files (.TXT) or .JSON files. More recently, FOON graphs can also be saved or loaded as .PKL files.
 
-### License
+## License
 
 >This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 >
