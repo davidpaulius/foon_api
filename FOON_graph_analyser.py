@@ -27,7 +27,7 @@ try:
     import FOON_classes as FOON
 except ImportError:
     print(" -- ERROR: Missing 'FOON_classes.py' file! Make sure you have downloaded the accompanying class file!")
-    print("\t-- Download here: https://bitbucket.org/davidpaulius/foon_api/src/master/")
+    print("\t-- Download here: https://github.com/davidpaulius/foon_api")
     exit()
 #end
 
