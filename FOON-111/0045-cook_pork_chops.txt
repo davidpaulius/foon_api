@@ -1,180 +1,180 @@
-O15	plate	0
-S98	empty
-O170	porkchop	1
-S313	uncooked
-M0	pick-and-place	Assumed	Assumed
-O15	plate	0
-S188	contains	{porkchop}
-O170	porkchop	1
-S313	uncooked
-S226	on	[plate]
+O344	plate	0
+S41	empty
+O345	porkchop	1
+S133	uncooked
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains	{porkchop}
+O345	porkchop	1
+S133	uncooked
+S81	on	[plate]
 //
-O2	bowl	0
-S182	contains	{salt,black pepper}
-O19	black pepper	1
-S43	ground
-S148	in	[bowl]
-O18	salt	1
-S43	granulated
-S148	in	[bowl]
-O15	plate	0
-S188	contains	{porkchop}
-O170	porkchop	1
-S313	uncooked
-S226	on	[plate]
-M2	sprinkle	0:22	0:24
-O170	porkchop	0
-S280	seasoned	{salt,black pepper}
-S226	on	[plate]
+O46	bowl	0
+S23	contains	{salt,black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O344	plate	0
+S23	contains	{porkchop}
+O345	porkchop	1
+S133	uncooked
+S81	on	[plate]
+M83	sprinkle	0:22	0:24
+O345	porkchop	0
+S107	seasoned	{salt,black pepper}
+S81	on	[plate]
 //
-O13	cooking pan	1
-S98	empty
-O38	stove	0
-S218	on
-M0	pick-and-place	Assumed	Assumed
-O38	stove	1
-S218	on
-S232	with	[pan]
-O13	cooking pan	0
-S139	heated
-S43	on	[stove]
+O116	cooking pan	1
+S41	empty
+O425	stove	0
+S81	on
+M50	pick-and-place	Assumed	Assumed
+O425	stove	1
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
 //
-O13	cooking pan	0
-S139	heated
-S43	on	[stove]
-O11	knife	1
-S51	clean
-O2	plate	0
-S182	contains	{butter}
-O3	butter	1
-S302	stick
-S43	on	[plate]
-M3	scoop and pour	0:46	0:50
-O13	cooking pan	0
-S124	contains	{butter}
-S43	on	[stove]
-O3	butter	1
-S302	cubed
-S164	in	[pan]
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+O240	knife	1
+S16	clean
+O344	plate	0
+S23	contains	{butter}
+O63	butter	1
+S127	stick
+S81	on	[plate]
+M70	scoop and pour	0:46	0:50
+O116	cooking pan	0
+S23	contains	{butter}
+S81	on	[stove]
+O63	butter	1
+S31	cubed
+S65	in	[pan]
 //
-O13	cooking pan	0
-S124	contains	{butter}
-S43	on	[stove]
-O108	bottle	1
-S182	contains	{vegetable oil}
-O94	vegetable oil	1
-S147	in	[bottle]
-M4	pour	0:54	0:57
-O13	cooking pan	0
-S182	contains	{butter,vegetable oil}
-S43	on	[stove]
-O94	vegetable oil	1
-S164	in	[pan]
+O116	cooking pan	0
+S23	contains	{butter}
+S81	on	[stove]
+O45	bottle	1
+S23	contains	{vegetable oil}
+O468	vegetable oil	1
+S65	in	[bottle]
+M54	pour	0:54	0:57
+O116	cooking pan	0
+S23	contains	{butter,vegetable oil}
+S81	on	[stove]
+O468	vegetable oil	1
+S65	in	[pan]
 //
-O13	cooking pan	1
-S182	contains	{butter,vegetable oil}
-S43	on	[stove]
-O3	butter	1
-S302	cubed
-S164	in	[pan]
-O94	vegetable oil	1
-S164	in	[pan]
-M16	spread	1:01	1:06
-O13	cooking pan	1
-S124	greased	{butter,vegetable oil}
-S43	on	[stove]
+O116	cooking pan	1
+S23	contains	{butter,vegetable oil}
+S81	on	[stove]
+O63	butter	1
+S31	cubed
+S65	in	[pan]
+O468	vegetable oil	1
+S65	in	[pan]
+M82	spread	1:01	1:06
+O116	cooking pan	1
+S57	greased	{butter,vegetable oil}
+S81	on	[stove]
 //
-O13	cooking pan	0
-S124	greased	{butter,vegetable oil}
-S43	on	[stove]
-O15	plate	0
-S188	contains	{porkchop}
-O170	porkchop	1
-S280	seasoned	{salt,black pepper}
-S226	on	[plate]
-O41	tongs	1
-S51	clean
-M0	pick-and-place	1:42	1:48
-O13	cooking pan	0
-S188	contains	{porkchop}
-S43	on	[stove]
-O170	porkchop	1
-S280	seasoned	{salt,black pepper}
-S164	in	[pan]
-O15	plate	0
-S98	dirty
+O116	cooking pan	0
+S57	greased	{butter,vegetable oil}
+S81	on	[stove]
+O344	plate	0
+S23	contains	{porkchop}
+O345	porkchop	1
+S107	seasoned	{salt,black pepper}
+S81	on	[plate]
+O452	tongs	1
+S16	clean
+M50	pick-and-place	1:42	1:48
+O116	cooking pan	0
+S23	contains	{porkchop}
+S81	on	[stove]
+O345	porkchop	1
+S107	seasoned	{salt,black pepper}
+S65	in	[pan]
+O344	plate	0
+S38	dirty
 //
-O13	cooking pan	0
-S188	contains	{porkchop}
-S43	on	[stove]
-O170	porkchop	1
-S280	seasoned	{salt,black pepper}
-S164	in	[pan]
-O41	tongs	1
-S51	clean
-M11	flip	2:00	2:03
-O170	porkchop	1
-S280	seasoned	{salt,black pepper}
-S43	partly cooked
-S164	in	[pan]
+O116	cooking pan	0
+S23	contains	{porkchop}
+S81	on	[stove]
+O345	porkchop	1
+S107	seasoned	{salt,black pepper}
+S65	in	[pan]
+O452	tongs	1
+S16	clean
+M32	flip	2:00	2:03
+O345	porkchop	1
+S107	seasoned	{salt,black pepper}
+S86	partly cooked
+S65	in	[pan]
 //
-O13	cooking pan	0
-S188	contains	{porkchop}
-S43	on	[stove]
-O69	baking tray	1
-S98	empty
-M0	cover	2:30	2:33
-O13	cooking pan	0
-S313	covered
-S188	contains	{porkchop}
-S43	on	[stove]
-O69	baking tray	1
-S225	on	[pan]
+O116	cooking pan	0
+S23	contains	{porkchop}
+S81	on	[stove]
+O12	baking tray	1
+S41	empty
+M18	cover	2:30	2:33
+O116	cooking pan	0
+S26	covered
+S23	contains	{porkchop}
+S81	on	[stove]
+O12	baking tray	1
+S81	on	[pan]
 //
-O13	cooking pan	0
-S313	covered
-S188	contains	{porkchop}
-S43	on	[stove]
-O170	porkchop	0
-S280	seasoned	{salt,black pepper}
-S43	partly cooked
-S164	in	[pan]
-M40	cook	Assumed	Assumed
-O170	porkchop	0
-S43	cooked
-S164	in	[pan]
+O116	cooking pan	0
+S26	covered
+S23	contains	{porkchop}
+S81	on	[stove]
+O345	porkchop	0
+S107	seasoned	{salt,black pepper}
+S86	partly cooked
+S65	in	[pan]
+M14	cook	Assumed	Assumed
+O345	porkchop	0
+S24	cooked
+S65	in	[pan]
 //
-O13	cooking pan	0
-S313	covered
-S188	contains	{porkchop}
-S43	on	[stove]
-O69	baking tray	1
-S225	on	[pan]
-M0	uncover	Assumed	Assumed
-O13	cooking pan	0
-S188	contains	{porkchop}
-S43	on	[stove]
-O69	baking tray	1
-S225	dirty
+O116	cooking pan	0
+S26	covered
+S23	contains	{porkchop}
+S81	on	[stove]
+O12	baking tray	1
+S81	on	[pan]
+M93	uncover	Assumed	Assumed
+O116	cooking pan	0
+S23	contains	{porkchop}
+S81	on	[stove]
+O12	baking tray	1
+S38	dirty
 //
-O13	cooking pan	0
-S188	contains	{porkchop}
-S43	on	[stove]
-O15	plate	0
-S98	empty
-O170	porkchop	1
-S43	cooked
-S164	in	[pan]
-O41	tongs	1
-S51	clean
-M0	pick-and-place	3:28	3:31
-O13	cooking pan	0
-S43	dirty
-O15	plate	0
-S188	contains	{porkchop}
-S43	on	[stove]
-O170	porkchop	1	!
-S43	cooked
-S280	contains	{salt,black pepper}
-S164	on	[plate]
+O116	cooking pan	0
+S23	contains	{porkchop}
+S81	on	[stove]
+O344	plate	0
+S41	empty
+O345	porkchop	1
+S24	cooked
+S65	in	[pan]
+O452	tongs	1
+S16	clean
+M50	pick-and-place	3:28	3:31
+O116	cooking pan	0
+S38	dirty
+O344	plate	0
+S23	contains	{porkchop}
+S81	on	[stove]
+O345	porkchop	1	18
+S24	cooked
+S23	contains	{salt,black pepper}
+S81	on	[plate]
 //

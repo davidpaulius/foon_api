@@ -1,498 +1,489 @@
-O30	garlic	1
-S54	clove
-M0	peel	Assumed	Assumed
-O30	garlic	1
-S54	peeled
+O192	garlic	1
+S18	clove
+M49	peel	Assumed	Assumed
+O192	garlic	1
+S91	peeled
 //
-O83	cutting board	0
-S188	empty
-O30	garlic	1
-S54	peeled
-M0	pick-and-place	Assumed	Assumed
-O30	garlic	0
-S54	peeled
-S43	on	[cutting board]
-O83	cutting board	0
-S188	contains	{garlic}
+O143	cutting board	0
+S41	empty
+O192	garlic	1
+S91	peeled
+M50	pick-and-place	Assumed	Assumed
+O192	garlic	0
+S91	peeled
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{garlic}
 //
-O11	knife	1
-S52	clean
-O30	garlic	0
-S54	peeled
-S43	on	[cutting board]
-O83	cutting board	0
-S188	contains	{garlic}
-M5	chop	Assumed	Assumed
-O30	garlic	0
-S51	chopped
-S43	on	[cutting board]
+O240	knife	1
+S16	clean
+O192	garlic	0
+S91	peeled
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{garlic}
+M10	chop	Assumed	Assumed
+O192	garlic	0
+S14	chopped
+S81	on	[cutting board]
 //
-O38	stove	0
-S218	on
-O13	cooking pan	1
-S98	empty
-M0	pick-and-place	Assumed	Assumed
-O13	cooking pan	1
-S141	heated
-S43	on	[stove]
-O38	stove	0
-S43	on
-S232	with	[pan]
+O425	stove	0
+S81	on
+O116	cooking pan	1
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O116	cooking pan	1
+S62	heated
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
 //
-O13	cooking pan	0
-S141	heated
-S43	on	[stove]
-O108	bottle	1
-S182	contains	{olive oil}
-O17	olive oil	1
-S147	in	[bottle]
-M4	pour	0:19	0:21
-O13	cooking pan	0
-S124	greased	{olive oil}
-S43	on	[stove]
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+M54	pour	0:19	0:21
+O116	cooking pan	0
+S57	greased	{olive oil}
+S81	on	[stove]
 //
-O83	cutting board	0
-S98	empty
-O61	chicken	1
-S323	raw
-S43	whole
-M0	pick-and-place	Assumed	Assumed
-O83	cutting board	0
-S188	contains	{chicken}
-O61	chicken	1
-S323	raw
-S43	whole
-S43	on	[cutting board]
+O143	cutting board	0
+S41	empty
+O82	chicken	1
+S133	uncooked
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{chicken}
+O82	chicken	1
+S133	uncooked
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{chicken}
-O61	chicken	0
-S323	raw
-S43	whole
-S43	on	[cutting board]
-O11	knife	1
-S51	clean
-M5	chop	Assumed	Assumed
-O61	chicken	0
-S323	raw
-S43	chopped
-S43	on	[cutting board]
-O11	knife	1
-S94	dirty
+O143	cutting board	0
+S23	contains	{chicken}
+O82	chicken	0
+S133	uncooked
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M10	chop	Assumed	Assumed
+O82	chicken	0
+S14	chopped
+S81	on	[cutting board]
+O240	knife	1
+S38	dirty
 //
-O83	cutting board	0
-S188	contains	{chicken}
-O61	chicken	0
-S323	raw
-S43	chopped
-S43	on	[cutting board]
-O15	bowl	0
-S98	empty
-M12	pour	Assumed	Assumed
-O83	cutting board	0
-S94	dirty
-O15	bowl	0
-S188	contains	{chicken}
-O61	chicken	1
-S323	raw
-S43	chopped
-S43	in	[bowl]
+O143	cutting board	0
+S23	contains	{chicken}
+O82	chicken	0
+S14	chopped
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O143	cutting board	0
+S38	dirty
+O46	bowl	0
+S23	contains	{chicken}
+O82	chicken	1
+S14	chopped
+S65	in	[bowl]
 //
-O13	cooking pan	0
-S124	greased	{olive oil}
-S43	on	[stove]
-O2	bowl	1
-S182	contains	{chicken}
-O88	chicken	1
-S323	raw
-S43	chopped
-S43	in	[bowl]
-M4	pour	0:23	0:26
-O13	cooking pan	0
-S182	contains	{olive oil,chicken}
-S43	on	[stove]
-O88	chicken	1
-S323	raw
-S43	chopped
-S43	in	[pan]
+O116	cooking pan	0
+S57	greased	{olive oil}
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{chicken}
+O82	chicken	1
+S14	chopped
+S65	in	[bowl]
+M54	pour	0:23	0:26
+O116	cooking pan	0
+S23	contains	{olive oil,chicken}
+S81	on	[stove]
+O82	chicken	1
+S14	chopped
+S65	in	[pan]
 //
-O13	cooking pan	0
-S182	contains	{olive oil,chicken}
-S43	on	[stove]
-O22	spoon	1
-S51	clean
-O88	chicken	1
-S323	raw
-S43	chopped
-S43	in	[pan]
-M6	cook and stir	0:28	0:35
-O13	cooking pan	0
-S185	contains	{olive oil,chicken}
-S43	on	[stove]
-O88	chicken	1
-S323	cooked
-S43	in	[pan]
+O116	cooking pan	0
+S23	contains	{olive oil,chicken}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+O82	chicken	1
+S14	chopped
+S65	in	[pan]
+M16	cook and stir	0:28	0:35
+O116	cooking pan	0
+S23	contains	{olive oil,chicken}
+S81	on	[stove]
+O82	chicken	1
+S24	cooked
+S65	in	[pan]
 //
-O11	knife	1
-S51	clean
-O83	cutting board	0
-S188	contains	{garlic}
-O30	garlic	1
-S50	chopped
-S43	on	[cutting board]
-O2	bowl	0
-S98	empty
-M4	pour	Assumed	Assumed
-O2	bowl	0
-S182	contains	{garlic}
-O83	cutting board	0
-S188	dirty
-O30	garlic	1
-S50	chopped
-S43	in	[bowl]
+O240	knife	1
+S16	clean
+O143	cutting board	0
+S23	contains	{garlic}
+O192	garlic	1
+S14	chopped
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{garlic}
+O143	cutting board	0
+S38	dirty
+O192	garlic	1
+S14	chopped
+S65	in	[bowl]
 //
-O2	bowl	0
-S182	contains	{garlic}
-O30	garlic	1
-S50	chopped
-S43	in	[bowl]
-O13	cooking pan	0
-S185	contains	{olive oil,chicken}
-S43	on	[stove]
-M4	pour	0:36	0:39
-O13	cooking pan	0
-S182	contains	{olive oil,chicken,garlic}
-S43	on	[stove]
-O30	garlic	1
-S50	chopped
-S43	in	[pan]
+O46	bowl	0
+S23	contains	{garlic}
+O192	garlic	1
+S14	chopped
+S65	in	[bowl]
+O116	cooking pan	0
+S23	contains	{olive oil,chicken}
+S81	on	[stove]
+M54	pour	0:36	0:39
+O116	cooking pan	0
+S23	contains	{olive oil,chicken,garlic}
+S81	on	[stove]
+O192	garlic	1
+S14	chopped
+S65	in	[pan]
 //
-O13	cooking pan	0
-S182	contains	{olive oil,chicken,garlic}
-S43	on	[stove]
-O30	garlic	1
-S50	chopped
-S43	in	[pan]
-O22	spoon	1
-S51	clean
-M6	cook and stir	0:41	0:46
-O13	cooking pan	0
-S185	contains	{olive oil,chicken,garlic}
-S43	on	[stove]
-O30	garlic	1
+O116	cooking pan	0
+S23	contains	{olive oil,chicken,garlic}
+S81	on	[stove]
+O192	garlic	1
+S14	chopped
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M16	cook and stir	0:41	0:46
+O116	cooking pan	0
+S23	contains	{olive oil,chicken,garlic}
+S81	on	[stove]
+O192	garlic	1
 S50	fried
-S43	in	[pan]
+S65	in	[pan]
 //
-O13	cooking pan	0
-S185	contains	{olive oil,chicken,garlic}
-S43	on	[stove]
-O190	measuring cup	1
-S182	contains	{chicken broth}
-O128	chicken broth	1
-S157	in	[measuring cup]
-M4	pour	0:49	0:55
-O13	cooking pan	0
-S182	contains	{olive oil,chicken,garlic,chicken broth}
-S43	on	[stove]
-O128	chicken broth	1
-S157	in	[pan]
+O116	cooking pan	0
+S23	contains	{olive oil,chicken,garlic}
+S81	on	[stove]
+O270	measuring cup	1
+S23	contains	{chicken broth}
+O83	chicken broth	1
+S65	in	[measuring cup]
+M54	pour	0:49	0:55
+O116	cooking pan	0
+S23	contains	{olive oil,chicken,garlic,chicken broth}
+S81	on	[stove]
+O83	chicken broth	1
+S65	in	[pan]
 //
-O13	cooking pan	0
-S182	contains	{olive oil,chicken,garlic,chicken broth}
-S43	on	[stove]
-O190	measuring cup	1
-S182	contains	{water}
-O46	water	1
-S157	in	[measuring cup]
-M4	pour	0:59	1:01
-O13	cooking pan	0
-S182	contains	{olive oil,chicken,garlic,chicken broth,water}
-S43	on	[stove]
-O46	water	1
-S157	in	[pan]
+O116	cooking pan	0
+S23	contains	{olive oil,chicken,garlic,chicken broth}
+S81	on	[stove]
+O270	measuring cup	1
+S23	contains	{water}
+O475	water	1
+S65	in	[measuring cup]
+M54	pour	0:59	1:01
+O116	cooking pan	0
+S23	contains	{olive oil,chicken,garlic,chicken broth,water}
+S81	on	[stove]
+O475	water	1
+S65	in	[pan]
 //
-O13	cooking pan	0
-S182	contains	{olive oil,chicken,garlic,chicken broth,water}
-S43	on	[stove]
-O46	water	1
-S157	in	[pan]
-O128	chicken broth	1
-S157	in	[pan]
-O30	garlic	1
+O116	cooking pan	0
+S23	contains	{olive oil,chicken,garlic,chicken broth,water}
+S81	on	[stove]
+O475	water	1
+S65	in	[pan]
+O83	chicken broth	1
+S65	in	[pan]
+O192	garlic	1
 S50	fried
-S43	in	[pan]
-O88	chicken	1
-S61	cooked
-S43	in	[pan]
-O22	spoon	1
-S51	clean
-M6	stir	1:03	1:22
-O13	cooking pan	0
-S185	contains	{alfredo sauce}
-S43	on	[stove]
-O43	alfredo sauce	1
-S182	contains	{olive oil,chicken,garlic,chicken broth,water}
-S43	in	[pan]
+S65	in	[pan]
+O82	chicken	1
+S24	cooked
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M85	stir	1:03	1:22
+O116	cooking pan	0
+S23	contains	{alfredo sauce}
+S81	on	[stove]
+O0	alfredo sauce	1
+S23	contains	{olive oil,chicken,garlic,chicken broth,water}
+S65	in	[pan]
 //
-O83	cutting board	0
-S98	empty
-O61	broccoli	0
-S323	whole
-M0	pick-and-place	Assumed	Assumed
-O83	cutting board	0
-S188	contains	{broccoli}
-O61	broccoli	0
-S323	whole
-S43	on	[cutting board]
+O143	cutting board	0
+S41	empty
+O53	broccoli	0
+S141	whole
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{broccoli}
+O53	broccoli	0
+S141	whole
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{broccoli}
-O61	broccoli	0
-S43	on	[cutting board]
-S323	whole
-O11	knife	1
-S51	clean
-M5	chop	Assumed	Assumed
-O61	broccoli	0
-S50	chopped
-S43	on	[cutting board]
-O11	knife	1
-S94	dirty
+O143	cutting board	0
+S23	contains	{broccoli}
+O53	broccoli	0
+S81	on	[cutting board]
+S141	whole
+O240	knife	1
+S16	clean
+M10	chop	Assumed	Assumed
+O53	broccoli	0
+S14	chopped
+S81	on	[cutting board]
+O240	knife	1
+S38	dirty
 //
-O83	cutting board	0
-S188	contains	{broccoli}
-O61	broccoli	0
-S50	chopped
-S43	on	[cutting board]
-O15	bowl	0
-S98	empty
-M12	pour	Assumed	Assumed
-O83	cutting board	0
-S94	dirty
-O15	bowl	0
-S188	contains	{broccoli}
-O61	broccoli	0
-S50	chopped
-S43	in	[bowl]
+O143	cutting board	0
+S23	contains	{broccoli}
+O53	broccoli	0
+S14	chopped
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O143	cutting board	0
+S38	dirty
+O46	bowl	0
+S23	contains	{broccoli}
+O53	broccoli	0
+S14	chopped
+S65	in	[bowl]
 //
-O13	cooking pan	0
-S185	contains	{alfredo sauce}
-S43	on	[stove]
-O2	bowl	0
-S182	contains	{broccoli}
-O111	broccoli	1
-S50	chopped
-S43	in	[bowl]
-M4	pour	1:23	1:27
-O13	cooking pan	0
-S185	contains	{alfredo sauce,broccoli}
-S43	on	[stove]
-O61	broccoli	0
-S50	chopped
-S43	in	[pan]
+O116	cooking pan	0
+S23	contains	{alfredo sauce}
+S81	on	[stove]
+O46	bowl	0
+S23	contains	{broccoli}
+O53	broccoli	1
+S14	chopped
+S65	in	[bowl]
+M54	pour	1:23	1:27
+O116	cooking pan	0
+S23	contains	{alfredo sauce,broccoli}
+S81	on	[stove]
+O53	broccoli	0
+S14	chopped
+S65	in	[pan]
 //
-O2	bowl	0
-S43	empty
-O30	box	1
-S182	contains	{penne}
-O95	penne	1
-S313	uncooked
-S43	in	[box]
-M0	pour	Assumed	Assumed
-O2	bowl	0
-S182	contains	{penne}
-O95	penne	1
-S313	uncooked
-S43	in	[bowl]
+O46	bowl	0
+S41	empty
+O47	box	1
+S23	contains	{penne}
+O326	penne	1
+S133	uncooked
+S65	in	[box]
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{penne}
+O326	penne	1
+S133	uncooked
+S65	in	[bowl]
 //
-O13	cooking pan	0
-S185	contains	{alfredo sauce,broccoli}
-S43	on	[stove]
-O2	bowl	0
-S182	contains	{penne}
-O95	penne	1
-S313	uncooked
-S43	in	[bowl]
-M4	pour	1:29	1:32
-O13	cooking pan	0
-S185	contains	{alfredo sauce,broccoli,penne}
-S43	on	[stove]
-O95	penne	1
-S313	uncooked
-S43	in	[pan]
+O116	cooking pan	0
+S23	contains	{alfredo sauce,broccoli}
+S81	on	[stove]
+O46	bowl	0
+S23	contains	{penne}
+O326	penne	1
+S133	uncooked
+S65	in	[bowl]
+M54	pour	1:29	1:32
+O116	cooking pan	0
+S23	contains	{alfredo sauce,broccoli,penne}
+S81	on	[stove]
+O326	penne	1
+S133	uncooked
+S65	in	[pan]
 //
-O13	cooking pan	0
-S185	contains	{alfredo sauce,broccoli,penne}
-S43	on	[stove]
-O22	spoon	1
-S51	clean
-O95	penne	1
-S313	uncooked
-S43	in	[pan]
-O61	broccoli	1
-S50	chopped
-S43	in	[pan]
-O43	alfredo sauce	1
-S182	contains	{olive oil,chicken,garlic,chicken broth,water}
-S43	in	[pan]
-M6	cook and stir	1:35	1:49
-O13	cooking pan	0
-S185	contains	{alfredo sauce,broccoli,penne}
-S43	on	[stove]
-O95	penne	1
-S313	partly cooked
-S43	in	[pan]
-O61	broccoli	1
-S50	cooked
-S43	in	[pan]
+O116	cooking pan	0
+S23	contains	{alfredo sauce,broccoli,penne}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+O326	penne	1
+S133	uncooked
+S65	in	[pan]
+O53	broccoli	1
+S14	chopped
+S65	in	[pan]
+O0	alfredo sauce	1
+S23	contains	{olive oil,chicken,garlic,chicken broth,water}
+S65	in	[pan]
+M16	cook and stir	1:35	1:49
+O116	cooking pan	0
+S23	contains	{alfredo sauce,broccoli,penne}
+S81	on	[stove]
+O326	penne	1
+S86	partly cooked
+S65	in	[pan]
+O53	broccoli	1
+S24	cooked
+S65	in	[pan]
 //
-O13	cooking pan	0
-S185	contains	{alfredo sauce,broccoli,penne}
-S43	on	[stove]
-O1	pan lid	1
-S1	clean
-M33	cover	1:56	2:00
-O13	cooking pan	0
-S185	contains	{alfredo sauce,broccoli,penne}
-S43	covered
-S43	on	[stove]
-O1	pan lid	1
-S1	on	[pan]
+O116	cooking pan	0
+S23	contains	{alfredo sauce,broccoli,penne}
+S81	on	[stove]
+O310	pan lid	1
+S16	clean
+M18	cover	1:56	2:00
+O116	cooking pan	0
+S23	contains	{alfredo sauce,broccoli,penne}
+S26	covered
+S81	on	[stove]
+O310	pan lid	1
+S81	on	[pan]
 //
-O13	cooking pan	0
-S185	contains	{alfredo sauce,broccoli,penne}
-S43	covered
-S43	on	[stove]
-O95	penne	0
-S313	partly cooked
-S43	in	[pan]
-O38	stove	0
-S43	on
-S232	with	[pan]
-O43	alfredo sauce	0
-S182	contains	{olive oil,chicken,garlic,chicken broth,water}
-S43	in	[pan]
-M33	cook	Assumed	Assumed
-O13	cooking pan	0
-S185	contains	{pasta alfredo}
-S43	covered
-S43	on	[stove]
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne}
-S43	in	[pan]
+O116	cooking pan	0
+S23	contains	{alfredo sauce,broccoli,penne}
+S26	covered
+S81	on	[stove]
+O326	penne	0
+S86	partly cooked
+S65	in	[pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O0	alfredo sauce	0
+S23	contains	{olive oil,chicken,garlic,chicken broth,water}
+S65	in	[pan]
+M14	cook	Assumed	Assumed
+O116	cooking pan	0
+S23	contains	{pasta alfredo}
+S26	covered
+S81	on	[stove]
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne}
+S65	in	[pan]
 //
-O13	cooking pan	0
-S185	contains	{pasta alfredo}
-S43	covered
-S43	on	[stove]
-O1	pan lid	1
-S1	on	[pan]
-M34	uncover	2:03	2:04
-O13	cooking pan	0
-S185	contains	{pasta alfredo}
-S43	on	[stove]
-O1	pan lid	1
-S1	dirty
+O116	cooking pan	0
+S23	contains	{pasta alfredo}
+S26	covered
+S81	on	[stove]
+O310	pan lid	1
+S81	on	[pan]
+M93	uncover	2:03	2:04
+O116	cooking pan	0
+S23	contains	{pasta alfredo}
+S81	on	[stove]
+O310	pan lid	1
+S38	dirty
 //
-O13	cooking pan	0
-S185	contains	{pasta alfredo}
-S43	on	[stove]
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne}
-S43	in	[pan]
-O2	bowl	1
-S182	contains	{parmesan}
-O161	parmesan	1
-S123	grated
-S43	in	[bowl]
-M4	pour	2:32	2:35
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne,parmesan}
-S43	in	[pan]
-O161	parmesan	1
-S123	grated
-S43	in	[pan]
+O116	cooking pan	0
+S23	contains	{pasta alfredo}
+S81	on	[stove]
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne}
+S65	in	[pan]
+O46	bowl	1
+S23	contains	{parmesan}
+O316	parmesan	1
+S56	grated
+S65	in	[bowl]
+M54	pour	2:32	2:35
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne,parmesan}
+S65	in	[pan]
+O316	parmesan	1
+S56	grated
+S65	in	[pan]
 //
-O13	cooking pan	0
-S185	contains	{pasta alfredo}
-S43	on	[stove]
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne,parmesan}
-S43	in	[pan]
-O190	measuring cup	1
-S182	contains	{cream}
-O66	cream	1
-S157	in	[measuring cup]
-M4	pour	2:37	2:40
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
-S43	in	[pan]
-O66	cream	1
-S157	in	[pan]
+O116	cooking pan	0
+S23	contains	{pasta alfredo}
+S81	on	[stove]
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne,parmesan}
+S65	in	[pan]
+O270	measuring cup	1
+S23	contains	{cream}
+O130	cream	1
+S65	in	[measuring cup]
+M54	pour	2:37	2:40
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
+S65	in	[pan]
+O130	cream	1
+S65	in	[pan]
 //
-O13	cooking pan	0
-S185	contains	{pasta alfredo}
-S43	on	[stove]
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
-S43	in	[pan]
-O22	spoon	1
-S51	clean
-M6	stir	2:43	2:51
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
-S43	in	[pan]
+O116	cooking pan	0
+S23	contains	{pasta alfredo}
+S81	on	[stove]
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M85	stir	2:43	2:51
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
+S65	in	[pan]
 //
-O13	cooking pan	0
-S185	contains	{pasta alfredo}
-S43	on	[stove]
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
-S43	in	[pan]
-O109	nutmeg	1
-S323	whole
-O40	grater	1
-S51	clean
-M9	grate	2:53	2:56
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
-S43	in	[pan]
-O109	nutmeg	1
-S323	ground
-S43	in	[pan]
-O40	grater	1
-S94	dirty
+O116	cooking pan	0
+S23	contains	{pasta alfredo}
+S81	on	[stove]
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
+S65	in	[pan]
+O292	nutmeg	1
+S141	whole
+O203	grater	1
+S16	clean
+M39	grate	2:53	2:56
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S65	in	[pan]
+O292	nutmeg	1
+S58	ground
+S65	in	[pan]
+O203	grater	1
+S38	dirty
 //
-O13	cooking pan	0
-S185	contains	{pasta alfredo}
-S43	on	[stove]
-O43	pasta alfredo	0
-S182	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
-S43	in	[pan]
-O22	spoon	1
-S51	clean
-M6	stir	3:03	3:15
-O43	pasta alfredo	0
-S43	cooked
-S182	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
-S43	in	[pan]
+O116	cooking pan	0
+S23	contains	{pasta alfredo}
+S81	on	[stove]
+O319	pasta alfredo	0
+S23	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M85	stir	3:03	3:15
+O319	pasta alfredo	0
+S24	cooked
+S23	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S65	in	[pan]
 //
-O30	plate	0
-S43	empty
-O13	cooking pan	0
-S185	contains	{pasta alfredo}
-S43	on	[stove]
-O43	pasta alfredo	1
-S43	cooked
-S182	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
-S43	in	[pan]
-O43	ladle	1
-S43	clean
-M4	scoop and pour	Assumed	Assumed
-O30	plate	0
-S185	contains	{pasta alfredo}
-O43	pasta alfredo	1	!
-S43	cooked
-S182	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
-S43	on	[plate]
+O344	plate	0
+S41	empty
+O116	cooking pan	0
+S23	contains	{pasta alfredo}
+S81	on	[stove]
+O319	pasta alfredo	1
+S24	cooked
+S23	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S65	in	[pan]
+O243	ladle	1
+S16	clean
+M70	scoop and pour	Assumed	Assumed
+O344	plate	0
+S23	contains	{pasta alfredo}
+O319	pasta alfredo	1	13
+S24	cooked
+S23	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S81	on	[plate]
 //

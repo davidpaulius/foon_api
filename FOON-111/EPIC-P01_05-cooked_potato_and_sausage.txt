@@ -1,287 +1,287 @@
-O173	kettle	1
-S107	empty
-O181	faucet	0
-S115	on
-O40	water	1
-S43	from faucet
-M72	fill	2:49	3:00
-O173	kettle	0
-S195	contains	{water}
-O46	water	0
-S360	in	[kettle]
+O238	kettle	1
+S41	empty
+O170	faucet	0
+S81	on
+O475	water	1
+S52	from faucet
+M31	fill	2:49	3:00
+O238	kettle	0
+S23	contains	{water}
+O475	water	0
+S65	in	[kettle]
 //
-O173	kettle	1
-S195	contains	{water}
-O46	water	0
-S360	in	[kettle]
+O238	kettle	1
+S23	contains	{water}
+O475	water	0
+S65	in	[kettle]
 M41	heat	3:05	6:19
-O173	kettle	0
-S195	contains	{water}
-O46	water	0
-S43	heated
-S360	in	[kettle]
+O238	kettle	0
+S23	contains	{water}
+O475	water	0
+S62	heated
+S65	in	[kettle]
 //
-O39	potato	1
-S349	whole
-O11	knife	1
-S58	clean
-M17	peel	3:33	4:25
-O11	knife	0
-S102	dirty
-O39	potato	0
-S265	peeled
+O348	potato	1
+S141	whole
+O240	knife	1
+S16	clean
+M49	peel	3:33	4:25
+O240	knife	0
+S38	dirty
+O348	potato	0
+S91	peeled
 //
-O39	potato	1
-S265	peeled
-O83	cutting board	0
-S137	empty
-M0	pick-and-place	4:25	4:28
-O83	cutting board	0
-S201	contains	{potato}
-O39	potato	1
-S265	peeled
-S235	on	[cutting board]
+O348	potato	1
+S91	peeled
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	4:25	4:28
+O143	cutting board	0
+S23	contains	{potato}
+O348	potato	1
+S91	peeled
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S201	contains	{potato}
-O39	potato	0
-S265	peeled
-S235	on	[cutting board]
-O11	knife	1
-S58	clean
-M10	slice	4:28	4:50
-O11	knife	0
-S102	dirty
-O39	potato	0
-S311	sliced
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{potato}
+O348	potato	0
+S91	peeled
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M79	slice	4:28	4:50
+O240	knife	0
+S38	dirty
+O348	potato	0
+S117	sliced
+S81	on	[cutting board]
 //
-O173	kettle	1
-S193	contains	{water}
-O173	water	1
-S43	heated
-S193	in	[kettle]
-O45	pot	0
-S107	heated
-S43	on	[stove]
-M4	pour	6:20	6:30
-O45	pot	0
-S195	contains	{water}
-S43	on	[stove]
-O173	water	1
-S43	heated
-S193	in	[pot]
+O238	kettle	1
+S23	contains	{water}
+O475	water	1
+S62	heated
+S65	in	[kettle]
+O346	pot	0
+S62	heated
+S81	on	[stove]
+M54	pour	6:20	6:30
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+O475	water	1
+S62	heated
+S65	in	[pot]
 //
-O22	spoon	1
-S107	clean
-O18	salt	0
-S58	granulated
-S164	in	[container]
-O288	container	1
-S195	contains	{salt}
-M4	scoop	6:45	6:48
-O22	spoon	1
-S195	contains	{salt}
-O18	salt	0
-S58	granulated
-S164	in	[spoon]
+O416	spoon	1
+S16	clean
+O376	salt	0
+S55	granulated
+S65	in	[container]
+O114	container	1
+S23	contains	{salt}
+M69	scoop	6:45	6:48
+O416	spoon	1
+S23	contains	{salt}
+O376	salt	0
+S55	granulated
+S65	in	[spoon]
 //
-O45	pot	0
-S195	contains	{water}
-S43	on	[stove]
-O22	spoon	1
-S195	contains	{salt}
-O18	salt	1
-S58	granulated
-S164	in	[spoon]
-M6	stir	6:48	6:50
-O45	pot	0
-S198	contains	{saltwater}
-S43	on	[stove]
-O18	salt	0
-S58	granulated
-S164	in	[pot]
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+O416	spoon	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[spoon]
+M85	stir	6:48	6:50
+O346	pot	0
+S23	contains	{saltwater}
+S81	on	[stove]
+O376	salt	0
+S55	granulated
+S65	in	[pot]
 //
-O83	cutting board	0
-S201	contains	{potato}
-O39	potato	1
-S311	sliced
-S43	on	[cutting board]
-O45	pot	0
-S198	contains	{saltwater}
-S43	on	[stove]
-O11	knife	1
-S58	clean
-M18	scrape	6:58	7:05
-O83	cutting board	0
-S201	dirty
-O11	knife	0
-S102	dirty
-O45	pot	0
-S193	contains	{saltwater,potato}
-S102	on	[stove]
-O39	potato	1
-S311	sliced
-S43	in	[pot]
+O143	cutting board	0
+S23	contains	{potato}
+O348	potato	1
+S117	sliced
+S81	on	[cutting board]
+O346	pot	0
+S23	contains	{saltwater}
+S81	on	[stove]
+O240	knife	1
+S16	clean
+M71	scrape	6:58	7:05
+O143	cutting board	0
+S38	dirty
+O240	knife	0
+S38	dirty
+O346	pot	0
+S23	contains	{saltwater,potato}
+S81	on	[stove]
+O348	potato	1
+S117	sliced
+S65	in	[pot]
 //
-O288	container	0
-S43	sealed
-S164	contains	{vegetarian sausage}
-O39	knife	1
-S43	clean
-M4	cut	7:22	7:26
-O288	container	0
-S43	partly opened
-S164	contains	{vegetarian sausage}
+O114	container	0
+S106	sealed
+S23	contains	{vegetarian sausage}
+O240	knife	1
+S16	clean
+M20	cut	7:22	7:26
+O114	container	0
+S87	partly opened
+S23	contains	{vegetarian sausage}
 //
-O288	container	0
-S43	partly opened
-S164	contains	{vegetarian sausage}
-M0	rip open	7:28	7:34
-O288	container	0
-S164	contains	{vegetarian sausage}
+O114	container	0
+S87	partly opened
+S23	contains	{vegetarian sausage}
+M65	rip open	7:28	7:34
+O114	container	0
+S23	contains	{vegetarian sausage}
 //
-O288	container	1
-S164	contains	{vegetarian sausage}
-O142	vegetarian sausage	0
-S164	in	[container]
-O13	cooking pan	0
-S107	heated
-S43	on	[stove]
-M0	pick-and-place	11:35	11:53
-O13	cooking pan	0
-S164	contains	{vegetarian sausage}
-S43	on	[stove]
-O142	vegetarian sausage	0
-S164	in	[pan]
+O114	container	1
+S23	contains	{vegetarian sausage}
+O469	vegetarian sausage	0
+S65	in	[container]
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+M50	pick-and-place	11:35	11:53
+O116	cooking pan	0
+S23	contains	{vegetarian sausage}
+S81	on	[stove]
+O469	vegetarian sausage	0
+S65	in	[pan]
 //
-O45	pot	0
-S164	contains	{saltwater,potato}
-S102	on	[stove]
-O22	spoon	1
-S58	clean
-O142	potato	0
-S43	sliced
-S164	in	[pot]
-M6	cook and stir	13:11	13:18
-O22	spoon	1
-S102	dirty
-O45	pot	0
-S195	contains	{saltwater,potato}
-S43	on	[stove]
-O142	potato	0
-S43	cooked
-S164	in	[pot]
+O346	pot	0
+S23	contains	{saltwater,potato}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+O348	potato	0
+S117	sliced
+S65	in	[pot]
+M16	cook and stir	13:11	13:18
+O416	spoon	1
+S38	dirty
+O346	pot	0
+S23	contains	{saltwater,potato}
+S81	on	[stove]
+O348	potato	0
+S24	cooked
+S65	in	[pot]
 //
-O13	cooking pan	0
-S195	contains	{vegetarian sausage}
-S43	on	[stove]
-O41	tongs	1
-S58	clean
-O142	vegetarian sausage	0
-S164	in	[pan]
-M11	cook and flip	16:15	16:45
-O142	vegetarian sausage	0
-S164	cooked
-S43	in	[pan]
-O41	tongs	1
-S102	dirty
-O13	cooking pan	0
-S113	contains	{vegetarian sausage}
-S43	on	[stove]
+O116	cooking pan	0
+S23	contains	{vegetarian sausage}
+S81	on	[stove]
+O452	tongs	1
+S16	clean
+O469	vegetarian sausage	0
+S65	in	[pan]
+M15	cook and flip	16:15	16:45
+O469	vegetarian sausage	0
+S24	cooked
+S65	in	[pan]
+O452	tongs	1
+S38	dirty
+O116	cooking pan	0
+S23	contains	{vegetarian sausage}
+S81	on	[stove]
 //
-O45	pot	1
-S198	contains	{saltwater,potato}
-S43	on	[stove]
-O142	potato	1
-S43	cooked
-S164	in	[pot]
-O105	strainer	1
-S58	clean
-O39	sink	0
-S43	empty
-M4	pour	19:32	19:42
-O105	strainer	1
-S195	contains	{potato}
-O105	potato	1
-S43	cooked
-S195	in	[strainer]
+O346	pot	1
+S23	contains	{saltwater,potato}
+S81	on	[stove]
+O348	potato	1
+S24	cooked
+S65	in	[pot]
+O426	strainer	1
+S16	clean
+O400	sink	0
+S41	empty
+M54	pour	19:32	19:42
+O426	strainer	1
+S23	contains	{potato}
+O348	potato	1
+S24	cooked
+S65	in	[strainer]
 //
-O105	strainer	1
-S195	contains	{potato}
-O105	potato	1
-S43	cooked
-S195	in	[strainer]
-O15	plate	0
-S107	empty
-M4	pour	19:45	19:48
-O105	strainer	1
-S102	dirty
-O15	plate	0
-S195	contains	{potato}
-O105	potato	1
-S43	cooked
-S195	on	[plate]
+O426	strainer	1
+S23	contains	{potato}
+O348	potato	1
+S24	cooked
+S65	in	[strainer]
+O344	plate	0
+S41	empty
+M54	pour	19:45	19:48
+O426	strainer	1
+S38	dirty
+O344	plate	0
+S23	contains	{potato}
+O348	potato	1
+S24	cooked
+S81	on	[plate]
 //
-O15	plate	0
-S195	contains	{potato}
-O13	cooking pan	1
-S195	contains	{vegetarian sausage}
-S42	on	[stove]
-O6	fork	1
-S58	clean
-O142	vegetarian sausage	0
-S164	cooked
-S43	in	[pan]
-M18	scrape	19:57	20:08
-O15	plate	0
-S201	contains	{potato,vegetarian sausage}
-O142	vegetarian sausage	0
-S164	cooked
-S43	on	[plate]
+O344	plate	0
+S23	contains	{potato}
+O116	cooking pan	1
+S23	contains	{vegetarian sausage}
+S81	on	[stove]
+O182	fork	1
+S16	clean
+O469	vegetarian sausage	0
+S24	cooked
+S65	in	[pan]
+M71	scrape	19:57	20:08
+O344	plate	0
+S23	contains	{potato,vegetarian sausage}
+O469	vegetarian sausage	0
+S24	cooked
+S81	on	[plate]
 //
-O15	plate	0
-S201	contains	{potato,vegetarian sausage}
-O108	bottle	1
-S195	contains	{olive oil}
-O146	olive oil	0
-S159	in	[bottle]
-O142	potato	0
-S164	cooked
-S43	on	[plate]
-M4	pour	20:30	10:37
-O142	potato	0
-S164	cooked
-S43	contains	{olive oil}
-S43	on	[plate]
+O344	plate	0
+S23	contains	{potato,vegetarian sausage}
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	0
+S65	in	[bottle]
+O348	potato	0
+S24	cooked
+S81	on	[plate]
+M54	pour	20:30	10:37
+O348	potato	0
+S24	cooked
+S23	contains	{olive oil}
+S81	on	[plate]
 //
-O15	plate	0
-S201	contains	{potato,vegetarian sausage}
-O19	black pepper	0
-S164	in	[container]
-O288	container	1
-S195	contains	{black pepper}
-O142	potato	0
-S164	cooked
-S43	contains	{olive oil}
-S43	on	[plate]
-M2	sprinkle	20:48	20:55
-O142	potato	0
-S164	cooked
-S43	contains	{olive oil,black pepper}
-S43	on	[plate]
+O344	plate	0
+S23	contains	{potato,vegetarian sausage}
+O34	black pepper	0
+S65	in	[container]
+O114	container	1
+S23	contains	{black pepper}
+O348	potato	0
+S24	cooked
+S23	contains	{olive oil}
+S81	on	[plate]
+M83	sprinkle	20:48	20:55
+O348	potato	0
+S24	cooked
+S23	contains	{olive oil,black pepper}
+S81	on	[plate]
 //
-O15	plate	0
-S201	contains	{potato,vegetarian sausage}
-O142	potato	1
-S164	cooked
-S43	contains	{olive oil,black pepper}
-S43	on	[plate]
-O39	fork	1
-S42	clean
-M4	mix	21:03	21:09
-O142	potato	1	!
-S164	cooked
-S43	coated	{olive oil,black pepper}
-S43	on	[plate]
+O344	plate	0
+S23	contains	{potato,vegetarian sausage}
+O348	potato	1
+S24	cooked
+S23	contains	{olive oil,black pepper}
+S81	on	[plate]
+O182	fork	1
+S16	clean
+M46	mix	21:03	21:09
+O348	potato	1	27
+S24	cooked
+S19	coated	{olive oil,black pepper}
+S81	on	[plate]
 //

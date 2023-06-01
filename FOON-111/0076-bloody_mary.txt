@@ -1,98 +1,84 @@
-O277	highball glass	0
-S6	empty
-O308	lemon	1
-S8	halved
-M10	roll	0:38	0:42
-O277	highball glass	0
-S20	contains	{lemon}
+O228	highball glass	0
+S41	empty
+O244	lemon	1
+S60	halved
+M66	roll	0:38	0:42
+O228	highball glass	0
+S23	contains	{lemon}
 //
-O277	highball glass	0
-S20	contains	{lemon}
-O91	celery salt	1
-S7	granulated
-M10	roll	0:46	0:59
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
+O228	highball glass	0
+S23	contains	{lemon}
+O76	celery salt	1
+S55	granulated
+M66	roll	0:46	0:59
+O228	highball glass	0
+S23	contains	{lemon,celery salt}
 //
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-O580	vodka	1
-S9	in	[bottle]
-M9	pour	1:06	1:13
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka}
+O228	highball glass	0
+S23	contains	{lemon,celery salt}
+O473	vodka	1
+S65	in	[bottle]
+M54	pour	1:06	1:13
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka}
 //
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka}
-O283	ice	1
-S14	in	[glass]
-S4	cubed
-M9	pour	1:16	1:20
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice}
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka}
+O476	water ice	1
+S65	in	[glass]
+S31	cubed
+M54	pour	1:16	1:20
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice}
 //
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice}
-O552	tomato juice	1
-S16	in	[jar]
-M9	pour	1:24	1:30
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice}
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice}
+O449	tomato juice	1
+S65	in	[jar]
+M54	pour	1:24	1:30
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice}
 //
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice}
-O601	worcestershire sauce	1
-S12	in	[cup]
-M9	pour	1:35	1:37
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice,worcestershire sauce}
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice}
+O491	worcestershire sauce	1
+S65	in	[cup]
+M54	pour	1:35	1:37
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice,worcestershire sauce}
 //
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice,worcestershire sauce}
-O549	tobasco sauce	1
-S12	in	[cup]
-M9	pour	1:41	1:43
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice,worcestershire sauce,tobasco sauce}
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice,worcestershire sauce}
+O446	tobasco sauce	1
+S65	in	[cup]
+M54	pour	1:41	1:43
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice,worcestershire sauce,tobasco sauce}
 //
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice,worcestershire sauce,tobasco sauce}
-O471	salt pepper mixture	1
-S7	granulated
-M15	sprinkle	1:47	1:51
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice,worcestershire sauce,tobasco sauce,salt pepper mixture}
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice,worcestershire sauce,tobasco sauce}
+O377	salt pepper mixture	1
+S55	granulated
+M83	sprinkle	1:47	1:51
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice,worcestershire sauce,tobasco sauce,salt pepper mixture}
 //
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice,worcestershire sauce,tobasco sauce,salt pepper mixture}
-O308	lemon	1
-S8	halved
-M16	squeeze	2:03	2:07
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice,worcestershire sauce,tobasco sauce,salt pepper mixture,lemon juice}
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice,worcestershire sauce,tobasco sauce,salt pepper mixture}
+O244	lemon	1
+S60	halved
+M84	squeeze	2:03	2:07
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice,worcestershire sauce,tobasco sauce,salt pepper mixture,lemon juice}
 //
-O277	highball glass	0
-S20	contains	{lemon,celery salt}
-S21	contains	{vodka,ice,tomato juice,worcestershire sauce,tobasco sauce,salt pepper mixture,lemon juice}
-O308	lemon	1
-S8	halved
-M16	squeeze	2:03	2:07
-O277	highball glass	0
-S21	contains	{bloody mary}
-O45	bloody mary	0	!
-S20	contains	{lemon,celery salt,vodka,ice,tomato juice,worcestershire sauce,tobasco sauce,salt,pepper,lemon juice}
-S15	in	[highball glass]
+O228	highball glass	0
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice,worcestershire sauce,tobasco sauce,salt pepper mixture,lemon juice}
+O244	lemon	1
+S60	halved
+M84	squeeze	2:03	2:07
+O228	highball glass	0
+S23	contains	{bloody mary}
+O42	bloody mary	0	9
+S23	contains	{lemon,celery salt,vodka,water ice,tomato juice,worcestershire sauce,tobasco sauce,salt,pepper,lemon juice}
+S65	in	[highball glass]
 //

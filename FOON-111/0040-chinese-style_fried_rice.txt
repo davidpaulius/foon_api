@@ -1,499 +1,392 @@
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/0040-chinese-style_fried_rice.mp4
-# Source:	https://www.youtube.com/watch?v=aVWeS_7jEb4
+O116	cooking pan	1
+S41	empty
+O425	stove	0
+S81	on
+M50	pick-and-place	0:00	0:05
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S62	heated
+S81	on	[stove]
 //
-O180	cutting board	0
-S54	empty
-O468	green onion	1
-S262	whole
-M38	pick-and-place	<Assumed>
-O180	cutting board	0
-S144	contains	{green onion}
-O468	green onion	1
-S262	whole
-S175	on	[cutting board]
+O143	cutting board	0
+S41	empty
+O386	scallion	1
+S141	whole
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{scallion}
+O386	scallion	1
+S141	whole
+S81	on	[cutting board]
 //
-O180	cutting board	0
-S144	contains	{green onion}
-O468	green onion	0
-S262	whole
-S175	on	[cutting board]
-O293	knife	1
-S23	clean
-M8	chop	<0:24-0:31>
-O468	green onion	0
-S21	chopped
-S175	on	[cutting board]
+O143	cutting board	0
+S23	contains	{scallion}
+O386	scallion	0
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M10	chop	0:24	0:31
+O386	scallion	0
+S14	chopped
+S81	on	[cutting board]
 //
-O43	packet	1
-S43	contains	{sausage}
-M0	open	<Assumed>
-O43	packet	1
-S43	opened
-S43	contains	{sausage}
+O143	cutting board	0
+S41	empty
+O382	sausage	1
+S133	uncooked
+S65	in	[packet]
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{sausage}
+O382	sausage	1
+S133	uncooked
+S81	on	[cutting board]
 //
-O180	cutting board	0
-S54	empty
-O43	packet	0
-S43	opened
-S43	contains	{sausage}
-O466	sausage	1
-S262	raw
-S34	whole
-S43	in	[packet]
-M38	take out	<Assumed>
-O180	cutting board	0
-S144	contains	{sausage}
-O466	sausage	1
-S262	raw
-S34	whole
-S175	on	[cutting board]
+O143	cutting board	0
+S23	contains	{sausage}
+O240	knife	1
+S16	clean
+O382	sausage	1
+S133	uncooked
+S81	on	[cutting board]
+M20	cut	0:32	0:46
+O382	sausage	0
+S14	chopped
+S81	on	[cutting board]
 //
-O180	cutting board	0
-S144	contains	{sausage}
-O293	knife	1
-S23	clean
-O466	sausage	1
-S262	raw
-S34	whole
-S175	on	[cutting board]
-M15	cut	<0:32-0:46>
-O466	sausage	0
-S262	raw
-S34	sliced
-S175	on	[cutting board]
+O143	cutting board	0
+S23	contains	{sausage}
+O344	plate	0
+S41	empty
+O382	sausage	1
+S14	chopped
+S81	on	[cutting board]
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S38	dirty
+O344	plate	0
+S23	contains	{sausage}
+O382	sausage	1
+S14	chopped
+S81	on	[plate]
 //
-O180	cutting board	0
-S144	contains	{sausage}
-O415	plate	0
-S54	empty
-O466	sausage	1
-S262	raw
-S34	sliced
-S175	on	[cutting board]
-M38	pick-and-place	<Assumed>
-O180	cutting board	0
-S45	dirty
-O415	plate	0
-S138	contains	{sausage}
-O466	sausage	1
-S262	raw
-S34	sliced
-S188	on	[plate]
+O45	bottle	1
+S23	contains	{soy sauce}
+O410	soy sauce	1
+S65	in	[bottle]
+O416	spoon	1
+S16	clean
+M54	pour	Assumed	Assumed
+O416	spoon	1
+S23	contains	{soy sauce}
+O410	soy sauce	1
+S65	in	[spoon]
 //
-O507	bottle	1
-S138	contains	{soy sauce}
-M0	open	<Assumed>
-O507	bottle	1
-S43	opened
-S138	contains	{soy sauce}
+O46	bowl	0
+S41	empty
+O416	spoon	1
+S23	contains	{soy sauce}
+O410	soy sauce	1
+S65	in	[spoon]
+M54	pour	0:47	0:50
+O46	bowl	0
+S23	contains	{soy sauce}
+O410	soy sauce	1
+S65	in	[bowl]
 //
-O507	bottle	1
-S43	opened
-S138	contains	{soy sauce}
-O498	soy sauce	1
-S123	in	[bottle]
-O507	spoon	1
-S45	clean
-M40	pour	<Assumed>
-O507	spoon	1
-S138	contains	{soy sauce}
-O498	soy sauce	1
-S123	in	[spoon]
+O46	bowl	0
+S23	contains	{soy sauce}
+O416	spoon	1
+S23	contains	{sugar}
+O428	sugar	1
+S55	granulated
+S65	in	[spoon]
+M54	pour	0:51	0:52
+O46	bowl	0
+S23	contains	{soy sauce,sugar}
+O428	sugar	1
+S55	granulated
+S65	in	[bowl]
 //
-O51	bowl	0
-S54	empty
-O507	spoon	1
-S138	contains	{soy sauce}
-O498	soy sauce	1
-S123	in	[spoon]
-M40	pour	<0:47-0:50>
-O51	bowl	0
-S138	contains	{soy sauce}
-O498	soy sauce	1
-S84	in	[bowl]
+O45	bottle	1
+S23	contains	{water}
+O475	water	1
+S65	in	[bottle]
+O416	spoon	1
+S16	clean
+M54	pour	Assumed	Assumed
+O416	spoon	1
+S23	contains	{water}
+O475	water	1
+S65	in	[spoon]
 //
-O51	bowl	0
-S138	contains	{soy sauce}
-O507	spoon	1
-S138	contains	{sugar}
-O518	sugar	1
-S67	granulated
-S123	in	[spoon]
-M40	pour	<0:51-0:52>
-O51	bowl	0
-S138	contains	{soy sauce,sugar}
-O518	sugar	1
-S67	granulated
-S84	in	[bowl]
+O46	bowl	0
+S23	contains	{soy sauce,sugar}
+O416	spoon	1
+S23	contains	{water}
+O475	water	1
+S65	in	[spoon]
+M54	pour	0:56	0:59
+O46	bowl	0
+S23	contains	{soy sauce,sugar,water}
+O475	water	1
+S65	in	[bowl]
 //
-O507	bottle	1
-S138	contains	{water}
-M0	open	<Assumed>
-O507	bottle	1
-S138	contains	{water}
-S43	opened
+O416	spoon	1
+S16	clean
+O46	bowl	0
+S23	contains	{soy sauce,sugar,water}
+M46	mix	1:06	1:12
+O46	bowl	0
+S23	contains	{soy mixture}
+O409	soy mixture	0
+S23	contains	{soy sauce,sugar,water}
+S65	in	[bowl]
 //
-O507	bottle	1
-S43	opened
-S138	contains	{water}
-O498	water	1
-S123	in	[bottle]
-O507	spoon	1
-S45	clean
-M40	pour	<Assumed>
-O507	spoon	1
-S138	contains	{water}
-O498	water	1
-S123	in	[spoon]
+O116	cooking pan	1
+S62	heated
+S81	on	[stove]
+O344	plate	1
+S23	contains	{sausage}
+O382	sausage	1
+S14	chopped
+S81	on	[plate]
+O464	turner	1
+S16	clean
+M70	scoop and pour	1:03	1:06
+O116	cooking pan	0
+S23	contains	{sausage}
+S81	on	[stove]
+O382	sausage	1
+S14	chopped
+S81	on	[pan]
 //
-O51	bowl	0
-S138	contains	{soy sauce,sugar}
-O507	spoon	1
-S138	contains	{water}
-O566	water	1
-S123	in	[spoon]
-M40	pour	<0:56-0:59>
-O51	bowl	0
-S138	contains	{soy sauce,sugar,water}
-O566	water	1
-S84	in	[bowl]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{sausage}
+S81	on	[stove]
+O382	sausage	1
+S14	chopped
+S81	on	[pan]
+O464	turner	1
+S16	clean
+M37	fry	1:07	1:25
+O116	cooking pan	0
+S23	contains	{sausage}
+S81	on	[stove]
+O382	sausage	1
+S50	fried
+S81	on	[pan]
 //
-O507	spoon	1
-S23	clean
-O51	bowl	0
-S138	contains	{soy sauce,sugar,water}
-O566	soy sauce	1
-S84	in	[bowl]
-O566	sugar	1
-S43	granulated
-S84	in	[bowl]
-O566	water	1
-S84	in	[bowl]
-M35	mix*	<1:06-1:12>
-O51	bowl	0
-S138	contains	{sauce}
-O497	sauce	0
-S33	mixed
-S138	contains	{soy sauce,sugar,water}
-S84	in	[bowl]
+O308	packet	1
+S23	contains	{corn kernels}
+O121	corn kernels	1
+S53	frozen
+S65	in	[packet]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{corn kernels}
+O121	corn kernels	1
+S65	in	[bowl]
 //
-O144	frying pan	1
-S54	empty
-O515	stove	0
-S167	off (ready)
-M38	pick-and-place	<Assumed>
-O515	stove	0
-S167	off (ready)
-S208	with	[frying pan]
-O144	frying pan	1
-S75	empty
-S197	on	[stove]
+O308	packet	1
+S23	contains	{carrot}
+O71	carrot	1
+S53	frozen
+S65	in	[packet]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{carrot}
+O71	carrot	1
+S65	in	[bowl]
 //
-O515	stove	0
-S167	off (ready)
-S208	with	[frying pan]
-M0	turn on	<Assumed>
-O515	stove	0
-S167	on
-S208	with	[frying pan]
+O46	bowl	1
+S23	contains	{corn kernels}
+O121	corn kernels	1
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{carrot}
+O71	carrot	1
+S65	in	[bowl]
+M54	pour	Assumed	Assumed
+O46	bowl	1
+S23	contains	{corn kernels,carrot}
 //
-O515	stove	0
-S167	on
-S208	with	[frying pan]
-O144	frying pan	1
-S75	empty
-S197	on	[stove]
-M0	preheat	<Assumed>
-O144	frying pan	1
-S75	empty
-S43	hot
-S197	on	[stove]
+O308	packet	1
+S23	contains	{green pea}
+O210	green pea	1
+S53	frozen
+S65	in	[packet]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{green pea}
+O210	green pea	1
+S65	in	[bowl]
 //
-O144	frying pan	1
-S75	empty
-S43	hot
-S197	on	[stove]
-O415	plate	1
-S138	contains	{sausage}
-O466	sausage	1
-S262	raw
-S34	sliced
-S188	on	[plate]
-O552	turner	1
-S23	clean
-M51	scoop and pour	<1:03-1:06>
-O144	frying pan	0
-S43	hot
-S138	contains	{sausage}
-S197	on	[stove]
-O466	sausage	1
-S262	raw
-S34	sliced
-S185	in	[frying pan]
+O46	bowl	1
+S23	contains	{corn kernels,carrot}
+O46	bowl	1
+S23	contains	{green pea}
+O210	green pea	1
+S65	in	[bowl]
+M54	pour	Assumed	Assumed
+O46	bowl	1
+S23	contains	{corn kernels,carrot,green pea}
 //
-O515	stove	0
-S167	on
-S208	with	[frying pan]
-O144	frying pan	0
-S138	contains	{sausage}
-S197	on	[stove]
-O466	sausage	1
-S262	raw
-S34	sliced
-S185	in	[frying pan]
-O552	spatula	1
-S23	clean
-M27	stir and fry	<1:07-1:25>
-O466	sausage	1
-S43	sliced
-S62	cooked
-S185	in	[frying pan]
+O46	bowl	1
+S23	contains	{corn kernels,carrot,green pea}
+O464	turner	1
+S16	clean
+M85	stir	Assumed	Assumed
+O46	bowl	0
+S23	contains	{vegetable mix}
+O467	vegetable mix	0
+S23	contains	{corn kernels,carrot,green pea}
+S65	in	[bowl]
 //
-O51	packet	1
-S138	contains	{corn,carrot,green pea}
-O152	corn	1
-S43	frozen
-S43	grain
-S84	in	[packet]
-O152	carrot	1
-S43	frozen
-S43	choppped
-S84	in	[packet]
-O152	green pea	1
-S43	bean
-S43	frozen
-S84	in	[packet]
-O415	bowl	0
-S43	empty
-M40	pour	<Assumed>
-O51	bowl	1
-S138	contains	{corn,carrot,green pea}
-O152	green pea	1
-S43	bean
-S43	frozen
-S84	in	[bowl]
-O152	carrot	1
-S43	frozen
-S43	choppped
-S84	in	[bowl]
-O152	corn	1
-S43	frozen
-S43	grain
-S84	in	[bowl]
+O116	cooking pan	0
+S23	contains	{sausage}
+S81	on	[stove]
+O46	bowl	0
+S23	contains	{vegetable mix}
+O467	vegetable mix	1
+S23	contains	{corn kernels,carrot,green pea}
+S65	in	[bowl]
+M54	pour	1:32	1:35
+O116	cooking pan	0
+S23	contains	{sausage,vegetable mix}
+S81	on	[stove]
 //
-O144	frying pan	0
-S322	hot
-S135	contains	{sausage}
-S197	on	[stove]
-O51	bowl	1
-S138	contains	{corn,carrot,green pea}
-O152	green pea	1
-S43	bean
-S43	frozen
-S84	in	[bowl]
-O152	carrot	1
-S43	frozen
-S43	choppped
-S84	in	[bowl]
-O152	corn	1
-S43	frozen
-S43	grain
-S84	in	[bowl]
-M40	pour and mix	<1:32-1:40>
-O144	frying pan	0
-S43	hot
-S138	contains	{sausage,corn,green pea,carrot}
-S197	on	[stove]
-O152	green pea	1
-S43	bean
-S43	frozen
-S84	in	[frying pan]
-O152	carrot	1
-S43	frozen
-S43	choppped
-S84	in	[frying pan]
-O152	corn	1
-S43	frozen
-S43	grain
-S84	in	[frying pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{sausage,vegetable mix}
+S81	on	[stove]
+O464	turner	1
+S16	clean
+M16	cook and stir	1:35	1:40
+O116	cooking pan	0
+S23	contains	{sausage,vegetable mix}
+S81	on	[stove]
 //
-O144	frying pan	0
-S43	hot
-S138	contains	{sausage,corn,green pea,carrot}
-S197	on	[stove]
-O507	spoon	1
-S23	clean
-O51	bowl	1
-S138	contains	{white rice}
-O578	white rice	0
-S29	cooked
-S84	in	[bowl]
-O201	spatula	1
-M40	pour and scrape	<1:41-1:47>
-O144	frying pan	0
-S43	hot
-S138	contains	{sausage,corn,green pea,carrot,white rice}
-S197	on	[stove]
-O578	white rice	1
-S29	cooked
-S114	in	[frying pan]
+O116	cooking pan	0
+S23	contains	{sausage,vegetable mix}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+O46	bowl	1
+S23	contains	{rice}
+O487	white rice	0
+S24	cooked
+S65	in	[bowl]
+M54	pour	1:41	1:47
+O116	cooking pan	0
+S23	contains	{sausage,vegetable mix,rice}
+S81	on	[stove]
+O487	white rice	0
+S24	cooked
+S65	in	[pan]
 //
-O144	frying pan	0
-S43	hot
-S138	contains	{sausage,corn,green pea,carrot,white rice}
-S197	on	[stove]
-O51	bowl	1
-S138	contains	{egg white and yolk}
-O201	egg white and yolk	1
-S43	beaten
-S84	in	[bowl]
-M40	pour and scrape	<1:50-1:52>
-O144	frying pan	0
-S43	hot
-S138	contains	{sausage,corn,green pea,carrot,white rice,egg white and yolk}
-S197	on	[stove]
-O201	egg white and yolk	1
-S43	beaten
-S84	in	[frying pan]
+O116	cooking pan	0
+S23	contains	{sausage,vegetable mix,rice}
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{egg white and yolk}
+O163	egg white and yolk	1
+S65	in	[bowl]
+M54	pour	1:50	1:52
+O116	cooking pan	0
+S23	contains	{sausage,vegetable mix,rice}
+S81	on	[stove]
 //
-O144	frying pan	0
-S138	contains	{sausage,corn,green pea,carrot,white rice,egg white and yolk}
-S197	on	[stove]
-O466	sausage	0
-S43	sliced
-S62	cooked
-S185	in	[frying pan]
-O201	egg white and yolk	0
-S43	beaten
-S84	in	[frying pan]
-O578	white rice	0
-S29	cooked
-S114	in	[frying pan]
-O152	green pea	0
-S43	bean
-S43	frozen
-S84	in	[frying pan]
-O152	carrot	0
-S43	frozen
-S43	choppped
-S84	in	[frying pan]
-O152	corn	0
-S43	frozen
-S43	grain
-S84	in	[frying pan]
-O552	spatula	1
-M35	mix	<1:52-2:12>
-O144	frying pan	0
-S43	hot
-S138	contains	{fried rice}
-S197	on	[stove]
-O447	fried rice	1
-S43	mixed
-S138	contains	{sausage,corn,green pea,carrot,white rice,egg white and yolk}
-S114	in	[frying pan]
+O116	cooking pan	0
+S23	contains	{sausage,vegetable mix,rice}
+S81	on	[stove]
+O487	white rice	1
+S24	cooked
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M46	mix	1:52	2:12
+O116	cooking pan	0
+S23	contains	{rice mixture}
+S81	on	[stove]
+O367	rice mixture	1
+S65	in	[pan]
 //
-O144	frying pan	0
-S43	hot
-S138	contains	{fried rice}
-S197	on	[stove]
-O51	bowl	0
-S138	contains	{sauce}
-O497	sauce	0
-S33	mixed
-S138	contains	{soy sauce,sugar,water}
-S84	in	[bowl]
-M40	pour	<2:13-2:15>
-O144	frying pan	0
-S4	hot
-S138	contains	{fried rice,sauce}
-S197	on	[stove]
-O497	sauce	0
-S33	mixed
-S138	contains	{soy sauce,sugar,water}
-S84	in	[frying pan]
+O116	cooking pan	0
+S23	contains	{rice mixture}
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{soy mixture}
+O409	soy mixture	1
+S23	contains	{soy sauce,sugar,water}
+S65	in	[bowl]
+M54	pour	2:13	2:15
+O116	cooking pan	0
+S23	contains	{rice mixture,soy mixture}
+S81	on	[stove]
+O409	soy mixture	1
+S23	contains	{soy sauce,sugar,water}
+S65	in	[pan]
 //
-O144	frying pan	0
-S4	hot
-S138	contains	{rice mixture,soy mixture}
-S197	on	[stove]
-O180	cutting board	0
-S144	contains	{green onion}
-O468	green onion	1
-S21	chopped
-S175	on	[cutting board]
-M38	pick-and-place	<2:15-2:17>
-O180	cutting board	0
-S45	dirty
-O144	frying pan	0
-S43	hot
-S138	contains	{rice mixture,soy mixture,green onion}
-S197	on	[stove]
-O468	green onion	1
-S21	chopped
-S114	in	[frying pan]
+O116	cooking pan	0
+S23	contains	{rice mixture,soy mixture}
+S81	on	[stove]
+O143	cutting board	0
+S23	contains	{scallion}
+O386	scallion	1
+S14	chopped
+S81	on	[cutting board]
+M50	pick-and-place	2:15	2:17
+O143	cutting board	0
+S38	dirty
+O116	cooking pan	0
+S23	contains	{rice mixture,soy mixture,scallion}
+S81	on	[stove]
+O386	scallion	1
+S14	chopped
+S65	in	[pan]
 //
-O43	stove	0
-S43	on
-S43	with	[frying pan]
-O144	frying pan	0
-S138	contains	{rice mixture,soy mixture,green onion}
-S197	on	[stove]
-O468	green onion	0
-S21	chopped
-S114	in	[frying pan]
-O497	sauce	0
-S33	mixed
-S138	contains	{soy sauce,sugar,water}
-S84	in	[frying pan]
-O447	fried rice	0
-S43	mixed
-S138	contains	{sausage,corn,green pea,carrot,white rice,egg white and yolk}
-S114	in	[frying pan]
-O552	spatula	1
-M12	cook and stir	<2:17-2:22>
-O144	frying pan	0
-S43	hot
-S48	contains	{fried rice}
-S197	on	[stove]
-O222	fried rice	0
-S43	mixed
-S138	contains	{sausage,corn,carrot,green pea,white rice,egg,soy sauce,sugar,water,green onion}
-S114	in	[frying pan]
+O116	cooking pan	0
+S23	contains	{rice mixture,soy mixture,scallion}
+S81	on	[stove]
+O464	turner	1
+S16	clean
+M16	cook and stir	2:17	2:22
+O116	cooking pan	0
+S23	contains	{fried rice}
+S81	on	[stove]
+O186	fried rice	0
+S23	contains	{sausage,corn,carrot,green pea,rice,egg,soy sauce,sugar,water,scallion}
+S65	in	[pan]
 //
-O144	frying pan	0
-S43	hot
-S48	contains	{fried rice}
-S197	on	[stove]
-O43	stove	0
-S43	on
-S43	with	[frying pan]
-M0	turn off	<Assumed>
-O144	frying pan	0
-S48	contains	{fried rice}
-S197	on	[stove]
-O43	stove	0
-S43	off
-S43	with	[frying pan]
-//
-O144	frying pan	0
-S48	contains	{fried rice}
-S197	on	[stove]
-O222	fried rice	1
-S43	mixed
-S138	contains	{sausage,corn,carrot,green pea,white rice,egg,soy sauce,sugar,water,green onion}
-S114	in	[frying pan]
-O51	bowl	0
-S54	empty
-O507	spoon	1
-S23	clean
-M40	pour	<2:34-2:41>
-O51	bowl	0
-S48	contains	{fried rice}
-O222	fried rice	1
-S32	mixed
-S138	contains	{sausage,corn,carrot,green pea,white rice,egg,soy sauce,sugar,water,green onion}
-S84	in	[bowl]
-O222	chinese-style fried rice	1	!
-S138	contains	{sausage,corn,carrot,green pea,white rice,egg,soy sauce,sugar,water,green onion}
-S114	in	[frying pan]
+O46	bowl	0
+S41	empty
+O416	spoon	1
+S16	clean
+O116	cooking pan	0
+S23	contains	{fried rice}
+S81	on	[stove]
+O186	fried rice	1
+S23	contains	{sausage,corn,carrot,green pea,rice,egg,soy sauce,sugar,water,scallion}
+S65	in	[pan]
+M54	pour	2:34	2:41
+O46	bowl	0
+S23	contains	{fried rice}
+O186	fried rice	1	19
+S23	contains	{sausage,corn,carrot,green pea,rice,egg,soy sauce,sugar,water,scallion}
+S65	in	[bowl]
 //

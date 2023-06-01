@@ -1,337 +1,331 @@
-O13	cooking pan	0
-S98	empty
-O38	stove	0
-S43	off
-M41	pick-and-place	Assumed	Assumed
-O13	cooking pan	0
-S98	empty
-S43	on	[stove]
-O38	stove	0
-S43	off
-S43	with	[pan]
+O116	cooking pan	0
+S41	empty
+O425	stove	0
+S78	off
+M50	pick-and-place	Assumed	Assumed
+O116	cooking pan	0
+S41	empty
+S81	on	[stove]
+O425	stove	0
+S78	off
+S142	with	[pan]
 //
-O13	cooking pan	0
-S98	empty
-S43	on	[stove]
-O38	stove	0
-S43	off
-S233	with	[pan]
+O116	cooking pan	0
+S41	empty
+S81	on	[stove]
+O425	stove	0
+S78	off
+S142	with	[pan]
 M41	heat	Assumed	Assumed
-O38	stove	0
-S43	on
-S233	with	[pan]
-O13	cooking pan	0
-S139	heated
-S43	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
 //
-O13	cooking pan	0
-S139	heated
-S43	on	[stove]
-O82	bacon	1
-S313	uncooked
-M0	pick-and-place	0:15	0:25
-O13	cooking pan	0
-S182	contains	{bacon}
-S43	on	[stove]
-O82	bacon	1
-S313	uncooked
-S164	in	[pan]
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+O8	bacon	1
+S133	uncooked
+M50	pick-and-place	0:15	0:25
+O116	cooking pan	0
+S23	contains	{bacon}
+S81	on	[stove]
+O8	bacon	1
+S133	uncooked
+S65	in	[pan]
 //
-O38	stove	0
-S43	on
-S233	with	[pan]
-O13	cooking pan	0
-S182	contains	{bacon}
-S43	on	[stove]
-O82	bacon	0
-S313	uncooked
-S164	in	[pan]
-M40	cook	Assumed	Assumed
-O82	bacon	0
-S109	fried
-S164	in	[pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{bacon}
+S81	on	[stove]
+O8	bacon	0
+S133	uncooked
+S65	in	[pan]
+M14	cook	Assumed	Assumed
+O8	bacon	0
+S50	fried
+S65	in	[pan]
 //
-O13	cooking pan	0
-S182	contains	{bacon}
-S43	on	[stove]
-O82	bacon	1
-S109	fried
-S164	in	[pan]
-O15	plate	0
-S98	empty
-O6	fork	1
-S51	clean
-M0	pick-and-place	0:26	0:33
-O13	cooking pan	0
-S94	dirty
-O15	plate	0
-S188	contains	{bacon}
-O82	bacon	1
-S109	fried
-S164	on	[plate]
+O116	cooking pan	0
+S23	contains	{bacon}
+S81	on	[stove]
+O8	bacon	1
+S50	fried
+S65	in	[pan]
+O344	plate	0
+S41	empty
+O182	fork	1
+S16	clean
+M50	pick-and-place	0:26	0:33
+O116	cooking pan	0
+S38	dirty
+O344	plate	0
+S23	contains	{bacon}
+O8	bacon	1
+S50	fried
+S81	on	[plate]
 //
-O83	cutting board	0
-S98	empty
-O51	tomato	1
-S323	whole
-M0	pick-and-place	Assumed	Assumed
-O83	cutting board	0
-S188	contains	{tomato}
-O51	tomato	1
-S323	whole
-S43	on	[cutting board]
+O143	cutting board	0
+S41	empty
+O448	tomato	1
+S141	whole
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{tomato}
+O448	tomato	1
+S141	whole
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{tomato}
-O51	tomato	0
-S323	whole
-S43	on	[cutting board]
-O11	knife	1
-S51	clean
-M8	cut	0:35	0:39
-O51	tomato	0
-S79	cored
-S43	on	[cutting board]
+O143	cutting board	0
+S23	contains	{tomato}
+O448	tomato	0
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	0:35	0:39
+O448	tomato	0
+S25	cored
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{tomato}
-O51	tomato	0
-S79	cored
-S43	on	[cutting board]
-O11	knife	1
-S51	clean
-M10	slice	0:40	0:52
-O51	tomato	0
-S290	sliced
-S43	on	[cutting board]
+O143	cutting board	0
+S23	contains	{tomato}
+O448	tomato	0
+S25	cored
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M79	slice	0:40	0:52
+O448	tomato	0
+S117	sliced
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S98	empty
-O12	bread	1
-S308	toasted
-M0	pick-and-place	0:53	0:55
-O83	cutting board	0
-S188	contains	{bread}
-O12	bread	1
-S308	toasted
-S43	on	[cutting board]
+O143	cutting board	0
+S41	empty
+O48	bread	1
+S130	toasted
+M50	pick-and-place	0:53	0:55
+O143	cutting board	0
+S23	contains	{bread}
+O48	bread	1
+S130	toasted
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{bread}
-O11	knife	1
-S51	clean
-O76	mayonnaise	0
-S151	in	[jar]
-O12	bread	0
-S308	toasted
-S43	on	[cutting board]
-M16	spread	0:58	1:03
-O12	bread	0
-S188	contains	{mayonnaise}
-S43	on	[cutting board]
-O76	mayonnaise	1
-S151	on	[bread]
+O143	cutting board	0
+S23	contains	{bread}
+O240	knife	1
+S16	clean
+O269	mayonnaise	0
+S65	in	[jar]
+O48	bread	0
+S130	toasted
+S81	on	[cutting board]
+M82	spread	0:58	1:03
+O48	bread	0
+S23	contains	{mayonnaise}
+S81	on	[cutting board]
+O269	mayonnaise	1
+S81	on	[bread]
 //
-O83	cutting board	0
-S188	contains	{bread}
-O12	bread	0
-S188	contains	{mayonnaise}
-S43	on	[cutting board]
-O85	ham	1
-S290	sliced
-M0	pick-and-place	1:05	1:16
-O12	bread	0
-S188	contains	{mayonnaise,ham}
-S43	on	[cutting board]
-O85	ham	1
-S290	sliced
-S43	on	[bread]
+O143	cutting board	0
+S23	contains	{bread}
+O48	bread	0
+S23	contains	{mayonnaise}
+S81	on	[cutting board]
+O222	ham	1
+S117	sliced
+M50	pick-and-place	1:05	1:16
+O48	bread	0
+S23	contains	{mayonnaise,ham}
+S81	on	[cutting board]
+O222	ham	1
+S117	sliced
+S81	on	[bread]
 //
-O83	cutting board	0
-S188	contains	{bread}
-O12	bread	0
-S188	contains	{mayonnaise,ham}
-S43	on	[cutting board]
-O56	turkey	1
-S290	sliced
-M0	pick-and-place	1:17	1:22
-O12	bread	0
-S188	contains	{mayonnaise,ham,turkey}
-S43	on	[cutting board]
-O56	turkey	1
-S290	sliced
-S43	on	[bread]
+O143	cutting board	0
+S23	contains	{bread}
+O48	bread	0
+S23	contains	{mayonnaise,ham}
+S81	on	[cutting board]
+O462	turkey	1
+S117	sliced
+M50	pick-and-place	1:17	1:22
+O48	bread	0
+S23	contains	{mayonnaise,ham,turkey}
+S81	on	[cutting board]
+O462	turkey	1
+S117	sliced
+S81	on	[bread]
 //
-O83	cutting board	0
-S188	contains	{bread}
-O12	bread	0
-S188	contains	{mayonnaise,ham,turkey}
-S43	on	[cutting board]
-O27	cheese	1
-S290	sliced
-M0	pick-and-place	1:22	1:25
-O12	bread	0
-S188	contains	{mayonnaise,ham,turkey,cheese}
-S43	on	[cutting board]
-O27	cheese	1
-S290	sliced
-S43	on	[bread]
+O143	cutting board	0
+S23	contains	{bread}
+O48	bread	0
+S23	contains	{mayonnaise,ham,turkey}
+S81	on	[cutting board]
+O78	cheese	1
+S117	sliced
+M50	pick-and-place	1:22	1:25
+O48	bread	0
+S23	contains	{mayonnaise,ham,turkey,cheese}
+S81	on	[cutting board]
+O78	cheese	1
+S117	sliced
+S81	on	[bread]
 //
-O83	cutting board	0
-S188	contains	{bread}
-O12	bread	0
-S188	contains	{mayonnaise,ham,turkey,cheese}
-S43	on	[cutting board]
-O12	bread	1
-S188	contains	{mayonnaise}
-S43	on	[cutting board]
-M0	pick-and-place	1:36	1:39
-O83	cutting board	0
-S188	contains	{sandwich}
-O59	sandwich	1
-S443	contains	{mayonnaise,ham,turkey,cheese,bread}
-S172	incomplete
-S43	on	[cutting board]
+O143	cutting board	0
+S23	contains	{bread}
+O48	bread	0
+S23	contains	{mayonnaise,ham,turkey,cheese}
+S81	on	[cutting board]
+O48	bread	1
+S23	contains	{mayonnaise}
+S81	on	[cutting board]
+M50	pick-and-place	1:36	1:39
+O143	cutting board	0
+S23	contains	{sandwich}
+O379	sandwich	1
+S23	contains	{mayonnaise,ham,turkey,cheese,bread}
+S66	incomplete
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{sandwich}
-O59	sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread}
-S172	incomplete
-S43	on	[cutting board]
-O15	plate	0
-S188	contains	{bacon}
-O82	bacon	1
-S109	fried
-S43	on	[plate]
-M0	pick-and-place	1:51	1:55
-O59	sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread}
-S43	contains	{bacon}
-S172	incomplete
-S43	on	[cutting board]
-O82	bacon	1
-S109	fried
-S43	on	[bread]
+O143	cutting board	0
+S23	contains	{sandwich}
+O379	sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread}
+S66	incomplete
+S81	on	[cutting board]
+O344	plate	0
+S23	contains	{bacon}
+O8	bacon	1
+S50	fried
+S81	on	[plate]
+M50	pick-and-place	1:51	1:55
+O379	sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon}
+S66	incomplete
+S81	on	[cutting board]
+O8	bacon	1
+S50	fried
+S81	on	[bread]
 //
-O83	cutting board	0
-S188	contains	{sandwich}
-O59	sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread}
-S43	contains	{bacon}
-S172	incomplete
-S43	on	[cutting board]
-O87	lettuce	1
-S193	leaves
-M0	pick-and-place	1:56	2:00
-O59	sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread}
-S43	contains	{bacon,lettuce}
-S172	incomplete
-S43	on	[cutting board]
-O87	lettuce	1
-S193	on	[bread]
+O143	cutting board	0
+S23	contains	{sandwich}
+O379	sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon}
+S66	incomplete
+S81	on	[cutting board]
+O254	lettuce	1
+S69	leaf
+M50	pick-and-place	1:56	2:00
+O379	sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce}
+S66	incomplete
+S81	on	[cutting board]
+O254	lettuce	1
+S81	on	[bread]
 //
-O83	cutting board	0
-S188	contains	{sandwich}
-O59	sandwich	1
-S443	contains	{mayonnaise,ham,turkey,cheese,bread}
-S43	contains	{bacon,lettuce}
-S172	incomplete
-S43	on	[cutting board]
-O51	tomato	1
-S290	sliced
-S43	on	[cutting board]
-M0	pick-and-place	2:02	2:05
-O59	sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread}
-S43	contains	{bacon,lettuce,tomato}
-S172	incomplete
-S43	on	[cutting board]
-O51	tomato	1
-S290	sliced
-S43	on	[bread]
+O143	cutting board	0
+S23	contains	{sandwich}
+O379	sandwich	1
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce}
+S66	incomplete
+S81	on	[cutting board]
+O448	tomato	1
+S117	sliced
+S81	on	[cutting board]
+M50	pick-and-place	2:02	2:05
+O379	sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
+S66	incomplete
+S81	on	[cutting board]
+O448	tomato	1
+S117	sliced
+S81	on	[bread]
 //
-O11	knife	1
-S51	clean
-O76	mayonnaise	0
-S151	in	[container]
-O12	bread	0
-S308	toasted
-M16	spread	2:09	2:12
-O12	bread	0
-S188	contains	{mayonnaise}
+O240	knife	1
+S16	clean
+O269	mayonnaise	0
+S65	in	[container]
+O48	bread	0
+S130	toasted
+M82	spread	2:09	2:12
+O48	bread	0
+S23	contains	{mayonnaise}
 //
-O83	cutting board	0
-S188	contains	{sandwich}
-O59	sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread}
-S43	contains	{bacon,lettuce,tomato}
-S172	incomplete
-S43	on	[cutting board]
-O12	bread	1
-S188	contains	{mayonnaise}
-M0	pick-and-place	2:15	2:19
-O59	club sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
-S43	on	[cutting board]
+O143	cutting board	0
+S23	contains	{sandwich}
+O379	sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
+S66	incomplete
+S81	on	[cutting board]
+O48	bread	1
+S23	contains	{mayonnaise}
+M50	pick-and-place	2:15	2:19
+O104	club sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
+S81	on	[cutting board]
 //
-O59	club sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
-S43	on	[cutting board]
-O86	toothpick	1
-S51	clean
-M44	insert	2:23	2:37
-O86	toothpick	1
-S166	in	[sandwich]
-O59	club sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
-S43	with	[toothpick]
-S43	on	[cutting board]
+O104	club sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
+S81	on	[cutting board]
+O453	toothpick	1
+S16	clean
+M42	insert	2:23	2:37
+O453	toothpick	1
+S65	in	[sandwich]
+O104	club sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
+S131	toothpick inserted
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{sandwich}
-O59	club sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
-S43	with	[toothpick]
-S43	on	[cutting board]
-O11	knife	1
-S51	clean
-M8	cut	2:40	2:49
-O59	club sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
-S43	quartered
-S43	with	[toothpick]
-S43	on	[cutting board]
+O143	cutting board	0
+S23	contains	{sandwich}
+O104	club sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
+S131	toothpick inserted
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	2:40	2:49
+O104	club sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
+S99	quartered
+S131	toothpick inserted
+S81	on	[cutting board]
 //
-O15	plate	0
-S98	empty
-O89	fries	1
-S61	cooked
-M0	pick-and-place	2:51	2:56
-O15	plate	0
-S188	contains	{fries}
-O89	fries	1
-S61	cooked
-S43	on	[plate]
+O344	plate	0
+S41	empty
+O183	french fries	1
+S24	cooked
+M50	pick-and-place	2:51	2:56
+O344	plate	0
+S23	contains	{french fries}
+O183	french fries	1
+S24	cooked
+S81	on	[plate]
 //
-O83	cutting board	0
-S188	contains	{sandwich}
-O15	plate	0
-S188	contains	{fries}
-O59	club sandwich	0
-S443	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
-S43	quartered
-S43	with	[toothpick]
-S43	on	[cutting board]
-M0	pick-and-place	2:58	3:07
-O15	plate	0
-S188	contains	{club sandwich,fries}
-O59	club sandwich	0	!
-S443	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
-S43	quartered
-S43	with	[toothpick]
-S43	on	[plate]
-O83	cutting board	0
-S94	dirty
+O143	cutting board	0
+S23	contains	{sandwich}
+O344	plate	0
+S23	contains	{french fries}
+O104	club sandwich	0
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
+S99	quartered
+S131	toothpick inserted
+S81	on	[cutting board]
+M50	pick-and-place	2:58	3:07
+O344	plate	0
+S23	contains	{club sandwich,french fries}
+O104	club sandwich	0	4
+S23	contains	{mayonnaise,ham,turkey,cheese,bread,bacon,lettuce,tomato}
+S99	quartered
+S131	toothpick inserted
+S81	on	[plate]
+O143	cutting board	0
+S38	dirty
 //

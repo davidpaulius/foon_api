@@ -1,211 +1,229 @@
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/EPIC-P12_01-salad.MP4
+O143	cutting board	0
+S41	empty
+O136	cucumber	0
+S60	halved
+M50	pick-and-place	1:20	1:28
+O143	cutting board	0
+S23	contains	{cucumber}
+O136	cucumber	1
+S60	halved
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S98	empty
-O205	cucumber	0
-S144	halved
-S23	unpeeled
-M0	pick-and-place	1:20	1:28
-O83	cutting board	0
-S201	contains	{cucumber}
-O205	cucumber	1
-S144	halved
-S23	unpeeled
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{cucumber}
+O136	cucumber	0
+S60	halved
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+M79	slice	1:30	1:48
+O240	knife	1
+S38	dirty
+O136	cucumber	0
+S117	sliced
+S81	on	[cutting board]
 //
-O205	cucumber	0
-S144	halved
-S23	unpeeled
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-M10	slice	1:30	1:48
-O205	cucumber	0
-S311	sliced
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{cucumber}
+O136	cucumber	0
+S117	sliced
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+M10	chop	1:50	1:56
+O240	knife	1
+S38	dirty
+O136	cucumber	0
+S14	chopped
+S81	on	[cutting board]
 //
-O205	cucumber	0
-S311	sliced
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-M5	chop	1:50	1:56
-O205	cucumber	0
-S57	chopped
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{cucumber}
+O136	cucumber	0
+S14	chopped
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+O240	knife	0
+S16	clean
+M71	scrape	2:06	2:09
+O240	knife	1
+S38	dirty
+O46	bowl	0
+S23	contains	{cucumber}
+O136	cucumber	1
+S14	chopped
+S65	in	[bowl]
+O143	cutting board	0
+S38	dirty
 //
-O83	cutting board	1
-S201	contains	{cucumber}
-O205	cucumber	1
-S57	chopped
-S235	on	[cutting board]
-O2	bowl	0
-S98	empty
-O11	knife	1
-S58	clean
-M18	pour and scrape	2:06	2:09
-O2	bowl	0
-S195	contains	{cucumber}
-O205	cucumber	1
-S57	chopped
-S160	in	[bowl]
-O83	cutting board	0
-S43	empty
-S98	dirty
+O143	cutting board	0
+S41	empty
+O3	apple	0
+S141	whole
+M50	pick-and-place	2:28	2:30
+O3	apple	1
+S141	whole
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{apple}
 //
-O83	cutting board	0
-S98	empty
-O201	apple	0
-S349	whole
-S43	unpeeled
-M0	pick-and-place	2:28	2:30
-O83	cutting board	0
-S201	contains	{apple}
-O201	apple	1
-S349	whole
-S43	unpeeled
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{apple}
+O3	apple	0
+S141	whole
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+M79	slice	2:30	2:32
+O240	knife	1
+S38	dirty
+O3	apple	0
+S60	halved
+S81	on	[cutting board]
 //
-O201	apple	0
-S349	whole
-S43	unpeeled
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-M10	slice	2:30	2:32
-O201	apple	0
-S144	halved
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{apple}
+O3	apple	0
+S60	halved
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+M10	chop	2:35	3:10
+O240	knife	1
+S38	dirty
+O3	apple	0
+S14	chopped
+S81	on	[cutting board]
 //
-O201	apple	0
-S144	halved
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-M5	chop	2:35	3:10
-O201	apple	0
-S57	chopped
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{apple}
+O3	apple	0
+S14	chopped
+S81	on	[cutting board]
+O46	bowl	0
+S23	contains	{cucumber}
+O240	knife	0
+S16	clean
+M71	scrape	3:11	3:16
+O240	knife	1
+S38	dirty
+O46	bowl	0
+S23	contains	{cucumber,apple}
+O3	apple	1
+S14	chopped
+S65	in	[bowl]
+O143	cutting board	0
+S38	dirty
 //
-O83	cutting board	0
-S201	contains	{apple}
-O201	apple	0
-S57	chopped
-S235	on	[cutting board]
-O2	bowl	0
-S195	contains	{cucumber}
-O11	knife	0
-S58	clean
-M18	pour and scrape	3:11	3:16
-O2	bowl	0
-S195	contains	{cucumber,apple}
-O201	apple	1
-S57	chopped
-S160	in	[bowl]
-O83	cutting board	0
-S349	empty
-S98	dirty
+O396	shaker	1
+S23	contains	{salt}
+O376	salt	0
+S55	granulated
+S65	in	[shaker]
+O46	bowl	0
+S23	contains	{cucumber,apple}
+M73	shake	3:25	3:30
+O46	bowl	0
+S23	contains	{cucumber,apple,salt}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
 //
-O180	shaker	1
-S195	contains	{salt}
-O18	salt	0
-S144	granulated
-S180	in	[shaker]
-O2	bowl	0
-S195	contains	{cucumber,apple}
-M12	shake	3:25	3:30
-O2	bowl	0
-S195	contains	{cucumber,apple,salt}
-O18	salt	1
-S144	granulated
-S160	in	[bowl]
+O396	shaker	1
+S23	contains	{black pepper}
+O34	black pepper	0
+S58	ground
+S65	in	[shaker]
+O46	bowl	0
+S23	contains	{cucumber,apple,salt}
+M73	shake	3:40	3:43
+O46	bowl	0
+S23	contains	{cucumber,apple,salt,black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
 //
-O180	shaker	1
-S195	contains	{black pepper}
-O19	black pepper	0
-S311	ground
-S180	in	[shaker]
-O2	bowl	0
-S195	contains	{cucumber,apple,salt}
-M12	shake	3:40	3:43
-O2	bowl	0
-S195	contains	{cucumber,apple,salt,black pepper}
-O19	black pepper	1
-S311	ground
-S160	in	[bowl]
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+O46	bowl	0
+S23	contains	{cucumber,apple,salt,black pepper}
+M54	pour	3:50	3:56
+O46	bowl	0
+S23	contains	{cucumber,apple,salt,black pepper,olive oil}
+O296	olive oil	0
+S65	in	[bowl]
 //
-O108	bottle	1
-S195	contains	{olive oil}
-O17	olive oil	1
-S43	liquid
-S159	in	[bottle]
-O2	bowl	0
-S195	contains	{cucumber,apple,salt,black pepper}
-M4	pour	3:50	3:56
-O2	bowl	0
-S195	contains	{cucumber,apple,salt,black pepper,olive oil}
-O17	olive oil	0
-S43	liquid
-S160	in	[bowl]
+O240	knife	1
+S16	clean
+O308	packet	0
+S106	sealed
+S23	contains	{mozzarella}
+O280	mozzarella	0
+S65	in	[packet]
+M22	cut open	4:06	4:14
+O240	knife	1
+S38	dirty
+O308	packet	0
+S23	contains	{mozzarella}
+O280	mozzarella	0
+S6	block
 //
-O385	packet	0
-S195	contains	{mozzarella}
-O371	mozzarella	1
-S43	whole
-S21	block
-S349	in	[packet]
-O83	cutting board	0
-S98	empty
-M0	pick-and-place	4:17	4:20
-O83	cutting board	0
-S201	contains	{mozzarella}
-O371	mozzarella	1
-S43	whole
-S21	block
-S235	on	[cutting board]
+O280	mozzarella	0
+S6	block
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	4:17	4:20
+O280	mozzarella	1
+S6	block
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{mozzarella}
 //
-O83	cutting board	0
-S201	contains	{mozzarella}
-O371	mozzarella	0
-S43	whole
-S21	block
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-M10	slice	4:21	4:32
-O371	mozzarella	0
-S311	sliced
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{mozzarella}
+O280	mozzarella	0
+S6	block
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+M79	slice	4:21	4:32
+O240	knife	1
+S38	dirty
+O280	mozzarella	0
+S117	sliced
+S81	on	[cutting board]
 //
-O2	bowl	0
-S195	contains	{cucumber,apple,salt,black pepper,olive oil}
-O83	cutting board	0
-S201	contains	{mozzarella}
-O371	mozzarella	1
-S311	sliced
-S235	on	[cutting board]
-M0	pick-and-place	4:33	4:40
-O2	bowl	0
-S195	contains	{cucumber,apple,salt,black pepper,olive oil,mozzarella}
-O371	mozzarella	1
-S311	sliced
-S160	in	[bowl]
-O83	cutting board	0
-S43	empty
-S201	dirty
+O143	cutting board	0
+S23	contains	{mozzarella}
+O280	mozzarella	1
+S117	sliced
+S81	on	[cutting board]
+O46	bowl	0
+S23	contains	{cucumber,apple,salt,black pepper,olive oil}
+M50	pick-and-place	4:33	4:40
+O46	bowl	0
+S23	contains	{cucumber,apple,salt,black pepper,olive oil,mozzarella}
+O280	mozzarella	1
+S117	sliced
+S65	in	[bowl]
+O143	cutting board	0
+S38	dirty
 //
-O2	bowl	0
-S195	contains	{cucumber,apple,salt,black pepper,olive oil,mozzarella}
-O108	bottle	1
-S195	contains	{salad dressing}
-O241	salad dressing	0
-S43	creamy
-S159	in	[bottle]
-M4	pour	4:47	4:49
-O125	salad	0	!
-S144	contains	{cucumber,apple,salt,black pepper,olive oil,mozzarella,dressing}
-S160	in	[bowl]
-O241	salad dressing	0
-S43	creamy
-S160	in	[bowl]
+O45	bottle	1
+S23	contains	{salad dressing}
+O373	salad dressing	0
+S65	in	[bottle]
+O46	bowl	0
+S23	contains	{cucumber,apple,salt,black pepper,olive oil,mozzarella}
+M54	pour	4:47	4:49
+O46	bowl	0
+S23	contains	{salad}
+O371	salad	0	15
+S23	contains	{cucumber,apple,salt,black pepper,olive oil,mozzarella,dressing}
+S65	in	[bowl]
+O373	salad dressing	0
+S65	in	[bowl]
 //

@@ -1,622 +1,527 @@
-# Source:	https://www.youtube.com/watch?v=ei89dSSk-rc
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/0075-pesto_linguine.mp4
+O425	stove	0
+S81	on
+O346	pot	1
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O346	pot	1
+S62	heated
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pot]
 //
-O38	stove	0
-S218	on
-O13	pot	1
-S98	empty
-M0	pick-and-place	Assumed	Assumed
-O13	pot	1
-S98	empty
-S43	on	[stove]
-O38	stove	0
-S43	on
-S232	with	[pot]
+O170	faucet	0
+S81	on
+O475	water	0
+S52	from faucet
+O270	measuring cup	1
+S41	empty
+M31	fill	Assumed	Assumed
+O270	measuring cup	1
+S23	contains	{water}
+O475	water	1
+S65	in	[measuring cup]
 //
-O13	pot	0
-S98	empty
-S43	on	[stove]
-O38	stove	0
-S43	on
-S232	with	[pot]
-M0	heat	Assumed	Assumed
-O13	pot	0
-S98	empty
-S43	hot
-S43	on	[stove]
+O346	pot	0
+S62	heated
+S81	on	[stove]
+O270	measuring cup	1
+S23	contains	{water}
+O475	water	1
+S65	in	[measuring cup]
+M54	pour	Assumed	Assumed
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+O475	water	1
+S65	in	[pot]
 //
-O32	faucet	0
-S43	on
-O32	water	0
-S43	liquid
-S43	from	[faucet]
-O32	measuring cup	1
-S43	empty
-M4	fill	Assumed	Assumed
-O32	measuring cup	1
-S43	contains	{water}
-O32	water	1
-S43	liquid
-S43	in	[measuring cup]
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+O396	shaker	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[shaker]
+M83	sprinkle	Assumed	Assumed
+O346	pot	0
+S23	contains	{water,salt}
+S81	on	[stove]
+O376	salt	1
+S55	granulated
+S65	in	[pot]
 //
-O13	pot	0
-S141	hot
-S43	empty
-S43	on	[stove]
-O32	measuring cup	1
-S43	contains	{water}
-O32	water	1
-S43	liquid
-S43	in	[measuring cup]
-M0	pour	Assumed	Assumed
-O13	pot	0
-S43	hot
-S43	contains	{water}
-S43	on	[stove]
-O32	water	1
-S43	liquid
-S43	in	[pot]
+O346	pot	0
+S23	contains	{water,salt}
+S81	on	[stove]
+O376	salt	1
+S55	granulated
+S65	in	[pot]
+O475	water	1
+S65	in	[pot]
+O416	spoon	1
+S16	clean
+M85	stir	Assumed	Assumed
+O346	pot	0
+S23	contains	{saltwater}
+S81	on	[stove]
+O378	saltwater	1
+S65	in	[pot]
 //
-O38	stove	0
-S43	on
-S232	with	[pot]
-O13	pot	0
-S43	hot
-S43	contains	{water}
-S43	on	[stove]
-O32	water	0
-S43	liquid
-S43	in	[pot]
-M0	boil	Assumed	Assumed
-O32	water	0
-S43	liquid
-S43	boiling
-S43	in	[pot]
+O346	pot	0
+S23	contains	{saltwater}
+S81	on	[stove]
+O258	linguine	1
+S133	uncooked
+S81	on	[plate]
+M50	pick-and-place	Assumed	Assumed
+O346	pot	0
+S23	contains	{saltwater,linguine}
+S81	on	[stove]
+O258	linguine	1
+S133	uncooked
+S65	in	[pot]
 //
-O13	pot	0
-S43	contains	{water}
-S43	on	[stove]
-O4	shaker	1
-S43	contains	{salt}
-O4	salt	1
-S43	granulated
-S43	in	[shaker]
-M4	sprinkle	Assumed	Assumed
-O13	pot	0
-S43	contains	{water,salt}
-S43	on	[stove]
-O4	salt	1
-S43	granulated
-S43	in	[pot]
+O425	stove	0
+S81	on
+S142	with	[pot]
+O346	pot	0
+S23	contains	{saltwater,linguine}
+S81	on	[stove]
+O258	linguine	1
+S133	uncooked
+S65	in	[pot]
+O416	spoon	1
+S16	clean
+M16	cook and stir	Assumed	Assumed
+O346	pot	0
+S23	contains	{saltwater,linguine}
+S81	on	[stove]
+O258	linguine	1
+S24	cooked
+S65	in	[pot]
 //
-O13	pot	0
-S43	contains	{water,salt}
-S43	on	[stove]
-O4	linguine	1
-S43	uncooked
-S43	on	[plate]
-M0	pick-and-place	Assumed	Assumed
-O13	pot	0
-S3	hot
-S43	contains	{water,salt,linguine}
-S43	on	[stove]
-O4	linguine	1
-S43	uncooked
-S43	in	[pot]
+O346	pot	0
+S23	contains	{saltwater,linguine}
+S81	on	[stove]
+O258	linguine	1
+S24	cooked
+S65	in	[pot]
+O426	strainer	1
+S16	clean
+S84	over sink
+M54	pour	Assumed	Assumed
+O426	strainer	1
+S23	contains	{linguine}
+O258	linguine	1
+S24	cooked
+S65	in	[strainer]
+O346	pot	0
+S38	dirty
 //
-O4	stove	0
-S43	on
-S43	with	[pot]
-O13	pot	0
-S43	hot
-S43	contains	{water,salt,linguine}
-S43	on	[stove]
-O4	linguine	1
-S43	uncooked
-S43	in	[pot]
-O32	water	0
-S43	liquid
-S43	boiling
-S43	in	[pot]
-O4	spoon	1
-S43	clean
-M0	cook and stir	Assumed	Assumed
-O4	linguine	1
-S43	cooked
-S43	in	[pot]
+O346	pot	0
+S41	empty
+O426	strainer	1
+S23	contains	{linguine}
+O258	linguine	1
+S24	cooked
+S65	in	[strainer]
+M54	pour	Assumed	Assumed
+O346	pot	0
+S23	contains	{linguine}
+O258	linguine	1
+S24	cooked
+S65	in	[pot]
+O426	strainer	1
+S38	dirty
 //
-O13	pot	0
-S44	hot
-S43	contains	{water,salt,linguine}
-S43	on	[stove]
-O4	linguine	1
-S43	cooked
-S43	in	[pot]
-O4	strainer	1
-S43	clean
-S43	over	[sink]
-M0	pour	Assumed	Assumed
-O4	strainer	1
-S43	contains	{linguine}
-S43	over	[sink]
-O4	linguine	1
-S43	cooked
-S43	in	[strainer]
-O13	pot	0
-S43	empty
-S43	dirty
+O38	blender jar	0
+S41	empty
+S0	attached to	[blender]
+O46	bowl	1
+S23	contains	{basil}
+O18	basil	1
+S137	washed
+S65	in	[bowl]
+M54	pour	Assumed	Assumed
+O46	bowl	1
+S38	dirty
+O38	blender jar	0
+S23	contains	{basil}
+S0	attached to	[blender]
+O18	basil	1
+S137	washed
+S65	in	[blender jar]
 //
-O3	pot	0
-S43	empty
-O4	strainer	1
-S43	contains	{linguine}
-O4	linguine	1
-S43	cooked
-S43	in	[strainer]
-M0	pour	Assumed	Assumed
-O3	pot	0
-S43	contains	{linguine}
-O4	linguine	1
-S43	cooked
-S43	in	[pot]
-O4	strainer	1
-S43	dirty
+O38	blender jar	0
+S23	contains	{basil}
+S0	attached to	[blender]
+O46	bowl	1
+S23	contains	{pine nut}
+O335	pine nut	1
+S130	toasted
+S65	in	[bowl]
+M54	pour	1:40	1:41
+O38	blender jar	0
+S23	contains	{basil,pine nut}
+S0	attached to	[blender]
+O46	bowl	1
+S38	dirty
+O335	pine nut	1
+S130	toasted
+S65	in	[blender jar]
 //
-O60	food processor bowl	0
-S107	empty
-S349	attached to	[food processor]
-O2	bowl	1
-S195	contains	{basil}
-O3	basil	1
-S144	washed
-S4	leaf
-S160	in	[bowl]
-M18	pour	Assumed	Assumed
-O2	bowl	1
-S102	dirty
-O60	food processor bowl	0
-S195	contains	{basil}
-S349	attached to	[food processor]
-O3	basil	1
-S144	washed
-S4	leaf
-S157	in	[food processor bowl]
+O38	blender jar	0
+S23	contains	{basil,pine nut}
+S0	attached to	[blender]
+O192	garlic	1
+S91	peeled
+S81	on	[surface]
+M50	pick-and-place	1:44	1:45
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic}
+S0	attached to	[blender]
+O192	garlic	1
+S91	peeled
+S65	in	[blender jar]
 //
-O60	food processor bowl	0
-S195	contains	{basil}
-S349	attached to	[food processor]
-O2	bowl	1
-S195	contains	{pine nut}
-O0	pine nut	1
-S43	whole nut
-S43	toasted
-S160	in	[bowl]
-M4	pour	1:40	1:41
-O60	food processor bowl	0
-S195	contains	{basil,pine nut}
-S349	attached to	[food processor]
-O2	bowl	1
-S102	dirty
-O0	pine nut	1
-S4	whole nut
-S43	toasted
-S157	in	[food processor bowl]
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic}
+S0	attached to	[blender]
+O216	grinder	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S65	in	[grinder]
+M40	grind	1:48	1:50
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper}
+S0	attached to	[blender]
+O34	black pepper	1
+S58	ground
+S65	in	[blender jar]
 //
-O60	food processor bowl	0
-S195	contains	{basil,pine nut}
-S349	attached to	[food processor]
-O4	garlic	1
-S43	clove
-S43	peeled
-S43	on	[surface]
-M4	pick-and-place	1:44	1:45
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic}
-S349	attached to	[food processor]
-O4	garlic	1
-S43	clove
-S43	peeled
-S157	in	[food processor bowl]
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper}
+S0	attached to	[blender]
+O114	container	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[container]
+M83	sprinkle	1:52	1:54
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt}
+S0	attached to	[blender]
+O376	salt	1
+S55	granulated
+S65	in	[blender jar]
 //
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic}
-S349	attached to	[food processor]
-O237	pepper mill	1
-S195	contains	{black pepper}
-O55	black pepper	1
-S43	whole
-S43	peppercorn
-S356	in	[pepper mill]
-M4	grind	1:48	1:50
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper}
-S349	attached to	[food processor]
-O55	black pepper	1
-S356	ground
-S157	in	[food processor bowl]
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper}
+S0	attached to	[blender]
+O114	container	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[container]
+M83	sprinkle	1:52	1:54
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt}
+S0	attached to	[blender]
+O376	salt	1
+S55	granulated
+S65	in	[blender jar]
 //
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper}
-S349	attached to	[food processor]
-O2	container	1
-S195	contains	{salt}
-O0	salt	1
-S43	granulated
-S160	in	[container]
-M4	sprinkle	1:52	1:54
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt}
-S349	attached to	[food processor]
-O0	salt	1
-S43	granulated
-S157	in	[food processor bowl]
+O203	grater	1
+S16	clean
+O244	lemon	1
+S141	whole
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt}
+S0	attached to	[blender]
+M39	grate	1:57	2:02
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S0	attached to	[blender]
+O249	lemon zest	1
+S65	in	[blender jar]
+O244	lemon	1
+S144	zested
+S81	on	[surface]
 //
-O32	grater	1
-S43	clean
-O4	lemon	1
-S43	whole
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt}
-S349	attached to	[food processor]
-M4	grate	1:57	2:02
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
-S349	attached to	[food processor]
-O4	lemon	1
-S43	grated
-S43	in	[food processor bowl]
-O4	lemon	1
-S43	whole
-S43	zested
+O244	lemon	0
+S144	zested
+S81	on	[surface]
+O240	knife	1
+S16	clean
+M20	cut	2:08	2:09
+O244	lemon	0
+S60	halved
+S81	on	[surface]
 //
-O4	lemon	0
-S43	whole
-S43	zested
-O4	knife	1
-S43	clean
-M4	cut	2:08	2:09
-O4	lemon	0
-S43	halved
-S43	zested
-S43	on	[surface]
+O244	lemon	0
+S60	halved
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S0	attached to	[blender]
+M84	squeeze	2:10	2:14
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
+S0	attached to	[blender]
+O247	lemon juice	1
+S65	in	[blender jar]
+O244	lemon	1
+S124	squeezed
 //
-O4	lemon	0
-S43	zested
-S43	halved
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
-S349	attached to	[food processor]
-M4	squeeze	2:10	2:14
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
-S349	attached to	[food processor]
-O4	lemon	1
-S43	juice
-S43	in	[food processor bowl]
-O4	lemon	1
-S43	halved
-S43	squeezed
+O38	blender jar	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S0	attached to	[blender]
+O39	blender lid	1
+S16	clean
+M18	cover	2:17	2:18
+O39	blender lid	1
+S81	on	[blender]
+O38	blender jar	0
+S26	covered	{blender lid}
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S0	attached to	[blender]
 //
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
-S349	attached to	[food processor]
-O3	food processor lid	1
-S43	clean
-M39	cover	2:17	2:18
-O3	food processor lid	1
-S43	on	[food processor]
-O60	food processor bowl	0
-S43	covered	[food processor lid]
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
-S349	attached to	[food processor]
+O35	blender	0
+S142	with	[blender jar]
+O38	blender jar	0
+S26	covered	{blender lid}
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S0	attached to	[blender]
+O18	basil	1
+S137	washed
+S65	in	[blender jar]
+O335	pine nut	1
+S130	toasted
+S65	in	[blender jar]
+O192	garlic	1
+S91	peeled
+S65	in	[blender jar]
+O34	black pepper	1
+S58	ground
+S65	in	[blender jar]
+O376	salt	1
+S55	granulated
+S65	in	[blender jar]
+O249	lemon zest	1
+S65	in	[blender jar]
+O247	lemon juice	1
+S65	in	[blender jar]
+M4	blend	2:25	2:26
+O38	blender jar	0
+S26	covered	{blender lid}
+S23	contains	{basil mixture}
+S0	attached to	[blender]
+O19	basil mixture	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S65	in	[blender jar]
 //
-O4	food processor	0
-S32	with	[food processor bowl]
-O60	food processor bowl	0
-S43	covered	[food processor lid]
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
-S349	attached to	[food processor]
-O3	basil	1
-S144	washed
-S43	leaf
-S157	in	[food processor bowl]
-O0	pine nut	1
-S43	whole nut
-S43	toasted
-S157	in	[food processor bowl]
-O4	garlic	1
-S43	peeled
-S43	clove
-S157	in	[food processor bowl]
-O55	black pepper	1
-S356	ground
-S157	in	[food processor bowl]
-O0	salt	1
-S43	granulated
-S157	in	[food processor bowl]
-O4	lemon	1
-S43	grated
-S43	in	[food processor bowl]
-O4	lemon	1
-S43	juice
-S43	in	[food processor bowl]
-M28	blend	2:25	2:26
-O4	pesto	0
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
-S43	in	[food processor bowl]
+O38	blender jar	0
+S26	covered	{blender lid}
+S23	contains	{basil mixture}
+S0	attached to	[blender]
+O19	basil mixture	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S65	in	[blender jar]
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+M55	pour and blend	2:49	2:51
+O19	basil mixture	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil}
+S65	in	[blender jar]
 //
-O60	food processor bowl	0
-S43	covered	[food processor lid]
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
-S349	attached to	[food processor]
-O4	bottle	1
-S43	contains	{olive oil}
-O4	olive oil	1
-S43	liquid
-S43	in	[bottle]
-O4	pesto	0
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
-S43	in	[food processor bowl]
-M4	pour and blend	2:49	2:51
-O60	food processor bowl	0
-S43	covered	[food processor lid]
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-S349	attached to	[food processor]
-O4	pesto	0
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
-S43	in	[food processor bowl]
+O38	blender jar	0
+S26	covered	{blender lid}
+S23	contains	{basil mixture}
+S0	attached to	[blender]
+O39	blender lid	1
+S81	on	[blender]
+M93	uncover	2:52	2:53
+O39	blender lid	1
+S38	dirty
+O38	blender jar	0
+S23	contains	{basil mixture}
+S0	attached to	[blender]
 //
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-S349	attached to	[food processor]
-S43	covered	[food processor lid]
-O3	food processor lid	1
-S43	on	[food processor]
-M0	uncover	2:52	2:53
-O3	food processor lid	1
-S43	dirty
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-S349	attached to	[food processor]
+O38	blender jar	0
+S23	contains	{basil mixture}
+S0	attached to	[blender]
+O35	blender	0
+S142	with	[blender jar]
+M25	detach	2:57	2:58
+O38	blender jar	0
+S23	contains	{basil mixture}
+O35	blender	0
+S78	off
 //
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-S349	attached to	[food processor]
-O4	food processor	0
-S32	with	[food processor bowl]
-M4	detach	2:57	2:58
-O60	food processor bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-O4	food processor	0
-S32	off
+O38	blender jar	1
+S23	contains	{basil mixture}
+O19	basil mixture	1
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil}
+S65	in	[blender jar]
+O46	bowl	0
+S41	empty
+M54	pour	2:59	3:04
+O46	bowl	0
+S23	contains	{basil mixture}
+O19	basil mixture	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil}
+S65	in	[bowl]
+O38	blender jar	1
+S38	dirty
 //
-O60	food processor bowl	1
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-O4	pesto	0
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
-S43	in	[food processor bowl]
-O2	bowl	0
-S107	empty
-M4	pour	2:59	3:04
-O2	bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-O4	pesto	0
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-S43	in	[bowl]
-O60	food processor bowl	1
-S102	dirty
+O203	grater	1
+S16	clean
+O316	parmesan	1
+S6	block
+O46	bowl	0
+S23	contains	{basil mixture}
+M39	grate	3:07	3:19
+O46	bowl	0
+S23	contains	{basil mixture,parmesan}
+O316	parmesan	1
+S56	grated
+S65	in	[bowl]
 //
-O2	bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-O32	grater	1
-S43	clean
-O4	parmesan	1
-S43	block
-S43	ungrated
-M0	grate	3:07	3:19
-O2	bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil,parmesan}
-O4	parmesan	1
-S43	grated
-S43	in	[bowl]
+O46	bowl	0
+S23	contains	{basil mixture,parmesan}
+O316	parmesan	1
+S56	grated
+S65	in	[bowl]
+O19	basil mixture	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil}
+S65	in	[bowl]
+O412	spatula	1
+S16	clean
+M85	stir	3:23	3:33
+O46	bowl	0
+S23	contains	{pesto}
+O330	pesto	0
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil,parmesan}
+S65	in	[bowl]
+O412	spatula	1
+S38	dirty
 //
-O2	bowl	0
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil,parmesan}
-O4	parmesan	1
-S43	grated
-S43	in	[bowl]
-O4	pesto	1
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil}
-S43	in	[bowl]
-O4	spatula	1
-S43	clean
-M4	stir	3:23	3:33
-O4	pesto	0
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil,parmesan}
-S43	in	[bowl]
-O4	spatula	1
-S43	dirty
+O46	bowl	1
+S23	contains	{pesto}
+O330	pesto	1
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil,parmesan}
+S65	in	[bowl]
+O346	pot	0
+S23	contains	{linguine}
+O412	spatula	1
+S16	clean
+M71	scrape	3:40	3:43
+O346	pot	0
+S23	contains	{linguine,pesto}
+O412	spatula	1
+S38	dirty
+O46	bowl	1
+S38	dirty
+O330	pesto	1
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil,parmesan}
+S65	in	[pot]
 //
-O2	bowl	1
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil,parmesan}
-O4	pesto	0
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil,parmesan}
-S43	in	[bowl]
-O3	pot	0
-S43	contains	{linguine}
-O4	spatula	1
-S43	clean
-M0	pour and scrape	3:40	3:43
-O3	pot	0
-S43	contains	{linguine,pesto}
-O4	pesto	0
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil,parmesan}
-S43	in	[pot]
-O4	spatula	1
-S43	dirty
-O2	bowl	1
-S43	dirty
+O286	mug	1
+S23	contains	{saltwater}
+O378	saltwater	1
+S65	in	[mug]
+O346	pot	0
+S23	contains	{linguine,pesto}
+M54	pour	3:49	3:52
+O346	pot	0
+S23	contains	{linguine,pesto,saltwater}
+O378	saltwater	1
+S65	in	[pot]
 //
-O4	mug	1
-S43	empty
-O3	faucet	0
-S43	on
-O3	water	1
-S43	liquid
-S33	from	[faucet]
-M0	fill	Assumed	Assumed
-O4	mug	1
-S43	contains	{water}
-O3	water	1
-S43	liquid
-S33	in	[mug]
+O346	pot	0
+S23	contains	{linguine,pesto,saltwater}
+O378	saltwater	1
+S65	in	[pot]
+O330	pesto	1
+S23	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil,parmesan}
+S65	in	[pot]
+O258	linguine	0
+S24	cooked
+S65	in	[pot]
+O452	tongs	1
+S16	clean
+M46	mix	3:54	3:57
+O346	pot	0
+S23	contains	{pesto linguine}
+O331	pesto linguine	1
+S23	contains	{pesto,linguine}
+S65	in	[pot]
 //
-O4	mug	0
-S43	contains	{water}
-O4	container	1
-S43	contains	{salt}
-O3	salt	1
-S43	granulated
-S3	in	[container]
-M0	sprinkle	<Assumed>
-O4	mug	0
-S43	contains	{water,salt}
-O3	salt	1
-S43	granulated
-S3	in	[mug]
+O203	grater	1
+S16	clean
+O316	parmesan	1
+S6	block
+O346	pot	0
+S23	contains	{pesto linguine}
+O331	pesto linguine	0
+S23	contains	{pesto,linguine}
+S65	in	[pot]
+M39	grate	3:59	4:04
+O331	pesto linguine	0
+S23	contains	{pesto,linguine,parmesan}
+S65	in	[pot]
+O316	parmesan	1
+S56	grated
+S65	in	[pot]
 //
-O4	mug	0
-S43	contains	{water,salt}
-O3	salt	1
-S43	granulated
-S3	in	[mug]
-O3	water	1
-S43	liquid
-S33	in	[mug]
-O3	spoon	1
-S43	clean
-M0	stir	Assumed	Assumed
-O3	saltwater	1
-S43	liquid
-S33	in	[mug]
+O346	pot	0
+S23	contains	{pesto linguine}
+O331	pesto linguine	0
+S23	contains	{pesto,linguine,parmesan}
+S65	in	[pot]
+O216	grinder	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S65	in	[grinder]
+M40	grind	4:07	4:09
+O331	pesto linguine	0
+S23	contains	{pesto,linguine,parmesan,black pepper}
+S65	in	[pot]
+O34	black pepper	1
+S65	in	[pot]
 //
-O4	mug	1
-S43	contains	{water,salt}
-O3	saltwater	1
-S43	liquid
-S33	in	[mug]
-O3	pot	0
-S43	contains	{linguine,pesto}
-M0	pour	3:49	3:52
-O3	pot	0
-S43	contains	{linguine,pesto,water,salt}
-O4	saltwater	1
-S43	liquid
-S43	in	[pot]
+O346	pot	0
+S23	contains	{pesto linguine}
+O331	pesto linguine	1
+S23	contains	{pesto,linguine,parmesan,black pepper}
+S65	in	[pot]
+O452	tongs	1
+S16	clean
+M46	mix	4:11	4:20
+O331	pesto linguine	1
+S23	contains	{pesto,linguine,parmesan,black pepper}
+S65	in	[pot]
+O452	tongs	1
+S38	dirty
 //
-O3	pot	0
-S43	contains	{linguine,pesto,water,salt}
-O4	saltwater	1
-S43	liquid
-S43	in	[pot]
-O4	pesto	1
-S43	mixed
-S43	paste
-S195	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice,olive oil,parmesan}
-S43	in	[pot]
-O4	linguine	1
-S43	cooked
-S43	in	[pot]
-O4	tongs	1
-S43	clean
-M4	mix	3:54	3:57
-O3	pot	0
-S43	contains	{pasta}
-O4	pasta	1
-S43	mixed
-S23	cooked
-S195	contains	{pesto,linguine}
-S43	in	[pot]
-//
-O32	grater	1
-S43	clean
-O4	parmesan	1
-S43	block
-O3	pot	0
-S43	contains	{pasta}
-M4	grate	3:59	4:04
-O4	parmesan	1
-S43	grated
-S43	in	[pot]
-//
-O3	pot	0
-S43	contains	{pasta}
-O237	pepper mill	1
-S195	contains	{black pepper}
-O55	black pepper	1
-S4	whole
-S356	in	[pepper mill]
-M4	grind	4:07	4:09
-O55	black pepper	1
-S4	ground
-S356	in	[pot]
-//
-O3	pot	0
-S43	contains	{pasta}
-O4	pasta	1
-S43	mixed
-S23	cooked
-S195	contains	{pesto,linguine}
-S43	in	[pot]
-O4	parmesan	1
-S43	grated
-S43	in	[pot]
-O55	black pepper	1
-S4	ground
-S356	in	[pot]
-O4	tongs	1
-S43	clean
-M0	mix	4:11	4:20
-O4	pesto linguine	1
-S334	mixed
-S195	contains	{pesto,linguine,parmesan,black pepper}
-S43	in	[pot]
-O4	tongs	1
-S43	dirty
-//
-O304	bowl	0
-S43	empty
-O3	pot	0
-S43	contains	{pesto linguine}
-O4	pesto linguine	1
-S195	contains	{pesto,linguine,parmesan,black pepper}
-S43	in	[pot]
-O4	tongs	1
-S43	clean
-M0	pick-and-place	4:23	4:30
-O4	pesto linguine	1	!
-S195	contains	{pesto,linguine,parmesan,black pepper}
-S43	in	[bowl]
-O4	bowl	1
-S43	contains	{pesto linguine}
-O4	tongs	1
-S43	dirty
+O46	bowl	0
+S41	empty
+O346	pot	0
+S23	contains	{pesto linguine}
+O331	pesto linguine	1
+S23	contains	{pesto,linguine,parmesan,black pepper}
+S65	in	[pot]
+O452	tongs	1
+S16	clean
+M50	pick-and-place	4:23	4:30
+O331	pesto linguine	1	13
+S23	contains	{pesto,linguine,parmesan,black pepper}
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{pesto linguine}
+O452	tongs	1
+S38	dirty
 //

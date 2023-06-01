@@ -1,95 +1,100 @@
-# Source:	https://www.youtube.com/watch?v=MbCAiWBhAjo
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/0072-old-fashioned_lemonade.mp4
+O302	orange	1
+S141	whole
+O111	colander	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O302	orange	1
+S141	whole
+S65	in	[colander]
+O111	colander	0
+S23	contains	{orange}
 //
-O32	orange	1
-S43	whole
-O43	colander	0
-S43	empty
-M0	pick-and-place	Assumed	Assumed
-O43	colander	0
-S43	contains	{orange}
-O32	orange	1
-S43	whole
-S43	in	[colander]
+O170	faucet	1
+S78	off
+M92	turn on	Assumed	Assumed
+O170	faucet	1
+S81	on
+O475	water	1
+S52	from faucet
 //
-O32	faucet	0
-S43	on
-O32	water	0
-S43	from faucet
-O43	colander	1
-S43	contains	{orange}
-O32	orange	1
-S43	whole
-S43	in	[colander]
-M0	wash	Assumed	Assumed
-O32	orange	1
-S43	whole
-S43	washed
-S43	in	[colander]
+O170	faucet	0
+S81	on
+O475	water	0
+S52	from faucet
+O111	colander	1
+S23	contains	{orange}
+O302	orange	1
+S141	whole
+S65	in	[colander]
+M95	wash	Assumed	Assumed
+O302	orange	1
+S141	whole
+S137	washed
+S65	in	[colander]
 //
-O32	cutting board	0
-S43	empty
-O43	colander	0
-S43	contains	{orange}
-O32	orange	1
-S43	whole
-S43	washed
-S43	in	[colander]
-M0	pick-and-place	0:29	0:30
-O32	cutting board	0
-S43	contains	{orange}
-O32	orange	1
-S43	whole
-S43	on	[cutting board]
-O43	colander	0
-S23	empty
-S43	dirty
+O170	faucet	1
+S81	on
+O475	water	1
+S52	from faucet
+M91	turn off	Assumed	Assumed
+O170	faucet	1
+S78	off
 //
-O32	orange	1
-S43	whole
-S43	on	[cutting board]
-O9	knife	1
-S43	clean
-M4	cut	0:32	0:35
-O32	orange	1
-S43	halved
-S43	on	[cutting board]
+O143	cutting board	0
+S41	empty
+S81	on	[surface]
+O302	orange	1
+S141	whole
+S137	washed
+S65	in	[colander]
+M50	pick-and-place	0:29	0:30
+O143	cutting board	0
+S23	contains	{orange}
+S81	on	[surface]
+O302	orange	1
+S141	whole
+S81	on	[cutting board]
 //
-O32	squeezer	0
-S43	clean
-O32	orange	1
-S43	halved
-S43	on	[cutting board]
-M4	squeeze	0:53	1:10
-O32	squeezer	0
-S43	contains	{orange juice}
-O32	orange juice	1
-S43	juice
-S43	in	[squeezer]
-O32	orange	1
-S43	juice
-S43	in	[squeezer]
-O32	orange	1
-S43	halved
-S43	squeezed
-S43	on	[cutting board]
+O143	cutting board	0
+S23	contains	{orange}
+S81	on	[surface]
+O302	orange	1
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	0:32	0:35
+O302	orange	1
+S60	halved
+S81	on	[cutting board]
 //
-O32	squeezer	0
-S43	contains	{orange juice}
-O32	orange	1
-S43	juice
-S43	in	[squeezer]
-O32	drinking glass	0
-S43	empty
-M0	pour	1:43	1:54
-O32	squeezer	0
-S43	dirty
-O32	drinking glass	0
-S43	contains	{orange juice}
-O32	orange	1	!
-S43	juice
-S43	in	[drinking glass]
-O32	orange juice	1	!
-S43	juice
-S43	in	[drinking glass]
+O423	squeezer	0
+S16	clean
+S81	on	[surface]
+O302	orange	1
+S60	halved
+S81	on	[cutting board]
+M84	squeeze	0:53	1:10
+O423	squeezer	0
+S23	contains	{orange juice}
+S81	on	[surface]
+O303	orange juice	1
+S65	in	[squeezer]
+O302	orange	1
+S124	squeezed
+//
+O423	squeezer	0
+S23	contains	{orange juice}
+S81	on	[surface]
+O303	orange juice	1
+S65	in	[squeezer]
+O152	drinking glass	0
+S41	empty
+M54	pour	1:43	1:54
+O423	squeezer	0
+S38	dirty
+O152	drinking glass	0
+S23	contains	{orange juice}
+O303	orange juice	1	9
+S65	in	[cup]
 //

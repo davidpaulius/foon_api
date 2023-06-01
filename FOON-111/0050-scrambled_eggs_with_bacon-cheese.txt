@@ -1,308 +1,308 @@
-O13	cooking pan	0
-S98	heated
-S43	on	[stove]
-O2	bowl	1
-S182	contains	{bacon}
-O82	bacon	1
-S51	chopped
-S43	in	[bowl]
-O177	scissors	1
-S52	clean
-M4	scrape	0:12	0:15
-O13	cooking pan	0
-S182	contains	{bacon}
-S43	on	[stove]
-O82	bacon	1
-S51	chopped
-S43	in	[pan]
-O177	scissors	1
-S94	dirty
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{bacon}
+O8	bacon	1
+S14	chopped
+S65	in	[bowl]
+O387	scissors	1
+S16	clean
+M71	scrape	0:12	0:15
+O116	cooking pan	0
+S23	contains	{bacon}
+S81	on	[stove]
+O8	bacon	1
+S14	chopped
+S65	in	[pan]
+O387	scissors	1
+S38	dirty
 //
-O28	egg	1
-S318	uncracked
-O2	bowl	0
-S98	empty
+O157	egg	1
+S134	uncracked
+O46	bowl	0
+S41	empty
 M19	crack	Assumed	Assumed
-O2	bowl	0
-S182	contains	{egg white and yolk}
-O28	egg white and yolk	1
-S82	in	[bowl]
+O46	bowl	0
+S23	contains	{egg white and yolk}
+O163	egg white and yolk	1
+S65	in	[bowl]
 //
-O2	bowl	0
-S182	contains	{egg white and yolk}
-O28	egg white and yolk	1
-S82	in	[bowl]
-O6	fork	1
-S51	clean
-M1	mix	0:17:50	0:20:50
-O2	bowl	0
-S182	contains	{egg white and yolk}
-O28	egg white and yolk	1
-S12	beaten
-S82	in	[bowl]
+O46	bowl	0
+S23	contains	{egg white and yolk}
+O163	egg white and yolk	1
+S65	in	[bowl]
+O182	fork	1
+S16	clean
+M46	mix	0:17:50	0:20:50
+O46	bowl	0
+S23	contains	{egg white and yolk}
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[bowl]
 //
-O2	bowl	0
-S182	contains	{egg white and yolk}
-O2	bowl	1
-S182	contains	{milk}
-O55	milk	1
-S43	in	[bowl]
-M4	pour	0:22	0:24
-O2	bowl	0
-S182	contains	{egg white and yolk,milk}
+O46	bowl	0
+S23	contains	{egg white and yolk}
+O46	bowl	1
+S23	contains	{milk}
+O273	milk	1
+S65	in	[bowl]
+M54	pour	0:22	0:24
+O46	bowl	0
+S23	contains	{egg white and yolk,milk}
 //
-O2	bowl	0
-S182	contains	{egg white and yolk,milk}
-O6	fork	1
-S52	clean
-O28	egg white and yolk	1
-S12	beaten
-S82	in	[bowl]
-O55	milk	1
-S148	in	[bowl]
-M1	mix	0:25	0:30
-O2	bowl	0
-S185	contains	{egg mixture}
-O28	egg mixture	1
-S82	in	[bowl]
+O46	bowl	0
+S23	contains	{egg white and yolk,milk}
+O182	fork	1
+S16	clean
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[bowl]
+O273	milk	1
+S65	in	[bowl]
+M46	mix	0:25	0:30
+O46	bowl	0
+S23	contains	{egg mixture}
+O159	egg mixture	1
+S65	in	[bowl]
 //
-O13	cooking pan	0
-S182	contains	{bacon}
-S43	on	[stove]
-O38	stove	0
-S43	on
-S232	with	[pan]
-O82	bacon	0
-S50	chopped
-S43	in	[pan]
-M40	cook	Assumed	Assumed
-O82	bacon	0
-S109	fried
-S43	in	[pan]
-//
-O4	packet	0
-S34	contains	{napkin}
-O356	napkin	1
-S188	clean
-S32	in	[packet]
-O415	plate	0
-S51	empty
-M0	pick-and-place	Assumed	Assumed
-O415	plate	0
-S149	with	[items]
-O356	napkin	1
-S188	on	[plate]
-//
-O13	cooking pan	1
-S182	contains	{bacon}
-S43	on	[stove]
-O82	bacon	1
-S109	fried
-S43	in	[pan]
-O15	plate	0
-S210	with	[items]
-O139	napkin	0
-S51	on	[plate]
-M4	pour	1:00	1:02
-O15	plate	0
-S188	contains	{bacon}
-O82	bacon	1
-S109	fried
-S226	on	[sheet]
-O13	cooking pan	1
-S94	dirty
-//
-O13	cooking pan	0
-S94	dirty
-O139	napkin	1
-S51	clean
-M46	wipe	1:07	1:10:25
-O13	cooking pan	0
-S51	empty
-//
-O13	cooking pan	1
-S51	empty
-O38	stove	0
-S43	on
-M40	pick-and-place	Assumed	Assumed
-O13	cooking pan	1
-S51	heated
-S43	on	[stove]
-O38	stove	0
-S43	on
-S232	with	[pan]
-//
-O13	cooking pan	1
-S51	heated
-S43	on	[stove]
-O11	knife	1
-S51	clean
-O2	bowl	0
-S182	contains	{butter}
-O3	butter	1
-S302	stick
-S43	in	[bowl]
-M3	scoop and pour	1:11	1:13
-O13	cooking pan	0
-S182	contains	{butter}
-S43	on	[stove]
-O3	butter	1
-S302	cubed
-S43	in	[pan]
-//
-O13	cooking pan	0
-S182	contains	{butter}
-S43	on	[stove]
-O3	butter	1
-S302	cubed
-S43	in	[pan]
-M3	heat	Assumed	Assumed
-O13	cooking pan	0
-S124	greased	{butter}
-S43	on	[stove]
-O3	butter	1
-S43	melted
-S164	in	[pan]
-//
-O2	bowl	1
-S182	contains	{onion}
-O26	onion	1
-S50	chopped
-S43	in	[bowl]
-O13	cooking pan	0
-S124	greased	{butter}
-S43	on	[stove]
-M4	pour	1:14	1:16
-O13	cooking pan	0
-S182	contains	{onion}
-S43	on	[stove]
-O26	onion	1
-S50	chopped
-S43	in	[pan]
-//
-O13	cooking pan	0
-S182	contains	{onion}
-S43	on	[stove]
-O26	onion	1
-S50	chopped
-S43	in	[pan]
-M1	cook and stir	1:18	1:23
-O13	cooking pan	0
-S185	contains	{onion}
-S43	on	[stove]
-O26	onion	1
+O116	cooking pan	0
+S23	contains	{bacon}
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O8	bacon	0
+S14	chopped
+S65	in	[pan]
+M14	cook	Assumed	Assumed
+O8	bacon	0
 S50	fried
-S43	in	[pan]
+S65	in	[pan]
 //
-O2	bowl	1
-S185	contains	{egg mixture}
-O13	cooking pan	0
-S185	contains	{onion}
-S43	on	[stove]
-O28	egg mixture	1
-S82	in	[bowl]
-M4	pour	1:27	1:29
-O13	cooking pan	0
-S185	contains	{onion,egg mixture}
-S43	on	[stove]
-O28	egg mixture	1
-S82	in	[pan]
+O308	packet	0
+S23	contains	{napkin}
+O290	napkin	1
+S16	clean
+S65	in	[packet]
+O344	plate	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S142	with	[item]
+O290	napkin	1
+S81	on	[plate]
 //
-O13	cooking pan	0
-S185	contains	{onion,egg mixture}
-S43	on	[stove]
-O2	bowl	1
-S185	contains	{cheese}
-O27	cheese	1
-S123	grated
-S43	in	[bowl]
-M2	sprinkle	1:31	1:34
-O13	cooking pan	0
-S185	contains	{onion,egg mixture,cheese}
-S43	on	[stove]
-O27	cheese	1
-S123	grated
-S43	in	[pan]
+O116	cooking pan	1
+S23	contains	{bacon}
+S81	on	[stove]
+O8	bacon	1
+S50	fried
+S65	in	[pan]
+O344	plate	0
+S142	with	[item]
+O290	napkin	0
+S81	on	[plate]
+M54	pour	1:00	1:02
+O344	plate	0
+S23	contains	{bacon}
+O8	bacon	1
+S50	fried
+S81	on	[sheet]
+O116	cooking pan	1
+S38	dirty
 //
-O13	cooking pan	0
-S185	contains	{onion,egg mixture,cheese}
-S43	on	[stove]
-O28	egg mixture	1
-S82	in	[pan]
-O37	spatula	1
-S51	clean
-M16	spread	1:38	1:46
-O13	cooking pan	0
-S185	contains	{omelette}
-S43	on	[stove]
-O28	omelette	1
-S43	partly cooked
-S82	in	[pan]
+O116	cooking pan	0
+S38	dirty
+O290	napkin	1
+S16	clean
+M96	wipe	1:07	1:10:25
+O116	cooking pan	0
+S41	empty
 //
-O15	plate	0
-S188	contains	{bacon}
-O82	bacon	1
-S4	fried
-S226	on	[plate]
-O13	cooking pan	0
-S185	contains	{omelette}
-S43	on	[stove]
-M2	sprinkle	1:58	2:00
-O13	cooking pan	0
-S185	contains	{omelette,bacon}
-S43	on	[stove]
+O116	cooking pan	1
+S41	empty
+O425	stove	0
+S81	on
+M50	pick-and-place	Assumed	Assumed
+O116	cooking pan	1
+S62	heated
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
 //
-O13	cooking pan	0
-S185	contains	{omelette,bacon}
-S43	on	[stove]
-O28	omelette	1
-S43	partly cooked
-S82	in	[pan]
-O37	turner	1
-S51	clean
-M11	flip	2:06	2:09
-O28	omelette	1
-S43	flipped
-S43	contains	{bacon}
-S82	in	[pan]
+O116	cooking pan	1
+S62	heated
+S81	on	[stove]
+O240	knife	1
+S16	clean
+O46	bowl	0
+S23	contains	{butter}
+O63	butter	1
+S127	stick
+S65	in	[bowl]
+M70	scoop and pour	1:11	1:13
+O116	cooking pan	0
+S23	contains	{butter}
+S81	on	[stove]
+O63	butter	1
+S31	cubed
+S65	in	[pan]
 //
-O13	cooking pan	0
-S185	contains	{omelette,bacon}
-S43	on	[stove]
-O28	omelette	1
-S43	flipped
-S43	contains	{bacon}
-S82	in	[pan]
-O38	stove	0
-S43	on
-S232	with	[pan]
-M43	cook	Assumed	Assumed
-O13	cooking pan	0
-S185	contains	{omelette}
-S43	on	[stove]
-O28	omelette	1
-S43	cooked
-S43	contains	{bacon}
-S82	in	[pan]
+O116	cooking pan	0
+S23	contains	{butter}
+S81	on	[stove]
+O63	butter	1
+S31	cubed
+S65	in	[pan]
+M41	heat	Assumed	Assumed
+O116	cooking pan	0
+S57	greased	{butter}
+S81	on	[stove]
+O63	butter	1
+S74	melted
+S65	in	[pan]
 //
-O13	cooking pan	0
-S185	contains	{omelette}
-S43	on	[stove]
-O28	omelette	1
-S43	cooked
-S43	contains	{onion,egg mixture,cheese,bacon}
-S82	in	[pan]
-O15	plate	0
-S98	empty
-O37	turner	1
-S51	clean
-M4	pour	2:10	2:12
-O13	cooking pan	0
-S43	dirty
-O28	omelette	1	!
-S43	cooked
-S43	contains	{onion,egg mixture,cheese,bacon}
-S82	on	[plate]
-O15	plate	0
-S185	contains	{omelette}
+O46	bowl	1
+S23	contains	{onion}
+O299	onion	1
+S14	chopped
+S65	in	[bowl]
+O116	cooking pan	0
+S57	greased	{butter}
+S81	on	[stove]
+M54	pour	1:14	1:16
+O116	cooking pan	0
+S23	contains	{onion}
+S81	on	[stove]
+O299	onion	1
+S14	chopped
+S65	in	[pan]
+//
+O116	cooking pan	0
+S23	contains	{onion}
+S81	on	[stove]
+O299	onion	1
+S14	chopped
+S65	in	[pan]
+M16	cook and stir	1:18	1:23
+O116	cooking pan	0
+S23	contains	{onion}
+S81	on	[stove]
+O299	onion	1
+S50	fried
+S65	in	[pan]
+//
+O46	bowl	1
+S23	contains	{egg mixture}
+O116	cooking pan	0
+S23	contains	{onion}
+S81	on	[stove]
+O159	egg mixture	1
+S65	in	[bowl]
+M54	pour	1:27	1:29
+O116	cooking pan	0
+S23	contains	{onion,egg mixture}
+S81	on	[stove]
+O159	egg mixture	1
+S65	in	[pan]
+//
+O116	cooking pan	0
+S23	contains	{onion,egg mixture}
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{cheese}
+O78	cheese	1
+S56	grated
+S65	in	[bowl]
+M83	sprinkle	1:31	1:34
+O116	cooking pan	0
+S23	contains	{onion,egg mixture,cheese}
+S81	on	[stove]
+O78	cheese	1
+S56	grated
+S65	in	[pan]
+//
+O116	cooking pan	0
+S23	contains	{onion,egg mixture,cheese}
+S81	on	[stove]
+O159	egg mixture	1
+S65	in	[pan]
+O412	spatula	1
+S16	clean
+M82	spread	1:38	1:46
+O116	cooking pan	0
+S23	contains	{omelette}
+S81	on	[stove]
+O297	omelette	1
+S86	partly cooked
+S65	in	[pan]
+//
+O344	plate	0
+S23	contains	{bacon}
+O8	bacon	1
+S50	fried
+S81	on	[plate]
+O116	cooking pan	0
+S23	contains	{omelette}
+S81	on	[stove]
+M83	sprinkle	1:58	2:00
+O116	cooking pan	0
+S23	contains	{omelette,bacon}
+S81	on	[stove]
+//
+O116	cooking pan	0
+S23	contains	{omelette,bacon}
+S81	on	[stove]
+O297	omelette	1
+S86	partly cooked
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M32	flip	2:06	2:09
+O297	omelette	1
+S46	flipped
+S23	contains	{bacon}
+S65	in	[pan]
+//
+O116	cooking pan	0
+S23	contains	{omelette,bacon}
+S81	on	[stove]
+O297	omelette	1
+S46	flipped
+S23	contains	{bacon}
+S65	in	[pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+M14	cook	Assumed	Assumed
+O116	cooking pan	0
+S23	contains	{omelette}
+S81	on	[stove]
+O297	omelette	1
+S24	cooked
+S23	contains	{bacon}
+S65	in	[pan]
+//
+O116	cooking pan	0
+S23	contains	{omelette}
+S81	on	[stove]
+O297	omelette	1
+S24	cooked
+S23	contains	{onion,egg mixture,cheese,bacon}
+S65	in	[pan]
+O344	plate	0
+S41	empty
+O464	turner	1
+S16	clean
+M54	pour	2:10	2:12
+O116	cooking pan	0
+S38	dirty
+O297	omelette	1	23
+S24	cooked
+S23	contains	{onion,egg mixture,cheese,bacon}
+S81	on	[plate]
+O344	plate	0
+S23	contains	{omelette}
 //

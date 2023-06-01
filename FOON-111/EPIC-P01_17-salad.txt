@@ -1,452 +1,335 @@
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/EPIC-P01_17-salad.MP4
+O254	lettuce	1
+S141	whole
+M61	pull apart	1:40	2:04
+O254	lettuce	1
+S39	divided
+S81	on	[cutting board]
 //
-O3	packet	1
-S43	contains	{lettuce}
-O87	lettuce	1
-S349	whole
-S349	in	[packet]
-M0	remove	1:39	1:42
-O3	packet	1
-S43	empty
-S43	dirty
-O87	lettuce	1
-S349	whole
+O254	lettuce	1
+S39	divided
+S81	on	[cutting board]
+O170	faucet	0
+S81	on
+O475	water	0
+S52	from faucet
+M95	wash	2:28	3:43
+O254	lettuce	1
+S139	wet
+S65	in	[strainer]
 //
-O4	cutting board	0
-S43	empty
-O87	lettuce	1
-S349	whole
-M92	pull apart	1:40	2:04
-O4	cutting board	0
-S43	contains	{lettuce}
-O87	lettuce	1
-S355	leaf
-S349	on	[cutting board]
+O254	lettuce	1
+S139	wet
+S65	in	[strainer]
+M84	squeeze	3:50	4:06
+O254	lettuce	1
+S137	washed
 //
-O87	lettuce	1
-S355	leaf
-S349	on	[cutting board]
-O35	faucet	0
-S349	on
-O35	water	0
-S4	liquid
-S349	from	[faucet]
-M0	wash	<2:28-2:38,2:41-2:56,2:59-3:06,3:09-3:14,3:17-3:25,3:43>
-O87	lettuce	1
-S43	leaf
-S355	washed
+O254	lettuce	1
+S137	washed
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	4:08	4:10
+O143	cutting board	0
+S23	contains	{lettuce}
+O254	lettuce	1
+S137	washed
+S81	on	[cutting board]
 //
-O87	lettuce	1
-S43	leaf
-S355	washed
-O3	strainer	0
-S43	empty
-M0	place	<2:39-2:40,2:57-2:58,3:07-3:08,3:14-3:15,3:25-3:26>
-O3	strainer	0
-S43	contains	{lettuce}
-O87	lettuce	1
-S43	leaf
-S355	washed
-S43	in	[strainer]
+O143	cutting board	0
+S23	contains	{lettuce}
+O254	lettuce	1
+S137	washed
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M10	chop	4:11	4:58
+O240	knife	1
+S38	dirty
+O254	lettuce	0
+S14	chopped
+S81	on	[cutting board]
 //
-O3	strainer	0
-S43	contains	{lettuce}
-O87	lettuce	1
-S43	leaf
-S355	washed
-S349	in	[strainer]
-M3	squeeze	3:50	4:06
-O87	lettuce	1
-S43	leaf
-S355	washed
-S43	squeezed
-S349	in	[strainer]
+O46	bowl	0
+S41	empty
+O254	lettuce	1
+S14	chopped
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M71	scrape	5:02	5:19
+O240	knife	1
+S38	dirty
+O46	bowl	0
+S23	contains	{lettuce}
+O254	lettuce	1
+S14	chopped
+S65	in	[bowl]
 //
-O3	strainer	0
-S43	contains	{lettuce}
-O87	lettuce	1
-S43	leaf
-S355	washed
-S43	squeezed
-S349	in	[strainer]
-O83	cutting board	0
-S107	empty
-M0	pick-and-place	4:08	4:10
-O83	cutting board	0
-S201	contains	{lettuce}
-O87	lettuce	1
-S43	leaf
-S355	washed
-S21	on	[cutting board]
-O3	strainer	0
-S43	empty
-S43	dirty
+O46	bowl	1
+S23	contains	{mushroom}
+O287	mushroom	1
+S117	sliced
+S65	in	[bowl]
+O143	cutting board	0
+S41	empty
+M54	pour	5:37	5:39
+O143	cutting board	0
+S23	contains	{mushroom}
+O287	mushroom	1
+S117	sliced
+S81	on	[cutting board]
+O46	bowl	0
+S38	dirty
 //
-O40	lettuce	1
-S43	leaf
-S355	washed
-S362	on	[cutting board]
-O11	knife	1
-S58	clean
-M8	chop	4:11	4:58
-O87	lettuce	0
-S357	chopped
-S23	on	[cutting board]
+O287	mushroom	0
+S117	sliced
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M26	dice	5:49	6:08
+O240	knife	1
+S38	dirty
+O287	mushroom	0
+S37	diced
+S81	on	[cutting board]
 //
-O83	cutting board	1
-S201	contains	{lettuce}
-O87	lettuce	1
-S357	chopped
-S23	on	[cutting board]
-O11	knife	1
-S58	clean
-O2	bowl	0
-S107	empty
-M18	pour and scrape	5:02	5:19
-O2	bowl	0
-S195	contains	{lettuce}
-O87	lettuce	1
-S357	chopped
-S23	in	[bowl]
-O83	cutting board	1
-S201	empty
-S43	dirty
+O287	mushroom	1
+S37	diced
+S81	on	[cutting board]
+O46	bowl	0
+S23	contains	{lettuce}
+O240	knife	1
+S16	clean
+M71	scrape	6:12	6:18
+O240	knife	1
+S38	dirty
+O46	bowl	0
+S23	contains	{lettuce,mushroom}
+O287	mushroom	1
+S37	diced
+S65	in	[bowl]
 //
-O2	bowl	1
-S195	contains	{mushroom}
-O132	mushroom	1
-S358	sliced
-S23	in	[bowl]
-O83	cutting board	0
-S107	empty
-M4	pour	5:37	5:39
-O83	cutting board	0
-S201	contains	{mushroom}
-O132	mushroom	1
-S359	sliced
-S23	on	[cutting board]
-O2	bowl	0
-S43	empty
-S349	dirty
+O71	carrot	1
+S141	whole
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	6:37	6:43
+O143	cutting board	0
+S23	contains	{carrot}
+O71	carrot	1
+S141	whole
+S81	on	[cutting board]
 //
-O132	mushroom	0
-S359	sliced
-S23	on	[cutting board]
-O11	knife	1
-S58	clean
-M95	dice	5:49	6:08
-O132	mushroom	0
-S360	diced
-S23	on	[cutting board]
+O143	cutting board	0
+S23	contains	{carrot}
+O71	carrot	0
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	6:44	6:46
+O240	knife	1
+S38	dirty
+O71	carrot	0
+S60	halved
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S201	contains	{mushroom}
-O132	mushroom	1
-S360	diced
-S23	on	[cutting board]
-O2	bowl	0
-S195	contains	{lettuce}
-O11	knife	1
-S58	clean
-M18	pour and scrape	6:12	6:18
-O2	bowl	0
-S195	contains	{lettuce,mushroom}
-O132	mushroom	1
-S360	diced
-S23	in	[bowl]
-O2	cutting board	1
-S43	empty
-S349	dirty
+O71	carrot	1
+S60	halved
+S81	on	[cutting board]
+O46	bowl	0
+S23	contains	{lettuce,mushroom}
+O203	grater	0
+S16	clean
+M39	grate	7:00	7:32
+O203	grater	0
+S38	dirty
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot}
+O71	carrot	1
+S56	grated
+S65	in	[bowl]
 //
-O120	carrot	1
-S349	whole
-S43	unpeeled
-O35	faucet	0
-S349	on
-O35	water	0
-S4	liquid
-S349	from	[faucet]
-M0	wash	6:26	6:35
-O120	carrot	1
-S349	whole
-S43	unpeeled
-S4	washed
+O81	cherry tomato	1
+S141	whole
+S65	in	[container]
+O114	container	0
+S23	contains	{cherry tomato}
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	8:50	8:57
+O143	cutting board	0
+S23	contains	{cherry tomato}
+O81	cherry tomato	1
+S141	whole
+S81	on	[cutting board]
 //
-O120	carrot	1
-S349	whole
-S43	unpeeled
-S4	washed
-O83	cutting board	0
-S107	empty
-M0	pick-and-place	6:37	6:43
-O83	cutting board	0
-S201	contains	{carrot}
-O120	carrot	1
-S349	whole
-S43	unpeeled
-S32	on	[cutting board]
+O143	cutting board	0
+S23	contains	{cherry tomato}
+O81	cherry tomato	0
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	8:59	9:34
+O240	knife	1
+S38	dirty
+O81	cherry tomato	0
+S32	cut
+S81	on	[cutting board]
 //
-O120	carrot	0
-S43	unpeeled
-S362	whole
-S32	on	[cutting board]
-O11	knife	1
-S58	clean
-M8	cut	6:44	6:46
-O120	carrot	0
-S43	unpeeled
-S357	halved
-S32	on	[cutting board]
+O81	cherry tomato	1
+S32	cut
+S81	on	[cutting board]
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot}
+O240	knife	1
+S16	clean
+M71	scrape	9:37	9:47
+O240	knife	1
+S38	dirty
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato}
+O81	cherry tomato	0
+S32	cut
+S65	in	[bowl]
 //
-O2	bowl	0
-S195	contains	{lettuce,mushroom}
-O120	carrot	1
-S43	unpeeled
-S357	halved
-S32	on	[cutting board]
-O40	grater	0
-S58	clean
-M9	grate	7:00	7:32
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot}
-O120	carrot	1
-S357	grated
-S32	in	[bowl]
-O40	grater	0
-S102	dirty
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato}
+O299	onion	1
+S14	chopped
+S65	in	[container]
+O114	container	1
+S23	contains	{onion}
+M54	pour	9:54	9:56
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion}
+O299	onion	1
+S14	chopped
+S65	in	[bowl]
 //
-O4	packet	1
-S43	contains	{cherry tomato}
-S43	sealed
-M0	open	7:58	8:03
-O4	packet	1
-S43	contains	{cherry tomato}
-S43	opened
+O114	container	1
+S23	contains	{green olive}
+O209	green olive	1
+S141	whole
+S65	in	[container]
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	10:18	10:43
+O143	cutting board	0
+S23	contains	{green olive}
+O209	green olive	1
+S141	whole
+S81	on	[cutting board]
 //
-O4	packet	1
-S43	contains	{cherry tomato}
-S43	opened
-O391	cherry tomato	1
-S362	whole
-S43	on	[stem]
-S349	in	[packet]
-O3	strainer	0
-S43	empty
-M0	pick-and-place	Assumed	Assumed
-O3	strainer	0
-S43	contains	{cherry tomato}
-O391	cherry tomato	1
-S362	whole
-S33	destemmed
-S43	in	[strainer]
+O209	green olive	0
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M79	slice	11:06	11:31
+O240	knife	1
+S38	dirty
+O209	green olive	0
+S117	sliced
+S81	on	[cutting board]
 //
-O3	strainer	1
-S43	contains	{cherry tomato}
-O391	cherry tomato	1
-S362	whole
-S33	destemmed
-S43	in	[strainer]
-O35	faucet	0
-S349	on
-O35	water	0
-S4	liquid
-S349	from	[faucet]
-M0	wash	8:31	8:35
-O391	cherry tomato	1
-S362	whole
-S33	destemmed
-S43	washed
-S43	in	[strainer]
+O143	cutting board	0
+S23	contains	{green olive}
+O209	green olive	1
+S117	sliced
+S81	on	[cutting board]
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion}
+O240	knife	1
+S16	clean
+M71	scrape	11:33	11:38
+O240	knife	1
+S38	dirty
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive}
+O143	cutting board	0
+S38	dirty
+O209	green olive	1
+S117	sliced
+S65	in	[bowl]
 //
-O3	strainer	0
-S43	contains	{cherry tomato}
-O391	cherry tomato	1
-S362	whole
-S33	destemmed
-S43	washed
-S43	in	[strainer]
-O83	cutting board	0
-S107	empty
-M0	pick-and-place	8:50	8:57
-O83	cutting board	0
-S201	contains	{cherry tomato}
-O391	cherry tomato	1
-S362	whole
-S33	destemmed
-S43	washed
-S362	on	[cutting board]
-O3	strainer	0
-S43	empty
-S43	dirty
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive}
+O114	container	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[container]
+M54	pour	11:46	11:49
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
 //
-O391	cherry tomato	0
-S362	whole
-S33	destemmed
-S43	washed
-S32	on	[cutting board]
-O11	knife	1
-S58	clean
-M8	cut	8:59	9:34
-O391	cherry tomato	0
-S43	cut
-S357	quartered
-S23	on	[cutting board]
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt}
+O45	bottle	1
+S23	contains	{green olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+M54	pour	12:02	12:06
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil}
+O296	olive oil	1
+S65	in	[bowl]
 //
-O83	cutting board	1
-S201	contains	{cherry tomato}
-O391	cherry tomato	1
-S43	cut
-S357	quartered
-S23	on	[cutting board]
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot}
-O11	knife	1
-S58	clean
-M18	scrape	9:37	9:47
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato}
-O391	cherry tomato	1
-S357	cut
-S43	quartered
-S23	in	[bowl]
-O83	cutting board	0
-S201	empty
-S43	dirty
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil}
+O304	oregano	1
+S40	dried
+S65	in	[container]
+O114	container	1
+S23	contains	{oregano}
+M83	sprinkle	12:17	12:21
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil,oregano}
+O304	oregano	1
+S40	dried
+S65	in	[bowl]
 //
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato}
-O288	container	1
-S195	contains	{onion}
-O26	onion	1
-S363	chopped
-S23	in	[container]
-M4	pour	9:54	9:56
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion}
-O26	onion	1
-S363	chopped
-S23	in	[bowl]
-//
-O83	cutting board	0
-S107	empty
-O288	jar	1
-S195	contains	{green olive}
-O219	green olive	1
-S362	whole
-S23	in	[jar]
-M0	pick-and-place	10:18	10:43
-O83	cutting board	0
-S201	contains	{green olive}
-O219	green olive	1
-S362	whole
-S23	on	[cutting board]
-//
-O219	green olive	0
-S362	whole
-S23	on	[cutting board]
-O11	knife	1
-S58	clean
-M8	slice	11:06	11:31
-O219	green olive	0
-S357	sliced
-S23	on	[cutting board]
-//
-O83	cutting board	0
-S201	contains	{green olive}
-O219	green olive	1
-S357	sliced
-S23	on	[cutting board]
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion}
-O11	knife	1
-S58	clean
-M18	scrape	11:33	11:38
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive}
-O83	cutting board	0
-S43	empty
-S201	dirty
-O219	green olive	1
-S357	sliced
-S23	in	[bowl]
-//
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive}
-O288	shaker	1
-S195	contains	{salt}
-O18	salt	1
-S23	granulated
-S164	in	[shaker]
-M4	sprinkle	11:46	11:49
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt}
-O18	salt	1
-S23	granulated
-S164	in	[bowl]
-//
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt}
-O108	bottle	1
-S195	contains	{green olive oil}
-O146	olive oil	1
-S43	liquid
-S159	in	[bottle]
-M4	pour	12:02	12:06
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil}
-O146	olive oil	1
-S43	liquid
-S159	in	[bowl]
-//
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil}
-O288	jar	1
-S195	contains	{oregano}
-O35	oregano	1
-S23	dried
-S164	in	[jar]
-M2	sprinkle	12:17	12:21
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil,oregano}
-O35	oregano	1
-S23	dried
-S164	in	[bowl]
-//
-O2	bowl	0
-S195	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil,oregano}
-O87	lettuce	1
-S357	chopped
-S23	in	[bowl]
-O132	mushroom	1
-S360	diced
-S23	in	[bowl]
-O120	carrot	1
-S357	grated
-S32	in	[bowl]
-O391	cherry tomato	0
-S357	cut
-S4	quartered
-S23	in	[bowl]
-O26	onion	1
-S363	chopped
-S23	in	[bowl]
-O219	green olive	1
-S357	sliced
-S23	in	[bowl]
-O18	salt	1
-S23	granulated
-S164	in	[bowl]
-O146	olive oil	1
-S43	liquid
-S159	in	[bowl]
-O35	oregano	1
-S23	dried
-S164	in	[bowl]
-O22	spoon	1
-S58	clean
-M1	mix	12:29	12:59
-O2	salad	0	!
-S43	mixed
-S198	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil,oregano}
-S349	in	[bowl]
+O46	bowl	0
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil,oregano}
+O254	lettuce	1
+S14	chopped
+S65	in	[bowl]
+O287	mushroom	1
+S37	diced
+S65	in	[bowl]
+O71	carrot	1
+S56	grated
+S65	in	[bowl]
+O81	cherry tomato	0
+S32	cut
+S65	in	[bowl]
+O299	onion	1
+S14	chopped
+S65	in	[bowl]
+O209	green olive	1
+S117	sliced
+S65	in	[bowl]
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O296	olive oil	1
+S65	in	[bowl]
+O304	oregano	1
+S40	dried
+S65	in	[bowl]
+O416	spoon	1
+S16	clean
+M46	mix	12:29	12:59
+O416	spoon	1
+S38	dirty
+O46	bowl	0
+S23	contains	{salad}
+O371	salad	0	15
+S23	contains	{lettuce,mushroom,carrot,cherry tomato,onion,green olive,salt,green olive oil,oregano}
+S65	in	[bowl]
 //

@@ -1,662 +1,443 @@
-# Source:	https://www.youtube.com/watch?v=GPrGeUiogX4
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/ACT-0097-cranberry-walnut_pancake.mp4
+O308	packet	1
+S23	contains	{cranberry}
+O127	cranberry	1
+S40	dried
+S65	in	[packet]
+O270	measuring cup	0
+S41	empty
+M54	pour	Assumed	Assumed
+O270	measuring cup	0
+S23	contains	{cranberry}
+O127	cranberry	1
+S40	dried
+S65	in	[measuring cup]
 //
-O1	packet	1
-S43	contains	{cranberry}
-S43	sealed
-M0	open	Assumed	Assumed
-O1	packet	1
-S43	contains	{cranberry}
-S43	opened
+O270	measuring cup	0
+S23	contains	{cranberry}
+O45	bottle	1
+S23	contains	{maple syrup}
+O263	maple syrup	1
+S65	in	[bottle]
+M54	pour	assumed	assumed
+O263	maple syrup	0
+S65	in	[measuring cup]
+O270	measuring cup	0
+S23	contains	{cranberry,maple syrup}
 //
-O1	packet	1
-S43	contains	{cranberry}
-S43	opened
-O42	cranberry	1
-S314	whole
-S314	in	[packet]
-O30	strainer	0
-S43	empty
-M0	pour	Assumed	Assumed
-O42	cranberry	1
-S314	whole
-S314	in	[strainer]
-O30	strainer	0
-S43	contains	{cranberry}
+O270	measuring cup	0
+S23	contains	{cranberry,maple syrup}
+O263	maple syrup	0
+S65	in	[measuring cup]
+O127	cranberry	0
+S40	dried
+S65	in	[measuring cup]
+M80	soak	assumed	assumed
+O127	cranberry	0
+S14	chopped
+S119	soaked	{maple syrup}
+S65	in	[measuring cup]
 //
-O93	faucet	0
-S43	on
-O43	water	0
-S43	from	[faucet]
-O30	strainer	1
-S43	contains	{cranberry}
-O42	cranberry	1
-S314	whole
-S314	in	[strainer]
-M9	wash	Assumed	Assumed
-O42	cranberry	1
-S43	washed
-S314	whole
-S314	in	[strainer]
+O46	bowl	0
+S41	empty
+O126	cornmeal	0
+S58	ground
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{cornmeal}
+M54	pour	2:03	2:07
+O46	bowl	0
+S23	contains	{cornmeal}
 //
-O30	strainer	1
-S43	contains	{cranberry}
-O42	cranberry	1
-S43	washed
-S314	whole
-S314	in	[strainer]
-O42	cutting board	1
-S43	empty
-M0	pour	Assumed	Assumed
-O42	cutting board	0
-S43	contains	{cranberry}
-O42	cranberry	1
-S43	washed
-S314	whole
-S314	on	[cutting board]
-O30	strainer	1
-S43	empty
-S43	dirty
+O46	bowl	0
+S23	contains	{cornmeal}
+O176	flour	0
+S96	powder
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{flour}
+M54	pour	2:08	2:12
+O46	bowl	0
+S23	contains	{cornmeal,flour}
 //
-O42	cranberry	0
-S43	washed
-S314	whole
-S314	on	[cutting board]
-O4	knife	1
-S43	clean
-M0	chop	Assumed	Assumed
-O42	cranberry	1
-S314	chopped
-S314	on	[cutting board]
+O46	bowl	0
+S23	contains	{cornmeal,flour}
+O11	baking soda	0
+S96	powder
+S65	in	[box]
+O47	box	1
+S23	contains	{baking soda}
+O416	spoon	1
+S16	clean
+M70	scoop and pour	2:17	2:21
+O416	spoon	0
+S38	dirty
+O46	bowl	0
+S23	contains	{cornmeal,flour,baking soda}
+O11	baking soda	0
+S96	powder
+S65	in	[bowl]
 //
-O42	cutting board	1
-S314	contains	{cranberry}
-O42	cranberry	1
-S314	chopped
-S314	on	[cutting board]
-O190	measuring cup	0
-S314	empty
-M0	pour	Assumed	Assumed
-O190	measuring cup	0
-S195	contains	{cranberry}
-O42	cranberry	1
-S314	chopped
-S314	in	[measuring cup]
-O43	cutting board	1
-S43	empty
-S43	dirty
+O46	bowl	0
+S23	contains	{cornmeal,flour,baking soda}
+O10	baking powder	0
+S96	powder
+S65	in	[tin can]
+O444	tin can	0
+S23	contains	{baking powder}
+O416	spoon	1
+S16	clean
+M70	scoop and pour	2:22	2:25
+O416	spoon	0
+S38	dirty
+O46	bowl	0
+S23	contains	{cornmeal,flour,baking soda,baking powder}
+O10	baking powder	0
+S96	powder
+S65	in	[bowl]
 //
-O108	bottle	1
-S195	contains	{maple syrup}
-S43	closed
-M40	open	Assumed	Assumed
-O108	bottle	1
-S195	contains	{maple syrup}
-S43	opened
+O114	container	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[container]
+O138	cup	0
+S41	empty
+M54	pour	Assumed	Assumed
+O138	cup	0
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[cup]
 //
-O190	measuring cup	0
-S195	contains	{cranberry}
-O108	bottle	1
-S195	contains	{maple syrup}
-S43	opened
-O368	maple syrup	1
-S43	thick liquid
-S159	in	[bottle]
-M4	pour	assumed	assumed
-O190	measuring cup	0
-S195	contains	{cranberry,maple syrup}
-O368	maple syrup	0
-S43	thick liquid
-S169	in	[measuring cup]
+O46	bowl	0
+S23	contains	{cornmeal,flour,baking soda,baking powder}
+O138	cup	0
+S23	contains	{salt}
+O376	salt	0
+S55	granulated
+S65	in	[cup]
+O416	spoon	1
+S16	clean
+M70	scoop and pour	2:26	2:28
+O416	spoon	0
+S38	dirty
+O46	bowl	0
+S23	contains	{cornmeal,flour,baking soda,baking powder,salt}
+O376	salt	0
+S55	granulated
+S65	in	[bowl]
 //
-O368	maple syrup	0
-S43	thick liquid
-S169	in	[measuring cup]
-O363	cranberry	0
-S314	chopped
-S169	in	[measuring cup]
-M0	soak	assumed	assumed
-O363	cranberry	0
-S314	chopped
-S314	contains	{maple syrup}
-S169	in	[measuring cup]
-O368	maple syrup	0
-S43	thick liquid
-S169	in	[cranberry]
+O46	bowl	0
+S23	contains	{cornmeal,flour,baking soda,baking powder,salt}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O11	baking soda	1
+S96	powder
+S65	in	[bowl]
+O10	baking powder	1
+S96	powder
+S65	in	[bowl]
+O176	flour	1
+S96	powder
+S65	in	[bowl]
+O126	cornmeal	0
+S58	ground
+S65	in	[bowl]
+O412	spatula	0
+S16	clean
+M46	mix	2:29	2:32
+O412	spatula	0
+S38	dirty
+O46	bowl	0
+S23	contains	{flour mixture}
+O178	flour mixture	1
+S23	contains	{cornmeal,flour,baking soda,baking powder,salt}
+S65	in	[bowl]
 //
-O2	mixing bowl	0
-S107	empty
-O2	bowl	1
-S195	contains	{cornmeal}
-O369	cornmeal	1
-S314	powder
-S160	in	[bowl]
-M4	pour	2:03	2:07
-O2	mixing bowl	0
-S195	contains	{cornmeal}
-O369	cornmeal	0
-S314	powder
-S160	in	[mixing bowl]
-O2	bowl	1
-S195	empty
-S43	dirty
+O46	bowl	0
+S23	contains	{flour mixture}
+O270	measuring cup	1
+S23	contains	{yogurt}
+O496	yogurt	1
+S65	in	[measuring cup]
+M54	pour	2:34	2:37
+O46	bowl	0
+S23	contains	{flour mixture,yogurt}
+O496	yogurt	0
+S65	in	[bowl]
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal}
-O2	bowl	1
-S195	contains	{flour}
-O42	flour	1
-S314	powder
-S160	in	[bowl]
-M4	pour	2:08	2:12
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour}
-O42	flour	1
-S314	powder
-S160	in	[mixing bowl]
-O2	bowl	1
-S195	empty
-S43	dirty
+O46	bowl	0
+S23	contains	{flour mixture,yogurt}
+O178	flour mixture	1
+S23	contains	{cornmeal,flour,baking soda,baking powder,salt}
+S65	in	[bowl]
+O496	yogurt	1
+S65	in	[bowl]
+O412	spatula	1
+S16	clean
+M46	mix	2:38	2:41
+O412	spatula	0
+S38	dirty
+O46	bowl	0
+S23	contains	{pancake batter}
+O312	pancake batter	1
+S23	contains	{flour mixture,yogurt}
+S65	in	[bowl]
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour}
-O7	baking soda	0
-S314	powder
-S175	in	[box]
-O370	box	1
-S195	contains	{baking soda}
-O22	spoon	1
-S58	clean
-M3	scoop and pour	2:17	2:21
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda}
-O116	baking soda	1
-S314	powder
-S160	in	[mixing bowl]
-O22	spoon	1
-S102	dirty
+O46	bowl	0
+S23	contains	{pancake batter}
+O270	measuring cup	1
+S23	contains	{cranberry,maple syrup}
+O127	cranberry	1
+S14	chopped
+S119	soaked	{maple syrup}
+S65	in	[measuring cup]
+O416	spoon	0
+S16	clean
+M71	scrape	2:45	2:54
+O416	spoon	0
+S38	dirty
+O46	bowl	0
+S23	contains	{pancake batter,cranberry,maple syrup}
+O127	cranberry	0
+S14	chopped
+S119	soaked	{maple syrup}
+S65	in	[bowl]
+O263	maple syrup	0
+S65	in	[bowl]
 //
-O129	can	1
-S195	contains	{baking powder}
-S3	closed
-M0	open	Assumed	Assumed
-O129	can	1
-S195	contains	{baking powder}
-S3	opened
+O46	bowl	0
+S23	contains	{pancake batter,cranberry,maple syrup}
+O474	walnut	0
+S14	chopped
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{walnut}
+M54	pour	2:55	2:57
+O46	bowl	0
+S23	contains	{pancake batter,cranberry,maple syrup,walnut}
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda}
-O116	baking powder	1
-S314	powder
-S162	in	[can]
-O129	can	0
-S195	contains	{baking powder}
-S3	opened
-O22	spoon	1
-S58	clean
-M3	scoop and pour	2:22	2:25
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder}
-O116	baking powder	0
-S314	powder
-S160	in	[mixing bowl]
-O22	spoon	0
-S102	dirty
+O46	bowl	0
+S23	contains	{pancake batter,cranberry,maple syrup,walnut}
+O312	pancake batter	1
+S23	contains	{flour mixture,yogurt}
+S65	in	[bowl]
+O127	cranberry	1
+S14	chopped
+S119	soaked	{maple syrup}
+S65	in	[bowl]
+O263	maple syrup	1
+S65	in	[bowl]
+O474	walnut	1
+S14	chopped
+S65	in	[bowl]
+O412	spatula	1
+S16	clean
+M46	mix	2:58	3:05
+O412	spatula	0
+S38	dirty
+O46	bowl	0
+S23	contains	{pancake batter}
+O312	pancake batter	1
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut}
+S65	in	[bowl]
 //
-O64	shaker	1
-S195	contains	{salt}
-O18	salt	1
-S54	granulated
-S165	in	[shaker]
-O64	cup	0
-S248	empty
-M0	pour	Assumed	Assumed
-O64	cup	0
-S195	contains	{salt}
-O18	salt	1
-S54	granulated
-S165	in	[cup]
+O308	packet	0
+S23	contains	{dark chocolate}
+O145	dark chocolate	0
+S2	bar
+S65	in	[packet]
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	assumed	assumed
+O143	cutting board	0
+S23	contains	{dark chocolate}
+O145	dark chocolate	0
+S2	bar
+S81	on	[cutting board]
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder}
-O64	cup	0
-S195	contains	{salt}
-O18	salt	0
-S54	granulated
-S165	in	[cup]
-O22	spoon	1
-S58	clean
-M3	scoop and pour	2:26	2:28
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt}
-O18	salt	1
-S54	granulated
-S160	in	[mixing bowl]
-O22	spoon	1
-S102	dirty
+O143	cutting board	0
+S23	contains	{dark chocolate}
+O145	dark chocolate	0
+S2	bar
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M10	chop	assumed	assumed
+O145	dark chocolate	0
+S14	chopped
+S81	on	[cutting board]
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt}
-O18	salt	1
-S54	granulated
-S160	in	[mixing bowl]
-O116	baking soda	1
-S314	powder
-S160	in	[mixing bowl]
-O116	baking powder	1
-S314	powder
-S160	in	[mixing bowl]
-O116	flour	1
-S314	powder
-S160	in	[mixing bowl]
-O116	cornmeal	0
-S314	powder
-S160	in	[mixing bowl]
-O37	spatula	0
-S58	clean
-M1	mix	2:29	2:32
-O372	flour mixture	1
-S43	mixed
-S43	powder
-S314	contains	{cornmeal,flour,baking soda,baking powder,salt}
-S314	in	[mixing bowl]
-O37	spatula	0
-S102	dirty
+O46	bowl	0
+S41	empty
+O145	dark chocolate	1
+S14	chopped
+S81	on	[cutting board]
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{dark chocolate}
+O145	dark chocolate	1
+S14	chopped
+S65	in	[bowl]
 //
-O0	container	1
-S43	contains	{yogurt}
-S43	sealed
-M0	open	Assumed	Assumed
-O0	container	1
-S43	contains	{yogurt}
-S43	opened
+O46	bowl	0
+S23	contains	{pancake batter}
+O46	bowl	0
+S23	contains	{dark chocolate}
+O145	dark chocolate	0
+S14	chopped
+S65	in	[bowl]
+M54	pour	3:07	3:09
+O46	bowl	0
+S23	contains	{pancake batter,chocolate}
 //
-O0	container	1
-S43	contains	{yogurt}
-S43	opened
-O149	yogurt	1
-S43	creamy
-S169	in	[container]
-O190	measuring cup	1
-S4	empty
-M0	pour	Assumed	Assumed
-O190	measuring cup	1
-S195	contains	{yogurt}
-O149	yogurt	1
-S43	creamy
-S169	in	[measuring cup]
-O0	container	1
-S43	empty
-S43	dirty
+O46	bowl	0
+S23	contains	{pancake batter,chocolate}
+O312	pancake batter	1
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut}
+S65	in	[bowl]
+O145	dark chocolate	1
+S14	chopped
+S65	in	[bowl]
+O412	spatula	1
+S16	clean
+M46	mix	3:10	3:20
+O412	spatula	0
+S38	dirty
+O46	bowl	0
+S23	contains	{pancake batter}
+O312	pancake batter	1
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S65	in	[bowl]
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt}
-O190	measuring cup	1
-S195	contains	{yogurt}
-O149	yogurt	1
-S43	creamy
-S169	in	[measuring cup]
-M4	pour	2:34	2:37
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt}
-O149	yogurt	0
-S43	creamy
-S160	in	[bowl]
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+O444	tin can	1
+S23	contains	{canola oil}
+O70	canola oil	1
+S65	in	[tin can]
+M81	spray	assumed	assumed
+O116	cooking pan	0
+S57	greased	{canola oil}
+S81	on	[stove]
+O70	canola oil	0
+S65	in	[pan]
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt}
-O372	flour mixture	1
-S43	mixed
-S43	powder
-S314	contains	{cornmeal,flour,baking soda,baking powder,salt}
-S314	in	[mixing bowl]
-O149	yogurt	1
-S43	creamy
-S160	in	[mixing bowl]
-O37	spatula	1
-S58	clean
-M1	mix	2:38	2:41
-O37	spatula	0
-S102	dirty
-O372	pancake batter	1
-S43	mixed
-S43	dough
-S314	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt}
-S314	in	[mixing bowl]
+O46	bowl	0
+S23	contains	{pancake batter}
+O312	pancake batter	1
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S65	in	[bowl]
+O116	cooking pan	0
+S57	greased	{canola oil}
+S81	on	[stove]
+O243	ladle	1
+S16	clean
+M70	scoop and pour	3:35	3:43
+O243	ladle	0
+S38	dirty
+O116	cooking pan	0
+S23	contains	{pancake batter}
+S81	on	[stove]
+O312	pancake batter	1
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S65	in	[pan]
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt}
-O190	measuring cup	1
-S195	contains	{cranberry,maple syrup}
-O363	cranberry	1
-S314	chopped
-S314	contains	{maple syrup}
-S169	in	[measuring cup]
-O22	spoon	1
-S58	clean
-M18	pour and scrape	2:45	2:54
-O22	spoon	1
-S102	dirty
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry}
-O363	cranberry	0
-S314	chopped
-S314	contains	{maple syrup}
-S160	in	[mixing bowl]
-O190	measuring cup	1
-S195	dirty
-S43	empty
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{pancake batter}
+S81	on	[stove]
+O312	pancake batter	1
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M32	flip	4:39	4:42
+O464	turner	0
+S38	dirty
+O311	pancake	1
+S86	partly cooked
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S65	in	[pan]
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry}
-O2	bowl	1
-S195	contains	{walnut}
-O370	walnut	1
-S43	pieces
-S314	chopped
-S160	in	[bowl]
-M4	pour	2:55	2:57
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut}
-O370	walnut	1
-S43	pieces
-S314	chopped
-S160	in	[mixing bowl]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{pancake batter}
+S81	on	[stove]
+O311	pancake	1
+S86	partly cooked
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M32	flip	4:45	4:48
+O116	cooking pan	0
+S23	contains	{pancake}
+S81	on	[stove]
+O311	pancake	1
+S24	cooked
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S65	in	[pan]
+O464	turner	0
+S38	dirty
 //
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut}
-O372	pancake batter	1
-S43	mixed
-S43	dough
-S314	contains	{flour mixture,yogurt}
-S314	in	[mixing bowl]
-O363	cranberry	1
-S314	chopped
-S314	contains	{maple syrup}
-S160	in	[mixing bowl]
-O370	walnut	1
-S43	pieces
-S314	chopped
-S160	in	[mixing bowl]
-O37	spatula	1
-S58	clean
-M1	mix	2:58	3:05
-O37	spatula	1
-S102	dirty
-O2	mixing bowl	0
-S198	contains	{pancake batter}
-O372	pancake batter	1
-S4	dough
-S43	mixed
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut}
-S314	in	[mixing bowl]
+O116	cooking pan	0
+S23	contains	{pancake}
+S81	on	[stove]
+O311	pancake	1
+S24	cooked
+S23	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S65	in	[pan]
+O464	turner	1
+S16	clean
+O344	plate	0
+S41	empty
+M50	pick-and-place	4:46	4:55
+O344	plate	0
+S23	contains	{pancake}
+O128	cranberry-walnut pancake	1
+S23	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S81	on	[plate]
 //
-O2	packet	0
-S195	contains	{dark chocolate}
-S43	sealed
-M0	open	Assumed	Assumed
-O2	packet	0
-S195	contains	{dark chocolate}
-S43	opened
+O344	plate	0
+S23	contains	{pancake}
+O483	whipped cream	0
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{whipped cream}
+O416	spoon	1
+S16	clean
+O128	cranberry-walnut pancake	1
+S23	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S81	on	[plate]
+M70	scoop and pour	5:02	5:05
+O128	cranberry-walnut pancake	1
+S23	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate,whipped cream}
+S81	on	[plate]
+O483	whipped cream	0
+S81	on	[pancake]
 //
-O2	packet	0
-S195	contains	{dark chocolate}
-S43	opened
-O371	dark chocolate	1
-S314	whole
-S43	bar
-S160	in	[packet]
-O363	cutting board	0
-S314	empty
-M0	pick-and-place	assumed	assumed
-O363	cutting board	0
-S195	contains	{dark chocolate}
-O371	dark chocolate	1
-S314	whole
-S43	bar
-S160	on	[cutting board]
-//
-O371	dark chocolate	0
-S314	bar
-S160	on	[cutting board]
-O42	knife	1
-S314	clean
-M0	chop	assumed	assumed
-O371	dark chocolate	0
-S43	pieces
-S314	chopped
-S160	on	[cutting board]
-//
-O363	bowl	0
-S314	empty
-O371	dark chocolate	1
-S43	pieces
-S314	chopped
-S160	on	[cutting board]
-M0	pick-and-place	Assumed	Assumed
-O2	bowl	0
-S195	contains	{dark chocolate}
-O371	dark chocolate	1
-S43	pieces
-S314	chopped
-S160	in	[bowl]
-//
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut}
-O2	bowl	0
-S195	contains	{dark chocolate}
-O371	dark chocolate	0
-S43	pieces
-S314	chopped
-S160	in	[bowl]
-M4	pour	3:07	3:09
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-O371	dark chocolate	0
-S43	pieces
-S314	chopped
-S160	in	[mixing bowl]
-//
-O2	mixing bowl	0
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-O372	pancake batter	1
-S4	dough
-S43	mixed
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut}
-S314	in	[mixing bowl]
-O371	dark chocolate	1
-S43	pieces
-S314	chopped
-S160	in	[mixing bowl]
-O37	spatula	1
-S58	clean
-M1	mix	3:10	3:20
-O37	spatula	0
-S102	dirty
-O2	mixing bowl	0
-S195	contains	{pancake batter}
-O372	pancake batter	1
-S4	dough
-S43	mixed
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[mixing bowl]
-//
-O13	cooking pan	0
-S151	empty
-S43	hot
-S314	on	[stove]
-O129	spray can	1
-S195	contains	{canola oil}
-O372	canola oil	1
-S43	liquid
-S162	in	[spray can]
-M13	spray	assumed	assumed
-O13	cooking pan	0
-S230	contains	{canola oil}
-S43	hot
-S314	on	[stove]
-O372	canola oil	0
-S43	liquid
-S176	in	[cooking pan]
-//
-O2	mixing bowl	0
-S195	contains	{pancake batter}
-O372	pancake batter	1
-S4	dough
-S43	mixed
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[mixing bowl]
-O13	cooking pan	0
-S43	hot
-S230	contains	{canola oil}
-S314	on	[stove]
-O126	ladle	1
-S58	clean
-M3	scoop and pour	3:35	3:43
-O126	ladle	0
-S102	dirty
-O13	cooking pan	0
-S193	contains	{pancake}
-S314	on	[stove]
-O372	pancake	1
-S43	raw
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[cooking pan]
-//
-O38	stove	0
-S314	on
-S248	with	[pan]
-O13	cooking pan	0
-S43	hot
-S193	contains	{pancake}
-S314	on	[stove]
-O372	pancake	1
-S43	raw
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[cooking pan]
-M0	cook	Assumed	Assumed
-O372	pancake	1
-S43	partly cooked
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[cooking pan]
-//
-O13	cooking pan	0
-S43	hot
-S193	contains	{pancake}
-S314	on	[stove]
-O372	pancake	1
-S43	partly cooked
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[cooking pan]
-O373	turner	1
-S58	clean
-M11	flip	4:39	4:42
-O372	pancake	1
-S314	partly cooked
-S43	flipped
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[pan]
-O373	turner	1
-S102	dirty
-//
-O38	stove	0
-S314	on
-S248	with	[pan]
-O13	cooking pan	0
-S43	hot
-S193	contains	{pancake}
-S314	on	[stove]
-O372	pancake	1
-S314	partly cooked
-S43	flipped
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[cooking pan]
-M0	cook	Assumed	Assumed
-O372	pancake	1
-S43	cooked
-S43	toasted
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[cooking pan]
-//
-O38	stove	0
-S314	on
-S248	with	[pan]
-O13	cooking pan	0
-S43	hot
-S193	contains	{pancake}
-S314	on	[stove]
-M0	turn off	Assumed	Assumed
-O38	stove	0
-S314	off
-S248	with	[pan]
-O13	cooking pan	0
-S193	contains	{pancake}
-S314	on	[stove]
-//
-O13	cooking pan	0
-S193	contains	{pancake}
-S314	on	[stove]
-O372	pancake	1
-S43	cooked
-S43	toasted
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[cooking pan]
-O373	turner	1
-S58	clean
-O15	plate	0
-S248	empty
-M0	pick-and-place	4:46	4:55
-O15	plate	0
-S193	contains	{pancake}
-O372	pancake	1	!
-S43	cooked
-S314	on	[plate]
-O372	cranberry-walnut pancake	1	!
-S43	cooked
-S43	toasted
-S195	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,walnut,dark chocolate}
-S314	in	[cooking pan]
-//
-O15	plate	0
-S193	contains	{pancake}
-O372	pancake	1
-S43	cooked
-S314	on	[plate]
-O2	bowl	0
-S195	contains	{whipped cream}
-O375	whipped cream	0
-S43	creamy
-S4	whipped
-S160	in	[bowl]
-O22	spoon	1
-S58	clean
-M3	scoop and pour	5:02	5:05
-O375	whipped cream	0
-S43	creamy
-S33	whipped
-S160	on	[pancake]
-O372	pancake	1
-S43	cooked
-S43	contains	{whipped cream}
-S314	on	[plate]
-//
-O15	plate	0
-S193	contains	{pancake}
-O372	pancake	1
-S43	cooked
-S43	contains	{whipped cream}
-S314	on	[plate]
-O64	cup	1
-S195	contains	{powdered sugar}
-O376	powdered sugar	0
-S314	powder
-S165	in	[cup]
-M2	sprinkle	5:08	5:16
-O372	pancake	1
-S43	cooked
-S43	contains	{whipped cream,powdered sugar}
-S314	on	[plate]
-O376	powdered sugar	0
-S314	powder
-S165	on	[pancake]
+O344	plate	0
+S23	contains	{pancake}
+O128	cranberry-walnut pancake	1
+S23	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate,whipped cream}
+S81	on	[plate]
+O138	cup	1
+S23	contains	{powdered sugar}
+O352	powdered sugar	0
+S96	powder
+S65	in	[cup]
+M83	sprinkle	5:08	5:16
+O128	cranberry-walnut pancake	1	5
+S23	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate,whipped cream,powdered sugar}
+S81	on	[plate]
+O352	powdered sugar	0
+S96	powder
+S81	on	[pancake]
 //

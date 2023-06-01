@@ -1,294 +1,291 @@
-# Source:	https://www.youtube.com/watch?v=VeF-kyPQJgM
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/0038-homestyle_creamed_corn.mp4
+O119	corn	1
+S141	whole
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{corn}
+O119	corn	1
+S141	whole
+S81	on	[cutting board]
 //
-O149	corn	1
-S262	whole
-O180	cutting board	0
-S54	empty
-M38	pick-and-place	Assumed	Assumed
-O180	cutting board	0
-S144	contains	{corn}
-O149	corn	1
-S262	whole
-S175	on	[cutting board]
+O143	cutting board	0
+S23	contains	{corn}
+O119	corn	1
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M75	shave	0:04	0:46
+O121	corn kernels	1
+S133	uncooked
+S81	on	[cutting board]
+O119	corn	1
+S112	shaved
+S81	on	[cutting board]
 //
-O180	cutting board	0
-S144	contains	{corn}
-O149	corn	1
-S262	whole
-S175	on	[cutting board]
-O293	knife	1
-S23	clean
-M55	shave	0:04	0:46
-O152	corn kernels	1
-S258	uncooked
-S175	on	[cutting board]
-O149	corn	1
-S234	shaved
-S175	on	[cutting board]
+O143	cutting board	0
+S23	contains	{corn}
+O121	corn kernels	1
+S133	uncooked
+S81	on	[cutting board]
+O346	pot	0
+S41	empty
+O240	knife	1
+S16	clean
+M70	scoop and pour	0:48	0:58
+O346	pot	0
+S23	contains	{corn kernels}
+O121	corn kernels	1
+S133	uncooked
+S65	in	[pot]
+O119	corn	1
+S112	shaved
+S81	on	[cutting board]
 //
-O180	cutting board	0
-S144	contains	{corn}
-O152	corn kernels	1
-S258	uncooked
-S175	on	[cutting board]
-O420	pot	0
-S54	empty
-O293	knife	1
-S23	clean
-M51	scoop and pour	0:48	0:58
-O420	pot	0
-S138	contains	{corn kernels}
-O152	corn kernels	1
-S258	uncooked
-S116	in	[pot]
-O149	corn	1
-S234	shaved
-S175	on	[cutting board]
+O346	pot	0
+S23	contains	{corn kernels}
+O119	corn	1
+S112	shaved
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M71	scrape	1:12	1:30
+O346	pot	0
+S23	contains	{corn}
+O121	corn kernels	1
+S133	uncooked
+S65	in	[pot]
+O120	corn cob	1
+S112	shaved
 //
-O420	pot	0
-S138	contains	{corn kernels}
-O149	corn	1
-S234	shaved
-S175	on	[cutting board]
-O293	knife	1
-S23	clean
-M52	scrape	1:12	1:30
-O420	pot	0
-S138	contains	{corn}
-O152	corn kernels	1
-S258	uncooked
-S116	in	[pot]
-O150	corn cob	1
-S234	shaved
+O346	pot	0
+S23	contains	{corn}
+O120	corn cob	1
+S112	shaved
+M84	squeeze	1:33	1:41
+O120	corn cob	1
+S124	squeezed
 //
-O420	pot	0
-S138	contains	{corn}
-O150	corn cob	1
-S234	shaved
-M64	squeeze	1:33	1:41
-O150	corn cob	1
-S246	squeezed
+O346	pot	1
+S23	contains	{corn}
+O346	pot	0
+S23	contains	{water}
+O475	water	1
+S65	in	[pot]
+O416	spoon	1
+S16	clean
+M54	pour	1:44	1:54
+O346	pot	0
+S23	contains	{water,corn}
 //
-O420	pot	1
-S138	contains	{corn}
-O420	pot	0
-S138	contains	{water}
-O566	water	1
-S116	in	[pot]
-O507	spoon	1
-S23	clean
-M40	pour	1:44	1:54
-O420	pot	0
-S138	contains	{water,corn}
+O346	pot	0
+S23	contains	{water,corn}
+O270	measuring cup	1
+S23	contains	{milk}
+O416	spoon	1
+S16	clean
+O273	milk	1
+S65	in	[measuring cup]
+M54	pour	1:57	2:04
+O346	pot	0
+S23	contains	{water,corn,milk}
+O273	milk	1
+S65	in	[pot]
 //
-O420	pot	0
-S138	contains	{water,corn}
-O334	measuring cup	1
-S138	contains	{milk}
-O507	spoon	1
-S23	clean
-O338	milk	1
-S103	in	[measuring cup]
-M40	pour	1:57	2:04
-O420	pot	0
-S138	contains	{water,corn,milk}
-O338	milk	1
-S116	in	[pot]
+O346	pot	0
+S23	contains	{water,corn,milk}
+O63	butter	1
+S31	cubed
+S65	in	[packet]
+M50	pick-and-place	2:08	2:11
+O346	pot	0
+S23	contains	{water,corn,milk,butter}
+O63	butter	1
+S31	cubed
+S65	in	[pot]
 //
-O420	pot	0
-S138	contains	{water,corn,milk}
-O66	butter	1
-S34	cubed
-S113	in	[packet]
-M38	pick-and-place	2:08	2:11
-O420	pot	0
-S138	contains	{water,corn,milk,butter}
-O66	butter	1
-S34	cubed
-S116	in	[pot]
+O346	pot	0
+S23	contains	{water,corn,milk,butter}
+O46	bowl	1
+S23	contains	{sugar}
+O428	sugar	1
+S55	granulated
+S65	in	[bowl]
+M54	pour	2:12	2:15
+O346	pot	0
+S23	contains	{water,corn,milk,butter,sugar}
+O428	sugar	1
+S55	granulated
+S65	in	[pot]
 //
-O420	pot	0
-S138	contains	{water,corn,milk,butter}
-O51	bowl	1
-S138	contains	{sugar}
-O518	sugar	1
-S67	granulated
-S84	in	[bowl]
-M40	pour	2:12	2:15
-O420	pot	0
-S138	contains	{water,corn,milk,butter,sugar}
-O518	sugar	1
-S67	granulated
-S116	in	[pot]
+O346	pot	0
+S23	contains	{water,corn,milk,butter,sugar}
+O46	bowl	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+M83	sprinkle	2:18	2:22
+O346	pot	0
+S23	contains	{water,corn,milk,butter,sugar,salt}
+O376	salt	1
+S55	granulated
+S65	in	[pot]
 //
-O420	pot	0
-S138	contains	{water,corn,milk,butter,sugar}
-O51	bowl	1
-S138	contains	{salt}
-O459	salt	1
-S67	granulated
-S84	in	[bowl]
-M63	sprinkle	2:18	2:22
-O420	pot	0
-S138	contains	{water,corn,milk,butter,sugar,salt}
-O459	salt	1
-S67	granulated
-S116	in	[pot]
+O346	pot	0
+S23	contains	{water,corn,milk,butter,sugar,salt}
+O396	shaker	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[shaker]
+M83	sprinkle	2:24	2:27
+O346	pot	0
+S23	contains	{water,corn,milk,butter,sugar,salt,black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[pot]
 //
-O420	pot	0
-S138	contains	{water,corn,milk,butter,sugar,salt}
-O477	shaker	1
-S138	contains	{black pepper}
-O38	black pepper	1
-S71	ground
-S122	in	[shaker]
-M63	sprinkle	2:24	2:27
-O420	pot	0
-S138	contains	{water,corn,milk,butter,sugar,salt,black pepper}
-O38	black pepper	1
-S71	ground
-S116	in	[pot]
+O346	pot	0
+S23	contains	{water,corn,milk,butter,sugar,salt,black pepper}
+O416	spoon	1
+S16	clean
+O121	corn kernels	1
+S133	uncooked
+S65	in	[pot]
+M85	stir	2:28	2:35
+O346	pot	0
+S23	contains	{corn mixture}
+O122	corn mixture	1
+S133	uncooked
+S65	in	[pot]
 //
-O420	pot	0
-S138	contains	{water,corn,milk,butter,sugar,salt,black pepper}
-O507	spoon	1
-S23	clean
-O152	corn kernels	1
-S258	uncooked
-S116	in	[pot]
-M65	stir	2:28	2:35
-O420	pot	0
-S142	contains	{corn mixture}
-O153	corn mixture	1
-S258	uncooked
-S116	in	[pot]
+O346	pot	1
+S23	contains	{corn mixture}
+O425	stove	0
+S81	on
+M50	pick-and-place	Assumed	Assumed
+O346	pot	1
+S23	contains	{corn mixture}
+S81	on	[stove]
+O425	stove	1
+S81	on
+S142	with	[pot]
 //
-O420	pot	1
-S142	contains	{corn mixture}
-O515	stove	0
-S167	on
-M38	pick-and-place	Assumed	Assumed
-O420	pot	1
-S142	contains	{corn mixture}
-S197	on	[stove]
-O515	stove	1
-S167	on
-S219	with	[pot]
+O346	pot	1
+S23	contains	{corn mixture}
+S81	on	[stove]
+O425	stove	1
+S81	on
+S142	with	[pot]
+O122	corn mixture	1
+S133	uncooked
+S65	in	[pot]
+M5	boil	3:07	3:13
+O122	corn mixture	1
+S86	partly cooked
+S65	in	[pot]
 //
-O420	pot	1
-S142	contains	{corn mixture}
-S197	on	[stove]
-O515	stove	1
-S167	on
-S219	with	[pot]
-O153	corn mixture	1
-S258	uncooked
-S116	in	[pot]
-M4	boil	3:07	3:13
-O153	corn mixture	1
-S209	partly cooked
-S116	in	[pot]
+O270	measuring cup	1
+S23	contains	{milk}
+O46	bowl	1
+S23	contains	{corn starch}
+O123	corn starch	1
+S65	in	[bowl]
+O416	spoon	1
+S16	clean
+M69	scoop	3:22	3:27
+O270	measuring cup	1
+S23	contains	{milk,corn starch}
+O123	corn starch	1
+S65	in	[measuring cup]
 //
-O334	measuring cup	1
-S138	contains	{milk}
-O51	bowl	1
-S138	contains	{corn starch}
-O154	corn starch	1
-S84	in	[bowl]
-O507	spoon	1
-S23	clean
-M50	scoop	3:22	3:27
-O334	measuring cup	1
-S138	contains	{milk,corn starch}
-O154	corn starch	1
-S103	in	[measuring cup]
+O270	measuring cup	1
+S23	contains	{milk,corn starch}
+O416	spoon	1
+S16	clean
+M46	mix	3:30	3:36
+O270	measuring cup	1
+S23	contains	{milk,corn starch}
 //
-O334	measuring cup	1
-S138	contains	{milk,corn starch}
-O507	spoon	1
-S23	clean
-M35	mix	3:30	3:36
-O334	measuring cup	1
-S142	contains	{milk,corn starch}
+O270	measuring cup	1
+S23	contains	{milk,corn starch}
+O122	corn mixture	1
+S86	partly cooked
+S65	in	[pot]
+O346	pot	0
+S23	contains	{corn mixture}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+M54	pour	3:50	3:54
+O346	pot	0
+S23	contains	{corn mixture,milk,corn starch}
+S81	on	[stove]
 //
-O334	measuring cup	1
-S142	contains	{milk,corn starch}
-O153	corn mixture	1
-S209	partly cooked
-S116	in	[pot]
-O420	pot	0
-S142	contains	{corn mixture}
-S197	on	[stove]
-O507	spoon	1
-S23	clean	
-M40	pour	3:50	3:54
-O420	pot	0
-S138	contains	{corn mixture,milk,corn starch}
-S197	on	[stove]
+O346	pot	0
+S23	contains	{corn mixture,milk,corn starch}
+S81	on	[stove]
+O122	corn mixture	1
+S86	partly cooked
+S65	in	[pot]
+O416	spoon	1
+S16	clean
+M16	cook and stir	3:58	4:28
+O346	pot	0
+S23	contains	{creamed corn}
+S81	on	[stove]
+O132	creamed corn	1
+S24	cooked
+S65	in	[pot]
 //
-O420	pot	0
-S138	contains	{corn mixture,milk,corn starch}
-S197	on	[stove]
-O153	corn mixture	1
-S209	partly cooked
-S116	in	[pot]
-O507	spoon	1
-S23	clean
-M12	cook and stir	3:58	4:28
-O420	pot	0
-S48	contains	{creamed corn}
-S197	on	[stove]
-O166	creamed corn	1
-S29	cooked
-S116	in	[pot]
+O346	pot	0
+S23	contains	{creamed corn}
+S81	on	[stove]
+O132	creamed corn	1
+S24	cooked
+S65	in	[pot]
+O46	bowl	1
+S23	contains	{parmesan}
+O316	parmesan	1
+S56	grated
+S65	in	[bowl]
+M83	sprinkle	4:32	4:35
+O316	parmesan	1
+S56	grated
+S65	in	[pot]
 //
-O420	pot	0
-S48	contains	{creamed corn}
-S197	on	[stove]
-O166	creamed corn	1
-S29	cooked
-S116	in	[pot]
-O51	bowl	1
-S138	contains	{parmesan}
-O382	parmesan	1
-S68	grated
-S84	in	[bowl]
-M63	sprinkle	4:32	4:35
-O382	parmesan	1
-S68	grated
-S116	in	[pot]
+O346	pot	0
+S23	contains	{creamed corn}
+S81	on	[stove]
+O132	creamed corn	1
+S24	cooked
+S65	in	[pot]
+O416	spoon	1
+S16	clean
+O316	parmesan	1
+S56	grated
+S65	in	[pot]
+M46	mix	4:36	4:48
+O132	creamed corn	1
+S24	cooked	{parmesan cheese}
+S65	in	[pot]
 //
-O420	pot	0
-S48	contains	{creamed corn}
-S197	on	[stove]
-O166	creamed corn	1
-S29	cooked
-S116	in	[pot]
-O507	spoon	1
-S23	clean
-O382	parmesan	1
-S68	grated
-S116	in	[pot]
-M35	mix	4:36	4:48
-O166	creamed corn	1
-S29	cooked	{parmesan cheese}
-S116	in	[pot]
-//
-O420	pot	0
-S48	contains	{creamed corn}
-S197	on	[stove]
-O166	creamed corn	1
-S29	cooked	{parmesan cheese}
-S116	in	[pot]
-O51	bowl	0
-S54	empty
-O297	ladle	1
-S23	clean
-M51	scoop and pour	Assumed	Assumed
-O51	bowl	0
-S48	contains	{creamed corn}
-O166	creamed corn	1	!
-S138	contains	{water,corn,milk,butter,sugar,salt,black pepper,parmesan}
-S84	in	[bowl]
+O346	pot	0
+S23	contains	{creamed corn}
+S81	on	[stove]
+O132	creamed corn	1
+S24	cooked	{parmesan cheese}
+S65	in	[pot]
+O46	bowl	0
+S41	empty
+O243	ladle	1
+S16	clean
+M70	scoop and pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{creamed corn}
+O132	creamed corn	1	1
+S23	contains	{water,corn,milk,butter,sugar,salt,black pepper,parmesan}
+S65	in	[bowl]
 //

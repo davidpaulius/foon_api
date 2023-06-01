@@ -1,654 +1,654 @@
-O2	zucchini	1
-S235	dirty
-O2	faucet	0
-S349	on
-O40	water	1
-S43	from faucet
-M2	wash	1:01	1:13
-O2	zucchini	1
-S235	washed
+O497	zucchini	1
+S38	dirty
+O170	faucet	0
+S81	on
+O475	water	1
+S52	from faucet
+M95	wash	1:01	1:13
+O497	zucchini	1
+S137	washed
 //
-O2	carrot	1
-S235	dirty
-O2	faucet	0
-S349	on
-O40	water	1
-S43	from faucet
-M2	wash	1:15	1:23
-O2	carrot	1
-S235	washed
+O71	carrot	1
+S38	dirty
+O170	faucet	0
+S81	on
+O475	water	1
+S52	from faucet
+M95	wash	1:15	1:23
+O71	carrot	1
+S137	washed
 //
-O2	zucchini	1
-S235	washed
-O13	cutting board	0
-S195	empty
-M0	pick-and-place	1:44	1:45
-O13	cutting board	0
-S195	contains	{zucchini}
-O205	zucchini	0
-S235	washed
-S235	on	[cutting board]
+O497	zucchini	1
+S137	washed
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	1:44	1:45
+O143	cutting board	0
+S23	contains	{zucchini}
+O497	zucchini	0
+S137	washed
+S81	on	[cutting board]
 //
-O13	cutting board	0
-S195	contains	{zucchini}
-O205	zucchini	0
-S235	washed
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-M8	slice	0:01:46	0:02:24
-O205	zucchini	0
-S95	sliced
-S235	on	[cutting board]
-O11	knife	1
-S102	dirty
+O143	cutting board	0
+S23	contains	{zucchini}
+O497	zucchini	0
+S137	washed
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+M79	slice	0:01:46	0:02:24
+O497	zucchini	0
+S117	sliced
+S81	on	[cutting board]
+O240	knife	1
+S38	dirty
 //
-O13	cutting board	0
-S195	contains	{zucchini}
-O205	zucchini	0
-S95	sliced
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-M94	dice	0:02:30	0:04:08
-O11	knife	1
-S102	dirty
-O205	zucchini	0
-S101	diced
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{zucchini}
+O497	zucchini	0
+S117	sliced
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+M26	dice	0:02:30	0:04:08
+O240	knife	1
+S38	dirty
+O497	zucchini	0
+S37	diced
+S81	on	[cutting board]
 //
-O205	zucchini	0
-S101	diced
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-O13	cooking pan	0
-S151	heated
-S349	on	[stove]
-M18	scrape	0:04:10	0:04:17
-O205	zucchini	0
-S101	diced
-S101	in	[pan]
-O11	knife	1
-S102	dirty
-O13	cooking pan	0
-S195	contains	{zucchini}
-S349	on	[stove]
-O13	cutting board	1
-S195	dirty
+O497	zucchini	0
+S37	diced
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+M71	scrape	0:04:10	0:04:17
+O497	zucchini	0
+S37	diced
+S65	in	[pan]
+O240	knife	1
+S38	dirty
+O116	cooking pan	0
+S23	contains	{zucchini}
+S81	on	[stove]
+O143	cutting board	1
+S38	dirty
 //
-O13	cooking pan	0
-S195	contains	{zucchini}
-S349	on	[stove]
-O37	turner	1
-S58	clean
-O205	zucchini	0
-S101	diced
-S101	in	[pan]
-M1	cook and stir	0:04:32	0:04:36
-O37	turner	1
-S102	dirty
-O13	cooking pan	0
-S198	contains	{zucchini}
-S349	on	[stove]
-O205	zucchini	0
-S101	partly cooked
-S101	in	[pan]
+O116	cooking pan	0
+S23	contains	{zucchini}
+S81	on	[stove]
+O464	turner	1
+S16	clean
+O497	zucchini	0
+S37	diced
+S65	in	[pan]
+M16	cook and stir	0:04:32	0:04:36
+O464	turner	1
+S38	dirty
+O116	cooking pan	0
+S23	contains	{zucchini}
+S81	on	[stove]
+O497	zucchini	0
+S86	partly cooked
+S65	in	[pan]
 //
-O13	cooking pan	0
-S198	contains	{zucchini}
-S349	on	[stove]
-O18	salt	0
-S349	granulated
-S164	in	[container]
-O288	container	0
-S195	contains	{salt}
-M4	shake	0:04:43	0:04:44
-O13	cooking pan	0
-S193	contains	{zucchini,salt}
-S349	on	[stove]
-O18	salt	0
-S349	granulated
-S164	in	[pan]
+O116	cooking pan	0
+S23	contains	{zucchini}
+S81	on	[stove]
+O376	salt	0
+S55	granulated
+S65	in	[container]
+O114	container	0
+S23	contains	{salt}
+M73	shake	0:04:43	0:04:44
+O116	cooking pan	0
+S23	contains	{zucchini,salt}
+S81	on	[stove]
+O376	salt	0
+S55	granulated
+S65	in	[pan]
 //
-O13	cooking pan	0
-S193	contains	{zucchini,salt}
-S349	on	[stove]
-O18	salt	0
-S349	granulated
-S164	in	[pan]
-O205	zucchini	0
-S101	partly cooked
-S101	in	[pan]
-O37	turner	1
-S58	clean
-M1	stir	0:04:47	0:04:54
-O13	cooking pan	0
-S198	contains	{zucchini,salt}
-S349	on	[stove]
-O37	turner	1
-S102	dirty
+O116	cooking pan	0
+S23	contains	{zucchini,salt}
+S81	on	[stove]
+O376	salt	0
+S55	granulated
+S65	in	[pan]
+O497	zucchini	0
+S86	partly cooked
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M85	stir	0:04:47	0:04:54
+O116	cooking pan	0
+S23	contains	{zucchini,salt}
+S81	on	[stove]
+O464	turner	1
+S38	dirty
 //
-O2	celery	1
-S235	dirty
-O2	faucet	0
-S349	on
-O40	water	1
-S43	from faucet
-M2	wash	5:02	5:14
-O2	celery	1
-S235	washed
+O75	celery	1
+S38	dirty
+O170	faucet	0
+S81	on
+O475	water	1
+S52	from faucet
+M95	wash	5:02	5:14
+O75	celery	1
+S137	washed
 //
-O2	celery	1
-S235	washed
-O13	cutting board	0
-S195	empty
-M0	pick-and-place	5:19	5:20
-O13	cutting board	0
-S195	contains	{celery}
-O2	celery	1
-S235	washed
-S235	on	[cutting board]
+O75	celery	1
+S137	washed
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	5:19	5:20
+O143	cutting board	0
+S23	contains	{celery}
+O75	celery	1
+S137	washed
+S81	on	[cutting board]
 //
-O13	cutting board	0
-S195	contains	{celery}
-O2	celery	1
-S235	washed
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-M8	slice	0:05:22	0:05:38
-O11	knife	1
-S102	dirty
-O80	celery	0
-S95	sliced
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{celery}
+O75	celery	1
+S137	washed
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+M79	slice	0:05:22	0:05:38
+O240	knife	1
+S38	dirty
+O75	celery	0
+S117	sliced
+S81	on	[cutting board]
 //
-O13	cutting board	0
-S195	contains	{celery}
-O80	celery	0
-S95	sliced
-S235	on	[cutting board]
-O11	knife	0
-S58	clean
-O13	cooking pan	0
-S107	empty
-M18	scrape	0:05:43	0:05:45
-O11	knife	1
-S102	dirty
-O13	cutting board	0
-S102	dirty
-O13	cooking pan	0
-S193	contains	{zucchini,salt,celery}
-S349	on	[stove]
-O80	celery	1
-S95	sliced
-S95	in	[pan]
+O143	cutting board	0
+S23	contains	{celery}
+O75	celery	0
+S117	sliced
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+O116	cooking pan	0
+S41	empty
+M71	scrape	0:05:43	0:05:45
+O240	knife	1
+S38	dirty
+O143	cutting board	0
+S38	dirty
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery}
+S81	on	[stove]
+O75	celery	1
+S117	sliced
+S65	in	[pan]
 //
-O13	cooking pan	0
-S193	contains	{zucchini,salt,celery}
-S349	on	[stove]
-O80	celery	1
-S95	sliced
-S95	in	[pan]
-O37	turner	1
-S58	clean
-M1	stir	0:06:08	0:06:17
-O37	turner	1
-S102	dirty
-O13	cooking pan	0
-S198	contains	{zucchini,salt,celery}
-S349	on	[stove]
-O80	celery	1
-S95	partly cooked
-S95	in	[pan]
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery}
+S81	on	[stove]
+O75	celery	1
+S117	sliced
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M85	stir	0:06:08	0:06:17
+O464	turner	1
+S38	dirty
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery}
+S81	on	[stove]
+O75	celery	1
+S86	partly cooked
+S65	in	[pan]
 //
-O2	bowl	1
-S2	contains	{onion}
-O2	onion	1
-S349	halved
-S2	in	[bowl]
-O2	cutting board	0
-S2	empty
-M2	pick-and-place	6:25	6:26
-O2	onion	1
-S349	halved
-S2	on	[cutting board]
-O2	cutting board	0
-S2	contains	{onion}
+O46	bowl	1
+S23	contains	{onion}
+O299	onion	1
+S60	halved
+S65	in	[bowl]
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	6:25	6:26
+O299	onion	1
+S60	halved
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{onion}
 //
-O2	cutting board	0
-S2	contains	{onion}
-O26	onion	0
-S349	halved
-S95	on	[cutting board]
-O11	knife	0
-S58	clean
-M94	chop	0:06:32	0:07:02
-O11	knife	1
-S102	dirty
-O26	onion	0
-S101	chopped
-S95	on	[cutting board]
+O143	cutting board	0
+S23	contains	{onion}
+O299	onion	0
+S60	halved
+S81	on	[cutting board]
+O240	knife	0
+S16	clean
+M10	chop	0:06:32	0:07:02
+O240	knife	1
+S38	dirty
+O299	onion	0
+S14	chopped
+S81	on	[cutting board]
 //
-O13	cooking pan	0
-S193	contains	{zucchini,salt,celery}
-S349	on	[stove]
-O80	celery	1
-S95	partly cooked
-S95	in	[pan]
-O80	zucchini	1
-S95	partly cooked
-S95	in	[pan]
-O37	turner	1
-S58	clean
-M1	stir	0:07:31	0:07:44
-O37	turner	1
-S102	dirty
-O13	cooking pan	0
-S198	contains	{zucchini,salt,celery}
-S349	on	[stove]
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery}
+S81	on	[stove]
+O75	celery	1
+S86	partly cooked
+S65	in	[pan]
+O497	zucchini	1
+S86	partly cooked
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M85	stir	0:07:31	0:07:44
+O464	turner	1
+S38	dirty
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery}
+S81	on	[stove]
 //
-O120	carrot	1
-S95	whole
-O2	cutting board	0
-S2	empty
-M2	pick-and-place	6:25	6:26
-O2	carrot	1
-S95	whole
-S2	on	[cutting board]
-O2	cutting board	0
-S2	contains	{carrot}
+O71	carrot	1
+S141	whole
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	6:25	6:26
+O71	carrot	1
+S141	whole
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{carrot}
 //
-O2	carrot	1
-S95	whole
-S2	on	[cutting board]
-O2	cutting board	0
-S2	contains	{carrot}
-M2	cut	9:25	9:28
-O2	carrot	1
-S2	ends removed
-S2	on	[cutting board]
+O71	carrot	1
+S141	whole
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{carrot}
+M20	cut	9:25	9:28
+O71	carrot	1
+S42	ends removed
+S81	on	[cutting board]
 //
-O2	carrot	1
-S2	ends removed
-S2	on	[cutting board]
-O40	grater	1
-S58	clean
-O13	cooking pan	0
-S198	contains	{zucchini,salt,celery}
-S349	on	[stove]
-M9	grate	0:09:36	0:10:36
-O13	cooking pan	0
-S195	contains	{zucchini,salt,celery,carrot}
-S349	on	[stove]
-O40	grater	0
-S102	dirty
-O26	carrot	1
-S349	grated
-S101	in	[pan]
+O71	carrot	1
+S42	ends removed
+S81	on	[cutting board]
+O203	grater	1
+S16	clean
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery}
+S81	on	[stove]
+M39	grate	0:09:36	0:10:36
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot}
+S81	on	[stove]
+O203	grater	0
+S38	dirty
+O71	carrot	1
+S56	grated
+S65	in	[pan]
 //
-O13	cooking pan	0
-S195	contains	{zucchini,salt,celery,carrot}
-S349	on	[stove]
-O26	carrot	1
-S349	grated
-S101	in	[pan]
-O37	turner	1
-S58	clean
-M1	stir	0:10:56	0:11:00
-O13	cooking pan	0
-S198	contains	{zucchini,salt,celery,carrot}
-S349	on	[stove]
-O26	carrot	1
-S349	partly cooked
-S101	in	[pan]
-O37	turner	1
-S102	dirty
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot}
+S81	on	[stove]
+O71	carrot	1
+S56	grated
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M85	stir	0:10:56	0:11:00
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot}
+S81	on	[stove]
+O71	carrot	1
+S86	partly cooked
+S65	in	[pan]
+O464	turner	1
+S38	dirty
 //
-O45	pot	0
-S107	heated
-S349	on	[stove]
-O173	kettle	1
-S195	contains	{water}
-O46	water	1
-S43	heated
-S153	in	[kettle]
-M4	pour	0:11:25	0:11:36
-O45	pot	0
-S195	contains	{water}
-S349	on	[stove]
-O46	water	1
-S43	heated
-S153	in	[pot]
+O346	pot	0
+S62	heated
+S81	on	[stove]
+O238	kettle	1
+S23	contains	{water}
+O475	water	1
+S62	heated
+S65	in	[kettle]
+M54	pour	0:11:25	0:11:36
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+O475	water	1
+S62	heated
+S65	in	[pot]
 //
-O13	cooking pan	0
-S198	contains	{zucchini,salt,celery,carrot}
-S349	on	[stove]
-O108	bottle	1
-S195	contains	{olive oil}
-O17	olive oil	0
-S159	in	[bottle]
-M4	pour	0:11:48	0:11:53
-O13	cooking pan	0
-S193	contains	{zucchini,salt,celery,carrot,olive oil}
-S349	on	[stove]
-O17	olive oil	1
-S159	in	[pan]
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot}
+S81	on	[stove]
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	0
+S65	in	[bottle]
+M54	pour	0:11:48	0:11:53
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil}
+S81	on	[stove]
+O296	olive oil	1
+S65	in	[pan]
 //
-O13	cooking pan	0
-S193	contains	{zucchini,salt,celery,carrot,olive oil}
-S349	on	[stove]
-O2	cutting board	1
-S2	contains	{onion}
-O26	onion	1
-S101	chopped
-S349	on	[cutting board]
-O37	turner	1
-S58	clean
-M18	scrape	0:12:00	0:12:02
-O2	cutting board	1
-S102	dirty
-O37	turner	1
-S102	dirty
-O13	cooking pan	0
-S195	contains	{zucchini,salt,celery,carrot,olive oil,onion}
-S349	on	[stove]
-O26	onion	1
-S101	chopped
-S101	in	[pan]
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil}
+S81	on	[stove]
+O143	cutting board	1
+S23	contains	{onion}
+O299	onion	1
+S14	chopped
+S81	on	[cutting board]
+O464	turner	1
+S16	clean
+M71	scrape	0:12:00	0:12:02
+O143	cutting board	1
+S38	dirty
+O464	turner	1
+S38	dirty
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion}
+S81	on	[stove]
+O299	onion	1
+S14	chopped
+S65	in	[pan]
 //
-O13	cooking pan	0
-S195	contains	{zucchini,salt,celery,carrot,olive oil,onion}
-S349	on	[stove]
-O26	onion	1
-S101	chopped
-S349	in	[pan]
-O37	turner	1
-S58	clean
-M1	stir	0:12:04	0:12:08
-O37	turner	1
-S102	dirty
-O13	cooking pan	0
-S198	contains	{zucchini,salt,celery,carrot,olive oil,onion}
-S349	on	[stove]
-O26	onion	1
-S101	fried
-S349	in	[pan]
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion}
+S81	on	[stove]
+O299	onion	1
+S14	chopped
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M85	stir	0:12:04	0:12:08
+O464	turner	1
+S38	dirty
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion}
+S81	on	[stove]
+O299	onion	1
+S50	fried
+S65	in	[pan]
 //
-O22	spoon	0
-S58	clean
-O288	container	1
-S195	contains	{salt}
-O18	salt	1
-S349	granulated
-S164	in	[container]
-M4	scoop	0:12:38	0:12:41
-O22	spoon	0
-S195	contains	{salt}
-O18	salt	1
-S349	granulated
-S164	in	[spoon]
+O416	spoon	0
+S16	clean
+O114	container	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[container]
+M69	scoop	0:12:38	0:12:41
+O416	spoon	0
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[spoon]
 //
-O22	spoon	1
-S195	contains	{salt}
-O18	salt	1
-S349	granulated
-S164	in	[spoon]
-O46	water	1
-S43	heated
-S153	in	[pot]
-O45	pot	0
-S195	contains	{water}
-S349	on	[stove]
-M6	stir	0:12:42	0:12:44
-O45	pot	0
-S198	contains	{water,salt}
-S349	on	[stove]
-O22	spoon	1
-S102	dirty
+O416	spoon	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[spoon]
+O475	water	1
+S62	heated
+S65	in	[pot]
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+M85	stir	0:12:42	0:12:44
+O346	pot	0
+S23	contains	{water,salt}
+S81	on	[stove]
+O416	spoon	1
+S38	dirty
 //
-O13	cooking pan	0
-S198	contains	{zucchini,salt,celery,carrot,olive oil,onion}
-S349	on	[stove]
-O37	turner	1
-S58	clean
-M1	stir	0:12:50	0:13:39
-O13	cooking pan	0
-S198	contains	{zucchini,salt,celery,carrot,olive oil,onion}
-S349	on	[stove]
-O37	turner	1
-S102	dirty
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion}
+S81	on	[stove]
+O464	turner	1
+S16	clean
+M85	stir	0:12:50	0:13:39
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion}
+S81	on	[stove]
+O464	turner	1
+S38	dirty
 //
-O13	cooking pan	0
-S198	contains	{zucchini,salt,celery,carrot,olive oil,onion}
-S349	on	[stove]
-O288	packet	1
-S195	contains	{tofu}
-O44	tofu	0
-S349	diced
-S164	in	[packet]
-M4	pour	0:14:46	0:14:47
-O13	cooking pan	0
-S193	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
-S349	on	[stove]
-O44	tofu	0
-S349	diced
-S164	in	[pan]
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion}
+S81	on	[stove]
+O308	packet	1
+S23	contains	{tofu}
+O447	tofu	0
+S37	diced
+S65	in	[packet]
+M54	pour	0:14:46	0:14:47
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
+S81	on	[stove]
+O447	tofu	0
+S37	diced
+S65	in	[pan]
 //
-O13	cooking pan	0
-S193	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
-S349	on	[stove]
-O44	tofu	1
-S349	diced
-S164	in	[pan]
-O26	onion	1
-S101	fried
-S349	in	[pan]
-O26	carrot	1
-S349	partly cooked
-S101	in	[pan]
-O80	celery	1
-S95	partly cooked
-S95	in	[pan]
-O80	zucchini	1
-S95	partly cooked
-S95	in	[pan]
-O37	turner	1
-S58	clean
-M1	stir	0:14:51	0:15:03
-O13	cooking pan	0
-S198	contains	{vegetable mix}
-S349	on	[stove]
-O32	vegetable mix	1
-S33	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
-S349	in	[pan]
-O37	turner	1
-S102	dirty
+O116	cooking pan	0
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
+S81	on	[stove]
+O447	tofu	1
+S37	diced
+S65	in	[pan]
+O299	onion	1
+S50	fried
+S65	in	[pan]
+O71	carrot	1
+S86	partly cooked
+S65	in	[pan]
+O75	celery	1
+S86	partly cooked
+S65	in	[pan]
+O497	zucchini	1
+S86	partly cooked
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M85	stir	0:14:51	0:15:03
+O116	cooking pan	0
+S23	contains	{vegetable mix}
+S81	on	[stove]
+O467	vegetable mix	1
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
+S65	in	[pan]
+O464	turner	1
+S38	dirty
 //
-O390	packet	1
-S195	contains	{rice}
-O143	white rice	0
-S33	uncooked
-S175	in	[packet]
-O45	pot	0
-S198	contains	{water,salt}
-S349	on	[stove]
-M4	pour	0:15:39	0:15:42
-O45	pot	0
-S193	contains	{water,salt,rice}
-S349	on	[stove]
-O143	white rice	0
-S349	uncooked
-S175	in	[pot]
+O308	packet	1
+S23	contains	{rice}
+O487	white rice	0
+S133	uncooked
+S65	in	[packet]
+O346	pot	0
+S23	contains	{water,salt}
+S81	on	[stove]
+M54	pour	0:15:39	0:15:42
+O346	pot	0
+S23	contains	{water,salt,rice}
+S81	on	[stove]
+O487	white rice	0
+S133	uncooked
+S65	in	[pot]
 //
-O2	stove	0
-S33	on
-S33	with	[pot]
-O45	pot	0
-S193	contains	{water,salt,rice}
-S349	on	[stove]
-O143	white rice	1
-S349	uncooked
-S175	in	[pot]
-O37	turner	1
-S58	clean
-M1	cook and stir	0:17:06	0:17:12
-O45	pot	0
-S198	contains	{water,salt,rice}
-S349	on	[stove]
-O143	white rice	0
-S349	partly cooked
-S175	in	[pot]
-O37	turner	1
-S102	dirty
+O425	stove	0
+S81	on
+S142	with	[pot]
+O346	pot	0
+S23	contains	{water,salt,rice}
+S81	on	[stove]
+O487	white rice	1
+S133	uncooked
+S65	in	[pot]
+O464	turner	1
+S16	clean
+M16	cook and stir	0:17:06	0:17:12
+O346	pot	0
+S23	contains	{water,salt,rice}
+S81	on	[stove]
+O487	white rice	0
+S86	partly cooked
+S65	in	[pot]
+O464	turner	1
+S38	dirty
 //
-O2	stove	0
-S33	on
-S33	with	[pot]
-O45	pot	0
-S198	contains	{water,salt,rice}
-S349	on	[stove]
-O143	white rice	0
-S349	partly cooked
-S175	in	[pot]
-M0	cook	Assumed	Assumed
-O143	white rice	0
-S349	cooked
-S175	in	[pot]
+O425	stove	0
+S81	on
+S142	with	[pot]
+O346	pot	0
+S23	contains	{water,salt,rice}
+S81	on	[stove]
+O487	white rice	0
+S86	partly cooked
+S65	in	[pot]
+M14	cook	Assumed	Assumed
+O487	white rice	0
+S24	cooked
+S65	in	[pot]
 //
-O45	pot	1
-S198	contains	{water,salt,rice}
-S349	on	[stove]
-O105	strainer	0
-S58	clean
-O143	white rice	0
-S349	cooked
-S175	in	[pot]
-O32	sink	0
-S349	clean
-M4	pour	0:23:17	0:23:21
-O105	strainer	0
-S195	contains	{rice}
-O143	white rice	1
-S349	cooked
-S175	in	[strainer]
-O45	pot	1
-S198	dirty
+O346	pot	1
+S23	contains	{water,salt,rice}
+S81	on	[stove]
+O426	strainer	0
+S16	clean
+O487	white rice	0
+S24	cooked
+S65	in	[pot]
+O400	sink	0
+S16	clean
+M54	pour	0:23:17	0:23:21
+O426	strainer	0
+S23	contains	{rice}
+O487	white rice	1
+S24	cooked
+S65	in	[strainer]
+O346	pot	1
+S38	dirty
 //
-O105	strainer	1
-S195	contains	{rice}
-O143	white rice	1
-S349	cooked
-S175	in	[strainer]
-O13	cooking pan	0
-S198	contains	{vegetable mix}
-S349	on	[stove]
-M4	pour	0:23:30	0:23:32
-O143	white rice	0
-S349	cooked
-S175	in	[pan]
-O13	cooking pan	0
-S198	contains	{vegetable mix,rice}
-S349	on	[stove]
-O105	strainer	1
-S102	dirty
+O426	strainer	1
+S23	contains	{rice}
+O487	white rice	1
+S24	cooked
+S65	in	[strainer]
+O116	cooking pan	0
+S23	contains	{vegetable mix}
+S81	on	[stove]
+M54	pour	0:23:30	0:23:32
+O487	white rice	0
+S24	cooked
+S65	in	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable mix,rice}
+S81	on	[stove]
+O426	strainer	1
+S38	dirty
 //
-O13	cooking pan	0
-S198	contains	{vegetable mix,rice}
-S349	on	[stove]
-O143	white rice	1
-S349	cooked
-S175	in	[pan]
-O32	vegetable mix	1
-S33	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
-S349	in	[pan]
-O37	turner	1
-S58	clean
-M1	cook and stir	0:23:50	0:23:56
-O13	cooking pan	0
-S198	contains	{vegetable mix,rice}
-S349	on	[stove]
-O37	turner	1
-S102	dirty
+O116	cooking pan	0
+S23	contains	{vegetable mix,rice}
+S81	on	[stove]
+O487	white rice	1
+S24	cooked
+S65	in	[pan]
+O467	vegetable mix	1
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M16	cook and stir	0:23:50	0:23:56
+O116	cooking pan	0
+S23	contains	{vegetable mix,rice}
+S81	on	[stove]
+O464	turner	1
+S38	dirty
 //
-O13	cooking pan	0
-S198	contains	{vegetable mix,rice}
-S349	on	[stove]
-O288	container	1
-S195	contains	{curry powder}
-O391	curry powder	1
-S349	powder
-S164	in	[container]
-M4	pour	0:23:59	0:24:02
-O13	cooking pan	0
-S198	contains	{vegetable mix,rice,curry powder}
-S349	on	[stove]
-O391	curry powder	1
-S349	powder
-S164	in	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable mix,rice}
+S81	on	[stove]
+O114	container	1
+S23	contains	{curry powder}
+O140	curry powder	1
+S96	powder
+S65	in	[container]
+M54	pour	0:23:59	0:24:02
+O116	cooking pan	0
+S23	contains	{vegetable mix,rice,curry powder}
+S81	on	[stove]
+O140	curry powder	1
+S96	powder
+S65	in	[pan]
 //
-O13	cooking pan	0
-S198	contains	{vegetable mix,rice,curry powder}
-S349	on	[stove]
-O391	curry powder	1
-S349	powder
-S164	in	[pan]
-O143	white rice	1
-S349	cooked
-S175	in	[pan]
-O32	vegetable mix	1
-S33	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
-S349	in	[pan]
-O37	turner	1
-S58	clean
-M1	stir	0:24:05	0:25:47
-O37	turner	1
-S102	dirty
-O13	cooking pan	0
-S198	contains	{stir-fried rice}
-S349	on	[stove]
-O2	stir-fried rice	1
-S33	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
-S33	in	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable mix,rice,curry powder}
+S81	on	[stove]
+O140	curry powder	1
+S96	powder
+S65	in	[pan]
+O487	white rice	1
+S24	cooked
+S65	in	[pan]
+O467	vegetable mix	1
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu}
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M85	stir	0:24:05	0:25:47
+O464	turner	1
+S38	dirty
+O116	cooking pan	0
+S23	contains	{stir-fried rice}
+S81	on	[stove]
+O424	stir-fried rice	1
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
+S65	in	[pan]
 //
-O2	bowl	0
-S107	empty
-O13	cooking pan	0
-S198	contains	{stir-fried rice}
-S349	on	[stove]
-O2	stir-fried rice	1
-S33	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
-S33	in	[pan]
-O37	turner	1
-S58	clean
-M3	scoop and pour	0:26:00	0:26:12
-O37	turner	1
-S102	dirty
-O2	bowl	1
-S198	contains	{stir-fried rice}
-O2	stir-fried rice	1
-S33	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
-S33	in	[bowl]
+O46	bowl	0
+S41	empty
+O116	cooking pan	0
+S23	contains	{stir-fried rice}
+S81	on	[stove]
+O424	stir-fried rice	1
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
+S65	in	[pan]
+O464	turner	1
+S16	clean
+M70	scoop and pour	0:26:00	0:26:12
+O464	turner	1
+S38	dirty
+O46	bowl	1
+S23	contains	{stir-fried rice}
+O424	stir-fried rice	1
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
+S65	in	[bowl]
 //
-O13	cooking pan	0
-S198	contains	{stir-fried rice}
-S349	on	[stove]
-O2	stir-fried rice	1
-S33	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
-S33	in	[pan]
-O37	turner	1
-S58	clean
-O15	plate	0
-S107	empty
-M18	scrape	0:26:21	0:26:33
-O37	turner	1
-S102	dirty
-O13	cooking pan	1
-S102	dirty
-O15	plate	0
-S198	contains	{stir-fried rice}
-O2	stir-fried rice	1	!
-S33	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
-S33	on	[plate]
+O116	cooking pan	0
+S23	contains	{stir-fried rice}
+S81	on	[stove]
+O424	stir-fried rice	1
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
+S65	in	[pan]
+O464	turner	1
+S16	clean
+O344	plate	0
+S41	empty
+M71	scrape	0:26:21	0:26:33
+O464	turner	1
+S38	dirty
+O116	cooking pan	1
+S38	dirty
+O344	plate	0
+S23	contains	{stir-fried rice}
+O424	stir-fried rice	1	27
+S23	contains	{zucchini,salt,celery,carrot,olive oil,onion,tofu,rice,curry powder}
+S81	on	[plate]
 //

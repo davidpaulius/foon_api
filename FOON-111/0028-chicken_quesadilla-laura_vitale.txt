@@ -1,439 +1,444 @@
-# Source:	https://www.youtube.com/watch?v=TTagMrBZ1z8
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/0028-chicken_quesadilla-laura_vitale.mp4
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+O116	cooking pan	0
+S41	empty
+S81	on	[stove]
+M54	pour	0:55	0:58
+O296	olive oil	1
+S65	in	[pan]
+O116	cooking pan	0
+S80	oiled	{olive oil}
+S81	on	[stove]
 //
-O108	bottle	1
-S182	contains	{olive oil}
-O17	olive oil	1
-S147	in	[bottle]
-O13	skillet	0
-S43	hot
-S98	empty
-S43	on	[stove]
-M4	pour	0:55	0:58
-O17	olive oil	1
-S164	in	[skillet]
-O13	skillet	0
-S182	contains	{olive oil}
-S43	on	[stove]
+O416	spoon	1
+S16	clean
+O63	butter	1
+S31	cubed
+O116	cooking pan	0
+S80	oiled	{olive oil}
+S81	on	[stove]
+M69	scoop	1:02	1:03
+O63	butter	0
+S31	cubed
+S65	in	[pan]
+O116	cooking pan	0
+S23	contains	{olive oil,butter}
+S81	on	[stove]
 //
-O13	plate	0
-S182	contains	{butter}
-O3	butter	1
-S84	cubed
-S43	on	[plate]
-O13	skillet	0
-S182	contains	{olive oil}
-S43	on	[stove]
-O22	spoon	1
-M3	scrape	1:02	1:03
-O3	butter	0
-S84	cubed
-S164	in	[skillet]
-O13	skillet	0
-S182	contains	{olive oil,butter}
-S43	on	[stove]
+O63	butter	0
+S31	cubed
+S65	in	[pan]
+O116	cooking pan	0
+S23	contains	{olive oil,butter}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+M82	spread	1:03	1:06
+O116	cooking pan	0
+S57	greased	{olive oil,butter}
+S81	on	[stove]
+O63	butter	0
+S74	melted
+S65	in	[pan]
 //
-O3	butter	0
-S84	cubed
-S164	in	[skillet]
-O13	skillet	0
-S182	contains	{olive oil,butter}
-S43	on	[stove]
-O22	spoon	1
-M16	spread	1:03	1:06
-O3	butter	0
-S200	melted
-S164	in	[skillet]
+O216	grinder	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[shaker]
+O344	plate	0
+S23	contains	{chicken}
+O82	chicken	0
+S133	uncooked
+S81	on	[plate]
+M40	grind	1:19	1:23
+O82	chicken	0
+S133	uncooked
+S93	peppered	{black pepper}
+S81	on	[plate]
 //
-O166	grinder	1
-S18	contains	{black pepper}
-O19	black pepper	1
-S130	ground
-S123	in	[shaker]
-O15	plate	0
-S188	contains	{chicken}
-O88	chicken	0
-S313	uncooked
-S123	on	[plate]
-M7	grind	1:19	1:23
-O88	chicken	0
-S43	uncooked
-S248	peppered	{black pepper}
-S123	on	[plate]
-//
-O2	plate	0
-S43	empty
-O2	shaker	1
-S43	contains	{oregano}
-O92	oregano	1
+O344	plate	0
+S41	empty
+O396	shaker	1
+S23	contains	{oregano}
+O304	oregano	1
 S40	dried
-S306	in	[shaker]
-O2	shaker	1
-S43	contains	{paprika}
-O92	paprika	1
-S40	powder
-S306	in	[shaker]
-O2	shaker	1
-S43	contains	{onion powder}
-O92	onion powder	1
-S306	in	[shaker]
-O2	shaker	1
-S43	contains	{garlic powder}
-O92	garlic powder	1
-S306	in	[shaker]
-O2	shaker	1
-S43	contains	{chili powder}
-O92	chili powder	1
-S306	in	[shaker]
-M0	pour*	Assumed	Assumed
-O108	plate	0
-S43	contains	{oregano,chili powder,paprika,onion powder,garlic powder}
-O92	oregano	1
+S65	in	[shaker]
+O396	shaker	1
+S23	contains	{paprika}
+O314	paprika	1
+S96	powder
+S65	in	[shaker]
+O396	shaker	1
+S23	contains	{onion powder}
+O300	onion powder	1
+S65	in	[shaker]
+O396	shaker	1
+S23	contains	{garlic powder}
+O195	garlic powder	1
+S65	in	[shaker]
+O396	shaker	1
+S23	contains	{chili powder}
+O86	chili powder	1
+S65	in	[shaker]
+M54	pour*	Assumed	Assumed
+O344	plate	0
+S23	contains	{oregano,chili powder,paprika,onion powder,garlic powder}
+O304	oregano	1
 S40	dried
-S306	on	[plate]
-O92	paprika	1
-S40	powder
-S306	on	[plate]
-O92	onion powder	1
-S306	on	[plate]
-O92	garlic powder	1
-S306	on	[plate]
-O92	chili powder	1
-S306	on	[plate]
+S81	on	[plate]
+O314	paprika	1
+S96	powder
+S81	on	[plate]
+O300	onion powder	1
+S81	on	[plate]
+O195	garlic powder	1
+S81	on	[plate]
+O86	chili powder	1
+S81	on	[plate]
 //
-O108	plate	0
-S43	contains	{oregano,chili powder,paprika,onion powder,garlic powder}
-O92	oregano	0
+O344	plate	0
+S23	contains	{oregano,chili powder,paprika,onion powder,garlic powder}
+O304	oregano	0
 S40	dried
-S306	on	[plate]
-O92	paprika	0
-S40	powder
-S306	on	[plate]
-O92	onion powder	0
-S306	on	[plate]
-O92	garlic powder	0
-S306	on	[plate]
-O92	chili powder	0
-S306	on	[plate]
-O3	spoon	1
-M0	mix*	1:34	1:37
-O15	plate	0
-S188	contains	{taco seasoning}
-O92	taco seasoning	1
-S306	on	[plate]
+S81	on	[plate]
+O314	paprika	0
+S96	powder
+S81	on	[plate]
+O300	onion powder	0
+S81	on	[plate]
+O195	garlic powder	0
+S81	on	[plate]
+O86	chili powder	0
+S81	on	[plate]
+O416	spoon	1
+M46	mix*	1:34	1:37
+O344	plate	0
+S23	contains	{taco seasoning}
+O437	taco seasoning	1
+S81	on	[plate]
 //
-O15	plate	0
-S188	contains	{chicken}
-O15	plate	0
-S188	contains	{taco seasoning}
-O92	taco seasoning	1
-S306	on	[plate]
-O88	chicken	0
-S43	uncooked
-S248	peppered	{black pepper}
-S123	on	[plate]
-M2	sprinkle	1:37	1:41
-O88	chicken	0
-S285	contains	{black pepper,taco seasoning}
-S43	uncooked
-S123	on	[plate]
-O92	taco seasoning	1
-S306	on	[chicken]
+O344	plate	0
+S23	contains	{chicken}
+O344	plate	0
+S23	contains	{taco seasoning}
+O437	taco seasoning	1
+S81	on	[plate]
+O82	chicken	0
+S133	uncooked
+S93	peppered	{black pepper}
+S81	on	[plate]
+M83	sprinkle	1:37	1:41
+O82	chicken	0
+S23	contains	{black pepper,taco seasoning}
+S133	uncooked
+S81	on	[plate]
+O437	taco seasoning	1
+S81	on	[chicken]
 //
-O15	plate	0
-S188	contains	{chicken}
-O88	chicken	0
-S285	seasoned	{black pepper,taco seasoning}
-S43	uncooked
-S123	on	[plate]
-O22	spoon	1
-M1	mix	1:41	1:47
-O88	chicken	0
-S280	seasoned	{black pepper,taco seasoning}
-S43	uncooked
-S123	on	[plate]
+O344	plate	0
+S23	contains	{chicken}
+O82	chicken	0
+S107	seasoned	{black pepper,taco seasoning}
+S133	uncooked
+S81	on	[plate]
+O416	spoon	1
+S16	clean
+M46	mix	1:41	1:47
+O82	chicken	0
+S107	seasoned	{black pepper,taco seasoning}
+S133	uncooked
+S81	on	[plate]
 //
-O88	chicken	1
-S43	uncooked
-S280	seasoned	{black pepper,taco seasoning}
-S123	on	[plate]
-O13	skillet	0
-S124	greased	{olive oil,butter}
-S306	on	[stove]
-O15	plate	0
-S188	contains	{chicken}
-O22	spoon	1
-S51	clean
-M4	pour	2:16	2:18
-O13	skillet	0
-S188	contains	{chicken}
-S306	on	[stove]
-O88	chicken	1
-S280	seasoned	{black pepper,taco seasoning}
-S43	uncooked
-S225	in	[skillet]
+O82	chicken	1
+S133	uncooked
+S107	seasoned	{black pepper,taco seasoning}
+S81	on	[plate]
+O116	cooking pan	0
+S57	greased	{olive oil,butter}
+S81	on	[stove]
+O344	plate	0
+S23	contains	{chicken}
+O416	spoon	1
+S16	clean
+M54	pour	2:16	2:18
+O116	cooking pan	0
+S23	contains	{chicken}
+S81	on	[stove]
+O82	chicken	1
+S107	seasoned	{black pepper,taco seasoning}
+S133	uncooked
+S65	in	[pan]
 //
-O88	chicken	1
-S280	seasoned	{black pepper,taco seasoning}
-S43	uncooked
-S225	in	[skillet]
-O13	skillet	0
-S188	contains	{chicken}
-S306	on	[stove]
-O22	spoon	1
-M1	cook and stir	2:22	2:24
-O88	chicken	1
-S280	seasoned	{black pepper,taco seasoning}
-S43	cooked
-S225	in	[skillet]
+O82	chicken	1
+S107	seasoned	{black pepper,taco seasoning}
+S133	uncooked
+S65	in	[pan]
+O116	cooking pan	0
+S23	contains	{chicken}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+M16	cook and stir	2:22	2:24
+O82	chicken	1
+S107	seasoned	{black pepper,taco seasoning}
+S24	cooked
+S65	in	[pan]
 //
-O13	skillet	0
-S188	contains	{chicken}
-S306	on	[stove]
-O88	chicken	1
-S280	seasoned	{black pepper,taco seasoning}
-S43	cooked
-S225	in	[skillet]
-O43	spoon	1
-O43	plate	0
-S43	empty
-M43	scoop	Assumed	Assumed
-O43	plate	0
-S43	contains	{chicken}
-O88	chicken	1
-S280	seasoned	{black pepper,taco seasoning}
-S43	cooked
-S225	on	[plate]
+O116	cooking pan	0
+S23	contains	{chicken}
+S81	on	[stove]
+O82	chicken	1
+S107	seasoned	{black pepper,taco seasoning}
+S24	cooked
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+O344	plate	0
+S41	empty
+M69	scoop	Assumed	Assumed
+O344	plate	0
+S23	contains	{chicken}
+O82	chicken	1
+S107	seasoned	{black pepper,taco seasoning}
+S24	cooked
+S81	on	[plate]
 //
-O15	plate	0
-S188	contains	{tortilla}
-O81	tortilla	0
-S43	flattened
-S97	on	[plate]
-O108	bottle	1
-S182	contains	{olive oil}
-O17	olive oil	1
-S147	in	[bottle]
-M4	pour	2:50	2:52
-O81	tortilla	0
-S188	contains	{olive oil}
-S97	on	[plate]
+O344	plate	0
+S23	contains	{tortilla}
+O454	tortilla	0
+S45	flattened
+S81	on	[plate]
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+M54	pour	2:50	2:52
+O454	tortilla	0
+S23	contains	{olive oil}
+S81	on	[plate]
 //
-O15	plate	0
-S188	contains	{tortilla}
-O81	tortilla	0
-S188	contains	{olive oil}
-S97	on	[plate]
-O93	brush	1
-M29	brush	2:52	2:57
-O81	tortilla	0
-S216	coated	{olive oil}
-S97	on	[plate]
+O344	plate	0
+S23	contains	{tortilla}
+O454	tortilla	0
+S23	contains	{olive oil}
+S81	on	[plate]
+O58	brush	1
+S16	clean
+M8	brush	2:52	2:57
+O454	tortilla	0
+S80	oiled	{olive oil}
+S81	on	[plate]
 //
-O15	plate	0
-S188	contains	{tortilla}
-O32	plate	0
-S123	empty
-O81	tortilla	1
-S216	coated	{olive oil}
-S97	on	[plate]
-M11	flip	2:58	3:01
-O81	tortilla	1
-S216	flipped
-S216	coated	{olive oil}
-S97	on	[plate]
+O344	plate	0
+S23	contains	{tortilla}
+O344	plate	0
+S41	empty
+O454	tortilla	1
+S80	oiled	{olive oil}
+S81	on	[plate]
+M32	flip	2:58	3:01
+O454	tortilla	1
+S46	flipped
+S80	oiled	{olive oil}
+S81	on	[plate]
 //
-O15	plate	0
-S188	contains	{tortilla}
-O81	tortilla	1
-S216	flipped
-S216	coated	{olive oil}
-S97	on	[plate]
-O15	plate	0
-S188	contains	{cheese}
-O27	cheese	1
-S123	grated
-S97	on	[plate]
-M0	pick-and-place	3:02	3:08
-O81	tortilla	1
-S216	contains	{cheese}
-S97	on	[plate]
-O27	cheese	0
-S123	grated
-S228	on	[tortilla]
+O344	plate	0
+S23	contains	{tortilla}
+O454	tortilla	1
+S46	flipped
+S80	oiled	{olive oil}
+S81	on	[plate]
+O344	plate	0
+S23	contains	{cheese}
+O78	cheese	1
+S56	grated
+S81	on	[plate]
+M50	pick-and-place	3:02	3:08
+O454	tortilla	1
+S23	contains	{cheese}
+S81	on	[plate]
+O78	cheese	0
+S56	grated
+S81	on	[tortilla]
 //
-O15	plate	0
-S188	contains	{tortilla}
-O81	tortilla	1
-S216	contains	{cheese}
-S97	on	[plate]
-O43	plate	0
-S43	contains	{chicken}
-O88	chicken	1
-S280	seasoned	{black pepper,taco seasoning}
-S43	cooked
-S225	on	[plate]
-M0	pick-and-place	3:08	3:17
-O81	tortilla	0
-S188	contains	{cheese,chicken}
-S97	on	[plate]
-O88	chicken	1
-S280	seasoned	{black pepper,taco seasoning}
-S43	cooked
-S228	on	[tortilla]
+O344	plate	0
+S23	contains	{tortilla}
+O454	tortilla	1
+S23	contains	{cheese}
+S81	on	[plate]
+O344	plate	0
+S23	contains	{chicken}
+O82	chicken	1
+S107	seasoned	{black pepper,taco seasoning}
+S24	cooked
+S81	on	[plate]
+M50	pick-and-place	3:08	3:17
+O454	tortilla	0
+S23	contains	{cheese,chicken}
+S81	on	[plate]
+O82	chicken	1
+S107	seasoned	{black pepper,taco seasoning}
+S24	cooked
+S81	on	[tortilla]
 //
-O15	plate	0
-S188	contains	{tortilla}
-O81	tortilla	1
-S188	contains	{cheese,chicken}
-S97	on	[plate]
-M27	fold	3:36	3:39
-O81	tortilla	1
-S43	folded
-S107	contains	{cheese,chicken}
-S97	on	[plate]
+O344	plate	0
+S23	contains	{tortilla}
+O454	tortilla	1
+S23	contains	{cheese,chicken}
+S81	on	[plate]
+M34	fold	3:36	3:39
+O454	tortilla	1
+S49	folded	{cheese,chicken}
+S81	on	[plate]
 //
-O33	skillet	1
-S43	empty
-O43	stove	0
-S43	on
-M0	pick-and-place	Assumed	Assumed
-O43	stove	0
-S43	on
-S43	with	[skillet]
-O90	skillet	1
-S98	heated
-S40	on	[stove]
+O401	skillet	1
+S41	empty
+O425	stove	0
+S81	on
+M50	pick-and-place	Assumed	Assumed
+O425	stove	0
+S81	on
+S142	with	[pan]
+O401	skillet	1
+S62	heated
+S81	on	[stove]
 //
-O15	plate	0
-S188	contains	{tortilla}
-O81	tortilla	1
-S43	folded
-S107	contains	{cheese,chicken}
-S97	on	[plate]
-O90	skillet	0
-S98	heated
-S40	on	[stove]
-M0	pick-and-place	3:39	3:42
-O90	skillet	0
-S188	contains	{tortilla}
-S40	on	[stove]
-O81	tortilla	1
-S43	folded
-S107	contains	{cheese,chicken}
-S225	in	[skillet]
+O344	plate	0
+S23	contains	{tortilla}
+O454	tortilla	1
+S49	folded	{cheese,chicken}
+S81	on	[plate]
+O401	skillet	0
+S62	heated
+S81	on	[stove]
+M50	pick-and-place	3:39	3:42
+O401	skillet	0
+S23	contains	{tortilla}
+S81	on	[stove]
+O454	tortilla	1
+S49	folded	{cheese,chicken}
+S65	in	[pan]
 //
-O90	skillet	0
-S188	contains	{tortilla}
-S40	on	[stove]
-O81	tortilla	1
-S43	folded
-S107	contains	{cheese,chicken}
-S225	in	[skillet]
-O37	spatula	1
-M15	press	Assumed	Assumed
-O81	tortilla	1
-S43	pressed
-S107	contains	{cheese,chicken}
-S225	in	[skillet]
+O401	skillet	0
+S23	contains	{tortilla}
+S81	on	[stove]
+O454	tortilla	1
+S49	folded	{cheese,chicken}
+S65	in	[pan]
+O412	spatula	1
+S16	clean
+M60	press	Assumed	Assumed
+O454	tortilla	1
+S98	pressed	{cheese,chicken}
+S65	in	[pan]
 //
-O90	skillet	0
-S188	contains	{tortilla}
-S40	on	[stove]
-O81	tortilla	0
-S43	pressed
-S107	contains	{cheese,chicken}
-S225	in	[skillet]
-M0	cook	Assumed	Assumed
-O90	skillet	0
-S188	contains	{quesadilla}
-S40	on	[stove]
-O81	quesadilla	0
-S43	cooked
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	in	[skillet]
+O401	skillet	0
+S23	contains	{tortilla}
+S81	on	[stove]
+O454	tortilla	0
+S98	pressed	{cheese,chicken}
+S65	in	[pan]
+O412	spatula	1
+S16	clean
+M32	flip	Assumed	Assumed
+O454	tortilla	1
+S86	partly cooked	{olive oil,cheese,chicken}
+S65	in	[pan]
 //
-O90	skillet	0
-S188	contains	{quesadilla}
-S40	on	[stove]
-O81	quesadilla	0
-S43	cooked
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	in	[skillet]
-O15	plate	0
-S98	empty
-O3	turner	1
-M0	pick-and-place	Assumed	Assumed
-O15	plate	0
-S74	contains	{quesadilla}
-O81	quesadilla	0
-S43	cooked
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	on	[plate]
+O401	skillet	0
+S23	contains	{tortilla}
+S81	on	[stove]
+O454	tortilla	0
+S86	partly cooked	{olive oil,cheese,chicken}
+S65	in	[pan]
+M14	cook	Assumed	Assumed
+O401	skillet	0
+S23	contains	{quesadilla}
+S81	on	[stove]
+O356	quesadilla	0
+S24	cooked	{olive oil,cheese,chicken}
+S65	in	[pan]
 //
-O15	plate	0
-S74	contains	{quesadilla}
-O81	quesadilla	0
-S43	cooked
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	on	[plate]
-O83	cutting board	0
-S98	empty
-M0	pick-and-place	4:02	4:04
-O83	cutting board	0
-S74	contains	{quesadilla}
-O81	quesadilla	0
-S43	cooked
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	on	[cutting board]
+O401	skillet	0
+S23	contains	{quesadilla}
+S81	on	[stove]
+O356	quesadilla	0
+S24	cooked	{olive oil,cheese,chicken}
+S65	in	[pan]
+O344	plate	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains	{quesadilla}
+O356	quesadilla	0
+S24	cooked	{olive oil,cheese,chicken}
+S81	on	[plate]
 //
-O83	cutting board	0
-S74	contains	{quesadilla}
-O81	quesadilla	0
-S43	cooked
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	on	[cutting board]
-O11	knife	1
-M8	cut	4:07	4:14
-O81	quesadilla	0
-S43	divided
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	on	[cutting board]
+O344	plate	0
+S23	contains	{quesadilla}
+O356	quesadilla	0
+S24	cooked	{olive oil,cheese,chicken}
+S81	on	[plate]
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	4:02	4:04
+O143	cutting board	0
+S23	contains	{quesadilla}
+O356	quesadilla	0
+S24	cooked	{olive oil,cheese,chicken}
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S74	contains	{quesadilla}
-O81	quesadilla	0
-S43	divided
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	on	[cutting board]
-O15	plate	0
-S98	empty
-M0	pick-and-place	4:14	4:16
-O15	plate	0
-S74	contains	{quesadilla}
-O81	quesadilla	0
-S43	divided
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	on	[plate]
+O143	cutting board	0
+S23	contains	{quesadilla}
+O356	quesadilla	0
+S24	cooked	{olive oil,cheese,chicken}
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	4:07	4:14
+O356	quesadilla	0
+S34	cut in three
+S24	cooked	{olive oil,cheese,chicken}
+S81	on	[cutting board]
 //
-O15	plate	0
-S74	contains	{quesadilla}
-O81	quesadilla	0
-S43	divided
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken}
-S225	on	[plate]
-O2	bowl	0
-S182	contains	{pico de gallo}
-O96	pico de gallo	1
-S249	in	[bowl]
-O22	spoon	1
-M3	scoop and pour	4:21	4:25
-O15	plate	0
-S74	contains	{quesadilla,pico de gallo}
-O81	quesadilla	0	!
-S43	divided
-S107	contains	{olive oil,tortilla,taco seasoning,cheese,chicken,pico de gallo}
-S225	on	[plate]
-O96	pico de gallo	1
-S226	on	[plate]
+O143	cutting board	0
+S23	contains	{quesadilla}
+O356	quesadilla	0
+S34	cut in three
+S24	cooked	{olive oil,cheese,chicken}
+S81	on	[cutting board]
+O344	plate	0
+S41	empty
+M50	pick-and-place	4:14	4:16
+O344	plate	0
+S23	contains	{quesadilla}
+O356	quesadilla	0
+S34	cut in three
+S24	cooked	{olive oil,cheese,chicken}
+S81	on	[plate]
+//
+O344	plate	0
+S23	contains	{quesadilla}
+O356	quesadilla	0
+S34	cut in three
+S24	cooked	{olive oil,cheese,chicken}
+S81	on	[plate]
+O46	bowl	0
+S23	contains	{pico de gallo}
+O333	pico de gallo	1
+S65	in	[bowl]
+O416	spoon	1
+S16	clean
+M69	scoop	4:21	4:25
+O344	plate	0
+S23	contains	{quesadilla,pico de gallo}
+O356	quesadilla	0	4
+S34	cut in three
+S24	cooked	{olive oil,cheese,chicken,pico de gallo}
+S81	on	[plate]
+O333	pico de gallo	1
+S81	on	[plate]
 //

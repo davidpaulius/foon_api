@@ -1,146 +1,146 @@
-O129	can	0
-S195	contains	{tuna}
-S60	sealed
-O274	can opener	1
-S274	clean
-M21	open	Assumed	Assumed
-O129	can	0
-S60	opened
-S195	contains	{water,tuna}
+O444	tin can	0
+S23	contains	{tuna}
+S106	sealed
+O69	can opener	1
+S16	clean
+M48	open	Assumed	Assumed
+O444	tin can	0
+S83	opened
+S23	contains	{water,tuna}
 //
-O129	can	1
-S246	opened
-S195	contains	{water,tuna}
-M32	drain	Assumed	Assumed
-O129	can	1
-S195	contains	{tuna}
+O444	tin can	1
+S83	opened
+S23	contains	{water,tuna}
+M28	drain	Assumed	Assumed
+O444	tin can	1
+S23	contains	{tuna}
 //
-O2	bowl	0
-S107	empty
-O129	can	1
-S195	contains	{tuna}
-O32	tuna	1
-S233	in	[can]
-O6	fork	1
-S274	clean
-M18	scrape	0:02	0:05
-O2	bowl	0
-S195	contains	{tuna}
-O32	tuna	1
-S233	in	[bowl]
+O46	bowl	0
+S41	empty
+O444	tin can	1
+S23	contains	{tuna}
+O457	tuna	1
+S65	in	[tin can]
+O182	fork	1
+S16	clean
+M71	scrape	0:02	0:05
+O46	bowl	0
+S23	contains	{tuna}
+O457	tuna	1
+S65	in	[bowl]
 //
-O2	bowl	0
-S27	contains	{onion,mayonnaise}
-O32	mayonnaise	1
-S233	in	[bowl]
-O32	onion	1
-S234	chopped
-S233	in	[bowl]
-O2	bowl	1
-S27	contains	{tuna}
-M4	pour	Assumed	Assumed
-O2	bowl	0
-S27	contains	{tuna,onion,mayonnaise}
+O46	bowl	0
+S23	contains	{onion,mayonnaise}
+O269	mayonnaise	1
+S65	in	[bowl]
+O299	onion	1
+S14	chopped
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{tuna}
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{tuna,onion,mayonnaise}
 //
-O2	bowl	0
-S27	contains	{tuna,onion,mayonnaise}
-O32	mayonnaise	1
-S233	in	[bowl]
-O32	onion	1
-S234	chopped
-S233	in	[bowl]
-O32	tuna	1
-S233	in	[bowl]
-O6	fork	1
-S274	clean
-M1	mix	0:09	0:11
-O2	bowl	0
-S198	contains	{tuna spread}
-O32	tuna spread	1
-S27	contains	{tuna,onion,mayonnaise}
-S234	in	[bowl]
+O46	bowl	0
+S23	contains	{tuna,onion,mayonnaise}
+O269	mayonnaise	1
+S65	in	[bowl]
+O299	onion	1
+S14	chopped
+S65	in	[bowl]
+O457	tuna	1
+S65	in	[bowl]
+O182	fork	1
+S16	clean
+M46	mix	0:09	0:11
+O46	bowl	0
+S23	contains	{tuna spread}
+O461	tuna spread	1
+S23	contains	{tuna,onion,mayonnaise}
+S65	in	[bowl]
 //
-O15	plate	0
-S107	empty
-O12	bread	1
-S333	toasted
-S33	in	[toaster]
-O318	toaster	0
-S195	contains	{bread}
-M45	remove	Assumed	Assumed
-O15	plate	0
-S201	contains	{bread}
-O15	bread	1
-S234	toasted
-S240	on	[plate]
+O344	plate	0
+S41	empty
+O48	bread	1
+S130	toasted
+S65	in	[toaster]
+O445	toaster	0
+S23	contains	{bread}
+M63	remove	Assumed	Assumed
+O344	plate	0
+S23	contains	{bread}
+O48	bread	1
+S130	toasted
+S81	on	[plate]
 //
-O15	plate	0
-S201	contains	{bread}
-O15	bread	0
-S33	toasted
-S240	on	[plate]
-O11	knife	1
-S274	clean
-O3	butter	0
-S164	in	[container]
-M16	spread	0:13	0:14
-O15	bread	0
-S36	buttered	{butter}
-S234	on	[plate]
-O3	butter	0
-S234	spread
-S234	on	[bread]
+O344	plate	0
+S23	contains	{bread}
+O48	bread	0
+S130	toasted
+S81	on	[plate]
+O240	knife	1
+S16	clean
+O63	butter	0
+S65	in	[container]
+M82	spread	0:13	0:14
+O48	bread	0
+S12	buttered	{butter}
+S81	on	[plate]
+O63	butter	0
+S121	spread
+S81	on	[bread]
 //
-O15	plate	0
-S201	contains	{bread}
-O2	bowl	0
-S198	contains	{tuna spread}
-O32	tuna spread	1
-S27	contains	{tuna,onion,mayonnaise}
-S234	in	[bowl]
-O15	bread	0
-S36	buttered	{butter}
-S234	on	[plate]
-O11	fork	1
-S274	clean
-M3	scoop and pour	0:16	0:19
-O15	bread	0
-S201	contains	{butter,tuna spread}
-S234	on	[plate]
-O32	tuna spread	1
-S27	contains	{tuna,onion,mayonnaise}
-S234	on	[bread]
+O344	plate	0
+S23	contains	{bread}
+O46	bowl	0
+S23	contains	{tuna spread}
+O461	tuna spread	1
+S23	contains	{tuna,onion,mayonnaise}
+S65	in	[bowl]
+O48	bread	0
+S12	buttered	{butter}
+S81	on	[plate]
+O182	fork	1
+S16	clean
+M70	scoop and pour	0:16	0:19
+O48	bread	0
+S23	contains	{butter,tuna spread}
+S81	on	[plate]
+O461	tuna spread	1
+S23	contains	{tuna,onion,mayonnaise}
+S81	on	[bread]
 //
-O15	plate	0
-S201	contains	{bread}
-O15	bread	0
-S201	contains	{butter,tuna spread}
-S234	on	[plate]
-O2	bowl	0
-S195	contains	{lettuce}
-O87	lettuce	1
-S234	separated
-S160	in	[bowl]
-M0	pick-and-place	0:20	0:26
-O15	bread	0
-S201	contains	{butter,tuna spread,lettuce}
-S234	on	[plate]
-O87	lettuce	1
-S234	separated
-S234	on	[bread]
+O344	plate	0
+S23	contains	{bread}
+O48	bread	0
+S23	contains	{butter,tuna spread}
+S81	on	[plate]
+O46	bowl	0
+S23	contains	{lettuce}
+O254	lettuce	1
+S109	separated
+S65	in	[bowl]
+M50	pick-and-place	0:20	0:26
+O48	bread	0
+S23	contains	{butter,tuna spread,lettuce}
+S81	on	[plate]
+O254	lettuce	1
+S109	separated
+S81	on	[bread]
 //
-O15	plate	0
-S201	contains	{bread}
-O15	bread	1
-S36	buttered	{butter}
-S234	on	[plate]
-O15	bread	1
-S201	contains	{butter,tuna spread,lettuce}
-S234	on	[plate]
-M0	pick-and-place	0:27	0:29
-O15	plate	0
-S201	contains	{tuna sandwich}
-O15	tuna sandwich	1	!
-S201	contains	{bread,butter,tuna,onion,mayonnaise,lettuce}
-S234	on	[plate]
+O344	plate	0
+S23	contains	{bread}
+O48	bread	1
+S12	buttered	{butter}
+S81	on	[plate]
+O48	bread	1
+S23	contains	{butter,tuna spread,lettuce}
+S81	on	[plate]
+M50	pick-and-place	0:27	0:29
+O344	plate	0
+S23	contains	{tuna sandwich}
+O460	tuna sandwich	1	17
+S23	contains	{bread,butter,tuna,onion,mayonnaise,lettuce}
+S81	on	[plate]
 //

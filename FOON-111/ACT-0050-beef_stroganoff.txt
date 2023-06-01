@@ -1,565 +1,565 @@
-O43	cutting board	0
-S235	contains	{carrot}
-O120	carrot	0
-S354	peeled
-S235	on	[cutting board]
-O11	knife	1
-S58	clean
-M10	slice	Assumed	Assumed
-O120	carrot	0
-S101	diced
-S235	on	[cutting board]
+O143	cutting board	0
+S23	contains	{carrot}
+O71	carrot	0
+S91	peeled
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M79	slice	Assumed	Assumed
+O71	carrot	0
+S37	diced
+S81	on	[cutting board]
 //
-O43	cutting board	0
-S235	contains	{carrot}
-O120	carrot	1
-S101	diced
-S235	on	[cutting board]
-O2	bowl	0
-S107	empty
-M0	pick-and-place	Assumed	Assumed
-O2	bowl	0
-S195	contains	{carrot}
-O120	carrot	1
-S101	diced
-S101	in	[bowl]
-O43	cutting board	0
-S235	dirty
+O143	cutting board	0
+S23	contains	{carrot}
+O71	carrot	1
+S37	diced
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{carrot}
+O71	carrot	1
+S37	diced
+S65	in	[bowl]
+O143	cutting board	0
+S38	dirty
 //
-O2	bowl	0
-S195	contains	{carrot}
-O384	saucepan	0
-S107	contains	{beef stock}
-O120	carrot	1
-S101	diced
-S101	in	[bowl]
-M4	pour	1:34	1:37
-O384	saucepan	0
-S195	contains	{beef stock,carrot}
-O120	carrot	1
-S101	diced
-S101	in	[pan]
+O46	bowl	0
+S23	contains	{carrot}
+O381	saucepan	0
+S23	contains	{beef stock}
+O71	carrot	1
+S37	diced
+S65	in	[bowl]
+M54	pour	1:34	1:37
+O381	saucepan	0
+S23	contains	{beef stock,carrot}
+O71	carrot	1
+S37	diced
+S65	in	[pan]
 //
-O88	cutting board	1
-S32	contains	{thyme}
-O240	thyme	1
-S235	sprig
-S354	on	[cutting board]
-O384	saucepan	0
-S195	contains	{beef stock,carrot}
-M0	pick-and-place	1:38	1:40
-O384	saucepan	0
-S195	contains	{beef stock,carrot,thyme}
-O240	thyme	1
-S235	sprig
-S354	in	[pan]
+O143	cutting board	1
+S23	contains	{thyme}
+O443	thyme	1
+S123	sprig
+S81	on	[cutting board]
+O381	saucepan	0
+S23	contains	{beef stock,carrot}
+M50	pick-and-place	1:38	1:40
+O381	saucepan	0
+S23	contains	{beef stock,carrot,thyme}
+O443	thyme	1
+S123	sprig
+S65	in	[pan]
 //
-O30	jar	0
-S354	contains	{bay leaf}
-O185	bay leaf	1
-S354	dried
-S168	in	[jar]
-O384	saucepan	0
-S195	contains	{beef stock,carrot,thyme}
-M0	pick-and-place	1:40	1:43
-O384	saucepan	0
-S195	contains	{beef stock,carrot,thyme,bay leaf}
-O185	bay leaf	1
-S354	dried
-S168	in	[pan]
+O235	jar	0
+S23	contains	{bay leaf}
+O21	bay leaf	1
+S40	dried
+S65	in	[jar]
+O381	saucepan	0
+S23	contains	{beef stock,carrot,thyme}
+M50	pick-and-place	1:40	1:43
+O381	saucepan	0
+S23	contains	{beef stock,carrot,thyme,bay leaf}
+O21	bay leaf	1
+S40	dried
+S65	in	[pan]
 //
-O384	saucepan	1
-S195	contains	{beef stock,carrot,thyme,bay leaf}
-O30	stove	0
-S354	on
-M0	pick-and-place	Assumed	Assumed
-O384	saucepan	1
-S195	contains	{beef stock,carrot,thyme,bay leaf}
-S400	on	[stove]
-O30	stove	0
-S354	on
-S354	with	[pan]
+O381	saucepan	1
+S23	contains	{beef stock,carrot,thyme,bay leaf}
+O425	stove	0
+S81	on
+M50	pick-and-place	Assumed	Assumed
+O381	saucepan	1
+S23	contains	{beef stock,carrot,thyme,bay leaf}
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
 //
-O384	saucepan	1
-S195	contains	{beef stock,carrot,thyme,bay leaf}
-S400	on	[stove]
-O30	stove	0
-S354	on
-S354	with	[pan]
-M0	simmer	Assumed	Assumed
-O384	saucepan	1
-S195	contains	{beef stock,carrot,thyme,bay leaf}
-S400	on	[stove]
+O381	saucepan	1
+S23	contains	{beef stock,carrot,thyme,bay leaf}
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
+M77	simmer	Assumed	Assumed
+O381	saucepan	1
+S23	contains	{beef stock,carrot,thyme,bay leaf}
+S81	on	[stove]
 //
-O43	plate	1
-S354	contains	{beef}
-O25	beef	1
-S57	chopped
-S354	on	[plate]
-O13	cooking pan	0
-S354	greased	{vegetable oil}
-S400	on	[stove]
-O37	spatula	1
-S58	clean
-M4	scrape	1:48	1:57
-O13	cooking pan	0
-S195	contains	{beef}
-S400	on	[stove]
-O25	beef	1
-S57	chopped
-S57	in	[pan]
+O344	plate	1
+S23	contains	{beef}
+O24	beef	1
+S14	chopped
+S81	on	[plate]
+O116	cooking pan	0
+S57	greased	{vegetable oil}
+S81	on	[stove]
+O412	spatula	1
+S16	clean
+M71	scrape	1:48	1:57
+O116	cooking pan	0
+S23	contains	{beef}
+S81	on	[stove]
+O24	beef	1
+S14	chopped
+S65	in	[pan]
 //
-O25	beef	1
-S57	chopped
-S57	in	[pan]
-O13	cooking pan	0
-S195	contains	{beef}
-S400	on	[stove]
-O30	stove	0
-S354	on
-S354	with	[pan]
-O37	spatula	1
-S58	clean
-M1	cook and stir	1:59	2:29
-O13	cooking pan	0
-S195	contains	{beef}
-S400	on	[stove]
-O25	beef	1
-S57	cooked
-S57	in	[pan]
+O24	beef	1
+S14	chopped
+S65	in	[pan]
+O116	cooking pan	0
+S23	contains	{beef}
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O412	spatula	1
+S16	clean
+M16	cook and stir	1:59	2:29
+O116	cooking pan	0
+S23	contains	{beef}
+S81	on	[stove]
+O24	beef	1
+S24	cooked
+S65	in	[pan]
 //
-O15	plate	0
-S107	empty
-O25	beef	1
-S57	cooked
-S57	in	[pan]
-O13	cooking pan	0
-S195	contains	{beef}
-S354	on	[stove]
-O37	spatula	1
-S58	clean
-M0	pick-and-place	2:30	2:40
-O13	cooking pan	0
-S354	greased	{vegetable oil,beef}
-S400	on	[stove]
-O15	plate	0
-S195	contains	{beef}
-O25	beef	1
-S57	cooked
-S57	on	[plate]
+O344	plate	0
+S41	empty
+O24	beef	1
+S24	cooked
+S65	in	[pan]
+O116	cooking pan	0
+S23	contains	{beef}
+S81	on	[stove]
+O412	spatula	1
+S16	clean
+M50	pick-and-place	2:30	2:40
+O116	cooking pan	0
+S57	greased	{vegetable oil,beef}
+S81	on	[stove]
+O344	plate	0
+S23	contains	{beef}
+O24	beef	1
+S24	cooked
+S81	on	[plate]
 //
-O13	cooking pan	0
-S354	greased	{vegetable oil,beef}
-S400	on	[stove]
-O25	beef	1
-S57	cooked
-S57	on	[plate]
-O37	spatula	1
-S58	clean
-M4	scrape	2:55	2:59
-O13	cooking pan	0
-S195	contains	{beef}
-S400	on	[stove]
-O25	beef	1
-S57	cooked
-S57	in	[pan]
+O116	cooking pan	0
+S57	greased	{vegetable oil,beef}
+S81	on	[stove]
+O24	beef	1
+S24	cooked
+S81	on	[plate]
+O412	spatula	1
+S16	clean
+M71	scrape	2:55	2:59
+O116	cooking pan	0
+S23	contains	{beef}
+S81	on	[stove]
+O24	beef	1
+S24	cooked
+S65	in	[pan]
 //
-O2	bowl	1
-S32	contains	{onion}
-O26	onion	1
-S354	chopped
-S57	in	[bowl]
-O13	cooking pan	0
-S195	contains	{beef}
-S400	on	[stove]
-M4	pour	3:03	3:06
-O13	cooking pan	0
-S195	contains	{beef,onion}
-S400	on	[stove]
-O26	onion	1
-S354	chopped
-S57	in	[pan]
+O46	bowl	1
+S23	contains	{onion}
+O299	onion	1
+S14	chopped
+S65	in	[bowl]
+O116	cooking pan	0
+S23	contains	{beef}
+S81	on	[stove]
+M54	pour	3:03	3:06
+O116	cooking pan	0
+S23	contains	{beef,onion}
+S81	on	[stove]
+O299	onion	1
+S14	chopped
+S65	in	[pan]
 //
-O13	cooking pan	0
-S195	contains	{beef,onion}
-S400	on	[stove]
-O26	onion	1
-S354	chopped
-S57	in	[pan]
-O25	beef	1
-S57	cooked
-S57	in	[pan]
-O37	spatula	1
-S102	clean
-M1	mix	3:07	3:21
-O13	cooking pan	0
-S195	contains	{beef,onion}
-S400	on	[stove]
-O26	onion	1
-S354	fried
-S57	in	[pan]
-O25	beef	1
-S57	fried
-S57	in	[pan]
+O116	cooking pan	0
+S23	contains	{beef,onion}
+S81	on	[stove]
+O299	onion	1
+S14	chopped
+S65	in	[pan]
+O24	beef	1
+S24	cooked
+S65	in	[pan]
+O412	spatula	1
+S16	clean
+M46	mix	3:07	3:21
+O116	cooking pan	0
+S23	contains	{beef,onion}
+S81	on	[stove]
+O299	onion	1
+S50	fried
+S65	in	[pan]
+O24	beef	1
+S50	fried
+S65	in	[pan]
 //
-O13	cooking pan	0
-S195	contains	{beef,onion}
-S400	on	[stove]
-O43	bottle	1
-S354	contains	{cognac}
-O385	cognac	1
-S159	in	[bottle]
-M4	pour	3:25	3:37
-O13	cooking pan	0
-S195	contains	{beef,onion,cognac}
-S400	on	[stove]
-O385	cognac	1
-S159	in	[pan]
+O116	cooking pan	0
+S23	contains	{beef,onion}
+S81	on	[stove]
+O45	bottle	1
+S23	contains	{cognac}
+O110	cognac	1
+S65	in	[bottle]
+M54	pour	3:25	3:37
+O116	cooking pan	0
+S23	contains	{beef,onion,cognac}
+S81	on	[stove]
+O110	cognac	1
+S65	in	[pan]
 //
-O13	cooking pan	0
-S195	contains	{beef,onion,cognac}
-S400	on	[stove]
-O37	spatula	1
-S102	clean
-O385	cognac	1
-S159	in	[pan]
-M1	mix	3:30	3:33
-O13	cooking pan	0
-S195	contains	{beef,onion,cognac}
-S400	on	[stove]
+O116	cooking pan	0
+S23	contains	{beef,onion,cognac}
+S81	on	[stove]
+O412	spatula	1
+S16	clean
+O110	cognac	1
+S65	in	[pan]
+M46	mix	3:30	3:33
+O116	cooking pan	0
+S23	contains	{beef,onion,cognac}
+S81	on	[stove]
 //
-O384	saucepan	1
-S195	contains	{beef stock,carrot,thyme,bay leaf}
-S400	on	[stove]
-O13	cooking pan	0
-S195	contains	{beef,onion,cognac}
-S400	on	[stove]
-O386	strainer	1
-S58	clean
-M94	pour	3:35	3:43
-O386	strainer	1
-S195	contains	{carrot,thyme,bay leaf}
-O13	cooking pan	0
-S195	contains	{beef,onion,cognac,beef stock}
-S400	on	[stove]
+O381	saucepan	1
+S23	contains	{beef stock,carrot,thyme,bay leaf}
+S81	on	[stove]
+O116	cooking pan	0
+S23	contains	{beef,onion,cognac}
+S81	on	[stove]
+O426	strainer	1
+S16	clean
+M54	pour	3:35	3:43
+O426	strainer	1
+S23	contains	{carrot,thyme,bay leaf}
+O116	cooking pan	0
+S23	contains	{beef,onion,cognac,beef stock}
+S81	on	[stove]
 //
-O13	cooking pan	0
-S195	contains	{beef,onion,cognac,beef stock}
-S400	on	[stove]
-O385	cognac	1
-S159	in	[pan]
-O26	onion	1
-S354	fried
-S57	in	[pan]
-O25	beef	1
-S57	fried
-S57	in	[pan]
-O37	spatula	1
-S102	clean
-M6	stir	3:47	3:52
-O13	cooking pan	0
-S195	contains	{beef stew mix}
-S400	on	[stove]
-O132	beef stew mix	0
-S195	contains	{beef,onion,cognac,beef stock}
-S33	in	[pan]
+O116	cooking pan	0
+S23	contains	{beef,onion,cognac,beef stock}
+S81	on	[stove]
+O110	cognac	1
+S65	in	[pan]
+O299	onion	1
+S50	fried
+S65	in	[pan]
+O24	beef	1
+S50	fried
+S65	in	[pan]
+O412	spatula	1
+S16	clean
+M85	stir	3:47	3:52
+O116	cooking pan	0
+S23	contains	{beef stew mix}
+S81	on	[stove]
+O26	beef stew mix	0
+S23	contains	{beef,onion,cognac,beef stock}
+S65	in	[pan]
 //
-O43	cutting board	0
-S58	empty
-O205	mushroom	1
-S361	whole
-M0	pick-and-place	Assumed	Assumed
-O205	mushroom	1
-S361	whole
-S43	on	[cutting board]
-O43	cutting board	0
-S235	contains	{mushroom}
+O143	cutting board	0
+S41	empty
+O287	mushroom	1
+S141	whole
+M50	pick-and-place	Assumed	Assumed
+O287	mushroom	1
+S141	whole
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{mushroom}
 //
-O43	cutting board	0
-S235	contains	{mushroom}
-O205	mushroom	1
-S361	whole
-S43	on	[cutting board]
-O11	knife	1
-S58	clean
-M347	slice	Assumed	Assumed
-O205	mushroom	1
-S311	sliced
-S43	on	[cutting board]
+O143	cutting board	0
+S23	contains	{mushroom}
+O287	mushroom	1
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M79	slice	Assumed	Assumed
+O287	mushroom	1
+S117	sliced
+S81	on	[cutting board]
 //
-O43	cutting board	0
-S235	contains	{mushroom}
-O205	mushroom	1
-S311	sliced
-S43	on	[cutting board]
-O2	bowl	0
-S195	empty
-M0	pick-and-place	Assumed	Assumed
-O2	bowl	0
-S195	contains	{mushroom}
-O205	mushroom	1
-S311	sliced
-S43	in	[bowl]
-O43	cutting board	0
-S235	dirty
+O143	cutting board	0
+S23	contains	{mushroom}
+O287	mushroom	1
+S117	sliced
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{mushroom}
+O287	mushroom	1
+S117	sliced
+S65	in	[bowl]
+O143	cutting board	0
+S38	dirty
 //
-O13	cooking pan	1
-S195	greased	{butter}
-S400	on	[stove]
-O2	bowl	1
-S195	contains	{mushroom}
-O132	mushroom	1
-S311	sliced
-S43	in	[bowl]
-M4	pour	3:58	4:04
-O13	cooking pan	0
-S195	contains	{butter,mushroom}
-S400	on	[stove]
-O132	mushroom	1
-S311	sliced
-S43	in	[pan]
+O116	cooking pan	1
+S57	greased	{butter}
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{mushroom}
+O287	mushroom	1
+S117	sliced
+S65	in	[bowl]
+M54	pour	3:58	4:04
+O116	cooking pan	0
+S23	contains	{butter,mushroom}
+S81	on	[stove]
+O287	mushroom	1
+S117	sliced
+S65	in	[pan]
 //
-O2	bowl	1
-S195	contains	{garlic}
-O30	garlic	1
-S195	minced
-S43	in	[bowl]
-O13	cooking pan	1
-S195	contains	{butter,mushroom}
-S400	on	[stove]
-M4	pour	4:07	4:09
-O13	cooking pan	0
-S195	contains	{butter,mushroom,garlic}
-S400	on	[stove]
-O30	garlic	1
-S195	minced
-S43	in	[pan]
+O46	bowl	1
+S23	contains	{garlic}
+O192	garlic	1
+S75	minced
+S65	in	[bowl]
+O116	cooking pan	1
+S23	contains	{butter,mushroom}
+S81	on	[stove]
+M54	pour	4:07	4:09
+O116	cooking pan	0
+S23	contains	{butter,mushroom,garlic}
+S81	on	[stove]
+O192	garlic	1
+S75	minced
+S65	in	[pan]
 //
-O240	thyme	1
-S43	sprig
-O13	cooking pan	0
-S195	contains	{butter,mushroom,garlic}
-S400	on	[stove]
-M0	pick-and-place	4:12	4:13
-O13	cooking pan	0
-S195	contains	{butter,mushroom,garlic,thyme}
-S400	on	[stove]
-O240	thyme	1
-S43	sprig
-S43	in	[pan]
+O443	thyme	1
+S123	sprig
+O116	cooking pan	0
+S23	contains	{butter,mushroom,garlic}
+S81	on	[stove]
+M50	pick-and-place	4:12	4:13
+O116	cooking pan	0
+S23	contains	{butter,mushroom,garlic,thyme}
+S81	on	[stove]
+O443	thyme	1
+S123	sprig
+S65	in	[pan]
 //
-O2	bowl	1
-S195	contains	{paprika}
-O20	paprika	1
-S400	ground
-S160	in	[bowl]
-O13	cooking pan	0
-S195	contains	{butter,mushroom,garlic,thyme}
-S400	on	[stove]
-M4	pour	4:13	4:15
-O13	cooking pan	0
-S195	contains	{butter,mushroom,garlic,thyme}
-S400	on	[stove]
-O20	paprika	1
-S400	ground
-S160	in	[pan]
+O46	bowl	1
+S23	contains	{paprika}
+O314	paprika	1
+S58	ground
+S65	in	[bowl]
+O116	cooking pan	0
+S23	contains	{butter,mushroom,garlic,thyme}
+S81	on	[stove]
+M54	pour	4:13	4:15
+O116	cooking pan	0
+S23	contains	{butter,mushroom,garlic,thyme}
+S81	on	[stove]
+O314	paprika	1
+S58	ground
+S65	in	[pan]
 //
-O37	spatula	1
-S58	clean
-O13	cooking pan	0
-S195	contains	{butter,mushroom,garlic,thyme}
-S400	on	[stove]
-O240	thyme	1
-S43	sprig
-S43	in	[pan]
-O20	paprika	1
-S400	ground
-S160	in	[pan]
-O30	garlic	1
-S195	minced
-S43	in	[pan]
-O132	mushroom	1
-S311	sliced
-S43	in	[pan]
-M6	cook and stir	4:17	4:30
-O13	cooking pan	0
-S195	contains	{mushroom,garlic,thyme}
-S400	on	[stove]
-O30	garlic	1
-S195	fried
-S43	in	[pan]
-O132	mushroom	1
-S311	fried
-S43	in	[pan]
+O412	spatula	1
+S16	clean
+O116	cooking pan	0
+S23	contains	{butter,mushroom,garlic,thyme}
+S81	on	[stove]
+O443	thyme	1
+S123	sprig
+S65	in	[pan]
+O314	paprika	1
+S58	ground
+S65	in	[pan]
+O192	garlic	1
+S75	minced
+S65	in	[pan]
+O287	mushroom	1
+S117	sliced
+S65	in	[pan]
+M16	cook and stir	4:17	4:30
+O116	cooking pan	0
+S23	contains	{mushroom,garlic,thyme}
+S81	on	[stove]
+O192	garlic	1
+S50	fried
+S65	in	[pan]
+O287	mushroom	1
+S50	fried
+S65	in	[pan]
 //
-O13	cooking pan	1
-S195	contains	{mushroom,garlic,thyme}
-S400	on	[stove]
-O311	stove	0
-S43	on
-S43	with	[pan]
-M45	remove	4:36	4:37
-O13	cooking pan	1
-S195	contains	{mushroom,garlic,thyme}
-O311	stove	0
-S43	off
+O116	cooking pan	1
+S23	contains	{mushroom,garlic,thyme}
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
+M63	remove	4:36	4:37
+O116	cooking pan	1
+S23	contains	{mushroom,garlic,thyme}
+O425	stove	0
+S78	off
 //
-O13	cooking pan	0
-S195	contains	{beef stew mix}
-S400	on	[stove]
-O311	stove	0
-S43	on
-S43	with	[pan]
-M45	remove	4:36	4:37
-O13	cooking pan	1
-S195	contains	{beef stew mix}
-O311	stove	0
-S43	off
+O116	cooking pan	0
+S23	contains	{beef stew mix}
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
+M63	remove	4:36	4:37
+O116	cooking pan	1
+S23	contains	{beef stew mix}
+O425	stove	0
+S78	off
 //
-O13	cooking pan	1
-S195	contains	{mushroom,garlic,thyme}
-O13	cooking pan	0
-S195	contains	{beef stew mix}
-O22	spoon	1
-S58	clean
-M4	scrape	4:45	4:50
-O13	cooking pan	0
-S195	contains	{beef stew mix,mushroom,garlic,thyme}
+O116	cooking pan	1
+S23	contains	{mushroom,garlic,thyme}
+O116	cooking pan	0
+S23	contains	{beef stew mix}
+O416	spoon	1
+S16	clean
+M71	scrape	4:45	4:50
+O116	cooking pan	0
+S23	contains	{beef stew mix,mushroom,garlic,thyme}
 //
-O13	cooking pan	0
-S195	contains	{beef stew mix,mushroom,garlic,thyme}
-O132	beef stew mix	1
-S195	contains	{beef,onion,cognac,beef stock}
-S33	in	[pan]
-O22	spoon	1
-S58	clean
-M6	stir	4:51	4:53
-O13	cooking pan	0
-S195	contains	{beef stew mix}
-O132	beef stew mix	1
-S195	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme}
-S33	in	[pan]
+O116	cooking pan	0
+S23	contains	{beef stew mix,mushroom,garlic,thyme}
+O26	beef stew mix	1
+S23	contains	{beef,onion,cognac,beef stock}
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M85	stir	4:51	4:53
+O116	cooking pan	0
+S23	contains	{beef stew mix}
+O26	beef stew mix	1
+S23	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme}
+S65	in	[pan]
 //
-O13	cooking pan	0
-S195	contains	{beef stew mix}
-O2	bowl	1
-S33	contains	{mayonnaise,mustard}
-O76	mustard	1
-S160	in	[bowl]
-O76	sour cream	1
-S160	in	[bowl]
-O22	spoon	1
-S58	clean
-M18	scrape	4:56	5:00
-O13	cooking pan	0
-S195	contains	{beef stew mix,mustard,sour cream}
-O76	mustard	1
-S160	in	[pan]
-O76	sour cream	1
-S160	in	[pan]
-O2	bowl	0
-S102	dirty
+O116	cooking pan	0
+S23	contains	{beef stew mix}
+O46	bowl	1
+S23	contains	{mayonnaise,mustard}
+O289	mustard	1
+S65	in	[bowl]
+O408	sour cream	1
+S65	in	[bowl]
+O416	spoon	1
+S16	clean
+M71	scrape	4:56	5:00
+O116	cooking pan	0
+S23	contains	{beef stew mix,mustard,sour cream}
+O289	mustard	1
+S65	in	[pan]
+O408	sour cream	1
+S65	in	[pan]
+O46	bowl	0
+S38	dirty
 //
-O13	cooking pan	0
-S195	contains	{beef stew mix,mustard,sour cream}
-O132	beef stew mix	1
-S195	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme}
-S33	in	[pan]
-O76	mustard	1
-S160	in	[pan]
-O76	sour cream	1
-S160	in	[pan]
-O22	spoon	1
-S102	clean
-M6	stir	5:00	5:17
-O13	cooking pan	0
-S195	contains	{beef stew mix}
-O132	beef stew mix	1
-S195	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme,sour cream,mustard}
-S33	in	[pan]
-O22	spoon	1
-S102	dirty
+O116	cooking pan	0
+S23	contains	{beef stew mix,mustard,sour cream}
+O26	beef stew mix	1
+S23	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme}
+S65	in	[pan]
+O289	mustard	1
+S65	in	[pan]
+O408	sour cream	1
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M85	stir	5:00	5:17
+O116	cooking pan	0
+S23	contains	{beef stew mix}
+O26	beef stew mix	1
+S23	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme,sour cream,mustard}
+S65	in	[pan]
+O416	spoon	1
+S38	dirty
 //
-O13	cooking pan	0
-S195	contains	{beef stew mix}
-O43	bowl	1
-S43	contains	{parsley}
-O33	parsley	1
-S43	chopped
-S160	in	[bowl]
-M4	pour	5:17	5:19
-O13	cooking pan	0
-S195	contains	{beef stew mix,parsley}
-O33	parsley	1
-S43	chopped
-S160	in	[pan]
-O43	bowl	1
-S43	dirty
+O116	cooking pan	0
+S23	contains	{beef stew mix}
+O46	bowl	1
+S23	contains	{parsley}
+O317	parsley	1
+S14	chopped
+S65	in	[bowl]
+M54	pour	5:17	5:19
+O116	cooking pan	0
+S23	contains	{beef stew mix,parsley}
+O317	parsley	1
+S14	chopped
+S65	in	[pan]
+O46	bowl	1
+S38	dirty
 //
-O13	cooking pan	0
-S195	contains	{beef stew mix,parsley}
-O33	parsley	1
-S43	chopped
-S160	in	[pan]
-O132	beef stew mix	1
-S195	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme,sour cream,mustard}
-S33	in	[pan]
-O22	spoon	1
-S102	clean
-M6	stir	5:20	5:30
-O13	cooking pan	0
-S195	contains	{beef stroganoff}
-O25	beef stroganoff	1
-S43	in	[pan]
-O22	spoon	0
-S102	dirty
+O116	cooking pan	0
+S23	contains	{beef stew mix,parsley}
+O317	parsley	1
+S14	chopped
+S65	in	[pan]
+O26	beef stew mix	1
+S23	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme,sour cream,mustard}
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M85	stir	5:20	5:30
+O116	cooking pan	0
+S23	contains	{beef stroganoff}
+O28	beef stroganoff	1
+S65	in	[pan]
+O416	spoon	0
+S38	dirty
 //
-O43	bowl	0
-S43	contains	{pasta}
-O95	pasta	1
-S43	cooked
-S160	in	[bowl]
-O15	plate	1
-S58	empty
-O41	tongs	1
-S58	clean
-M0	pick-and-place	5:33	5:47
-O41	tongs	1
-S58	dirty
-O15	plate	0
-S201	contains	{pasta}
-O95	pasta	0
-S43	cooked
-S390	on	[plate]
+O46	bowl	0
+S23	contains	{pasta}
+O318	pasta	1
+S24	cooked
+S65	in	[bowl]
+O344	plate	1
+S41	empty
+O452	tongs	1
+S16	clean
+M50	pick-and-place	5:33	5:47
+O452	tongs	1
+S38	dirty
+O344	plate	0
+S23	contains	{pasta}
+O318	pasta	0
+S24	cooked
+S81	on	[plate]
 //
-O13	cooking pan	0
-S195	contains	{beef stroganoff}
-O25	beef stroganoff	1
-S43	in	[pan]
-O15	plate	0
-S201	contains	{pasta}
-O95	pasta	0
-S43	cooked
-S390	on	[plate]
-O22	spoon	1
-S102	clean
-M0	scoop and pour	6:00	6:11
-O22	spoon	0
-S102	dirty
-O15	plate	0
-S201	contains	{beef stroganoff,pasta}
-O25	beef stroganoff	1
-S43	on	[plate]
+O116	cooking pan	0
+S23	contains	{beef stroganoff}
+O28	beef stroganoff	1
+S65	in	[pan]
+O344	plate	0
+S23	contains	{pasta}
+O318	pasta	0
+S24	cooked
+S81	on	[plate]
+O416	spoon	1
+S16	clean
+M70	scoop and pour	6:00	6:11
+O416	spoon	0
+S38	dirty
+O344	plate	0
+S23	contains	{beef stroganoff,pasta}
+O28	beef stroganoff	1
+S81	on	[plate]
 //
-O240	thyme	1
-S43	sprig
-S235	on	[cutting board]
-O15	plate	0
-S201	contains	{beef stroganoff,pasta}
-O25	beef stroganoff	1
-S43	on	[plate]
-M0	pick-and-place	6:19	6:22
-O25	beef stroganoff	1	!
-S195	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme,sour cream,mustard,thyme,pasta}
-S43	on	[plate]
+O443	thyme	1
+S123	sprig
+S81	on	[cutting board]
+O344	plate	0
+S23	contains	{beef stroganoff,pasta}
+O28	beef stroganoff	1
+S81	on	[plate]
+M50	pick-and-place	6:19	6:22
+O28	beef stroganoff	1	13
+S23	contains	{beef,onion,cognac,beef stock,mushroom,garlic,thyme,sour cream,mustard,thyme,pasta}
+S81	on	[plate]
 //

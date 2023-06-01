@@ -1,0 +1,285 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0021-watermelon-strawberry-passion_smoothie.mp4
+//
+O346	pot	1
+S23	contains	{water}
+S64	hot
+S81	on	[stove]
+O475	water	0
+S65	in	[pot]
+S8	boiling
+O152	drinking glass	0
+S41	empty
+M54	pour	Assumed	Assumed
+O152	drinking glass	0
+S23	contains	{water}
+O475	water	1
+S64	hot
+S65	in	[drinking glass]
+//
+O143	cutting board	0
+S16	clean
+O477	watermelon	1
+S141	whole
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{watermelon}
+O477	watermelon	1
+S141	whole
+S81	on	[cutting board]
+//
+O477	watermelon	0
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+M79	slice	Assumed	Assumed
+O477	watermelon	0
+S117	sliced
+S81	on	[cutting board]
+//
+O477	watermelon	0
+S117	sliced
+S81	on	[cutting board]
+O240	knife	1
+M10	chop	Assumed	Assumed
+O477	watermelon	0
+S14	chopped
+S81	on	[cutting board]
+//
+O143	cutting board	0
+S23	contains	{watermelon}
+O477	watermelon	1
+S14	chopped
+S81	on	[cutting board]
+O342	plastic bag	0
+S41	empty
+S83	opened
+M42	insert	Assumed	Assumed
+O143	cutting board	0
+S38	dirty
+O342	plastic bag	0
+S23	contains	{watermelon}
+S83	opened
+O477	watermelon	1
+S14	chopped
+S65	in	[plastic bag]
+//
+O342	plastic bag	0
+S23	contains	{watermelon}
+S83	opened
+M11	close	Assumed	Assumed
+O342	plastic bag	0
+S23	contains	{watermelon}
+//
+O342	plastic bag	1
+S23	contains	{watermelon}
+O361	refrigerator	0
+S81	on
+M50	pick-and-place	Assumed	Assumed
+O361	refrigerator	0
+S81	on
+S142	with	[plastic bag]
+O342	plastic bag	1
+S23	contains	{watermelon}
+S65	in	[refrigerator]
+//
+O361	refrigerator	0
+S81	on
+S142	with	[plastic bag]
+O342	plastic bag	1
+S23	contains	{watermelon}
+S65	in	[refrigerator]
+O477	watermelon	1
+S14	chopped
+S65	in	[plastic bag]
+M36	freeze	Assumed	Assumed
+O477	watermelon	1
+S14	chopped
+S53	frozen
+S65	in	[plastic bag]
+//
+O361	refrigerator	0
+S81	on
+S142	with	[plastic bag]
+O342	plastic bag	1
+S23	contains	{watermelon}
+S65	in	[refrigerator]
+M87	take out	Assumed	Assumed
+O361	refrigerator	0
+S81	on
+O342	plastic bag	1
+S23	contains	{watermelon}
+//
+O342	plastic bag	1
+S23	contains	{watermelon}
+M48	open	Assumed	Assumed
+O342	plastic bag	1
+S23	contains	{watermelon}
+S83	opened
+//
+O152	drinking glass	0
+S23	contains	{water}
+O440	tea bag	1
+S65	in	[packet]
+M42	insert	Assumed	Assumed
+O152	drinking glass	0
+S23	contains	{water,tea bag}
+O440	tea bag	1
+S65	in	[drinking glass]
+//
+O152	drinking glass	0
+S23	contains	{water,tea bag}
+O440	tea bag	0
+S65	in	[drinking glass]
+O475	water	0
+S64	hot
+S65	in	[drinking glass]
+O440	tea bag	1
+S65	in	[packet]
+M7	brew	Assumed	Assumed
+O152	drinking glass	0
+S23	contains	{tea,tea bag}
+O439	tea	0
+S65	in	[drinking glass]
+//
+O152	drinking glass	0
+S23	contains	{tea,tea bag}
+O440	tea bag	1
+S65	in	[drinking glass]
+M63	remove	Assumed	Assumed
+O152	drinking glass	0
+S23	contains	{tea}
+//
+O37	blender cup	0
+S41	empty
+O342	plastic bag	1
+S23	contains	{watermelon}
+S83	opened
+O477	watermelon	1
+S14	chopped
+S53	frozen
+S65	in	[plastic bag]
+O342	plastic bag	1
+S23	contains	{strawberry}
+S83	opened
+O427	strawberry	1
+S14	chopped
+S53	frozen
+S65	in	[plastic bag]
+O152	drinking glass	0
+S23	contains	{tea}
+O439	tea	1
+S65	in	[drinking glass]
+O46	bowl	1
+S23	contains	{sugar syrup}
+O430	sugar syrup	1
+S65	in	[bowl]
+O416	spoon	1
+S41	empty
+M54	pour*	Assumed	Assumed
+O37	blender cup	0
+S23	contains	{watermelon,tea,strawberry,sugar syrup}
+O477	watermelon	1
+S14	chopped
+S53	frozen
+S65	in	[blender cup]
+O427	strawberry	1
+S14	chopped
+S53	frozen
+S65	in	[blender cup]
+O439	tea	1
+S65	in	[blender cup]
+O430	sugar syrup	1
+S65	in	[blender cup]
+//
+O37	blender cup	0
+S23	contains	{watermelon,tea,strawberry,sugar syrup}
+O39	blender lid	1
+S16	clean
+M18	cover	Assumed	Assumed
+O37	blender cup	1
+S26	covered	[blender lid]
+S23	contains	{watermelon,tea,strawberry,sugar syrup}
+O39	blender lid	1
+S81	on	[blender cup]
+//
+O37	blender cup	1
+S26	covered	[blender lid]
+S23	contains	{watermelon,tea,strawberry,sugar syrup}
+O35	blender	0
+S79	off (ready)
+M1	attach	Assumed	Assumed
+O37	blender cup	1
+S26	covered	[blender lid]
+S23	contains	{watermelon,tea,strawberry,sugar syrup}
+S0	attached to	[blender]
+O35	blender	0
+S142	with	[blender cup]
+//
+O35	blender	0
+S142	with	[blender cup]
+O37	blender cup	0
+S26	covered	[blender lid]
+S23	contains	{watermelon,tea,strawberry,sugar syrup}
+S0	attached to	[blender]
+O477	watermelon	1
+S14	chopped
+S53	frozen
+S65	in	[blender cup]
+O427	strawberry	1
+S14	chopped
+S53	frozen
+S65	in	[blender cup]
+O439	tea	1
+S65	in	[blender cup]
+O430	sugar syrup	1
+S65	in	[blender cup]
+M4	blend*	Assumed	Assumed
+O403	smoothie	0
+S23	contains	{watermelon,tea,strawberry,sugar syrup}
+S65	in	[blender cup]
+O37	blender cup	1
+S26	covered	[blender lid]
+S23	contains	{smoothie}
+S0	attached to	[blender]
+//
+O37	blender cup	1
+S26	covered	[blender lid]
+S23	contains	{smoothie}
+S0	attached to	[blender]
+O35	blender	0
+S142	with	[blender cup]
+M25	detach	Assumed	Assumed
+O37	blender cup	1
+S26	covered	[blender lid]
+S23	contains	{smoothie}
+O35	blender	0
+S78	off
+//
+O37	blender cup	0
+S26	covered	[blender lid]
+S23	contains	{smoothie}
+O39	blender lid	1
+S81	on	[blender cup]
+M93	uncover	Assumed	Assumed
+O37	blender cup	0
+S23	contains	{smoothie}
+O39	blender lid	1
+S38	dirty
+//
+O37	blender cup	0
+S23	contains	{smoothie}
+O403	smoothie	0
+S23	contains	{watermelon,tea,strawberry,sugar syrup}
+S65	in	[blender cup]
+O152	drinking glass	0
+S41	empty
+O416	spoon	1
+M69	scoop	1:26	1:35
+O152	drinking glass	0
+S23	contains	{smoothie}
+O403	smoothie	0	9
+S23	contains	{watermelon,tea,strawberry,sugar syrup}
+S65	in	[drinking glass]
+O37	blender cup	0
+S38	dirty
+//

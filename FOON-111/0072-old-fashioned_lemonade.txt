@@ -1,345 +1,346 @@
 # Source:	https://www.youtube.com/watch?v=MbCAiWBhAjo
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0072-old-fashioned_lemonade.mp4
 //
-O32	lemon	1
-S43	whole
-O43	colander	0
-S43	empty
-M0	pick-and-place	Assumed	Assumed
-O32	lemon	1
-S43	whole
-S43	in	[colander]
-O43	colander	0
-S43	contains	{lemon}
+O244	lemon	1
+S141	whole
+O111	colander	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O244	lemon	1
+S141	whole
+S65	in	[colander]
+O111	colander	0
+S23	contains	{lemon}
 //
-O2	faucet	1
-S32	on
-O23	water	0
-S43	from	[faucet]
-O43	colander	1
-S43	contains	{lemon}
-O32	lemon	1
-S43	whole
-S43	in	[colander]
-M0	wash	Assumed	Assumed
-O32	lemon	1
-S43	whole
-S43	washed
-S43	in	[colander]
+O170	faucet	1
+S81	on
+O475	water	0
+S51	from	[faucet]
+O111	colander	1
+S23	contains	{lemon}
+O244	lemon	1
+S141	whole
+S65	in	[colander]
+M95	wash	Assumed	Assumed
+O244	lemon	1
+S141	whole
+S137	washed
+S65	in	[colander]
 //
-O32	cutting board	0
-S44	empty
-O43	colander	0
-S43	contains	{lemon}
-O32	lemon	1
-S43	whole
-S43	washed
-S43	in	[colander]
-M4	pick-and-place	Assumed	Assumed
-O32	cutting board	0
-S43	contains	{lemon}
-O32	lemon	1
-S43	whole
-S43	on	[cutting board]
-O43	colander	0
-S23	empty
-S43	dirty
+O170	faucet	0
+S81	on
+O475	water	0
+S51	from	[faucet]
+M91	turn off	Assumed	Assumed
+O170	faucet	1
+S78	off
 //
-O32	cutting board	0
-S43	contains	{lemon}
-O32	lemon	1
-S43	whole
-S43	on	[cutting board]
-M4	roll	0:15	0:26
-O32	lemon	1
-S43	whole
-S43	softened
-S43	on	[cutting board]
+O46	bowl	0
+S41	empty
+O111	colander	0
+S23	contains	{lemon}
+O244	lemon	1
+S141	whole
+S137	washed
+S65	in	[colander]
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{lemon}
+O244	lemon	1
+S141	whole
+S65	in	[bowl]
+O111	colander	0
+S38	dirty
 //
-O32	bowl	0
-S43	empty
-O32	grater	0
-S43	clean
-O32	lemon	1
-S43	whole
-S43	softened
-S43	on	[cutting board]
-M0	grate	0:27	0:31
-O32	lemon	1
-S43	whole
-S43	softened
-S43	zested
-S43	on	[cutting board]
-O32	bowl	0
-S43	contains	{lemon zest}
-O32	lemon	1
-S43	grated
-S43	in	[measuring cup]
-O32	lemon zest	1
-S43	grated
-S43	in	[measuring cup]
-O32	grater	0
-S43	dirty
+O46	bowl	0
+S23	contains	{lemon}
+O244	lemon	1
+S141	whole
+S65	in	[bowl]
+O143	cutting board	0
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{lemon}
+O244	lemon	1
+S141	whole
+S81	on	[cutting board]
 //
-O32	saucepan	1
-S43	empty
-O32	stove	0
-S43	off
-M0	pick-and-place	Assumed	Assumed
-O32	saucepan	1
-S43	empty
-S43	on	[stove]
-O32	stove	0
-S43	off
-S43	with	[saucepan]
+O143	cutting board	0
+S23	contains	{lemon}
+O244	lemon	1
+S141	whole
+S81	on	[cutting board]
+M66	roll	0:15	0:26
+O244	lemon	1
+S120	softened
+S81	on	[cutting board]
 //
-O32	saucepan	0
-S43	empty
-S43	on	[stove]
-O32	measuring cup	1
-S43	contains	{water}
-O32	water	1
-S3	liquid
-S43	in	[measuring cup]
-M0	pour	0:40	0:43
-O32	saucepan	0
-S43	contains	{water}
-S43	on	[stove]
-O32	water	1
-S3	liquid
-S43	in	[saucepan]
+O270	measuring cup	0
+S41	empty
+O203	grater	0
+S16	clean
+O244	lemon	1
+S120	softened
+S81	on	[cutting board]
+M39	grate	0:27	0:31
+O244	lemon	1
+S144	zested
+S81	on	[cutting board]
+O270	measuring cup	0
+S23	contains	{lemon zest}
+O249	lemon zest	1
+S65	in	[measuring cup]
+O203	grater	0
+S38	dirty
 //
-O32	bowl	1
-S43	contains	{sugar}
-O32	sugar	1
-S43	granulated
-S43	in	[bowl]
-O32	saucepan	0
-S43	contains	{water}
-S43	on	[stove]
-M0	pour	0:45	0:49
-O32	saucepan	0
-S43	contains	{water,sugar}
-S43	on	[stove]
-O32	sugar	1
-S43	granulated
-S43	in	[saucepan]
-O32	bowl	1
-S2	empty
-S43	dirty
+O381	saucepan	1
+S41	empty
+O425	stove	0
+S78	off
+M50	pick-and-place	Assumed	Assumed
+O381	saucepan	1
+S41	empty
+S81	on	[stove]
+O425	stove	0
+S78	off
+S142	with	[pan]
 //
-O32	saucepan	0
-S43	contains	{water,sugar}
-S43	on	[stove]
-O32	bowl	1
-S43	contains	{lemon zest}
-O32	lemon	1
-S4	grated
-S43	in	[bowl]
-M0	pour	0:51	0:53
-O32	saucepan	0
-S43	contains	{water,sugar,lemon zest}
-S43	on	[stove]
-O32	lemon	1
-S44	grated
-S43	in	[saucepan]
-O32	bowl	1
-S43	dirty
+O381	saucepan	0
+S41	empty
+S81	on	[stove]
+O270	measuring cup	1
+S23	contains	{water}
+O475	water	1
+S65	in	[measuring cup]
+M54	pour	0:40	0:43
+O381	saucepan	0
+S23	contains	{water}
+S81	on	[stove]
+O475	water	1
+S65	in	[pan]
 //
-O32	stove	0
-S43	on
-S43	with	[saucepan]
-O32	saucepan	1
-S43	contains	{water,sugar,lemon zest}
-S43	on	[stove]
-O32	lemon	1
-S44	grated
-S43	in	[saucepan]
-O32	water	1
-S3	liquid
-S43	in	[saucepan]
-O32	sugar	1
-S43	granulated
-S43	in	[saucepan]
-O43	spoon	1
-S43	clean
-M0	heat and stir	0:55	1:05
-O43	mixture	1
-S4	mixed
-S43	contains	{water,sugar,lemon zest}
-S43	in	[saucepan]
+O46	bowl	1
+S23	contains	{sugar}
+O428	sugar	1
+S55	granulated
+S65	in	[bowl]
+O381	saucepan	0
+S23	contains	{water}
+S81	on	[stove]
+M54	pour	0:45	0:49
+O381	saucepan	0
+S23	contains	{water,sugar}
+S81	on	[stove]
+O428	sugar	1
+S55	granulated
+S65	in	[pan]
+O46	bowl	1
+S38	dirty
 //
-O32	lemon	1
-S43	whole
-S4	softened
-S43	on	[cutting board]
-O9	knife	1
-S43	clean
-M4	cut	1:08	1:09
-O32	lemon	1
-S43	halved
-S43	on	[cutting board]
+O270	measuring cup	1
+S23	contains	{lemon zest}
+O249	lemon zest	1
+S65	in	[measuring cup]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{lemon zest}
+O249	lemon zest	1
+S65	in	[bowl]
+O270	measuring cup	1
+S38	dirty
 //
-O32	squeezer	0
-S43	clean
-O32	lemon	1
-S43	halved
-S43	on	[cutting board]
-M4	squeeze	1:10	1:20
-O32	squeezer	0
-S43	contains	{lemon juice}
-S43	on	[surface]
-O32	lemon	1
-S34	juiced
-S43	in	[squeezer]
-O32	lemon juice	1
-S43	juice
-S43	in	[squeezer]
-O32	lemon	1
-S43	halved
-S43	squeezed
-S43	on	[cutting board]
+O381	saucepan	0
+S23	contains	{water,sugar}
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{lemon zest}
+O249	lemon zest	1
+S65	in	[bowl]
+M54	pour	0:51	0:53
+O381	saucepan	0
+S23	contains	{water,sugar,lemon zest}
+S81	on	[stove]
+O249	lemon zest	1
+S65	in	[pan]
+O46	bowl	1
+S38	dirty
 //
-O32	strainer	1
-S43	clean
-O32	mixing bowl	0
-S43	empty
-M0	pick-and-place	Assumed	Assumed
-O32	strainer	1
-S43	clean
-S43	on	[bowl]
-O32	mixing bowl	0
-S43	empty
-S4	with	[strainer]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O381	saucepan	0
+S23	contains	{water,sugar,lemon zest}
+S81	on	[stove]
+M41	heat	Assumed	Assumed
+O381	saucepan	0
+S23	contains	{water,sugar,lemon zest}
+S81	on	[stove]
 //
-O32	squeezer	0
-S43	contains	{lemon juice}
-S43	on	[surface]
-O32	lemon	1
-S34	juiced
-S43	in	[squeezer]
-O32	strainer	0
-S43	clean
-S43	on	[bowl]
-O32	mixing bowl	0
-S43	empty
-S4	with	[strainer]
-M0	pour and strain	1:22	1:54
-O32	strainer	0
-S43	contains	{pulp}
-S43	on	[mixing bowl]
-O32	squeezer	0
-S43	dirty
-O32	mixing bowl	0
-S43	contains	{lemon juice}
-S4	with	[strainer]
-O32	lemon	1
-S34	juiced
-S43	in	[mixing bowl]
+O381	saucepan	0
+S23	contains	{water,sugar,lemon zest}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+M85	stir	0:55	1:05
+O381	saucepan	0
+S23	contains	{lemon mixture}
+S81	on	[stove]
+O248	lemon mixture	1
+S23	contains	{water,sugar,lemon zest}
+S65	in	[pan]
 //
-O32	saucepan	1
-S43	contains	{lemon zest,water,sugar}
-S43	on	[stove]
-O43	mixture	1
-S4	mixed
-S43	contains	{water,sugar,lemon zest}
-S43	in	[saucepan]
-O32	strainer	0
-S43	contains	{pulp}
-S43	on	[mixing bowl]
-O32	mixing bowl	0
-S43	contains	{lemon juice}
-S4	with	[strainer]
-M0	pour and strain	1:29	1:32
-O32	strainer	0
-S43	contains	{pulp,lemon zest}
-S43	on	[mixing bowl]
-O32	mixing bowl	0
-S43	contains	{lemon juice,water,sugar}
-S4	with	[strainer]
-O43	mixture	1
-S4	mixed
-S43	contains	{water,sugar,lemon zest}
-S43	in	[mixing bowl]
+O143	cutting board	0
+S23	contains	{lemon}
+S81	on	[surface]
+O244	lemon	1
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	1:08	1:09
+O244	lemon	1
+S60	halved
+S81	on	[cutting board]
 //
-O32	mixing bowl	0
-S43	contains	{lemon juice}
-S4	with	[strainer]
-O32	strainer	1
-S43	contains	{pulp,lemon zest}
-S43	on	[mixing bowl]
-M0	remove	Assumed	Assumed
-O32	strainer	1
-S43	contains	{pulp,lemon zest}
-O32	mixing bowl	0
-S43	contains	{lemon juice,water,sugar}
+O423	squeezer	0
+S16	clean
+S81	on	[surface]
+O244	lemon	1
+S60	halved
+S81	on	[cutting board]
+M84	squeeze	1:10	1:20
+O423	squeezer	0
+S23	contains	{lemon juice}
+S81	on	[surface]
+O247	lemon juice	1
+S65	in	[squeezer]
+O244	lemon	1
+S124	squeezed
 //
-O32	mixing bowl	0
-S43	contains	{lemon juice,water,sugar}
-O32	lemon	1
-S4	juice
-S43	in	[mixing bowl]
-O43	mixture	1
-S4	mixed
-S43	contains	{water,sugar,lemon zest}
-S43	in	[mixing bowl]
-O32	spoon	1
-S43	clean
-M4	stir	Assumed	Assumed
-O32	bowl	1
-S43	contains	{lemonade}
-O43	lemonade	1
-S43	mixed
-S43	contains	{water,sugar,lemon zest,lemon juice}
-S43	in	[mixing bowl]
+O426	strainer	1
+S16	clean
+O46	bowl	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O426	strainer	1
+S16	clean
+S65	in	[bowl]
 //
-O32	mixing bowl	1
-S43	contains	{lemonade}
-O43	lemonade	1
-S43	mixed
-S43	contains	{water,sugar,lemon zest,lemon juice}
-S43	in	[mixing bowl]
-O32	pitcher	0
-S43	empty
-M0	pour	1:34	1:39
-O32	pitcher	0
-S43	contains	{lemonade}
-O43	lemonade	1
-S43	mixed
-S43	contains	{water,sugar,lemon zest,lemon juice}
-S43	in	[pitcher]
-O32	bowl	1
-S43	dirty
+O423	squeezer	0
+S23	contains	{lemon juice}
+S81	on	[surface]
+O247	lemon juice	1
+S65	in	[squeezer]
+O426	strainer	0
+S16	clean
+S65	in	[bowl]
+O46	bowl	0
+S41	empty
+M54	pour	1:22	1:54
+O426	strainer	0
+S23	contains	{pulp}
+S65	in	[bowl]
+O423	squeezer	0
+S38	dirty
+O46	bowl	0
+S23	contains	{lemon juice}
+O247	lemon juice	1
+S65	in	[bowl]
 //
-O32	drinking glass	0
-S43	empty
-O43	bowl	1
-S43	contains	{ice}
-O43	ice	1
-S43	crushed
-S30	frozen
-S43	in	[bowl]
-M0	pick-and-place	1:53	1:55
-O32	drinking glass	0
-S43	contains	{ice}
-O43	ice	1
-S43	crushed
-S30	frozen
-S43	in	[drinking glass]
+O381	saucepan	1
+S23	contains	{lemon mixture}
+S81	on	[stove]
+O248	lemon mixture	1
+S23	contains	{water,sugar,lemon zest}
+S65	in	[pan]
+O426	strainer	0
+S23	contains	{pulp}
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{lemon juice}
+M54	pour	1:29	1:32
+O46	bowl	0
+S23	contains	{lemon juice,lemon mixture}
+O248	lemon mixture	1
+S23	contains	{water,sugar,lemon zest}
+S65	in	[bowl]
 //
-O32	drinking glass	0
-S43	contains	{ice}
-O32	pitcher	1
-S43	contains	{lemonade}
-O43	lemonade	1
-S4	mixed
-S43	contains	{water,sugar,lemon zest,lemon juice}
-S43	in	[pitcher]
-M0	pour	1:57	2:03
-O32	drinking glass	0
-S43	contains	{lemonade}
-O32	lemonade	1	!
-S4	mixed
-S43	contains	{water,sugar,lemon zest,lemon juice}
-S43	in	[drinking glass]
+O46	bowl	0
+S23	contains	{lemon juice,lemon mixture}
+O247	lemon juice	1
+S65	in	[bowl]
+O248	lemon mixture	1
+S23	contains	{water,sugar,lemon zest}
+S65	in	[bowl]
+O416	spoon	1
+S16	clean
+M85	stir	Assumed	Assumed
+O46	bowl	0
+S23	contains	{lemonade}
+O250	lemonade	1
+S22	concentrated
+S23	contains	{water,sugar,lemon zest,lemon juice}
+S65	in	[bowl]
+//
+O46	bowl	1
+S23	contains	{lemonade}
+O250	lemonade	1
+S22	concentrated
+S23	contains	{water,sugar,lemon zest,lemon juice}
+S65	in	[bowl]
+O337	pitcher	0
+S41	empty
+M54	pour	1:34	1:39
+O337	pitcher	0
+S23	contains	{lemonade}
+O250	lemonade	1
+S22	concentrated
+S23	contains	{water,sugar,lemon zest,lemon juice}
+S65	in	[pitcher]
+O46	bowl	1
+S38	dirty
+//
+O337	pitcher	0
+S23	contains	{lemonade}
+O250	lemonade	0
+S22	concentrated
+S23	contains	{water,sugar,lemon zest,lemon juice}
+S65	in	[pitcher]
+O270	measuring cup	1
+S23	contains	{water}
+O475	water	1
+S65	in	[measuring cup]
+M54	pour	1:43	1:47
+O250	lemonade	0
+S23	contains	{water,sugar,lemon zest,lemon juice}
+S65	in	[pitcher]
+//
+O152	drinking glass	0
+S41	empty
+O46	bowl	1
+S23	contains	{water ice}
+O476	water ice	1
+S65	in	[bowl]
+M50	pick-and-place	1:53	1:55
+O152	drinking glass	0
+S23	contains	{water ice}
+O476	water ice	1
+S65	in	[cup]
+//
+O152	drinking glass	0
+S23	contains	{water ice}
+O250	lemonade	1
+S23	contains	{water,sugar,lemon zest,lemon juice}
+S65	in	[pitcher]
+O337	pitcher	1
+S23	contains	{lemonade}
+M54	pour	1:57	2:03
+O152	drinking glass	0
+S23	contains	{lemonade}
+O250	lemonade	1	9
+S23	contains	{water,sugar,lemon zest,lemon juice}
+S65	in	[cup]
 //

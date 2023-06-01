@@ -1,496 +1,496 @@
 # Source:	https://www.youtube.com/watch?v=2TNY4B21ZFI
 //
-O213	faucet	1
-S171	off
-O341	measuring cup	0
-S23	clean
-S56	empty
-M78	turn on	Assumed	Assumed
-O213	faucet	1
-S173	on
-O588	water	0
-S271	warm
-S81	in	[measuring cup]
-S66	from	[faucet]
-O341	measuring cup	0
-S29	contains	{water}
+O170	faucet	1
+S78	off
+O270	measuring cup	0
+S16	clean
+S41	empty
+M92	turn on	Assumed	Assumed
+O170	faucet	1
+S81	on
+O475	water	0
+S136	warm
+S65	in	[measuring cup]
+S51	from	[faucet]
+O270	measuring cup	0
+S23	contains	{water}
 //
-O213	faucet	1
-S173	on
-M77	turn off	Assumed	Assumed
-O213	faucet	1
-S171	off
+O170	faucet	1
+S81	on
+M91	turn off	Assumed	Assumed
+O170	faucet	1
+S78	off
 //
-O588	water	0
-S271	warm
-S81	in	[measuring cup]
-S66	from	[faucet]
-O341	measuring cup	0
-S29	contains	{water}
-O53	bowl	1
-S29	contains	{sugar}
-O53	bowl	1
-S29	contains	{yeast}
-O537	sugar	1
-S71	granulated
-S81	in	[bowl]
-O613	yeast	1
-S81	in	[bowl]
-M47	pour	0:11	0:17
-O341	measuring cup	0
-S29	contains	{water,sugar,yeast}
-O537	sugar	1
-S71	granulated
-S81	in	[measuring cup]
-O613	yeast	1
-S81	in	[measuring cup]
+O475	water	0
+S136	warm
+S65	in	[measuring cup]
+S51	from	[faucet]
+O270	measuring cup	0
+S23	contains	{water}
+O46	bowl	1
+S23	contains	{sugar}
+O46	bowl	1
+S23	contains	{yeast}
+O428	sugar	1
+S55	granulated
+S65	in	[bowl]
+O494	yeast	1
+S65	in	[bowl]
+M54	pour	0:11	0:17
+O270	measuring cup	0
+S23	contains	{water,sugar,yeast}
+O428	sugar	1
+S55	granulated
+S65	in	[measuring cup]
+O494	yeast	1
+S65	in	[measuring cup]
 //
-O524	spoon	1
-S23	clean
-O341	measuring cup	0
-S29	contains	{water,sugar,yeast}
-O537	sugar	0
-S71	granulated
-S81	in	[measuring cup]
-O611	yeast	0
-S228	powder
-S81	in	[measuring cup]
-O588	water	0
-S271	warm
-S81	in	[measuring cup]
-S66	from	[faucet]
-M75	stir	0:18	0:21
-O524	spoon	1
-S46	dirty
-O341	measuring cup	0
-S29	contains	{yeast mixture}
-O612	yeast mixture	0
-S148	contains	{water,sugar,yeast}
-S81	in	[measuring cup]
+O416	spoon	1
+S16	clean
+O270	measuring cup	0
+S23	contains	{water,sugar,yeast}
+O428	sugar	0
+S55	granulated
+S65	in	[measuring cup]
+O494	yeast	0
+S96	powder
+S65	in	[measuring cup]
+O475	water	0
+S136	warm
+S65	in	[measuring cup]
+S51	from	[faucet]
+M85	stir	0:18	0:21
+O416	spoon	1
+S38	dirty
+O270	measuring cup	0
+S23	contains	{yeast mixture}
+O495	yeast mixture	0
+S23	contains	{water,sugar,yeast}
+S65	in	[measuring cup]
 //
-O13	bag	1
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S82	in	[bag]
-O144	container	0
-S56	empty
-S23	clean
-M47	pour	Assumed	Assumed
-O144	container	0
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S81	in	[container]
+O9	bag	1
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[bag]
+O114	container	0
+S41	empty
+S16	clean
+M54	pour	Assumed	Assumed
+O114	container	0
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[container]
 //
-O144	container	0
-S29	contains	{flour}
-O221	flour	0
-S228	powder
-S81	in	[container]
-O53	bowl	1
-S29	contains	{salt}
-O472	salt	1
-S71	granulated
-S81	in	[bowl]
-O53	bowl	1
-S29	contains	{olive oil}
-O370	olive oil	1
-S81	in	[bowl]
-M47	pour	0:28	0:30
-O144	container	0
-S29	contains	{flour,salt,olive oil}
-O472	salt	1
-S71	granulated
-S81	in	[container]
-O370	olive oil	1
-S81	in	[container]
+O114	container	0
+S23	contains	{flour}
+O176	flour	0
+S96	powder
+S65	in	[container]
+O46	bowl	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bowl]
+M54	pour	0:28	0:30
+O114	container	0
+S23	contains	{flour,salt,olive oil}
+O376	salt	1
+S55	granulated
+S65	in	[container]
+O296	olive oil	1
+S65	in	[container]
 //
-O144	container	0
-S29	contains	{flour,salt,olive oil}
-O221	flour	0
-S228	powder
-S81	in	[container]
-O472	salt	0
-S71	granulated
-S81	in	[container]
-O370	olive oil	0
-S81	in	[container]
-O341	measuring cup	1
-S29	contains	{yeast mixture}
-O612	yeast mixture	1
-S148	contains	{water,sugar,yeast}
-S81	in	[measuring cup]
-M47	pour	0:36	0:41
-O144	container	0
-S29	contains	{flour,salt,olive oil,yeast mixture}
-O612	yeast mixture	1
-S148	contains	{water,sugar,yeast}
-S81	in	[container]
+O114	container	0
+S23	contains	{flour,salt,olive oil}
+O176	flour	0
+S96	powder
+S65	in	[container]
+O376	salt	0
+S55	granulated
+S65	in	[container]
+O296	olive oil	0
+S65	in	[container]
+O270	measuring cup	1
+S23	contains	{yeast mixture}
+O495	yeast mixture	1
+S23	contains	{water,sugar,yeast}
+S65	in	[measuring cup]
+M54	pour	0:36	0:41
+O114	container	0
+S23	contains	{flour,salt,olive oil,yeast mixture}
+O495	yeast mixture	1
+S23	contains	{water,sugar,yeast}
+S65	in	[container]
 //
-O524	spoon	1
-S23	clean
-O144	container	0
-S29	contains	{flour,salt,olive oil,yeast mixture}
-O612	yeast mixture	0
-S148	contains	{water,sugar,yeast}
-S81	in	[container]
-M75	stir	0:44	0:50
-O524	spoon	1
-S46	dirty
-O144	container	0
-S29	contains	{dough mixture}
-O192	dough mixture	0
-S148	contains	{flour,salt,olive oil,yeast mixture}
-S81	in	[container]
+O416	spoon	1
+S16	clean
+O114	container	0
+S23	contains	{flour,salt,olive oil,yeast mixture}
+O495	yeast mixture	0
+S23	contains	{water,sugar,yeast}
+S65	in	[container]
+M85	stir	0:44	0:50
+O416	spoon	1
+S38	dirty
+O114	container	0
+S23	contains	{dough mixture}
+O150	dough mixture	0
+S23	contains	{flour,salt,olive oil,yeast mixture}
+S65	in	[container]
 //
-O53	bowl	0
-S56	empty
-S23	clean
-O370	olive oil	1
-S81	in	[teapot]
-O552	teapot	1
-S29	contains	{olive oil}
-M73	sprinkle	0:54	0:58
-O53	bowl	0
-S29	contains	{olive oil}
-O370	olive oil	1
-S81	in	[bowl]
+O46	bowl	0
+S41	empty
+S16	clean
+O296	olive oil	1
+S65	in	[teapot]
+O441	teapot	1
+S23	contains	{olive oil}
+M83	sprinkle	0:54	0:58
+O46	bowl	0
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bowl]
 //
-O53	bowl	0
-S29	contains	{olive oil}
-O370	olive oil	0
-S81	in	[bowl]
-O144	container	0
-S29	contains	{dough mixture}
-O192	dough mixture	1
-S148	contains	{flour,salt,olive oil,yeast mixture}
-S81	in	[container]
-M47	pour	1:01	1:04
-O53	bowl	0
-S29	contains	{olive oil,dough mixture}
-O192	dough mixture	1
-S148	contains	{flour,salt,olive oil,yeast mixture}
-S81	in	[bowl]
+O46	bowl	0
+S23	contains	{olive oil}
+O296	olive oil	0
+S65	in	[bowl]
+O114	container	0
+S23	contains	{dough mixture}
+O150	dough mixture	1
+S23	contains	{flour,salt,olive oil,yeast mixture}
+S65	in	[container]
+M54	pour	1:01	1:04
+O46	bowl	0
+S23	contains	{olive oil,dough mixture}
+O150	dough mixture	1
+S23	contains	{flour,salt,olive oil,yeast mixture}
+S65	in	[bowl]
 //
-O53	bowl	0
-S29	contains	{olive oil,dough mixture}
-O192	dough mixture	1
-S148	contains	{flour,salt,olive oil,yeast mixture}
-S81	in	[bowl]
-M58	knead	1:05	1:34
-O53	bowl	0
-S29	contains	{pizza dough}
-O422	pizza dough	1
-S81	in	[bowl]
+O46	bowl	0
+S23	contains	{olive oil,dough mixture}
+O150	dough mixture	1
+S23	contains	{flour,salt,olive oil,yeast mixture}
+S65	in	[bowl]
+M43	knead	1:05	1:34
+O46	bowl	0
+S23	contains	{pizza dough}
+O339	pizza dough	1
+S65	in	[bowl]
 //
-O53	bowl	0
-S29	contains	{pizza dough}
-O422	pizza dough	1
-S81	in	[bowl]
-O427	plastic wrap	1
-M45	pick-and-place	1:35	1:38
-O53	bowl	0
-S29	contains	{pizza dough}
-S32	covered
-O427	plastic wrap	1
-S173	on	[bowl]
+O46	bowl	0
+S23	contains	{pizza dough}
+O339	pizza dough	1
+S65	in	[bowl]
+O343	plastic wrap	1
+M50	pick-and-place	1:35	1:38
+O46	bowl	0
+S23	contains	{pizza dough}
+S26	covered
+O343	plastic wrap	1
+S81	on	[bowl]
 //
-O53	bowl	0
-S29	contains	{pizza dough}
-S32	covered
-O422	pizza dough	1
-S81	in	[bowl]
-O427	plastic wrap	0
-S173	on	[bowl]
-M26	ferment	Assumed	Assumed
-O422	pizza dough	1
-S81	in	[bowl]
-S58	fermented
+O46	bowl	0
+S23	contains	{pizza dough}
+S26	covered
+O339	pizza dough	1
+S65	in	[bowl]
+O343	plastic wrap	0
+S81	on	[bowl]
+M30	ferment	Assumed	Assumed
+O339	pizza dough	1
+S65	in	[bowl]
+S43	fermented
 //
-O543	table	0
-S56	empty
-S23	clean
-O13	bag	0
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S82	in	[bag]
-M73	sprinkle	1:46	1:52
-O221	flour	1
-S228	powder
-S173	on	[table]
-O543	table	0
-S29	contains	{flour}
+O435	table	0
+S41	empty
+S16	clean
+O9	bag	0
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[bag]
+M83	sprinkle	1:46	1:52
+O176	flour	1
+S96	powder
+S81	on	[table]
+O435	table	0
+S23	contains	{flour}
 //
-O53	bowl	0
-S29	contains	{pizza dough}
-S279	wrapped	{plastic wrap}
-O427	plastic wrap	1
-S173	on	[bowl]
-O422	pizza dough	0
-S58	fermented
-S81	in	[bowl]
-M80	unwrap	1:53	1:57
-O53	bowl	0
-S29	contains	{pizza dough}
-O427	plastic wrap	1
-S46	dirty
+O46	bowl	0
+S23	contains	{pizza dough}
+S143	wrapped	{plastic wrap}
+O343	plastic wrap	1
+S81	on	[bowl]
+O339	pizza dough	0
+S43	fermented
+S65	in	[bowl]
+M94	unwrap	1:53	1:57
+O46	bowl	0
+S23	contains	{pizza dough}
+O343	plastic wrap	1
+S38	dirty
 //
-O543	table	0
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S173	on	[table]
-O53	bowl	1
-S29	contains	{pizza dough}
-O422	pizza dough	1
-S58	fermented
-S81	in	[bowl]
-M47	pour	1:58	2:07
-O543	table	0
-S29	contains	{flour,pizza dough}
-O53	bowl	1
-S46	dirty
-O422	pizza dough	1
-S58	fermented
-S173	on	[table]
+O435	table	0
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S81	on	[table]
+O46	bowl	1
+S23	contains	{pizza dough}
+O339	pizza dough	1
+S43	fermented
+S65	in	[bowl]
+M54	pour	1:58	2:07
+O435	table	0
+S23	contains	{flour,pizza dough}
+O46	bowl	1
+S38	dirty
+O339	pizza dough	1
+S43	fermented
+S81	on	[table]
 //
-O543	table	0
-S29	contains	{flour,pizza dough}
-O221	flour	1
-S228	powder
-S173	on	[table]
-O422	pizza dough	1
-S58	fermented
-S173	on	[table]
-M59	knead	2:08	2:19
-O422	pizza dough	1
-S242	kneaded
-S173	on	[table]
+O435	table	0
+S23	contains	{flour,pizza dough}
+O176	flour	1
+S96	powder
+S81	on	[table]
+O339	pizza dough	1
+S43	fermented
+S81	on	[table]
+M43	knead	2:08	2:19
+O339	pizza dough	1
+S68	kneaded
+S81	on	[table]
 //
-O422	pizza dough	1
-S242	kneaded
-S173	on	[table]
-M33	shape	2:20	2:26
-O422	pizza dough	1
-S242	shaped
-S173	on	[table]
+O339	pizza dough	1
+S68	kneaded
+S81	on	[table]
+M74	shape	2:20	2:26
+O339	pizza dough	1
+S110	shaped
+S81	on	[table]
 //
-O221	flour	1
-S228	powder
-S173	on	[table]
-O300	knife	1
-O422	pizza dough	0
-S242	shaped
-S173	on	[table]
-M19	cut with slits	2:28	2:37
-O422	pizza dough	0
-S242	shaped
-S77	halved
-S173	on	[table]
+O176	flour	1
+S96	powder
+S81	on	[table]
+O240	knife	1
+O339	pizza dough	0
+S110	shaped
+S81	on	[table]
+M23	cut with slits	2:28	2:37
+O339	pizza dough	0
+S110	shaped
+S60	halved
+S81	on	[table]
 //
-O221	flour	1
-S228	powder
-S173	on	[table]
-O422	pizza dough	0
-S242	shaped
-S77	halved
-S173	on	[table]
-M59	knead	2:42	2:53
-O422	pizza dough	1
-S58	kneaded
-S77	halved
-S173	on	[table]
+O176	flour	1
+S96	powder
+S81	on	[table]
+O339	pizza dough	0
+S110	shaped
+S60	halved
+S81	on	[table]
+M43	knead	2:42	2:53
+O339	pizza dough	1
+S68	kneaded
+S60	halved
+S81	on	[table]
 //
-O422	pizza dough	1
-S58	kneaded
-S77	halved
-S173	on	[table]
-M60	shape	2:54	2:57
-O422	pizza dough	1
-S58	shaped
-S77	halved
-S173	on	[table]
+O339	pizza dough	1
+S68	kneaded
+S60	halved
+S81	on	[table]
+M74	shape	2:54	2:57
+O339	pizza dough	1
+S110	shaped
+S60	halved
+S81	on	[table]
 //
-O221	flour	1
-S228	powder
-S173	on	[table]
-O422	pizza dough	1
-S77	halved
-S242	shaped
-S173	on	[table]
-M52	press	2:57	3:21
-O422	pizza dough	1
-S60	flattened
-S173	on	[table]
+O176	flour	1
+S96	powder
+S81	on	[table]
+O339	pizza dough	1
+S60	halved
+S110	shaped
+S81	on	[table]
+M60	press	2:57	3:21
+O339	pizza dough	1
+S45	flattened
+S81	on	[table]
 //
-O543	table	0
-S29	contains	{flour,pizza dough}
-O221	flour	1
-S228	powder
-S173	on	[table]
-O422	pizza dough	1
-S60	flattened
-S173	on	[table]
-O423	pizza pan	0
-S23	clean
-S56	empty
-S173	on	[surface]
-M45	pick-and-place	3:22	3:27
-O543	table	0
-S29	contains	{flour}
-O423	pizza pan	0
-S29	contains	{pizza dough}
-S173	on	[surface]
-O422	pizza dough	1
-S60	flattened
-S173	on	[pizza pan]
+O435	table	0
+S23	contains	{flour,pizza dough}
+O176	flour	1
+S96	powder
+S81	on	[table]
+O339	pizza dough	1
+S45	flattened
+S81	on	[table]
+O340	pizza pan	0
+S16	clean
+S41	empty
+S81	on	[surface]
+M50	pick-and-place	3:22	3:27
+O435	table	0
+S23	contains	{flour}
+O340	pizza pan	0
+S23	contains	{pizza dough}
+S81	on	[surface]
+O339	pizza dough	1
+S45	flattened
+S81	on	[pizza pan]
 //
-O144	container	1
-S29	contains	{pizza sauce}
-O424	pizza sauce	1
-S81	in	[container]
-O53	bowl	0
-S56	empty
-S23	clean
-M47	pour	Assumed	Assumed
-O424	pizza sauce	1
-S81	in	[bowl]
-O53	bowl	0
-S29	contains	{pizza sauce}
+O114	container	1
+S23	contains	{pizza sauce}
+O341	pizza sauce	1
+S65	in	[container]
+O46	bowl	0
+S41	empty
+S16	clean
+M54	pour	Assumed	Assumed
+O341	pizza sauce	1
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{pizza sauce}
 //
-O491	serving spoon	1
-S23	clean
-S56	empty
-O424	pizza sauce	0
-S81	in	[bowl]
-O53	bowl	0
-S29	contains	{pizza sauce}
-M60	scoop	3:33	3:36
-O491	serving spoon	1
-S29	contains	{pizza sauce}
+O393	serving spoon	1
+S16	clean
+S41	empty
+O341	pizza sauce	0
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{pizza sauce}
+M69	scoop	3:33	3:36
+O393	serving spoon	1
+S23	contains	{pizza sauce}
 //
-O423	pizza pan	0
-S29	contains	{pizza dough}
-S173	on	[surface]
-O422	pizza dough	0
-S60	flattened
-S173	on	[pizza pan]
-O491	serving spoon	1
-S29	contains	{pizza sauce}
-O424	pizza sauce	1
-S81	in	[bowl]
-O53	bowl	0
-S29	contains	{pizza sauce}
-M49	pour and spread	3:36	3:41
-O422	pizza dough	0
-S29	contains	{pizza sauce}
-S60	flattened
-S173	on	[pizza pan]
-O424	pizza sauce	1
-S173	on	{pizza dough}
+O340	pizza pan	0
+S23	contains	{pizza dough}
+S81	on	[surface]
+O339	pizza dough	0
+S45	flattened
+S81	on	[pizza pan]
+O393	serving spoon	1
+S23	contains	{pizza sauce}
+O341	pizza sauce	1
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{pizza sauce}
+M57	pour and spread	3:36	3:41
+O339	pizza dough	0
+S23	contains	{pizza sauce}
+S45	flattened
+S81	on	[pizza pan]
+O341	pizza sauce	1
+S81	on	{pizza dough}
 //
-O423	pizza pan	0
-S29	contains	{pizza dough}
-S173	on	[surface]
-O422	pizza dough	0
-S29	contains	{pizza sauce}
-S60	flattened
-S173	on	[pizza pan]
-O424	pizza sauce	0
-S173	on	{pizza dough}
-O13	bag	0
-S29	contains	{mozzarella}
-O352	mozzarella	1
-S246	shredded
-S81	in	[bag]
-M72	spread	3:44	3:52
-O422	pizza dough	0
-S29	contains	{pizza sauce,mozzarella}
-S173	on	[pizza pan]
-O352	mozzarella	1
-S246	shredded
-S173	on	{pizza dough}
+O340	pizza pan	0
+S23	contains	{pizza dough}
+S81	on	[surface]
+O339	pizza dough	0
+S23	contains	{pizza sauce}
+S45	flattened
+S81	on	[pizza pan]
+O341	pizza sauce	0
+S81	on	{pizza dough}
+O9	bag	0
+S23	contains	{mozzarella}
+O280	mozzarella	1
+S114	shredded
+S65	in	[bag]
+M82	spread	3:44	3:52
+O339	pizza dough	0
+S23	contains	{pizza sauce,mozzarella}
+S81	on	[pizza pan]
+O280	mozzarella	1
+S114	shredded
+S81	on	{pizza dough}
 //
-O379	oven	1
-S171	off
-M78	turn on	Assumed	Assumed
-O379	oven	1
-S173	on
+O306	oven	1
+S78	off
+M92	turn on	Assumed	Assumed
+O306	oven	1
+S81	on
 //
-O379	oven	1
-S173	on
-M51	preheat	Assumed	Assumed
-O379	oven	1
-S173	on
-S229	preheated
+O306	oven	1
+S81	on
+M59	preheat	Assumed	Assumed
+O306	oven	1
+S81	on
+S97	preheated
 //
-O379	oven	0
-S173	on
-S229	preheated
-O422	pizza dough	0
-S29	contains	{pizza sauce,mozzarella}
-S173	on	[pizza pan]
-O423	pizza pan	1
-S29	contains	{pizza dough}
-S173	on	[surface]
-M45	pick-and-place	Assumed	Assumed
-O379	oven	0
-S173	on
-S229	preheated
-S29	contains	{pizza pan}
-O423	pizza pan	1
-S29	contains	{pizza dough}
-S81	in	[oven]
+O306	oven	0
+S81	on
+S97	preheated
+O339	pizza dough	0
+S23	contains	{pizza sauce,mozzarella}
+S81	on	[pizza pan]
+O340	pizza pan	1
+S23	contains	{pizza dough}
+S81	on	[surface]
+M50	pick-and-place	Assumed	Assumed
+O306	oven	0
+S81	on
+S97	preheated
+S23	contains	{pizza pan}
+O340	pizza pan	1
+S23	contains	{pizza dough}
+S65	in	[oven]
 //
-O379	oven	1
-S173	on
-S229	preheated
-S29	contains	{pizza pan}
-O422	pizza dough	0
-S29	contains	{pizza sauce,mozzarella}
-S173	on	[pizza pan]
-O423	pizza pan	0
-S29	contains	{pizza dough}
-S81	in	[oven]
-M1	bake	3:56	4:02
-O95	cheese pizza	0
-S173	on	[pizza pan]
-O423	pizza pan	0
-S29	contains	{cheese pizza}
-S81	in	[oven]
-O379	oven	1
-S173	on
+O306	oven	1
+S81	on
+S97	preheated
+S23	contains	{pizza pan}
+O339	pizza dough	0
+S23	contains	{pizza sauce,mozzarella}
+S81	on	[pizza pan]
+O340	pizza pan	0
+S23	contains	{pizza dough}
+S65	in	[oven]
+M2	bake	3:56	4:02
+O79	cheese pizza	0
+S81	on	[pizza pan]
+O340	pizza pan	0
+S23	contains	{cheese pizza}
+S65	in	[oven]
+O306	oven	1
+S81	on
 //
-O379	oven	0
-S173	on
-S229	preheated
-S29	contains	{pizza pan}
-O95	cheese pizza	0
-S173	on	[pizza pan]
-O423	pizza pan	1
-S29	contains	{cheese pizza}
-S81	in	[oven]
-M55	remove	Assumed	Assumed
-O379	oven	0
-S171	off
-O423	pizza pan	1
-S50	contains	{cheese pizza}
+O306	oven	0
+S81	on
+S97	preheated
+S23	contains	{pizza pan}
+O79	cheese pizza	0
+S81	on	[pizza pan]
+O340	pizza pan	1
+S23	contains	{cheese pizza}
+S65	in	[oven]
+M63	remove	Assumed	Assumed
+O306	oven	0
+S78	off
+O340	pizza pan	1
+S23	contains	{cheese pizza}
 //
-O95	cheese pizza	0
-S173	on	[pizza pan]
-O423	pizza pan	0
-S50	contains	{cheese pizza}
-O428	plate	0
-S56	empty
-S23	clean
-O561	tongs	1
-S23	clean
-M45	pick-and-place	Assumed	Assumed
-O428	plate	0
-S51	contains
-O95	cheese pizza	0	!
-S148	contains	{flour,salt,olive oil,yeast,sugar,water,mozzarella,pizza sauce}
-S173	on	[plate]
+O79	cheese pizza	0
+S81	on	[pizza pan]
+O340	pizza pan	0
+S23	contains	{cheese pizza}
+O344	plate	0
+S41	empty
+S16	clean
+O452	tongs	1
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains
+O79	cheese pizza	0	3
+S23	contains	{flour,salt,olive oil,yeast,sugar,water,mozzarella,pizza sauce}
+S81	on	[plate]
 //

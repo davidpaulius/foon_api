@@ -1,877 +1,877 @@
 # Source:	https://www.youtube.com/watch?v=dUzvULm8tI0
 //
-O236	garlic	1
-S25	clove
-S81	in	[bowl]
-M43	peel	Assumed	Assumed
-O236	garlic	1
-S25	clove
-S222	peeled
-S81	in	[bowl]
+O192	garlic	1
+S18	clove
+S65	in	[bowl]
+M49	peel	Assumed	Assumed
+O192	garlic	1
+S18	clove
+S91	peeled
+S65	in	[bowl]
 //
-O183	cutting board	0
-S23	clean
-S56	empty
-S173	on	[surface]
-O236	garlic	1
-S25	clove
-S222	peeled
-S81	in	[bowl]
-M45	pick-and-place	Assumed	Assumed
-O183	cutting board	0
-S29	contains	{garlic}
-S173	on	[surface]
-O236	garlic	1
-S25	clove
-S222	peeled
-S173	on	[cutting board]
+O143	cutting board	0
+S16	clean
+S41	empty
+S81	on	[surface]
+O192	garlic	1
+S18	clove
+S91	peeled
+S65	in	[bowl]
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{garlic}
+S81	on	[surface]
+O192	garlic	1
+S18	clove
+S91	peeled
+S81	on	[cutting board]
 //
-O183	cutting board	0
-S29	contains	{garlic}
-S173	on	[surface]
-O236	garlic	1
-S25	clove
-S222	peeled
-S173	on	[cutting board]
-O300	knife	1
-S23	clean
-M8	chop	Assumed	Assumed
-O236	garlic	1
-S165	minced
-S222	peeled
-S173	on	[cutting board]
-O300	knife	1
-S46	dirty
+O143	cutting board	0
+S23	contains	{garlic}
+S81	on	[surface]
+O192	garlic	1
+S18	clove
+S91	peeled
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M10	chop	Assumed	Assumed
+O192	garlic	1
+S75	minced
+S91	peeled
+S81	on	[cutting board]
+O240	knife	1
+S38	dirty
 //
-O236	garlic	1
-S165	minced
-S222	peeled
-S173	on	[cutting board]
-O183	cutting board	0
-S29	contains	{garlic}
-S173	on	[surface]
-O53	bowl	0
-S56	empty
-S23	clean
-M47	pour	Assumed	Assumed
-O53	bowl	0
-S29	contains	{garlic}
-O236	garlic	1
-S165	minced
-S222	peeled
-S81	in	[bowl]
+O192	garlic	1
+S75	minced
+S91	peeled
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{garlic}
+S81	on	[surface]
+O46	bowl	0
+S41	empty
+S16	clean
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{garlic}
+O192	garlic	1
+S75	minced
+S91	peeled
+S65	in	[bowl]
 //
-O183	cutting board	0
-S23	clean
-S56	empty
-S173	on	[surface]
-O258	green chilli	1
-S275	whole
-M45	pick-and-place	Assumed	Assumed
-O183	cutting board	0
-S29	contains	{green chilli}
-S173	on	[surface]
-O258	green chilli	1
-S275	whole
-S173	on	[cutting board]
+O143	cutting board	0
+S16	clean
+S41	empty
+S81	on	[surface]
+O208	green chilli	1
+S141	whole
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{green chilli}
+S81	on	[surface]
+O208	green chilli	1
+S141	whole
+S81	on	[cutting board]
 //
-O183	cutting board	0
-S29	contains	{green chilli}
-S173	on	[surface]
-O258	green chilli	1
-S275	whole
-S173	on	[cutting board]
-O300	knife	1
-S23	clean
-M69	slice	Assumed	Assumed
-O258	green chilli	1
-S249	sliced
-S173	on	[cutting board]
-O300	knife	1
-S46	dirty
+O143	cutting board	0
+S23	contains	{green chilli}
+S81	on	[surface]
+O208	green chilli	1
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M79	slice	Assumed	Assumed
+O208	green chilli	1
+S117	sliced
+S81	on	[cutting board]
+O240	knife	1
+S38	dirty
 //
-O534	stove	0
-S171	off
-M78	turn on	Assumed	Assumed
-O534	stove	0
-S173	on
+O425	stove	0
+S78	off
+M92	turn on	Assumed	Assumed
+O425	stove	0
+S81	on
 //
-O147	cooking pan	0
-S56	empty
-O534	stove	0
-S173	on
-M45	pick-and-place	Assumed	Assumed
-O147	cooking pan	0
-S79	heated
-S173	on	[stove]
-O534	stove	0
-S173	on
-S214	with	[pan]
+O116	cooking pan	0
+S41	empty
+O425	stove	0
+S81	on
+M50	pick-and-place	Assumed	Assumed
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
 //
-O147	cooking pan	0
-S79	heated
-S173	on	[stove]
-O534	stove	0
-S173	on
-S214	with	[pan]
-O50	bottle	1
-S29	contains	{vegetable oil}
-O579	vegetable oil	1
-S88	in	[bottle]
-M47	pour	Assumed	Assumed
-O147	cooking pan	0
-S29	contains	{vegetable oil}
-S173	on	[stove]
-O579	vegetable oil	0
-S119	in	[pan]
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O45	bottle	1
+S23	contains	{vegetable oil}
+O468	vegetable oil	1
+S65	in	[bottle]
+M54	pour	Assumed	Assumed
+O116	cooking pan	0
+S23	contains	{vegetable oil}
+S81	on	[stove]
+O468	vegetable oil	0
+S65	in	[pan]
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O147	cooking pan	0
-S29	contains	{vegetable oil}
-S173	on	[stove]
-O236	garlic	1
-S165	minced
-S222	peeled
-S81	in	[bowl]
-O53	bowl	1
-S29	contains	{garlic}
-O258	green chilli	1
-S249	sliced
-S173	on	[cutting board]
-O183	cutting board	0
-S29	contains	{green chilli}
-M47	pour	Assumed	Assumed
-O147	cooking pan	0
-S29	contains	{vegetable oil,garlic,green chilli}
-S173	on	[stove]
-O236	garlic	1
-S165	minced
-S222	peeled
-S81	in	[cooking pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable oil}
+S81	on	[stove]
+O192	garlic	1
+S75	minced
+S91	peeled
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{garlic}
+O208	green chilli	1
+S117	sliced
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{green chilli}
+M54	pour	Assumed	Assumed
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli}
+S81	on	[stove]
+O192	garlic	1
+S75	minced
+S91	peeled
+S65	in	[cooking pan]
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O147	cooking pan	0
-S29	contains	{vegetable oil,garlic,green chilli}
-S173	on	[stove]
-O574	turner	1
-S23	clean
-M75	stir	0:16	0:17
-O147	cooking pan	0
-S148	contains	{vegetable oil,garlic,green chilli}
-S173	on	[stove]
-O574	turner	1
-S46	dirty
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli}
+S81	on	[stove]
+O464	turner	1
+S16	clean
+M85	stir	0:16	0:17
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli}
+S81	on	[stove]
+O464	turner	1
+S38	dirty
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O147	cooking pan	0
-S148	contains	{vegetable oil,garlic,green chilli}
-S173	on	[stove]
-O382	packet	1
-S29	contains	{carrot}
-O86	carrot	1
-S45	diced
-S81	in	{packet}
-O382	packet	1
-S29	contains	{potato}
-O435	potato	1
-S45	diced
-S81	in	{packet}
-O588	water	1
-S81	in	[cup]
-O176	cup	1
-S29	contains	{water}
-M47	pour	0:19	0:23
-O147	cooking pan	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
-S173	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli}
+S81	on	[stove]
+O308	packet	1
+S23	contains	{carrot}
+O71	carrot	1
+S37	diced
+S65	in	{packet}
+O308	packet	1
+S23	contains	{potato}
+O348	potato	1
+S37	diced
+S65	in	{packet}
+O475	water	1
+S65	in	[cup]
+O138	cup	1
+S23	contains	{water}
+M54	pour	0:19	0:23
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
+S81	on	[stove]
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O147	cooking pan	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
-S173	on	[stove]
-O574	turner	1
-S23	clean
-M12	cook and stir	0:32	0:37
-O147	cooking pan	0
-S148	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
-S173	on	[stove]
-O574	turner	1
-S46	dirty
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
+S81	on	[stove]
+O464	turner	1
+S16	clean
+M16	cook and stir	0:32	0:37
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
+S81	on	[stove]
+O464	turner	1
+S38	dirty
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O147	cooking pan	0
-S148	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
-S173	on	[stove]
-O472	salt	1
-S71	granulated
-S81	in	[container]
-O573	turmeric powder	1
-S81	in	[container]
-O89	cayenne pepper	1
-S81	in	[container]
-O574	turner	1
-S23	clean
-M50	pour and stir	0:44	0:57
-O147	cooking pan	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
-S173	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
+S81	on	[stove]
+O376	salt	1
+S55	granulated
+S65	in	[container]
+O463	turmeric powder	1
+S65	in	[container]
+O74	cayenne pepper	1
+S65	in	[container]
+O464	turner	1
+S16	clean
+M58	pour and stir	0:44	0:57
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S81	on	[stove]
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O147	cooking pan	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
-S173	on	[stove]
-O383	pan cover	1
-S23	clean
-M45	pick-and-place	1:09	1:10
-O147	cooking pan	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
-S173	on	[stove]
-S32	covered
-O383	pan cover	1
-S173	on	[cooking pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S81	on	[stove]
+O309	pan cover	1
+S16	clean
+M50	pick-and-place	1:09	1:10
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S81	on	[stove]
+S26	covered
+O309	pan cover	1
+S81	on	[cooking pan]
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O147	cooking pan	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
-S173	on	[stove]
-S32	covered
-O383	pan cover	0
-S173	on	[cooking pan]
-M10	cook	Assumed	Assumed
-O578	vegetable mix	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
-S251	softened
-S81	in	[cooking pan]
-O147	cooking pan	0
-S29	contains	{vegetable mix}
-S173	on	[stove]
-S32	covered
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S81	on	[stove]
+S26	covered
+O309	pan cover	0
+S81	on	[cooking pan]
+M14	cook	Assumed	Assumed
+O467	vegetable mix	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S120	softened
+S65	in	[cooking pan]
+O116	cooking pan	0
+S23	contains	{vegetable mix}
+S81	on	[stove]
+S26	covered
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O578	vegetable mix	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
-S251	softened
-S81	in	[cooking pan]
-O147	cooking pan	0
-S29	contains	{vegetable mix}
-S173	on	[stove]
-S32	covered
-O383	pan cover	0
-S173	on	[cooking pan]
-M55	remove	Assumed	Assumed
-O147	cooking pan	0
-S29	contains	{vegetable mix}
-S203	on	[stove]
-O383	pan cover	0
-S46	dirty
+O425	stove	0
+S81	on
+S142	with	[pan]
+O467	vegetable mix	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S120	softened
+S65	in	[cooking pan]
+O116	cooking pan	0
+S23	contains	{vegetable mix}
+S81	on	[stove]
+S26	covered
+O309	pan cover	0
+S81	on	[cooking pan]
+M63	remove	Assumed	Assumed
+O116	cooking pan	0
+S23	contains	{vegetable mix}
+S81	on	[stove]
+O309	pan cover	0
+S38	dirty
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O574	turner	1
-S23	clean
-O526	spring onion	1
-S21	chopped
-S81	in	[bowl]
-O578	vegetable mix	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
-S251	softened
-S81	in	[cooking pan]
-O147	cooking pan	0
-S29	contains	{vegetable mix}
-S203	on	[stove]
-M50	pour and stir	1:15	1:30
-O578	vegetable mix	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion}
-S251	softened
-S81	in	[cooking pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O464	turner	1
+S16	clean
+O419	spring onion	1
+S14	chopped
+S65	in	[bowl]
+O467	vegetable mix	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S120	softened
+S65	in	[cooking pan]
+O116	cooking pan	0
+S23	contains	{vegetable mix}
+S81	on	[stove]
+M58	pour and stir	1:15	1:30
+O467	vegetable mix	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion}
+S120	softened
+S65	in	[cooking pan]
 //
-O13	bag	1
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S82	in	[bag]
-O53	bowl	0
-S56	empty
-S23	clean
-M47	pour	Assumed	Assumed
-O53	bowl	0
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S81	in	[bowl]
+O9	bag	1
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[bag]
+O46	bowl	0
+S41	empty
+S16	clean
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[bowl]
 //
-O144	container	1
-S29	contains	{milk}
-O345	milk	1
-S81	in	[container]
-O53	bowl	0
-S56	empty
-S23	clean
-M47	pour	Assumed	Assumed
-O53	bowl	0
-S29	contains	{milk}
-O345	milk	1
-S81	in	[bowl]
+O114	container	1
+S23	contains	{milk}
+O273	milk	1
+S65	in	[container]
+O46	bowl	0
+S41	empty
+S16	clean
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{milk}
+O273	milk	1
+S65	in	[bowl]
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O574	turner	1
-S23	clean
-O147	cooking pan	0
-S29	contains	{vegetable mix}
-S203	on	[stove]
-O578	vegetable mix	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion}
-S251	softened
-S81	in	[cooking pan]
-O53	bowl	0
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S81	in	[bowl]
-O53	bowl	0
-S29	contains	{milk}
-O345	milk	1
-S81	in	[bowl]
-M50	pour and stir	1:31	2:00
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S81	in	[cooking pan]
-O221	flour	1
-S228	powder
-S81	in	[cooking pan]
-O345	milk	1
-S81	in	[cooking pan]
-O574	turner	1
-S46	dirty
+O425	stove	0
+S81	on
+S142	with	[pan]
+O464	turner	1
+S16	clean
+O116	cooking pan	0
+S23	contains	{vegetable mix}
+S81	on	[stove]
+O467	vegetable mix	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion}
+S120	softened
+S65	in	[cooking pan]
+O46	bowl	0
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{milk}
+O273	milk	1
+S65	in	[bowl]
+M58	pour and stir	1:31	2:00
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S65	in	[cooking pan]
+O176	flour	1
+S96	powder
+S65	in	[cooking pan]
+O273	milk	1
+S65	in	[cooking pan]
+O464	turner	1
+S38	dirty
 //
-O534	stove	0
-S173	on
-S214	with	[pan]
-O147	cooking pan	0
-S29	contains	{savory filling}
-S203	on	[stove]
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S81	in	[cooking pan]
-M55	remove	Assumed	Assumed
-O534	stove	0
-S171	off
-O147	cooking pan	0
-S29	contains	{savory filling}
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S81	in	[cooking pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	0
+S23	contains	{savory filling}
+S81	on	[stove]
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S65	in	[cooking pan]
+M63	remove	Assumed	Assumed
+O425	stove	0
+S78	off
+O116	cooking pan	0
+S23	contains	{savory filling}
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S65	in	[cooking pan]
 //
-O147	cooking pan	0
-S29	contains	{savory filling}
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S81	in	[cooking pan]
-M13	cool down	Assumed	Assumed
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S271	warm
-S81	in	[cooking pan]
+O116	cooking pan	0
+S23	contains	{savory filling}
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S65	in	[cooking pan]
+M17	cool down	Assumed	Assumed
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S136	warm
+S65	in	[cooking pan]
 //
-O13	bag	1
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S82	in	[bag]
-O144	container	0
-S56	empty
-S23	clean
-M47	pour	Assumed	Assumed
-O144	container	0
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S81	in	[container]
+O9	bag	1
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[bag]
+O114	container	0
+S41	empty
+S16	clean
+M54	pour	Assumed	Assumed
+O114	container	0
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[container]
 //
-O68	butter	1
-S258	stick
-S279	wrapped
-M55	remove	Assumed	Assumed
-O609	wrapping paper	0
-S46	dirty
-O68	butter	1
-S258	stick
+O63	butter	1
+S127	stick
+S143	wrapped
+M63	remove	Assumed	Assumed
+O493	wrapping paper	0
+S38	dirty
+O63	butter	1
+S127	stick
 //
-O68	butter	1
-S258	stick
-O524	spoon	1
-S23	clean
-S56	empty
-M60	scoop	Assumed	Assumed
-O68	butter	1
-S258	stick
-S173	on	[spoon]
-O524	spoon	1
-S29	contains	{butter}
+O63	butter	1
+S127	stick
+O416	spoon	1
+S16	clean
+S41	empty
+M69	scoop	Assumed	Assumed
+O63	butter	1
+S127	stick
+S81	on	[spoon]
+O416	spoon	1
+S23	contains	{butter}
 //
-O144	container	0
-S29	contains	{flour}
-O221	flour	1
-S228	powder
-S81	in	[container]
-O68	butter	1
-S258	stick
-S173	on	[spoon]
-O524	spoon	0
-S29	contains	{butter}
-O225	fork	1
-S23	clean
-S56	empty
-M62	scrape	2:13	2:16
-O68	butter	1
-S258	stick
-S81	in	[container]
-O144	container	0
-S29	contains	{flour,butter}
-O225	fork	1
-S46	dirty
+O114	container	0
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[container]
+O63	butter	1
+S127	stick
+S81	on	[spoon]
+O416	spoon	0
+S23	contains	{butter}
+O182	fork	1
+S16	clean
+S41	empty
+M71	scrape	2:13	2:16
+O63	butter	1
+S127	stick
+S65	in	[container]
+O114	container	0
+S23	contains	{flour,butter}
+O182	fork	1
+S38	dirty
 //
-O144	container	0
-S29	contains	{flour,butter}
-O472	salt	1
-S71	granulated
-S81	in	[bowl]
-O53	bowl	1
-S29	contains	{salt}
-O240	garlic powder	1
-S81	in	[bowl]
-O53	bowl	1
-S29	contains	{garlic powder}
-M47	pour	2:20	2:23
-O144	container	1
-S29	contains	{garlic powder,salt,garlic powder}
-O472	salt	1
-S71	granulated
-S81	in	[container]
-O240	garlic powder	1
-S81	in	[container]
+O114	container	0
+S23	contains	{flour,butter}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{salt}
+O195	garlic powder	1
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{garlic powder}
+M54	pour	2:20	2:23
+O114	container	1
+S23	contains	{garlic powder,salt,garlic powder,}
+O376	salt	1
+S55	granulated
+S65	in	[container]
+O195	garlic powder	1
+S65	in	[container]
 //
-O144	container	0
-S29	contains	{garlic powder,salt,garlic powder}
-O524	spoon	1
-S29	contains	{butter}
-M41	mix	2:25	2:34
-O144	container	0
-S148	contains	{garlic powder,salt,garlic powder}
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,}
+O416	spoon	1
+S23	contains	{butter}
+M46	mix	2:25	2:34
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,}
 //
-O144	container	1
-S29	contains	{olive oil}
-O370	olive oil	1
-S81	in	{olive oil}
-O524	spoon	0
-S23	clean
-M47	pour	Assumed	Assumed
-O524	spoon	0
-S29	contains	{olive oil}
-O370	olive oil	1
-S81	in	[spoon]
+O114	container	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	{olive oil}
+O416	spoon	0
+S16	clean
+M54	pour	Assumed	Assumed
+O416	spoon	0
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[spoon]
 //
-O144	container	0
-S148	contains	{garlic powder,salt,garlic powder}
-O370	olive oil	1
-S81	in	[spoon]
-M47	pour	2:36	2:38
-O144	container	0
-S29	contains	{garlic powder,salt,garlic powder,olive oil}
-O370	olive oil	1
-S81	in	[container]
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,}
+O296	olive oil	1
+S65	in	[spoon]
+M54	pour	2:36	2:38
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil}
+O296	olive oil	1
+S65	in	[container]
 //
-O144	container	0
-S29	contains	{garlic powder,salt,garlic powder,olive oil}
-O370	olive oil	1
-S81	in	[container]
-O524	spoon	0
-M41	mix	2:39	2:48
-O144	container	0
-S148	contains	{garlic powder,salt,garlic powder,olive oil}
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil}
+O296	olive oil	1
+S65	in	[container]
+O416	spoon	0
+M46	mix	2:39	2:48
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil}
 //
-O201	egg	1
-S270	uncracked
-O53	bowl	0
-S56	empty
-S23	clean
-O206	egg white and yolk	1
-S81	in	[bowl]
-O53	bowl	0
-S29	contains	{egg white and yolk}
+O157	egg	1
+S134	uncracked
+O46	bowl	0
+S41	empty
+S16	clean
+O163	egg white and yolk	1
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{egg white and yolk}
 //
-O206	egg white and yolk	1
-S81	in	[bowl]
-O53	bowl	0
-S29	contains	{egg white and yolk}
-O144	container	0
-S148	contains	{garlic powder,salt,garlic powder,olive oil}
-M47	pour	2:49	2:50
-O144	container	0
-S29	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
-O206	egg white and yolk	1
-S81	in	[container]
+O163	egg white and yolk	1
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{egg white and yolk}
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil}
+M54	pour	2:49	2:50
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
+O163	egg white and yolk	1
+S65	in	[container]
 //
-O144	container	0
-S29	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
-O206	egg white and yolk	1
-S81	in	[container]
-O524	spoon	1
-M41	mix	2:51	3:04
-O144	container	0
-S151	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
+O163	egg white and yolk	1
+S65	in	[container]
+O416	spoon	1
+M46	mix	2:51	3:04
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
 //
-O144	container	0
-S151	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
-O524	spoon	1
-S23	clean
-S56	empty
-O588	water	1
-S81	in	[bowl]
-O53	bowl	1
-S29	contains	{water}
-M61	scoop and pour	3:11	3:15
-O144	container	0
-S151	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk,water}
-O588	water	1
-S81	in	[container]
-O524	spoon	1
-S46	dirty
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
+O416	spoon	1
+S16	clean
+S41	empty
+O475	water	1
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{water}
+M70	scoop and pour	3:11	3:15
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk,water}
+O475	water	1
+S65	in	[container]
+O416	spoon	1
+S38	dirty
 //
-O144	container	0
-S151	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk,water}
-O225	fork	1
-S23	clean
-M41	mix	3:16	3:19
-O144	container	0
-S29	contains	{dough}
-O191	dough	0
-S81	in	[container]
-O225	fork	1
-S46	dirty
+O114	container	0
+S23	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk,water}
+O182	fork	1
+S16	clean
+M46	mix	3:16	3:19
+O114	container	0
+S23	contains	{dough}
+O149	dough	0
+S65	in	[container]
+O182	fork	1
+S38	dirty
 //
-O144	container	1
-S29	contains	{dough}
-O191	dough	1
-S81	in	[container]
-O543	table	0
-S23	clean
-S56	empty
-M47	pour	Assumed	Assumed
-O543	table	0
-S29	contains	{dough}
-O191	dough	1
-S173	on	[table]
+O114	container	1
+S23	contains	{dough}
+O149	dough	1
+S65	in	[container]
+O435	table	0
+S16	clean
+S41	empty
+M54	pour	Assumed	Assumed
+O435	table	0
+S23	contains	{dough}
+O149	dough	1
+S81	on	[table]
 //
-O191	dough	1
-S173	on	[table]
-M59	knead	3:33	3:57
-O191	dough	1
-S242	kneaded
-S173	on	[table]
+O149	dough	1
+S81	on	[table]
+M43	knead	3:33	3:57
+O149	dough	1
+S68	kneaded
+S81	on	[table]
 //
-O191	dough	1
-S242	kneaded
-S173	on	[table]
-M13	shape	3:55	3:57
-O191	dough	1
-S242	shaped
-S173	on	[table]
+O149	dough	1
+S68	kneaded
+S81	on	[table]
+M74	shape	3:55	3:57
+O149	dough	1
+S110	shaped
+S81	on	[table]
 //
-O182	cutter	1
-S23	clean
-O191	dough	1
-S242	shaped
-S173	on	[table]
-M16	cut	3:58	4:09
-O191	dough	1
-S40	cut in pieces
-S173	on	[table]
-O182	cutter	1
-S46	dirty
+O142	cutter	1
+S16	clean
+O149	dough	1
+S110	shaped
+S81	on	[table]
+M20	cut	3:58	4:09
+O149	dough	1
+S33	cut in pieces
+S81	on	[table]
+O142	cutter	1
+S38	dirty
 //
-O543	table	0
-S29	contains	{dough}
-O191	dough	1
-S40	cut in pieces
-S173	on	[table]
-M64	shape	4:16	4:27
-O191	dough	1
-S242	shaped
-S173	on	[table]
+O435	table	0
+S23	contains	{dough}
+O149	dough	1
+S33	cut in pieces
+S81	on	[table]
+M74	shape	4:16	4:27
+O149	dough	1
+S110	shaped
+S81	on	[table]
 //
-O543	table	0
-S29	contains	{dough}
-O191	dough	1
-S242	shaped
-S173	on	[table]
-O461	rolling pin	1
-S23	clean
-M57	roll	4:31	4:38
-O191	dough	1
-S60	flattened
-S173	on	[table]
+O435	table	0
+S23	contains	{dough}
+O149	dough	1
+S110	shaped
+S81	on	[table]
+O368	rolling pin	1
+S16	clean
+M66	roll	4:31	4:38
+O149	dough	1
+S45	flattened
+S81	on	[table]
 //
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S271	warm
-S81	in	[cooking pan]
-O524	spoon	1
-S23	clean
-S56	empty
-M60	scoop	Assumed	Assumed
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S271	warm
-S173	on	[spoon]
-O524	spoon	1
-S29	contains	{savory filling}
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S136	warm
+S65	in	[cooking pan]
+O416	spoon	1
+S16	clean
+S41	empty
+M69	scoop	Assumed	Assumed
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S136	warm
+S81	on	[spoon]
+O416	spoon	1
+S23	contains	{savory filling}
 //
-O543	table	0
-S29	contains	{dough}
-O191	dough	1
-S60	flattened
-S173	on	[table]
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S271	warm
-S173	on	[spoon]
-O524	spoon	1
-S29	contains	{savory filling}
-M47	pour	4:40	4:42
-O191	dough	1
-S29	contains	{savory filling}
-S60	flattened
-S173	on	[table]
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S271	warm
-S173	on	[dough]
+O435	table	0
+S23	contains	{dough}
+O149	dough	1
+S45	flattened
+S81	on	[table]
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S136	warm
+S81	on	[spoon]
+O416	spoon	1
+S23	contains	{savory filling}
+M54	pour	4:40	4:42
+O149	dough	1
+S23	contains	{savory filling}
+S45	flattened
+S81	on	[table]
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S136	warm
+S81	on	[dough]
 //
-O543	table	0
-S29	contains	{dough}
-O191	dough	1
-S29	contains	{savory filling}
-S60	flattened
-S173	on	[table]
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S271	warm
-S173	on	[dough]
-M29	fold	4:45	4:49
-O191	dough	1
-S29	contains	{savory filling}
-S64	folded
-S173	on	[table]
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S271	warm
-S81	in	[dough]
+O435	table	0
+S23	contains	{dough}
+O149	dough	1
+S23	contains	{savory filling}
+S45	flattened
+S81	on	[table]
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S136	warm
+S81	on	[dough]
+M34	fold	4:45	4:49
+O149	dough	1
+S23	contains	{savory filling}
+S49	folded
+S81	on	[table]
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S136	warm
+S65	in	[dough]
 //
-O543	table	0
-S29	contains	{dough}
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S271	warm
-S81	in	[dough]
-O191	dough	1
-S29	contains	{savory filling}
-S64	folded
-S173	on	[table]
-O182	cutter	1
-S23	clean
-M17	cut off ends	4:52	4:54
-O191	dough	1
-S29	contains	{savory filling}
-S242	shaped
-S173	on	[table]
+O435	table	0
+S23	contains	{dough}
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S136	warm
+S65	in	[dough]
+O149	dough	1
+S23	contains	{savory filling}
+S49	folded
+S81	on	[table]
+O142	cutter	1
+S16	clean
+M21	cut off ends	4:52	4:54
+O149	dough	1
+S23	contains	{savory filling}
+S110	shaped
+S81	on	[table]
 //
-O543	table	0
-S29	contains	{dough}
-O480	savory filling	0
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S251	softened
-S271	warm
-S81	in	[dough]
-O191	dough	1
-S29	contains	{savory filling}
-S242	shaped
-S173	on	[table]
-M30	fold and pinch	4:55	5:27
-O481	savory pastry	0
-S268	raw
-S173	on	[table]
-O543	table	0
-S29	contains	{savory pastry}
+O435	table	0
+S23	contains	{dough}
+O383	savory filling	0
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S120	softened
+S136	warm
+S65	in	[dough]
+O149	dough	1
+S23	contains	{savory filling}
+S110	shaped
+S81	on	[table]
+M35	fold and pinch	4:55	5:27
+O384	savory pastry	0
+S132	uncook
+S81	on	[table]
+O435	table	0
+S23	contains	{savory pastry}
 //
-O534	stove	0
-S171	off
-M78	turn on	Assumed	Assumed
-O534	stove	0
-S173	on
+O425	stove	0
+S78	off
+M92	turn on	Assumed	Assumed
+O425	stove	0
+S81	on
 //
-O433	pot	0
-S56	empty
-O534	stove	0
-S173	on
-M45	pick-and-place	Assumed	Assumed
-O433	pot	0
-S79	heated
-S173	on	[stove]
-O534	stove	0
-S173	on
-S226	with	[pot]
+O346	pot	0
+S41	empty
+O425	stove	0
+S81	on
+M50	pick-and-place	Assumed	Assumed
+O346	pot	0
+S62	heated
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pot]
 //
-O433	pot	0
-S79	heated
-S173	on	[stove]
-O534	stove	0
-S173	on
-S226	with	[pot]
-O367	oil	1
-S81	in	[container]
-O144	container	0
-S29	contains	{oil}
-M47	pour	Assumed	Assumed
-O433	pot	0
-S79	heated
-S173	on	[stove]
-S29	contains	{oil}
-O367	oil	1
-S81	in	[pot]
+O346	pot	0
+S62	heated
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pot]
+O294	oil	1
+S65	in	[container]
+O114	container	0
+S23	contains	{oil}
+M54	pour	Assumed	Assumed
+O346	pot	0
+S62	heated
+S81	on	[stove]
+S23	contains	{oil}
+O294	oil	1
+S65	in	[pot]
 //
-O481	savory pastry	1
-S268	raw
-S173	on	[table]
-O574	turner	0
-S23	clean
-M45	pick-and-place	Assumed	Assumed
-O481	savory pastry	1
-S268	raw
-S173	on	[turner]
-O574	turner	0
-S29	contains	{savory pastry}
+O384	savory pastry	1
+S132	uncook
+S81	on	[table]
+O464	turner	0
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O384	savory pastry	1
+S132	uncook
+S81	on	[turner]
+O464	turner	0
+S23	contains	{savory pastry}
 //
-O534	stove	0
-S173	on
-S226	with	[pot]
-O433	pot	0
-S79	heated
-S173	on	[stove]
-S29	contains	{oil}
-O367	oil	1
-S81	in	[pot]
-O481	savory pastry	1
-S268	raw
-S173	on	[turner]
-O574	turner	1
-S29	contains	{savory pastry}
-M45	pick-and-place	6:35	6:37
-O481	savory pastry	1
-S268	raw
-S81	in	[pot]
-O433	pot	0
-S79	heated
-S173	on	[stove]
-S29	contains	{oil,savory pastry}
-O574	turner	1
-S56	empty
+O425	stove	0
+S81	on
+S142	with	[pot]
+O346	pot	0
+S62	heated
+S81	on	[stove]
+S23	contains	{oil}
+O294	oil	1
+S65	in	[pot]
+O384	savory pastry	1
+S132	uncook
+S81	on	[turner]
+O464	turner	1
+S23	contains	{savory pastry}
+M50	pick-and-place	6:35	6:37
+O384	savory pastry	1
+S132	uncook
+S65	in	[pot]
+O346	pot	0
+S62	heated
+S81	on	[stove]
+S23	contains	{oil,savory pastry}
+O464	turner	1
+S41	empty
 //
-O534	stove	0
-S173	on
-S226	with	[pot]
-O433	pot	0
-S79	heated
-S173	on	[stove]
-S29	contains	{oil,savory pastry}
-O481	savory pastry	1
-S268	raw
-S81	in	[pot]
-O561	tongs	1
-S23	clean
-S56	empty
-M32	fry and flip	6:48	7:05
-O481	savory pastry	1
-S65	fried
-S81	in	[pot]
+O425	stove	0
+S81	on
+S142	with	[pot]
+O346	pot	0
+S62	heated
+S81	on	[stove]
+S23	contains	{oil,savory pastry}
+O384	savory pastry	1
+S132	uncook
+S65	in	[pot]
+O452	tongs	1
+S16	clean
+S41	empty
+M38	fry and flip	6:48	7:05
+O384	savory pastry	1
+S50	fried
+S65	in	[pot]
 //
-O363	napkin	1
-S23	clean
-O428	plate	0
-S23	clean
-S56	empty
-M45	pick-and-place	Assumed	Assumed
-O363	napkin	1
-S23	clean
-S173	on	[plate]
-O428	plate	0
-S23	clean
-S29	contains	{napkin}
+O290	napkin	1
+S16	clean
+O344	plate	0
+S16	clean
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O290	napkin	1
+S16	clean
+S81	on	[plate]
+O344	plate	0
+S16	clean
+S23	contains	{napkin}
 //
-O534	stove	0
-S173	on
-S226	with	[pot]
-O433	pot	0
-S79	heated
-S173	on	[stove]
-S29	contains	{oil,savory pastry}
-O561	tongs	1
-S56	empty
-O481	savory pastry	1
-S65	fried
-S81	in	[pot]
-O363	napkin	1
-S23	clean
-S173	on	[plate]
-O428	plate	0
-S23	clean
-S29	contains	{napkin}
-M45	pick-and-place	7:06	7:11
-O481	savory pastry	1	!
-S65	fried
-S29	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
-S173	on	[napkin]
-O363	napkin	1
-S23	clean
-S173	on	[plate]
-S29	contains	{savory pastry}
-O561	tongs	1
-S46	dirty
+O425	stove	0
+S81	on
+S142	with	[pot]
+O346	pot	0
+S62	heated
+S81	on	[stove]
+S23	contains	{oil,savory pastry}
+O452	tongs	1
+S41	empty
+O384	savory pastry	1
+S50	fried
+S65	in	[pot]
+O290	napkin	1
+S16	clean
+S81	on	[plate]
+O344	plate	0
+S16	clean
+S23	contains	{napkin}
+M50	pick-and-place	7:06	7:11
+O384	savory pastry	1	6
+S50	fried
+S23	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S81	on	[napkin]
+O290	napkin	1
+S16	clean
+S81	on	[plate]
+S23	contains	{savory pastry}
+O452	tongs	1
+S38	dirty
 //
-O534	stove	0
-S173	on
-M77	turn off	Assumed	Assumed
-O534	stove	0
-S171	off
+O425	stove	0
+S81	on
+M91	turn off	Assumed	Assumed
+O425	stove	0
+S78	off
 //

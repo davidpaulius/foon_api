@@ -1,315 +1,241 @@
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/0035-oven-baked_sweet_potato_fries.mp4
-# Source:	https://www.youtube.com/watch?v=sEcwrlSJXbM
+O432	sweet potato	0
+S141	whole
+O240	knife	1
+S16	clean
+M49	peel	0:31	0:36
+O432	sweet potato	0
+S91	peeled
 //
-O521	sweet potato	0
-S262	whole
-O293	knife	1
-S23	clean
-M37	peel	0:31	0:36
-O521	sweet potato	0
-S216	peeled
+O143	cutting board	0
+S41	empty
+O432	sweet potato	1
+S91	peeled
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{sweet potato}
+O432	sweet potato	1
+S91	peeled
+S81	on	[cutting board]
 //
-O180	cutting board	0
-S54	empty
-O521	sweet potato	1
-S216	peeled
-M38	pick-and-place	Assumed	Assumed
-O180	cutting board	0
-S144	contains	{sweet potato}
-O521	sweet potato	1
-S216	peeled
-S175	on	[cutting board]
+O143	cutting board	0
+S23	contains	{sweet potato}
+O432	sweet potato	0
+S91	peeled
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	0:37	1:01
+O432	sweet potato	0
+S14	chopped
+S81	on	[cutting board]
 //
-O180	cutting board	0
-S144	contains	{sweet potato}
-O521	sweet potato	0
-S216	peeled
-S175	on	[cutting board]
-O293	knife	1
-S23	clean
-M15	cut	0:37	1:01
-O521	sweet potato	0
-S21	baton cut
-S175	on	[cutting board]
+O342	plastic bag	0
+S41	empty
+M48	open	1:02	1:07
+O342	plastic bag	0
+S83	opened
 //
-O413	plastic bag	0
-S54	empty
-S204	sealed
-M36	open	1:02	1:07
-O413	plastic bag	0
-S54	empty
-S204	opened
+O432	sweet potato	1
+S14	chopped
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{sweet potato}
+O342	plastic bag	0
+S83	opened
+M50	pick-and-place	1:06	1:11
+O342	plastic bag	0
+S23	contains	{sweet potato}
+O432	sweet potato	1
+S14	chopped
+S65	in	[bag]
 //
-O521	sweet potato	1
-S21	baton cut
-S175	on	[cutting board]
-O180	cutting board	0
-S144	contains	{sweet potato}
-O413	plastic bag	0
-S54	empty
-S204	opened
-M38	pick-and-place	1:06	1:11
-O413	plastic bag	0
-S138	contains	{sweet potato}
-S204	opened
-O521	sweet potato	1
-S21	baton cut
-S77	in	[plastic bag]
+O342	plastic bag	0
+S23	contains	{sweet potato}
+O46	bowl	1
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[bowl]
+M54	pour	1:12	1:16
+O342	plastic bag	0
+S23	contains	{sweet potato,flour}
+O176	flour	1
+S96	powder
+S65	in	[bag]
 //
-O413	plastic bag	0
-S138	contains	{sweet potato}
-S204	opened
-O51	bowl	1
-S138	contains	{flour}
-O215	flour	1
-S221	powder
-S84	in	[bowl]
-M40	pour	1:12	1:16
-O413	plastic bag	0
-S138	contains	{sweet potato,flour}
-S204	opened
-O215	flour	1
-S221	powder
-S77	in	[plastic bag]
+O342	plastic bag	1
+S23	contains	{sweet potato,flour}
+M11	close	1:17	1:22
+O342	plastic bag	1
+S17	closed	{sweet potato,flour}
 //
-O413	plastic bag	1
-S138	contains	{sweet potato,flour}
-S204	opened
-M9	close	1:17	1:22
-O413	plastic bag	1
-S24	contains	{sweet potato,flour}
-S204	sealed
+O342	plastic bag	1
+S17	closed	{sweet potato,flour}
+O432	sweet potato	1
+S14	chopped
+S65	in	[bag]
+M73	shake	1:23	1:48
+O342	plastic bag	1
+S23	contains	{sweet potato,flour}
+O432	sweet potato	1
+S47	floured
+S65	in	[bag]
 //
-O413	plastic bag	1
-S24	contains	{sweet potato,flour}
-S204	sealed
-O521	sweet potato	0
-S21	baton cut
-S77	in	[plastic bag]
-O215	flour	0
-S221	powder
-S77	in	[plastic bag]
-M53	shake	1:23	1:48
-O413	plastic bag	1
-S142	contains	{sweet potato}
-S43	sealed
-O521	sweet potato	1
-S21	baton cut
-S59	floured
-S77	in	[plastic bag]
+O342	plastic bag	1
+S23	contains	{sweet potato,flour}
+O432	sweet potato	1
+S47	floured
+S65	in	[bag]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O342	plastic bag	1
+S38	dirty
+O46	bowl	0
+S23	contains	{sweet potato}
+O432	sweet potato	1
+S47	floured
+S65	in	[bowl]
 //
-O413	plastic bag	1
-S142	contains	{sweet potato}
-S43	sealed
-M0	open	Assumed	Assumed
-O413	plastic bag	1
-S142	contains	{sweet potato}
-S43	opened
+O46	bowl	0
+S23	contains	{sweet potato}
+O46	bowl	1
+S23	contains	{vegetable oil}
+O432	sweet potato	1
+S47	floured
+S65	in	[bowl]
+O468	vegetable oil	1
+S65	in	[bowl]
+M54	pour	1:50	1:58
+O46	bowl	0
+S23	contains	{sweet potato,vegetable oil}
 //
-O413	plastic bag	1
-S142	contains	{sweet potato}
-S43	opened
-O521	sweet potato	1
-S21	baton cut
-S59	floured
-S77	in	[plastic bag]
-O51	bowl	0
-S54	empty
-M40	pour	Assumed	Assumed
-O51	bowl	0
-S138	contains	{sweet potato}
-O521	sweet potato	1
-S21	baton cut
-S59	floured
-S84	in	[bowl]
-O413	plastic bag	1
-S45	dirty
+O46	bowl	0
+S23	contains	{sweet potato,vegetable oil}
+O46	bowl	1
+S23	contains	{garlic powder}
+O195	garlic powder	1
+S65	in	[bowl]
+M83	sprinkle	2:00	2:03
+O46	bowl	0
+S23	contains	{sweet potato,vegetable oil,garlic powder}
 //
-O51	mixing bowl	0
-S138	contains	{sweet potato}
-O51	prep bowl	1
-S138	contains	{vegetable oil}
-O557	vegetable oil	1
-S84	in	[prep bowl]
-M0	pour	1:51	1:55
-O51	mixing bowl	0
-S138	contains	{sweet potato,vegetable oil}
-O557	vegetable oil	1
-S84	in	[mixing bowl]
+O46	bowl	0
+S23	contains	{sweet potato,vegetable oil,garlic powder}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+M83	sprinkle	2:06	2:11
+O46	bowl	0
+S23	contains	{sweet potato,flour,vegetable oil,garlic powder,salt}
 //
-O51	mixing bowl	0
-S138	contains	{sweet potato,vegetable oil}
-O51	prep bowl	1
-S138	contains	{garlic powder}
-O234	garlic powder	1
-S43	powder
-S84	in	[prep bowl]
-M0	pour	2:00	2:05
-O51	mixing bowl	0
-S138	contains	{sweet potato,vegetable oil,garlic powder}
-O234	garlic powder	1
-S43	powder
-S84	in	[mixing bowl]
+O46	bowl	0
+S23	contains	{sweet potato,flour,vegetable oil,garlic powder,salt}
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+M83	sprinkle	Assumed	Assumed
+O46	bowl	0
+S23	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper}
 //
-O51	mixing bowl	0
-S138	contains	{sweet potato,vegetable oil,garlic powder}
-O51	prep bowl	1
-S138	contains	{salt}
-O459	salt	1
-S67	granulated
-S84	in	[prep bowl]
-M0	pour	2:07	2:09
-O51	mixing bowl	0
-S138	contains	{sweet potato,vegetable oil,garlic powder,salt}
-O459	salt	1
-S67	granulated
-S84	in	[mixing bowl]
+O46	bowl	0
+S23	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper}
+O314	paprika	1
+S58	ground
+S65	in	[bowl]
+M83	sprinkle	2:14	2:17
+O46	bowl	0
+S23	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
 //
-O51	mixing bowl	0
-S138	contains	{sweet potato,vegetable oil,garlic powder,salt}
-O51	prep bowl	1
-S138	contains	{black pepper}
-O38	black pepper	1
-S71	ground
-S84	in	[prep bowl]
-M0	pour	2:09	2:10
-O51	mixing bowl	0
-S138	contains	{sweet potato,vegetable oil,garlic powder,salt,black pepper}
-O38	black pepper	1
-S71	ground
-S84	in	[mixing bowl]
+O46	bowl	0
+S23	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+O412	spatula	1
+S16	clean
+O432	sweet potato	1
+S47	floured
+S65	in	[bowl]
+M46	mix	2:19	2:25
+O46	bowl	0
+S23	contains	{sweet potato fries}
+O433	sweet potato fries	1
+S133	uncooked
+S107	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S65	in	[bowl]
 //
-O51	mixing bowl	0
-S138	contains	{sweet potato,vegetable oil,garlic powder,salt,black pepper}
-O51	prep bowl	1
-S138	contains	{paprika}
-O380	paprika	1
-S71	ground
-S84	in	[prep bowl]
-M40	pour*	2:14	2:17
-O51	mixing bowl	0
-S138	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
-O380	paprika	1
-S71	ground
-S84	in	[mixing bowl]
+O12	baking tray	0
+S142	with	[sheet]
+O46	bowl	0
+S23	contains	{sweet potato fries}
+O433	sweet potato fries	1
+S133	uncooked
+S107	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S65	in	[bowl]
+M50	pick-and-place	2:36	2:59
+O12	baking tray	0
+S23	contains	{sweet potato fries}
+O433	sweet potato fries	1
+S133	uncooked
+S107	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S65	in	[baking tray]
 //
-O51	mixing bowl	0
-S138	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
-O521	sweet potato	1
-S21	baton cut
-S59	floured
-S84	in	[mixing bowl]
-O557	vegetable oil	1
-S84	in	[mixing bowl]
-O234	garlic powder	1
-S84	in	[mixing bowl]
-O459	salt	1
-S67	granulated
-S84	in	[mixing bowl]
-O38	black pepper	1
-S71	ground
-S84	in	[mixing bowl]
-O380	paprika	1
-S71	ground
-S84	in	[mixing bowl]
-O502	spatula	1
-S23	clean
-M35	mix	2:19	2:25
-O51	mixing bowl	0
-S142	contains	{sweet potato fries}
-O522	sweet potato fries	1
-S258	raw
-S230	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
-S84	in	[mixing bowl]
+O12	baking tray	0
+S23	contains	{sweet potato fries}
+O306	oven	0
+S81	on
+M62	put inside	Assumed	Assumed
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O12	baking tray	0
+S23	contains	{sweet potato fries}
+S65	in	[oven]
 //
-O16	baking tray	0
-S236	with	[aluminium foil]
-O51	mixing bowl	0
-S142	contains	{sweet potato fries}
-O522	sweet potato fries	1
-S258	raw
-S230	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
-S84	in	[mixing bowl]
-M38	pick-and-place	2:36	2:59
-O16	baking tray	0
-S236	with	[aluminium foil]
-S144	contains	{sweet potato fries}
-O522	sweet potato fries	1
-S258	raw
-S230	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
-S78	in	[baking tray]
-O51	mixing bowl	0
-S142	dirty
+O12	baking tray	0
+S23	contains	{sweet potato fries}
+S65	in	[oven]
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O433	sweet potato fries	1
+S133	uncooked
+S107	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S65	in	[baking tray]
+M2	bake	Assumed	Assumed
+O12	baking tray	0
+S23	contains	{sweet potato fries}
+S65	in	[oven]
+O433	sweet potato fries	1
+S24	cooked
+S107	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S65	in	[baking tray]
 //
-O371	oven	1
-S167	off (ready)
-M0	preheat	Assumed	Assumed
-O371	oven	1
-S167	on
+O12	baking tray	0
+S23	contains	{sweet potato fries}
+S65	in	[oven]
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+M63	remove	Assumed	Assumed
+O12	baking tray	0
+S23	contains	{sweet potato fries}
+O306	oven	0
+S78	off
 //
-O16	baking tray	1
-S144	contains	{sweet potato fries}
-S236	with	[aluminium foil]
-O371	oven	0
-S167	on
-M45	put inside	Assumed	Assumed
-O371	oven	0
-S167	on
-S4	with	[baking tray]
-O16	baking tray	0
-S144	contains	{sweet potato fries}
-S236	with	[aluminium foil]
-S112	in	[oven]
-//
-O16	baking tray	0
-S144	contains	{sweet potato fries}
-S236	with	[aluminium foil]
-S112	in	[oven]
-O371	oven	0
-S167	on
-S4	with	[baking tray]
-O522	sweet potato fries	1
-S258	uncooked
-S230	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
-S78	in	[baking tray]
-M1	bake	Assumed	Assumed
-O522	sweet potato fries	1
-S29	baked
-S230	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
-S78	in	[baking tray]
-//
-O16	baking tray	0
-S49	contains	{sweet potato fries}
-S236	with	[aluminium foil]
-S112	in	[oven]
-O371	oven	0
-S167	on
-S4	with	[baking tray]
-M46	remove	Assumed	Assumed
-O16	baking tray	0
-S3	hot
-S49	contains	{sweet potato fries}
-S236	with	[aluminium foil]
-O371	oven	0
-S165	off
-//
-O16	baking tray	0
-S3	hot
-S49	contains	{sweet potato fries}
-S236	with	[aluminium foil]
-O522	sweet potato fries	1
-S29	baked
-S230	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
-S78	in	[baking tray]
-O552	turner	1
-S23	clean
-O415	plate	0
-S54	empty
-M38	scoop and pour	Assumed	Assumed
-O415	plate	0
-S49	contains	{sweet potato fries}
-O522	sweet potato fries	1	!
-S29	baked
-S230	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
-S188	on	[plate]
+O12	baking tray	0
+S23	contains	{sweet potato fries}
+O433	sweet potato fries	1
+S24	cooked
+S107	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S65	in	[baking tray]
+O464	turner	1
+S16	clean
+O344	plate	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains	{sweet potato fries}
+O433	sweet potato fries	1	24
+S24	cooked
+S107	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S81	on	[plate]
 //

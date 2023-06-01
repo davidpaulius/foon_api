@@ -1,135 +1,135 @@
-O54	bread	1
-S30	on	[plate]
-O68	butter	1
-S10	in	[bowl]
-M13	spread	0:13	0:40
-O54	bread	0
-S30	on	[plate]
-S24	contains	{butter}
+O48	bread	1
+S81	on	[plate]
+O63	butter	1
+S65	in	[bowl]
+M82	spread	0:13	0:40
+O48	bread	0
+S81	on	[plate]
+S23	contains	{butter}
 //
-O527	stove	0
-S27	off (ready)
-M18	turn on	Assumed	Assumed
-O527	stove	0
-S28	on
+O425	stove	0
+S78	off
+M92	turn on	Assumed	Assumed
+O425	stove	0
+S81	on
 //
-O527	stove	0
-S28	on
-O148	cooking pan	1
-S6	empty
-M8	pick-and-place	Assumed	Assumed
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S6	empty
-S31	on	[stove]
+O425	stove	0
+S81	on
+O116	cooking pan	1
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S41	empty
+S81	on	[stove]
 //
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S6	empty
-S31	on	[stove]
-O54	bread	1
-S30	on	[plate]
-S24	contains	{butter}
-M8	pick-and-place	0:47	0:50
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S26	with	[items]
-S31	on	[stove]
-O54	bread	1
-S24	contains	{butter}
-S29	on	[cooking pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S41	empty
+S81	on	[stove]
+O48	bread	1
+S81	on	[plate]
+S23	contains	{butter}
+M50	pick-and-place	0:47	0:50
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S142	with	[item]
+S81	on	[stove]
+O48	bread	1
+S23	contains	{butter}
+S81	on	[cooking pan]
 //
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S26	with	[items]
-S31	on	[stove]
-O54	bread	1
-S24	contains	{butter}
-S29	on	[cooking pan]
-O530	sugar	1
-S7	granulated
-M14	spread	0:53	1:04
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S26	with	[items]
-S31	on	[stove]
-O54	bread	1
-S24	contains	{butter,sugar}
-S29	on	[cooking pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S142	with	[item]
+S81	on	[stove]
+O48	bread	1
+S23	contains	{butter}
+S81	on	[cooking pan]
+O428	sugar	1
+S55	granulated
+M82	spread	0:53	1:04
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S142	with	[item]
+S81	on	[stove]
+O48	bread	1
+S23	contains	{butter,sugar}
+S81	on	[cooking pan]
 //
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S26	with	[items]
-S31	on	[stove]
-O54	bread	1
-S24	contains	{butter,sugar}
-S29	on	[cooking pan]
-O346	milk	1
-S12	in	[cup]
-M9	pour	1:06	1:12
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S26	with	[items]
-S31	on	[stove]
-O54	bread	1
-S24	contains	{butter,sugar,milk}
-S29	on	[cooking pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S142	with	[item]
+S81	on	[stove]
+O48	bread	1
+S23	contains	{butter,sugar}
+S81	on	[cooking pan]
+O273	milk	1
+S65	in	[cup]
+M54	pour	1:06	1:12
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S142	with	[item]
+S81	on	[stove]
+O48	bread	1
+S23	contains	{butter,sugar,milk}
+S81	on	[cooking pan]
 //
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S26	with	[items]
-S31	on	[stove]
-O54	bread	1
-S24	contains	{butter,sugar,milk}
-S29	on	[cooking pan]
-M4	flip and stack	1:06	1:12
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S26	with	[items]
-S31	on	[stove]
-O54	bread	1
-S24	contains	{butter,sugar,milk}
-S29	on	[cooking pan]
-S36	toasted
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S142	with	[item]
+S81	on	[stove]
+O48	bread	1
+S23	contains	{butter,sugar,milk}
+S81	on	[cooking pan]
+M33	flip and stack	1:06	1:12
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S142	with	[item]
+S81	on	[stove]
+O48	bread	1
+S23	contains	{butter,sugar,milk}
+S81	on	[cooking pan]
+S130	toasted
 //
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S26	with	[items]
-S31	on	[stove]
-O54	bread	1
-S24	contains	{butter,sugar,milk}
-S29	on	[cooking pan]
-S36	toasted
-O346	milk	1
-S12	in	[cup]
-M9	pour	1:32	1:35
-O527	stove	0
-S28	on
-S32	with	[pan]
-O148	cooking pan	1
-S25	with	[items]
-S31	on	[stove]
-O55	bread toast	1	!
-S25	with	[items]
-S29	on	[cooking pan]
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S142	with	[item]
+S81	on	[stove]
+O48	bread	1
+S23	contains	{butter,sugar,milk}
+S81	on	[cooking pan]
+S130	toasted
+O273	milk	1
+S65	in	[cup]
+M54	pour	1:32	1:35
+O425	stove	0
+S81	on
+S142	with	[pan]
+O116	cooking pan	1
+S142	with	[item]
+S81	on	[stove]
+O49	bread toast	1	0
+S142	with	[item]
+S81	on	[cooking pan]
 //

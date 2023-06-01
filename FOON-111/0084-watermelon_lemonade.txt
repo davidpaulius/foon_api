@@ -1,372 +1,381 @@
 # Source:	https://www.youtube.com/watch?v=b34taRvrR20
 //
-O183	cutting board	0
-S56	empty
-S23	clean
-O591	watermelon	1
-S275	whole
-M45	pick-and-place	Assumed	Assumed
-O183	cutting board	0
-S29	contains	{watermelon}
-O591	watermelon	1
-S275	whole
-S173	on	[cutting board]
+O143	cutting board	0
+S41	empty
+S16	clean
+O477	watermelon	1
+S141	whole
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{watermelon}
+O477	watermelon	1
+S141	whole
+S81	on	[cutting board]
 //
-O183	cutting board	0
-S29	contains	{watermelon}
-O591	watermelon	0
-S275	whole
-O300	knife	1
-S23	clean
-M69	slice	Assumed	Assumed
-O591	watermelon	0
-S77	halved
-S173	on	[cutting board]
-O300	knife	1
-S46	dirty
+O143	cutting board	0
+S23	contains	{watermelon}
+O477	watermelon	0
+S141	whole
+O240	knife	1
+S16	clean
+M79	slice	Assumed	Assumed
+O477	watermelon	0
+S60	halved
+S81	on	[cutting board]
+O240	knife	1
+S38	dirty
 //
-O183	cutting board	0
-S29	contains	{watermelon}
-O591	watermelon	0
-S77	halved
-S173	on	[cutting board]
-O524	spoon	1
-S23	clean
-M60	scoop	0:25	0:27
-O524	spoon	1
-S29	contains	{watermelon}
-O591	watermelon	0
-S40	cut in pieces
-S81	in	[spoon]
+O143	cutting board	0
+S23	contains	{watermelon}
+O477	watermelon	0
+S60	halved
+S81	on	[cutting board]
+O416	spoon	1
+S16	clean
+M69	scoop	0:25	0:27
+O416	spoon	1
+S23	contains	{watermelon}
+O477	watermelon	0
+S33	cut in pieces
+S65	in	[spoon]
 //
-O53	bowl	0
-S56	empty
-S23	clean
-O591	watermelon	0
-S40	cut in pieces
-S81	in	[spoon]
-O524	spoon	1
-S29	contains	{watermelon}
-M47	pour	0:27	0:28
-O53	bowl	0
-S29	contains	{watermelon}
-O591	watermelon	0
-S40	cut in pieces
-S81	in	[bowl]
-O524	spoon	1
-S46	dirty
+O46	bowl	0
+S41	empty
+S16	clean
+O477	watermelon	0
+S33	cut in pieces
+S65	in	[spoon]
+O416	spoon	1
+S23	contains	{watermelon}
+M54	pour	0:27	0:28
+O46	bowl	0
+S23	contains	{watermelon}
+O477	watermelon	0
+S33	cut in pieces
+S65	in	[bowl]
+O416	spoon	1
+S38	dirty
 //
-O183	cutting board	0
-S56	empty
-S23	clean
-O307	lemon	1
-S275	whole
-M45	pick-and-place	Assumed	Assumed
-O183	cutting board	0
-S29	contains	{lemon}
-O307	lemon	1
-S275	whole
-S173	on	[cutting board]
+O143	cutting board	0
+S41	empty
+S16	clean
+O244	lemon	1
+S141	whole
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{lemon}
+O244	lemon	1
+S141	whole
+S81	on	[cutting board]
 //
-O183	cutting board	0
-S29	contains	{lemon}
-O307	lemon	0
-S275	whole
-S173	on	[cutting board]
-O300	knife	1
-S23	clean
-M16	cut	0:41	0:45
-O307	lemon	0
-S77	halved
-S173	on	[cutting board]
-O300	knife	1
-S46	dirty
+O143	cutting board	0
+S23	contains	{lemon}
+O244	lemon	0
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	0:41	0:45
+O244	lemon	0
+S60	halved
+S81	on	[cutting board]
+O240	knife	1
+S38	dirty
 //
-O183	cutting board	0
-S29	contains	{lemon}
-O307	lemon	1
-S77	halved
-S173	on	[cutting board]
-O531	squeezer	0
-S56	empty
-S23	clean
-S173	on	[surface]
-M45	pick-and-place	Assumed	Assumed
-O531	squeezer	0
-S29	contains	{lemon}
-S173	on	[surface]
-O307	lemon	1
-S77	halved
-S81	in	[squeezer]
+O143	cutting board	0
+S23	contains	{lemon}
+O244	lemon	1
+S60	halved
+S81	on	[cutting board]
+O423	squeezer	0
+S41	empty
+S16	clean
+S81	on	[surface]
+M50	pick-and-place	Assumed	Assumed
+O423	squeezer	0
+S23	contains	{lemon}
+S81	on	[surface]
+O244	lemon	1
+S60	halved
+S65	in	[squeezer]
 //
-O531	squeezer	1
-S29	contains	{lemon}
-S173	on	[surface]
-O307	lemon	0
-S77	halved
-S81	in	[squeezer]
-M74	squeeze	0:46	0:53
-O307	lemon	0
-S256	squeezed
-O531	squeezer	1
-S29	contains	{lemon juice}
-S173	on	[surface]
-O310	lemon juice	0
-S81	in	[squeezer]
+O423	squeezer	1
+S23	contains	{lemon}
+S81	on	[surface]
+O244	lemon	0
+S60	halved
+S65	in	[squeezer]
+M84	squeeze	0:46	0:53
+O244	lemon	0
+S124	squeezed
+O423	squeezer	1
+S23	contains	{lemon juice}
+S81	on	[surface]
+O247	lemon juice	0
+S65	in	[squeezer]
 //
-O53	bowl	1
-S29	contains	{watermelon}
-S173	on	[surface]
-O43	blender cup	0
-S56	empty
-S23	clean
-O591	watermelon	1
-S40	cut in pieces
-S81	in	[bowl]
-M47	pour	1:06	1:13
-O43	blender cup	0
-S29	contains	{watermelon}
-O591	watermelon	1
-S40	cut in pieces
-S81	in	[blender cup]
+O46	bowl	1
+S23	contains	{watermelon}
+S81	on	[surface]
+O37	blender cup	0
+S41	empty
+S16	clean
+O477	watermelon	1
+S33	cut in pieces
+S65	in	[bowl]
+M54	pour	1:06	1:13
+O37	blender cup	0
+S23	contains	{watermelon}
+O477	watermelon	1
+S33	cut in pieces
+S65	in	[blender cup]
 //
-O43	blender cup	0
-S29	contains	{watermelon}
-O591	watermelon	0
-S40	cut in pieces
-S81	in	[blender cup]
-O45	blender lid	1
-S23	clean
-M14	cover	Assumed	Assumed
-O43	blender cup	1
-S32	covered	{blender lid}
-S29	contains	{watermelon}
-O45	blender lid	1
-S173	on	[blender cup]
+O37	blender cup	0
+S23	contains	{watermelon}
+O477	watermelon	0
+S33	cut in pieces
+S65	in	[blender cup]
+O39	blender lid	1
+S16	clean
+M18	cover	Assumed	Assumed
+O37	blender cup	1
+S26	covered	{blender lid}
+S23	contains	{watermelon}
+O39	blender lid	1
+S81	on	[blender cup]
 //
-O43	blender cup	1
-S32	covered	{blender lid}
-S29	contains	{watermelon}
-O591	watermelon	1
-S40	cut in pieces
-S81	in	[blender cup]
-O42	blender	0
-S171	off
-M0	attach	Assumed	Assumed
-O43	blender cup	1
-S32	covered	{blender lid}
-S29	contains	{watermelon}
-S2	attached to	[blender]
-O42	blender	0
-S37	with	[cup]
+O37	blender cup	1
+S26	covered	{blender lid}
+S23	contains	{watermelon}
+O477	watermelon	1
+S33	cut in pieces
+S65	in	[blender cup]
+O35	blender	0
+S78	off
+M1	attach	Assumed	Assumed
+O37	blender cup	1
+S26	covered	{blender lid}
+S23	contains	{watermelon}
+S0	attached to	[blender]
+O35	blender	0
+S142	with	[cup]
 //
-O43	blender cup	1
-S32	covered	{blender lid}
-S29	contains	{watermelon}
-S2	attached to	[blender]
-O591	watermelon	1
-S40	cut in pieces
-S81	in	[blender cup]
-O42	blender	0
-S173	on
-S37	with	[cup]
-M3	blend	1:13	1:19
-O592	watermelon juice	0
-S29	contains	{watermelon}
-S81	in	[blender cup]
-O43	blender cup	1
-S32	covered	{blender lid}
-S29	contains	{watermelon juice}
-S2	attached to	[blender]
+O37	blender cup	1
+S26	covered	{blender lid}
+S23	contains	{watermelon}
+S0	attached to	[blender]
+O477	watermelon	1
+S33	cut in pieces
+S65	in	[blender cup]
+O35	blender	0
+S81	on
+S142	with	[cup]
+M4	blend	1:13	1:19
+O478	watermelon juice	0
+S23	contains	{watermelon}
+S65	in	[blender cup]
+O37	blender cup	1
+S26	covered	{blender lid}
+S23	contains	{watermelon juice}
+S0	attached to	[blender]
+O477	watermelon	1
+S71	liquid
+S65	in	[blender cup]
 //
-O43	blender cup	1
-S32	covered	{blender lid}
-S29	contains	{watermelon juice}
-S2	attached to	[blender]
-O592	watermelon juice	0
-S29	contains	{watermelon}
-S81	in	[blender cup]
-O42	blender	0
-S37	with	[cup]
-M21	detach	Assumed	Assumed
-O43	blender cup	1
-S32	covered	{blender lid}
-S29	contains	{watermelon juice}
-O42	blender	0
-S171	off
+O37	blender cup	1
+S26	covered	{blender lid}
+S23	contains	{watermelon juice}
+S0	attached to	[blender]
+O478	watermelon juice	0
+S23	contains	{watermelon}
+S65	in	[blender cup]
+O35	blender	0
+S142	with	[cup]
+M25	detach	Assumed	Assumed
+O37	blender cup	1
+S26	covered	{blender lid}
+S23	contains	{watermelon juice}
+O35	blender	0
+S78	off
 //
-O43	blender cup	0
-S32	covered	{blender lid}
-S29	contains	{watermelon juice}
-O592	watermelon juice	0
-S29	contains	{watermelon}
-S81	in	[blender cup]
-O45	blender lid	1
-M79	uncover	Assumed	Assumed
-O43	blender cup	0
-S29	contains	{watermelon juice}
-O45	blender lid	1
-S46	dirty
+O37	blender cup	0
+S26	covered	{blender lid}
+S23	contains	{watermelon juice}
+O478	watermelon juice	0
+S23	contains	{watermelon}
+S65	in	[blender cup]
+O39	blender lid	1
+M93	uncover	Assumed	Assumed
+O37	blender cup	0
+S23	contains	{watermelon juice}
+O39	blender lid	1
+S38	dirty
 //
-O341	measuring cup	0
-S56	empty
-S23	clean
-O535	strainer	1
-S56	empty
-S23	clean
-M45	pick-and-place	Assumed	Assumed
-O535	strainer	1
-S23	clean
-S173	on	[measuring cup]
+O270	measuring cup	0
+S41	empty
+S16	clean
+O426	strainer	1
+S41	empty
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O426	strainer	1
+S16	clean
+S81	on	[measuring cup]
 //
-O535	strainer	0
-S56	empty
-S23	clean
-S173	on	[measuring cup]
-O341	measuring cup	0
-S56	empty
-S23	clean
-O43	blender cup	1
-S29	contains	{watermelon juice}
-O592	watermelon juice	1
-S29	contains	{watermelon}
-S81	in	[blender cup]
-M47	pour	1:24	1:26
-O535	strainer	0
-S29	contains	{watermelon juice}
-S173	on	[measuring cup]
-O592	watermelon juice	1
-S29	contains	{watermelon}
-S81	in	[strainer]
+O426	strainer	0
+S41	empty
+S16	clean
+S81	on	[measuring cup]
+O270	measuring cup	0
+S41	empty
+S16	clean
+O37	blender cup	1
+S23	contains	{watermelon juice}
+O478	watermelon juice	1
+S23	contains	{watermelon}
+S65	in	[blender cup]
+O477	watermelon	1
+S71	liquid
+S65	in	[blender cup]
+M54	pour	1:24	1:26
+O477	watermelon	1
+S71	liquid
+S65	in	[strainer]
+O426	strainer	0
+S23	contains	{watermelon juice}
+S81	on	[measuring cup]
+O478	watermelon juice	1
+S23	contains	{watermelon}
+S65	in	[strainer]
 //
-O524	spoon	1
-S23	clean
-O535	strainer	0
-S29	contains	{watermelon juice}
-S173	on	[measuring cup]
-O592	watermelon juice	1
-S29	contains	{watermelon}
-S134	in	[strainer]
-O341	measuring cup	0
-S56	empty
-S23	clean
-O591	watermelon	1
-S161	liquid	1
-S134	in	[strainer]
-M74	squeeze	1:26	1:38
-O592	watermelon juice	1
-S29	contains	{watermelon}
-S247	sifted
-S81	in	[measuring cup]
-O341	measuring cup	0
-S29	contains	{juice}
-O535	strainer	0
-S46	dirty
-O524	spoon	1
-S46	dirty
+O416	spoon	1
+S16	clean
+O426	strainer	0
+S23	contains	{watermelon juice}
+S81	on	[measuring cup]
+O478	watermelon juice	1
+S23	contains	{watermelon}
+S65	in	[strainer]
+O270	measuring cup	0
+S41	empty
+S16	clean
+O477	watermelon	1
+S71	liquid
+S65	in	[strainer]
+M84	squeeze	1:26	1:38
+O478	watermelon juice	1
+S23	contains	{watermelon}
+S115	sifted
+S65	in	[measuring cup]
+O270	measuring cup	0
+S23	contains	{juice}
+O426	strainer	0
+S38	dirty
+O416	spoon	1
+S38	dirty
 //
-O419	pitcher	0
-S56	empty
-S23	clean
-S173	on	[surface]
-O592	watermelon juice	1
-S29	contains	{watermelon}
-S247	sifted
-S81	in	[measuring cup
-O341	measuring cup	1
-S29	contains	{watermelon juice}
-M50	pour and stir	1:44	1:50
-O592	watermelon juice	1
-S29	contains	{watermelon}
-S247	sifted
-S81	in	[pitcher]
-O419	pitcher	0
-S29	contains	{watermelon juice}
-S173	on	[surface]
+O337	pitcher	0
+S41	empty
+S16	clean
+S81	on	[surface]
+O478	watermelon juice	1
+S23	contains	{watermelon}
+S115	sifted
+S65	in	[measuring cup]
+O270	measuring cup	1
+S23	contains	{watermelon juice}
+M58	pour and stir	1:44	1:50
+O478	watermelon juice	1
+S23	contains	{watermelon}
+S115	sifted
+S65	in	[pitcher]
+O337	pitcher	0
+S23	contains	{watermelon juice}
+S81	on	[surface]
 //
-O419	pitcher	0
-S29	contains	{watermelon juice}
-S173	on	[surface]
-O592	watermelon juice	1
-S29	contains	{watermelon}
-S247	sifted
-S81	in	[pitcher]
-O531	squeezer	1
-S29	contains	{lemon juice}
-O310	lemon juice	0
-S81	in	[squeezer]
-O588	water	1
-S81	in	[measuring cup]
-O341	measuring cup	1
-S29	contains	{water}
-M47	pour	1:53	2:02
-O310	lemon juice	1
-S120	in	[pitcher]
-O588	water	1
-S81	in	[pitcher]
-O419	pitcher	0
-S29	contains	{watermelon juice,lemon juice,water}
-S173	on	[surface]
+O337	pitcher	0
+S23	contains	{watermelon juice}
+S81	on	[surface]
+O478	watermelon juice	1
+S23	contains	{watermelon}
+S115	sifted
+S65	in	[pitcher]
+O423	squeezer	1
+S23	contains	{lemon juice}
+O247	lemon juice	0
+S65	in	[squeezer]
+O475	water	1
+S65	in	[measuring cup]
+O270	measuring cup	1
+S23	contains	{water}
+M54	pour	1:53	2:02
+O247	lemon juice	1
+S65	in	[pitcher]
+O475	water	1
+S65	in	[pitcher]
+O337	pitcher	0
+S23	contains	{watermelon juice,lemon juice,water}
+S81	on	[surface]
 //
-O53	bowl	1
-S29	contains	{sugar}
-O592	watermelon juice	0
-S29	contains	{watermelon}
-S247	sifted
-S81	in	[pitcher]
-O537	sugar	1
-S81	in	[bowl]
-O419	pitcher	0
-S29	contains	{watermelon juice,lemon juice,water}
-M73	sprinkle	2:05	2:10
-O419	pitcher	0
-S29	contains	{watermelon juice,lemon juice,water,sugar}
-S173	on	[surface]
-O537	sugar	1
-S81	in	[pitcher]
+O46	bowl	1
+S23	contains	{sugar}
+O478	watermelon juice	0
+S23	contains	{watermelon}
+S115	sifted
+S65	in	[pitcher]
+O428	sugar	1
+S65	in	[bowl]
+O337	pitcher	0
+S23	contains	{watermelon juice,lemon juice,water}
+M83	sprinkle	2:05	2:10
+O337	pitcher	0
+S23	contains	{watermelon juice,lemon juice,water,sugar}
+S81	on	[surface]
+O428	sugar	1
+S65	in	[pitcher]
 //
-O419	pitcher	0
-S29	contains	{watermelon juice,lemon juice,water,sugar}
-S173	on	[surface]
-O592	watermelon juice	0
-S29	contains	{watermelon}
-S247	sifted
-S81	in	[pitcher]
-M75	stir	2:11	2:21
-O419	pitcher	0
-S55	contains	{watermelon lemonade}
-S173	on	[surface]
-O593	watermelon lemonade	0
-S29	contains	{watermelon,lemon juice,water}
-S81	in	[pitcher]
+O337	pitcher	0
+S23	contains	{watermelon juice,lemon juice,water,sugar}
+S81	on	[surface]
+O478	watermelon juice	0
+S23	contains	{watermelon}
+S115	sifted
+S65	in	[pitcher]
+M85	stir	2:11	2:21
+O337	pitcher	0
+S23	contains	{watermelon lemonade}
+S81	on	[surface]
+O479	watermelon lemonade	0
+S23	contains	{watermelon,lemon juice,water}
+S65	in	[pitcher]
 //
-O195	drinking glass	0
-S56	empty
-S23	clean
-S173	on	[surface]
-O53	bowl	1
-S29	contains	{ice}
-O282	ice	1
-S81	in	[bowl]
-M45	pick-and-place	2:23	2:26
-O195	drinking glass	0
-S29	contains	{ice}
-O282	ice	1
-S81	in	[cup]
+O152	drinking glass	0
+S41	empty
+S16	clean
+S81	on	[surface]
+O46	bowl	1
+S23	contains	{water ice}
+O476	water ice	1
+S65	in	[bowl]
+M50	pick-and-place	2:23	2:26
+O152	drinking glass	0
+S23	contains	{water ice}
+O476	water ice	1
+S65	in	[cup]
 //
-O195	drinking glass	0
-S29	contains	{ice}
-S173	on	[surface]
-O419	pitcher	1
-S55	contains	{watermelon lemonade}
-S173	on	[surface]
-O593	watermelon lemonade	1
-S29	contains	{watermelon,lemon juice,water}
-S81	in	[pitcher]
-M47	pour	2:27	2:38
-O195	drinking glass	0
-S55	contains	{ice,watermelon lemonade}
-O593	watermelon lemonade	1	!
-S29	contains	{watermelon juice,lemon juice,water,sugar}
-S81	in	[cup]
+O152	drinking glass	0
+S23	contains	{water ice}
+S81	on	[surface]
+O337	pitcher	1
+S23	contains	{watermelon lemonade}
+S81	on	[surface]
+O479	watermelon lemonade	1
+S23	contains	{watermelon,lemon juice,water}
+S65	in	[pitcher]
+M54	pour	2:27	2:38
+O152	drinking glass	0
+S23	contains	{water ice,watermelon lemonade}
+O479	watermelon lemonade	1	9
+S23	contains	{watermelon juice,lemon juice,water,sugar}
+S65	in	[cup]
 //

@@ -1,0 +1,255 @@
+# Source:	https://www.youtube.com/watch?v=KLePf2B1G-Q
+//
+O143	cutting board	0
+S23	contains	{bread}
+O48	bread	0
+S72	loaf
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	1:06	1:11
+O48	bread	0
+S117	sliced
+S81	on	[cutting board]
+//
+O46	bowl	0
+S41	empty
+O63	butter	1
+S127	stick
+S65	in	[packet]
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{butter}
+O63	butter	0
+S65	in	[bowl]
+//
+O46	bowl	1
+S23	contains	{butter}
+O272	microwave	0
+S79	off (ready)
+M62	put inside	Assumed	Assumed
+O46	bowl	1
+S23	contains	{butter}
+S65	in	[microwave]
+O272	microwave	0
+S79	off (ready)
+S23	contains	{bowl}
+//
+O272	microwave	0
+S79	off (ready)
+S23	contains	{bowl}
+M92	turn on	Assumed	Assumed
+O272	microwave	0
+S81	on
+S23	contains	{bowl}
+//
+O46	bowl	0
+S23	contains	{butter}
+S65	in	[microwave]
+O63	butter	0
+S65	in	[bowl]
+O272	microwave	0
+S81	on
+S23	contains	{bowl}
+M41	heat	Assumed	Assumed
+O63	butter	0
+S120	softened
+S65	in	[bowl]
+O272	microwave	0
+S78	off
+S23	contains	{bowl}
+//
+O272	microwave	0
+S78	off
+S23	contains	{bowl}
+O46	bowl	0
+S23	contains	{butter}
+S65	in	[microwave]
+M63	remove	Assumed	Assumed
+O272	microwave	0
+S78	off
+O46	bowl	0
+S23	contains	{butter}
+//
+O46	bowl	0
+S23	contains	{butter}
+O63	butter	0
+S120	softened
+S65	in	[bowl]
+O235	jar	0
+S83	opened
+S23	contains	{garlic}
+O192	garlic	1
+S75	minced
+S65	in	[jar]
+O416	spoon	1
+S16	clean
+O396	shaker	1
+S23	contains	{parsley}
+O317	parsley	1
+S40	dried
+S65	in	[shaker]
+M0	add*	1:45	2:06
+O46	bowl	0
+S23	contains	{butter,garlic,parsley}
+O192	garlic	1
+S75	minced
+S65	in	[bowl]
+O317	parsley	1
+S40	dried
+S65	in	[bowl]
+O416	spoon	1
+S38	dirty
+//
+O46	bowl	0
+S23	contains	{butter,parsley,garlic}
+O192	garlic	1
+S75	minced
+S65	in	[bowl]
+O317	parsley	1
+S40	dried
+S65	in	[bowl]
+O63	butter	1
+S120	softened
+S65	in	[bowl]
+O416	spoon	1
+S16	clean
+M46	mix*	2:07	2:10
+O46	bowl	0
+S23	contains	{garlic butter}
+O194	garlic butter	1
+S65	in	[bowl]
+O416	spoon	1
+S38	dirty
+//
+O48	bread	0
+S117	sliced
+S81	on	[cutting board]
+O46	bowl	0
+S23	contains	{garlic butter}
+O194	garlic butter	1
+S65	in	[bowl]
+O240	knife	1
+S16	clean
+M82	spread	2:22	2:26
+O48	bread	0
+S23	contains	{garlic butter}
+S81	on	[cutting board]
+O194	garlic butter	1
+S81	on	[bread]
+//
+O48	bread	0
+S23	contains	{garlic butter}
+S81	on	[cutting board]
+M1	attach	2:37	2:41
+O259	loaf	0
+S23	contains	{garlic butter}
+S81	on	[cutting board]
+//
+O47	box	1
+S23	contains	{aluminium foil}
+O1	aluminium foil	1
+S65	in	[box]
+M88	tear	Assumed	Assumed
+O1	aluminium foil	1
+S113	sheet
+//
+O259	loaf	0
+S23	contains	{garlic butter}
+S81	on	[cutting board]
+O1	aluminium foil	1
+S113	sheet
+M50	pick-and-place	Assumed	Assumed
+O259	loaf	0
+S23	contains	{garlic butter}
+S81	on	[aluminium foil]
+O1	aluminium foil	0
+S23	contains	{loaf}
+S81	on	[cutting board]
+//
+O259	loaf	0
+S23	contains	{garlic butter}
+S81	on	[aluminium foil]
+O1	aluminium foil	1
+S23	contains	{loaf}
+S81	on	[cutting board]
+M97	wrap	2:44	2:50
+O259	loaf	0
+S23	contains	{garlic butter}
+S143	wrapped	[aluminium foil]
+O1	aluminium foil	1
+S27	covering	{loaf}
+//
+O306	oven	0
+S81	on
+O259	loaf	1
+S23	contains	{garlic butter}
+S143	wrapped	[aluminium foil]
+M62	put inside	Assumed	Assumed
+O306	oven	0
+S81	on
+S23	contains	{loaf}
+O259	loaf	0
+S23	contains	{garlic butter}
+S143	wrapped	[aluminium foil]
+S65	in	[oven]
+//
+O306	oven	0
+S81	on
+S23	contains	{loaf}
+O259	loaf	0
+S23	contains	{garlic butter}
+S143	wrapped	[aluminium foil]
+S65	in	[oven]
+O1	aluminium foil	1
+S27	covering	{loaf}
+M2	bake	Assumed	Assumed
+O1	aluminium foil	1
+S27	covering	{garlic bread}
+O193	garlic bread	0
+S143	wrapped	[aluminium foil]
+S65	in	[oven]
+//
+O306	oven	0
+S81	on
+S23	contains	{loaf}
+M91	turn off	Assumed	Assumed
+O306	oven	0
+S78	off
+S23	contains	{loaf}
+//
+O306	oven	0
+S78	off
+S23	contains	{loaf}
+O193	garlic bread	1
+S143	wrapped	[aluminium foil]
+S65	in	[oven]
+M63	remove	Assumed	Assumed
+O193	garlic bread	1
+S143	wrapped	[aluminium foil]
+S81	on	[cutting board]
+O306	oven	0
+S78	off
+//
+O193	garlic bread	0
+S143	wrapped	[aluminium foil]
+S81	on	[cutting board]
+O1	aluminium foil	1
+S27	covering	{garlic bread}
+M94	unwrap	Assumed	Assumed
+O193	garlic bread	0
+S81	on	[aluminium foil]
+O1	aluminium foil	0
+S23	contains	{garlic bread}
+//
+O193	garlic bread	1
+S81	on	[aluminium foil]
+O344	plate	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains	{garlic bread}
+O193	garlic bread	1	0
+S23	contains	{butter,garlic,parsley,bread}
+S81	on	[plate]
+//

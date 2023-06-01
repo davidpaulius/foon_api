@@ -1,293 +1,293 @@
-O51	bowl	0
-S54	empty
-O197	egg	1
-S259	uncracked
-M14	crack	0:29	0:38
-O51	bowl	0
-S138	contains	{egg white and yolk}
-O201	egg white and yolk	1
-S84	in	[bowl]
+O46	bowl	0
+S41	empty
+O157	egg	1
+S134	uncracked
+M19	crack	0:29	0:38
+O46	bowl	0
+S23	contains	{egg white and yolk}
+O163	egg white and yolk	1
+S65	in	[bowl]
 //
-O51	bowl	0
-S138	contains	{egg white and yolk}
-O201	egg white and yolk	1
-S84	in	[bowl]
-O219	fork	1
-S23	clean
-M35	mix	0:39	0:52
-O51	bowl	0
-S142	contains	{egg white and yolk}
-O201	egg white and yolk	1
-S7	beaten
-S84	in	[bowl]
+O46	bowl	0
+S23	contains	{egg white and yolk}
+O163	egg white and yolk	1
+S65	in	[bowl]
+O182	fork	1
+S16	clean
+M46	mix	0:39	0:52
+O46	bowl	0
+S23	contains	{egg white and yolk}
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[bowl]
 //
-O144	cooking pan	0
-S75	heated
-S197	on	[stove]
-O66	butter	1
-S34	cubed
-M38	pick-and-place	0:57	1:00
-O144	cooking pan	0
-S138	contains	{butter}
-S197	on	[stove]
-O66	butter	1
-S34	cubed
-S114	in	[pan]
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+O63	butter	1
+S31	cubed
+M50	pick-and-place	0:57	1:00
+O116	cooking pan	0
+S23	contains	{butter}
+S81	on	[stove]
+O63	butter	1
+S31	cubed
+S65	in	[pan]
 //
-O144	cooking pan	0
-S138	contains	{butter}
-S197	on	[stove]
-O66	butter	1
-S34	cubed
-S114	in	[pan]
-O507	spoon	1
-S23	clean
-M62	spread	1:04	1:18
-O66	butter	1
-S158	melted
-S114	in	[pan]
-O144	cooking pan	0
-S69	greased	{butter}
-S197	on	[stove]
+O116	cooking pan	0
+S23	contains	{butter}
+S81	on	[stove]
+O63	butter	1
+S31	cubed
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M82	spread	1:04	1:18
+O63	butter	1
+S74	melted
+S65	in	[pan]
+O116	cooking pan	0
+S57	greased	{butter}
+S81	on	[stove]
 //
-O363	tomato	1
-S34	whole
-S34	on	[cutting board]
-O43	cutting board	0
-S34	contains	{tomato}
-O415	knife	1
-S34	clean
-M40	chop	Assumed	Assumed
-O363	tomato	1
-S34	diced
-S34	on	[cutting board]
+O448	tomato	1
+S141	whole
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{tomato}
+O240	knife	1
+S16	clean
+M10	chop	Assumed	Assumed
+O448	tomato	1
+S37	diced
+S81	on	[cutting board]
 //
-O43	cutting board	0
-S34	contains	{tomato}
-O363	tomato	1
-S34	diced
-S34	on	[cutting board]
-O43	plate	0
-S34	empty
-M10	scrape	Assumed	Assumed
-O43	plate	0
-S34	contains	{tomato}
-O363	tomato	1
-S34	diced
-S34	on	[plate]
+O143	cutting board	0
+S23	contains	{tomato}
+O448	tomato	1
+S37	diced
+S81	on	[cutting board]
+O344	plate	0
+S41	empty
+M71	scrape	Assumed	Assumed
+O344	plate	0
+S23	contains	{tomato}
+O448	tomato	1
+S37	diced
+S81	on	[plate]
 //
-O43	plate	0
-S34	contains	{tomato}
-O363	tomato	0
-S34	diced
-S34	on	[plate]
-O43	plate	1
-S34	contains	{onion}
-O365	onion	1
-S21	chopped
-S188	on	[plate]
-O43	plate	1
-S34	contains	{sweet pepper}
-O520	sweet pepper	1
-S21	chopped
-S188	on	[plate]
-M10	pour	Assumed	Assumed
-O415	plate	1
-S144	contains	{tomato,sweet pepper,onion}
+O344	plate	0
+S23	contains	{tomato}
+O448	tomato	0
+S37	diced
+S81	on	[plate]
+O344	plate	1
+S23	contains	{onion}
+O299	onion	1
+S14	chopped
+S81	on	[plate]
+O344	plate	1
+S23	contains	{sweet pepper}
+O431	sweet pepper	1
+S14	chopped
+S81	on	[plate]
+M54	pour	Assumed	Assumed
+O344	plate	1
+S23	contains	{tomato,sweet pepper,onion}
 //
-O144	cooking pan	0
-S69	greased	{butter}
-S197	on	[stove]
-O507	spoon	1
-S23	clean
-O415	plate	1
-S144	contains	{tomato,sweet pepper,onion}
-O365	onion	0
-S21	chopped
-S188	on	[plate]
-O520	sweet pepper	0
-S21	chopped
-S188	on	[plate]
-O537	tomato	0
-S44	diced
-S188	on	[plate]
-M40	pour	1:43	1:51
-O144	cooking pan	0
-S138	contains	{tomato,sweet pepper,onion}
-S197	on	[stove]
-O365	onion	0
-S21	chopped
-S114	in	[pan]
-O520	sweet pepper	0
-S21	chopped
-S114	in	[pan]
-O537	tomato	0
-S21	chopped
-S114	in	[pan]
-O415	plate	1
-S45	dirty
+O116	cooking pan	0
+S57	greased	{butter}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+O344	plate	1
+S23	contains	{tomato,sweet pepper,onion}
+O299	onion	0
+S14	chopped
+S81	on	[plate]
+O431	sweet pepper	0
+S14	chopped
+S81	on	[plate]
+O448	tomato	0
+S37	diced
+S81	on	[plate]
+M54	pour	1:43	1:51
+O116	cooking pan	0
+S23	contains	{tomato,sweet pepper,onion}
+S81	on	[stove]
+O299	onion	0
+S14	chopped
+S65	in	[pan]
+O431	sweet pepper	0
+S14	chopped
+S65	in	[pan]
+O448	tomato	0
+S14	chopped
+S65	in	[pan]
+O344	plate	1
+S38	dirty
 //
-O144	cooking pan	0
-S138	contains	{tomato,sweet pepper,onion}
-S197	on	[stove]
-O365	onion	1
-S21	chopped
-S114	in	[pan]
-O520	sweet pepper	1
-S21	chopped
-S114	in	[pan]
-O537	tomato	1
-S21	chopped
-S114	in	[pan]
-O507	spoon	1
-S23	clean
-M35	mix	1:52	2:33
-O144	cooking pan	0
-S142	contains	{tomato,sweet pepper,onion}
-S197	on	[stove]
-O365	onion	1
-S62	fried
-S114	in	[pan]
-O520	sweet pepper	1
-S62	fried
-S114	in	[pan]
-O537	tomato	1
-S62	fried
-S114	in	[pan]
+O116	cooking pan	0
+S23	contains	{tomato,sweet pepper,onion}
+S81	on	[stove]
+O299	onion	1
+S14	chopped
+S65	in	[pan]
+O431	sweet pepper	1
+S14	chopped
+S65	in	[pan]
+O448	tomato	1
+S14	chopped
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M46	mix	1:52	2:33
+O116	cooking pan	0
+S23	contains	{tomato,sweet pepper,onion}
+S81	on	[stove]
+O299	onion	1
+S50	fried
+S65	in	[pan]
+O431	sweet pepper	1
+S50	fried
+S65	in	[pan]
+O448	tomato	1
+S50	fried
+S65	in	[pan]
 //
-O144	cooking pan	0
-S142	contains	{tomato,sweet pepper,onion}
-S197	on	[stove]
-O477	shaker	1
-S138	contains	{salt}
-O459	salt	1
-S67	granulated
-S122	in	[shaker]
-M63	sprinkle	2:47:50	2:49:50
-O144	cooking pan	0
-S138	contains	{tomato,sweet pepper,onion,salt}
-S197	on	[stove]
-O459	salt	1
-S67	granulated
-S114	in	[pan]
+O116	cooking pan	0
+S23	contains	{tomato,sweet pepper,onion}
+S81	on	[stove]
+O396	shaker	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[shaker]
+M83	sprinkle	2:47:50	2:49:50
+O116	cooking pan	0
+S23	contains	{tomato,sweet pepper,onion,salt}
+S81	on	[stove]
+O376	salt	1
+S55	granulated
+S65	in	[pan]
 //
-O144	cooking pan	0
-S138	contains	{tomato,sweet pepper,onion,salt}
-S197	on	[stove]
-O477	shaker	1
-S138	contains	{black pepper}
-O38	black pepper	1
-S71	ground
-S122	in	[shaker]
-M63	sprinkle	2:51	2:56
-O144	cooking pan	0
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper}
-S197	on	[stove]
-O38	black pepper	1
-S71	ground
-S114	in	[pan]
+O116	cooking pan	0
+S23	contains	{tomato,sweet pepper,onion,salt}
+S81	on	[stove]
+O396	shaker	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[shaker]
+M83	sprinkle	2:51	2:56
+O116	cooking pan	0
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper}
+S81	on	[stove]
+O34	black pepper	1
+S58	ground
+S65	in	[pan]
 //
-O144	cooking pan	0
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper}
-S197	on	[stove]
-O507	spoon	1
-S23	clean
-M35	mix	2:57	3:0s7
-O144	cooking pan	0
-S142	contains	{vegetable mix}
-S197	on	[stove]
-O556	vegetable mix	1
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper}
-S114	in	[pan]
+O116	cooking pan	0
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+M46	mix	2:57	3:0s7
+O116	cooking pan	0
+S23	contains	{vegetable mix}
+S81	on	[stove]
+O467	vegetable mix	1
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper}
+S65	in	[pan]
 //
-O51	bowl	1
-S142	contains	{egg white and yolk}
-O201	egg white and yolk	1
-S7	beaten
-S84	in	[bowl]
-O144	cooking pan	0
-S142	contains	{vegetable mix}
-S197	on	[stove]
-M40	pour	3:17	3:24
-O144	cooking pan	0
-S138	contains	{vegetable mix,egg yolk and white}
-S197	on	[stove]
-O201	egg white and yolk	1
-S7	beaten
-S114	in	[pan]
-O51	bowl	1
-S45	dirty
+O46	bowl	1
+S23	contains	{egg white and yolk}
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[bowl]
+O116	cooking pan	0
+S23	contains	{vegetable mix}
+S81	on	[stove]
+M54	pour	3:17	3:24
+O116	cooking pan	0
+S23	contains	{vegetable mix,egg yolk and white}
+S81	on	[stove]
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[pan]
+O46	bowl	1
+S38	dirty
 //
-O144	cooking pan	0
-S138	contains	{vegetable mix,egg yolk and white}
-S197	on	[stove]
-O201	egg white and yolk	1
-S7	beaten
-S114	in	[pan]
-O556	vegetable mix	1
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper}
-S114	in	[pan]
-M10	cook	3:31	4:45
-O144	cooking pan	0
-S138	contains	{omelette}
-S197	on	[stove]
-O363	omelette	1
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper}
-S209	partly cooked
-S114	in	[pan]
+O116	cooking pan	0
+S23	contains	{vegetable mix,egg yolk and white}
+S81	on	[stove]
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[pan]
+O467	vegetable mix	1
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper}
+S65	in	[pan]
+M14	cook	3:31	4:45
+O116	cooking pan	0
+S23	contains	{omelette}
+S81	on	[stove]
+O297	omelette	1
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper}
+S86	partly cooked
+S65	in	[pan]
 //
-O144	cooking pan	0
-S138	contains	{omelette}
-S197	on	[stove]
-O363	omelette	1
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper}
-S209	partly cooked
-S114	in	[pan]
-O91	cheese	1
-S239	sliced
-M38	pick-and-place	4:49	4:54
-O91	cheese	1
-S239	sliced
-S177	on	[eggs]
-O363	omelette	1
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
-S209	partly cooked
-S114	in	[pan]
+O116	cooking pan	0
+S23	contains	{omelette}
+S81	on	[stove]
+O297	omelette	1
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper}
+S86	partly cooked
+S65	in	[pan]
+O78	cheese	1
+S117	sliced
+M50	pick-and-place	4:49	4:54
+O78	cheese	1
+S117	sliced
+S81	on	[egg]
+O297	omelette	1
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
+S86	partly cooked
+S65	in	[pan]
 //
-O144	cooking pan	0
-S138	contains	{omelette}
-S197	on	[stove]
-O363	omelette	1
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
-S209	partly cooked
-S114	in	[pan]
-O507	spoon	1
-S34	clean
-M26	fold	4:56	4:58
-O144	cooking pan	0
-S49	contains	{omelette}
-S197	on	[stove]
-O363	omelette	1
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
-S29	cooked
-S114	in	[pan]
+O116	cooking pan	0
+S23	contains	{omelette}
+S81	on	[stove]
+O297	omelette	1
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
+S86	partly cooked
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M34	fold	4:56	4:58
+O116	cooking pan	0
+S23	contains	{omelette}
+S81	on	[stove]
+O297	omelette	1
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
+S24	cooked
+S65	in	[pan]
 //
-O144	cooking pan	0
-S49	contains	{omelette}
-S197	on	[stove]
-O363	omelette	1
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
-S29	cooked
-S114	in	[pan]
-O415	plate	0
-S54	empty
-O552	turner	1
-S23	clean
-M38	pick-and-place	Assumed	Assumed
-O415	plate	0
-S49	contains	{omelette}
-O363	omelette	1	!
-S138	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
-S29	cooked
-S188	on	[plate]
+O116	cooking pan	0
+S23	contains	{omelette}
+S81	on	[stove]
+O297	omelette	1
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
+S24	cooked
+S65	in	[pan]
+O344	plate	0
+S41	empty
+O464	turner	1
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains	{omelette}
+O297	omelette	1	23
+S23	contains	{tomato,sweet pepper,onion,salt,black pepper,cheese}
+S24	cooked
+S81	on	[plate]
 //

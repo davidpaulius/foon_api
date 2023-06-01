@@ -1,395 +1,361 @@
-# Source:	http://foonets.com/foon_subgraphs/subgraphs/0041-italian_sausage.mp4
-# Source:	https://www.youtube.com/watch?v=_aPzkuPWuR0
+O143	cutting board	0
+S23	contains	{onion}
+O240	knife	1
+S16	clean
+O299	onion	0
+S91	peeled
+S81	on	[cutting board]
+M79	slice	0:33	0:36
+O299	onion	0
+S117	sliced
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{onion}
-O11	knife	1
-S51	clean
-O26	onion	0
-S34	whole
-S236	peeled
-S221	on	[cutting board]
-M5	slice	<0:33-0:36>
-O26	onion	0
-S50	sliced
-S221	on	[cutting board]
+O143	cutting board	0
+S23	contains	{sweet pepper}
+O240	knife	1
+S16	clean
+O431	sweet pepper	0
+S141	whole
+S81	on	[cutting board]
+M79	slice	0:39	0:46
+O431	sweet pepper	0
+S117	sliced
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{sweet pepper}
-O11	knife	1
-S51	clean
-O168	sweet pepper	0
-S323	whole
-S221	on	[cutting board]
-M8	slice	<0:39-0:46>
-O168	sweet pepper	0
-S50	julienned
-S221	on	[cutting board]
+O143	cutting board	0
+S23	contains	{sweet pepper}
+O431	sweet pepper	1
+S117	sliced
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S38	dirty
+O46	bowl	0
+S23	contains	{sweet pepper}
+O431	sweet pepper	1
+S117	sliced
+S65	in	[bowl]
 //
-O83	cutting board	0
-S188	contains	{sweet pepper}
-O168	sweet pepper	1
-S51	sliced
-S221	on	[cutting board]
-O2	bowl	0
-S98	empty
-M0	pick-and-place	<Assumed>
-O83	cutting board	0
-S188	dirty
-O2	bowl	0
-S182	contains	{sweet pepper}
-O168	sweet pepper	1
-S50	julienned
-S148	in	[bowl]
+O143	cutting board	0
+S23	contains	{garlic}
+O240	knife	1
+S16	clean
+O192	garlic	1
+S91	peeled
+S81	on	[cutting board]
+M10	chop	0:47	0:50
+O192	garlic	0
+S14	chopped
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{garlic}
-O11	knife	1
-S51	clean
-O30	garlic	1
-S236	peeled
-S43	clove
-S221	on	[cutting board]
-M5	mince	<0:47-0:50>
-O30	garlic	0
-S50	minced
-S221	on	[cutting board]
+O452	tongs	1
+S16	clean
+O116	cooking pan	0
+S62	heated
+S81	on	[stove]
+O382	sausage	1
+S133	uncooked
+S65	in	[packet]
+M50	pick-and-place	0:51	0:58
+O116	cooking pan	0
+S23	contains	{sausage}
+S81	on	[stove]
+O382	sausage	1
+S133	uncooked
+S65	in	[pan]
 //
-O43	packet	1
-S43	opened
-S43	contains	{sausage}
-O142	sausage	1
-S43	whole
-S236	raw
-S163	on	[plate]
-O13	plate	0
-S98	empty
-M0	pour	<Assumed>
-O13	plate	0
-S43	contains	{sausage}
-O142	sausage	1
-S43	whole
-S236	raw
-S163	on	[plate]
+O116	cooking pan	0
+S23	contains	{sausage}
+S81	on	[stove]
+O452	tongs	1
+S16	clean
+O382	sausage	1
+S133	uncooked
+S65	in	[pan]
+M32	flip	1:00	1:03
+O382	sausage	1
+S86	partly cooked
+S65	in	[pan]
 //
-O13	skillet	0
-S98	empty
-S43	hot
-S124	on	[stove]
-O41	tongs	1
-S51	clean
-O13	plate	0
-S43	contains	{sausage}
-O142	sausage	1
-S43	whole
-S236	raw
-S163	on	[plate]
-M0	pick-and-place	<0:51-0:58>
-O13	skillet	0
-S43	hot
-S182	contains	{sausage}
-S124	on	[stove]
-O142	sausage	1
-S43	whole
-S236	raw
-S164	in	[pan]
+O116	cooking pan	0
+S23	contains	{sausage}
+S81	on	[stove]
+O452	tongs	1
+S16	clean
+O382	sausage	1
+S86	partly cooked
+S65	in	[pan]
+O143	cutting board	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O116	cooking pan	0
+S107	seasoned
+S81	on	[stove]
+O143	cutting board	0
+S23	contains	{sausage}
+O382	sausage	1
+S86	partly cooked
+S81	on	[cutting board]
 //
-O13	skillet	0
-S43	hot
-S182	contains	{sausage}
-S124	on	[stove]
-O41	tongs	1
-S51	clean
-O142	sausage	1
-S236	uncooked
-S164	in	[pan]
-M11	turn over	<1:00-1:03>
-O142	sausage	1
-S43	whole
-S236	partly cooked
-S164	in	[pan]
+O143	cutting board	0
+S23	contains	{sausage}
+O382	sausage	0
+S86	partly cooked
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	1:04	1:10
+O382	sausage	0
+S14	chopped
+S86	partly cooked
+S81	on	[cutting board]
 //
-O13	skillet	0
-S43	hot
-S182	contains	{sausage}
-S164	on	[stove]
-O41	tongs	1
-S51	clean
-O142	sausage	1
-S43	whole
-S236	partly cooked
-S164	in	[pan]
-O83	cutting board	0
-S98	empty
-M0	pick-and-place	<Assumed>
-O13	skillet	0
-S43	hot
-S182	contains	{oil}
-S323	on	[stove]
-O83	cutting board	0
-S188	contains	{sausage}
-O142	sausage	1
-S43	whole
-S236	partly cooked
-S164	on	[cutting board]
+O116	cooking pan	0
+S107	seasoned
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{butter}
+O63	butter	1
+S31	cubed
+S65	in	[bowl]
+M54	pour	1:15	1:17
+O116	cooking pan	0
+S57	greased	{butter}
+S81	on	[stove]
+O63	butter	1
+S31	cubed
+S65	in	[pan]
 //
-O83	cutting board	0
-S188	contains	{sausage}
-O142	sausage	0
-S236	partly cooked
-S164	on	[cutting board]
-O11	knife	1
-S51	clean
-M8	cut	<1:04-1:10>
-O142	sausage	0
-S50	chopped
-S43	partly cooked
-S164	on	[cutting board]
+O116	cooking pan	0
+S57	greased	{butter}
+S81	on	[stove]
+O143	cutting board	1
+S23	contains	{onion}
+O416	spoon	1
+S16	clean
+O299	onion	1
+S117	sliced
+S81	on	[cutting board]
+M54	pour	1:19	1:25
+O116	cooking pan	0
+S23	contains	{onion}
+S81	on	[stove]
+O299	onion	1
+S117	sliced
+S65	in	[pan]
+O143	cutting board	1
+S38	dirty
 //
-O13	skillet	0
-S182	seasoned
-S323	on	[stove]
-O2	bowl	1
-S182	contains	{butter}
-O3	butter	1
-S236	cubed
-S148	in	[bowl]
-M4	pour	<1:15-1:17>
-O13	skillet	0
-S124	greased	{butter}
-S236	on	[stove]
-O3	butter	1
-S236	cubed
-S148	in	[pan]
+O116	cooking pan	0
+S23	contains	{onion}
+S81	on	[stove]
+O143	cutting board	1
+S23	contains	{garlic}
+O192	garlic	1
+S14	chopped
+S81	on	[cutting board]
+M54	pour	1:26	1:28
+O116	cooking pan	0
+S23	contains	{onion,garlic}
+S81	on	[stove]
+O143	cutting board	1
+S38	dirty
+O192	garlic	1
+S14	chopped
+S65	in	[pan]
 //
-O13	skillet	0
-S124	greased	{butter}
-S236	on	[stove]
-O83	cutting board	1
-S188	contains	{onion}
-O22	spoon	1
-S51	clean
-O26	onion	1
-S50	sliced
-S236	on	[cutting board]
-M4	pour	<1:19-1:25>
-O13	skillet	0
-S182	contains	{onion}
-S236	on	[stove]
-O26	onion	1
-S50	sliced
-S236	in	[pan]
-O83	cutting board	1
-S188	dirty
-//
-O13	skillet	0
-S182	contains	{onion}
-S236	on	[stove]
-O83	cutting board	1
-S188	contains	{garlic}
-O30	garlic	1
-S50	chopped
-S236	on	[cutting board]
-M4	pour	<1:26-1:28>
-O13	skillet	0
-S182	contains	{onion,garlic}
-S236	on	[stove]
-O83	cutting board	1
-S94	dirty
-O30	garlic	1
-S50	chopped
-S236	in	[pan]
-//
-O13	skillet	0
-S182	contains	{onion,garlic}
-S236	on	[stove]
-O22	spoon	1
-S51	clean
-O30	garlic	1
-S50	chopped
-S236	in	[pan]
-O30	onion	1
-S50	sliced
-S236	in	[pan]
-M6	cook and stir	<1:29-1:33>
-O13	skillet	0
-S185	contains	{onion,garlic}
-S236	on	[stove]
-O30	garlic	1
+O116	cooking pan	0
+S23	contains	{onion,garlic}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+O192	garlic	1
+S14	chopped
+S65	in	[pan]
+O299	onion	1
+S117	sliced
+S65	in	[pan]
+M16	cook and stir	1:29	1:33
+O116	cooking pan	0
+S23	contains	{onion,garlic}
+S81	on	[stove]
+O192	garlic	1
 S50	fried
-S236	in	[pan]
-O30	onion	1
+S65	in	[pan]
+O299	onion	1
 S50	fried
-S236	in	[pan]
+S65	in	[pan]
 //
-O13	skillet	0
-S185	contains	{onion,garlic}
-S236	on	[stove]
-O2	bowl	1
-S182	contains	{sweet pepper}
-O168	sweet pepper	1
-S43	sliced
-S148	in	[bowl]
-M4	pour	<1:34-1:42>
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper}
-S236	on	[stove]
-O168	sweet pepper	1
-S43	sliced
-S164	in	[pan]
-O2	bowl	1
-S94	dirty
+O116	cooking pan	0
+S23	contains	{onion,garlic}
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{sweet pepper}
+O431	sweet pepper	1
+S117	sliced
+S65	in	[bowl]
+M54	pour	1:34	1:42
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper}
+S81	on	[stove]
+O431	sweet pepper	1
+S117	sliced
+S65	in	[pan]
+O46	bowl	1
+S38	dirty
 //
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper}
-S236	on	[stove]
-O168	sweet pepper	1
-S43	sliced
-S164	in	[pan]
-O22	spoon	1
-S51	clean
-M6	stir	<1:42-1:45>
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper}
-S236	on	[stove]
-O168	sweet pepper	1
-S43	fried
-S164	in	[pan]
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper}
+S81	on	[stove]
+O431	sweet pepper	1
+S117	sliced
+S65	in	[pan]
+O416	spoon	1
+S16	clean
+M85	stir	1:42	1:45
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper}
+S81	on	[stove]
+O431	sweet pepper	1
+S50	fried
+S65	in	[pan]
 //
-O2	bowl	1
-S182	contains	{basil}
-O34	basil	1
-S43	dried
-S148	in	[bowl]
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper}
-S236	on	[stove]
-M2	sprinkle	<1:47-1:50>
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil}
-S236	on	[stove]
-O34	basil	1
-S43	dried
-S164	in	[pan]
+O46	bowl	1
+S23	contains	{basil}
+O18	basil	1
+S40	dried
+S65	in	[bowl]
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper}
+S81	on	[stove]
+M83	sprinkle	1:47	1:50
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil}
+S81	on	[stove]
+O18	basil	1
+S40	dried
+S65	in	[pan]
 //
-O2	bowl	1
-S182	contains	{oregano}
-O35	oregano	1
-S43	dried
-S148	in	[bowl]
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil}
-S236	on	[stove]
-M2	sprinkle	<1:47-1:50>
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano}
-S236	on	[stove]
-O35	oregano	1
-S43	dried
-S164	in	[pan]
+O46	bowl	1
+S23	contains	{oregano}
+O304	oregano	1
+S40	dried
+S65	in	[bowl]
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil}
+S81	on	[stove]
+M83	sprinkle	1:47	1:50
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano}
+S81	on	[stove]
+O304	oregano	1
+S40	dried
+S65	in	[pan]
 //
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano}
-S236	on	[stove]
-O22	spoon	1
-S51	clean
-M6	stir	<1:53:50-1:56>
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano}
-S236	on	[stove]
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+M85	stir	1:53:50	1:56
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano}
+S81	on	[stove]
 //
-O190	measuring cup	0
-S43	empty
-O34	bottle	1
-S182	contains	{white wine}
-O146	white wine	1
-S157	in	[bottle]
-M0	pour	<Assumed>
-O190	measuring cup	0
-S182	contains	{white wine}
-O146	white wine	1
-S157	in	[measuring cup]
+O270	measuring cup	0
+S41	empty
+O45	bottle	1
+S23	contains	{white wine}
+O489	white wine	1
+S65	in	[bottle]
+M54	pour	Assumed	Assumed
+O270	measuring cup	0
+S23	contains	{white wine}
+O489	white wine	1
+S65	in	[measuring cup]
 //
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano}
-S236	on	[stove]
-O190	measuring cup	1
-S182	contains	{white wine}
-O146	white wine	1
-S157	in	[measuring cup]
-M4	pour	<1:59-2:02>
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano,white wine}
-S236	on	[stove]
-O146	white wine	1
-S164	in	[pan]
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano}
+S81	on	[stove]
+O270	measuring cup	1
+S23	contains	{white wine}
+O489	white wine	1
+S65	in	[measuring cup]
+M54	pour	1:59	2:02
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano,white wine}
+S81	on	[stove]
+O489	white wine	1
+S65	in	[pan]
 //
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano,white wine}
-S236	on	[stove]
-O22	spoon	1
-S51	clean
-M6	stir	<2:03-2:09>
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano,white wine}
-S236	on	[stove]
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano,white wine}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+M85	stir	2:03	2:09
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano,white wine}
+S81	on	[stove]
 //
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano,white wine}
-S236	on	[stove]
-O83	cutting board	1
-S188	contains	{sausage}
-O142	sausage	1
-S43	partly cooked
-S50	chopped
-S43	on	[cutting board]
-O22	spoon	1
-S51	clean
-M18	scrape	<2:10-2:14>
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
-S236	on	[stove]
-O142	sausage	1
-S43	chopped
-S43	partly cooked
-S164	in	[pan]
-O83	cutting board	1
-S188	dirty
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano,white wine}
+S81	on	[stove]
+O143	cutting board	1
+S23	contains	{sausage}
+O382	sausage	1
+S86	partly cooked
+S14	chopped
+S81	on	[cutting board]
+O416	spoon	1
+S16	clean
+M71	scrape	2:10	2:14
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
+S81	on	[stove]
+O382	sausage	1
+S14	chopped
+S86	partly cooked
+S65	in	[pan]
+O143	cutting board	1
+S38	dirty
 //
-O13	skillet	0
-S185	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
-S236	on	[stove]
-O41	spoon	1
-S51	clean
-O142	sausage	1
-S43	chopped
-S43	partly cooked
-S164	in	[pan]
-M6	cook and stir	<2:17-2:19>
-O13	skillet	0
-S284	contains	{italian sausage}
-S236	on	[stove]
-O142	italian sausage	1
-S43	cooked
-S185	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
-S164	in	[pan]
+O116	cooking pan	0
+S23	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+O382	sausage	1
+S14	chopped
+S86	partly cooked
+S65	in	[pan]
+M16	cook and stir	2:17	2:19
+O116	cooking pan	0
+S23	contains	{italian sausage}
+S81	on	[stove]
+O232	italian sausage	1
+S24	cooked
+S23	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
+S65	in	[pan]
 //
-O13	skillet	0
-S284	contains	{italian sausage}
-S236	on	[stove]
-O142	italian sausage	1
-S43	cooked
-S185	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
-S164	in	[pan]
-O15	plate	0
-S98	empty
-O22	spoon	1
-S51	clean
-M3	scoop and pour	<Assumed>
-O15	plate	0
-S284	contains	{italian sausage}
-O142	italian sausage	1	!
-S43	cooked
-S185	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
-S164	on	[plate]
+O116	cooking pan	0
+S23	contains	{italian sausage}
+S81	on	[stove]
+O232	italian sausage	1
+S24	cooked
+S23	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
+S65	in	[pan]
+O344	plate	0
+S41	empty
+O416	spoon	1
+S16	clean
+M70	scoop and pour	Assumed	Assumed
+O344	plate	0
+S23	contains	{italian sausage}
+O232	italian sausage	1	29
+S24	cooked
+S23	contains	{onion,garlic,sweet pepper,basil,oregano,white wine,sausage}
+S81	on	[plate]
 //

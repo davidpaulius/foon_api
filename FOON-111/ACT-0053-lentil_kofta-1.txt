@@ -1,168 +1,168 @@
-O2	pitcher	1
-S2	contains	{water}
-O1	water	1
-S2	in	[pitcher]
-O2	measuring cup	0
-S1	empty
-M2	pour	0:42	0:46
-O2	measuring cup	0
-S2	contains	{water}
-O1	water	1
-S2	in	[measuring cup]
+O337	pitcher	1
+S23	contains	{water}
+O475	water	1
+S65	in	[pitcher]
+O270	measuring cup	0
+S41	empty
+M54	pour	0:42	0:46
+O270	measuring cup	0
+S23	contains	{water}
+O475	water	1
+S65	in	[measuring cup]
 //
-O2	measuring cup	1
-S2	contains	{water}
-O1	water	1
-S2	in	[measuring cup]
-O2	pot	0
-S1	empty
-M2	pour	0:47	0:48
-O2	pot	0
-S2	contains	{water}
-O1	water	1
-S2	in	[pot]
+O270	measuring cup	1
+S23	contains	{water}
+O475	water	1
+S65	in	[measuring cup]
+O346	pot	0
+S41	empty
+M54	pour	0:47	0:48
+O346	pot	0
+S23	contains	{water}
+O475	water	1
+S65	in	[pot]
 //
-O2	pot	1
-S2	contains	{water}
-O2	stove	0
-S2	on
-M0	pick-and-place	Assumed	Assumed
-O2	pot	1
-S2	contains	{water}
-S43	on	[stove]
-O2	stove	0
-S43	on
-S2	with	[pot]
+O346	pot	1
+S23	contains	{water}
+O425	stove	0
+S81	on
+M50	pick-and-place	Assumed	Assumed
+O346	pot	1
+S23	contains	{water}
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pot]
 //
-O2	pot	0
-S2	contains	{water}
-S43	on	[stove]
-O2	stove	0
-S43	on
-S2	with	[pot]
-O1	water	1
-S2	in	[pot]
-M0	heat	Assumed	Assumed
-O2	pot	0
-S2	contains	{water}
-S43	on	[stove]
-O1	water	1
-S43	boiling
-S2	in	[pot]
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pot]
+O475	water	1
+S65	in	[pot]
+M41	heat	Assumed	Assumed
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+O475	water	1
+S8	boiling
+S65	in	[pot]
 //
-O2	pot	0
-S2	contains	{water}
-S43	on	[stove]
-O2	bowl	1
-S2	contains	{lentil}
-O1	lentil	1
-S43	uncooked
-S2	in	[bowl]
-M3	pour	0:54	0:55
-O2	pot	0
-S2	contains	{water,lentil}
-S43	on	[stove]
-O1	lentil	1
-S43	uncooked
-S2	in	[pot]
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{lentil}
+O251	lentil	1
+S133	uncooked
+S65	in	[bowl]
+M54	pour	0:54	0:55
+O346	pot	0
+S23	contains	{water,lentil}
+S81	on	[stove]
+O251	lentil	1
+S133	uncooked
+S65	in	[pot]
 //
-O2	pot	0
-S2	contains	{water,lentil}
-S43	on	[stove]
-O22	spoon	1
-S58	clean
-M3	stir	0:57	1:02
-O2	pot	0
-S2	contains	{water,lentil}
-S43	on	[stove]
+O346	pot	0
+S23	contains	{water,lentil}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+M85	stir	0:57	1:02
+O346	pot	0
+S23	contains	{water,lentil}
+S81	on	[stove]
 //
-O2	pot	0
-S2	contains	{water,lentil}
-S43	on	[stove]
-O2	pot lid	1
-S2	clean
-M3	pick-and-place	1:03	1:05
-O2	pot	0
-S43	covered
-S2	contains	{water,lentil}
-S43	on	[stove]
-O2	pot lid	1
-S2	on	[pot]
+O346	pot	0
+S23	contains	{water,lentil}
+S81	on	[stove]
+O347	pot lid	1
+S16	clean
+M50	pick-and-place	1:03	1:05
+O346	pot	0
+S26	covered
+S23	contains	{water,lentil}
+S81	on	[stove]
+O347	pot lid	1
+S81	on	[pot]
 //
-O2	pot	0
-S43	covered
-S2	contains	{water,lentil}
-S43	on	[stove]
-O2	stove	0
-S43	on
-S2	with	[pot]
-O1	lentil	0
-S43	uncooked
-S2	in	[pot]
-M2	cook	1:07	1:14
-O2	pot	0
-S43	covered
-S2	contains	{lentil mix}
-S43	on	[stove]
-O1	lentil mix	1
-S43	cooked
-S2	in	[pot]
+O346	pot	0
+S26	covered
+S23	contains	{water,lentil}
+S81	on	[stove]
+O425	stove	0
+S81	on
+S142	with	[pot]
+O251	lentil	0
+S133	uncooked
+S65	in	[pot]
+M14	cook	1:07	1:14
+O346	pot	0
+S26	covered
+S23	contains	{lentil mix}
+S81	on	[stove]
+O253	lentil mix	1
+S24	cooked
+S65	in	[pot]
 //
-O2	pot	0
-S43	covered
-S2	contains	{lentil mix}
-S43	on	[stove]
-O2	pot lid	1
-S2	on	[pot]
-M3	remove	1:14	1:116
-O2	pot	0
-S2	contains	{lentil mix}
-S43	on	[stove]
-O2	pot lid	1
-S2	dirty
+O346	pot	0
+S26	covered
+S23	contains	{lentil mix}
+S81	on	[stove]
+O347	pot lid	1
+S81	on	[pot]
+M63	remove	1:14	1:116
+O346	pot	0
+S23	contains	{lentil mix}
+S81	on	[stove]
+O347	pot lid	1
+S38	dirty
 //
-O2	pot	0
-S2	contains	{lentil mix}
-S43	on	[stove]
-O2	turner	1
-S2	clean
-M2	stir	1:21	1:27
-O2	pot	0
-S2	contains	{lentil mix}
-S43	on	[stove]
+O346	pot	0
+S23	contains	{lentil mix}
+S81	on	[stove]
+O464	turner	1
+S16	clean
+M85	stir	1:21	1:27
+O346	pot	0
+S23	contains	{lentil mix}
+S81	on	[stove]
 //
-O2	pot	0
-S2	contains	{lentil mix}
-S43	on	[stove]
-O2	bowl	1
-S2	contains	{bulgur}
-O1	bulgur	1
-S43	uncooked
-S2	in	[bowl]
-M3	pour	1:28	1:30
-O2	pot	0
-S2	contains	{lentil mix,bulgur}
-S43	on	[stove]
-O1	bulgur	1
-S43	uncooked
-S2	in	[bowl]
+O346	pot	0
+S23	contains	{lentil mix}
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{bulgur}
+O62	bulgur	1
+S133	uncooked
+S65	in	[bowl]
+M54	pour	1:28	1:30
+O346	pot	0
+S23	contains	{lentil mix,bulgur}
+S81	on	[stove]
+O62	bulgur	1
+S133	uncooked
+S65	in	[bowl]
 //
-O2	pot	0
-S2	contains	{lentil mix,bulgur}
-S43	on	[stove]
-O1	bulgur	1
-S43	uncooked
-S2	in	[bowl]
-O1	lentil mix	1
-S43	cooked
-S2	in	[pot]
-O2	turner	1
-S2	clean
-M2	stir	1:33	1:37
-O2	pot	0
-S2	contains	{kofta mix}
-S43	on	[stove]
-O3	kofta mix	1
-S43	contains	{lentil,bulgur}
-S43	in	[pot]
+O346	pot	0
+S23	contains	{lentil mix,bulgur}
+S81	on	[stove]
+O62	bulgur	1
+S133	uncooked
+S65	in	[bowl]
+O253	lentil mix	1
+S24	cooked
+S65	in	[pot]
+O464	turner	1
+S16	clean
+M85	stir	1:33	1:37
+O346	pot	0
+S23	contains	{kofta mix}
+S81	on	[stove]
+O242	kofta mix	1	11
+S23	contains	{lentil,bulgur}
+S65	in	[pot]
 //

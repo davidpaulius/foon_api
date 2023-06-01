@@ -1,313 +1,313 @@
-O2	bowl	1
-S195	contains	{sugar}
-O0	sugar	1
-S349	granulated
-S160	in	[bowl]
-O2	bowl	0
-S195	empty
-M0	pour	Assumed	Assumed
-O2	bowl	0
-S195	contains	{sugar}
+O46	bowl	1
+S23	contains	{sugar}
+O428	sugar	1
+S55	granulated
+S65	in	[bowl]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{sugar}
 //
-O268	hand mixer	1
-S168	off	
-M0	turn on	Assumed	Assumed
-O268	hand mixer	1
-S168	on	
+O225	hand mixer	1
+S78	off
+M92	turn on	Assumed	Assumed
+O225	hand mixer	1
+S81	on
 //
-O2	bowl	0
-S195	contains	{sugar}
-O3	butter	1
-S349	stick
-S160	in	[packet]
-M0	pick-and-place	Assumed	Assumed
-O2	bowl	0
-S195	contains	{sugar,butter}
-O3	butter	1
-S349	stick
-S160	in	[bowl]
+O46	bowl	0
+S23	contains	{sugar}
+O63	butter	1
+S127	stick
+S65	in	[packet]
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{sugar,butter}
+O63	butter	1
+S127	stick
+S65	in	[bowl]
 //
-O2	bowl	0
-S195	contains	{sugar,butter}
-O0	sugar	1
-S349	granulated
-S160	in	[bowl]
-O3	butter	1
-S349	stick
-S160	in	[bowl]
-O65	hand mixer	0
-S58	on
-M28	blend	0:16	0:34
-O2	bowl	0
-S198	contains	{sugar,butter}
+O46	bowl	0
+S23	contains	{sugar,butter}
+O428	sugar	1
+S55	granulated
+S65	in	[bowl]
+O63	butter	1
+S127	stick
+S65	in	[bowl]
+O225	hand mixer	0
+S81	on
+M4	blend	0:16	0:34
+O46	bowl	0
+S23	contains	{sugar,butter}
 //
-O2	bowl	0
-S198	contains	{sugar,butter}
-O28	egg	1
-S90	uncracked
-M4	crack	0:35	0:35
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk}
-S349	in	[mixer]
-O28	egg white and yolk	1
-S160	in	[bowl]
+O46	bowl	0
+S23	contains	{sugar,butter}
+O157	egg	1
+S134	uncracked
+M19	crack	0:35	0:35
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk}
+S65	in	[mixer]
+O163	egg white and yolk	1
+S65	in	[bowl]
 //
-O65	hand mixer	0
-S58	on
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk}
-O28	egg white and yolk	1
-S160	in	[bowl]
-M28	blend	0:39	0:47
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk}
-O28	egg white and yolk	1
-S349	beaten
-S160	in	[bowl]
+O225	hand mixer	0
+S81	on
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk}
+O163	egg white and yolk	1
+S65	in	[bowl]
+M4	blend	0:39	0:47
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk}
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[bowl]
 //
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk}
-O2	bowl	1
-S195	contains	{sour cream}
-O187	sour cream	1
-S160	in	[bowl]
-O37	spatula	1
-S58	clean
-M18	scrape	0:48	0:50
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk,sour cream}
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk}
+O46	bowl	1
+S23	contains	{sour cream}
+O408	sour cream	1
+S65	in	[bowl]
+O412	spatula	1
+S16	clean
+M71	scrape	0:48	0:50
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream}
 //
 O237	jug	1
-S195	contains	{milk}
-O55	milk	1
-S100	in	[jug]
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk,sour cream}
-M4	pour	0:50	0:51
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk,sour cream,milk}
-O55	milk	1
-S160	in	[bowl]
+S23	contains	{milk}
+O273	milk	1
+S65	in	[jug]
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream}
+M54	pour	0:50	0:51
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk}
+O273	milk	1
+S65	in	[bowl]
 //
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk,sour cream,milk}
-O91	whisk	1
-S58	clean
-M101	beat	0:52	0:54
-O2	bowl	0
-S198	contains	{sugar,butter,egg white and yolk,sour cream,milk}
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk}
+O484	whisk	1
+S16	clean
+M3	beat	0:52	0:54
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk}
 //
-O190	measuring cup	1
-S195	contains	{lemon extract}
-O1002	lemon extract	1
-S169	in	[measuring cup]
-O2	bowl	0
-S198	contains	{sugar,butter,egg white and yolk,sour cream,milk}
-M4	pour	0:56	0:58
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract}
-O1003	lemon extract	1
-S160	in	[bowl]
+O270	measuring cup	1
+S23	contains	{lemon extract}
+O245	lemon extract	1
+S65	in	[measuring cup]
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk}
+M54	pour	0:56	0:58
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract}
+O245	lemon extract	1
+S65	in	[bowl]
 //
-O2	bowl	0
-S195	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract}
-O91	whisk	1
-S58	clean
-M1001	beat	0:59	1:02
-O2	bowl	0
-S198	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract}
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract}
+O484	whisk	1
+S16	clean
+M3	beat	0:59	1:02
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract}
 //
-O2	bowl	0
-S195	contains	{flour}
-O2	bowl	0
-S195	contains	{baking powder}
-O116	baking powder	1
-S349	powder
-S160	in	[bowl]
-M4	pour	1:02	1:04
-O2	bowl	0
-S195	contains	{flour,baking powder}
-O2	bowl	0
-S102	dirty
+O46	bowl	0
+S23	contains	{flour}
+O46	bowl	0
+S23	contains	{baking powder}
+O10	baking powder	1
+S96	powder
+S65	in	[bowl]
+M54	pour	1:02	1:04
+O46	bowl	0
+S23	contains	{flour,baking powder}
+O46	bowl	0
+S38	dirty
 //
-O2	bowl	1
-S195	contains	{baking soda}
-O2	bowl	0
-S195	contains	{flour,baking powder}
-O116	baking soda	1
-S349	powder
-S160	in	[bowl]
-M4	pour	1:05	1:06
-O2	bowl	0
-S195	contains	{flour,baking powder,baking soda}
-O2	bowl	0
-S102	dirty
+O46	bowl	1
+S23	contains	{baking soda}
+O46	bowl	0
+S23	contains	{flour,baking powder}
+O11	baking soda	1
+S96	powder
+S65	in	[bowl]
+M54	pour	1:05	1:06
+O46	bowl	0
+S23	contains	{flour,baking powder,baking soda}
+O46	bowl	0
+S38	dirty
 //
-O2	bowl	1
-S195	contains	{salt}
-O2	bowl	0
-S195	contains	{flour,baking powder,baking soda}
-O18	salt	1
-S349	granulated
-S160	in	[bowl]
-M4	pour	1:09	1:10
-O2	bowl	0
-S195	contains	{flour,baking powder,baking soda,salt}
-O2	bowl	0
-S102	dirty
+O46	bowl	1
+S23	contains	{salt}
+O46	bowl	0
+S23	contains	{flour,baking powder,baking soda}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+M54	pour	1:09	1:10
+O46	bowl	0
+S23	contains	{flour,baking powder,baking soda,salt}
+O46	bowl	0
+S38	dirty
 //
-O2	bowl	0
-S195	contains	{flour,baking powder,baking soda,salt}
-O91	whisk	1
-S58	clean
-O18	salt	1
-S349	granulated
-S160	in	[bowl]
-O116	baking soda	1
-S349	powder
-S160	in	[bowl]
-O116	baking powder	1
-S349	powder
-S160	in	[bowl]
-O116	flour	1
-S349	powder
-S160	in	[bowl]
-M1	mix	1:11	1:21
-O2	bowl	0
-S195	contains	{flour mixture}
-O116	flour mixture	1
-S195	contains	{flour,baking powder,baking soda,salt}
-S160	in	[bowl]
+O46	bowl	0
+S23	contains	{flour,baking powder,baking soda,salt}
+O484	whisk	1
+S16	clean
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O11	baking soda	1
+S96	powder
+S65	in	[bowl]
+O10	baking powder	1
+S96	powder
+S65	in	[bowl]
+O176	flour	1
+S96	powder
+S65	in	[bowl]
+M46	mix	1:11	1:21
+O46	bowl	0
+S23	contains	{flour mixture}
+O178	flour mixture	1
+S23	contains	{flour,baking powder,baking soda,salt}
+S65	in	[bowl]
 //
-O2	bowl	0
-S198	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract}
-O2	bowl	1
-S195	contains	{flour mixture}
-O116	flour mixture	1
-S195	contains	{flour,baking powder,baking soda,salt}
-S160	in	[bowl]
-M4	pour	1:21	1:23
-O2	bowl	0
-S198	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour mixture}
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract}
+O46	bowl	1
+S23	contains	{flour mixture}
+O178	flour mixture	1
+S23	contains	{flour,baking powder,baking soda,salt}
+S65	in	[bowl]
+M54	pour	1:21	1:23
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour mixture}
 //
-O116	flour mixture	1
-S195	contains	{flour,baking powder,baking soda,salt}
-S160	in	[bowl]
-O37	spatula	1
-S58	clean
-O2	bowl	0
-S198	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour mixture}
-M1	mix	1:23	1:28
-O2	bowl	0
-S198	contains	{muffin batter}
-O138	muffin batter	0
-S349	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt}
-S185	in	[bowl]
+O178	flour mixture	1
+S23	contains	{flour,baking powder,baking soda,salt}
+S65	in	[bowl]
+O412	spatula	1
+S16	clean
+O46	bowl	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour mixture}
+M46	mix	1:23	1:28
+O46	bowl	0
+S23	contains	{muffin batter}
+O283	muffin batter	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt}
+S65	in	[bowl]
 //
-O2	bowl	1
-S198	contains	{muffin batter}
-O2	bowl	0
-S198	contains	{flour mixture}
-M4	pour	1:28	1:30
-O2	bowl	0
-S195	contains	{muffin batter,flour mixture}
-O138	muffin batter	0
-S349	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt}
-S185	in	[bowl]
-O2	bowl	1
-S349	dirty
+O46	bowl	1
+S23	contains	{muffin batter}
+O46	bowl	0
+S23	contains	{flour mixture}
+M54	pour	1:28	1:30
+O46	bowl	0
+S23	contains	{muffin batter,flour mixture}
+O283	muffin batter	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt}
+S65	in	[bowl]
+O46	bowl	1
+S38	dirty
 //
-O2	bowl	1
-S195	contains	{muffin batter,flour mixture}
-O1004	blueberry	1
-S349	washed
-S160	in	[bowl]
-O2	bowl	0
-S195	contains	{muffin batter}
-M4	pour	1:31	1:33
-O2	bowl	0
-S195	contains	{muffin batter,blueberry}
+O46	bowl	1
+S23	contains	{muffin batter,flour mixture}
+O43	blueberry	1
+S137	washed
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{muffin batter}
+M54	pour	1:31	1:33
+O46	bowl	0
+S23	contains	{muffin batter,blueberry}
 //
-O37	spatula	1
-S58	clean
-O1004	blueberry	1
-S349	washed
-S160	in	[bowl]
-O2	bowl	0
-S195	contains	{muffin batter,blueberry}
-O138	muffin batter	0
-S349	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt}
-S185	in	[bowl]
-M1	mix	1:35	1:46
-O138	muffin batter	0
-S349	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
-S185	in	[bowl]
+O412	spatula	1
+S16	clean
+O43	blueberry	1
+S137	washed
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{muffin batter,blueberry}
+O283	muffin batter	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt}
+S65	in	[bowl]
+M46	mix	1:35	1:46
+O283	muffin batter	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
+S65	in	[bowl]
 //
-O135	muffin pan	0
-S107	empty
-O1005	muffin cup	1
-S1006	in	[packet]
-M0	pick-and-place	Assumed	Assumed
-O135	muffin pan	0
-S1007	with	[cup]
-O1005	muffin cup	0
-S176	in	[pan]
+O285	muffin pan	0
+S41	empty
+O284	muffin cup	1
+S65	in	[packet]
+M50	pick-and-place	Assumed	Assumed
+O285	muffin pan	0
+S142	with	[cup]
+O284	muffin cup	0
+S65	in	[pan]
 //
-O368	scoop	1
-S58	clean
-O138	muffin batter	0
-S349	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
-S185	in	[bowl]
-O135	muffin pan	0
-S1007	with	[cup]
-M4	pour	1:47	2:00
-O1005	muffin pan	0
-S195	contains	{muffin batter}
-O138	muffin batter	1
-S349	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
-S185	in	[muff]
-O368	scoop	0
-S102	dirty
+O388	scoop	1
+S16	clean
+O283	muffin batter	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
+S65	in	[bowl]
+O285	muffin pan	0
+S142	with	[cup]
+M54	pour	1:47	2:00
+O285	muffin pan	0
+S23	contains	{muffin batter}
+O283	muffin batter	1
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
+S65	in	[muff]
+O388	scoop	0
+S38	dirty
 //
-O393	muffin pan	1
-S195	contains	{muffin batter}
-O14	oven	0
-S151	on
-M0	put inside	Assumed	Assumed
-O393	muffin pan	1
-S195	contains	{muffin batter}
-S354	in	[oven]
-O14	oven	0
-S151	on
-S354	with	[pan]
+O285	muffin pan	1
+S23	contains	{muffin batter}
+O306	oven	0
+S81	on
+M62	put inside	Assumed	Assumed
+O285	muffin pan	1
+S23	contains	{muffin batter}
+S65	in	[oven]
+O306	oven	0
+S81	on
+S142	with	[pan]
 //
-O135	muffin pan	0
-S195	contains	{muffin batter}
-S349	in	[oven]
-O138	muffin batter	0
-S349	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
-S185	in	[muff]
-O14	oven	0
-S151	on
-S349	with	[pan]
-M39	bake	Assumed	Assumed
-O135	muffin pan	0
-S195	contains	{blueberry muffin}
-S349	in	[oven]
-O130	blueberry muffin	0	!
-S1009	baked
-S349	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
-S349	in	[muff]
+O285	muffin pan	0
+S23	contains	{muffin batter}
+S65	in	[oven]
+O283	muffin batter	0
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
+S65	in	[muff]
+O306	oven	0
+S81	on
+S142	with	[pan]
+M2	bake	Assumed	Assumed
+O285	muffin pan	0
+S23	contains	{blueberry muffin}
+S65	in	[oven]
+O44	blueberry muffin	0	5
+S1	baked
+S23	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
+S65	in	[muff]
 //
-O135	muffin pan	1
-S195	contains	{blueberry muffin}
-S349	in	[oven]
-O14	oven	0
-S151	on
-S354	with	[pan]
-M0	remove	Assumed	Assumed
-O14	oven	0
-S151	off
-O135	muffin pan	1
-S195	contains	{blueberry muffin}
+O285	muffin pan	1
+S23	contains	{blueberry muffin}
+S65	in	[oven]
+O306	oven	0
+S81	on
+S142	with	[pan]
+M63	remove	Assumed	Assumed
+O306	oven	0
+S78	off
+O285	muffin pan	1
+S23	contains	{blueberry muffin}
 //
