@@ -1,4 +1,4 @@
-# foon_api: Code for Processing FOON! #
+# FOON_API: Code for Processing FOON! #
 
 This repository contains code for processing [FOON](https://www.foonets.com) (short for the **functional object-oriented network**) graphs. FOON was developed by the [USF Robot Perception and Action Lab](https://rpal.cse.usf.edu).
 
