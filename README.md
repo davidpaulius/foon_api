@@ -3,6 +3,7 @@
 This code repository is for the [USF Robot Perception and Action Lab](https://rpal.cse.usf.edu)'s [FOON](https://www.foonets.com) project (short for the **functional object-oriented network**).
 
 Here, you will find several scripts that are needed to operate on FOON files, which are mainly subgraph files as text files (.TXT) or .JSON files. More recently, FOON graphs can also be saved or loaded as .PKL files.
+Examples of subgraphs can be found in the ``FOON-111/`` directory found in this repository.
 
 ## License
 
