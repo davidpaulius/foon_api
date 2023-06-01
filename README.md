@@ -1,9 +1,11 @@
-# foon_api: General-Purpose API for FOON graphs! #
+# foon_api: Code for Processing FOON! #
 
-This code repository is for the [USF Robot Perception and Action Lab](https://rpal.cse.usf.edu)'s [FOON](https://www.foonets.com) project (short for the **functional object-oriented network**).
+This repository contains code for processing [FOON](https://www.foonets.com) (short for the **functional object-oriented network**) graphs. FOON was developed by the [USF Robot Perception and Action Lab](https://rpal.cse.usf.edu).
 
-Here, you will find several scripts that are needed to operate on FOON files, which are mainly subgraph files as text files (.TXT) or .JSON files. More recently, FOON graphs can also be saved or loaded as .PKL files.
+Here, you will find several scripts that are needed to operate on FOON files, which are mainly subgraph files as text files (.TXT), .JSON, or, more recently, .PKL files.
 Examples of subgraphs can be found in the ``FOON-111/`` directory found in this repository.
+
+Subgraphs can be visualized using the [FOON_view](https://davidpaulius.github.io/foon_view/) tool.
 
 ## License
 
@@ -32,7 +34,7 @@ Examples of subgraphs can be found in the ``FOON-111/`` directory found in this 
 
 There are two main files needed for general usage of FOON subgraph files, which are:
 
-1. **FOON_graph_analyzer.py** - main script containing all operations on FOON files, including but not limited to reading files, merging subgraphs, task tree retrieval, and network centrality analysis
+1. **FOON_graph_analyser.py** - main script containing all operations on FOON files, including but not limited to reading files, merging subgraphs, task tree retrieval, and network centrality analysis
 2. **FOON_classes.py** - file containing all class definitions used
 
 The code is written with an object-oriented approach in mind, since a FOON is comprised of nodes that have overlapping features and structures that can take advantage of features and member functions / variables to perform.
@@ -41,7 +43,7 @@ See below for more details!
 
 ---
 
-## FOON_graph_analyzer.py : The Main Script for Processing FOON files
+## FOON_graph_analyser.py : Main Script for Processing FOON files
 
 ### Overview
 
