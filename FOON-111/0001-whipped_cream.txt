@@ -1,125 +1,104 @@
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0001-whipped_cream.mp4
 # Source:	https://www.youtube.com/watch?v=jWvoUR_s1Vs
 //
-O65	mixer	0
-S122	off (ready)
-S324	with	[mixing bowl]
-O2	mixing bowl	0
-S325	empty
-S3	attached to	[mixer]
-M3	turn on	1:10	1:11
-O65	mixer	0
-S122	on
-S324	with	[mixing bowl]
+O278	mixing bowl	1
+S41	empty
+O277	mixer	0
+S79	off (ready)
+M1	attach	Assumed	Assumed
+O277	mixer	0
+S79	off (ready)
+S142	with	[mixing bowl]
+O278	mixing bowl	1
+S41	empty
+S0	attached to	[mixer]
 //
-O328	carton	1
-S141	contains	{heavy cream}
-O156	heavy cream	1
-S43	creamy
-S1	in	[carton]
-O328	measuring cup	0
-S43	empty
-M0	pour	Assumed	Assumed
-O328	measuring cup	0
-S141	contains	{heavy cream}
-O156	heavy cream	1
-S43	creamy
-S1	in	[measuring cup]
+O277	mixer	0
+S79	off (ready)
+S142	with	[mixing bowl]
+O278	mixing bowl	0
+S41	empty
+S0	attached to	[mixer]
+M92	turn on	1:10	1:11
+O277	mixer	0
+S81	on
+S142	with	[mixing bowl]
 //
-O65	mixer	0
-S122	on
-S324	with	[mixing bowl]
-O2	mixing bowl	0
-S325	empty
-S3	attached to	[mixer]
-O64	measuring cup	1
-S182	contains	{heavy cream}
-O66	heavy cream	1
-S43	creamy
-S1	in	[measuring cup]
-M4	pour	1:15	1:17
-O2	mixing bowl	0
-S3	contains	{heavy cream}
-S3	attached to	[mixer]
-O66	heavy cream	1
-S43	creamy
-S1	in	[measuring cup]
+O73	carton	1
+S23	contains	{heavy cream}
+O227	heavy cream	1
+S65	in	[carton]
+O270	measuring cup	0
+S41	empty
+M54	pour	Assumed	Assumed
+O270	measuring cup	0
+S23	contains	{heavy cream}
+O227	heavy cream	1
+S65	in	[measuring cup]
 //
-O65	mixer	0
-S122	on
-S324	with	[mixing bowl]
-O2	mixing bowl	0
-S3	contains	{heavy cream}
-S3	attached to	[mixer]
-O22	spoon	1
-S182	contains	{refined sugar}
-O0	refined sugar	1
-S122	granulated
-S1	in	[spoon]
-M40	pour	1:21	1:31
-O2	mixing bowl	0
-S3	contains	{heavy cream,refined sugar}
-S3	attached to	[mixer]
-O0	refined sugar	1
-S122	granulated
-S1	in	[mixing bowl]
+O277	mixer	0
+S81	on
+S142	with	[mixing bowl]
+O278	mixing bowl	0
+S41	empty
+S0	attached to	[mixer]
+O270	measuring cup	1
+S23	contains	{heavy cream}
+O227	heavy cream	1
+S65	in	[measuring cup]
+O416	spoon	1
+S23	contains	{refined sugar}
+O360	refined sugar	1
+S55	granulated
+S65	in	[spoon]
+M54	pour*	1:15	1:31
+O278	mixing bowl	0
+S23	contains	{heavy cream,refined sugar}
+S0	attached to	[mixer]
 //
-O65	mixer	0
-S122	on
-S324	with	[mixing bowl]
-O2	mixing bowl	0
-S3	contains	{heavy cream,refined sugar}
-S3	attached to	[mixer]
-O66	heavy cream	1
-S43	creamy
-S1	in	[mixing bowl]
-O0	refined sugar	1
-S122	granulated
-S1	in	[mixing bowl]
-M1	mix	1:32	2:31
-O2	mixing bowl	0
-S3	contains	{whipped cream}
-S3	attached to	[mixer]
-O2	whipped cream	0
-S43	creamy
-S43	whipped
-S1	in	[mixing bowl]
+O277	mixer	0
+S81	on
+S142	with	[mixing bowl]
+O278	mixing bowl	0
+S23	contains	{heavy cream,refined sugar}
+S0	attached to	[mixer]
+M46	mix	1:32	2:31
+O278	mixing bowl	0
+S23	contains	{whipped cream}
+S0	attached to	[mixer]
+O483	whipped cream	0
+S65	in	[mixing bowl]
 //
-O65	mixer	0
-S122	on
-S324	with	[mixing bowl]
-M3	turn off	Assumed	Assumed
-O65	mixer	0
-S122	off
-S324	with	[mixing bowl]
+O277	mixer	0
+S81	on
+S142	with	[mixing bowl]
+M91	turn off	Assumed	Assumed
+O277	mixer	0
+S78	off
+S142	with	[mixing bowl]
 //
-O65	mixer	0
-S122	off
-S324	with	[mixing bowl]
-O2	mixing bowl	1
-S3	contains	{whipped cream}
-S3	attached to	[mixer]
-M3	detach	2:59	3:01
-O65	mixer	0
-S122	off
-O2	mixing bowl	1
-S3	contains	{whipped cream}
+O277	mixer	0
+S78	off
+S142	with	[mixing bowl]
+O278	mixing bowl	1
+S23	contains	{whipped cream}
+S0	attached to	[mixer]
+M25	detach	2:59	3:01
+O277	mixer	0
+S78	off
+O278	mixing bowl	1
+S23	contains	{whipped cream}
 //
-O2	mixing bowl	0
-S3	contains	{whipped cream}
-O2	whipped cream	1
-S43	creamy
-S43	whipped
-S1	in	[mixing bowl]
-O37	spatula	1
-S51	clean
-O2	bowl	0
-S98	empty
-M18	scrape	3:04	3:10
-O2	bowl	1
-S3	contains	{whipped cream}
-O2	whipped cream	0	!
-S43	creamy
-S43	whipped
-S1	in	[bowl]
+O278	mixing bowl	0
+S23	contains	{whipped cream}
+O483	whipped cream	1
+S65	in	[mixing bowl]
+O412	spatula	1
+O46	bowl	0
+S41	empty
+M71	scrape	3:04	3:10
+O46	bowl	0
+S23	contains	{whipped cream}
+O483	whipped cream	1	8
+S65	in	[bowl]
 //

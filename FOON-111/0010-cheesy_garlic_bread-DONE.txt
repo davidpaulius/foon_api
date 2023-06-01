@@ -1,0 +1,429 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0010-cheesy_garlic_bread.mp4
+# Source:	https://www.youtube.com/watch?v=lXgMX8wteNI
+//
+O306	oven	0
+S79	off (ready)
+M92	turn on	Assumed	Assumed
+O306	oven	0
+S81	on
+//
+O192	garlic	1
+S10	bulb
+M86	take apart	Assumed	Assumed
+O192	garlic	1
+S18	clove
+//
+O192	garlic	1
+S18	clove
+M49	peel	Assumed	Assumed
+O192	garlic	1
+S91	peeled
+//
+O143	cutting board	0
+S16	clean
+O192	garlic	1
+S91	peeled
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{garlic}
+O192	garlic	1
+S91	peeled
+S81	on	[cutting board]
+//
+O179	food processor	0
+S79	off (ready)
+O180	food processor bowl	1
+S41	empty
+M1	attach	Assumed	Assumed
+O179	food processor	0
+S142	with	[food processor bowl]
+O180	food processor bowl	1
+S41	empty
+S0	attached to	[food processor]
+//
+O46	bowl	1
+S23	contains	{parsley}
+O317	parsley	1
+S14	chopped
+S65	in	[bowl]
+O192	garlic	1
+S91	peeled
+S81	on	[cutting board]
+O46	bowl	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bowl]
+O180	food processor bowl	1
+S41	empty
+S0	attached to	[food processor]
+M0	add*	1:19	1:30
+O180	food processor bowl	1
+S23	contains	{garlic,parsley,olive oil}
+S0	attached to	[food processor]
+O192	garlic	0
+S91	peeled
+S65	in	[food processor bowl]
+O296	olive oil	1
+S65	in	[food processor bowl]
+O317	parsley	1
+S14	chopped
+S65	in	[food processor bowl]
+O46	bowl	1
+S38	dirty
+//
+O180	food processor bowl	1
+S23	contains	{garlic,parsley,olive oil}
+S0	attached to	[food processor]
+O181	food processor lid	1
+S16	clean
+M1	attach	Assumed	Assumed
+O180	food processor bowl	1
+S26	covered	[food processor lid]
+S23	contains	{garlic,parsley,olive oil}
+S0	attached to	[food processor]
+O181	food processor lid	1
+S81	on	[food processor bowl]
+//
+O180	food processor bowl	1
+S26	covered	[food processor lid]
+S23	contains	{garlic,parsley,olive oil}
+S0	attached to	[food processor]
+O192	garlic	0
+S91	peeled
+S65	in	[food processor bowl]
+O296	olive oil	1
+S65	in	[food processor bowl]
+O317	parsley	1
+S14	chopped
+S65	in	[food processor bowl]
+O179	food processor	0
+S142	with	[food processor bowl]
+M4	blend*	1:30	1:34
+O179	food processor	0
+S78	off
+S142	with	[food processor bowl]
+O180	food processor bowl	1
+S26	covered	[food processor lid]
+S23	contains	{garlic butter}
+S0	attached to	[food processor]
+O194	garlic butter	1
+S65	in	[food processor bowl]
+//
+O179	food processor	0
+S78	off
+S142	with	[food processor bowl]
+O180	food processor bowl	1
+S26	covered	[food processor lid]
+S23	contains	{garlic butter}
+S0	attached to	[food processor]
+M25	detach	Assumed	Assumed
+O179	food processor	0
+S78	off
+O180	food processor bowl	1
+S26	covered	[food processor lid]
+S23	contains	{garlic butter}
+//
+O181	food processor lid	1
+S81	on	[food processor bowl]
+O180	food processor bowl	0
+S26	covered	[food processor lid]
+S23	contains	{garlic butter}
+M25	detach	Assumed	Assumed
+O180	food processor bowl	0
+S23	contains	{garlic butter}
+O181	food processor lid	1
+S38	dirty
+//
+O48	bread	1
+S72	loaf
+O143	cutting board	0
+S16	clean
+M50	pick-and-place	1:37	1:38
+O143	cutting board	0
+S23	contains	{bread}
+O48	bread	1
+S72	loaf
+S81	on	[cutting board]
+//
+O48	bread	0
+S72	loaf
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M79	slice	1:38	1:44
+O48	bread	0
+S60	halved
+S81	on	[cutting board]
+//
+O180	food processor bowl	1
+S23	contains	{garlic butter}
+O46	bowl	0
+S41	empty
+O194	garlic butter	1
+S65	in	[food processor bowl]
+O416	spoon	1
+S16	clean
+M72	scrape and pour	Assumed	Assumed
+O180	food processor bowl	1
+S38	dirty
+O416	spoon	1
+S38	dirty
+O46	bowl	0
+S23	contains	{garlic butter}
+O194	garlic butter	1
+S65	in	[food processor bowl]
+//
+O48	bread	0
+S60	halved
+S81	on	[cutting board]
+O46	bowl	0
+S23	contains	{garlic butter}
+O194	garlic butter	0
+S65	in	[food processor bowl]
+O416	spoon	1
+S16	clean
+M82	spread	1:46	1:51
+O48	bread	0
+S23	contains	{garlic butter}
+S81	on	[cutting board]
+O194	garlic butter	0
+S81	on	[bread]
+O416	spoon	1
+S38	dirty
+//
+O48	bread	0
+S23	contains	{garlic butter}
+S81	on	[cutting board]
+O46	bowl	0
+S23	contains	{mozzarella}
+O280	mozzarella	1
+S56	grated
+S65	in	[bowl]
+M83	sprinkle	1:54	2:03
+O48	bread	0
+S23	contains	{garlic butter,mozzarella}
+S81	on	[cutting board]
+O280	mozzarella	1
+S56	grated
+S81	on	[bread]
+//
+O47	box	1
+S23	contains	{aluminium foil}
+O1	aluminium foil	1
+S65	in	[box]
+M88	tear	2:05	2:06
+O1	aluminium foil	1
+S113	sheet
+//
+O1	aluminium foil	1
+S113	sheet
+O12	baking tray	0
+S41	empty
+M51	place	2:06	2:10
+O1	aluminium foil	0
+S113	sheet
+S81	on	[baking tray]
+O12	baking tray	0
+S142	with	[aluminium foil]
+//
+O12	baking tray	0
+S142	with	[aluminium foil]
+O48	bread	1
+S23	contains	{garlic butter,mozzarella}
+S81	on	[cutting board]
+M50	pick-and-place	2:10	2:14
+O143	cutting board	0
+S38	dirty
+O12	baking tray	0
+S23	contains	{bread}
+O48	bread	1
+S23	contains	{garlic butter,mozzarella}
+S81	on	[baking tray]
+//
+O48	bread	1
+S23	contains	{garlic butter,mozzarella}
+S81	on	[baking tray]
+O1	aluminium foil	1
+S113	sheet
+S81	on	[baking tray]
+M97	wrap	2:17	2:21
+O1	aluminium foil	1
+S27	covering	[bread]
+S81	on	[baking tray]
+O48	bread	1
+S23	contains	{garlic butter,mozzarella}
+S26	covered	[aluminium foil]
+S81	on	[baking tray]
+//
+O12	baking tray	1
+S23	contains	{bread}
+O48	bread	1
+S23	contains	{garlic butter,mozzarella}
+S26	covered	[aluminium foil]
+S81	on	[baking tray]
+O306	oven	0
+S81	on
+M62	put inside	Assumed	Assumed
+O306	oven	0
+S23	contains	{baking tray}
+S81	on
+O12	baking tray	1
+S23	contains	{bread}
+S65	in	[oven]
+//
+O48	bread	0
+S23	contains	{garlic butter,mozzarella}
+S26	covered	[aluminium foil]
+S81	on	[baking tray]
+O306	oven	0
+S23	contains	{baking tray}
+S81	on
+O12	baking tray	1
+S23	contains	{bread}
+S65	in	[oven]
+M2	bake	Assumed	Assumed
+O12	baking tray	1
+S23	contains	{garlic bread}
+S65	in	[oven]
+O193	garlic bread	1
+S23	contains	{garlic butter,mozzarella}
+S1	baked
+S143	wrapped
+S81	on	[baking tray]
+//
+O12	baking tray	1
+S23	contains	{garlic bread}
+S65	in	[oven]
+O193	garlic bread	1
+S1	baked
+S23	contains	{garlic butter,mozzarella}
+S143	wrapped
+S81	on	[baking tray]
+O306	oven	0
+S81	on
+S23	contains	{baking tray}
+M63	remove	Assumed	Assumed
+O12	baking tray	1
+S23	contains	{garlic bread}
+O306	oven	0
+S81	on
+//
+O306	oven	0
+S81	on
+M91	turn off	Assumed	Assumed
+O306	oven	0
+S78	off
+//
+O12	baking tray	1
+S23	contains	{garlic bread}
+O193	garlic bread	1
+S23	contains	{garlic butter,mozzarella}
+S1	baked
+S143	wrapped
+S81	on	[baking tray]
+O240	knife	1
+S16	clean
+M94	unwrap	2:31	2:38
+O193	garlic bread	1
+S1	baked
+S23	contains	{garlic butter,mozzarella}
+S81	on	[baking tray]
+//
+O193	garlic bread	0
+S1	baked
+S23	contains	{garlic butter,mozzarella}
+S81	on	[baking tray]
+O316	parmesan	1
+S138	wedge
+O203	grater	0
+S16	clean
+M39	grate	2:39	2:51
+O203	grater	0
+S38	dirty
+O316	parmesan	1
+S56	grated
+S81	on	[bread]
+O193	garlic bread	0
+S23	contains	{garlic butter,mozzarella,parmesan}
+S81	on	[baking tray]
+//
+O12	baking tray	1
+S23	contains	{garlic bread}
+O193	garlic bread	0
+S23	contains	{garlic butter,mozzarella,parmesan}
+S81	on	[baking tray]
+O306	oven	0
+S81	on
+M62	put inside	Assumed	Assumed
+O306	oven	0
+S81	on
+S23	contains	{baking tray}
+O12	baking tray	1
+S23	contains	{garlic bread}
+S65	in	[oven]
+//
+O306	oven	0
+S81	on
+S23	contains	{baking tray}
+O12	baking tray	0
+S23	contains	{garlic bread}
+S65	in	[oven]
+O193	garlic bread	0
+S23	contains	{garlic butter,mozzarella,parmesan}
+S81	on	[baking tray]
+M2	bake	Assumed	Assumed
+O193	garlic bread	0
+S1	baked
+S23	contains	{garlic butter,mozzarella,parmesan}
+S81	on	[baking tray]
+//
+O193	garlic bread	0
+S1	baked
+S23	contains	{garlic butter,mozzarella,parmesan}
+S81	on	[baking tray]
+O306	oven	0
+S81	on
+S23	contains	{baking tray}
+O12	baking tray	1
+S23	contains	{garlic bread}
+S65	in	[oven]
+M63	remove	Assumed	Assumed
+O12	baking tray	1
+S23	contains	{garlic bread}
+O306	oven	0
+S81	on
+//
+O12	baking tray	0
+S23	contains	{garlic bread}
+O193	garlic bread	0
+S1	baked
+S23	contains	{garlic butter,mozzarella,parmesan}
+S81	on	[baking tray]
+O143	cutting board	0
+S16	clean
+M50	pick-and-place	2:55	2:58
+O143	cutting board	0
+S23	contains	{bread}
+O193	garlic bread	0
+S1	baked
+S23	contains	{garlic butter,mozzarella,parmesan}
+S81	on	[cutting board]
+O12	baking tray	0
+S38	dirty
+//
+O193	garlic bread	0
+S1	baked
+S23	contains	{garlic butter,mozzarella,parmesan}
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M79	slice	2:58	3:02
+O240	knife	1
+S38	dirty
+O48	bread	0
+O193	garlic bread	0	0
+S1	baked
+S117	sliced
+S23	contains	{garlic butter,mozzarella,parmesan}
+S81	on	[cutting board]
+//
