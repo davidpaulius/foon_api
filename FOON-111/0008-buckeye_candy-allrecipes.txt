@@ -1,0 +1,479 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0008-buckeye_candy-allrecipes.mp4 
+# Source:	https://www.youtube.com/watch?v=ej8EFvrOuQE
+//
+O2	bowl	0
+S98	empty
+O32	jar	0
+S234	contains	{peanut butter}
+O145	peanut butter	1
+S43	creamy
+S151	in	[jar]
+O43	knife	1
+S43	clean
+M0	scoop	Assumed	Assumed
+O2	bowl	0
+S182	contains	{peanut butter}
+O145	peanut butter	0
+S43	creamy
+S148	in	[bowl]
+//
+O2	mixing bowl	0
+S98	empty
+O2	bowl	0
+S182	contains	{peanut butter}
+O145	peanut butter	0
+S43	creamy
+S148	in	[bowl]
+O2	spatula	1
+S43	clean
+M0	pour and scrape	Assumed	Assumed
+O2	mixing bowl	0
+S182	contains	{peanut butter}
+O145	peanut butter	1
+S43	creamy
+S148	in	[mixing bowl]
+O2	bowl	1
+S182	empty
+S43	dirty
+//
+O2	mixing bowl	0
+S182	contains	{peanut butter}
+O32	packet	1
+S43	contains	{butter}
+O3	butter	1
+S234	stick
+S43	unmelted
+S163	in	[packet]
+M0	pour	0:30	0:32
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter}
+O3	butter	1
+S234	stick
+S43	unmelted
+S163	in	[mixing bowl]
+O32	packet	1
+S182	empty
+S43	dirty
+//
+O32	bottle	1
+S30	contains	{vanilla extract}
+O4	vanilla extract	1
+S43	liquid
+S147	in	[bottle]
+O3	spoon	0
+S3	clean
+M0	pour	Assumed	Assumed
+O32	spoon	1
+S30	contains	{vanilla extract}
+O4	vanilla extract	1
+S43	liquid
+S147	in	[spoon]
+//
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter}
+O32	spoon	1
+S30	contains	{vanilla extract}
+O4	vanilla extract	1
+S334	liquid
+S147	in	[spoon]
+M0	pour	0:34	0:35
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract}
+O3	vanilla extract	1
+S43	liquid
+S148	in	[mixing bowl]
+O32	spoon	1
+S30	dirty
+//
+O65	hand mixer	1
+S51	off (ready)
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract}
+M4	pick-and-place	0:36	0:37
+O65	hand mixer	0
+S51	off (ready)
+S43	in	[mixing bowl]
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract}
+S4	with	[hand mixer]
+//
+O65	hand mixer	1
+S51	off (ready)
+S43	in	[mixing bowl]
+M0	turn on	0:37	0:38
+O65	hand mixer	1
+S51	on
+S43	in	[mixing bowl]
+//
+O65	hand mixer	1
+S51	on
+S43	in	[mixing bowl]
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract}
+S30	with	[hand mixer]
+O3	peanut butter	0
+S43	creamy
+S43	in	[mixing bowl]
+O3	butter	0
+S4	unmelted
+S234	stick
+S43	in	[mixing bowl]
+O3	vanilla extract	0
+S4	liquid
+S43	in	[mixing bowl]
+M1	blend	0:38	0:46
+O65	hand mixer	1
+S51	off
+S43	in	[mixing bowl]
+O3	mixture	0
+S43	mixed
+S3	creamy
+S182	contains	{peanut butter,butter,vanilla extract}
+S148	in	[mixing bowl]
+//
+O3	packet	1
+S43	contains	{powdered sugar}
+O0	powdered sugar	1
+S43	powder
+S152	in	[packet]
+O43	measuring cup	0
+S43	empty
+M4	pour	Assumed	Assumed
+O43	measuring cup	0
+S43	contains	{powdered sugar}
+O0	powdered sugar	1
+S43	powder
+S152	in	[measuring cup]
+//
+O2	measuring cup	1
+S48	contains	{powdered sugar}
+O0	powdered sugar	1
+S43	powder
+S152	in	[measuring cup]
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract}
+M4	pour	0:49	0:55
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+O0	powdered sugar	1
+S43	powder
+S152	in	[mixing bowl]
+//
+O65	hand mixer	1
+S51	off (ready)
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+M4	pick-and-place	Assumed	Assumed
+O65	hand mixer	0
+S51	off (ready)
+S43	in	[mixing bowl]
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+S4	with	[hand mixer]
+//
+O65	hand mixer	1
+S51	on
+S51	in	[mixing bowl]
+O2	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+O0	powdered sugar	1
+S43	powder
+S152	in	[mixing bowl]
+O3	mixture	0
+S43	mixed
+S3	creamy
+S182	contains	{peanut butter,butter,vanilla extract}
+S148	in	[mixing bowl]
+M1	blend	0:58	1:09
+O3	mixture	0
+S43	mixed
+S3	lumpy
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+S148	in	[mixing bowl]
+//
+O32	box	1
+S43	contains	{parchment paper}
+O367	parchment paper	1
+S43	sheet
+S212	in	[box]
+O69	baking tray	0
+S98	empty
+M23	place	Assumed	Assumed
+M0	pick-and-place	0:59	1:04
+O69	baking tray	0
+S43	empty
+S234	with	[parchment paper]
+O367	parchment paper	1
+S212	sheet
+S229	on	[baking tray]
+//
+O3	mixing bowl	0
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+O3	mixture	1
+S43	mixed
+S3	lumpy
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+S148	in	[mixing bowl]
+M0	roll and shape	1:05	1:09
+O145	buckeye candy	1
+S246	rolled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+//
+O69	baking tray	0
+S43	empty
+S234	with	[parchment paper]
+O145	buckeye candy	1
+S246	rolled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+M23	place	1:11	1:13
+O69	baking tray	0
+S246	contains	{buckeye candy}
+O145	buckeye candy	1
+S246	rolled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+S43	on	[baking tray]
+//
+O86	toothpick	1
+S43	clean
+O145	buckeye candy	0
+S246	rolled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+S43	on	[baking tray]
+M44	insert	1:28	1:32
+O86	toothpick	0
+S43	clean
+S160	in	[buckeye candy]
+O145	buckeye candy	1
+S246	rolled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+S43	with	[toothpick]
+S43	on	[baking tray]
+//
+O2	bowl	0
+S98	empty
+O2	packet	1
+S30	contains	{chocolate chip}
+O10	chocolate chip	1
+S43	pieces
+S48	in	[packet]
+M0	pour	Assumed	Assumed
+O2	bowl	0
+S182	contains	{chocolate chip}
+O10	chocolate chip	1
+S43	pieces
+S148	in	[bowl]
+//
+O45	pot	1
+S182	empty
+O23	stove	0
+S43	off (ready)
+M0	pick-and-place	Assumed	Assumed
+O45	pot	1
+S182	empty
+S32	on	[stove]
+O23	stove	0
+S43	off (ready)
+S43	with	[pot]
+//
+O45	pot	0
+S182	empty
+S32	on	[stove]
+O45	measuring cup	1
+S182	contains	{water}
+O23	water	1
+S43	liquid
+S43	in	[measuring cup]
+M4	pour	Assumed	Assumed
+O45	pot	0
+S182	contains	{water}
+S32	on	[stove]
+O23	water	1
+S43	liquid
+S43	in	[pot]
+O45	measuring cup	1
+S182	dirty
+S43	empty
+//
+O23	stove	0
+S43	off
+S43	with	[pot]
+M0	turn on	Assumed	Assumed
+O23	stove	0
+S43	on
+S43	with	[pot]
+//
+O45	pot	0
+S182	contains	{water}
+S32	on	[stove]
+O23	stove	0
+S43	on
+S43	with	[pot]
+O23	water	1
+S43	liquid
+S43	in	[pot]
+M43	boil	Assumed	Assumed
+O45	pot	0
+S182	contains	{water}
+S43	hot
+S32	on	[stove]
+O23	water	1
+S43	liquid
+S43	boiling
+S43	in	[pot]
+//
+O45	pot	0
+S182	contains	{water}
+S43	hot
+S32	on	[stove]
+O2	double boiler	1
+S182	empty
+M43	pick-and-place	1:37	1:39
+O45	pot	0
+S182	contains	{water}
+S43	with	[double boiler]
+S43	hot
+S32	on	[stove]
+O2	double boiler	1
+S182	empty
+S182	in	[pot]
+//
+O45	pot	0
+S182	contains	{water}
+S43	with	[double boiler]
+S43	hot
+S32	on	[stove]
+O2	double boiler	1
+S182	empty
+S182	in	[pot]
+O2	bowl	0
+S182	contains	{chocolate chip}
+O10	chocolate chip	1
+S43	pieces
+S148	in	[bowl]
+M43	pour	1:41	1:45
+O2	double boiler	1
+S182	contains	{chocolate chip}
+S182	in	[pot]
+O10	chocolate chip	1
+S43	pieces
+S148	in	[double boiler]
+//
+O45	pot	0
+S182	contains	{water}
+S43	with	[double boiler]
+S43	hot
+S32	on	[stove]
+O2	double boiler	1
+S182	contains	{chocolate chip}
+S182	in	[pot]
+O10	chocolate chip	1
+S43	pieces
+S148	in	[double boiler]
+O43	spoon	1
+S43	clean
+M25	stir and melt	1:47	1:56
+O2	double boiler	1
+S182	contains	{chocolate}
+S182	in	[pot]
+O10	chocolate chip	1
+S43	melted
+S43	thick liquid
+S148	in	[double boiler]
+O10	chocolate	1
+S43	melted
+S43	thick liquid
+S148	in	[double boiler]
+//
+O2	double boiler	1
+S182	contains	{chocolate}
+S182	in	[pot]
+O45	pot	0
+S182	contains	{water}
+S43	with	[double boiler]
+S43	hot
+S32	on	[stove]
+M0	remove	Assumed	Assumed
+O45	pot	0
+S182	contains	{water}
+S43	hot
+S32	on	[stove]
+O2	double boiler	1
+S182	contains	{chocolate}
+//
+O2	double boiler	1
+S182	contains	{chocolate}
+O10	chocolate	1
+S43	melted
+S43	thick liquid
+S148	in	[double boiler]
+O3	bowl	0
+S43	empty
+M0	pour	Assumed	Assumed
+O3	bowl	0
+S182	contains	{chocolate}
+O10	chocolate	1
+S43	melted
+S43	thick liquid
+S148	in	[bowl]
+O2	double boiler	1
+S43	empty
+S43	dirty
+//
+O145	buckeye candy	1
+S246	rolled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar}
+S43	with	[toothpick]
+S43	on	[baking tray]
+O2	bowl	0
+S182	contains	{chocolate}
+O10	chocolate	0
+S43	melted
+S43	thick liquid
+S146	in	[bowl]
+M26	dip	2:05	2:10
+O145	buckeye candy	1
+S246	rolled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar,chocolate}
+S43	with	[toothpick]
+S43	on	[baking tray]
+O10	chocolate	0
+S43	melted
+S43	thick liquid
+S43	on	[buckeye candy]
+//
+O3	baking tray	1
+S43	contains	{buckeye candy}
+O145	buckeye candy	0
+S246	rolled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar,chocolate}
+S43	with	[toothpick]
+S43	on	[baking tray]
+O4	refrigerator	1
+S43	on
+M0	chill	Assumed	Assumed
+O145	buckeye candy	0
+S246	rolled
+S43	chilled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar,chocolate}
+S43	with	[toothpick]
+S43	on	[baking tray]
+//
+O69	baking tray	0
+S246	contains	{buckeye candy}
+O145	buckeye candy	0
+S246	rolled
+S43	chilled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar,chocolate}
+S43	with	[toothpick]
+S43	on	[baking tray]
+O86	toothpick	0
+S43	clean
+S160	in	[buckeye candy]
+M4	remove	Assumed	Assumed
+O145	buckeye candy	0	!
+S246	rolled
+S182	contains	{peanut butter,butter,vanilla extract,powdered sugar,chocolate}
+S43	on	[baking tray]
+O86	toothpick	0
+S160	dirty
+//

@@ -1,0 +1,335 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0007-carrot_salad.mp4
+# Source:	https://www.youtube.com/watch?v=b_0tupeh72w
+//
+O21	carrot	0
+S13	whole
+S43	unpeeled
+O22	peeler	1
+S4	clean
+M5	peel	Assumed	Assumed
+O21	carrot	0
+S13	whole
+S10	peeled
+//
+O2	bowl	0
+S4	empty
+O21	carrot	1
+S13	whole
+S10	peeled
+O23	grater	1
+M9	grate	Assumed	Assumed
+O2	bowl	0
+S1	contains	{carrot}
+O21	carrot	0
+S17	grated
+S3	in	[bowl]
+//
+O2	bowl	0
+S1	contains	{carrot}
+O21	carrot	0
+S17	grated
+S3	in	[bowl]
+O24	measuring cup	1
+S4	empty
+M10	pour	Assumed	Assumed
+O24	measuring cup	1
+S1	contains	{carrot}
+O21	carrot	1
+S17	grated
+S3	in	[measuring cup]
+O2	bowl	0
+S4	empty
+S16	dirty
+//
+O15	salad bowl	0
+S4	empty
+O24	measuring cup	1
+S1	contains	{carrot}
+O21	carrot	1
+S17	grated
+S3	in	[measuring cup]
+M6	pour	0:58	1:01
+O15	salad bowl	0
+S1	contains	{carrot}
+O21	carrot	1
+S17	grated
+S3	in	[salad bowl]
+O2	measuring cup	1
+S4	empty
+S16	dirty
+//
+O15	salad bowl	0
+S1	contains	{carrot}
+O2	bowl	1
+S1	contains	{lemon juice}
+O14	lemon	1
+S43	juice
+S3	in	[bowl]
+M6	pour	1:05	1:07
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice}
+O14	lemon	1
+S43	juice
+S3	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice}
+O21	carrot	1
+S17	grated
+S3	in	[salad bowl]
+O14	lemon	1
+S43	juice
+S3	in	[salad bowl]
+O18	spoon	1
+M8	mix	1:11	1:19
+O21	carrot	1
+S17	grated
+S18	contains	{lemon juice}
+S3	in	[salad bowl]
+//
+O25	jar	0
+S1	contains	{mayonnaise}
+M11	open	Assumed	Assumed
+O25	jar	0
+S0	opened
+S1	contains	{mayonnaise}
+//
+O2	bowl	0
+S4	empty
+O25	jar	0
+S0	opened
+S1	contains	{mayonnaise}
+O26	mayonnaise	1
+S43	creamy
+S3	in	[jar]
+O18	spoon	1
+M12	scoop and pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{mayonnaise}
+O26	mayonnaise	0
+S43	creamy
+S3	in	[bowl]
+//
+O25	jar	0
+S1	contains	{sour cream}
+M11	open	Assumed	Assumed
+O25	jar	0
+S0	opened
+S1	contains	{sour cream}
+//
+O2	bowl	0
+S4	empty
+O25	jar	0
+S0	opened
+S1	contains	{sour cream}
+O27	sour cream	1
+S43	creamy
+S3	in	[jar]
+O18	spoon	1
+M12	scoop and pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{sour cream}
+O27	sour cream	1
+S43	creamy
+S3	in	[bowl]
+//
+O2	bowl	0
+S4	empty
+O28	bag	1
+S0	opened
+S1	contains	{refined sugar}
+O29	refined sugar	1
+S14	granulated
+S3	in	[bag]
+M6	pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{refined sugar}
+O29	refined sugar	1
+S14	granulated
+S3	in	[bowl]
+//
+O2	mixing bowl	0
+S4	empty
+O2	bowl	0
+S1	contains	{mayonnaise}
+O26	mayonnaise	1
+S43	creamy
+S3	in	[bowl]
+O3	spoon	1
+M43	pour and scrape	1:31	1:36
+O2	mixing bowl	1
+S1	contains	{mayonnaise}
+O26	mayonnaise	1
+S43	creamy
+S3	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise}
+O2	bowl	0
+S1	contains	{sour cream}
+O26	sour cream	1
+S43	creamy
+S3	in	[bowl]
+O3	spoon	1
+M43	pour and scrape	1:39	1:42
+O2	mixing bowl	0
+S1	contains	{mayonnaise,sour cream}
+O26	sour cream	1
+S43	creamy
+S3	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,sour cream}
+O2	bowl	1
+S1	contains	{refined sugar}
+O29	refined sugar	1
+S14	granulated
+S3	in	[bowl]
+M0	pour	1:46	1:47
+O2	mixing bowl	0
+S1	contains	{mayonnaise,sour cream,refined sugar}
+O29	refined sugar	1
+S14	granulated
+S3	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,sour cream,refined sugar}
+O2	bowl	0
+S1	contains	{salt}
+O16	salt	1
+S14	granulated
+S3	in	[bowl]
+M0	pour	1:48	1:50
+O2	mixing bowl	0
+S1	contains	{mayonnaise,sour cream,refined sugar,salt}
+O16	salt	1
+S14	granulated
+S3	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,sour cream,refined sugar,salt}
+O26	mayonnaise	1
+S43	creamy
+S3	in	[mixing bowl]
+O27	sour cream	1
+S43	creamy
+S3	in	[mixing bowl]
+O29	refined sugar	1
+S14	granulated
+S3	in	[mixing bowl]
+O16	salt	1
+S14	granulated
+S3	in	[mixing bowl]
+O18	spoon	1
+S4	clean
+M8	mix	1:51	2:12
+O30	salad dressing	0
+S4	mixed
+S1	contains	{mayonnaise,sour cream,refined sugar,salt}
+S3	in	[mixing bowl]
+//
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice}
+O2	mixing bowl	1
+S1	contains	{mayonnaise,sour cream,refined sugar,salt}
+O30	salad dressing	1
+S4	mixed
+S1	contains	{mayonnaise,sour cream,refined sugar,salt}
+S3	in	[mixing bowl]
+O18	spoon	1
+S43	clean
+M12	scoop and pour	2:20	2:25
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice,mayonnaise,sour cream,refined sugar,salt}
+O30	salad dressing	1
+S4	mixed
+S1	contains	{mayonnaise,sour cream,refined sugar,salt}
+S3	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice,mayonnaise,sour cream,refined sugar,salt}
+O21	carrot	1
+S17	grated
+S18	contains	{lemon juice}
+S3	in	[salad bowl]
+O30	salad dressing	1
+S4	mixed
+S1	contains	{mayonnaise,sour cream,refined sugar,salt}
+S3	in	[salad bowl]
+O18	spoon	1
+S43	clean
+M8	mix	2:28	2:33
+O31	salad	0
+S43	mixed
+S1	contains	{mayonnaise,sour cream,refined sugar,salt,carrot,lemon juice}
+S3	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice,mayonnaise,sour cream,refined sugar,salt}
+O2	bowl	1
+S1	contains	{pineapple}
+O32	pineapple	1
+S12	diced
+S3	in	[bowl]
+M6	pour	2:36	2:39
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice,mayonnaise,sour cream,refined sugar,salt,pineapple}
+O32	pineapple	1
+S12	diced
+S6	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice,mayonnaise,sour cream,refined sugar,salt,pineapple}
+O2	bowl	1
+S1	contains	{raisin}
+O33	raisin	1
+S4	whole
+S3	in	[bowl]
+O3	spoon	1
+M6	pour and scrape	2:41:50	2:43
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice,mayonnaise,sour cream,refined sugar,salt,pineapple,raisin}
+O33	raisin	1
+S4	whole
+S6	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{carrot,lemon juice,mayonnaise,sour cream,refined sugar,salt,pineapple,raisin}
+O31	salad	0
+S43	mixed
+S1	contains	{mayonnaise,sour cream,refined sugar,salt,carrot,lemon juice}
+S3	in	[salad bowl]
+O33	raisin	1
+S4	whole
+S6	in	[salad bowl]
+O32	pineapple	1
+S12	diced
+S6	in	[salad bowl]
+O18	spoon	1
+S43	clean
+M8	mix	2:44	2:51
+O15	salad bowl	0
+S1	contains	{salad}
+O19	salad	1
+S43	mixed
+S3	in	[salad bowl]
+O34	carrot salad	1	!
+S43	mixed
+S1	contains	{carrot,lemon juice,mayonnaise,sour cream,refined sugar,salt,pineapple,raisin}
+S3	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{salad}
+O19	salad	1
+S43	mixed
+S3	in	[salad bowl]
+O2	bowl	0
+S4	empty
+O18	spoon	1
+M12	scoop and pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{salad}
+O19	salad	1
+S43	mixed
+S3	in	[bowl]
+//

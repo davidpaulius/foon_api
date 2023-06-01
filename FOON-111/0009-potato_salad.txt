@@ -1,0 +1,732 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0009-potato_salad.mp4 
+# Source:	https://www.youtube.com/watch?v=RbCA_L24sBg
+//
+O28	bag	1
+S1	contains	{potato}
+M11	open	Assumed	Assumed
+O28	bag	1
+S1	contains	{potato}
+S0	opened
+//
+O28	bag	1
+S1	contains	{potato}
+S0	opened
+O35	potato	1
+S13	whole
+S43	unpeeled
+S3	in	[bag]
+O36	strainer	0
+S11	empty
+M6	pour	Assumed	Assumed
+O36	strainer	0
+S1	contains	{potato}
+O35	potato	1
+S13	whole
+S43	unpeeled
+S3	in	[strainer]
+//
+O3	faucet	1
+S6	on
+O4	water	0
+S4	liquid
+S7	from	[faucet]
+O36	strainer	0
+S1	contains	{potato}
+O35	potato	1
+S13	whole
+S43	unpeeled
+S3	in	[strainer]
+M2	rinse	Assumed	Assumed
+O35	potato	1
+S13	whole
+S8	washed
+S43	unpeeled
+S3	in	[strainer]
+//
+O37	pot	1
+S1	contains	{water}
+S19	hot
+S6	on	[stove]
+O4	water	0
+S3	liquid
+S20	boiling
+S3	in	[pot]
+O36	strainer	1
+S1	contains	{potato}
+O35	potato	1
+S13	whole
+S43	unpeeled
+S8	washed
+S3	in	[strainer]
+M6	pour	0:59	1:04
+O37	pot	0
+S1	contains	{water,potato}
+S19	hot
+S6	on	[stove]
+O35	potato	1
+S13	whole
+S43	unpeeled
+S3	in	[pot]
+//
+O37	pot	0
+S1	contains	{water,potato}
+S19	hot
+S6	on	[stove]
+O35	potato	1
+S13	whole
+S43	unpeeled
+S3	in	[pot]
+O38	stove	0
+S6	on
+S21	with	[pot]
+M13	boil	1:04	1:08
+O35	potato	0
+S3	whole
+S22	cooked
+S43	unpeeled
+S3	in	[pot]
+//
+O24	measuring cup	0
+S4	empty
+O0	packet	1
+S1	contains	{shrimp}
+S0	opened
+O39	shrimp	1
+S23	raw
+S3	in	[packet]
+M6	pour	Assumed	Assumed
+O24	measuring cup	0
+S1	contains	{shrimp}
+O39	shrimp	1
+S23	raw
+S3	in	[measuring cup]
+//
+O37	pot	0
+S1	contains	{water}
+S19	hot
+S6	on	[stove]
+O4	water	0
+S20	boiling
+S43	liquid
+S3	in	[pot]
+O24	measuring cup	1
+S1	contains	{shrimp}
+O39	shrimp	1
+S23	raw
+S3	in	[measuring cup]
+M6	pour	1:09	1:20
+O37	pot	0
+S1	contains	{water,shrimp}
+S19	hot
+S6	on	[stove]
+O39	shrimp	1
+S23	raw
+S3	in	[pot]
+//
+O37	pot	0
+S1	contains	{water,shrimp}
+S19	hot
+S6	on	[stove]
+O38	stove	0
+S6	on
+S21	with	[pot]
+O39	shrimp	0
+S23	raw
+S3	in	[pot]
+M13	boil	1:23	1:27
+O39	shrimp	0
+S22	cooked
+S3	in	[pot]
+//
+O37	pot	0
+S1	contains	{water}
+S19	hot
+S6	on	[stove]
+O4	water	0
+S3	in	[pot]
+S20	boiling
+O40	egg	1
+S13	whole
+M4	pick-and-place	Assumed	Assumed
+O37	pot	0
+S1	contains	{water,egg}
+S19	hot
+S6	on	[stove]
+O40	egg	1
+S13	whole
+S3	in	[pot]
+//
+O38	stove	0
+S6	on
+S21	with	[pot]
+O37	pot	0
+S1	contains	{water,egg}
+S19	hot
+S6	on	[stove]
+O40	egg	1
+S13	whole
+S3	in	[pot]
+M13	boil	1:28	1:32
+O40	egg	1
+S13	whole
+S24	hardboiled
+S3	in	[pot]
+//
+O25	jar	0
+S0	opened
+S1	contains	{mayonnaise}
+O26	mayonnaise	0
+S43	creamy
+S3	in	[jar]
+O24	measuring cup	1
+S4	empty
+M10	scoop	Assumed	Assumed
+O24	measuring cup	1
+S1	contains	{mayonnaise}
+O26	mayonnaise	1
+S43	creamy
+S3	in	[measuring cup]
+//
+O37	pot	1
+S1	contains	{water,egg}
+S19	hot
+S6	on	[stove]
+O40	egg	1
+S13	whole
+S24	hardboiled
+S3	in	[pot]
+O36	strainer	0
+S4	empty
+M14	drain	Assumed	Assumed
+O37	pot	1
+S43	empty
+S16	dirty
+O36	strainer	0
+S1	contains	{egg}
+O40	egg	1
+S13	whole
+S24	hardboiled
+S3	in	[strainer]
+//
+O40	egg	1
+S13	whole
+S24	hardboiled
+S3	in	[strainer]
+O36	strainer	0
+S1	contains	{egg}
+O2	bowl	0
+S4	empty
+M6	pour	Assumed	Assumed
+O40	egg	1
+S13	whole
+S24	hardboiled
+S3	in	[bowl]
+O2	bowl	0
+S1	contains	{egg}
+O36	strainer	0
+S4	empty
+S16	dirty
+//
+O40	egg	1
+S13	whole
+S24	hardboiled
+S3	in	[bowl]
+M5	peel	Assumed	Assumed
+O40	egg	1
+S13	whole
+S10	peeled
+S24	hardboiled
+S3	in	[bowl]
+O41	egg shell	0
+S43	pieces
+//
+O42	shaker	1
+S1	contains	{salt}
+O16	salt	1
+S14	granulated
+S3	in	[shaker]
+O18	spoon	1
+M6	pour	Assumed	Assumed
+O18	spoon	0
+S1	contains	{salt}
+O16	salt	1
+S14	granulated
+S3	in	[spoon]
+//
+O11	bottle	1
+S1	contains	{mustard}
+O43	mustard	1
+S43	creamy
+S3	in	[bottle]
+O18	spoon	0
+M15	squeeze	Assumed	Assumed
+O18	spoon	0
+S1	contains	{mustard}
+O43	mustard	1
+S43	creamy
+S3	in	[spoon]
+//
+O25	jar	0
+S0	opened
+S1	contains	{relish}
+O44	relish	0
+S43	sauce
+S25	in	[jar]
+O18	spoon	1
+M10	scoop	Assumed	Assumed
+O18	spoon	0
+S1	contains	{relish}
+O44	relish	1
+S43	sauce
+S3	in	[spoon]
+//
+O42	shaker	1
+S1	contains	{dill}
+O45	dill	1
+S26	dried
+S43	leaves
+S3	in	[shaker]
+O18	spoon	1
+M6	pour	Assumed	Assumed
+O18	spoon	0
+S1	contains	{dill}
+O45	dill	1
+S26	dried
+S43	leaves
+S3	in	[spoon]
+//
+O3	faucet	0
+S6	on
+O4	water	0
+S7	from	[faucet]
+O46	celery	1
+S13	whole
+M0	wash	Assumed	Assumed
+O46	celery	1
+S13	whole
+S8	washed
+//
+O8	cutting board	0
+S11	empty
+O46	celery	1
+S13	whole
+S8	washed
+M4	pick-and-place	Assumed	Assumed
+O8	cutting board	0
+S1	contains	{celery}
+O46	celery	1
+S13	whole
+S8	washed
+S6	on	[cutting board]
+//
+O46	celery	0
+S13	whole
+S8	washed
+S6	on	[cutting board]
+O7	knife	1
+S43	clean
+M16	chop	Assumed	Assumed
+O46	celery	0
+S27	chopped
+S6	on	[cutting board]
+//
+O8	cutting board	1
+S1	contains	{celery}
+O46	celery	1
+S27	chopped
+S6	on	[cutting board]
+O2	bowl	0
+S4	empty
+M17	scrape	Assumed	Assumed
+O8	cutting board	1
+S43	empty
+S16	dirty
+O2	bowl	0
+S1	contains	{celery}
+O46	celery	1
+S27	chopped
+S3	in	[bowl]
+//
+O37	pot	1
+S1	contains	{water,shrimp}
+S19	hot
+S6	on	[stove]
+O39	shrimp	0
+S22	cooked
+S3	in	[pot]
+O36	strainer	0
+S4	empty
+M14	drain	Assumed	Assumed
+O36	strainer	0
+S1	contains	{shrimp}
+O39	shrimp	1
+S22	cooked
+S3	in	[strainer]
+O37	pot	1
+S1	empty
+S4	dirty
+//
+O2	bowl	0
+S4	empty
+O36	strainer	1
+S1	contains	{shrimp}
+O39	shrimp	1
+S22	cooked
+S3	in	[strainer]
+M6	pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{shrimp}
+O36	strainer	1
+S4	empty
+S16	dirty
+O39	shrimp	1
+S22	cooked
+S3	in	[bowl]
+//
+O2	mixing bowl	0
+S4	empty
+O24	measuring cup	1
+S1	contains	{mayonnaise}
+O26	mayonnaise	1
+S43	creamy
+S3	in	[measuring cup]
+M0	pour	1:35	1:39
+O2	mixing bowl	0
+S1	contains	{mayonnaise}
+O26	mayonnaise	1
+S43	creamy
+S3	in	[mixing bowl]
+O24	measuring cup	1
+S4	empty
+S4	dirty
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise}
+O42	shaker	1
+S1	contains	{black pepper}
+O17	black pepper	1
+S15	ground
+S3	in	[shaker]
+M0	sprinkle	1:46	1:48
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper}
+O17	black pepper	1
+S15	ground
+S3	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper}
+O18	spoon	1
+S1	contains	{salt}
+O16	salt	1
+S14	granulated
+S3	in	[spoon]
+M0	sprinkle	1:51	1:52
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt}
+O16	salt	1
+S14	granulated
+S3	in	[mixing bowl]
+O18	spoon	1
+S4	empty
+S4	dirty
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt}
+O18	spoon	1
+S1	contains	{mustard}
+O43	mustard	1
+S4	creamy
+S3	in	[spoon]
+M0	pour	1:55	1:57
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard}
+O18	spoon	1
+S4	empty
+S4	dirty
+O43	mustard	1
+S4	creamy
+S3	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard}
+O18	spoon	1
+S1	contains	{relish}
+O44	relish	1
+S43	sauce
+S3	in	[spoon]
+M0	pour	2:04	2:05
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish}
+O44	relish	1
+S43	sauce
+S3	in	[mixing bowl]
+O18	spoon	1
+S4	empty
+S4	dirty
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish}
+O18	spoon	1
+S1	contains	{dill}
+O45	dill	1
+S26	dried
+S43	leaves
+S3	in	[spoon]
+M0	sprinkle	2:09	2:11
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill}
+O45	dill	1
+S26	dried
+S43	leaves
+S3	in	[mixing bowl]
+O18	spoon	1
+S4	empty
+S4	dirty
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill}
+O2	bowl	1
+S1	contains	{green onion}
+O47	green onion	1
+S27	chopped
+S3	in	[bowl]
+M0	pour	2:17	2:18
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion}
+O2	bowl	1
+S4	empty
+S4	dirty
+O47	green onion	1
+S27	chopped
+S3	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion}
+O2	bowl	1
+S1	contains	{celery}
+O46	celery	1
+S27	chopped
+S3	in	[bowl]
+M0	pour	2:19	2:21
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery}
+O2	bowl	1
+S4	empty
+S4	dirty
+O46	celery	1
+S27	chopped
+S3	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery}
+O2	bowl	1
+S1	contains	{shrimp}
+O39	shrimp	1
+S22	cooked
+S3	in	[bowl]
+M0	pour	2:23	2:24
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp}
+O39	shrimp	1
+S22	cooked
+S3	in	[mixing bowl]
+O2	bowl	1
+S4	empty
+S4	dirty
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp}
+O2	bowl	1
+S1	contains	{egg}
+O40	egg	1
+S10	peeled
+S24	hardboiled
+S3	in	[bowl]
+M0	pour	2:25	2:27
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg}
+O40	egg	1
+S10	peeled
+S24	hardboiled
+S3	in	[mixing bowl]
+O2	bowl	1
+S4	empty
+S4	dirty
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg}
+O26	mayonnaise	0
+S43	creamy
+S3	in	[mixing bowl]
+O17	black pepper	0
+S15	ground
+S3	in	[mixing bowl]
+O16	salt	0
+S14	granulated
+S3	in	[mixing bowl]
+O43	mustard	0
+S43	creamy
+S3	in	[mixing bowl]
+O44	relish	0
+S43	sauce
+S3	in	[mixing bowl]
+O45	dill	0
+S26	dried
+S4	leaves
+S3	in	[mixing bowl]
+O47	green onion	0
+S27	chopped
+S3	in	[mixing bowl]
+O46	celery	0
+S27	chopped
+S3	in	[mixing bowl]
+O46	shrimp	0
+S27	cooked
+S3	in	[mixing bowl]
+O40	egg	0
+S10	peeled
+S24	hardboiled
+S3	in	[mixing bowl]
+O48	fork	1
+S43	clean
+M18	mix and mash	2:32	2:39
+O30	salad dressing	1
+S43	mixed
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg}
+S3	in	[mixing bowl]
+//
+O49	refrigerator	0
+S6	on
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg}
+O30	salad dressing	1
+S43	mixed
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg}
+S3	in	[mixing bowl]
+M19	chill	Assumed	Assumed
+O30	salad dressing	1
+S43	mixed
+S43	chilled
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg}
+S3	in	[mixing bowl]
+//
+O37	pot	1
+S1	contains	{water,potato}
+S19	hot
+S6	on	[stove]
+O35	potato	1
+S3	whole
+S22	cooked
+S43	unpeeled
+S3	in	[pot]
+O36	strainer	0
+S4	empty
+M14	drain	Assumed	Assumed
+O36	strainer	0
+S1	contains	{potato}
+O35	potato	1
+S3	whole
+S22	cooked
+S43	unpeeled
+S3	in	[strainer]
+O37	pot	1
+S16	dirty
+S3	empty
+//
+O36	strainer	0
+S1	contains	{potato}
+O35	potato	1
+S3	whole
+S22	cooked
+S43	unpeeled
+S3	in	[strainer]
+O8	cutting board	0
+S11	empty
+M4	pick-and-place	Assumed	Assumed
+O8	cutting board	0
+S1	contains	{potato}
+O35	potato	1
+S3	whole
+S22	cooked
+S43	unpeeled
+S6	on	[cutting board]
+//
+O35	potato	0
+S3	whole
+S22	cooked
+S43	unpeeled
+S6	on	[cutting board]
+O7	knife	1
+S43	clean
+M20	slice	2:57	2:58
+O35	potato	1
+S22	cooked
+S12	halved
+S43	unpeeled
+S6	on	[cutting board]
+//
+O8	cutting board	0
+S1	contains	{potato}
+O35	potato	1
+S22	cooked
+S12	halved
+S43	unpeeled
+S6	on	[cutting board]
+O2	bowl	0
+S4	empty
+M4	pick-and-place	Assumed	Assumed
+O2	bowl	0
+S1	contains	{potato}
+O35	potato	1
+S22	cooked
+S12	halved
+S43	unpeeled
+S3	in	[bowl]
+O8	cutting board	0
+S1	empty
+S43	dirty
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg}
+O2	bowl	1
+S1	contains	{potato}
+O35	potato	1
+S22	cooked
+S12	halved
+S43	unpeeled
+S3	in	[bowl]
+M6	pour*	3:06	3:10
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg,potato}
+O35	potato	1
+S22	cooked
+S12	halved
+S43	unpeeled
+S6	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg,potato}
+O30	salad dressing	0
+S3	mixed
+S43	chilled
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg}
+S3	in	[mixing bowl]
+O35	potato	0
+S22	cooked
+S12	halved
+S43	unpeeled
+S6	in	[mixing bowl]
+O50	spatula	1
+S43	clean
+M8	mix	3:11	3:14
+O0	mixing bowl	0
+S43	contains	{salad}
+O19	salad	0
+S43	mixed
+S3	in	[mixing bowl]
+O51	potato salad	0	!
+S43	mixed
+S1	contains	{mayonnaise,black pepper,salt,mustard,relish,dill,green onion,celery,shrimp,egg}
+S3	in	[mixing bowl]
+//

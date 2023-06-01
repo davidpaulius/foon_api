@@ -1,0 +1,419 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0006-blood_orange_salad.mp4 
+# Source:	https://www.youtube.com/watch?v=26z5ErTwGEo
+//
+O0	packet	1
+S1	contains	{salad greens}
+O1	salad greens	1
+S2	leaf
+S3	in	[packet]
+O2	bowl	0
+S4	empty
+M0	pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{salad greens}
+O1	salad greens	1
+S2	leaf
+S3	in	[bowl]
+O0	packet	1
+S0	empty
+S43	dirty
+//
+O3	faucet	1
+S6	on
+O4	water	0
+S7	from	[faucet]
+O1	salad greens	1
+S2	leaf
+S3	in	[bowl]
+O2	bowl	0
+S1	contains	{salad greens}
+M2	rinse	Assumed	Assumed
+O1	salad greens	1
+S2	leaf
+S8	washed
+S3	in	[bowl]
+//
+O0	packet	1
+S1	contains	{basil}
+O5	basil	1
+S2	leaf
+S3	in	[packet]
+O2	bowl	0
+S4	empty
+M0	pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{basil}
+O5	basil	1
+S2	leaf
+S3	in	[bowl]
+O0	packet	1
+S0	empty
+S43	dirty
+//
+O3	faucet	1
+S6	on
+O4	water	0
+S7	from	[faucet]
+O5	basil	1
+S2	leaf
+S3	in	[bowl]
+O2	bowl	0
+S1	contains	{basil}
+M2	rinse	Assumed	Assumed
+O5	basil	1
+S2	leaf
+S8	washed
+S3	in	[bowl]
+//
+O6	avocado	0
+S9	halved
+S10	peeled
+S6	on	[cutting board]
+O7	knife	1
+M3	dice	1:26	1:33
+O6	avocado	0
+S12	diced
+S6	on	[cutting board]
+//
+O2	bowl	0
+S4	empty
+O6	avocado	0
+S12	diced
+S6	on	[cutting board]
+M4	pick-and-place	Assumed	Assumed
+O2	bowl	0
+S1	contains	{avocado}
+O6	avocado	1
+S12	diced
+S3	in	[bowl]
+//
+O8	cutting board	0
+S11	clean
+O9	tomato	1
+S13	whole
+M4	pick-and-place	Assumed	Assumed
+O8	cutting board	0
+S1	contains	{tomato}
+O9	tomato	1
+S13	whole
+S6	on	[cutting board]
+//
+O9	tomato	1
+S13	whole
+S6	on	[cutting board]
+O7	knife	1
+M3	dice	Assumed	Assumed
+O9	tomato	1
+S12	diced
+S6	on	[cutting board]
+//
+O2	bowl	0
+S4	empty
+O9	tomato	1
+S12	diced
+S6	on	[cutting board]
+M4	pick-and-place	Assumed	Assumed
+O2	bowl	0
+S1	contains	{tomato}
+O9	tomato	1
+S12	diced
+S3	in	[bowl]
+//
+O8	cutting board	0
+S11	clean
+O10	blood orange	1
+S13	whole
+S43	unpeeled
+M4	pick-and-place	Assumed	Assumed
+O8	cutting board	0
+S1	contains	{blood orange}
+O10	blood orange	1
+S13	whole
+S43	unpeeled
+S6	on	[cutting board]
+//
+O10	blood orange	1
+S13	whole
+S43	unpeeled
+S6	on	[cutting board]
+M5	peel	Assumed	Assumed
+O10	blood orange	1
+S43	whole
+S10	peeled
+S6	on	[cutting board]
+//
+O10	blood orange	1
+S43	whole
+S10	peeled
+S6	on	[cutting board]
+O7	knife	1
+M3	dice	Assumed	Assumed
+O10	blood orange	1
+S12	diced
+S6	on	[cutting board]
+//
+O2	bowl	0
+S4	empty
+O10	blood orange	1
+S12	diced
+S6	on	[cutting board]
+M4	pick-and-place	Assumed	Assumed
+O2	bowl	0
+S1	contains	{blood orange}
+O10	blood orange	1
+S12	diced
+S3	in	[bowl]
+//
+O11	bottle	1
+S1	contains	{olive oil}
+O2	bowl	0
+S4	empty
+O12	olive oil	1
+S43	liquid
+S3	in	[bottle]
+M6	pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{olive oil}
+O12	olive oil	1
+S43	liquid
+S3	in	[bowl]
+//
+O11	bottle	1
+S1	contains	{lime juice}
+O2	bowl	0
+S4	empty
+O13	lime	1
+S3	juice
+S3	in	[bottle]
+M6	pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{lime juice}
+O13	lime	1
+S3	juice
+S3	in	[bowl]
+//
+O11	bottle	1
+S1	contains	{lemon juice}
+O2	bowl	0
+S4	empty
+O14	lemon	1
+S43	juice
+S3	in	[bottle]
+M6	pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{lemon juice}
+O14	lemon	1
+S43	juice
+S3	in	[bowl]
+//
+O2	bowl	1
+S1	contains	{salad greens}
+O1	salad greens	1
+S2	leaf
+S8	washed
+S3	in	[bowl]
+O15	salad bowl	0
+S4	empty
+M0	pour and scrape	1:14	1:17
+O15	salad bowl	0
+S1	contains	{salad greens}
+O1	salad greens	1
+S2	leaf
+S8	washed
+S3	in	[salad bowl]
+O2	bowl	1
+S43	empty
+S43	dirty
+//
+O15	salad bowl	0
+S1	contains	{salad greens}
+O2	bowl	1
+S1	contains	{basil}
+O5	basil	1
+S2	leaf
+S8	washed
+S3	in	[bowl]
+M0	sprinkle	1:21	1:23
+O15	salad bowl	0
+S1	contains	{salad greens,basil}
+O5	basil	1
+S2	leaf
+S8	washed
+S3	in	[salad bowl]
+O2	bowl	1
+S43	empty
+S43	dirty
+//
+O15	salad bowl	0
+S1	contains	{salad greens,basil}
+O2	bowl	1
+S1	contains	{avocado}
+O6	avocado	1
+S12	diced
+S3	in	[bowl]
+M0	pour and scrape	1:26	1:28
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado}
+O6	avocado	1
+S12	diced
+S3	in	[salad bowl]
+O2	bowl	1
+S43	empty
+S43	dirty
+//
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado}
+O2	bowl	1
+S1	contains	{blood orange}
+O10	blood orange	1
+S12	diced
+S3	in	[bowl]
+M0	pour and scrape	1:31	1:33
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange}
+O10	blood orange	1
+S12	diced
+S3	in	[salad bowl]
+O2	bowl	1
+S43	empty
+S43	dirty
+//
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange}
+O2	bowl	1
+S1	contains	{olive oil}
+O12	olive oil	1
+S43	liquid
+S3	in	[bowl]
+M0	pour	1:39	1:42
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil}
+O12	olive oil	1
+S43	liquid
+S3	in	[salad bowl]
+O2	bowl	1
+S43	empty
+S43	dirty
+//
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil}
+O2	bowl	1
+S1	contains	{lime juice}
+O13	lime	1
+S43	juice
+S3	in	[bowl]
+M0	pour	1:44	1:45
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice}
+O12	olive oil	1
+S43	liquid
+S3	in	[salad bowl]
+O2	bowl	1
+S43	empty
+S43	dirty
+//
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice}
+O2	bowl	1
+S1	contains	{lemon juice}
+O14	lemon	1
+S43	juice
+S3	in	[bowl]
+M0	pour	1:47	1:48
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice}
+O14	lemon	1
+S43	juice
+S3	in	[salad bowl]
+O2	bowl	1
+S43	empty
+S43	dirty
+//
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice}
+O2	bowl	1
+S1	contains	{salt}
+O16	salt	1
+S14	granulated
+S3	in	[bowl]
+M7	sprinkle	1:52	1:53
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice,salt}
+O16	salt	1
+S14	granulated
+S3	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice,salt}
+O2	bowl	1
+S1	contains	{black pepper}
+O17	black pepper	1
+S15	ground
+S3	in	[bowl]
+M7	sprinkle	1:56	1:57
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice,salt,black pepper}
+O17	black pepper	1
+S15	ground
+S3	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice,salt,black pepper}
+O16	salt	0
+S14	granulated
+S3	in	[salad bowl]
+O17	black pepper	0
+S15	ground
+S3	in	[salad bowl]
+O1	salad greens	0
+S2	leaf
+S4	washed
+S3	in	[salad bowl]
+O5	basil	0
+S4	washed
+S2	leaf
+S3	in	[salad bowl]
+O12	olive oil	0
+S43	liquid
+S3	in	[salad bowl]
+O10	blood orange	0
+S12	diced
+S3	in	[salad bowl]
+O6	avocado	0
+S12	diced
+S3	in	[salad bowl]
+O13	lime	0
+S3	juice
+S3	in	[salad bowl]
+O13	lemon	0
+S3	juice
+S3	in	[salad bowl]
+O18	spoon	1
+S43	clean
+M8	mix	1:59	2:16
+O19	salad	0
+S43	mixed
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice,salt,black pepper}
+S3	in	[salad bowl]
+O20	blood orange salad	0	!
+S43	mixed
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice,salt,black pepper}
+S3	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice,salt,black pepper}
+O19	salad	1
+S43	mixed
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice,salt,black pepper}
+S3	in	[salad bowl]
+O2	bowl	0
+S4	empty
+O18	spoon	1
+M12	scoop and pour	Assumed	Assumed
+O2	bowl	0
+S1	contains	{salad}
+O19	salad	1
+S43	mixed
+S1	contains	{salad greens,basil,avocado,blood orange,olive oil,lime juice,lemon juice,salt,black pepper}
+S4	in	[bowl]
+//

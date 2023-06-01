@@ -1,0 +1,497 @@
+# Source:	https://www.youtube.com/watch?v=Epv8L8DrFmQ 
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0005-chipotle-bean_sandwich.mp4
+//
+O3	can	0
+S308	sealed
+S43	contains	{kidney bean}
+O43	can opener	1
+S43	clean
+M41	open	Assumed	Assumed
+O3	can	0
+S43	contains	{bean mix,water}
+S60	opened
+O43	can opener	1
+S43	dirty
+//
+O3	can	0
+S43	contains	{bean mix,water}
+S60	opened
+M0	drain	Assumed	Assumed
+O3	can	0
+S43	contains	{kidney bean}
+O103	kidney bean	1
+S308	cooked
+S148	in	[can]
+//
+O3	can	1
+S43	contains	{kidney bean}
+O103	kidney bean	1
+S308	cooked
+S148	in	[can]
+O12	bowl	0
+S308	empty
+M41	pour	Assumed	Assumed
+O2	bowl	0
+S182	contains	{kidney bean}
+O103	kidney bean	1
+S308	cooked
+S148	in	[bowl]
+O3	can	1
+S43	dirty
+//
+O3	can	1
+S43	dirty
+O43	trash bin	0
+S43	contains	{garbage}
+M4	throw away	Assumed	Assumed
+O3	can	1
+S43	dirty
+S43	in	[trash bin]
+//
+O2	bowl	0
+S182	contains	{kidney bean}
+O103	kidney bean	0
+S308	cooked
+S148	in	[bowl]
+O104	masher	1
+S51	clean
+M20	mash	0:14	0:20
+O103	kidney bean	0
+S199	mashed
+S148	in	[bowl]
+//
+O318	bowl	0
+S42	empty
+O43	bottle	1
+S43	contains	{chipotle sauce}
+O43	chipotle sauce	1
+S43	in	[bottle]
+M41	pour	Assumed	Assumed
+O318	bowl	0
+S43	contains	{chipotle sauce}
+O43	chipotle sauce	1
+S43	in	[bowl]
+//
+O3	packet	0
+S43	contains	{chipotle}
+M3	open	Assumed	Assumed
+O3	packet	0
+S43	contains	{chipotle}
+S43	opened
+O186	chipotle	1
+S43	dried
+S43	in	[packet]
+//
+O318	bowl	0
+S43	contains	{chipotle sauce}
+O3	packet	0
+S43	contains	{chipotle}
+S43	opened
+O186	chipotle	1
+S43	dried
+S43	in	[packet]
+M0	add	Assumed	Assumed
+O2	bowl	1
+S42	contains	{chipotle sauce,chipotle}
+O186	chipotle	1
+S43	dried
+S43	in	[bowl]
+//
+O2	bowl	1
+S42	contains	{chipotle sauce,chipotle}
+O43	chipotle sauce	1
+S43	in	[bowl]
+O186	chipotle	1
+S43	dried
+S43	in	[bowl]
+O43	spoon	1
+S43	clean
+M5	mix	Assumed	Assumed
+O2	bowl	0
+S42	contains	{chipotle mix}
+O186	chipotle mix	1
+S43	contains	{chipotle,chipotle sauce}
+S43	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{kidney bean}
+O2	bowl	0
+S42	contains	{chipotle mix}
+O186	chipotle mix	1
+S43	contains	{chipotle,chipotle sauce}
+S43	in	[bowl]
+O37	spatula	1
+S51	clean
+M3	pour and scrape	0:25	0:31
+O2	bowl	0
+S42	contains	{bean mix,chipotle mix}
+O43	bowl	1
+S43	dirty
+O37	spatula	1
+S51	dirty
+//
+O2	bowl	0
+S182	contains	{bean mix,chipotle mix}
+O103	kidney bean	0
+S199	mashed
+S43	in	[bowl]
+O186	chipotle mix	1
+S43	contains	{chipotle,chipotle sauce}
+S43	in	[bowl]
+O104	masher	1
+S51	clean
+M20	mash	0:40	0:46
+O2	bowl	0
+S182	contains	{bean mix}
+O103	bean mix	0
+S43	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{bean mix}
+O18	bowl	0
+S151	contains	{salt}
+O18	salt	1
+S43	granulated
+S151	in	[bowl]
+M2	sprinkle	0:46	0:48
+O2	bowl	0
+S182	contains	{bean mix,salt}
+O18	salt	1
+S43	granulated
+S151	on	[bean mix]
+//
+O2	bowl	0
+S182	contains	{bean mix,salt}
+O18	salt	0
+S43	granulated
+S151	on	[bean mix]
+O103	bean mix	0
+S43	in	[bowl]
+O104	masher	1
+S51	clean
+M20	mash	0:50	0:54
+O2	bowl	0
+S182	contains	{bean mix}
+O103	bean mix	0
+S43	contains	{bean mix,chipotle sauce,salt}
+S43	in	[bowl]
+//
+O83	cutting board	0
+S188	clean
+O72	avocado	1
+S323	whole
+M0	pick-and-place	Assumed	Assumed
+O83	cutting board	0
+S188	contains	{avocado}
+O72	avocado	1
+S323	whole
+S42	on	[cutting board]
+//
+O72	avocado	1
+S323	whole
+S42	on	[cutting board]
+O11	knife	1
+S51	clean
+M8	cut	1:00	1:04
+O72	avocado	1
+S323	slit
+S42	on	[cutting board]
+//
+O72	avocado	1
+S87	slit
+S42	on	[cutting board]
+M21	pull apart	1:04	1:07
+O72	avocado	0
+S132	halved
+S43	on	[cutting board]
+//
+O72	avocado	1
+S132	halved
+S43	on	[cutting board]
+M17	peel	1:08	1:25
+O72	avocado	0
+S132	halved
+S247	peeled
+S43	on	[cutting board]
+//
+O72	avocado	0
+S132	halved
+S247	peeled
+S43	on	[cutting board]
+O11	knife	1
+S51	clean
+M8	slice	1:26	1:33
+O72	avocado	0
+S290	sliced
+S42	on	[cutting board]
+//
+O318	packet	0
+S43	opened
+S182	contains	{bread}
+O3	plate	0
+S43	empty
+O12	bread	1
+S290	sliced
+S43	in	[packet]
+M32	pick-and-place	Assumed	Assumed
+O318	plate	0
+S182	contains	{bread}
+O12	bread	1
+S290	sliced
+S43	on	[plate]
+//
+O318	plate	0
+S182	contains	{bread}
+O12	bread	1
+S290	sliced
+S43	on	[plate]
+O318	toaster	0
+S43	empty
+S98	off (ready)
+M0	pick-and-place	Assumed	Assumed
+O318	toaster	0
+S43	off (ready)
+S182	contains	{bread}
+O12	bread	0
+S290	sliced
+S43	in	[toaster]
+O318	plate	0
+S182	dirty
+//
+O318	toaster	0
+S43	off (ready)
+S182	contains	{bread}
+M41	turn on	Assumed	Assumed
+O318	toaster	0
+S43	on
+S182	contains	{bread}
+//
+O318	toaster	0
+S43	on
+S182	contains	{bread}
+O12	bread	0
+S290	sliced
+S43	in	[toaster]
+M3	heat	Assumed	Assumed
+O12	bread	0
+S290	sliced
+S308	toasted
+S43	in	[toaster]
+//
+O318	toaster	0
+S43	on
+S182	contains	{bread}
+M4	turn off	Assumed	Assumed
+O318	toaster	0
+S43	off
+S182	contains	{bread}
+//
+O318	toaster	0
+S43	off
+S182	contains	{bread}
+O12	bread	1
+S290	sliced
+S308	toasted
+S43	in	[toaster]
+O318	cutting board	0
+S43	clean
+M0	pick-and-place	Assumed	Assumed
+O12	bread	1
+S290	sliced
+S308	toasted
+S43	on	[cutting board]
+O83	cutting board	0
+S188	contains	{bread}
+//
+O2	bowl	0
+S185	contains	{bean mix}
+O2	bowl	0
+S182	contains	{bean mix}
+O103	bean mix	1
+S43	contains	{bean mix,chipotle sauce,salt}
+S43	in	[bowl]
+O37	spatula	1
+S51	clean
+O12	bread	0
+S290	sliced
+S308	toasted
+S43	on	[cutting board]
+M16	spread	1:43	1:49
+O37	spatula	1
+S51	dirty
+O12	bread	0
+S188	contains	{bean mix}
+S43	on	[cutting board]
+O103	kidney bean	1
+S220	on	[bread]
+//
+O12	bread	0
+S290	sliced
+S308	toasted
+S43	on	[cutting board]
+O72	avocado	1
+S290	sliced
+S42	on	[cutting board]
+O11	knife	1
+S51	clean
+M0	pick-and-place	1:51	1:56
+O12	bread	0
+S188	contains	{avocado}
+S43	on	[cutting board]
+O72	avocado	1
+S290	sliced
+S220	on	[]
+O11	knife	1
+S51	dirty
+//
+O18	bowl	0
+S151	contains	{escarole}
+O87	escarole	1
+S193	leaf
+S32	in	[bowl]
+O12	bread	0
+S188	contains	{bean mix}
+S43	on	[cutting board]
+M0	pick-and-place	2:04	2:08
+O12	bread	0
+S188	contains	{bean mix,escarole}
+S43	on	[cutting board]
+O87	escarole	1
+S193	leaf
+S220	on	[bread]
+//
+O99	radish	0
+S290	whole
+O43	peeler	1
+S43	clean
+M41	peel	Assumed	Assumed
+O99	radish	0
+S290	peeled
+O43	peeler	1
+S43	dirty
+//
+O3	cutting board	1
+S43	clean
+O99	radish	1
+S290	peeled
+M0	pick-and-place	Assumed	Assumed
+O83	cutting board	0
+S188	contains	{radish}
+O99	radish	1
+S290	peeled
+S43	on	[cutting board]
+//
+O99	radish	1
+S290	peeled
+S43	on	[cutting board]
+O43	knife	1
+S43	clean
+M43	slice	Assumed	Assumed
+O99	radish	1
+S290	sliced
+S43	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{radish}
+O12	bowl	0
+S43	empty
+O99	radish	1
+S290	sliced
+S43	on	[cutting board]
+M20	pick-and-place	Assumed	Assumed
+O83	cutting board	0
+S188	dirty
+O18	bowl	0
+S151	contains	{radish}
+O99	radish	1
+S290	sliced
+S43	in	[bowl]
+//
+O12	bread	0
+S188	contains	{avocado}
+S43	on	[cutting board]
+O18	bowl	0
+S151	contains	{radish}
+O99	radish	1
+S290	sliced
+S43	in	[bowl]
+M0	pick-and-place	2:15	2:20
+O12	bread	0
+S188	contains	{avocado,radish}
+S43	on	[cutting board]
+O99	radish	1
+S290	sliced
+S220	on	[bread]
+//
+O12	bread	0
+S188	contains	{avocado,radish}
+S43	on	[cutting board]
+O18	bowl	0
+S151	contains	{salt}
+O18	salt	1
+S143	granulated
+S151	in	[bowl]
+M2	sprinkle	2:25	2:28
+O12	bread	0
+S188	contains	{avocado,radish,salt}
+S43	on	[cutting board]
+O18	salt	1
+S143	granulated
+S220	on	[bread]
+//
+O12	bread	0
+S188	contains	{avocado,radish,salt}
+S43	on	[cutting board]
+O18	bowl	0
+S151	contains	{bean sprout}
+O106	bean sprout	1
+S51	clean
+S308	in	[bowl]
+M0	pick-and-place	2:30	2:42
+O12	bread	0
+S188	contains	{avocado,radish,salt,bean sprout}
+S43	on	[cutting board]
+O106	bean sprout	1
+S220	on	[bread]
+//
+O12	bread	0
+S188	contains	{bean mix,escarole}
+S43	on	[cutting board]
+O12	bread	1
+S188	contains	{avocado,radish,salt,bean sprout}
+S43	on	[cutting board]
+M0	pick-and-place	2:42	2:48
+O59	sandwich	0
+S43	contains	{bean mix,avocado,escarole,radish,salt,bean sprout}
+S43	on	[cutting board]
+//
+O59	sandwich	0
+S43	contains	{bean mix,avocado,escarole,radish,salt,bean sprout}
+S43	on	[cutting board]
+O11	knife	1
+S51	clean
+M8	cut	2:53	3:00
+O59	sandwich	0
+S43	halved
+S43	contains	{bean mix,avocado,escarole,radish,salt,bean sprout}
+S43	on	[cutting board]
+O59	chipotle-avocado sandwich	1
+S43	on	[plate]
+//
+O43	plate	0
+S323	empty
+O59	sandwich	1
+S43	halved
+S43	contains	{bean mix,avocado,escarole,radish,salt,bean sprout}
+S43	on	[cutting board]
+M0	pick-and-place	Assumed	Assumed
+O43	plate	0
+S323	contains	{sandwich}
+O59	chipotle-avocado sandwich	1	!
+S43	contains	{bean mix,avocado,escarole,radish,salt,bean sprout}
+S43	halved
+S43	on	[plate]
+O59	sandwich	1
+S43	halved
+S43	on	[plate]
+//
