@@ -1,0 +1,194 @@
+O384	matzo	1
+S3	baked
+O15	plate	0
+S201	empty
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S201	contains	{matzo}
+O384	matzo	1
+S3	baked
+S240	on	[plate]
+//
+O15	plate	0
+S201	contains	{matzo}
+O384	matzo	0
+S3	baked
+S240	on	[plate]
+M95	break	0:32	0:36
+O384	matzo	0
+S356	broken
+//
+O2	bowl	0
+S195	contains	{water}
+O384	matzo	1
+S356	broken
+M0	pick-and-place	0:37	0:38
+O2	bowl	0
+S195	contains	{water,matzo}
+O384	matzo	1
+S356	broken
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{water,matzo}
+O314	water	0
+S240	in	[bowl]
+O384	matzo	1
+S356	broken
+S160	in	[bowl]
+M96	press	0:38	0:46
+O384	matzo	1
+S314	soaked
+S160	in	[bowl]
+//
+O2	bowl	1
+S195	contains	{water,matzo}
+O384	matzo	0
+S314	soaked
+S160	in	[bowl]
+O314	water	0
+S240	in	[bowl]
+M97	drain	0:49	1:01
+O2	bowl	1
+S195	contains	{matzo}
+O384	matzo	0
+S322	mashed
+S240	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{matzo}
+O28	egg	1
+S90	uncracked
+M4	crack	1:02	1:08
+O2	bowl	0
+S195	contains	{matzo,egg white and yolk}
+O28	egg white and yolk	1
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{matzo,egg white and yolk}
+O23	grinder	1
+S195	contains	{salt}
+O18	salt	1
+S164	in	[grinder]
+M55	grind	1:09	1:12
+O2	bowl	0
+S195	contains	{matzo,egg white and yolk,salt}
+O18	salt	0
+S314	granulated
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{matzo,egg white and yolk,salt}
+O384	matzo	1
+S323	mashed
+S240	in	[bowl]
+O18	salt	1
+S314	granulated
+S160	in	[bowl]
+O22	spoon	1
+S58	clean
+O28	egg white and yolk	1
+S160	in	[bowl]
+M1	mix	1:13	1:21
+O2	bowl	0
+S198	contains	{matzo mixture}
+O384	matzo mixture	0
+S195	contains	{matzo,egg white and yolk,salt}
+S240	in	[bowl]
+//
+O2	bowl	1
+S195	contains	{vegetable oil}
+O94	vegetable oil	1
+S176	in	[bowl]
+O13	cooking pan	0
+S151	heated
+S314	on	[stove]
+M4	pour	1:24	1:28
+O13	cooking pan	0
+S230	greased	{vegetable oil}
+S314	on	[stove]
+O94	vegetable oil	0
+S176	in	[pan]
+//
+O2	bowl	1
+S198	contains	{matzo mixture}
+O384	matzo mixture	1
+S195	contains	{matzo,egg white and yolk,salt}
+S240	in	[bowl]
+O13	cooking pan	0
+S230	greased	{vegetable oil}
+S314	on	[stove]
+O22	spoon	1
+S58	clean
+M18	scrape	1:33	1:38
+O13	cooking pan	0
+S198	contains	{matzo mixture}
+S314	on	[stove]
+O384	matzo mixture	1
+S195	contains	{matzo,egg white and yolk,salt}
+S176	in	[pan]
+O2	bowl	1
+S102	dirty
+//
+O13	cooking pan	0
+S198	contains	{matzo mixture}
+S314	on	[stove]
+O384	matzo mixture	1
+S195	contains	{matzo,egg white and yolk,salt}
+S176	in	[pan]
+O22	spoon	1
+S58	clean
+M43	spread	1:39	1:45
+O384	matzo brei	1
+S314	partly cooked
+S176	in	[pan]
+//
+O13	cooking pan	0
+S198	contains	{matzo mixture}
+S314	on	[stove]
+O384	matzo brei	1
+S314	partly cooked
+S176	in	[pan]
+O37	turner	1
+S58	clean
+M11	flip	1:55	1:58
+O384	matzo brei	1
+S314	flipped
+S176	in	[pan]
+//
+O13	cooking pan	0
+S198	contains	{matzo mixture}
+S314	on	[stove]
+O384	matzo brei	1
+S314	flipped
+S176	in	[pan]
+O94	stove	0
+S314	on
+S240	with	[pan]
+M4	cook	Assumed	Assumed
+O384	matzo brei	1
+S314	cooked
+S176	in	[pan]
+O13	cooking pan	0
+S198	contains	{matzo brei}
+S314	on	[stove]
+//
+O384	matzo brei	1
+S314	cooked
+S176	in	[pan]
+O13	cooking pan	0
+S198	contains	{matzo brei}
+S314	on	[stove]
+O314	turner	1
+S314	clean
+O314	plate	0
+S240	empty
+M0	pick-and-place	Assumed	Assumed
+O384	matzo brei	1	!
+S195	contains	{matzo,egg white and yolk,salt}
+S314	cooked
+S176	on	[plate]
+O314	plate	0
+S198	contains	{matzo brei}
+//

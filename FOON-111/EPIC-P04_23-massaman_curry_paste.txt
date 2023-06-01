@@ -1,0 +1,762 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/EPIC-P04_23-massaman_curry_paste.MP4
+//
+O255	box	0
+S195	contains	{mortar,pestle}
+O306	mortar	1
+S195	empty
+S144	in	[box]
+O307	pestle	1
+S195	clean
+S144	in	[box]
+M45	remove	0:30	0:40
+O306	mortar	0
+S107	empty
+S243	on	[surface]
+O307	pestle	1
+S58	clean
+S243	on	[surface]
+//
+O180	packet	1
+S195	contains	{coriander}
+O278	coriander	0
+S43	seeds
+S164	in	[packet]
+O22	spoon	0
+S107	clean
+M3	pour	Assumed	Assumed
+O22	spoon	0
+S195	contains	{coriander}
+O278	coriander	1
+S43	seeds
+S181	in	[spoon]
+//
+O13	cooking pan	0
+S193	empty
+S243	on	[surface]
+S43	hot
+S144	on	[stove]
+O22	spoon	1
+S195	contains	{coriander}
+O278	coriander	1
+S43	seeds
+S181	in	[spoon]
+M4	pour	Assumed	Assumed
+O13	cooking pan	0
+S193	contains	{coriander}
+S43	hot
+S144	on	[stove]
+O278	coriander	0
+S43	seeds
+S176	in	[cooking pan]
+O22	spoon	1
+S102	dirty
+//
+O180	packet	1
+S195	contains	{cumin}
+O278	cumin	0
+S43	seeds
+S164	in	[packet]
+O22	spoon	0
+S107	clean
+M3	pour	Assumed	Assumed
+O22	spoon	0
+S195	contains	{cumin}
+O278	cumin	1
+S43	seeds
+S181	in	[spoon]
+//
+O13	cooking pan	0
+S193	contains	{coriander}
+S43	hot
+S144	on	[stove]
+O22	spoon	1
+S195	contains	{cumin}
+O278	cumin	1
+S43	seeds
+S181	in	[spoon]
+M4	pour	Assumed	Assumed
+O13	cooking pan	0
+S193	contains	{coriander,cumin}
+S43	hot
+S144	on	[stove]
+O22	spoon	1
+S102	dirty
+O278	cumin	0
+S43	seeds
+S176	in	[cooking pan]
+//
+O180	shaker	1
+S195	contains	{spice}
+O278	spice	0
+S43	ground
+S164	in	[container]
+O22	spoon	1
+S107	clean
+M3	scoop	0:40	0:44
+O22	spoon	1
+S195	contains	{spice}
+O278	spice	0
+S43	ground
+S181	in	[spoon]
+//
+O13	cooking pan	0
+S43	hot
+S193	contains	{coriander,cumin}
+S144	on	[stove]
+O22	spoon	1
+S43	ground
+S195	contains	{spice}
+O278	spice	0
+S181	in	[spoon]
+M4	pour	0:44	0:47
+O13	cooking pan	0
+S43	hot
+S193	contains	{coriander,cumin,spice}
+S144	on	[stove]
+O22	spoon	1
+S102	dirty
+O278	spice	0
+S43	ground
+S176	in	[cooking pan]
+//
+O180	jar	1
+S195	contains	{clove}
+S43	closed
+M0	open	0:51	0:53
+O180	jar	1
+S195	contains	{clove}
+S43	opened
+//
+O13	cooking pan	0
+S43	hot
+S193	contains	{coriander,cumin,spice}
+S144	on	[stove]
+O180	jar	1
+S195	contains	{clove}
+S43	opened
+O119	clove	1
+S144	seeds
+S180	in	[jar]
+M0	pick-and-place	0:47	0:58
+O13	cooking pan	0
+S43	hot
+S193	contains	{coriander,cumin,spice,clove}
+S144	on	[stove]
+O119	clove	1
+S144	seeds
+S176	in	[cooking pan]
+//
+O13	cooking pan	0
+S43	hot
+S193	contains	{coriander,cumin,spice,clove}
+S144	on	[stove]
+O180	shaker	1
+S195	contains	{black pepper}
+O119	black pepper	1
+S144	peppercorn
+S43	whole
+S180	in	[jar]
+M0	pick-and-place	1:09	1:11
+O13	cooking pan	0
+S43	hot
+S193	contains	{coriander,cumin,spice,clove,black pepper}
+S144	on	[stove]
+O119	black pepper	1
+S144	peppercorn
+S43	whole
+S176	in	[cooking pan]
+//
+O26	onion	1
+S349	whole
+S43	unpeeled
+O83	cutting board	0
+S107	empty
+M0	pick-and-place	1:58	2:03
+O83	cutting board	0
+S201	contains	{onion}
+O26	onion	1
+S349	whole
+S43	unpeeled
+S235	on	[cutting board]
+//
+O38	stove	0
+S151	on
+S144	with	[cooking pan]
+O13	cooking pan	0
+S43	hot
+S193	contains	{coriander,cumin,spice,clove,black pepper}
+S144	on	[stove]
+O119	black pepper	1
+S144	peppercorn
+S43	whole
+S180	in	[cooking pan]
+O278	spice	1
+S43	ground
+S176	in	[cooking pan]
+O278	clove	1
+S43	seeds
+S176	in	[cooking pan]
+O278	cumin	1
+S43	seeds
+S176	in	[cooking pan]
+O278	coriander	1
+S43	seeds
+S176	in	[cooking pan]
+O37	spatula	1
+S58	clean
+M1	cook and stir	2:05	2:22
+O45	spice mixture	1
+S43	mixed
+S144	contains	{coriander,cumin,spice,black pepper,clove}
+S144	in	[cooking pan]
+//
+O26	onion	0
+S144	destemmed
+S43	unpeeled
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M10	cut in half	2:22	2:30
+O26	onion	0
+S43	unpeeled
+S144	halved
+S235	on	[cutting board]
+//
+O26	onion	0
+S144	halved
+S43	unpeeled
+S235	on	[cutting board]
+M0	cut off ends	<2:26-2:27,2:28-2:29>
+O26	onion	0
+S144	halved
+S144	destemmed
+S43	unpeeled
+S235	on	[cutting board]
+//
+O26	onion	1
+S43	unpeeled
+S144	destemmed
+S144	halved
+S235	on	[cutting board]
+M17	peel	<2:32-2:44,2:46-2:52>
+O26	onion	1
+S144	destemmed
+S265	peeled
+S144	halved
+S235	on	[cutting board]
+O26	onion	1
+S144	destemmed
+S265	peeled
+S144	halved
+S235	on	[cutting board]
+O26	onion	1
+S43	skin
+S235	on	[cutting board]
+//
+O179	trash bin	0
+S58	contains	{trash}
+O26	onion	1
+S43	skin
+S235	on	[cutting board]
+M18	throw away	2:53	2:58
+O26	onion	1
+S43	skin
+S235	in	[trash bin]
+//
+O26	onion	0
+S144	destemmed
+S265	peeled
+S144	halved
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M4	chop	<3:00-3:19,3:36-3:44>
+O26	onion	0
+S101	chopped
+S235	on	[cutting board]
+//
+O83	cutting board	0
+S201	contains	{onion}
+O26	onion	1
+S101	chopped
+S235	on	[cutting board]
+O306	mortar	0
+S107	empty
+M18	pour and scrape	4:00	4:10
+O26	onion	1
+S101	chopped
+S235	in	[mortar]
+O306	mortar	0
+S195	contains	{onion}
+O83	cutting board	0
+S43	empty
+S107	dirty
+//
+O83	cutting board	0
+S107	empty
+O30	garlic	1
+S61	clove
+S43	unpeeled
+M0	pick-and-place	4:10	4:12
+O83	cutting board	0
+S201	contains	{garlic}
+O30	garlic	1
+S61	clove
+S43	unpeeled
+S235	on	[cutting board]
+//
+O83	cutting board	0
+S201	contains	{garlic}
+O30	garlic	0
+S43	unpeeled
+S61	clove
+S235	on	[cutting board]
+M48	cut off ends	4:23	4:25
+O30	garlic	0
+S61	clove
+S43	unpeeled
+S110	derooted
+S235	on	[cutting board]
+//
+O30	garlic	1
+S61	clove
+S43	unpeeled
+S110	derooted
+S235	on	[cutting board]
+M17	peel	<4:30-4:40,4:41-5:08>
+O30	garlic	0
+S61	clove
+S265	peeled
+S110	derooted
+S235	on	[cutting board]
+O30	garlic	0
+S265	skin
+S235	on	[cutting board]
+//
+O30	garlic	0
+S61	clove
+S265	peeled
+S110	derooted
+S235	on	[cutting board]
+M0	pick-and-place	5:08	5:09
+O30	garlic	0
+S61	clove
+S265	peeled
+S110	derooted
+//
+O83	cutting board	1
+S201	contains	{garlic}
+O30	garlic	1
+S265	skin
+S235	on	[cutting board]
+O179	trash bin	0
+S58	contains	{trash}
+O4	knife	1
+S43	clean
+M18	throw away	5:13	5:17
+O30	garlic	1
+S268	skin
+S155	in	[trash bin]
+O83	cutting board	0
+S43	empty
+S107	dirty
+//
+O38	stove	0
+S151	on
+S144	with	[cooking pan]
+O13	cooking pan	1
+S43	hot
+S193	contains	{coriander,cumin,spice,clove,black pepper}
+S144	on	[stove]
+M79	turn off	5:18	5:24
+O38	stove	0
+S151	off
+S144	with	[cooking pan]
+O13	cooking pan	1
+S193	contains	{coriander,cumin,spice,clove,black pepper}
+S144	on	[stove]
+//
+O13	cooking pan	1
+S193	contains	{coriander,cumin,spice,clove,black pepper}
+S144	on	[stove]
+O45	spice mixture	1
+S43	mixed
+S144	contains	{coriander,cumin,spice,clove,black pepper}
+S144	in	[cooking pan]
+O119	black pepper	1
+S144	peppercorn
+S43	whole
+S180	in	[cooking pan]
+O278	spice	1
+S43	ground
+S176	in	[cooking pan]
+O278	clove	1
+S43	seeds
+S176	in	[cooking pan]
+O278	cumin	1
+S43	seeds
+S176	in	[cooking pan]
+O278	coriander	1
+S43	seeds
+S176	in	[cooking pan]
+O306	mortar	0
+S195	contains	{onion}
+O37	spatula	1
+S58	clean
+M18	pour and scrape	5:24	5:41
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper}
+O45	spice mixture	1
+S43	mixed
+S144	contains	{coriander,cumin,spice,black pepper}
+S144	in	[mortar]
+O119	black pepper	1
+S144	peppercorn
+S43	whole
+S144	in	[mortar]
+O278	spice	1
+S43	ground
+S144	in	[mortar]
+O278	clove	1
+S43	seeds
+S144	in	[mortar]
+O278	cumin	1
+S43	seeds
+S144	in	[mortar]
+O278	coriander	1
+S43	seeds
+S144	in	[mortar]
+O13	cooking pan	0
+S43	empty
+S102	dirty
+//
+O30	cutting board	0
+S144	empty
+O30	garlic	1
+S61	clove
+S265	peeled
+S110	derooted
+M0	pick-and-place	5:43	5:44
+O83	cutting board	0
+S201	contains	{garlic}
+O30	garlic	1
+S61	clove
+S265	peeled
+S110	derooted
+S311	on	[cutting board]
+//
+O30	garlic	0
+S61	clove
+S265	peeled
+S110	derooted
+S311	on	[cutting board]
+O11	knife	1
+S58	clean
+M5	chop	5:44	6:36
+O26	garlic	0
+S101	minced
+S311	on	[cutting board]
+//
+O83	cutting board	0
+S201	contains	{garlic}
+O26	garlic	0
+S101	minced
+S43	on	[cutting board]
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper}
+O11	knife	1
+S58	clean
+M18	scrape	6:37	6:42
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic}
+O30	garlic	0
+S101	minced
+S177	in	[mortar]
+O83	cutting board	0
+S43	empty
+S107	dirty
+//
+O288	packet	1
+S144	sealed
+S182	contains	{lemon grass}
+M73	rip open	7:23	7:28
+O288	packet	1
+S182	contains	{lemon grass}
+S34	opened
+//
+O288	packet	1
+S182	contains	{lemon grass}
+S34	opened
+O384	lemon grass	1
+S555	stem
+S349	in	[packet]
+O30	cutting board	0
+S311	empty
+M0	pick-and-place	7:29	7:34
+O83	cutting board	0
+S201	contains	{lemon grass}
+O384	lemon grass	1
+S555	stem
+S349	on	[cutting board]
+//
+O83	cutting board	0
+S201	contains	{lemon grass}
+O384	lemon grass	0
+S555	stem
+S43	unpeeled
+S235	on	[cutting board]
+M48	cut off ends	7:35	7:40
+O384	lemon grass	0
+S43	unpeeled
+S110	ends removed
+S235	on	[cutting board]
+//
+O384	lemon grass	0
+S110	ends removed
+S43	unpeeled
+S235	on	[cutting board]
+M17	peel	7:40	7:55
+O384	lemon grass	0
+S110	ends removed
+S265	peeled
+S235	on	[cutting board]
+//
+O384	lemon grass	0
+S110	ends removed
+S265	peeled
+S235	on	[cutting board]
+O83	cutting board	0
+S201	contains	{lemon grass}
+O11	knife	1
+S58	clean
+M10	slice	7:55	8:13
+O384	lemon grass	0
+S311	sliced
+S235	on	[cutting board]
+//
+O83	cutting board	0
+S201	contains	{lemon grass}
+O384	lemon grass	1
+S311	sliced
+S235	on	[cutting board]
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic}
+M0	pick-and-place	8:13	8:17
+O83	cutting board	0
+S43	empty
+S107	dirty
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass}
+O384	lemon grass	1
+S311	sliced
+S235	in	[mortar]
+//
+O179	packet	1
+S3	sealed
+S34	contains	{shrimp}
+O177	scissors	0
+S58	clean
+M8	cut	9:19	9:20
+O179	packet	1
+S34	contains	{shrimp}
+S43	opened
+//
+O22	spoon	0
+S107	clean
+O179	packet	1
+S34	contains	{shrimp}
+S43	opened
+O385	shrimp	1
+S32	paste
+S155	in	[packet]
+M14	squeeze	9:32	9:57
+O22	spoon	0
+S182	contains	{shrimp}
+O385	shrimp	1
+S32	paste
+S181	in	[spoon]
+//
+O22	spoon	0
+S182	contains	{shrimp}
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass}
+O385	shrimp	1
+S43	paste
+S181	in	[spoon]
+M4	pour	9:57	9:59
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass,shrimp}
+O385	shrimp	0
+S43	paste
+S777	in	[mortar]
+O22	spoon	0
+S102	dirty
+//
+O181	faucet	0
+S115	off (ready)
+M67	turn on	10:20	10:21
+O181	faucet	0
+S115	on
+O23	water	0
+S43	from	[faucet]
+//
+O181	faucet	0
+S115	on
+O22	spoon	1
+S102	dirty
+O34	water	1
+S43	from	[faucet]
+M67	wash	10:21	10:22
+O22	spoon	0
+S58	clean
+//
+O181	faucet	0
+S115	on
+O34	water	1
+S43	from	[faucet]
+M67	turn off	10:21	0:22
+O181	faucet	0
+S115	off
+//
+O288	jar	0
+S182	contains	{galangal}
+S33	closed
+M0	open		10:17	10:18
+O288	jar	0
+S182	contains	{galangal}
+S33	opened
+//
+O288	jar	0
+S182	contains	{galangal}
+S33	opened
+O386	galangal	0
+S43	paste
+S164	in	[jar]
+O22	spoon	1
+S58	clean
+M3	scoop	10:30	10:31
+O22	spoon	1
+S182	contains	{galangal}
+O386	galangal	0
+S43	paste
+S181	in	[spoon]
+//
+O22	spoon	1
+S182	contains	{galangal}
+O386	galangal	1
+S3	paste
+S181	in	[spoon]
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass,shrimp}
+M4	pour	10:43	10:44
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass,shrimp,galangal}
+O386	galangal	0
+S43	paste
+S777	in	[mortar]
+O22	spoon	0
+S107	dirty
+//
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass,shrimp,galangal}
+O108	bottle	0
+S182	contains	{fish sauce}
+O999	fish sauce	0
+S43	sauce
+S159	in	[bottle]
+M4	pour	10:44	10:45
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass,shrimp,galangal,fish sauce}
+O999	fish sauce	0
+S43	sauce
+S777	in	[mortar]
+O22	spoon	0
+S102	dirty
+//
+O306	mortar	0
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass,shrimp,galangal,fish sauce}
+O999	shrimp	1
+S43	paste
+S777	in	[mortar]
+O999	fish sauce	1
+S43	sauce
+S777	in	[mortar]
+O999	galangal	1
+S43	paste
+S777	in	[mortar]
+O999	garlic	1
+S144	minced
+S777	in	[mortar]
+O999	lemon grass	1
+S144	sliced
+S777	in	[mortar]
+O999	onion	1
+S144	diced
+S777	in	[mortar]
+O45	spice mixture	1
+S43	mixed
+S144	contains	{coriander,cumin,spice,black pepper}
+S144	in	[mortar]
+O119	black pepper	1
+S144	peppercorn
+S43	whole
+S144	in	[mortar]
+O278	spice	1
+S43	ground
+S144	in	[mortar]
+O278	clove	1
+S43	seeds
+S144	in	[mortar]
+O278	cumin	1
+S43	seeds
+S144	in	[mortar]
+O278	coriander	1
+S43	seeds
+S144	in	[mortar]
+O307	pestle	1
+S58	clean
+M7	mash	10:49	15:15
+O306	mortar	0
+S195	contains	{curry paste}
+O45	curry paste	1
+S43	mixed
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass,shrimp,galangal,fish sauce}
+S34	in	[mortar]
+O307	pestle	1
+S58	dirty
+//
+O306	mortar	0
+S195	contains	{curry paste}
+O180	shaker	1
+S182	contains	{paprika}
+O20	paprika	1
+S144	ground
+S180	in	[shaker]
+M12	shake	15:26	15:34
+O306	mortar	0
+S195	contains	{curry paste,paprika}
+O20	paprika	0
+S144	ground
+S777	in	[mortar]
+//
+O306	mortar	0
+S195	contains	{curry paste,paprika}
+O20	paprika	0
+S144	ground
+S777	in	[mortar]
+O307	pestle	1
+S58	clean
+O45	curry paste	1
+S43	mixed
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass,shrimp,galangal,fish sauce}
+S34	in	[mortar]
+M7	mash	15:44	16:38
+O307	pestle	1
+S58	dirty
+O306	mortar	0
+S196	contains	{curry paste}
+O45	curry paste	1
+S43	mixed
+S195	contains	{onion,coriander,cumin,spice,black pepper,garlic,lemon grass,shrimp,galangal,fish sauce,paprika}
+S34	in	[mortar]
+//

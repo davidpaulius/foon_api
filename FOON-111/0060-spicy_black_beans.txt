@@ -1,0 +1,395 @@
+O83	cutting board	0
+S98	empty
+O26	onion	0
+S221	peeled
+M0	pick-and-place	Assumed	Assumed
+O83	cutting board	0
+S188	contains	{onion}
+O26	onion	0
+S221	peeled
+S43	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{onion}
+O26	onion	0
+S221	peeled
+S43	on	[cutting board]
+O11	knife	1
+S52	clean
+M5	chop	Assumed	Assumed
+O26	onion	0
+S51	chopped
+S43	on	[cutting board]
+//
+O83	cutting board	0
+S98	empty
+O30	garlic	0
+S221	peeled
+M0	pick-and-place	Assumed	Assumed
+O83	cutting board	0
+S188	contains	{garlic}
+O30	garlic	0
+S221	peeled
+S43	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{garlic}
+O11	knife	1
+S52	clean
+O30	garlic	0
+S221	peeled
+S43	on	[cutting board]
+M5	chop	Assumed	Assumed
+O30	garlic	0
+S51	chopped
+S43	on	[cutting board]
+//
+O83	cutting board	0
+S98	empty
+O147	jalapeno	0
+S221	whole
+M0	pick-and-place	Assumed	Assumed
+O83	cutting board	0
+S188	contains	{jalapeno}
+O147	jalapeno	0
+S221	whole
+S43	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{jalapeno}
+O11	knife	1
+S51	clean
+O147	jalapeno	0
+S221	whole
+S43	on	[cutting board]
+M5	chop	Assumed	Assumed
+O147	jalapeno	0
+S50	chopped
+S43	on	[cutting board]
+//
+O83	cutting board	1
+S188	contains	{garlic}
+O30	garlic	1
+S50	chopped
+S43	on	[cutting board]
+O15	plate	0
+S188	empty
+M32	scrape	Assumed	Assumed
+O15	plate	0
+S188	contains	{garlic}
+O30	garlic	1
+S50	chopped
+S226	on	[plate]
+O83	cutting board	0
+S188	dirty
+//
+O83	cutting board	1
+S188	contains	{onion}
+O30	onion	1
+S50	chopped
+S43	on	[cutting board]
+O15	plate	0
+S188	contains	{garlic}
+M32	scrape	Assumed	Assumed
+O15	plate	0
+S188	contains	{garlic,onion}
+O30	onion	1
+S50	chopped
+S226	on	[plate]
+O83	cutting board	0
+S188	dirty
+//
+O83	cutting board	1
+S188	contains	{jalapeno}
+O147	jalapeno	1
+S50	chopped
+S43	on	[cutting board]
+O15	plate	0
+S188	contains	{garlic,onion}
+M32	scrape	Assumed	Assumed
+O15	plate	0
+S188	contains	{garlic,onion,jalapeno}
+O147	jalapeno	1
+S50	chopped
+S226	on	[plate]
+O83	cutting board	0
+S188	dirty
+//
+O108	bottle	1
+S182	contains	{olive oil}
+O17	olive oil	1
+S147	in	[bottle]
+O13	cooking pan	0
+S139	heated
+S43	on	[stove]
+M4	pour	Assumed	Assumed
+O13	cooking pan	0
+S124	greased	{olive oil}
+S43	on	[stove]
+//
+O13	cooking pan	0
+S124	greased	{olive oil}
+S43	on	[stove]
+O15	plate	0
+S188	contains	{jalapeno,onion,garlic}
+O30	garlic	1
+S50	chopped
+S226	on	[plate]
+O147	jalapeno	1
+S50	chopped
+S226	on	[plate]
+O26	onion	1
+S50	chopped
+S226	on	[plate]
+M4	pour	0:35	0:39
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic}
+S43	on	[stove]
+O26	onion	1
+S50	chopped
+S164	in	[pan]
+O30	garlic	1
+S50	chopped
+S164	in	[pan]
+O147	jalapeno	1
+S50	chopped
+S164	in	[pan]
+O15	plate	0
+S188	dirty
+//
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic}
+S43	on	[stove]
+O22	spoon	1
+S51	clean
+O26	onion	1
+S50	chopped
+S164	in	[pan]
+O30	garlic	1
+S50	chopped
+S164	in	[pan]
+O147	jalapeno	1
+S50	chopped
+S164	in	[pan]
+M6	stir	0:41	0:49
+O13	cooking pan	0
+S185	contains	{olive oil,jalapeno,onion,garlic}
+S43	on	[stove]
+O26	onion	1
+S50	fried
+S164	in	[pan]
+O30	garlic	1
+S50	fried
+S164	in	[pan]
+O147	jalapeno	1
+S50	fried
+S164	in	[pan]
+//
+O13	cooking pan	0
+S185	contains	{olive oil,jalapeno,onion,garlic}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{black bean}
+O103	black bean	1
+S17	in	[bowl]
+M4	pour	0:56	1:00
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean}
+S43	on	[stove]
+O103	black bean	1
+S43	uncooked
+S164	in	[pan]
+//
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean}
+S43	on	[stove]
+O103	black bean	0
+S43	uncooked
+S164	in	[pan]
+O22	spoon	1
+S51	clean
+M6	stir	1:03	1:21
+O13	cooking pan	0
+S185	contains	{olive oil,jalapeno,onion,garlic,black bean}
+S43	on	[stove]
+//
+O13	cooking pan	0
+S185	contains	{olive oil,jalapeno,onion,garlic,black bean}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{salt}
+O18	salt	1
+S43	granulated
+S148	in	[bowl]
+M2	sprinkle	Assumed	Assumed
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt}
+S43	on	[stove]
+O18	salt	1
+S43	granulated
+S164	in	[pan]
+//
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{black pepper}
+O19	black pepper	1
+S43	ground
+S148	in	[bowl]
+M2	sprinkle	1:32	1:34
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
+S43	on	[stove]
+O19	black pepper	1
+S43	ground
+S164	in	[pan]
+//
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
+S43	on	[stove]
+O22	spoon	1
+S51	clean
+O103	black bean	1
+S43	uncooked
+S164	in	[pan]
+M6	stir	1:36	1:41
+O13	cooking pan	0
+S185	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
+S43	on	[stove]
+O103	black bean	1
+S43	partly cooked
+S185	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper}
+S164	in	[pan]
+//
+O13	cooking pan	0
+S185	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
+S43	on	[stove]
+O190	measuring cup	1
+S182	contains	{water}
+O46	water	1
+S157	in	[measuring cup]
+M4	pour	1:44	1:46
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water}
+S43	on	[stove]
+O46	water	1
+S164	in	[pan]
+//
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water}
+S43	on	[stove]
+O22	spoon	1
+S51	clean
+M6	stir	1:48	1:51
+O13	cooking pan	0
+S185	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water}
+S43	on	[stove]
+//
+O13	cooking pan	0
+S185	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water}
+S43	on	[stove]
+O67	jar	1
+S182	contains	{bay leaf}
+O185	bay leaf	1
+S96	dried
+S43	in	[jar]
+M2	put inside	2:00	2:07
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water,bay leaf}
+S43	on	[stove]
+O103	black bean	1
+S43	partly cooked
+S185	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S164	in	[pan]
+O185	bay leaf	1
+S43	dried
+S164	in	[pan]
+//
+O13	cooking pan	0
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water,bay leaf}
+S43	on	[stove]
+O103	black bean	1
+S43	partly cooked
+S185	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S164	in	[pan]
+O1	pan lid	1
+S1	clean
+M33	cover	Assumed	Assumed
+O13	cooking pan	0
+S43	covered
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water,bay leaf}
+S43	on	[stove]
+O1	pan lid	1
+S1	on	[pan]
+//
+O32	stove	0
+S139	on
+S43	with	[pan]
+O13	cooking pan	0
+S43	covered
+S182	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water,bay leaf}
+S43	on	[stove]
+O103	black bean	1
+S43	partly cooked
+S185	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S164	in	[pan]
+M40	cook	Assumed	Assumed
+O13	cooking pan	0
+S43	covered
+S182	contains	{black bean}
+S43	on	[stove]
+O103	black bean	1
+S43	cooked
+S185	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S164	in	[pan]
+//
+O13	cooking pan	0
+S43	covered
+S182	contains	{black bean}
+S43	on	[stove]
+O1	pan lid	1
+S1	on	[pan]
+M34	uncover	2:20:75	2:23
+O13	cooking pan	0
+S182	contains	{black bean}
+S43	on	[stove]
+O1	pan lid	1
+S1	dirty
+//
+O13	cooking pan	0
+S182	contains	{black bean}
+S43	on	[stove]
+O103	black bean	1
+S43	cooked
+S185	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S164	in	[pan]
+O185	bay leaf	1
+S164	in	[pan]
+M45	remove	2:31	2:38
+O103	black bean	1
+S43	cooked
+S185	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper}
+S164	in	[pan]
+O185	bay leaf	1
+S94	dirty
+//
+O13	cooking pan	0
+S185	contains	{black bean}
+S43	on	[stove]
+O103	black bean	1
+S43	cooked
+S185	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper}
+S164	in	[pan]
+O33	ladle	1
+S323	clean
+O30	bowl	1
+S323	empty
+M4	scoop and pour	Assumed	Assumed
+O103	black bean	1	!
+S43	cooked
+S185	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper}
+S165	in	[bowl]
+O30	bowl	1
+S185	contains	{black bean}
+//

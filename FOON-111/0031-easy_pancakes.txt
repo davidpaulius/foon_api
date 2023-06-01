@@ -1,0 +1,355 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0031-easy_pancakes.mp4
+# Source:	https://www.youtube.com/watch?v=LWuuCndtJr0
+//
+O67	jar	1
+S43	closed
+S182	contains	{flour}
+M0	open	Assumed	Assumed
+O67	jar	1
+S43	opened
+S182	contains	{flour}
+//
+O67	jar	0
+S43	opened
+S182	contains	{flour}
+O42	flour	1
+S43	powder
+S155	in	[jar]
+O190	measuring cup	1
+S98	empty
+M3	scoop	0:25	0:26
+O190	measuring cup	1
+S182	contains	{flour}
+O42	flour	1
+S43	powder
+S157	in	[measuring cup]
+//
+O2	mixing bowl	0
+S98	empty
+O190	measuring cup	1
+S182	contains	{flour}
+O42	flour	1
+S43	powder
+S157	in	[measuring cup]
+M4	pour	0:30	0:33
+O2	mixing bowl	0
+S182	contains	{flour}
+O42	flour	1
+S43	powder
+S148	in	[mixing bowl]
+//
+O67	jar	0
+S182	contains	{sugar}
+O0	sugar	1
+S43	granulated
+S155	in	[jar]
+O22	spoon	1
+M3	scoop	0:34	0:36
+O22	spoon	1
+S182	contains	{sugar}
+O0	sugar	1
+S43	granulated
+S168	in	[spoon]
+//
+O22	spoon	1
+S182	contains	{sugar}
+O2	mixing bowl	0
+S182	contains	{flour}
+O0	sugar	1
+S43	granulated
+S168	in	[spoon]
+M4	pour	0:36	0:37
+O2	bowl	0
+S182	contains	{flour,sugar}
+O0	sugar	1
+S43	granulated
+S168	in	[mixing bowl]
+//
+O22	spoon	1
+S51	clean
+O116	baking powder	0
+S43	powder
+S151	in	[container]
+M3	scoop	0:38	0:42
+O22	spoon	1
+S182	contains	{baking powder}
+O116	baking powder	0
+S43	powder
+S168	in	[spoon]
+//
+O22	spoon	1
+S182	contains	{baking powder}
+O116	baking powder	0
+S43	powder
+S168	in	[spoon]
+O2	mixing bowl	0
+S182	contains	{flour,sugar}
+M4	pour	0:43	0:45
+O2	bowl	0
+S182	contains	{flour,sugar,baking powder}
+O116	baking powder	0
+S43	powder
+S168	in	[mixing bowl]
+//
+O22	spoon	1
+S51	clean
+O2	bowl	0
+S182	contains	{salt}
+O18	salt	1
+S233	granulated
+S148	in	[bowl]
+M3	scoop	0:45	0:48
+O22	spoon	1
+S188	contains	{salt}
+O18	salt	1
+S233	granulated
+S168	in	[spoon]
+//
+O22	spoon	1
+S188	contains	{salt}
+O18	salt	1
+S233	granulated
+S168	in	[spoon]
+O2	mixing bowl	0
+S182	contains	{flour,sugar,baking powder}
+M4	pour	0:49	0:50
+O2	bowl	0
+S182	contains	{flour,sugar,baking powder,salt}
+O18	salt	1
+S233	granulated
+S168	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S182	contains	{flour,sugar,baking powder,salt}
+O116	flour	0
+S43	powder
+S168	in	[mixing bowl]
+O116	baking powder	0
+S43	powder
+S168	in	[mixing bowl]
+O18	salt	1
+S233	granulated
+S168	in	[mixing bowl]
+O18	sugar	1
+S233	granulated
+S168	in	[mixing bowl]
+O91	whisk	1
+S51	clean
+M1	mix	0:51	1:00
+O2	mixing bowl	0
+S185	contains	{flour mixture}
+O43	flour mixture	1
+S182	contains	{flour,sugar,baking powder,salt}
+S168	in	[mixing bowl]
+//
+O3	carton	1
+S43	sealed
+S43	contains	{milk}
+M0	open	Assumed	Assumed
+O3	carton	1
+S43	opened
+S43	contains	{milk}
+//
+O3	bottle	1
+S43	opened
+S43	contains	{milk}
+O55	milk	1
+S151	in	[bottle]
+O190	measuring cup	0
+S98	empty
+M4	pour	1:01	1:08
+O190	measuring cup	0
+S182	contains	{milk}
+O55	milk	1
+S157	in	[measuring cup]
+//
+O190	measuring cup	0
+S182	contains	{milk}
+O55	milk	1
+S157	in	[measuring cup]
+O2	mixing bowl	0
+S185	contains	{flour mixture}
+M4	pour	1:09	1:11
+O2	mixing bowl	0
+S185	contains	{flour mixture,milk}
+O55	milk	1
+S168	in	[mixing bowl]
+//
+O2	bowl	0
+S98	empty
+O28	egg	1
+S318	whole
+M19	crack	1:12	1:14
+O2	bowl	0
+S182	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S82	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S82	in	[bowl]
+O6	fork	1
+S51	clean
+M6	beat	1:16	1:19:50
+O28	egg white and yolk	1
+S12	beaten
+S43	in	[bowl]
+//
+O2	bowl	1
+S185	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S12	beaten
+S43	in	[bowl]
+O2	mixing bowl	0
+S185	contains	{flour mixture,milk}
+M4	pour	1:21	1:23
+O2	mixing bowl	0
+S185	contains	{flour mixture,milk,egg white and yolk}
+O28	egg white and yolk	1
+S12	beaten
+S43	in	[mixing bowl]
+//
+O2	bowl	1
+S182	contains	{vegetable oil}
+O94	vegetable oil	1
+S148	in	[bowl]
+O2	mixing bowl	0
+S185	contains	{flour mixture,milk,egg white and yolk,vegetable oil}
+M4	pour	1:24	1:26
+O2	mixing bowl	0
+S185	contains	{flour mixture,milk,egg white and yolk,vegetable oil}
+O94	vegetable oil	1
+S148	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S185	contains	{flour mixture,milk,egg white and yolk,vegetable oil}
+O43	flour mixture	1
+S182	contains	{flour,sugar,baking powder,salt}
+S43	in	[mixing bowl]
+O94	vegetable oil	1
+S148	in	[mixing bowl]
+O94	milk	1
+S148	in	[mixing bowl]
+O28	egg white and yolk	1
+S12	beaten
+S148	in	[mixing bowl]
+O91	whisk	1
+S51	clean
+M1	mix	1:28	1:41
+O2	mixing bowl	0
+S77	contains	{pancake batter}
+O138	pancake batter	0
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	in	[mixing bowl]
+//
+O13	frying pan	0
+S43	hot
+S124	contains	{butter}
+S43	on	[stove]
+O2	mixing bowl	0
+S77	contains	{pancake batter}
+O138	pancake batter	1
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	in	[mixing bowl]
+O190	measuring cup	1
+S98	empty
+M4	scoop and pour	1:47	1:52
+O13	frying pan	0
+S43	hot
+S77	contains	{pancake batter}
+S43	on	[stove]
+O138	pancake batter	1
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	in	[frying pan]
+//
+O13	frying pan	0
+S43	hot
+S77	contains	{pancake batter}
+S43	on	[stove]
+O138	pancake batter	1
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	in	[frying pan]
+O37	turner	1
+S51	clean
+M11	flip	2:03	2:07
+O13	frying pan	0
+S43	hot
+S77	contains	{pancake}
+S43	on	[stove]
+O138	pancake	1
+S43	partly cooked
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	in	[frying pan]
+//
+O13	frying pan	0
+S43	hot
+S77	contains	{pancake}
+S43	on	[stove]
+O138	pancake	0
+S43	partly cooked
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	in	[frying pan]
+M40	cook	Assumed	Assumed
+O138	pancake	0
+S43	cooked
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	in	[frying pan]
+//
+O13	frying pan	0
+S43	hot
+S77	contains	{pancake}
+O138	pancake	1
+S43	cooked
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	in	[frying pan]
+O37	turner	1
+S51	clean
+O15	plate	0
+S98	empty
+M0	scoop and place	Assumed	Assumed
+O15	plate	0
+S77	contains	{pancake}
+O138	pancake	1
+S43	cooked
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	on	[plate]
+//
+O15	plate	0
+S77	contains	{pancake}
+O138	pancake	0
+S43	cooked
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S43	on	[plate]
+O15	plate	0
+S77	contains	{butter}
+O3	butter	1
+S302	stick
+S43	on	[plate]
+O11	knife	1
+S51	clean
+M16	spread	Assumed	Assumed
+O138	pancake	0
+S43	cooked
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil,butter}
+S43	on	[plate]
+O3	butter	1
+S148	on	[pancake]
+//
+O15	plate	0
+S77	contains	{pancake}
+O138	pancake	0
+S43	cooked	{butter}
+S43	on	[plate]
+O2	bowl	1
+S182	contains	{maple syrup}
+O1	maple syrup	1
+S148	in	[bowl]
+M4	pour	2:16	2:20
+O138	pancake	0	!
+S43	cooked
+S77	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil,butter,maple syrup}
+S43	on	[plate]
+O1	maple syrup	1
+S148	on	[pancake]
+//

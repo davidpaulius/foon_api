@@ -1,0 +1,111 @@
+# Source:	https://www.youtube.com/watch?v=9Bl7dbwT2ZM
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/ACT-0085-greek_salad_dressing.mp4
+//
+O190	measuring cup	0
+S107	empty
+O30	bowl	1
+S195	contains	{lemon}
+O74	lemon	1
+S334	juiced
+S160	in	[bowl]
+M4	pour	0:31	0:37
+O190	measuring cup	0
+S195	contains	{lemon}
+O74	lemon	1
+S334	juiced
+S160	in	[measuring cup]
+O30	bowl	1
+S107	empty
+S195	dirty
+//
+O2	measuring cup	0
+S195	contains	{lemon}
+O2	bowl	1
+S195	contains	{italian seasoning}
+O92	italian seasoning	0
+S43	mixed
+S43	dried
+S160	in	[bowl]
+M4	pour	0:38	0:42
+O190	measuring cup	0
+S195	contains	{lemon juice,italian seasoning}
+O92	italian seasoning	0
+S43	mixed
+S43	dried
+S160	in	[measuring cup]
+O30	bowl	1
+S107	empty
+S195	dirty
+//
+O190	measuring cup	0
+S195	contains	{lemon juice,italian seasoning}
+O2	bowl	1
+S195	contains	{garlic}
+O30	garlic	1
+S215	minced
+S354	in	[bowl]
+M4	pour	0:42	0:50
+O190	measuring cup	0
+S195	contains	{lemon juice,italian seasoning,garlic}
+O30	garlic	1
+S215	minced
+S215	in	[measuring cup]
+O30	bowl	1
+S107	empty
+S195	dirty
+//
+O190	measuring cup	0
+S195	contains	{lemon juice,italian seasoning,garlic}
+O166	pepper mill	1
+S195	contains	{black pepper}
+O19	black pepper	0
+S354	whole
+S43	peppercorn
+S167	in	[pepper mill]
+M7	grind and sprinkle	0:50	1:00
+O190	measuring cup	0
+S195	contains	{lemon juice,italian seasoning,garlic,pepper}
+O19	black pepper	0
+S215	ground
+S167	in	[measuring cup]
+//
+O190	measuring cup	0
+S195	contains	{lemon juice,italian seasoning,garlic,pepper}
+O166	grinder	1
+S167	contains	{salt}
+O18	salt	1
+S43	pieces
+S167	in	[grinder]
+M7	grind and sprinkle	1:00	1:06
+O190	measuring cup	0
+S195	contains	{lemon juice,italian seasoning,garlic,pepper,salt}
+O18	salt	1
+S354	granulated
+S167	in	[measuring cup]
+//
+O190	measuring cup	0
+S195	contains	{lemon juice,italian seasoning,garlic,pepper,salt}
+O2	bowl	1
+S195	contains	{olive oil}
+O17	olive oil	1
+S43	liquid
+S160	in	[bowl]
+O91	whisk	1
+S58	clean
+M94	pour and stir	1:07	2:27
+O190	measuring cup	0
+S195	contains	{lemon juice,italian seasoning,garlic,pepper,salt,olive oil}
+O241	salad dressing	0
+S43	mixed
+S195	contains	{olive oil,lemon juice,italian seasoning,garlic,pepper,salt}
+S354	in	[bowl]
+O241	greek salad dressing	0	!
+S43	liquid
+S195	contains	{olive oil,lemon juice,italian seasoning,garlic,pepper,salt}
+S354	in	[bowl]
+O2	bowl	1
+S43	empty
+S195	dirty
+O91	whisk	1
+S102	dirty
+//

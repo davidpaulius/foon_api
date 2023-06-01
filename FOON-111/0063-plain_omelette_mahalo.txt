@@ -1,0 +1,180 @@
+O28	egg	1
+S318	uncracked
+O2	bowl	0
+S98	empty
+M19	crack	Assumed	Assumed
+O2	bowl	1
+S182	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S148	in	[bowl]
+//
+O2	bowl	1
+S182	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S148	in	[bowl]
+O2	bowl	0
+S98	empty
+M4	pour	0:00:50	0:03
+O2	bowl	1
+S182	contains	{egg white and yolk}
+O2	bowl	0
+S94	dirty
+//
+O180	shaker	1
+S182	contains	{salt}
+O18	salt	1
+S314	granulated
+S167	in	[shaker]
+O2	bowl	0
+S98	empty
+M2	sprinkle	Assumed	Assumed
+O2	bowl	0
+S182	contains	{salt}
+O18	salt	1
+S314	granulated
+S148	in	[bowl]
+//
+O180	shaker	1
+S182	contains	{black pepper}
+O19	black pepper	1
+S148	ground
+S167	in	[shaker]
+O2	bowl	0
+S98	empty
+M2	sprinkle	Assumed	Assumed
+O2	bowl	0
+S182	contains	{black pepper}
+O19	black pepper	1
+S148	ground
+S148	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{egg white and yolk}
+O2	bowl	0
+S182	contains	{salt}
+O18	salt	1
+S314	granulated
+S148	in	[bowl]
+M2	sprinkle	0:09:25	0:10:75
+O2	bowl	0
+S182	contains	{egg white and yolk,salt}
+//
+O2	bowl	0
+S182	contains	{egg white and yolk,salt}
+O2	bowl	0
+S182	contains	{black pepper}
+O19	black pepper	1
+S148	ground
+S148	in	[bowl]
+M2	sprinkle	0:11	0:13
+O2	bowl	0
+S182	contains	{egg white and yolk,salt,black pepper}
+//
+O2	bowl	0
+S182	contains	{egg white and yolk,salt,black pepper}
+O91	whisk	1
+S51	clean
+O28	egg white and yolk	0
+S148	in	[bowl]
+O19	black pepper	1
+S148	ground
+S148	in	[bowl]
+O18	salt	1
+S314	granulated
+S148	in	[bowl]
+M1	mix	0:17	0:35
+O2	bowl	0
+S185	contains	{egg mixture}
+O28	egg mixture	0
+S148	contains	{black pepper,salt}
+S148	in	[bowl]
+//
+O2	bowl	1
+S185	contains	{egg mixture}
+O13	cooking pan	0
+S98	empty
+S314	on	[stove]
+O28	egg mixture	0
+S148	contains	{black pepper,salt}
+S148	in	[bowl]
+M4	pour	Assumed	Assumed
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S314	on	[stove]
+O28	egg mixture	0
+S148	contains	{black pepper,salt}
+S148	in	[pan]
+//
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S314	on	[stove]
+O28	egg mixture	1
+S148	contains	{black pepper,salt}
+S148	in	[pan]
+O91	whisk	1
+S51	clean
+M1	mix	Assumed	Assumed
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S314	on	[stove]
+O28	omelette	1
+S314	partly cooked
+S148	contains	{black pepper,salt}
+S148	in	[pan]
+//
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S314	on	[stove]
+O28	omelette	1
+S314	partly cooked
+S148	contains	{black pepper,salt}
+S148	in	[pan]
+O37	turner	1
+S51	clean
+M11	flip	Assumed	Assumed
+O28	omelette	1
+S314	flipped
+S148	contains	{black pepper,salt}
+S148	in	[pan]
+//
+O32	stove	0
+S314	on
+S314	with	[pan]
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S314	on	[stove]
+O28	omelette	0
+S314	partly cooked
+S148	contains	{black pepper,salt}
+S148	in	[pan]
+M37	cook	Assumed	Assumed
+O13	cooking pan	0
+S67	contains	{omelette}
+S314	on	[stove]
+O28	omelette	0
+S314	cooked
+S148	contains	{black pepper,salt}
+S148	in	[pan]
+//
+O13	cooking pan	0
+S67	contains	{omelette}
+S314	on	[stove]
+O28	omelette	1
+S314	cooked
+S148	contains	{black pepper,salt}
+S148	in	[pan]
+O15	plate	0
+S98	empty
+O37	turner	1
+S51	clean
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S67	contains	{omelette}
+O28	omelette	1	!
+S314	cooked
+S148	contains	{black pepper,salt}
+S148	on	[plate]
+O13	cooking pan	1
+S94	dirty
+S314	on	[stove]
+//

@@ -1,0 +1,105 @@
+O2	bowl	0
+S182	contains	{egg white and yolk}
+O91	whisk	1
+S51	clean
+O28	egg white and yolk	1
+S148	in	[bowl]
+M1	mix	0:00	0:13
+O2	bowl	0
+S185	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S12	beaten
+S148	in	[bowl]
+//
+O2	bowl	0
+S185	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S12	beaten
+S148	in	[bowl]
+O2	bowl	1
+S182	contains	{milk}
+O55	milk	1
+S148	in	[bowl]
+M4	pour	0:17	0:19
+O2	bowl	0
+S182	contains	{egg white and yolk,milk}
+O2	bowl	1
+S94	dirty
+//
+O2	bowl	0
+S182	contains	{egg white and yolk,milk}
+O28	egg white and yolk	1
+S12	beaten
+S148	in	[bowl]
+O91	whisk	1
+S51	clean
+O55	milk	1
+S148	in	[bowl]
+M1	mix	0:19	0:23
+O2	bowl	0
+S185	contains	{egg mixture}
+O28	egg mixture	0
+S12	in	[bowl]
+//
+O2	bowl	1
+S185	contains	{egg mixture}
+O28	egg mixture	1
+S12	in	[bowl]
+O13	cooking pan	0
+S98	heated
+S314	on	[stove]
+M4	pour	0:23	0:26
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S314	on	[stove]
+O28	egg mixture	0
+S12	in	[pan]
+//
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S314	on	[stove]
+O28	egg mixture	1
+S12	in	[pan]
+O91	whisk	1
+S51	clean
+M1	mix	0:27	0:35
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S314	on	[stove]
+//
+O43	stove	0
+S314	on
+S314	with	[pan]
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S314	on	[stove]
+O37	spatula	1
+S51	clean
+O28	egg mixture	1
+S12	in	[pan]
+M11	cook and stir	Assumed	Assumed
+O13	cooking pan	0
+S185	contains	{scrambled eggs}
+S314	on	[stove]
+O28	scrambled eggs	1
+S236	cooked
+S12	in	[pan]
+//
+O13	cooking pan	0
+S185	contains	{scrambled eggs}
+S314	on	[stove]
+O28	scrambled eggs	1
+S236	cooked
+S12	in	[pan]
+O15	plate	0
+S98	empty
+O37	turner	1
+S51	clean
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S185	contains	{scrambled eggs}
+O28	scrambled eggs	1	!
+S182	contains	{egg white and yolk,milk}
+S236	cooked
+S12	on	[plate]
+//

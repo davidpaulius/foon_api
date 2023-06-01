@@ -1,0 +1,95 @@
+# Source:	https://www.youtube.com/watch?v=MbCAiWBhAjo
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0072-old-fashioned_lemonade.mp4
+//
+O32	orange	1
+S43	whole
+O43	colander	0
+S43	empty
+M0	pick-and-place	Assumed	Assumed
+O43	colander	0
+S43	contains	{orange}
+O32	orange	1
+S43	whole
+S43	in	[colander]
+//
+O32	faucet	0
+S43	on
+O32	water	0
+S43	from faucet
+O43	colander	1
+S43	contains	{orange}
+O32	orange	1
+S43	whole
+S43	in	[colander]
+M0	wash	Assumed	Assumed
+O32	orange	1
+S43	whole
+S43	washed
+S43	in	[colander]
+//
+O32	cutting board	0
+S43	empty
+O43	colander	0
+S43	contains	{orange}
+O32	orange	1
+S43	whole
+S43	washed
+S43	in	[colander]
+M0	pick-and-place	0:29	0:30
+O32	cutting board	0
+S43	contains	{orange}
+O32	orange	1
+S43	whole
+S43	on	[cutting board]
+O43	colander	0
+S23	empty
+S43	dirty
+//
+O32	orange	1
+S43	whole
+S43	on	[cutting board]
+O9	knife	1
+S43	clean
+M4	cut	0:32	0:35
+O32	orange	1
+S43	halved
+S43	on	[cutting board]
+//
+O32	squeezer	0
+S43	clean
+O32	orange	1
+S43	halved
+S43	on	[cutting board]
+M4	squeeze	0:53	1:10
+O32	squeezer	0
+S43	contains	{orange juice}
+O32	orange juice	1
+S43	juice
+S43	in	[squeezer]
+O32	orange	1
+S43	juice
+S43	in	[squeezer]
+O32	orange	1
+S43	halved
+S43	squeezed
+S43	on	[cutting board]
+//
+O32	squeezer	0
+S43	contains	{orange juice}
+O32	orange	1
+S43	juice
+S43	in	[squeezer]
+O32	drinking glass	0
+S43	empty
+M0	pour	1:43	1:54
+O32	squeezer	0
+S43	dirty
+O32	drinking glass	0
+S43	contains	{orange juice}
+O32	orange	1	!
+S43	juice
+S43	in	[drinking glass]
+O32	orange juice	1	!
+S43	juice
+S43	in	[drinking glass]
+//

@@ -1,0 +1,308 @@
+O51	bowl	1
+S139	contains	{cabbage}
+O68	cabbage	1
+S160	minced
+S84	in	[bowl]
+O502	spatula	1
+S23	clean
+O420	pot	0
+S54	empty
+M40	pour	1:24	1:27
+O420	pot	0
+S139	contains	{cabbage}
+O68	cabbage	1
+S160	minced
+S116	in	[pot]
+//
+O420	pot	0
+S139	contains	{cabbage}
+O51	bowl	1
+S139	contains	{ground pork}
+O261	ground pork	1
+S160	minced
+S84	in	[bowl]
+O502	spatula	1
+S23	clean
+M40	pour	1:27	1:28
+O420	pot	0
+S139	contains	{cabbage,ground pork}
+O261	ground pork	1
+S160	minced
+S116	in	[pot]
+//
+O420	pot	0
+S139	contains	{cabbage,ground pork}
+O51	bowl	1
+S139	contains	{scallion}
+O468	scallion	1
+S21	chopped
+S84	in	[bowl]
+O507	spoon	1
+S23	clean
+M40	pour	1:29	1:32
+O507	spoon	1
+S45	dirty
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion}
+O468	scallion	0
+S21	chopped
+S116	in	[pot]
+//
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion}
+O51	bowl	1
+S139	contains	{soy sauce}
+O498	soy sauce	1
+S84	in	[bowl]
+M40	pour	1:33	1:34
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce}
+O498	soy sauce	0
+S43	sauce
+S116	in	[pot]
+//
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce}
+O51	bowl	1
+S139	contains	{rice beer}
+O445	rice beer	1
+S84	in	[bowl]
+M40	pour	1:35	1:36
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce,rice beer}
+O445	rice beer	0
+S116	in	[pot]
+//
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce,rice beer}
+O51	bowl	1
+S139	contains	{sesame oil}
+O475	sesame oil	1
+S84	in	[bowl]
+M40	pour	1:37	1:39
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce,rice beer,sesame oil}
+O475	sesame oil	1
+S116	in	[pot]
+//
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce,rice beer,sesame oil}
+O51	bowl	1
+S139	contains	{garlic}
+O230	garlic	1
+S160	minced
+S84	in	[bowl]
+M52	scrape	1:39	1:40
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce,sesame oil,garlic}
+O230	garlic	0
+S160	minced
+S116	in	[pot]
+//
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce,sesame oil,garlic}
+O51	bowl	1
+S139	contains	{cornstarch}
+O154	cornstarch	1
+S84	in	[bowl]
+M40	pour	1:42	1:43
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce,sesame oil,garlic,cornstarch}
+O154	cornstarch	0
+S116	in	[pot]
+//
+O420	pot	0
+S139	contains	{cabbage,ground pork,scallion,soy sauce,sesame oil,garlic,cornstarch}
+O502	spatula	1
+S23	clean
+O230	garlic	1
+S160	minced
+S116	in	[pot]
+O261	ground pork	1
+S160	minced
+S116	in	[pot]
+O468	scallion	1
+S21	chopped
+S116	in	[pot]
+O498	soy sauce	1
+S116	in	[pot]
+O445	rice beer	1
+S116	in	[pot]
+O475	sesame oil	1
+S116	in	[pot]
+O154	cornstarch	1
+S116	in	[pot]
+M35	mix	1:44	1:55
+O420	pot	0
+S143	contains	{gyoza filling}
+O264	gyoza filling	1
+S43	mixed
+S139	contains	{cabbage,ground pork,scallion,soy sauce,sesame oil,garlic,cornstarch}
+S116	in	[pot]
+//
+O420	pot	0
+S143	contains	{gyoza filling}
+O195	dumpling wrapper	1
+S54	empty
+S98	in	[hand]
+O264	gyoza filling	1
+S139	contains	{cabbage,ground pork,scallion,soy sauce,sesame oil,garlic,cornstarch}
+S116	in	[pot]
+O293	knife	1
+S23	clean
+M51	scoop and pour	1:59	2:00
+O293	knife	1
+S45	dirty
+O195	dumpling wrapper	0
+S145	contains	{gyoza filling}
+S98	in	[hand]
+O264	gyoza filling	1
+S204	on	[wrapper]
+//
+O195	dumpling wrapper	0
+S145	contains	{gyoza filling}
+S98	in	[hand]
+O264	gyoza filling	1
+S204	on	[wrapper]
+M26	fold	2:04	2:14
+O194	dumpling	0
+S266	wrapped
+S139	contains	{gyoza filling}
+S98	in	[hand]
+O264	gyoza filling	1
+S92	in	[dumpling]
+//
+O194	dumpling	0
+S266	wrapped
+S139	contains	{gyoza filling}
+S98	in	[hand]
+M43	press	2:15	2:18
+O194	dumpling	0
+S258	uncooked
+S139	contains	{gyoza filling}
+S98	in	[hand]
+//
+O516	stove	1
+S166	off
+M68	turn on	Assumed	Assumed
+O516	stove	0
+S168	on
+//
+O516	stove	0
+S168	on
+S209	with	[pan]
+O144	cooking pan	0
+S54	empty
+S198	on	[stove]
+M30	heat	Assumed	Assumed
+O144	cooking pan	0
+S75	heated
+S198	on	[stove]
+//
+O144	cooking pan	0
+S75	heated
+S198	on	[stove]
+O51	bowl	1
+S139	contains	{vegetable oil}
+O558	vegetable oil	1
+S84	in	[bowl]
+M40	pour	2:40	2:42
+O144	cooking pan	0
+S69	greased	{vegetable oil}
+S198	on	[stove]
+O558	vegetable oil	0
+S114	in	[pan]
+//
+O144	cooking pan	0
+S69	greased	{vegetable oil}
+S198	on	[stove]
+O194	dumpling	0
+S258	uncooked
+S139	contains	{gyoza filling}
+S98	in	[hand]
+M38	pick-and-place	2:45	2:53
+O144	cooking pan	0
+S139	contains	{oil,dumpling}
+S198	on	[stove]
+O194	dumpling	0
+S258	uncooked
+S139	contains	{gyoza filling}
+S114	in	[pan]
+//
+O144	cooking pan	0
+S139	contains	{oil,dumpling}
+S198	on	[stove]
+O334	measuring cup	1
+S139	contains	{water}
+O567	water	1
+S103	in	[measuring cup]
+M40	pour	3:02	3:04
+O144	cooking pan	0
+S139	contains	{oil,dumpling,water}
+S198	on	[stove]
+O567	water	1
+S114	in	[pan]
+//
+O144	cooking pan	0
+S139	contains	{oil,dumpling,water}
+S198	on	[stove]
+O375	pan lid	1
+S23	clean
+M13	cover	3:07	3:09
+O144	cooking pan	0
+S31	covered
+S139	contains	{oil,dumpling,water}
+S198	on	[stove]
+O375	pan lid	1
+S186	on	[pan]
+//
+O144	cooking pan	0
+S31	covered
+S139	contains	{oil,dumpling,water}
+S198	on	[stove]
+O194	dumpling	0
+S258	uncooked
+S139	contains	{gyoza filling}
+S114	in	[pan]
+M10	cook	Assumed	Assumed
+O144	cooking pan	0
+S31	covered
+S48	contains	{gyoza}
+S198	on	[stove]
+O263	gyoza	0
+S29	cooked
+S139	contains	{gyoza filling}
+S114	in	[pan]
+//
+O144	cooking pan	0
+S31	covered
+S48	contains	{gyoza}
+S198	on	[stove]
+O375	pan lid	0
+S186	on	[pan]
+M69	uncover	3:14	3:15
+O144	cooking pan	0
+S48	contains	{gyoza}
+S198	on	[stove]
+O375	pan lid	1
+S45	dirty
+//
+O415	plate	0
+S54	empty
+O144	cooking pan	1
+S48	contains	{gyoza}
+S198	on	[stove]
+O263	gyoza	0
+S29	cooked
+S139	contains	{gyoza filling}
+S114	in	[pan]
+O553	turner	1
+S23	clean
+M51	scoop and pour	Assumed	Assumed
+O415	plate	0
+S49	contains	{gyoza}
+O263	gyoza	0	!
+S29	cooked
+S139	contains	{dumpling wrapper,cabbage,ground pork,scallion,soy sauce,sesame oil,garlic,cornstarch}
+S189	on	[plate]
+//

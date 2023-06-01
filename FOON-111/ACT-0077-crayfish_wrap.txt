@@ -1,0 +1,188 @@
+O42	cutting board	0
+S43	empty
+O111	tortilla	1
+S43	plain
+M0	pick-and-place	Assumed	Assumed
+O42	cutting board	0
+S43	contains	{tortilla}
+O111	tortilla	1
+S43	plain
+S211	on	[cutting board]
+//
+O111	tortilla	0
+S43	plain
+S211	on	[cutting board]
+O32	bowl	1
+S43	contains	{butter}
+O112	butter	1
+S43	stick
+S212	in	[bowl]
+O113	knife	1
+S211	clean
+M1	spread	0:36	0:44
+O111	tortilla	0
+S213	buttered	{butter}
+S211	on	[cutting board]
+//
+O120	bowl	1
+S213	contains	{crayfish mixture}
+O114	crayfish mixture	1
+S43	contains	{crayfish,mayonnaise,lemon,dill}
+S212	in	[bowl]
+O32	fork	1
+S43	clean
+O111	tortilla	0
+S213	buttered	{butter}
+S211	on	[cutting board]
+M32	scrape	0:58	1:04
+O111	tortilla	0
+S213	contains	{butter,crayfish mixture}
+S211	on	[cutting board]
+O114	crayfish mixture	1
+S43	contains	{crayfish,mayonnaise,lemon,dill}
+S212	on	[tortilla]
+//
+O120	bowl	1
+S213	contains	{black pepper}
+O115	black pepper	1
+S43	ground
+S212	in	[bowl]
+O111	tortilla	0
+S213	contains	{butter,crayfish mixture}
+S211	on	[cutting board]
+M42	sprinkle	1:07	1:11
+O111	tortilla	0
+S213	contains	{butter,crayfish mixture,black pepper}
+S211	on	[cutting board]
+O115	black pepper	1
+S43	ground
+S212	on	[tortilla]
+//
+O120	bowl	1
+S213	contains	{arugula}
+O116	arugula	1
+S213	washed
+S212	in	[bowl]
+O111	tortilla	0
+S213	contains	{butter,crayfish mixture,black pepper}
+S211	on	[cutting board]
+M42	pick-and-place	1:13	1:16
+O111	tortilla	0
+S213	contains	{butter,crayfish mixture,black pepper,arugula}
+S211	on	[cutting board]
+O115	arugula	1
+S212	on	[tortilla]
+//
+O32	cutting board	0
+S43	contains	{lemon}
+O42	lemon	0
+S213	whole
+S211	on	[cutting board]
+O43	knife	1
+S213	clean
+M32	slice	1:20	1:21
+O42	lemon	0
+S213	sliced
+S211	on	[cutting board]
+//
+O42	lemon	0
+S213	sliced
+S211	on	[cutting board]
+O111	tortilla	0
+S213	contains	{butter,crayfish mixture,black pepper,arugula}
+S211	on	[cutting board]
+M2	squeeze	1:23	1:24
+O111	tortilla	0
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S211	on	[cutting board]
+O32	lemon juice	1
+S43	on	[tortilla]
+O42	lemon	0
+S300	squeezed
+//
+O111	tortilla	1
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S211	on	[cutting board]
+M3	roll	1:28	1:37
+O111	tortilla	1
+S43	rolled
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S211	on	[cutting board]
+//
+O111	tortilla	1
+S43	rolled
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S211	on	[cutting board]
+O32	bowl	1
+S43	contains	{butter}
+O112	butter	1
+S43	stick
+S212	in	[bowl]
+O113	knife	1
+S211	clean
+M1	spread	1:38	1:41
+O111	tortilla	1
+S43	rolled
+S43	buttered	{butter}
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S211	on	[cutting board]
+//
+O111	tortilla	1
+S43	rolled
+S43	buttered	{butter}
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S211	on	[cutting board]
+M4	tuck ends	1:42	1:52
+O111	wrap	1
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S211	on	[cutting board]
+//
+O111	wrap	1
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S211	on	[cutting board]
+O113	knife	1
+S211	clean
+M5	cut	1:57	1:58
+O111	wrap	1
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S43	halved
+S211	on	[cutting board]
+//
+O32	cutting board	0
+S43	contains	{lemon}
+O118	lemon	1
+S219	whole
+S211	on	[cutting board]
+O113	knife	1
+S211	clean
+M5	slice	2:02	2:06
+O118	lemon	1
+S218	sliced
+S211	on	[cutting board]
+//
+O118	lemon	1
+S218	sliced
+S211	on	[cutting board]
+O119	plate	0
+S211	empty
+M32	pick-and-place	2:06	2:08
+O119	plate	0
+S211	contains	{lemon}
+O118	lemon	1
+S218	sliced
+S211	on	[plate]
+//
+O119	plate	0
+S211	contains	{lemon}
+O111	wrap	1
+S213	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S43	halved
+S211	on	[cutting board]
+M6	pick-and-place	2:07	2:10
+O119	plate	0
+S211	contains	{wrap}
+O111	wrap	1	!
+S213	contains	{tortilla,butter,crayfish,mayonnaise,lemon,dill,black pepper,arugula,lemon juice}
+S43	halved
+S211	on	[plate]
+//

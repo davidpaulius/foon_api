@@ -1,0 +1,342 @@
+O43	cutting board	0
+S235	contains	{tomato}
+O51	tomato	0
+S311	whole
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M347	slice	1:07	1:14
+O51	tomato	0
+S311	sliced
+S235	on	[cutting board]
+O11	knife	1
+S102	dirty
+//
+O51	tomato	0
+S311	sliced
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M347	chop	1:17	1:21
+O51	tomato	0
+S101	diced
+S235	on	[cutting board]
+O11	knife	1
+S102	dirty
+//
+O43	cutting board	0
+S235	contains	{tomato}
+O51	tomato	1
+S101	diced
+S235	on	[cutting board]
+O2	bowl	0
+S107	empty
+M0	pick-and-place	1:28	1:31
+O2	bowl	0
+S195	contains	{tomato}
+O51	tomato	1
+S101	diced
+S235	in	[bowl]
+O43	cutting board	0
+S102	dirty
+//
+O43	cutting board	0
+S235	contains	{onion}
+O26	onion	0
+S265	peeled
+S43	on	[cutting board]
+O11	knife	1
+S58	clean
+M8	slice	1:32	1:40
+O26	onion	0
+S360	sliced
+S43	on	[cutting board]
+O11	knife	1
+S58	dirty
+//
+O43	cutting board	0
+S235	contains	{onion}
+O26	onion	1
+S360	sliced
+S43	on	[cutting board]
+O2	bowl	0
+S195	contains	{tomato}
+M0	pick-and-place	1:41	1:43
+O2	bowl	0
+S195	contains	{tomato,onion}
+O26	onion	1
+S360	sliced
+S43	in	[bowl]
+O43	cutting board	0
+S58	dirty
+//
+O205	cucumber	1
+S235	whole
+O151	peeler	1
+S58	clean
+M17	peel	1:49	1:58
+O205	cucumber	1
+S361	half-peeled
+O151	peeler	1
+S58	dirty
+//
+O43	cutting board	0
+S58	empty
+O205	cucumber	1
+S361	half-peeled
+M0	pick-and-place	Assumed	Assumed
+O205	cucumber	1
+S361	half-peeled
+S43	on	[cutting board]
+O43	cutting board	0
+S235	contains	{cucumber}
+//
+O43	cutting board	0
+S235	contains	{cucumber}
+O205	cucumber	0
+S361	half-peeled
+S43	on	[cutting board]
+O11	knife	1
+S58	clean
+M347	slice	1:59	2:09
+O205	cucumber	0
+S311	sliced
+S43	on	[cutting board]
+//
+O43	cutting board	0
+S235	contains	{cucumber}
+O205	cucumber	1
+S311	sliced
+S43	on	[cutting board]
+O2	bowl	0
+S195	contains	{tomato,onion}
+M0	pick-and-place	2:10	2:13
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber}
+O205	cucumber	1
+S311	sliced
+S43	in	[bowl]
+O43	cutting board	0
+S235	dirty
+//
+O43	cutting board	0
+S235	empty
+O50	sweet pepper	1
+S43	whole
+M0	pick-and-place	Assumed	Assumed
+O43	cutting board	0
+S235	contains	{sweet pepper}
+O50	sweet pepper	1
+S43	whole
+S235	on	[cutting board]
+//
+O43	cutting board	0
+S235	contains	{sweet pepper}
+O390	sweet pepper	0
+S235	whole
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M347	slice	2:18	2:24
+O390	sweet pepper	0
+S311	sliced
+S235	on	[cutting board]
+//
+O43	cutting board	0
+S235	contains	{sweet pepper}
+O390	sweet pepper	0
+S311	sliced
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M347	cut	2:27	2:31
+O390	sweet pepper	0
+S101	diced
+S235	on	[cutting board]
+//
+O43	cutting board	0
+S235	contains	{sweet pepper}
+O50	green pepper	1
+S43	whole
+M0	pick-and-place	Assumed	Assumed
+O43	cutting board	0
+S235	contains	{sweet pepper,green pepper}
+O50	green pepper	1
+S43	whole
+S235	on	[cutting board]
+//
+O43	cutting board	0
+S235	contains	{sweet pepper,green pepper}
+O50	green pepper	0
+S43	whole
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M347	slice	2:33	2:36
+O50	green pepper	0
+S311	sliced
+S235	on	[cutting board]
+//
+O43	cutting board	0
+S235	contains	{sweet pepper,green pepper}
+O50	green pepper	0
+S311	sliced
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M347	cut	Assumed	Assumed
+O50	green pepper	0
+S101	diced
+S235	on	[cutting board]
+//
+O43	cutting board	0
+S235	contains	{sweet pepper,green pepper}
+O168	sweet pepper	1
+S101	diced
+S43	on	[cutting board]
+O168	green pepper	1
+S101	diced
+S43	on	[cutting board]
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber}
+M0	pick-and-place	2:38	2:43
+O43	cutting board	0
+S235	dirty
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper}
+O168	sweet pepper	1
+S101	diced
+S43	in	[bowl]
+O168	green pepper	1
+S101	diced
+S43	in	[bowl]
+//
+O2	bowl	1
+S195	contains	{oregano}
+O35	oregano	1
+S104	dried
+S43	in	[bowl]
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper}
+M4	pour	2:47	2:49
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano}
+//
+O2	bowl	0
+S195	contains	{black olive}
+O68	black olive	1
+S311	whole
+S160	in	[bowl]
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano}
+M4	pour	2:51	2:52
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+//
+O33	grinder	1
+S43	contains	{salt}
+O18	salt	1
+S43	granulated
+S167	in	[shaker]
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+M7	grind	2:53	2:57
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+O18	salt	1
+S43	granulated
+S43	in	[bowl]
+//
+O102	lemon	1
+S362	halved
+O6	fork	1
+S58	clean
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+M14	squeeze	2:59	3:03
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,lemon juice}
+O102	lemon juice	1
+S362	in	[bowl]
+//
+O33	bowl	1
+S43	contains	{olive oil}
+O17	olive oil	1
+S160	in	[bowl]
+O22	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+M44	pour	3:06	3:08
+O22	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+//
+O2	bowl	0
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+O17	olive oil	1
+S160	in	[bowl]
+O102	lemon juice	1
+S362	in	[bowl]
+O18	salt	1
+S43	granulated
+S43	in	[bowl]
+O68	black olive	1
+S311	whole
+S160	in	[bowl]
+O35	oregano	1
+S104	dried
+S43	in	[bowl]
+O168	sweet pepper	1
+S101	diced
+S43	in	[bowl]
+O168	green pepper	1
+S101	diced
+S43	in	[bowl]
+O168	tomato	1
+S101	diced
+S43	in	[bowl]
+O205	cucumber	1
+S311	sliced
+S43	in	[bowl]
+O205	onion	1
+S311	sliced
+S43	in	[bowl]
+O22	spoon	1
+S58	clean
+M1	mix	3:09	3:13
+O2	bowl	0
+S195	contains	{greek salad}
+O43	greek salad	1
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+S43	in	[bowl]
+//
+O33	container	0
+S43	contains	{feta cheese}
+O27	feta cheese	0
+S101	diced
+S43	in	[container]
+O43	spoon	1
+S43	clean
+M0	scoop	Assumed	Assumed
+O33	spoon	1
+S43	contains	{feta cheese}
+O27	feta cheese	1
+S101	diced
+S43	in	[spoon]
+//
+O2	bowl	0
+S195	contains	{greek salad}
+O43	greek salad	1
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+S43	in	[bowl]
+O33	spoon	1
+S43	contains	{feta cheese}
+O27	feta cheese	1
+S101	diced
+S43	in	[spoon]
+M0	pick-and-place	3:13	3:19
+O43	greek salad	1	!
+S195	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,feta cheese}
+S43	in	[bowl]
+O27	feta cheese	1
+S101	diced
+S43	in	[bowl]
+//

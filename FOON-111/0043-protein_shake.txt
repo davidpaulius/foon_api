@@ -1,0 +1,201 @@
+O141	container	0
+S138	contains	{yogurt}
+O587	yogurt	0
+S89	in	[container]
+O173	cup	0
+S54	empty
+O334	measuring cup	1
+S23	empty
+M50	scoop	0:03	0:04
+O334	measuring cup	0
+S138	contains	{yogurt}
+O587	yogurt	0
+S103	in	[measuring cup]
+//
+O41	blender cup	0
+S54	empty
+O334	measuring cup	0
+S138	contains	{yogurt}
+O587	yogurt	0
+S103	in	[measuring cup]
+M40	pour	0:05	0:08
+O41	blender cup	0
+S138	contains	{yogurt}
+O587	yogurt	0
+S80	in	[blender cup]
+//
+O51	bowl	0
+S54	empty
+O517	strawberry	1
+S262	whole
+M38	pick-and-place	Assumed	Assumed
+O517	strawberry	1
+S262	whole
+S260	washed
+S84	in	[bowl]
+O51	bowl	0
+S138	contains	{strawberry}
+//
+O41	blender cup	0
+S138	contains	{yogurt}
+O51	bowl	1
+S138	contains	{strawberry}
+O517	strawberry	1
+S262	whole
+S260	washed
+S84	in	[bowl]
+M40	pour	0:10	0:14
+O41	blender cup	0
+S138	contains	{yogurt,strawberry}
+O517	strawberry	1
+S262	whole
+S90	in	[cup]
+//
+O41	blender cup	0
+S138	contains	{yogurt,strawberry}
+O85	carton	1
+S138	contains	{milk}
+O338	milk	1
+S87	in	[carton]
+M40	pour	0:24	0:31
+O41	blender cup	0
+S138	contains	{yogurt,strawberry,milk}
+O338	milk	1
+S80	in	[blender cup]
+//
+O41	blender cup	0
+S138	contains	{yogurt,strawberry,milk}
+O413	packet	0
+S138	contains	{flaxseed}
+O214	flaxseed	1
+S71	ground
+S77	in	[packet]
+M40	pour	0:42	0:49
+O41	blender cup	0
+S138	contains	{yogurt,strawberry,milk,flaxseed}
+O214	flaxseed	1
+S71	ground
+S90	in	[cup]
+//
+O141	container	0
+S138	contains	{whey powder}
+O572	whey powder	0
+S89	in	[container]
+O334	measuring cup	1
+S54	empty
+M50	scoop	0:55	0:57
+O334	measuring cup	1
+S138	contains	{whey powder}
+O572	whey powder	0
+S103	in	[measuring cup]
+//
+O41	blender cup	0
+S138	contains	{yogurt,strawberry,milk,flaxseed}
+O334	measuring cup	1
+S138	contains	{whey powder}
+O572	whey powder	0
+S103	in	[measuring cup]
+M40	pour	0:57	0:59
+O41	blender cup	0
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder}
+O572	whey powder	1
+S80	in	[blender cup]
+//
+O48	bottle	0
+S138	contains	{sweetener}
+O192	dropper	1
+S54	empty
+S83	in	[bottle]
+O523	sweetener	0
+S155	liquid
+S83	in	[bottle]
+M64	squeeze	Assumed	Assumed
+O192	dropper	1
+S138	contains	{sweetener}
+O523	sweetener	0
+S155	liquid
+S91	in	[dropper]
+//
+O41	blender cup	0
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder}
+O192	dropper	1
+S138	contains	{sweetener}
+O523	sweetener	1
+S155	liquid
+S91	in	[dropper]
+M23	drip	1:07	1:11
+O41	blender cup	0
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder,sweetener}
+O523	sweetener	1
+S155	liquid
+S80	in	[blender cup]
+//
+O41	blender cup	0
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder,sweetener}
+M13	cover	1:14	1:17
+O41	blender cup	1
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder,sweetener}
+S31	covered
+//
+O41	blender cup	1
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder,sweetener}
+S31	covered
+O40	blender	0
+S165	off
+M0	attach	1:20	1:21
+O41	blender cup	1
+S31	covered
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder,sweetener}
+S79	in	[blender]
+O40	blender	0
+S36	with	[cup]
+//
+O41	blender cup	0
+S31	covered
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder,sweetener}
+S79	in	[blender]
+O40	blender	0
+S36	with	[cup]
+M3	blend	1:22	1:27
+O41	blender cup	0
+S31	covered
+S53	contains	{protein shake}
+S79	in	[blender]
+O429	protein shake	0
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder,sweetener}
+S80	in	[blender cup]
+//
+O41	blender cup	0
+S31	covered
+S53	contains	{protein shake}
+S79	in	[blender]
+O40	blender	0
+S36	with	[cup]
+M19	detach	Assumed	Assumed
+O41	blender cup	1
+S31	covered
+S53	contains	{protein shake}
+O40	blender	0
+S165	off
+//
+O41	blender cup	1
+S31	covered
+S53	contains	{protein shake}
+M69	uncover	Assumed	Assumed
+O41	blender cup	1
+S53	contains	{protein shake}
+//
+O41	blender cup	1
+S53	contains	{protein shake}
+O429	protein shake	0
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder,sweetener}
+S80	in	[blender cup]
+O173	cup	0
+S54	empty
+M40	pour	Assumed	Assumed
+O173	cup	0
+S53	contains	{protein shake}
+O429	protein shake	0	!
+S138	contains	{yogurt,strawberry,milk,flaxseed,whey powder,sweetener}
+S90	in	[cup]
+//

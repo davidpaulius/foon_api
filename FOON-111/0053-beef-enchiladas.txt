@@ -1,0 +1,281 @@
+O13	cooking pan	1
+S98	empty
+O358	stove	0
+S43	on
+M0	pick-and-place	Assumed	Assumed
+O358	stove	0
+S43	on
+S43	with	[pan]
+O13	cooking pan	1
+S98	heated
+S43	on	[stove]
+//
+O2	bowl	0
+S182	contains	{ground beef}
+O13	cooking pan	0
+S98	heated
+S43	on	[stove]
+O25	ground beef	1
+S313	uncooked
+S43	in	[bowl]
+M0	pick-and-place	Assumed	Assumed
+O13	cooking pan	0
+S182	contains	{ground beef}
+S43	on	[stove]
+O25	ground beef	1
+S313	uncooked
+S43	in	[pan]
+//
+O358	stove	0
+S43	on
+S43	with	[pan]
+O13	cooking pan	0
+S182	contains	{ground beef}
+S43	on	[stove]
+O25	ground beef	1
+S313	uncooked
+S43	in	[pan]
+M93	cook and stir	0:28	0:33
+O25	ground beef	1
+S313	cooked
+S43	in	[pan]
+//
+O83	cutting board	0
+S188	contains	{onion}
+O26	onion	1
+S50	chopped
+S43	on	[cutting board]
+O13	cooking pan	0
+S182	contains	{ground beef}
+S43	on	[stove]
+M4	pour	0:42	0:46
+O26	onion	1
+S50	chopped
+S164	in	[pan]
+O13	cooking pan	0
+S182	contains	{ground beef,onion}
+S43	on	[stove]
+//
+O108	bottle	1
+S182	contains	{enchilada sauce}
+O29	enchilada sauce	1
+S100	in	[bottle]
+O69	baking tray	0
+S98	empty
+M4	pour	0:50	0:56
+O29	enchilada sauce	1
+S43	spread out
+S144	in	[baking tray]
+O69	baking tray	0
+S182	contains	{enchilada sauce}
+//
+O81	tortilla	0
+S98	plain
+O25	ground beef	1
+S313	cooked
+S43	in	[pan]
+O26	onion	1
+S50	chopped
+S164	in	[pan]
+M0	pick-and-place	1:03	1:08
+O81	tortilla	0
+S182	contains	{meat mix}
+O358	meat mix	1
+S182	contains	{ground beef,onion}
+S61	cooked
+S43	on	[tortilla]
+//
+O13	cooking pan	0
+S182	contains	{ground beef,onion}
+O27	cheese	1
+S123	grated
+O81	tortilla	0
+S182	contains	{meat mix}
+M2	sprinkle	1:12	1:15
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+O27	cheese	1
+S123	grated
+S43	on	[tortilla]
+//
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+M23	roll	1:18	1:24
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S267	rolled
+//
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S267	rolled
+O69	baking tray	0
+S182	contains	{enchilada sauce}
+M0	pick-and-place	Assumed	Assumed
+O69	baking tray	0
+S182	contains	{enchilada sauce,tortilla}
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S267	rolled
+S43	in	[baking tray]
+//
+O108	bottle	1
+S182	contains	{enchilada sauce}
+O29	enchilada sauce	1
+S100	in	[bottle]
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S267	rolled
+S43	in	[baking tray]
+O69	baking tray	0
+S182	contains	{enchilada sauce,tortilla}
+M4	pour	1:32	1:38
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S43	contains	{enchilada sauce}
+S267	rolled
+S43	in	[baking tray]
+O29	enchilada sauce	1
+S43	on	[tortilla]
+//
+O3	bowl	0
+S43	contains	{cheese}
+O27	cheese	1
+S54	grated
+S148	in	[bowl]
+O69	baking tray	0
+S182	contains	{enchilada sauce,tortilla}
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S43	contains	{enchilada sauce}
+S267	rolled
+S43	in	[baking tray]
+M2	sprinkle	1:40	1:45
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S43	contains	{enchilada sauce,cheese}
+S267	rolled
+S43	in	[baking tray]
+O69	baking tray	0
+S182	contains	{enchilada sauce,tortilla,cheese}
+O27	cheese	1
+S54	grated
+S43	on	[tortilla]
+//
+O43	jar	0
+S43	contains	{black olive}
+O68	black olive	1
+S323	whole
+S43	in	[jar]
+O43	spoon	1
+S43	clean
+M43	scoop	Assumed	Assumed
+O43	spoon	1
+S43	contains	{black olive}
+O68	black olive	1
+S323	whole
+S43	in	[spoon]
+//
+O43	spoon	1
+S43	contains	{black olive}
+O68	black olive	1
+S323	whole
+S43	in	[spoon]
+O88	cutting board	0
+S98	empty
+M0	pour	Assumed	Assumed
+O88	cutting board	0
+S182	contains	{black olive}
+O68	black olive	1
+S323	whole
+S43	on	[cutting board]
+//
+O88	cutting board	0
+S182	contains	{black olive}
+O68	black olive	1
+S323	whole
+S43	on	[cutting board]
+O11	knife	1
+S51	clean
+M5	chop	Assumed	Assumed
+O68	black olive	0
+S50	chopped
+S43	on	[cutting board]
+//
+O88	cutting board	0
+S182	contains	{black olive}
+O68	black olive	0
+S50	chopped
+S43	on	[cutting board]
+O69	baking tray	0
+S182	contains	{enchilada sauce,tortilla}
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S43	contains	{enchilada sauce,cheese}
+S267	rolled
+S43	in	[baking tray]
+M2	sprinkle	1:46	1:51
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S43	contains	{enchilada sauce,cheese,black olive}
+S267	rolled
+S43	in	[baking tray]
+//
+O14	oven	0
+S218	on
+O69	baking tray	0
+S182	contains	{enchilada sauce,tortilla}
+M0	put inside	Assumed	Assumed
+O69	baking tray	1
+S182	contains	{enchilada sauce,tortilla}
+S43	in	[oven]
+O14	oven	0
+S43	on
+S7	with	[baking tray]
+//
+O69	baking tray	0
+S182	contains	{enchilada sauce,tortilla}
+S43	in	[oven]
+O14	oven	0
+S43	on
+S7	with	[baking tray]
+O81	tortilla	0
+S182	contains	{meat mix,cheese}
+S43	contains	{enchilada sauce,cheese,black olive}
+S267	rolled
+S43	in	[baking tray]
+M39	bake	1:53	1:58
+O69	baking tray	0
+S182	contains	{enchilada}
+S43	in	[oven]
+O81	enchilada	0
+S43	contains	{enchilada sauce,cheese,black olive}
+S43	in	[baking tray]
+//
+O14	oven	0
+S218	on
+S43	with	[baking tray]
+O69	baking tray	0
+S182	contains	{enchilada}
+S43	in	[oven]
+M0	remove	Assumed	Assumed
+O69	baking tray	0
+S182	contains	{enchilada}
+O14	oven	0
+S43	off
+//
+O69	baking tray	0
+S182	contains	{enchilada}
+O15	plate	0
+S98	empty
+O81	enchilada	1
+S43	contains	{enchilada sauce,cheese,black olive}
+S43	in	[baking tray]
+O3	turner	1
+S43	clean
+M0	pick-and-place	Assumed	Assumed
+O81	enchilada	1	!
+S43	contains	{enchilada sauce,cheese,black olive}
+S43	on	[plate]
+O15	plate	0
+S182	contains	{enchilada}
+//

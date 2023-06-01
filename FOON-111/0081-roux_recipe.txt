@@ -1,0 +1,126 @@
+# Source:	https://www.youtube.com/watch?v=qx6tZ8ZU0qc
+//
+O23	stove	0
+S43	off (ready)
+O4	skillet	1
+S43	empty
+M43	pick-and-place	Assumed	Assumed
+O23	stove	0
+S43	off (ready)
+S43	with	[skillet]
+O420	skillet	1
+S54	empty
+S43	on	[stove]
+//
+O23	stove	0
+S43	off (ready)
+S43	with	[skillet]
+M43	turn on	Assumed	Assumed
+O23	stove	0
+S43	on
+S43	with	[skillet]
+//
+O515	stove	0
+S165	off
+S43	with	[skillet]
+O420	skillet	0
+S54	empty
+S43	on	[stove]
+M30	heat	Assumed	Assumed
+O420	skillet	0
+S43	hot
+S54	empty
+S43	on	[stove]
+//
+O23	bowl	1
+S43	contains	{butter}
+O4	butter	1
+S33	cube
+S4	unmelted
+S43	in	[bowl]
+O420	skillet	0
+S43	hot
+S54	empty
+S43	on	[stove]
+M0	pour	0:45	0:47
+O4	butter	1
+S33	cube
+S4	unmelted
+S43	in	[skillet]
+O420	skillet	0
+S43	hot
+S54	contains	{butter}
+S43	on	[stove]
+//
+O4	butter	0
+S33	cube
+S4	unmelted
+S43	in	[skillet]
+O420	skillet	0
+S43	hot
+S54	contains	{butter}
+S43	on	[stove]
+O23	whisk	1
+M43	stir	0:47	0:50
+O4	butter	0
+S33	melted
+S4	liquid
+S43	in	[skillet]
+//
+O420	skillet	0
+S43	hot
+S54	contains	{butter}
+S43	on	[stove]
+O4	bowl	1
+S43	contains	{flour}
+O4	flour	1
+S43	powder
+S43	in	[bowl]
+M30	pour	0:51	0:54
+O420	skillet	0
+S43	hot
+S54	contains	{butter,flour}
+S43	on	[stove]
+O4	flour	1
+S43	powder
+S43	in	[skillet]
+//
+O420	skillet	0
+S43	hot
+S54	contains	{butter,flour}
+S43	on	[stove]
+O4	flour	1
+S43	powder
+S43	in	[skillet]
+O4	butter	0
+S4	liquid
+S33	melted
+S43	in	[skillet]
+O23	whisk	1
+M43	stir	0:54	1:24
+O420	skillet	0
+S43	hot
+S54	contains	{roux}
+S43	on	[stove]
+O4	roux	0	!
+S4	thick liquid
+S43	contains	{butter,flour}
+S43	in	[skillet]
+//
+O420	skillet	0
+S43	hot
+S54	contains	{roux}
+S43	on	[stove]
+O4	roux	0
+S3	thick liquid
+S43	contains	{butter,flour}
+S43	in	[skillet]
+O23	spoon	1
+M43	scoop	Assumed	Assumed
+O23	spoon	1
+S54	contains	{roux}
+O4	roux	0
+S3	thick liquid
+S43	contains	{butter,flour}
+S43	in	[spoon]
+//

@@ -1,0 +1,631 @@
+# Source:	https://www.youtube.com/watch?v=ihZcb5WxTCU
+//
+O373	onion	1
+S275	whole
+S81	in	[bowl]
+M43	peel	Assumed	Assumed
+O373	onion	1
+S275	whole
+S222	peeled
+S81	in	[bowl]
+//
+O183	cutting board	0
+S23	clean
+S56	empty
+S173	on	[surface]
+O373	onion	1
+S275	whole
+S222	peeled
+S81	in	[bowl]
+M45	pick-and-place	Assumed	Assumed
+O183	cutting board	0
+S29	contains	{onion}
+S173	on	[surface]
+O373	onion	1
+S275	whole
+S222	peeled
+S173	on	[cutting board]
+//
+O183	cutting board	0
+S29	contains	{onion}
+S173	on	[surface]
+O373	onion	1
+S275	whole
+S222	peeled
+S173	on	[cutting board]
+O300	knife	1
+S23	clean
+M16	cut	Assumed	Assumed
+O373	onion	1
+S77	halved
+S222	peeled
+S173	on	[cutting board]
+O300	knife	1
+S46	dirty
+//
+O183	cutting board	0
+S29	contains	{onion}
+S173	on	[surface]
+O373	onion	1
+S77	halved
+S222	peeled
+S173	on	[cutting board]
+O300	knife	1
+S23	clean
+M69	slice	0:24	0:32
+O373	onion	1
+S249	sliced
+S222	peeled
+S173	on	[cutting board]
+O300	knife	1
+S46	dirty
+//
+O382	packet	1
+S237	sealed
+S29	contains	{bacon}
+O12	bacon	1
+S43	defrosted
+S81	in	[packet]
+O484	scissors	1
+S23	clean
+M18	cut open	Assumed	Assumed
+O382	packet	1
+S29	contains	{bacon}
+//
+O183	cutting board	0
+S23	clean
+S56	empty
+S173	on	[surface]
+O382	packet	0
+S29	contains	{bacon}
+O12	bacon	1
+S43	defrosted
+S81	in	[packet]
+M45	pick-and-place	Assumed	Assumed
+O183	cutting board	0
+S29	contains	{bacon}
+S173	on	[surface]
+O12	bacon	1
+S43	defrosted
+S173	on	[cutting board]
+//
+O183	cutting board	0
+S29	contains	{bacon}
+S173	on	[surface]
+O12	bacon	1
+S43	defrosted
+S173	on	[cutting board]
+M8	chop	0:32	0:40
+O12	bacon	1
+S43	defrosted
+S21	chopped
+S173	on	[cutting board]
+//
+O53	bowl	1
+S56	empty
+M45	pick-and-place	0:40	0:41
+O53	bowl	1
+S56	empty
+S173	on	[surface]
+//
+O13	bag	1
+S29	contains	{flour}
+O221	flour	1
+S228	powder
+S82	in	[bag]
+O341	measuring cup	0
+S56	empty
+S23	clean
+M47	pour	Assumed	Assumed
+O341	measuring cup	0
+S29	contains	{flour}
+O221	flour	1
+S228	powder
+S81	in	[measuring cup]
+//
+O341	measuring cup	1
+S29	contains	{flour}
+O221	flour	1
+S228	powder
+S81	in	[measuring cup]
+O53	bowl	1
+S56	empty
+S173	on	[surface]
+M47	pour	0:47	0:49
+O53	bowl	1
+S29	contains	{flour}
+S173	on	[surface]
+//
+O13	bag	1
+S29	contains	{flour}
+O221	flour	1
+S228	powder
+S82	in	[bag]
+O544	table spoon	0
+S56	empty
+S23	clean
+M47	pour	Assumed	Assumed
+O544	table spoon	0
+S29	contains	{flour}
+O221	flour	1
+S228	powder
+S81	in	[table spoon]
+//
+O544	table spoon	1
+S29	contains	{flour}
+O221	flour	1
+S228	powder
+S81	in	[table spoon]
+O53	bowl	0
+S29	contains	{flour}
+S173	on	[surface]
+M47	pour	0:47	0:49
+O53	bowl	0
+S29	contains	{flour}
+S173	on	[surface]
+//
+O553	teaspoon	1
+S29	contains	{salt}
+O472	salt	1
+S71	granulated
+S173	on	[teaspoon]
+O53	bowl	0
+S29	contains	{flour}
+S173	on	[surface]
+M47	pour	0:58	0:59
+O472	salt	1
+S71	granulated
+S81	in	[bowl]
+O53	bowl	0
+S29	contains	{flour,salt}
+S173	on	[surface]
+//
+O53	bowl	0
+S29	contains	{flour,salt}
+S173	on	[surface]
+O225	fork	1
+S23	clean
+M41	mix	1:00	1:04
+O53	bowl	0
+S148	contains	{flour,salt}
+S173	on	[surface]
+O225	fork	1
+S46	dirty
+//
+O50	bottle	1
+S29	contains	{olive oil}
+S32	covered
+O370	olive oil	0
+S81	in	[bottle]
+M55	remove	Assumed	Assumed
+O50	bottle	1
+S29	contains	{olive oil}
+//
+O544	table spoon	0
+S56	empty
+S23	clean
+O50	bottle	1
+S29	contains	{olive oil}
+O370	olive oil	1
+S81	in	[bottle]
+M47	pour	1:06	1:07
+O544	table spoon	0
+S29	contains	{olive oil}
+O370	olive oil	1
+S81	in	[table spoon]
+//
+O53	bowl	0
+S148	contains	{flour,salt}
+S173	on	[surface]
+O544	table spoon	1
+S29	contains	{olive oil}
+O370	olive oil	1
+S81	in	[table spoon]
+M47	pour	1:08	1:09
+O53	bowl	0
+S29	contains	{flour,salt,olive oil}
+S173	on	[surface]
+O370	olive oil	1
+S81	in	[bowl]
+//
+O213	faucet	1
+S171	off
+O341	measuring cup	0
+S23	clean
+S56	empty
+M78	turn on	Assumed	Assumed
+O213	faucet	1
+S173	on
+O588	water	0
+S81	in	[measuring cup]
+S66	from	[faucet]
+O341	measuring cup	0
+S29	contains	{water}
+//
+O213	faucet	1
+S173	on
+M77	turn off	Assumed	Assumed
+O213	faucet	1
+S171	off
+//
+O588	water	1
+S81	in	[measuring cup]
+S66	from	[faucet]
+O341	measuring cup	1
+S29	contains	{water}
+O53	bowl	0
+S29	contains	{flour,salt,olive oil}
+S173	on	[surface]
+M47	pour	1:09	1:10
+O588	water	1
+S81	in	[bowl]
+S66	from	[faucet]
+O53	bowl	0
+S29	contains	{dough mixture}
+S173	on	[surface]
+O192	dough mixture	0
+S29	contains	{flour,salt,olive oil,water}
+S81	in	[bowl]
+//
+O53	bowl	0
+S29	contains	{dough mixture}
+S173	on	[surface]
+O192	dough mixture	0
+S29	contains	{flour,salt,olive oil,water}
+S81	in	[bowl]
+O225	fork	1
+S23	clean
+M41	mix	1:11	1:15
+O53	bowl	0
+S29	contains	{pizza dough}
+S173	on	[surface]
+O422	pizza dough	1
+S81	in	[bowl]
+O225	fork	1
+S46	dirty
+//
+O543	table	0
+S56	empty
+S23	clean
+O13	bag	0
+S29	contains	{flour}
+O221	flour	1
+S228	powder
+S82	in	[bag]
+M73	sprinkle	1:31	1:33
+O221	flour	1
+S228	powder
+S173	on	[table]
+O543	table	0
+S155	with	[items]
+//
+O221	flour	1
+S228	powder
+S173	on	[table]
+O543	table	0
+S155	with	[items]
+O53	bowl	0
+S29	contains	{pizza dough}
+S173	on	[surface]
+O422	pizza dough	1
+S81	in	[bowl]
+M45	pick-and-place	1:34	1:35
+O543	table	0
+S155	with	[items]
+O422	pizza dough	1
+S173	on	[table]
+//
+O543	table	0
+S155	with	[items]
+O422	pizza dough	0
+S173	on	[table]
+O221	flour	0
+S228	powder
+S173	on	[table]
+O300	knife	1
+S23	clean
+M19	cut with slits	1:37	1:39
+O422	pizza dough	0
+S77	halved
+S173	on	[table]
+O300	knife	1
+S46	dirty
+//
+O461	rolling pin	1
+S23	clean
+O422	pizza dough	0
+S77	halved
+S173	on	[table]
+O543	table	0
+S155	with	[items]
+M57	roll	1:40	1:48
+O422	pizza dough	0
+S60	flattened
+S173	on	[table]
+//
+O390	parchment paper	1
+S23	clean
+O18	baking tray	0
+S23	clean
+S56	empty
+S173	on	[surface]
+M44	pick-and-place	Assumed	Assumed
+O18	baking tray	0
+S29	contains	[parchment paper]
+S173	on	[surface]
+O390	parchment paper	1
+S23	clean
+S173	on	[baking tray]
+//
+O63	brush	0
+S23	clean
+O50	bottle	1
+S29	contains	{olive oil}
+O370	olive oil	1
+S81	in	[bottle]
+M47	pour	Assumed	Assumed
+O63	brush	0
+S29	contains	{olive oil}
+O370	olive oil	1
+S173	on	{brush}
+//
+O63	brush	1
+S29	contains	{olive oil}
+O370	olive oil	0
+S173	on	{brush}
+O18	baking tray	0
+S29	contains	[parchment paper]
+S173	on	[surface]
+O390	parchment paper	1
+S23	clean
+S173	on	[baking tray]
+M6	brush	Assumed	Assumed
+O390	parchment paper	1
+S29	contains	{olive oil}
+S173	on	[baking tray]
+//
+O422	pizza dough	1
+S60	flattened
+S173	on	[table]
+O18	baking tray	0
+S29	contains	[parchment paper]
+S173	on	[surface]
+O390	parchment paper	1
+S29	contains	{olive oil}
+S173	on	[baking tray]
+M45	pick-and-place	2:17	2:19
+O422	pizza dough	1
+S60	flattened
+S173	on	[parchment paper]
+O390	parchment paper	1
+S29	contains	{olive oil,pizza dough}
+S173	on	[baking tray]
+//
+O422	pizza dough	1
+S60	flattened
+S173	on	[parchment paper]
+O390	parchment paper	1
+S29	contains	{olive oil,pizza dough}
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	[parchment paper]
+S173	on	[surface]
+M64	shape	2:20	2:28
+O422	pizza dough	1
+S60	flattened
+S173	on	[parchment paper]
+//
+O50	bottle	1
+S29	contains	{sour cream}
+S32	covered
+O512	sour cream	0
+S81	in	[bottle]
+M55	remove	Assumed	Assumed
+O50	bottle	1
+S29	contains	{sour cream}
+//
+O488	scraper	1
+S23	clean
+O50	bottle	0
+S29	contains	{sour cream}
+M60	scoop	2:37	2:38
+O488	scraper	1
+S29	contains	{sour cream}
+//
+O422	pizza dough	0
+S60	flattened
+S173	on	[parchment paper]
+O390	parchment paper	0
+S29	contains	{olive oil,pizza dough}
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	[parchment paper]
+S173	on	[surface]
+O488	scraper	1
+S29	contains	{sour cream}
+M72	spread	2:28	2:44
+O422	pizza dough	0
+S60	flattened
+S29	contains	{sour cream}
+S173	on	[parchment paper]
+//
+O422	pizza dough	0
+S60	flattened
+S29	contains	{sour cream}
+S173	on	[parchment paper]
+O390	parchment paper	0
+S29	contains	{olive oil,pizza dough}
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	[parchment paper]
+S173	on	[surface]
+O489	sea salt	1
+S71	granulated
+O406	pepper	1
+S81	in	[bottle]
+M73	sprinkle	2:45	2:48
+O422	pizza dough	0
+S60	flattened
+S29	contains	{sour cream,sea salt,pepper}
+S173	on	[parchment paper]
+//
+O373	onion	1
+S249	sliced
+S222	peeled
+S173	on	[cutting board]
+O422	pizza dough	0
+S60	flattened
+S29	contains	{sour cream,sea salt,pepper}
+S173	on	[parchment paper]
+O390	parchment paper	0
+S29	contains	{olive oil,pizza dough}
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	[parchment paper]
+S173	on	[surface]
+O12	bacon	1
+S43	defrosted
+S21	chopped
+S173	on	[cutting board]
+M73	sprinkle	2:49	2:56
+O373	onion	1
+S249	sliced
+S222	peeled
+S173	on	{pizza dough}
+O12	bacon	1
+S43	defrosted
+S21	chopped
+S173	on	{pizza dough}
+O422	pizza dough	0
+S60	flattened
+S29	contains	{sour cream,sea salt,pepper,onion,bacon}
+S173	on	[parchment paper]
+//
+O201	egg	1
+S270	uncracked
+O422	pizza dough	0
+S60	flattened
+S29	contains	{sour cream,sea salt,pepper,onion,bacon}
+S173	on	[parchment paper]
+O390	parchment paper	0
+S29	contains	{olive oil,pizza dough}
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	[parchment paper]
+S173	on	[surface]
+M15	crack	3:11	3:13
+O422	pizza dough	0
+S60	flattened
+S29	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S173	on	[parchment paper]
+O206	egg white and yolk	1
+S173	on	{pizza dough}
+//
+O379	oven	1
+S171	off
+M78	turn on	Assumed	Assumed
+O379	oven	1
+S173	on
+//
+O379	oven	1
+S173	on
+M51	preheat	Assumed	Assumed
+O379	oven	1
+S173	on
+S229	preheated
+//
+O379	oven	0
+S173	on
+S229	preheated
+O422	pizza dough	0
+S60	flattened
+S29	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S173	on	[parchment paper]
+O390	parchment paper	0
+S29	contains	{olive oil,pizza dough}
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	[parchment paper]
+S173	on	[surface]
+M45	pick-and-place	3:26	3:30
+O379	oven	0
+S173	on
+S229	preheated
+S29	contains	[baking tray]
+O18	baking tray	0
+S29	contains	[parchment paper]
+S81	in	[oven]
+//
+O379	oven	1
+S173	on
+S229	preheated
+S29	contains	[baking tray]
+O18	baking tray	0
+S29	contains	[parchment paper]
+S81	in	[oven]
+O422	pizza dough	0
+S60	flattened
+S29	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S173	on	[parchment paper]
+O390	parchment paper	0
+S29	contains	{olive oil,pizza dough}
+S173	on	[baking tray]
+M1	bake	Assumed	Assumed
+O208	eggs and bacon pizza	0
+S29	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S173	on	[parchment paper]
+O390	parchment paper	0
+S50	contains	{eggs and bacon pizza}
+S173	on	[baking tray]
+//
+O208	eggs and bacon pizza	1
+S29	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S173	on	[parchment paper]
+O18	baking tray	1
+S29	contains	[parchment paper]
+S81	in	[oven]
+O390	parchment paper	1
+S50	contains	{eggs and bacon pizza}
+S173	on	[baking tray]
+M55	remove	Assumed	Assumed
+O379	oven	0
+S171	off
+//
+O208	eggs and bacon pizza	0
+S29	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S173	on	[parchment paper]
+O18	baking tray	1
+S29	contains	[parchment paper]
+S81	in	[oven]
+O390	parchment paper	1
+S50	contains	{eggs and bacon pizza}
+S173	on	[baking tray]
+O392	parsley	1
+S21	chopped
+S81	in	[bow]
+M73	sprinkle	4:10	4:12
+O208	eggs and bacon pizza	0
+S29	contains	{parsley}
+S173	on	[parchment paper]
+//
+O208	eggs and bacon pizza	1
+S29	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk,parsley}
+S173	on	[parchment paper]
+O18	baking tray	1
+S29	contains	[parchment paper]
+S81	in	[oven]
+O390	parchment paper	1
+S50	contains	{eggs and bacon pizza}
+S173	on	[baking tray]
+O428	plate	0
+S56	empty
+S23	clean
+O561	tongs	1
+S23	clean
+M45	pick-and-place	Assumed	Assumed
+O428	plate	0
+S50	contains	{eggs and bacon pizza}
+O208	eggs and bacon pizza	1	!
+S29	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk,parsley}
+S173	on	[plate]
+//

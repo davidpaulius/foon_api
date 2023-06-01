@@ -1,0 +1,336 @@
+O38	stove	0
+S215	off
+M42	turn on	Assumed	Assumed
+O38	stove	0
+S139	on
+//
+O38	stove	0
+S139	on
+O45	pot	1
+S98	empty
+M0	pick-and-place	Assumed	Assumed
+O45	pot	0
+S139	heated
+S43	on	[stove]
+O38	stove	0
+S139	on
+S255	with	[pot]
+//
+O45	pot	0
+S139	heated
+S43	on	[stove]
+O32	bottle	1
+S43	contains	{grapeseed oil}
+O94	grapeseed oil	1
+S147	in	[bottle]
+M4	pour	0:38	0:40
+O45	pot	0
+S182	greased	{grapeseed oil}
+S43	on	[stove]
+O94	grapeseed oil	1
+S147	in	[pot]
+//
+O45	pot	0
+S182	greased	{grapeseed oil}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{garlic}
+O2	garlic	1
+S43	chopped
+S43	in	[bowl]
+M4	pour	0:42	0:43
+O45	pot	0
+S182	contains	{garlic}
+S43	on	[stove]
+O2	garlic	1
+S43	chopped
+S43	in	[pot]
+O2	bowl	1
+S94	dirty
+//
+O45	pot	0
+S182	contains	{garlic}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{scallion}
+O2	scallion	1
+S43	chopped
+S43	in	[bowl]
+M4	pour	0:45	0:47
+O45	pot	0
+S182	contains	{garlic,scallion}
+S43	on	[stove]
+O2	scallion	1
+S43	chopped
+S43	in	[pot]
+O2	bowl	1
+S94	dirty
+//
+O43	jar	0
+S43	contains	{chili sauce}
+O114	chili sauce	1
+S155	in	[jar]
+O22	spoon	1
+S98	empty
+M3	scoop	0:44	0:49
+O22	spoon	1
+S43	contains	{chili sauce}
+O114	chili sauce	1
+S155	in	[spoon]
+//
+O45	pot	0
+S182	contains	{garlic,scallion}
+S43	on	[stove]
+O22	spoon	1
+S43	contains	{chili sauce}
+O114	chili sauce	1
+S155	in	[spoon]
+M3	pour	0:49	0:41
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce}
+S43	on	[stove]
+O114	chili sauce	1
+S155	in	[pot]
+//
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce}
+S43	on	[stove]
+O124	ginger	1
+S323	peeled
+O40	grater	1
+S51	clean
+M9	grate	0:57	1:00:50
+O124	ginger	1
+S323	peeled
+S43	in	[pot]
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger}
+S43	on	[stove]
+O40	grater	1
+S94	dirty
+//
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger}
+S43	on	[stove]
+O22	spoon	1
+S98	clean
+M6	stir	1:12	1:17
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger}
+S43	on	[stove]
+O22	spoon	1
+S98	dirty
+//
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger}
+S43	on	[stove]
+O190	measuring cup	1
+S182	contains	{chicken stock}
+O128	chicken stock	1
+S157	in	[measuring cup]
+M4	pour	1:24	1:27
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock}
+S43	on	[stove]
+O128	chicken stock	1
+S157	in	[pot]
+//
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock}
+S43	on	[stove]
+O190	measuring cup	1
+S182	contains	{beef stock}
+O128	beef stock	1
+S157	in	[measuring cup]
+M4	pour	1:27	1:30
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock}
+S43	on	[stove]
+O128	beef stock	1
+S157	in	[pot]
+//
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock}
+S43	on	[stove]
+O2	cup	1
+S182	contains	{soy sauce}
+O31	soy sauce	1
+S148	in	[cup]
+M4	pour	1:32	1:34
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce}
+S43	on	[stove]
+O31	soy sauce	1
+S148	in	[pot]
+//
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce}
+S43	on	[stove]
+O2	cup	1
+S182	contains	{fish sauce}
+O144	fish sauce	1
+S148	in	[cup]
+M4	pour	1:35	1:37
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce}
+S43	on	[stove]
+O144	fish sauce	1
+S148	in	[pot]
+//
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce}
+S43	on	[stove]
+O43	measuring cup	1
+S43	contains	{water}
+O46	water	1
+S157	in	[measuring cup]
+M4	pour	1:47	1:49
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
+S43	on	[stove]
+O46	water	1
+S157	in	[pot]
+//
+O45	pot	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
+S43	on	[stove]
+O22	spoon	1
+S51	clean
+M6	stir	1:52	1:54
+O45	pot	0
+S182	contains	{soup broth}
+S43	on	[stove]
+O47	soup broth	0
+S182	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
+S165	in	[pot]
+//
+O45	pot	0
+S182	contains	{soup broth}
+S43	on	[stove]
+O28	egg	1
+S317	uncracked
+M19	crack	2:00	2:07
+O45	pot	0
+S182	contains	{soup broth,egg white and yolk}
+S43	on	[stove]
+O28	egg white and yolk	1
+S317	in	[pot]
+//
+O38	stove	0
+S43	on
+S254	with	[pot]
+O45	pot	0
+S182	contains	{soup broth,egg white and yolk}
+S43	on	[stove]
+O28	egg white and yolk	1
+S317	in	[pot]
+M40	cook	Assumed	Assumed
+O45	pot	0
+S182	contains	{soup broth,egg white and yolk}
+S43	on	[stove]
+O28	egg white and yolk	1
+S43	boiled
+S317	in	[pot]
+//
+O45	pot	0
+S182	contains	{soup broth,egg white and yolk}
+S43	on	[stove]
+O28	egg white and yolk	1
+S43	boiled
+S317	in	[pot]
+O22	spoon	1
+S51	clean
+O2	bowl	1
+S98	empty
+M3	scoop and pour	2:10	2:20
+O45	pot	0
+S182	contains	{soup broth}
+S43	on	[stove]
+O2	bowl	0
+S182	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S43	boiled
+S317	in	[bowl]
+//
+O45	pot	0
+S182	contains	{soup broth}
+S43	on	[stove]
+O49	noodle	1
+S313	uncooked
+M0	pick-and-place	2:50	2:52:75
+O45	pot	0
+S182	contains	{soup broth,noodle}
+S43	on	[stove]
+O49	noodle	1
+S313	uncooked
+S61	in	[pot]
+//
+O38	stove	0
+S43	on
+S254	with	[pot]
+O45	pot	0
+S182	contains	{soup broth,noodle}
+S43	on	[stove]
+O49	noodle	0
+S313	uncooked
+S61	in	[pot]
+M43	cook	Assumed	Assumed
+O45	pot	0
+S182	contains	{soup broth,noodle}
+S43	on	[stove]
+O49	noodle	0
+S313	cooked
+S61	in	[pot]
+//
+O45	pot	0
+S182	contains	{soup broth,noodle}
+S43	on	[stove]
+O49	noodle	1
+S313	cooked
+S61	in	[pot]
+O2	bowl	0
+S98	empty
+O41	tongs	1
+S51	clean
+M0	pick-and-place	2:56	3:01
+O2	bowl	0
+S182	contains	{noodle}
+O49	noodle	1
+S313	cooked
+S61	in	[bowl]
+//
+O45	pot	0
+S182	contains	{soup broth,noodle}
+S43	on	[stove]
+O2	bowl	0
+S182	contains	{noodle}
+O126	ladle	1
+S51	clean
+O43	soup broth	1
+S43	in	[pot]
+M3	scoop and pour	3:07	3:10
+O2	bowl	0
+S182	contains	{ramen}
+O43	ramen	1
+S182	contains	{soup broth,noodle}
+S43	in	[bowl]
+O43	soup broth	1
+S43	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{ramen}
+O43	ramen	1
+S182	contains	{soup broth,noodle}
+S43	in	[bowl]
+O41	tongs	1
+S51	clean
+O2	bowl	0
+S182	contains	{egg white and yolk}
+O357	egg white and yolk	0
+S23	boiled
+S43	in	[bowl]
+M18	scrape	3:11	3:16
+O43	ramen	1	!
+S182	contains	{soup broth,noodle,egg white and yolk}
+S43	in	[bowl]
+//

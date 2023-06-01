@@ -1,0 +1,371 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0039-crispy_hash_browns.mp4
+# Source:	https://www.youtube.com/watch?v=qHhjAnASggk
+//
+O515	stove	0
+S167	off (ready)
+O486	skillet	1
+S69	empty
+M38	pick-and-place	<Assumed>
+O515	stove	0
+S167	off (ready)
+S208	with	[skillet]
+O486	skillet	1
+S75	empty
+S197	on	[stove]
+//
+O365	bottle	1
+S43	contains	{vegetable oil}
+O43	vegetable oil	1
+S43	in	[bottle]
+O486	skillet	0
+S69	empty
+S43	on	[stove]
+M10	pour	<Assumed>
+O486	skillet	0
+S69	contains	{vegetable oil}
+S43	on	[stove]
+O43	vegetable oil	1
+S43	in	[skillet]
+//
+O515	stove	0
+S167	off (ready)
+S208	with	[skillet]
+M0	turn on	<Assumed>
+O515	stove	0
+S167	on
+S208	with	[skillet]
+//
+O422	potato	0
+S262	whole
+O395	peeler	1
+S23	clean
+M37	peel	<Assumed>
+O422	potato	0
+S216	peeled
+//
+O248	mandoline	1
+S23	clean
+O51	mixing bowl	0
+S54	empty
+M0	pick-and-place	<Assumed>
+O51	mixing bowl	0
+S54	empty
+S43	with	[mandoline]
+O248	mandoline	1
+S23	clean
+S43	on	[mixing bowl]
+//
+O51	mixing bowl	0
+S54	empty
+S43	with	[mandoline]
+O248	mandoline	1
+S23	clean
+S43	on	[mixing bowl]
+O422	potato	1
+S216	peeled
+M28	grate	<0:28-0:35>
+O51	mixing bowl	0
+S138	contains	{potato}
+O422	potato	1
+S34	grated
+S68	julienned
+S84	in	[mixing bowl]
+//
+O51	mixing bowl	0
+S138	contains	{potato}
+O51	bowl	1
+S138	contains	{onion}
+O365	onion	1
+S43	julienned
+S21	sliced
+S84	in	[bowl]
+M40	pour	<0:44-0:47>
+O51	mixing bowl	0
+S138	contains	{potato,onion}
+O365	onion	1
+S43	julienned
+S21	sliced
+S84	in	[mixing bowl]
+//
+O51	mixing bowl	0
+S138	contains	{potato,onion}
+O365	onion	1
+S43	julienned
+S21	sliced
+S84	in	[mixing bowl]
+O422	potato	1
+S34	grated
+S68	julienned
+S84	in	[mixing bowl]
+O540	tongs	1
+S23	clean
+M35	mix	<0:48-0:50:50>
+O32	hashbrown mix	0
+S43	mixed
+S138	contains	{potato,onion}
+S84	in	[mixing bowl]
+//
+O477	shaker	1
+S138	contains	{parsley}
+O383	parsley	1
+S52	dried
+S43	in	[shaker]
+O201	spoon	1
+S43	clean
+M10	pour	<Assumed>
+O201	spoon	1
+S43	contains	{parsley}
+O383	parsley	1
+S52	dried
+S123	in	[spoon]
+//
+O51	mixing bowl	0
+S142	contains	{potato,onion}
+O507	spoon	1
+S138	contains	{parsley}
+O383	parsley	1
+S52	dried
+S123	in	[spoon]
+M63	sprinkle*	<0:51-0:53>
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley}
+O383	parsley	1
+S52	dried
+S84	in	[mixing bowl]
+//
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley}
+O507	spoon	1
+S138	contains	{flour}
+O215	flour	1
+S221	powder
+S123	in	[spoon]
+M63	sprinkle*	<0:53-0:54>
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour}
+O215	flour	1
+S221	powder
+S84	in	[mixing bowl]
+//
+O477	container	1
+S138	contains	{corn starch}
+O154	corn starch	1
+S221	powder
+S43	in	[container]
+O201	spoon	1
+S43	clean
+M10	scoop	<Assumed>
+O201	spoon	1
+S43	contains	{corn starch}
+O154	corn starch	1
+S221	powder
+S123	in	[spoon]
+//
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour}
+O507	spoon	1
+S138	contains	{corn starch}
+O154	corn starch	1
+S221	powder
+S123	in	[spoon]
+M40	pour*	<0:55-0:57>
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour,corn starch}
+O154	corn starch	0
+S221	powder
+S84	in	[mixing bowl]
+//
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour,corn starch}
+O507	spoon	1
+S138	contains	{black pepper}
+O38	black pepper	1
+S71	ground
+S123	in	[spoon]
+M63	sprinkle*	<0:58-1:00>
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper}
+O38	black pepper	1
+S71	ground
+S84	in	[mixing bowl]
+//
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper}
+O507	spoon	1
+S138	contains	{salt}
+O459	salt	1
+S67	granulated
+S123	in	[spoon]
+M63	sprinkle*	<1:00-1:02>
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt}
+O459	salt	1
+S67	granulated
+S84	in	[mixing bowl]
+//
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt}
+O32	hashbrown mix	0
+S43	mixed
+S138	contains	{potato,onion}
+S84	in	[mixing bowl]
+O383	parsley	1
+S52	dried
+S84	in	[mixing bowl]
+O154	flour	0
+S221	powder
+S84	in	[mixing bowl]
+O154	corn starch	0
+S221	powder
+S84	in	[mixing bowl]
+O38	black pepper	1
+S71	ground
+S84	in	[mixing bowl]
+O459	salt	1
+S67	granulated
+S84	in	[mixing bowl]
+O540	tongs	1
+S23	clean
+M35	mix*	<1:03-1:10>
+O424	hashbrown mix	1
+S43	mixed
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt}
+S84	in	[mixing bowl]
+//
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt}
+O51	bowl	1
+S138	contains	{egg white and yolk}
+O201	egg white and yolk	1
+S7	beaten
+S84	in	[bowl]
+M40	pour	<1:10-1:13>
+O51	mixing bowl	0
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg}
+O201	egg white and yolk	1
+S7	beaten
+S84	in	[mixing bowl]
+//
+O51	mixing bowl	0
+S138	contains	{hashbrown mix,egg white and yolk}
+O424	hashbrown mix	1
+S43	mixed
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt}
+S84	in	[mixing bowl]
+O201	egg white and yolk	1
+S7	beaten
+S84	in	[mixing bowl]
+O540	tongs	1
+S23	clean
+M35	mix	<1:13-1:19>
+O51	mixing bowl	0
+S142	contains	{hashbrown mix}
+O424	hashbrown mix	1
+S43	mixed
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S84	in	[mixing bowl]
+//
+O515	stove	0
+S167	on
+S208	with	[skillet]
+O486	skillet	0
+S75	contains	{vegetable oil}
+S197	on	[stove]
+M0	preheat	<Assumed>
+O486	skillet	0
+S75	contains	{vegetable oil}
+S43	hot
+S197	on	[stove]
+//
+O51	mixing bowl	0
+S142	contains	{hashbrown mix}
+O424	hashbrown mix	1
+S43	mixed
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S84	in	[mixing bowl]
+O486	skillet	0
+S75	contains	{vegetable oil}
+S43	hot
+S197	on	[stove]
+O540	tongs	1
+S23	clean
+M38	pick-and-place	<1:25-1:35>
+O486	skillet	0
+S43	hot
+S144	contains	{vegetable oil,hashbrown mix}
+S197	on	[stove]
+O424	hashbrown mix	1
+S43	mixed
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S114	in	[skillet]
+//
+O486	skillet	0
+S43	hot
+S144	contains	{vegetable oil,hashbrown mix}
+S197	on	[stove]
+O424	hashbrown mix	1
+S43	mixed
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S114	in	[skillet]
+M0	cook	<Assumed>
+O486	skillet	0
+S43	hot
+S144	contains	{vegetable oil,hashbrown}
+S197	on	[stove]
+O424	hashbrown	1
+S43	partly cooked
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S114	in	[skillet]
+//
+O486	skillet	0
+S43	hot
+S144	contains	{vegetable oil,hashbrown}
+S197	on	[stove]
+O424	hashbrown	1
+S43	partly cooked
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S114	in	[skillet]
+O552	turner	1
+S23	clean
+M25	flip	<1:43-1:51>
+O424	hashbrown	1
+S43	partly cooked
+S43	flipped
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S114	in	[skillet]
+//
+O486	skillet	0
+S43	hot
+S144	contains	{vegetable oil,hashbrown}
+S197	on	[stove]
+O424	hashbrown	1
+S43	partly cooked
+S43	flipped
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S114	in	[skillet]
+M30	cook	<Assumed>
+O424	hashbrown	1
+S43	fried
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S114	in	[skillet]
+//
+O424	hashbrown	1
+S43	fried
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S114	in	[skillet]
+O486	skillet	0
+S43	hot
+S48	contains	{hash brown}
+S197	on	[stove]
+O415	plate	0
+S54	empty
+O502	spatula	1
+S23	clean
+M38	pick-and-place	<Assumed>
+O415	plate	0
+S49	contains	{hash brown}
+O424	hashbrown	1	!
+S43	fried
+S138	contains	{potato,onion,parsley,flour,corn starch,black pepper,salt,egg white and yolk}
+S114	on	[plate]
+//

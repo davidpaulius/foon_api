@@ -1,0 +1,171 @@
+O14	oven	0
+S215	off
+M42	turn on	0:28	0:31
+O14	oven	0
+S139	on
+//
+O129	can	1
+S182	contains	{dough}
+O97	dough	0
+S43	rolled
+S149	in	[can]
+M21	open	0:37	0:41
+O129	can	1
+S182	contains	{dough}
+S230	opened
+//
+O83	cutting board	0
+S98	empty
+O129	can	1
+S182	contains	{dough}
+S230	opened
+O97	dough	0
+S43	rolled
+S149	in	[can]
+M0	pick-and-place	0:41	0:44
+O83	cutting board	0
+S188	contains	{dough}
+O97	dough	0
+S43	rolled
+S43	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{dough}
+O97	dough	0
+S43	rolled
+S43	on	[cutting board]
+O163	rolling pin	1
+S51	clean
+M16	roll	0:48	1:03
+O97	dough	0
+S102	flattened
+S43	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{dough}
+O97	dough	0
+S102	flattened
+S43	on	[cutting board]
+O15	plate	0
+S188	contains	{cheese}
+O27	cheese	1
+S290	sliced
+S33	on	[plate]
+M0	pick-and-place	1:04	1:08
+O97	dough	0
+S188	contains	{cheese}
+S43	on	[cutting board]
+O27	cheese	1
+S290	sliced
+S222	on	[dough]
+//
+O83	cutting board	0
+S188	contains	{dough}
+O97	dough	0
+S188	contains	{cheese}
+S43	on	[cutting board]
+O15	plate	1
+S188	contains	{sausage}
+O142	sausage	1
+S61	cooked
+S43	on	[plate]
+M0	pick-and-place	1:09	1:13
+O97	dough	0
+S188	contains	{cheese,sausage}
+S43	on	[cutting board]
+O142	sausage	1
+S61	cooked
+S222	on	[dough]
+//
+O97	dough	0
+S188	contains	{cheese,sausage}
+S43	on	[cutting board]
+M23	roll	1:14	1:22
+O97	pigs in a blanket	0
+S43	uncooked
+S188	contains	{cheese,sausage}
+S43	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{dough}
+O13	baking tray	0
+S98	empty
+O97	pigs in a blanket	1
+S43	uncooked
+S188	contains	{cheese,sausage}
+S43	on	[cutting board]
+M0	pick-and-place	1:24	1:32
+O13	baking tray	0
+S188	contains	{pigs in a blanket}
+O97	pigs in a blanket	1
+S43	uncooked
+S188	contains	{cheese,sausage}
+S43	in	[baking tray]
+O83	cutting board	0
+S94	dirty
+//
+O14	oven	0
+S218	on
+O13	baking tray	1
+S188	contains	{pigs in a blanket}
+M0	put inside	1:38:50	1:43
+O13	baking tray	1
+S188	contains	{pigs in a blanket}
+S43	in	[oven]
+O14	oven	0
+S43	on
+S231	with	[baking tray]
+//
+O13	baking tray	0
+S188	contains	{pigs in a blanket}
+S43	in	[oven]
+O97	pigs in a blanket	1
+S43	uncooked
+S188	contains	{cheese,sausage}
+S43	in	[baking tray]
+O14	oven	0
+S43	on
+S231	with	[baking tray]
+M39	bake	Assumed	Assumed
+O97	pigs in a blanket	1
+S43	cooked
+S188	contains	{cheese,sausage}
+S43	in	[baking tray]
+O13	baking tray	0
+S188	contains	{pigs in a blanket}
+S43	in	[oven]
+//
+O14	oven	0
+S43	on
+S231	with	[baking tray]
+O97	pigs in a blanket	1
+S43	cooked
+S188	contains	{cheese,sausage}
+S43	in	[baking tray]
+O13	baking tray	1
+S188	contains	{pigs in a blanket}
+S43	in	[oven]
+M0	remove	Assumed	Assumed
+O14	oven	0
+S215	off
+O13	baking tray	1
+S188	contains	{pigs in a blanket}
+//
+O97	pigs in a blanket	1
+S43	cooked
+S188	contains	{cheese,sausage}
+S43	in	[baking tray]
+O13	baking tray	0
+S188	contains	{pigs in a blanket}
+O15	plate	0
+S98	empty
+O41	tongs	1
+S51	clean
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S188	contains	{pigs in a blanket}
+O97	pigs in a blanket	1	!
+S43	cooked
+S188	contains	{dough,cheese,sausage}
+S43	on	[plate]
+//

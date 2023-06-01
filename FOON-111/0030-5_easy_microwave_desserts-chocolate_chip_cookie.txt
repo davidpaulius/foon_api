@@ -1,0 +1,158 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0030-5_easy_microwave_desserts-chocolate_chip_cookie.mp4
+# Source:	https://www.youtube.com/watch?v=n2jG2c_ENQ4
+//
+O197	egg	1
+S259	whole
+O283	jar	0
+S54	empty
+M14	crack	Assumed	Assumed
+O283	jar	0
+S138	contains	{egg white and yolk}
+O201	egg white and yolk	0
+S99	in	[jar]
+//
+O283	jar	1
+S138	contains	{egg white and yolk}
+O507	spoon	1
+S138	contains	{sugar}
+O518	sugar	1
+S67	granulated
+S123	in	[spoon]
+O51	bowl	1
+S138	contains	{salt}
+O459	salt	1
+S67	granulated
+S84	in	[bowl]
+M40	pour*	Assumed	Assumed
+O283	jar	0
+S138	contains	{egg white and yolk,sugar,salt}
+O459	salt	1
+S67	granulated
+S99	in	[jar]
+O518	sugar	1
+S67	granulated
+S99	in	[jar]
+//
+O283	jar	1
+S138	contains	{egg white and yolk,sugar,salt}
+O201	egg white and yolk	0
+S99	in	[jar]
+O459	salt	1
+S67	granulated
+S99	in	[jar]
+O518	sugar	1
+S67	granulated
+S99	in	[jar]
+M53	shake*	Assumed	Assumed
+O283	jar	1
+S142	contains	{egg mixture}
+O518	egg mixture	1
+S99	in	[jar]
+//
+O283	jar	0
+S142	contains	{egg mixture}
+O507	spoon	1
+S138	contains	{flour}
+O215	flour	1
+S221	powder
+S123	in	[spoon]
+M40	pour	Assumed	Assumed
+O283	jar	0
+S138	contains	{egg mixture,flour}
+O215	flour	1
+S221	powder
+S99	in	[jar]
+//
+O143	egg	1
+S43	uncracked
+O337	bowl	0
+S43	empty
+M40	crack	Assumed	Assumed
+O51	bowl	1
+S138	contains	{egg yolk}
+O202	egg yolk	1
+S84	in	[bowl]
+//
+O51	bowl	1
+S138	contains	{egg yolk}
+O202	egg yolk	1
+S84	in	[bowl]
+O283	jar	0
+S138	contains	{egg mixture,flour}
+M40	pour	Assumed	Assumed
+O283	jar	0
+S138	contains	{egg mixture,flour,egg yolk}
+O202	egg yolk	1
+S99	in	[jar]
+//
+O51	bowl	1
+S138	contains	{butter}
+O66	butter	1
+S84	in	[bowl]
+O283	jar	0
+S138	contains	{egg mixture,flour,egg yolk}
+M40	pour	Assumed	Assumed
+O283	jar	0
+S138	contains	{egg mixture,flour,egg yolk,butter}
+O66	butter	1
+S99	in	[jar]
+//
+O283	jar	0
+S138	contains	{egg mixture,flour,egg yolk,butter}
+O51	bowl	1
+S138	contains	{chocolate chip}
+O110	chocolate chip	1
+S84	in	[bowl]
+M40	pour	Assumed	Assumed
+O283	jar	0
+S138	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+O110	chocolate chip	1
+S99	in	[jar]
+//
+O283	jar	0
+S138	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+O219	fork	1
+S23	clean
+M65	stir	Assumed	Assumed
+O283	jar	0
+S142	contains	{cookie dough}
+O143	cookie dough	0
+S258	uncooked
+S99	in	[jar]
+//
+O283	jar	1
+S142	contains	{cookie dough}
+O337	microwave	0
+S54	empty
+M45	put inside	Assumed	Assumed
+O337	microwave	0
+S150	with	[jar]
+O283	jar	1
+S142	contains	{cookie dough}
+S105	in	[microwave]
+//
+O337	microwave	0
+S150	with	[jar]
+O283	jar	0
+S142	contains	{cookie dough}
+S105	in	[microwave]
+O143	cookie dough	0
+S258	uncooked
+S99	in	[jar]
+M30	heat	Assumed	Assumed
+O283	jar	0
+S48	contains	{cookie}
+S105	in	[microwave]
+O111	chocolate chip cookie	0	!	
+S3	baked
+S99	in	[jar]
+//
+O283	jar	1
+S48	contains	{cookie}
+S105	in	[microwave]
+O337	microwave	0
+S150	with	[jar]
+M46	remove	Assumed	Assumed
+O283	jar	1
+S48	contains	{cookie}
+//

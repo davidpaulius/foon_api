@@ -1,0 +1,389 @@
+# Source:	https://www.youtube.com/watch?v=xjMZJnqCT2U
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0023-garlic_rice.mp4
+//
+O38	stove	0
+S218	off (ready)
+O45	pot	1
+S98	empty
+M0	pick-and-place	Assumed	Assumed
+O38	stove	0
+S218	off (ready)
+S254	with	[pot]
+O45	pot	1
+S139	empty
+S308	on	[stove]
+//
+O38	stove	0
+S218	off (ready)
+S254	with	[pot]
+M0	turn on	0:42	0:43
+O38	stove	0
+S218	on
+S254	with	[pot]
+//
+O38	stove	0
+S218	on
+S254	with	[pot]
+O45	pot	1
+S139	empty
+S308	on	[stove]
+M0	heat	Assumed	Assumed
+O45	pot	1
+S139	empty
+S43	hot
+S308	on	[stove]
+//
+O45	pot	0
+S139	empty
+S43	hot
+S308	on	[stove]
+O3	butter	1
+S43	cube
+S163	on	[plate]
+M0	pour	0:47	0:49
+O45	pot	0
+S43	hot
+S124	contains	{butter}
+S308	on	[stove]
+O3	butter	1
+S43	cube
+S165	in	[pot]
+//
+O30	garlic	0
+S54	clove
+S43	peeled
+S44	on	[cutting board]
+O11	knife	1
+M5	chop	1:03	1:08
+O30	garlic	0
+S51	chopped
+S44	on	[cutting board]
+//
+O30	garlic	1
+S50	chopped
+S44	on	[cutting board]
+O2	bowl	0
+S98	empty
+M4	pour	Assumed	Assumed
+O2	bowl	0
+S182	contains	{garlic}
+O30	garlic	1
+S50	chopped
+S148	in	[bowl]
+//
+O45	pot	0
+S43	hot
+S124	contains	{butter}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{garlic}
+O30	garlic	1
+S50	chopped
+S148	in	[bowl]
+M4	pour	1:11	1:13
+O45	pot	0
+S43	hot
+S182	contains	{butter,garlic}
+S43	on	[stove]
+O30	garlic	1
+S50	chopped
+S165	in	[pot]
+//
+O45	pot	0
+S43	hot
+S182	contains	{butter,garlic}
+S43	on	[stove]
+O30	garlic	1
+S50	chopped
+S165	in	[pot]
+O22	spoon	1
+M6	stir and fry	1:13	1:30
+O30	garlic	0
+S50	fried
+S165	in	[pot]
+O45	pot	0
+S43	hot
+S182	contains	{butter,garlic}
+S43	on	[stove]
+//
+O2	plate	0
+S43	empty
+O3	napkin	1
+S308	clean
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S43	empty
+S210	covered	[napkin]
+O3	napkin	1
+S308	on	[plate]
+//
+O30	garlic	0
+S50	fried
+S165	in	[pot]
+O45	pot	0
+S43	hot
+S182	contains	{butter,garlic}
+S43	on	[stove]
+O15	plate	0
+S43	empty
+S210	covered	[napkin]
+O22	spoon	1
+M3	scoop and pour	1:33	1:37
+O15	plate	0
+S188	contains	{garlic}
+O30	garlic	1
+S50	fried
+S165	on	[plate]
+O45	pot	0
+S43	hot
+S182	contains	{garlic butter}
+S43	on	[stove]
+//
+O143	packet	1
+S313	contains	{rice}
+S43	opened
+O64	cup	1
+S98	empty
+O143	white rice	1
+S313	uncooked
+S323	in	[packet]
+M4	pour	Assumed	Assumed
+O64	cup	1
+S182	contains	{rice}
+O143	white rice	1
+S313	uncooked
+S308	in	[cup]
+//
+O64	cup	1
+S182	contains	{rice}
+O143	white rice	1
+S313	uncooked
+S308	in	[cup]
+O45	pot	0
+S23	hot
+S124	contains	{garlic butter}
+S43	on	[stove]
+M4	pour	1:52	1:55
+O45	pot	0
+S23	hot
+S182	contains	{butter,white rice}
+S43	on	[stove]
+O143	white rice	1
+S313	uncooked
+S165	in	[pot]
+//
+O45	pot	0
+S43	hot
+S182	contains	{butter,white rice}
+S43	on	[stove]
+O143	white rice	0
+S313	uncooked
+S165	in	[pot]
+O22	spoon	1
+M6	stir	1:56	2:00
+O143	white rice	0
+S313	uncooked
+S308	toasted
+S165	in	[pot]
+//
+O45	pot	0
+S43	hot
+S182	contains	{butter,white rice}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{water}
+O46	water	1
+S148	in	[bowl]
+M4	pour	2:07	2:10
+O45	pot	0
+S43	hot
+S182	contains	{butter,white rice,water}
+S43	on	[stove]
+O46	water	1
+S165	in	[pot]
+//
+O45	pot	0
+S43	hot
+S182	contains	{butter,white rice,water}
+S43	on	[stove]
+O46	water	1
+S165	in	[pot]
+O143	white rice	0
+S313	uncooked
+S308	toasted
+S308	in	[pot]
+O22	spoon	1
+M6	cook and stir	2:10	2:12
+O46	water	1
+S24	boiling
+S308	in	[pot]
+O143	white rice	0
+S24	partly cooked
+S308	in	[pot]
+//
+O45	pot	0
+S43	hot
+S185	contains	{butter,white rice,water}
+S43	on	[stove]
+O1	pot lid	1
+M33	cover	2:12	2:14
+O45	pot	0
+S43	hot
+S80	covered	[pot lid]
+S185	contains	{butter,white rice,water}
+S43	on	[stove]
+O1	pot lid	1
+S1	on	[pot]
+//
+O45	pot	0
+S32	hot
+S80	covered	[pot lid]
+S185	contains	{butter,white rice,water}
+S43	on	[stove]
+O46	water	0
+S24	boiling
+S308	in	[pot]
+O143	white rice	0
+S24	partly cooked
+S308	in	[pot]
+M38	simmer	Assumed	Assumed
+O45	pot	0
+S32	hot
+S80	covered	[pot lid]
+S43	contains	{white rice}
+S43	on	[stove]
+O143	white rice	0
+S24	cooked
+S308	in	[pot]
+//
+O45	pot	0
+S4	hot
+S43	covered	[pot lid]
+S80	contains	{rice}
+S43	on	[stove]
+O40	stove	1
+S43	on
+S43	with	[pot]
+M0	turn off	2:45	2:46
+O45	pot	0
+S43	covered	[pot lid]
+S80	contains	{rice}
+S43	on	[stove]
+O40	stove	1
+S43	off
+S43	with	[pot]
+//
+O83	cutting board	0
+S43	empty
+O121	scallion	1
+S323	whole
+O156	cilantro	1
+S323	whole
+M0	pick-and-place*	Assumed	Assumed
+O83	cutting board	0
+S188	contains	{scallion,cilantro}
+O121	scallion	1
+S323	whole
+S308	on	[cutting board]
+O156	cilantro	1
+S323	whole
+S308	on	[cutting board]
+//
+O11	knife	1
+S51	clean
+O156	cilantro	0
+S323	whole
+S308	on	[cutting board]
+O121	scallion	0
+S323	whole
+S308	on	[cutting board]
+M8	cut	3:00	3:03
+O121	scallion	0
+S50	chopped
+S308	on	[cutting board]
+O156	cilantro	0
+S50	chopped
+S308	on	[cutting board]
+//
+O45	pot	0
+S43	covered	[pot lid]
+S80	contains	{rice}
+S43	on	[stove]
+O40	stove	1
+S43	off
+S43	with	[pot]
+M0	pick-and-place	Assumed	Assumed
+O45	pot	0
+S43	covered	[pot lid]
+S80	contains	{rice}
+O40	stove	1
+S43	off
+//
+O45	pot	0
+S80	covered	[pot lid]
+S43	contains	{rice}
+O1	pot lid	1
+S1	on	[pot]
+M34	uncover	3:17	3:19
+O45	pot	0
+S80	contains	{rice}
+O1	pot lid	1
+S1	dirty
+//
+O45	pot	0
+S80	contains	{rice}
+O2	spoon	1
+O3	white rice	0
+S43	cooked
+S43	in	[pot]
+M0	stir	3:26	3:29
+O3	white rice	0
+S43	cooked
+S43	fluffed
+S43	in	[pot]
+//
+O83	cutting board	1
+S188	contains	{cilantro,scallion}
+O121	scallion	0
+S50	chopped
+S308	on	[cutting board]
+O156	cilantro	1
+S50	chopped
+S308	on	[cutting board]
+O15	plate	1
+S188	contains	{garlic}
+O30	garlic	1
+S109	fried
+S43	on	[plate]
+O45	pot	0
+S80	contains	{rice}
+O143	white rice	0
+S43	fluffed
+S24	cooked
+S308	in	[pot]
+M2	sprinkle*	3:42	3:50
+O45	pot	0
+S80	contains	{garlic rice}
+O143	white rice	0
+S43	cooked
+S24	contains	{cilantro,scallion}
+S308	in	[pot]
+O143	garlic rice	0	!
+S24	contains	{cilantro,scallion,garlic}
+S308	in	[pot]
+//
+O45	pot	0
+S80	contains	{garlic rice}
+O143	garlic rice	0	!
+S24	contains	{cilantro,scallion,garlic}
+S308	in	[pot]
+O30	bowl	0
+S43	empty
+O3	spoon	1
+M0	scoop and pour	Assumed	Assumed
+O30	bowl	0
+S80	contains	{garlic rice}
+O143	garlic rice	0
+S24	contains	{cilantro,scallion,garlic}
+S308	in	[bowl]
+//

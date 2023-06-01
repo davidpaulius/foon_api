@@ -1,0 +1,171 @@
+O2	bowl	0
+S98	empty
+O28	egg	1
+S318	uncracked
+M19	crack	0:01	0:17
+O2	bowl	0
+S182	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S82	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{egg white and yolk}
+O2	bowl	0
+S182	contains	{salt}
+O18	salt	1
+S43	granulated
+S148	in	[bowl]
+M2	sprinkle	0:20	0:21
+O2	bowl	0
+S182	contains	{egg white and yolk,salt}
+//
+O2	bowl	0
+S182	contains	{egg white and yolk,salt}
+O166	grinder	1
+S18	contains	{black pepper}
+O19	black pepper	1
+S131	ground
+S43	in	[shaker]
+M7	grind	0:21:50	0:24
+O2	bowl	0
+S182	contains	{egg white and yolk,salt,pepper}
+O19	black pepper	1
+S131	ground
+S43	in	[bowl]
+//
+O43	container	0
+S143	contains	{yogurt}
+O149	yogurt	0
+S151	in	[container]
+O22	spoon	1
+S51	clean
+O2	bowl	0
+S98	empty
+M3	scoop and pour	Assumed	Assumed
+O2	bowl	0
+S182	contains	{yogurt}
+O149	yogurt	1
+S151	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{egg white and yolk,salt,pepper}
+O2	bowl	0
+S182	contains	{yogurt}
+O22	spoon	1
+S51	clean
+O149	yogurt	1
+S151	in	[bowl]
+M4	pour	0:25	0:29
+O2	bowl	0
+S182	contains	{egg white and yolk,salt,pepper,yogurt}
+//
+O2	bowl	0
+S182	contains	{egg white and yolk,salt,pepper,yogurt}
+O28	egg white and yolk	1
+S82	in	[bowl]
+O149	yogurt	1
+S151	in	[bowl]
+O19	black pepper	1
+S131	ground
+S43	in	[bowl]
+O18	salt	1
+S43	granulated
+S148	in	[bowl]
+O6	fork	1
+S51	clean
+M1	mix	0:35:50	0:38:50
+O2	bowl	0
+S185	contains	{egg mixture}
+O43	egg mixture	1
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[bowl]
+//
+O38	stove	0
+S43	on
+S232	with	[pan]
+O13	cooking pan	0
+S98	heated
+S43	on	[stove]
+O2	bowl	1
+S185	contains	{egg mixture}
+O43	egg mixture	1
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[bowl]
+M4	pour	Assumed	Assumed
+O2	bowl	1
+S94	dirty
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S43	on	[stove]
+O43	egg mixture	1
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[pan]
+//
+O38	stove	0
+S43	on
+S232	with	[pan]
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S43	on	[stove]
+O43	egg mixture	1
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[pan]
+M0	cook	Assumed	Assumed
+O43	omelette	1
+S43	partly cooked
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[pan]
+//
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S43	on	[stove]
+O43	omelette	1
+S43	partly cooked
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[pan]
+O33	turner	1
+S43	clean
+M0	flip	Assumed	Assumed
+O43	omelette	1
+S43	flipped
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[pan]
+//
+O38	stove	0
+S43	on
+S232	with	[pan]
+O13	cooking pan	0
+S185	contains	{egg mixture}
+S43	on	[stove]
+O43	omelette	1
+S43	flipped
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[pan]
+M0	cook	Assumed	Assumed
+O13	cooking pan	0
+S185	contains	{omelette}
+S43	on	[stove]
+O43	omelette	1
+S43	cooked
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[pan]
+//
+O13	cooking pan	0
+S185	contains	{omelette}
+S43	on	[stove]
+O43	omelette	1
+S43	cooked
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	in	[pan]
+O37	turner	1
+S51	clean
+O12	plate	0
+S43	empty
+M1	pick-and-place	Assumed	Assumed
+O12	plate	0
+S185	contains	{omelette}
+O43	omelette	1	!
+S43	cooked
+S185	contains	{egg white and yolk,salt,pepper,yogurt}
+S43	on	[plate]
+//

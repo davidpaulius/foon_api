@@ -1,0 +1,193 @@
+# Source:	https://www.youtube.com/watch?v=_DRIfPEM6qw
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0022-better_than_kfc_coleslaw.mp4
+//
+O2	bowl	1
+S1	contains	{sugar}
+S43	on	[surface]
+O52	sugar	1
+S14	granulated
+S3	in	[bowl]
+O2	bowl	0
+S1	contains	{mayonnaise}
+S43	on	[surface]
+O26	mayonnaise	0
+S3	in	[bowl]
+O2	bowl	1
+S1	contains	{vinegar}
+S43	on	[surface]
+O53	vinegar	1
+S3	in	[bowl]
+O2	bowl	1
+S1	contains	{vegetable oil}
+S43	on	[surface]
+O54	vegetable oil	1
+S3	in	[bowl]
+M6	pour*	1:00	1:10
+O2	bowl	0
+S1	contains	{mayonnaise,sugar,vinegar,vegetable oil}
+S43	on	[surface]
+//
+O2	bowl	0
+S1	contains	{mayonnaise,sugar,vinegar,vegetable oil}
+S43	on	[surface]
+O52	sugar	1
+S14	granulated
+S3	in	[bowl]
+O26	mayonnaise	1
+S3	in	[bowl]
+O53	vinegar	1
+S3	in	[bowl]
+O54	vegetable oil	1
+S3	in	[bowl]
+O50	spatula	1
+M8	mix*	1:14	1:28
+O2	bowl	0
+S1	contains	{salad dressing}
+S43	on	[surface]
+O30	salad dressing	1
+S3	in	[bowl]
+//
+O8	cutting board	0
+S11	clean
+S43	on	[surface]
+O55	cabbage	1
+S13	whole
+M4	pick-and-place	Assumed	Assumed
+O55	cabbage	1
+S13	whole
+S6	on	[cutting board]
+O8	cutting board	0
+S1	contains	{cabbage}
+S43	on	[surface]
+//
+O8	cutting board	0
+S11	clean
+S43	on	[surface]
+O47	onion	1
+S10	peeled
+S43	on	[surface]
+M4	pick-and-place	Assumed	Assumed
+O8	cutting board	0
+S1	contains	{onion}
+S43	on	[surface]
+O47	onion	1
+S10	peeled
+S6	on	[cutting board]
+//
+O21	carrot	0
+S13	whole
+S43	on	[surface]
+O22	peeler	1
+M5	peel	Assumed	Assumed
+O21	carrot	1
+S10	peeled
+S43	on	[surface]
+//
+O8	cutting board	0
+S11	clean
+S43	on	[surface]
+O21	carrot	1
+S10	peeled
+S43	on	[surface]
+M4	pick-and-place	Assumed	Assumed
+O8	cutting board	0
+S1	contains	{carrot}
+S43	on	[surface]
+O21	carrot	1
+S10	peeled
+S6	on	[cutting board]
+//
+O21	carrot	0
+S10	peeled
+S6	on	[cutting board]
+O7	knife	1
+M16	chop	1:44	1:57
+O21	carrot	0
+S27	chopped
+S6	on	[cutting board]
+//
+O47	onion	0
+S10	peeled
+S6	on	[cutting board]
+O7	knife	1
+M16	chop	2:03	2:38
+O47	onion	0
+S27	chopped
+S6	on	[cutting board]
+//
+O55	cabbage	0
+S13	whole
+S6	on	[cutting board]
+O7	knife	1
+M16	chop	2:39	2:54
+O55	cabbage	0
+S27	chopped
+S6	on	[cutting board]
+//
+O15	salad bowl	0
+S4	empty
+S43	on	[surface]
+O47	onion	1
+S27	chopped
+S6	on	[cutting board]
+O21	carrot	1
+S27	chopped
+S6	on	[cutting board]
+O55	cabbage	1
+S27	chopped
+S6	on	[cutting board]
+M0	add*	1:58	2:59
+O15	salad bowl	0
+S1	contains	{carrot,onion,cabbage}
+S43	on	[surface]
+O47	onion	1
+S27	chopped
+S3	in	[salad bowl]
+O21	carrot	1
+S27	chopped
+S3	in	[salad bowl]
+O55	cabbage	1
+S27	chopped
+S3	in	[salad bowl]
+//
+O50	spatula	1
+O2	bowl	1
+S1	contains	{salad dressing}
+S43	on	[surface]
+O30	salad dressing	1
+S3	in	[bowl]
+O15	salad bowl	0
+S1	contains	{carrot,onion,cabbage}
+S43	on	[surface]
+M22	pour and scrape	3:03	3:06
+O15	salad bowl	0
+S1	contains	{carrot,onion,cabbage,salad dressing}
+S43	on	[surface]
+O30	salad dressing	1
+S3	in	[salad bowl]
+//
+O15	salad bowl	0
+S1	contains	{carrot,onion,cabbage,salad dressing}
+S43	on	[surface]
+O30	salad dressing	1
+S3	in	[salad bowl]
+O47	onion	1
+S27	chopped
+S3	in	[salad bowl]
+O21	carrot	0
+S27	chopped
+S3	in	[salad bowl]
+O55	cabbage	1
+S27	chopped
+S3	in	[salad bowl]
+O50	spatula	1
+M8	mix*	3:08	3:20
+O15	salad bowl	0	!
+S1	contains	{coleslaw}
+S43	on	[surface]
+O29	salad	0
+S3	in	[salad bowl]
+O56	coleslaw	0	!
+S1	contains	{mayonnaise,vegetable oil,vinegar,sugar,cabbage,carrot,onion}
+S3	in	[salad bowl]
+//

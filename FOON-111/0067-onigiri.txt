@@ -1,0 +1,214 @@
+O1	rice cooker	0
+S1	empty
+O1	measuring cup	1
+S1	contains	{rice}
+O1	white rice	1
+S1	uncooked
+S43	in	[measuring cup]
+M1	pour	Assumed	Assumed
+O1	rice cooker	0
+S1	contains	{rice}
+O1	white rice	0
+S1	uncooked
+S1	in	[rice cooker]
+//
+O1	rice cooker	0
+S1	contains	{rice}
+O1	measuring cup	1
+S1	contains	{water}
+O1	water	1
+S1	in	[measuring cup]
+M1	pour	Assumed	Assumed
+O1	rice cooker	0
+S1	contains	{rice,water}
+O1	water	0
+S1	in	[rice cooker]
+//
+O1	rice cooker	0
+S1	contains	{rice,water}
+O1	white rice	0
+S1	uncooked
+S1	in	[rice cooker]
+M1	cook	Assumed	Assumed
+O1	rice cooker	0
+S1	contains	{rice,water}
+O1	white rice	0
+S1	cooked
+S1	in	[rice cooker]
+//
+O1	bowl	0
+S1	empty
+O1	rice cooker	0
+S1	contains	{rice,water}
+O1	white rice	1
+S1	cooked
+S1	in	[rice cooker]
+O1	spoon	1
+S1	clean
+M1	scoop and pour	Assumed	Assumed
+O1	bowl	0
+S1	contains	{rice,water}
+O1	white rice	1
+S1	cooked
+S1	in	[bowl]
+O1	spoon	1
+S1	dirty
+//
+O1	container	0
+S1	contains	{water}
+O1	water	0
+S1	in	[container]
+O1	hand	1
+S1	clean
+M1	dip	Assumed	Assumed
+O1	hand	1
+S1	wet
+//
+O1	hand	1
+S1	wet
+O1	bowl	1
+S1	contains	{salt}
+O1	salt	1
+S1	granulated
+S3	in	[bowl]
+M1	sprinkle	Assumed	Assumed
+O1	hand	1
+S1	wet
+S1	contains	{salt}
+O1	salt	1
+S1	granulated
+S3	in	[hand]
+//
+O1	hand	1
+S1	wet
+S1	contains	{salt}
+O1	bowl	1
+S1	contains	{rice}
+O1	white rice	1
+S1	cooked
+S1	in	[bowl]
+O1	spoon	1
+S1	clean
+M1	scoop	2:44	2:48
+O1	hand	1
+S1	wet
+S1	contains	{salt,rice}
+O1	white rice	1
+S1	cooked
+S1	in	[hand]
+//
+O1	white rice	1
+S1	cooked
+S1	in	[hand]
+O1	hand	1
+S1	wet
+S1	contains	{salt,rice}
+M1	shape	2:51	3:04
+O1	white rice	1
+S1	rolled
+S1	in	[hand]
+//
+O1	white rice	1
+S1	rolled
+S1	in	[hand]
+M1	press	3:05	3:22
+O1	white rice	1
+S1	pressed
+S1	in	[hand]
+//
+O1	white rice	1
+S1	pressed
+S1	in	[hand]
+M1	poke	Assumed	Assumed
+O1	white rice	1
+S1	holed
+S1	in	[hand]
+//
+O1	white rice	1
+S1	holed
+S1	in	[hand]
+O1	bowl	0
+S1	contains	{salmon}
+O1	salmon	1
+S1	cooked
+S1	in	[bowl]
+O1	spoon	1
+S1	clean
+M1	scoop and pour	3:43	3:48
+O1	spoon	1
+S1	dirty
+O1	white rice	1
+S1	contains	{salmon}
+S1	in	[hand]
+O1	salmon	1
+S43	cooked
+S1	in	[rice]
+//
+O1	white rice	1
+S1	contains	{salmon}
+S1	in	[hand]
+M1	roll	4:03	4:05
+O1	white rice	1
+S1	contains	{salmon}
+S1	rolled
+S1	in	[hand]
+//
+O1	white rice	1
+S1	contains	{salmon}
+S1	rolled
+S1	in	[hand]
+M1	press	4:06	4:21
+O1	white rice	1
+S1	contains	{salmon}
+S1	pressed
+S1	in	[hand]
+//
+O1	white rice	1
+S1	contains	{salmon}
+S1	pressed
+S1	in	[hand]
+M1	shape	5:18	6:02
+O1	white rice	1
+S1	contains	{salmon}
+S1	shaped
+S1	in	[hand]
+//
+O1	packet	0
+S1	contains	{seaweed}
+O1	seaweed	1
+S1	sheet
+S1	in	[packet]
+M3	remove	Assumed	Assumed
+O1	seaweed	1
+S1	sheet
+S1	on	[surface]
+//
+O1	white rice	1
+S1	contains	{salmon}
+S1	shaped
+S1	in	[hand]
+O1	seaweed	1
+S1	sheet
+S1	on	[surface]
+M0	pick-and-place	6:45	6:46
+O1	white rice	1
+S1	contains	{salmon}
+S1	on	[seaweed]
+O1	seaweed	1
+S1	contains	{rice}
+S1	on	[surface]
+//
+O1	white rice	1
+S1	contains	{salmon}
+S1	on	[seaweed]
+O1	seaweed	1
+S1	contains	{rice}
+S1	on	[surface]
+M1	wrap	Assumed	Assumed
+O1	onigiri	1	!
+S1	covered	[seaweed]
+S43	contains	{rice,salt,seaweed,salmon}
+O1	seaweed	1
+S1	wrapped
+S1	on	[onigiri]
+//

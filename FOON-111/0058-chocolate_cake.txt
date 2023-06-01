@@ -1,0 +1,391 @@
+O14	oven	0
+S215	off
+M42	turn on	0:26	0:28
+O14	oven	0
+S139	on
+//
+O13	baking tray	0
+S98	empty
+O110	cooking spray	1
+S182	contains	{vegetable oil}
+O94	vegetable oil	1
+S169	in	[spray bottle]
+M13	spray	0:30	0:35
+O13	baking tray	1
+S124	greased	{vegetable oil}
+//
+O13	baking tray	1
+S124	greased	{vegetable oil}
+O42	flour	1
+S258	powder
+S148	in	[bowl]
+M2	sprinkle	0:36	0:38
+O13	baking tray	0
+S188	contains	{flour}
+O42	flour	1
+S258	powder
+S34	in	[pan]
+//
+O13	baking tray	1
+S188	contains	{flour}
+O42	flour	1
+S258	powder
+S34	in	[pan]
+M16	spread	0:39	0:41
+O13	baking tray	1
+S104	floured	{flour}
+//
+O2	bowl	1
+S182	contains	{sugar}
+O0	sugar	1
+S34	granulated
+S148	in	[bowl]
+O2	bowl	0
+S98	empty
+M4	pour	0:45	0:47
+O2	bowl	0
+S182	contains	{sugar}
+//
+O2	bowl	0
+S182	contains	{sugar}
+O2	bowl	1
+S182	contains	{flour}
+O42	flour	1
+S34	powder
+S148	in	[bowl]
+M4	pour	0:48	0:50
+O2	bowl	0
+S182	contains	{flour,sugar}
+//
+O2	bowl	1
+S182	contains	{cocoa powder}
+O2	bowl	0
+S182	contains	{flour,sugar}
+O115	cocoa powder	1
+S258	in	[bowl]
+M4	pour	0:52	0:54
+O2	bowl	0
+S182	contains	{sugar,flour,cocoa powder}
+//
+O2	bowl	0
+S182	contains	{sugar,flour,cocoa powder}
+O2	bowl	1
+S182	contains	{baking powder}
+O116	baking powder	1
+S258	powder
+S34	in	[bowl]
+M2	sprinkle	0:55	0:57
+O2	bowl	1
+S182	contains	{sugar,flour,cocoa powder,baking powder}
+//
+O2	bowl	0
+S182	contains	{sugar,flour,cocoa powder,baking powder}
+O2	bowl	1
+S182	contains	{baking soda}
+O7	baking soda	1
+S258	powder
+S34	in	[bowl]
+M2	sprinkle	0:58	1:00
+O2	bowl	0
+S182	contains	{sugar,flour,cocoa powder,baking powder,baking soda}
+//
+O2	bowl	0
+S182	contains	{sugar,flour,cocoa powder,baking powder,baking soda}
+O115	cocoa powder	1
+S258	in	[bowl]
+O2	bowl	1
+S182	contains	{salt}
+O18	salt	1
+S122	granulated
+S34	in	[bowl]
+M2	sprinkle	1:01	1:03
+O2	bowl	0
+S182	contains	{sugar,flour,cocoa powder,baking powder,baking soda,salt}
+//
+O2	bowl	0
+S182	contains	{sugar,flour,cocoa powder,baking powder,baking soda,salt}
+O116	baking powder	1
+S258	powder
+S34	in	[bowl]
+O7	baking soda	1
+S258	powder
+S34	in	[bowl]
+O18	salt	1
+S122	granulated
+S34	in	[bowl]
+O0	sugar	1
+S34	granulated
+S148	in	[bowl]
+O115	cocoa powder	1
+S258	in	[bowl]
+O42	flour	1
+S34	powder
+S148	in	[bowl]
+O91	whisk	1
+S51	clean
+M1	mix	1:04	1:07
+O2	bowl	0
+S185	contains	{cake mix}
+O32	cake mix	1
+S182	contains	{sugar,flour,cocoa powder,baking powder,baking soda,salt}
+S34	in	[bowl]
+//
+O2	bowl	0
+S185	contains	{cake mix}
+O32	cake mix	1
+S182	contains	{sugar,flour,cocoa powder,baking powder,baking soda,salt}
+S34	in	[bowl]
+O2	bowl	1
+S182	contains	{egg white and yolk}
+O28	egg white and yolk	1
+S148	in	[bowl]
+M4	pour	1:10	1:11
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk}
+//
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk}
+O190	measuring cup	1
+S182	contains	{milk}
+O55	milk	1
+S157	in	[measuring cup]
+M4	pour	1:13	1:17
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk}
+O55	milk	1
+S148	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk}
+O190	measuring cup	1
+S182	contains	{vegetable oil}
+O94	vegetable oil	1
+S157	in	[measuring cup]
+M4	pour	1:19	1:20
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil}
+O94	vegetable oil	1
+S148	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil}
+O2	bowl	1
+S182	contains	{vanilla extract}
+O4	vanilla extract	1
+S101	in	[bowl]
+M4	pour	1:22	1:23
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+//
+O2	bowl	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+O65	mixer	0
+S122	off
+M3	attach	Assumed	Assumed
+O65	mixer	0
+S122	off
+S324	with	[bowl]
+O2	bowl	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S3	in	[mixer]
+//
+O65	mixer	1
+S122	off
+S324	with	[bowl]
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S3	in	[mixer]
+M39	turn on	Assumed	Assumed
+O65	mixer	1
+S122	on
+S324	with	[bowl]
+//
+O2	bowl	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	in	[mixer]
+O65	mixer	1
+S122	on
+S324	with	[bowl]
+M1	mix	1:25	1:29
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	in	[mixer]
+//
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	in	[mixer]
+O190	measuring cup	1
+S182	contains	{water}
+O46	water	1
+S157	in	[measuring cup]
+M0	pour	Assumed	Assumed
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract,water}
+S34	in	[mixer]
+O46	water	1
+S157	in	[bowl]
+//
+O65	mixer	1
+S122	on
+S324	with	[bowl]
+O2	bowl	0
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract,water}
+S34	in	[mixer]
+M1	mix	1:34	1:44
+O2	bowl	0
+S182	contains	{cake batter}
+S34	in	[mixer]
+O164	cake batter	0
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	in	[bowl]
+//
+O65	mixer	1
+S122	on
+S324	with	[bowl]
+M39	turn off	Assumed	Assumed
+O65	mixer	1
+S122	off
+S324	with	[bowl]
+//
+O65	mixer	0
+S122	off
+S324	with	[bowl]
+O2	bowl	1
+S182	contains	{cake batter}
+S34	in	[mixer]
+M4	detach	Assumed	Assumed
+O2	bowl	1
+S182	contains	{cake batter}
+//
+O2	bowl	1
+S182	contains	{cake batter}
+O164	cake batter	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	in	[bowl]
+O13	baking tray	0
+S104	floured	{flour}
+M4	pour	1:49	1:54
+O13	baking tray	0
+S104	contains	{cake batter}
+O32	bowl	1
+S33	dirty
+O164	cake batter	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	in	[pan]
+//
+O14	oven	0
+S218	on
+O13	baking tray	1
+S104	contains	{cake batter}
+M0	put inside	Assumed	Assumed
+O14	oven	0
+S34	on
+S231	with	[pan]
+O13	baking tray	1
+S104	contains	{cake batter}
+S34	in	[oven]
+//
+O14	oven	0
+S34	on
+S231	with	[pan]
+O13	baking tray	0
+S104	contains	{cake batter}
+S34	in	[oven]
+O164	cake batter	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	in	[pan]
+M39	bake	2:07	2:11
+O13	baking tray	0
+S33	contains	{chocolate cake}
+S34	in	[oven]
+O164	chocolate cake	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	in	[pan]
+//
+O14	oven	0
+S34	on
+S231	with	[pan]
+O13	baking tray	0
+S33	contains	{chocolate cake}
+S34	in	[oven]
+O164	chocolate cake	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	in	[pan]
+O133	wire rack	0
+S98	empty
+M0	pick-and-place	Assumed	Assumed
+O133	wire rack	0
+S33	contains	{chocolate cake}
+O164	chocolate cake	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	on	[wire rack]
+O13	baking tray	1
+S94	dirty
+//
+O133	wire rack	0
+S33	contains	{chocolate cake}
+O164	chocolate cake	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	on	[wire rack]
+O15	plate	0
+S98	empty
+M0	pick-and-place	Assumed	Assumed
+O133	wire rack	0
+S94	dirty
+O15	plate	0
+S33	contains	{chocolate cake}
+O164	chocolate cake	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	on	[plate]
+//
+
+O10	frosting	0
+S114	in	[container]
+O15	plate	0
+S33	contains	{chocolate cake}
+O164	chocolate cake	1
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	on	[plate]
+O11	knife	1
+S51	clean
+M16	spread	2:28	2:31
+O164	chocolate cake	1
+S34	coated	{frosting}
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	on	[plate]
+O10	frosting	0
+S114	on	[cake]
+//
+O15	plate	0
+S33	contains	{chocolate cake}
+O164	chocolate cake	1
+S34	coated	{frosting}
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	on	[plate]
+O11	knife	1
+S51	clean
+M0	cut	Assumed	Assumed
+O164	chocolate cake	1
+S34	coated	{frosting}
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	divided
+S34	on	[plate]
+//
+O15	plate	0
+S34	empty
+O164	chocolate cake	1
+S34	coated	{frosting}
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	divided
+S34	on	[plate]
+O43	cake server	1
+S34	clean
+M43	scoop and pour	Assumed	Assumed
+O15	plate	0
+S33	contains	{chocolate cake}
+O164	chocolate cake	1	!
+S34	coated	{frosting}
+S182	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S34	sliced
+S34	on	[plate]
+//

@@ -1,0 +1,169 @@
+# Source:	https://www.youtube.com/watch?v=5DW0t34Lr5Y
+//
+O320	lime	1
+S38	whole
+S43	on	[cutting board]
+O301	knife	1
+M1	chop	Assumed	Assumed
+O320	lime	1
+S0	chopped
+S43	on	[cutting board]
+//
+O320	lime	1
+S0	chopped
+S43	on	[cutting board]
+O2	bowl	0
+S6	empty
+M4	pick-and-place	Assumed	Assumed
+O2	bowl	0
+S21	contains	{lime}
+O320	lime	1
+S0	chopped
+S43	in	[bowl]
+//
+O4	container	0
+S21	contains	{refined sugar}
+O470	refined sugar	0
+S7	granulated
+S18	in	[container]
+O3	spoon	1
+M0	scoop	0:20	0:22
+O3	spoon	1
+S21	contains	{refined sugar}
+O470	refined sugar	0
+S7	granulated
+S18	in	[spoon]
+//
+O196	highball glass	0
+S6	empty
+O3	spoon	1
+S21	contains	{refined sugar}
+O470	refined sugar	0
+S7	granulated
+S18	in	[spoon]
+M0	pour	0:22	0:25
+O196	highball glass	0
+S6	contains	{sugar}
+O470	refined sugar	0
+S7	granulated
+S18	in	[highball glass]
+//
+O196	highball glass	0
+S6	contains	{sugar}
+O2	bowl	1
+S21	contains	{lime}
+O320	lime	1
+S0	chopped
+S43	in	[bowl]
+M0	pour	0:27	0:33
+O196	highball glass	0
+S6	contains	{sugar,lime}
+O320	lime	1
+S0	chopped
+S43	in	[highball glass]
+//
+O196	highball glass	0
+S6	contains	{sugar,lime}
+O2	bowl	1
+S21	contains	{mint}
+O349	mint	1
+S43	leaf
+S10	in	[bowl]
+M15	pour	0:42	0:45
+O196	highball glass	0
+S21	contains	{refined sugar,lime,mint}
+O349	mint	1
+S43	leaf
+S10	in	[highball glass]
+//
+O196	highball glass	0
+S21	contains	{refined sugar,lime,mint}
+O470	refined sugar	0
+S7	granulated
+S10	in	[highball glass]
+O320	lime	0
+S0	chopped
+S10	in	[highball glass]
+O349	mint	0
+S43	leaf
+S10	in	[highball glass]
+O355	muddler	1
+M7	mash	0:42	0:45
+O320	lime	0
+S0	chopped
+S4	mashed
+S10	in	[highball glass]
+O349	mint	0
+S43	leaf
+S4	mashed
+S10	in	[highball glass]
+//
+O196	highball glass	0
+S23	contains	{refined sugar,lime,mint}
+O431	bucket	0
+S21	contains	{ice}
+O283	ice	1
+S4	crushed
+S17	in	[bucket]
+O127	scoop	1
+M11	scoop and pour	1:21	1:22
+O196	highball glass	0
+S21	contains	{refined sugar,lime,mint,ice}
+O283	ice	1
+S4	crushed
+S17	in	[highball glass]
+//
+O2	bottle	1
+S43	contains	{club soda}
+M0	open	1:35	1:37
+O2	bottle	1
+S43	contains	{club soda}
+S43	opened
+//
+O196	highball glass	0
+S21	contains	{refined sugar,lime,mint,ice}
+O2	bottle	1
+S43	contains	{club soda}
+S43	opened
+O127	club soda	1
+S33	liquid
+S9	in	[bottle]
+M9	pour	1:38	1:45
+O196	highball glass	0
+S21	contains	{refined sugar,lime,mint,ice,club soda}
+O127	club soda	1
+S33	liquid
+S10	in	[highball glass]
+//
+O196	highball glass	0
+S21	contains	{refined sugar,lime,mint,ice,club soda}
+O320	lime	0
+S0	chopped
+S4	mashed
+S10	in	[highball glass]
+O349	mint	0
+S43	leaf
+S4	mashed
+S10	in	[highball glass]
+O283	ice	0
+S4	crushed
+S17	in	[highball glass]
+O470	refined sugar	0
+S7	granulated
+S10	in	[highball glass]
+O3	club soda	0
+S33	liquid
+S10	in	[highball glass]
+O519	spoon	1
+M17	stir	1:49	1:57
+O196	highball glass	0
+S21	contains	{drink}
+O3	drink	0
+S33	liquid
+S43	in	[highball glass]
+O579	virgin mojito	0	!
+S33	liquid
+S43	mixed
+S21	contains	{refined sugar,lime,mint,ice,club soda}
+S13	in	[highball glass]
+//

@@ -1,0 +1,221 @@
+O15	plate	0
+S98	empty
+O148	beefsteak	1
+S313	uncooked
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S188	contains	{beefsteak}
+O148	beefsteak	1
+S313	uncooked
+S226	on	[plate]
+//
+O83	cutting board	0
+S188	contains	{garlic}
+O11	knife	1
+S51	clean
+O30	garlic	0
+S53	peeled
+S304	on	[cutting board]
+M8	slice	0:44	0:54
+O30	garlic	0
+S50	sliced
+S304	on	[cutting board]
+//
+O15	plate	0
+S188	contains	{beefsteak}
+O148	beefsteak	1
+S313	uncooked
+S226	on	[plate]
+O11	knife	1
+S51	clean
+M8	cut	0:55	1:07
+O148	beefsteak	0
+S92	cut with slits
+S313	uncooked
+S226	on	[plate]
+//
+O15	plate	0
+S188	contains	{beefsteak}
+O148	beefsteak	0
+S92	cut with slits
+S313	uncooked
+S226	on	[plate]
+O30	garlic	0
+S50	sliced
+S304	on	[cutting board]
+M0	pick-and-place	1:07	1:32
+O148	beefsteak	0
+S304	stuffed	{garlic}
+S313	uncooked
+S226	on	[plate]
+O30	garlic	1
+S50	sliced
+S158	in	[meat]
+//
+O2	bowl	0
+S182	contains	{salt}
+O18	salt	1
+S304	granulated
+S148	in	[bowl]
+O15	plate	0
+S188	contains	{beefsteak}
+O148	beefsteak	0
+S304	stuffed	{garlic}
+S313	uncooked
+S226	on	[plate]
+M2	sprinkle	1:37	1:40
+O148	beefsteak	0
+S304	salted	{garlic,salt}
+S313	uncooked
+S226	on	[plate]
+O18	salt	1
+S304	granulated
+S148	on	[meat]
+//
+O2	bowl	0
+S182	contains	{pepper}
+O19	black pepper	1
+S130	ground
+S304	in	[bowl]
+O15	plate	0
+S188	contains	{beefsteak}
+O148	beefsteak	0
+S304	salted	{garlic,salt}
+S313	uncooked
+S226	on	[plate]
+M2	sprinkle	1:40	1:44
+O148	beefsteak	0
+S304	seasoned	{garlic,salt,black pepper}
+S313	uncooked
+S226	on	[plate]
+O19	black pepper	1
+S130	ground
+S304	on	[meat]
+//
+O69	baking tray	1
+S304	empty
+O14	oven	0
+S218	on
+M0	put inside	Assumed	Assumed
+O69	baking tray	1
+S304	heated
+S304	in	[oven]
+O14	oven	0
+S218	on
+S304	with	[baking tray]
+//
+O15	plate	1
+S188	contains	{beefsteak}
+O148	beefsteak	1
+S304	seasoned	{garlic,salt,black pepper}
+S313	uncooked
+S226	on	[plate]
+O69	baking tray	0
+S304	heated
+S162	in	[oven]
+O14	oven	0
+S218	on
+S304	with	[baking tray]
+M0	pick-and-place	2:18	2:24
+O69	baking tray	0
+S188	contains	{beefsteak}
+S304	in	[oven]
+O148	beefsteak	1
+S304	seasoned	{garlic,salt,black pepper}
+S313	uncooked
+S226	on	[baking tray]
+//
+O69	baking tray	0
+S188	contains	{beefsteak}
+S304	in	[oven]
+O148	beefsteak	0
+S304	seasoned	{garlic,salt,black pepper}
+S313	uncooked
+S226	on	[baking tray]
+M40	cook	Assumed	Assumed
+O69	baking tray	0
+S188	contains	{beefsteak}
+S304	in	[oven]
+O148	beefsteak	0
+S313	partly cooked
+S226	on	[baking tray]
+//
+O69	baking tray	1
+S188	contains	{beefsteak}
+S304	in	[oven]
+O14	oven	0
+S218	on
+S304	with	[baking tray]
+M0	remove	2:38	2:42
+O69	baking tray	1
+S188	contains	{beefsteak}
+O14	oven	0
+S218	off
+//
+O69	baking tray	0
+S188	contains	{beefsteak}
+O148	beefsteak	1
+S313	partly cooked
+S226	on	[baking tray]
+O41	tongs	1
+S51	clean
+M11	flip	Assumed	Assumed
+O148	beefsteak	0
+S148	flipped
+S226	on	[baking tray]
+//
+O69	baking tray	1
+S188	contains	{beefsteak}
+O148	beefsteak	0
+S148	flipped
+S226	on	[baking tray]
+O14	oven	0
+S218	on
+M0	put inside	Assumed	Assumed
+O14	oven	0
+S218	on
+S304	with	[baking tray]
+O69	baking tray	1
+S188	contains	{beefsteak}
+S304	in	[oven]
+//
+O69	baking tray	0
+S188	contains	{beefsteak}
+S304	in	[oven]
+O148	beefsteak	0
+S148	flipped
+S226	on	[baking tray]
+M40	cook	Assumed	Assumed
+O148	beefsteak	0
+S148	cooked
+S226	on	[baking tray]
+//
+O69	baking tray	1
+S188	contains	{beefsteak}
+S304	in	[oven]
+O14	oven	0
+S304	on
+S7	with	[baking tray]
+M0	remove	Assumed	Assumed
+O69	baking tray	1
+S188	contains	{beefsteak}
+O14	oven	0
+S98	off
+//
+O69	baking tray	0
+S188	contains	{beefsteak}
+O148	beefsteak	1
+S148	cooked
+S226	on	[baking tray]
+O15	plate	0
+S98	empty
+O41	tongs	1
+S51	clean
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S188	contains	{beefsteak}
+O148	beefsteak	1	!
+S148	cooked
+S304	contains	{garlic,salt,black pepper}
+S226	on	[plate]
+//

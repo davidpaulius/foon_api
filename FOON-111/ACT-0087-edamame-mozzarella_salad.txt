@@ -1,0 +1,232 @@
+# Source:	https://www.youtube.com/watch?v=17mE8bUp000
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/ACT-0087-edamame-mozzarella_salad.mp4
+//
+O3	packet	1
+S43	contains	{soybean}
+S43	sealed
+M43	rip open	Assumed	Assumed
+O3	packet	1
+S43	contains	{soybean}
+S43	opened
+//
+O3	packet	1
+S43	contains	{soybean}
+S43	opened
+O370	soybean	1
+S43	shelled
+S69	uncooked
+S354	in	[packet]
+O2	bowl	0
+S98	empty
+M0	pour	Assumed	Assumed
+O2	bowl	0
+S43	contains	{soybean}
+O370	soybean	1
+S43	shelled
+S69	uncooked
+S354	in	[bowl]
+O3	packet	1
+S43	empty
+S43	dirty
+//
+O3	microwave	0
+S43	empty (ready)
+O2	bowl	1
+S43	contains	{soybean}
+M0	put inside	Assumed	Assumed
+O2	bowl	1
+S43	contains	{soybean}
+S43	in	[microwave]
+O3	microwave	0
+S43	with	[bowl]
+//
+O3	microwave	0
+S43	with	[bowl]
+O370	soybean	0
+S43	shelled
+S69	uncooked
+S354	in	[bowl]
+O2	bowl	0
+S43	contains	{soybean}
+S43	in	[microwave]
+M0	cook	Assumed	Assumed
+O370	soybean	0
+S43	shelled
+S69	cooked
+S354	in	[bowl]
+//
+O3	microwave	0
+S43	with	[bowl]
+O2	bowl	1
+S43	contains	{soybean}
+S43	in	[microwave]
+M0	remove	Assumed	Assumed
+O2	bowl	1
+S43	contains	{soybean}
+O3	microwave	0
+S43	empty
+//
+O2	mixing bowl	0
+S98	empty
+O2	bowl	1
+S182	contains	{soybean}
+O370	soybean	1
+S43	shelled
+S69	cooked
+S354	in	[bowl]
+O22	spoon	0
+S58	clean
+M18	pour and scrape	0:51	1:02
+O2	mixing bowl	0
+S182	contains	{soybean}
+O370	soybean	1
+S43	shelled
+S69	cooked
+S354	in	[mixing bowl]
+O2	bowl	0
+S43	empty
+S98	dirty
+//
+O2	packet	1
+S182	contains	{mozzarella}
+O371	mozzarella	1
+S354	diced
+S160	in	[packet]
+O2	bowl	1
+S354	empty
+M0	pour	Assumed	Assumed
+O2	bowl	0
+S182	contains	{mozzarella}
+O371	mozzarella	1
+S354	diced
+S160	in	[bowl]
+O3	packet	1
+S43	empty
+S43	dirty
+//
+O2	mixing bowl	0
+S182	contains	{soybean}
+O371	mozzarella	1
+S354	diced
+S160	in	[bowl]
+O2	bowl	1
+S182	contains	{mozzarella}
+O22	spoon	0
+S58	clean
+M18	pour and scrape	1:11	1:16
+O22	spoon	1
+S102	dirty
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella}
+O371	mozzarella	1
+S354	diced
+S160	in	[mixing bowl]
+O2	bowl	0
+S3	empty
+S98	dirty
+//
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella}
+O2	bowl	1
+S182	contains	{sesame oil}
+O373	sesame oil	1
+S43	liquid
+S160	in	[bowl]
+M4	pour	1:28	1:32
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella,sesame oil}
+O373	sesame oil	1
+S43	liquid
+S160	in	[mixing bowl]
+O2	bowl	1
+S43	empty
+S98	dirty
+//
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella,sesame oil}
+O2	bowl	1
+S182	contains	{soy sauce}
+O31	soy sauce	1
+S43	liquid
+S160	in	[bowl]
+M4	pour	1:36	1:39
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella,sesame oil,soy sauce}
+O31	soy sauce	1
+S43	liquid
+S160	in	[mixing bowl]
+O2	bowl	1
+S43	empty
+S98	dirty
+//
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella,sesame oil,soy sauce}
+O2	bowl	1
+S182	contains	{salt}
+O18	salt	1
+S354	granulated
+S160	in	[bowl]
+M2	sprinkle	1:42	1:46
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella,sesame oil,soy sauce,salt}
+O18	salt	1
+S354	granulated
+S160	in	[mixing bowl]
+O2	bowl	1
+S43	empty
+S98	dirty
+//
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella,sesame oil,soy sauce,salt}
+O31	soybean	1
+S43	deshelled
+S354	cooked
+S160	in	[mixing bowl]
+O31	mozzarella	1
+S354	diced
+S160	in	[mixing bowl]
+O31	sesame oil	1
+S43	liquid
+S160	in	[mixing bowl]
+O31	soy sauce	1
+S43	liquid
+S160	in	[mixing bowl]
+O18	salt	1
+S354	granulated
+S160	in	[mixing bowl]
+O22	spoon	0
+S58	clean
+M6	stir	1:48	1:56
+O31	salad 	0
+S43	mixed
+S354	contains	{soybean,mozzarella,sesame oil,soy sauce,salt}
+S354	in	[mixing bowl]
+O22	spoon	1
+S102	dirty
+//
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella,sesame oil,soy sauce,salt}
+O2	bowl	1
+S182	contains	{sesame seed}
+O372	sesame seed	1
+S43	seeds
+S160	in	[bowl]
+O31	salad 	0
+S43	mixed
+S354	contains	{soybean,mozzarella,sesame oil,soy sauce,salt}
+S354	in	[mixing bowl]
+M2	sprinkle	2:00	2:13
+O2	mixing bowl	0
+S182	contains	{soybean,mozzarella,sesame oil,soy sauce,salt,sesame seeds}
+O31	salad 	0
+S43	mixed
+S354	contains	{soybean,mozzarella,sesame oil,soy sauce,salt,sesame seed}
+S354	in	[mixing bowl]
+O31	edamame-mozzarella salad	0	!
+S32	mixed
+S354	contains	{soybean,mozzarella,sesame oil,soy sauce,salt,sesame seed}
+S354	in	[bowl]
+O372	sesame seed	1
+S43	seeds
+S160	in	[salad bowl]
+//

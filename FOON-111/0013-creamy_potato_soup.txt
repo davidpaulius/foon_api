@@ -1,0 +1,573 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0013-creamy_potato_soup.mp4
+# Source:	https://www.youtube.com/watch?v=QEm5f-yui3g
+//
+O422	potato	1
+S262	whole
+S32	unpeeled
+O365	cutting board	0
+S34	empty
+M30	pick-and-place	Assumed	Assumed
+O365	cutting board	0
+S34	contains	{potato}
+O422	potato	1
+S262	whole
+S32	unpeeled
+S34	on	[cutting board]
+//
+O422	potato	0
+S262	whole
+S32	unpeeled
+S34	on	[cutting board]
+O293	knife	1
+S23	clean
+M8	dice	0:30	0:58
+O422	potato	0
+S44	diced
+S34	on	[cutting board]
+//
+O365	cutting board	1
+S34	contains	{potato}
+O422	potato	1
+S44	diced
+S34	on	[cutting board]
+O415	plate	0
+S54	empty
+M38	pour and scrape	Assumed	Assumed
+O415	plate	0
+S144	contains	{potato}
+O422	potato	1
+S44	diced
+S188	on	[plate]
+O365	cutting board	1
+S34	empty
+S43	dirty
+//
+O23	stove	0
+S43	off (ready)
+S43	with	[pot]
+M43	turn on	Assumed	Assumed
+O23	stove	0
+S43	on
+S43	with	[pot]
+//
+O515	stove	0
+S165	off
+S43	with	[pot]
+O420	pot	0
+S54	empty
+S43	on	[stove]
+M30	heat	Assumed	Assumed
+O420	pot	0
+S43	hot
+S54	empty
+S43	on	[stove]
+//
+O66	butter	0
+S34	stick
+S43	unmelted
+S43	in	[packet]
+O365	knife	1
+S43	clean
+M30	cut	Assumed	Assumed
+O66	butter	0
+S34	halved
+S34	stick
+S43	unmelted
+S43	in	[packet]
+//
+O3	packet	1
+S34	contains	{butter}
+O66	butter	0
+S34	halved
+S34	stick
+S43	unmelted
+S43	in	[packet]
+O21	plate	0
+S43	empty
+M43	unwrap	Assumed	Assumed
+O21	plate	0
+S43	contains	{butter}
+O66	butter	1
+S34	halved
+S34	stick
+S43	unmelted
+S43	on	[plate]
+O3	packet	1
+S34	dirty
+S3	empty
+//
+O21	plate	1
+S43	contains	{butter}
+O66	butter	1
+S34	halved
+S34	stick
+S43	unmelted
+S43	on	[plate]
+O420	pot	0
+S43	hot
+S54	empty
+S43	on	[stove]
+M38	pour	1:19:50	1:20
+O420	pot	0
+S43	hot
+S54	contains	{butter}
+S43	on	[stove]
+O66	butter	1
+S34	halved
+S34	stick
+S43	unmelted
+S116	in	[pot]
+O21	plate	1
+S43	empty
+S43	dirty
+//
+O420	pot	0
+S43	hot
+S54	contains	{butter}
+S43	on	[stove]
+O66	butter	0
+S34	halved
+S34	stick
+S43	unmelted
+S116	in	[pot]
+M0	melt	Assumed	Assumed
+O66	butter	0
+S43	melted
+S43	liquid
+S116	in	[pot]
+//
+O365	onion	0
+S216	whole
+S43	unpeeled
+O21	knife	1
+S34	clean
+M30	peel	Assumed	Assumed
+O365	onion	0
+S216	whole
+S216	peeled
+//
+O180	cutting board	0
+S144	empty
+O365	onion	1
+S216	whole
+S216	peeled
+M30	pick-and-place	Assumed	Assumed
+O180	cutting board	0
+S144	contains	{onion}
+O365	onion	1
+S216	whole
+S216	peeled
+S175	on	[cutting board]
+//
+O365	onion	0
+S216	whole
+S216	peeled
+S175	on	[cutting board]
+O293	knife	1
+S23	clean
+M15	chop	Assumed	Assumed
+O365	onion	0
+S21	chopped
+S175	on	[cutting board]
+//
+O180	cutting board	0
+S144	contains	{onion}
+O365	onion	1
+S21	chopped
+S175	on	[cutting board]
+O415	plate	0
+S54	empty
+M38	pick-and-place	Assumed	Assumed
+O415	plate	0
+S144	contains	{onion}
+O180	cutting board	0
+S144	dirty
+O365	onion	1
+S21	chopped
+S188	on	[plate]
+//
+O180	cutting board	1
+S144	contains	{celery}
+O88	celery	1
+S21	chopped
+S175	on	[cutting board]
+O415	plate	0
+S144	empty
+M38	scrape	Assumed	Assumed
+O415	plate	0
+S144	contains	{celery}
+O88	celery	1
+S21	chopped
+S188	on	[plate]
+O180	cutting board	1
+S43	empty
+S144	dirty
+//
+O365	carrot	0
+S216	whole
+S43	unpeeled
+O21	peeler	1
+S34	clean
+M30	peel	Assumed	Assumed
+O365	carrot	0
+S43	whole
+S216	peeled
+//
+O180	cutting board	0
+S144	empty
+O365	carrot	1
+S43	whole
+S216	peeled
+M30	pick-and-place	Assumed	Assumed
+O180	cutting board	0
+S144	contains	{carrot}
+O365	carrot	0
+S43	whole
+S216	peeled
+S175	on	[cutting board]
+//
+O84	carrot	0
+S43	whole
+S262	peeled
+S175	on	[cutting board]
+O293	knife	1
+S23	clean
+M15	chop	Assumed	Assumed
+O84	carrot	0
+S21	chopped
+S175	on	[cutting board]
+//
+O180	cutting board	1
+S144	contains	{carrot}
+O84	carrot	1
+S21	chopped
+S175	on	[cutting board]
+O415	plate	0
+S144	empty
+M38	scrape	Assumed	Assumed
+O415	plate	0
+S144	contains	{carrot}
+O84	carrot	1
+S21	chopped
+S188	on	[plate]
+O180	cutting board	1
+S43	empty
+S144	dirty
+//
+O21	shaker	1
+S52	contains	{basil}
+O21	basil	1
+S52	dried
+S122	in	[shaker]
+O21	bowl	0
+S43	empty
+M30	sprinkle	Assumed	Assumed
+O21	bowl	0
+S52	contains	{basil}
+O21	basil	1
+S52	dried
+S122	in	[bowl]
+//
+O283	jar	0
+S138	contains	{garlic}
+O230	garlic	1
+S215	paste
+S99	in	[jar]
+O507	tablespoon	1
+S23	clean
+M50	scoop	Assumed	Assumed
+O507	tablespoon	1
+S138	contains	{garlic}
+O230	garlic	1
+S215	paste
+S123	in	[tablespoon]
+//
+O85	carton	1
+S138	contains	{chicken broth}
+O56	chicken broth	1
+S3	liquid
+S87	in	[carton]
+O51	bowl	0
+S54	empty
+M40	pour	Assumed	Assumed
+O51	bowl	0
+S138	contains	{chicken broth}
+O56	chicken broth	1
+S3	liquid
+S84	in	[bowl]
+//
+O248	grater	0
+S23	clean
+O51	bowl	0
+S54	empty
+O91	gouda	1
+S43	whole
+S9	block
+M28	grate	Assumed	Assumed
+O51	bowl	0
+S138	contains	{gouda}
+O91	gouda	1
+S68	grated
+S84	in	[bowl]
+O248	grater	0
+S23	dirty
+//
+O420	pot	0
+S43	hot
+S54	contains	{butter}
+S43	on	[stove]
+O21	plate	1
+S43	contains	{onion}
+O365	onion	1
+S21	chopped
+S188	on	[plate]
+O21	plate	1
+S43	contains	{carrot}
+O84	carrot	1
+S21	chopped
+S188	on	[plate]
+O21	plate	1
+S43	contains	{celery}
+O88	celery	1
+S21	chopped
+S188	on	[plate]
+M0	pour and scrape	1:23	1:27
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery}
+S43	on	[stove]
+O84	onion	1
+S21	chopped
+S122	in	[pot]
+O84	carrot	1
+S21	chopped
+S122	in	[pot]
+O84	celery	1
+S21	chopped
+S122	in	[pot]
+O21	plate	1
+S43	empty
+S43	dirty
+//
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery}
+S43	on	[stove]
+O21	bowl	1
+S52	contains	{basil}
+O21	basil	1
+S52	dried
+S122	in	[bowl]
+M0	sprinkle	1:29	1:33
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil}
+S43	on	[stove]
+O21	basil	1
+S52	dried
+S122	in	[pot]
+//
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil}
+S43	on	[stove]
+O507	tablespoon	1
+S138	contains	{garlic}
+O230	garlic	1
+S215	paste
+S123	in	[tablespoon]
+M40	pour	1:34	1:36
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic}
+S43	on	[stove]
+O230	garlic	1
+S215	paste
+S123	in	[pot]
+O507	tablespoon	1
+S4	empty
+S43	dirty
+//
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic}
+S43	on	[stove]
+O415	plate	1
+S144	contains	{potato}
+O422	potato	1
+S44	diced
+S188	on	[plate]
+O3	spoon	1
+S4	clean
+M40	pour and scrape	1:38	1:44
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato}
+S43	on	[stove]
+O422	potato	1
+S44	diced
+S123	in	[pot]
+O415	plate	1
+S4	empty
+S43	dirty
+//
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato}
+S43	on	[stove]
+O51	bowl	1
+S138	contains	{chicken broth}
+O56	chicken broth	1
+S4	liquid
+S84	in	[bowl]
+M40	pour	1:49	1:52
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth}
+S43	on	[stove]
+O56	chicken broth	1
+S4	liquid
+S84	in	[pot]
+O51	bowl	1
+S4	empty
+S43	dirty
+//
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth}
+S43	on	[stove]
+O23	spoon	1
+S54	contains	{roux}
+O4	roux	0
+S3	thick liquid
+S43	contains	{butter,flour}
+S43	in	[spoon]
+O56	chicken broth	1
+S4	liquid
+S84	in	[pot]
+O230	garlic	1
+S215	paste
+S123	in	[pot]
+O84	onion	1
+S21	chopped
+S122	in	[pot]
+O84	carrot	1
+S21	chopped
+S122	in	[pot]
+O84	celery	1
+S21	chopped
+S122	in	[pot]
+O576	whisk	1
+S23	clean
+M35	pour and mix	1:52	2:04
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour}
+S43	on	[stove]
+O494	soup	0
+S3	thick liquid
+S43	partly cooked
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour}
+S116	in	[pot]
+//
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour}
+S43	on	[stove]
+O494	soup	0
+S3	thick liquid
+S43	partly cooked
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour}
+S116	in	[pot]
+O0	measuring cup	1
+S43	contains	{heavy cream}
+O3	heavy cream	1
+S43	creamy
+S43	in	[measuring cup]
+O576	whisk	1
+S23	clean
+M35	pour and mix	2:10	2:17
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour,heavy cream}
+S43	on	[stove]
+O494	soup	1
+S3	thick liquid
+S43	partly cooked
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour,heavy cream}
+S116	in	[pot]
+//
+O420	pot	0
+S43	hot
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour,heavy cream}
+S43	on	[stove]
+O494	soup	0
+S3	thick liquid
+S43	partly cooked
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour,heavy cream}
+S116	in	[pot]
+O51	bowl	1
+S138	contains	{gouda}
+O91	gouda	1
+S68	grated
+S84	in	[bowl]
+O576	whisk	1
+S23	clean
+M35	pour and mix	2:26	2:35
+O420	pot	0
+S43	hot
+S54	contains	{soup}
+S43	on	[stove]
+O494	potato soup	0
+S3	thick liquid
+S43	partly cooked
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour,heavy cream,cheese}
+S116	in	[pot]
+//
+O420	pot	0
+S43	hot
+S138	contains	{soup}
+S197	on	[stove]
+O494	potato soup	0
+S3	thick liquid
+S43	partly cooked
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour,heavy cream,cheese}
+S116	in	[pot]
+O297	ladle	1
+S23	clean
+O51	bowl	0
+S54	empty
+M51	scoop and pour	Assumed	Assumed
+O51	bowl	0
+S48	contains	{soup}
+O494	potato soup	0	!
+S3	thick liquid
+S43	partly cooked
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour,heavy cream,cheese}
+S116	in	[bowl]
+//
+O51	bowl	0
+S48	contains	{soup}
+O494	potato soup	0	!
+S3	thick liquid
+S43	partly cooked
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour,heavy cream,cheese}
+S116	in	[bowl]
+O166	pepper mill	1
+S18	contains	{black pepper}
+O19	black pepper	1
+S43	whole
+S130	peppercorn
+S322	in	[pepper mill]
+M63	grind	2:38	2:41
+O51	bowl	0
+S48	contains	{soup,black pepper}
+O494	potato soup	0	!
+S3	thick liquid
+S43	partly cooked
+S54	contains	{butter,onion,carrot,celery,basil,garlic,potato,chicken broth,butter,flour,heavy cream,cheese,black pepper}
+S116	in	[bowl]
+O38	black pepper	1
+S71	ground
+S97	on	[soup]
+//

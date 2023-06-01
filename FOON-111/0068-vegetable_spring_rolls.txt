@@ -1,0 +1,943 @@
+O1	packet	0
+S3	contains	{noodle}
+O1	noodle	1
+S1	uncooked
+S1	in	[packet]
+O1	cooking pan	0
+S1	empty
+M1	pick-and-place	Assumed	Assumed
+O1	cooking pan	0
+S1	contains	{noodle}
+O1	noodle	1
+S1	uncooked
+S1	in	[pan]
+//
+O1	bowl	0
+S1	contains	{water}
+O1	cooking pan	1
+S1	contains	{noodle}
+O1	noodle	1
+S1	uncooked
+S1	in	[pan]
+O2	fork	1
+S1	clean
+M1	pour	0:15	0:20
+O1	bowl	0
+S1	contains	{water,noodle}
+O1	noodle	1
+S1	uncooked
+S1	in	[bowl]
+//
+O1	bowl	0
+S1	contains	{water,noodle}
+O1	noodle	0
+S1	uncooked
+S1	in	[bowl]
+M23	soak	Assumed	Assumed
+O1	noodle	0
+S1	soaked
+S1	in	[bowl]
+//
+O1	bowl	1
+S1	contains	{water,noodle}
+O1	noodle	1
+S1	soaked
+S1	in	[bowl]
+O1	strainer	0
+S1	clean
+M1	pour	0:28	0:34
+O1	strainer	0
+S1	contains	{noodle}
+O1	noodle	1
+S1	soaked
+S1	in	[strainer]
+O1	bowl	1
+S1	dirty
+//
+O1	strainer	0
+S1	contains	{noodle}
+O1	noodle	1
+S1	soaked
+S1	in	[strainer]
+O2	plate	0
+S2	empty
+M0	pour	Assumed	Assumed
+O1	noodle	1
+S1	soaked
+S1	on	[plate]
+O2	plate	0
+S2	contains	{noodle}
+O1	strainer	1
+S1	dirty
+//
+O1	noodle	1
+S1	soaked
+S1	on	[plate]
+O1	cutting board	0
+S1	empty
+M1	pick-and-place	0:37	0:41
+O1	cutting board	0
+S1	contains	{noodle}
+O1	noodle	1
+S1	soaked
+S1	on	[cutting board]
+//
+O1	cutting board	0
+S1	contains	{noodle}
+O1	noodle	0
+S1	soaked
+S1	on	[cutting board]
+O1	knife	1
+S1	clean
+M1	slice	0:42	0:45
+O1	noodle	0
+S1	cut
+S1	on	[cutting board]
+//
+O1	cutting board	0
+S1	contains	{noodle}
+O1	noodle	1
+S1	cut
+S1	on	[cutting board]
+O1	measuring cup	0
+S1	empty
+M1	pick-and-place	0:46	0:47
+O1	measuring cup	0
+S1	contains	{noodle}
+O1	noodle	1
+S1	cut
+S1	in	[measuring cup]
+O1	cutting board	0
+S1	empty
+//
+O1	measuring cup	0
+S1	contains	{noodle}
+O1	noodle	1
+S1	cut
+S1	in	[measuring cup]
+O2	bowl	0
+S4	empty
+M1	pour	0:50	0:51
+O2	bowl	0
+S1	contains	{noodle}
+O1	noodle	1
+S1	cut
+S1	in	[bowl]
+//
+O1	stove	0
+S1	off
+M1	turn on	Assumed	Assumed
+O1	stove	0
+S1	on
+//
+O1	cooking pan	1
+S1	empty
+O1	stove	0
+S1	on
+M1	pick-and-place	Assumed	Assumed
+O1	cooking pan	1
+S1	heated
+S1	on	[stove]
+O1	stove	0
+S1	on
+S43	with	[pan]
+//
+O1	cooking pan	1
+S1	heated
+S1	on	[stove]
+O2	bowl	0
+S1	contains	{vegetable oil}
+O1	vegetable oil	1
+S1	in	[bowl]
+M1	pour	0:52	0:56
+O1	cooking pan	0
+S1	greased	{vegetable oil}
+S1	on	[stove]
+O1	vegetable oil	1
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	greased	{vegetable oil}
+S1	on	[stove]
+O2	bowl	1
+S1	contains	{garlic}
+O1	garlic	1
+S1	minced
+S1	in	[bowl]
+O2	spoon	1
+S3	clean
+M1	pour	0:56	1:00
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic}
+S1	on	[stove]
+O1	garlic	1
+S1	minced
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic}
+S1	on	[stove]
+O1	garlic	1
+S1	minced
+S1	in	[pan]
+O2	turner	1
+S2	clean
+M2	cook and stir	1:01	1:05
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic}
+S1	on	[stove]
+O1	garlic	1
+S1	fried
+S1	in	[pan]
+//
+O1	cutting board	0
+S1	contains	{onion}
+O1	onion	0
+S1	peeled
+S1	on	[cutting board]
+O1	knife	1
+S1	clean
+M1	slice	Assumed	Assumed
+O1	onion	0
+S1	sliced
+S1	on	[cutting board]
+//
+O1	cutting board	0
+S1	contains	{onion}
+O2	bowl	0
+S2	empty
+O1	onion	1
+S1	sliced
+S1	on	[cutting board]
+M0	pick-and-place	Assumed	Assumed
+O1	bowl	0
+S1	contains	{onion}
+O1	onion	1
+S1	sliced
+S1	in	[bowl]
+O1	cutting board	0
+S1	empty
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic}
+S1	on	[stove]
+O1	bowl	1
+S1	contains	{onion}
+O1	onion	1
+S1	sliced
+S1	in	[bowl]
+M1	pour	1:05	1:07
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion}
+S1	on	[stove]
+O1	onion	1
+S1	sliced
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion}
+S1	on	[stove]
+O1	turner	1
+S1	clean
+O1	onion	1
+S1	sliced
+S1	in	[pan]
+M1	cook and stir	1:08	1:12
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion}
+S1	on	[stove]
+O1	onion	1
+S1	fried
+S1	in	[pan]
+//
+O1	cutting board	0
+S1	contains	{chili pepper}
+O1	chili pepper	0
+S1	whole
+S1	on	[cutting board]
+O1	knife	1
+S1	clean
+M1	slice	Assumed	Assumed
+O1	chili pepper	0
+S1	sliced
+S1	on	[cutting board]
+//
+O1	cutting board	0
+S1	contains	{chili pepper}
+O2	bowl	0
+S2	empty
+O1	chili pepper	0
+S1	sliced
+S1	on	[cutting board]
+M0	pick-and-place	Assumed	Assumed
+O1	bowl	0
+S1	contains	{chili pepper}
+O1	chili pepper	0
+S1	sliced
+S1	in	[bowl]
+O1	cutting board	0
+S1	dirty
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion}
+S1	on	[stove]
+O1	bowl	1
+S1	contains	{chili pepper}
+O1	chili pepper	1
+S1	sliced
+S1	in	[bowl]
+M1	pour	1:13	1:14
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper}
+S1	on	[stove]
+O1	chili pepper	1
+S1	sliced
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper}
+S1	on	[stove]
+O1	turner	1
+S1	clean
+O1	chili pepper	1
+S1	sliced
+S1	in	[pan]
+M1	cook and stir	1:14	1:18
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper}
+S1	on	[stove]
+O1	chili pepper	1
+S1	fried
+S1	in	[pan]
+//
+O1	carrot	0
+S1	whole
+O4	peeler	1
+S4	clean
+M1	peel	Assumed	Assumed
+O1	peeler	1
+S1	dirty
+O1	carrot	0
+S1	peeled
+//
+O1	cutting board	0
+S4	empty
+O1	carrot	1
+S1	peeled
+M0	pick-and-place	Assumed	Assumed
+O1	cutting board	0
+S1	contains	{carrot}
+O1	carrot	1
+S1	peeled
+S1	on	[cutting board]
+//
+O1	cutting board	0
+S1	contains	{carrot}
+O1	carrot	0
+S1	peeled
+S1	on	[cutting board]
+O1	knife	1
+S1	clean
+M1	cut	Assumed	Assumed
+O1	carrot	0
+S1	julienned
+S1	on	[cutting board]
+//
+O1	cutting board	0
+S1	contains	{carrot}
+O2	bowl	0
+S2	empty
+O1	carrot	0
+S1	julienned
+S1	on	[cutting board]
+M0	pick-and-place	Assumed	Assumed
+O1	bowl	0
+S1	contains	{carrot}
+O1	carrot	0
+S1	julienned
+S1	in	[bowl]
+O1	cutting board	0
+S1	dirty
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper}
+S1	on	[stove]
+O1	bowl	1
+S1	contains	{carrot}
+O1	carrot	1
+S1	julienned
+S1	in	[bowl]
+M1	pour	1:18	1:20
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot}
+S1	on	[stove]
+O1	carrot	1
+S1	julienned
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot}
+S1	on	[stove]
+O1	carrot	1
+S1	julienned
+S1	in	[pan]
+O1	turner	1
+S1	clean
+M1	cook and stir	1:21	1:28
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot}
+S1	on	[stove]
+O1	carrot	1
+S1	fried
+S1	in	[pan]
+//
+O1	cutting board	0
+S1	contains	{cabbage}
+O1	cabbage	0
+S1	whole
+S1	on	[cutting board]
+O1	knife	1
+S1	clean
+M1	cut	Assumed	Assumed
+O1	cabbage	0
+S1	chopped
+S1	on	[cutting board]
+//
+O1	cutting board	0
+S1	contains	{cabbage}
+O2	bowl	0
+S2	empty
+O1	cabbage	0
+S1	chopped
+S1	on	[cutting board]
+M0	pick-and-place	Assumed	Assumed
+O1	bowl	0
+S1	contains	{cabbage}
+O1	cabbage	0
+S1	chopped
+S1	in	[bowl]
+O1	cutting board	0
+S1	dirty
+//
+O1	cutting board	0
+S1	contains	{scallion}
+O1	scallion	0
+S1	whole
+S1	on	[cutting board]
+O1	knife	1
+S1	clean
+M1	cut	Assumed	Assumed
+O1	scallion	0
+S1	chopped
+S1	on	[cutting board]
+//
+O1	cutting board	0
+S1	contains	{scallion}
+O2	bowl	0
+S2	empty
+O1	scallion	0
+S1	chopped
+S1	on	[cutting board]
+M0	pick-and-place	Assumed	Assumed
+O1	bowl	0
+S1	contains	{scallion}
+O1	scallion	0
+S1	chopped
+S1	in	[bowl]
+O1	cutting board	0
+S1	dirty
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot}
+S1	on	[stove]
+O1	bowl	1
+S1	contains	{cabbage}
+O1	cabbage	1
+S1	chopped
+S1	in	[bowl]
+M1	pour	1:29	1:31
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage}
+S1	on	[stove]
+O1	cabbage	1
+S1	chopped
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage}
+S1	on	[stove]
+O1	bowl	1
+S1	contains	{scallion}
+O1	scallion	1
+S1	chopped
+S1	in	[bowl]
+M1	pour	1:31	1:35
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion}
+S1	on	[stove]
+O1	scallion	1
+S1	chopped
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion}
+S1	on	[stove]
+O1	scallion	1
+S1	chopped
+S1	in	[pan]
+O1	cabbage	1
+S1	chopped
+S1	in	[pan]
+O1	turner	1
+S1	clean
+M1	stir	1:35	1:42
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion}
+S1	on	[stove]
+O1	scallion	1
+S1	fried
+S1	in	[pan]
+O1	cabbage	1
+S1	fried
+S1	in	[pan]
+//
+O2	bottle	1
+S2	contains	{soy sauce}
+O1	soy sauce	1
+S1	in	[bottle]
+O1	bowl	0
+S1	empty
+M1	pour	Assumed	Assumed
+O1	soy sauce	1
+S1	in	[bowl]
+O1	bowl	0
+S2	contains	{soy sauce}
+//
+O2	bottle	1
+S2	contains	{oyster sauce}
+O1	oyster sauce	1
+S1	in	[bottle]
+O1	bowl	0
+S1	empty
+M1	pour	Assumed	Assumed
+O1	oyster sauce	1
+S1	in	[bowl]
+O1	bowl	0
+S2	contains	{oyster sauce}
+//
+O2	shaker	1
+S2	contains	{white pepper}
+O1	white pepper	1
+S3	ground
+S1	in	[shaker]
+O1	bowl	0
+S1	empty
+M1	pour	Assumed	Assumed
+O1	bowl	0
+S2	contains	{white pepper}
+O1	white pepper	1
+S3	ground
+S1	in	[bowl]
+//
+O2	container	1
+S2	contains	{sugar}
+O1	sugar	1
+S4	granulated
+S1	in	[container]
+O1	bowl	0
+S1	empty
+M1	pour	Assumed	Assumed
+O1	bowl	0
+S2	contains	{sugar}
+O1	sugar	1
+S4	granulated
+S1	in	[bowl]
+//
+O2	shaker	1
+S2	contains	{salt}
+O1	salt	1
+S4	granulated
+S1	in	[shaker]
+O1	bowl	0
+S1	empty
+M1	pour	Assumed	Assumed
+O1	bowl	0
+S2	contains	{salt}
+O1	salt	1
+S4	granulated
+S1	in	[bowl]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion}
+S1	on	[stove]
+O1	bowl	1
+S2	contains	{soy sauce}
+O1	soy sauce	1
+S1	in	[bowl]
+M2	pour	1:42	1:45
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce}
+S1	on	[stove]
+O1	soy sauce	1
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce}
+S1	on	[stove]
+O1	bowl	1
+S2	contains	{oyster sauce}
+O1	oyster sauce	1
+S1	in	[bowl]
+M2	pour	1:45	1:48
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce}
+S1	on	[stove]
+O1	oyster sauce	1
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce}
+S1	on	[stove]
+O1	bowl	1
+S2	contains	{white pepper}
+O1	white pepper	1
+S1	ground
+S1	in	[bowl]
+M2	pour	1:48	1:50
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper}
+S1	on	[stove]
+O1	white pepper	1
+S1	ground
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper}
+S1	on	[stove]
+O1	sugar	1
+S1	granulated
+S1	in	[bowl]
+O1	bowl	1
+S2	contains	{sugar}
+M2	pour	1:51	1:53
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper,sugar}
+S1	on	[stove]
+O1	sugar	1
+S1	granulated
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper}
+S1	on	[stove]
+O1	salt	1
+S1	granulated
+S1	in	[bowl]
+O1	bowl	1
+S2	contains	{salt}
+M2	sprinkle	1:53	1:55
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper,sugar,salt}
+S1	on	[stove]
+O1	salt	1
+S1	granulated
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper,sugar,salt}
+S1	on	[stove]
+O1	sugar	1
+S1	granulated
+S1	in	[pan]
+O1	salt	1
+S1	granulated
+S1	in	[pan]
+O1	white pepper	1
+S1	ground
+S1	in	[pan]
+O1	oyster sauce	1
+S1	in	[pan]
+O1	soy sauce	1
+S1	in	[pan]
+O1	turner	1
+S1	clean
+M1	stir	1:55	2:06
+O1	cooking pan	0
+S1	contains	{vegetable mix}
+S1	on	[stove]
+O3	vegetable mix	1
+S3	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper,sugar,salt}
+S4	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable mix}
+S1	on	[stove]
+O1	noodle	1
+S1	chopped
+S1	in	[bowl]
+O2	bowl	1
+S1	contains	{noodle}
+M1	pour	2:07	2:10
+O1	cooking pan	0
+S1	contains	{vegetable mix,noodle}
+S1	on	[stove]
+O1	noodle	1
+S1	chopped
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable mix,noodle}
+S1	on	[stove]
+O3	vegetable mix	1
+S3	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper,sugar,salt}
+S4	in	[pan]
+O1	noodle	1
+S1	chopped
+S1	in	[pan]
+O1	turner	1
+S1	clean
+M1	stir	2:11	2:17
+O1	cooking pan	0
+S1	contains	{vegetable mix,noodle}
+S1	on	[stove]
+//
+O2	spoon	1
+S1	clean
+O2	container	0
+S1	contains	{corn flour}
+O2	corn flour	0
+S4	powder
+S2	in	[container]
+M2	scoop	Assumed	Assumed
+O2	spoon	1
+S1	contains	{corn flour}
+O2	corn flour	0
+S43	powder
+S2	in	[spoon]
+//
+O2	spoon	1
+S1	contains	{corn flour}
+O2	corn flour	1
+S1	powder
+S2	in	[spoon]
+O2	bowl	0
+S1	contains	{water}
+O1	water	0
+S1	in	[bowl]
+M1	pour	2:21	2:22
+O1	bowl	0
+S1	contains	{water,corn flour}
+O2	corn flour	1
+S3	wet
+S2	in	[bowl]
+//
+O1	bowl	0
+S1	contains	{water,corn flour}
+O2	corn flour	1
+S3	wet
+S2	in	[bowl]
+O2	spoon	1
+S1	clean
+O1	water	0
+S1	in	[bowl]
+M2	mix	2:22	2:25
+O1	bowl	0
+S1	contains	{flour mixture}
+O1	flour mixture	0
+S1	contains	{water,corn flour}
+S4	in	[bowl]
+//
+O1	cooking pan	0
+S1	contains	{vegetable mix,noodle}
+S1	on	[stove]
+O1	bowl	0
+S1	contains	{flour mixture}
+O1	flour mixture	0
+S1	contains	{water,corn flour}
+S4	in	[bowl]
+M1	pour	2:25	2:27
+O1	cooking pan	0
+S1	contains	{vegetable mix,noodle,flour mixture}
+S1	on	[stove]
+O1	flour mixture	0
+S1	contains	{water,corn flour}
+S4	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{vegetable mix,noodle,flour mixture}
+S1	on	[stove]
+O1	flour mixture	1
+S1	contains	{water,corn flour}
+S4	in	[pan]
+O1	turner	1
+S1	clean
+O3	vegetable mix	1
+S3	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper,sugar,salt}
+S4	in	[pan]
+O1	noodle	1
+S1	chopped
+S1	in	[pan]
+M1	cook and stir	2:27	2:34
+O1	cooking pan	0
+S1	contains	{spring roll mix}
+O1	spring roll mix	1
+S1	in	[pan]
+//
+O2	bowl	1
+S1	contains	{water}
+O1	water	1
+S1	in	[bowl]
+O2	bowl	0
+S1	contains	{flour}
+O1	flour	0
+S3	powder
+S1	in	[bowl]
+M1	pour	2:37	2:42
+O1	bowl	0
+S1	contains	{water,flour}
+O1	flour	0
+S3	wet
+S1	in	[bowl]
+//
+O1	bowl	0
+S1	contains	{water,flour}
+O1	flour	1
+S3	wet
+S1	in	[bowl]
+O1	water	1
+S1	in	[bowl]
+O1	spoon	1
+S1	clean
+M1	stir	2:43	2:50
+O1	bowl	0
+S1	contains	{flour glue}
+O1	flour glue	1
+S1	in	[bowl]
+//
+O1	spring roll sheet	1
+S1	uncooked
+O1	cutting board	0
+S1	empty
+M1	pick-and-place	2:50	2:53
+O1	cutting board	0
+S1	contains	{spring roll sheet}
+O1	spring roll sheet	1
+S1	uncooked
+S1	on	[cutting board]
+//
+O1	cooking pan	1
+S1	contains	{spring roll mix}
+O1	spring roll mix	1
+S1	in	[pan]
+O1	bowl	0
+S1	empty
+M1	pour	Assumed	Assumed
+O1	bowl	0
+S1	contains	{spring roll mix}
+O1	spring roll mix	1
+S1	in	[bowl]
+//
+O1	bowl	0
+S1	contains	{spring roll mix}
+O1	spring roll mix	1
+S1	in	[bowl]
+O1	spoon	1
+S1	clean
+O1	spring roll sheet	0
+S1	uncooked
+S1	on	[cutting board]
+M1	scoop and pour	2:53	2:57
+O1	spring roll sheet	0
+S1	contains	{spring roll mix}
+S1	on	[cutting board]
+O1	spring roll mix	1
+S1	on	[sheet]
+//
+O1	cutting board	0
+S1	contains	{spring roll sheet}
+O1	spring roll sheet	0
+S1	contains	{spring roll mix}
+S1	on	[cutting board]
+O1	flour glue	1
+S1	in	[bowl]
+M1	wrap	3:00	3:25
+O1	cutting board	0
+S1	contains	{spring roll}
+O1	spring roll	0
+S43	contains	{spring roll mix}
+S1	rolled
+S1	on	[cutting board]
+//
+O1	cooking pan	0
+S2	heated
+S43	on	[stove]
+O1	stove	0
+S1	on
+S3	with	[pan]
+O1	bottle	1
+S1	contains	{vegetable oil}
+O1	vegetable oil	1
+S1	in	[bottle]
+M1	pour	Assumed	Assumed
+O1	cooking pan	0
+S1	greased	{vegetable oil}
+S3	on	[stove]
+//
+O1	cutting board	0
+S1	contains	{spring roll}
+O1	cooking pan	0
+S1	greased	{vegetable oil}
+S3	on	[stove]
+O1	spring roll	1
+S43	contains	{spring roll mix}
+S1	rolled
+S1	on	[cutting board]
+M1	pick-and-place	4:50	4:59
+O1	cooking pan	0
+S1	contains	{vegetable oil,spring roll}
+S3	on	[stove]
+O1	spring roll	1
+S43	contains	{spring roll mix}
+S1	rolled
+S1	in	[pan]
+O1	cutting board	0
+S1	empty
+//
+O1	stove	0
+S1	on
+S3	with	[pan]
+O1	cooking pan	0
+S1	contains	{vegetable oil,spring roll}
+S3	on	[stove]
+O1	spring roll	1
+S43	contains	{spring roll mix}
+S1	rolled
+S1	in	[pan]
+O1	turner	1
+S1	clean
+M1	cook and stir	5:00	5:10
+O1	cooking pan	0
+S1	contains	{spring roll}
+S3	on	[stove]
+O1	spring roll	1
+S1	cooked
+S43	contains	{spring roll mix}
+S1	in	[pan]
+//
+O1	cooking pan	0
+S1	contains	{spring roll}
+S3	on	[stove]
+O1	spring roll	1
+S1	cooked
+S43	contains	{spring roll mix}
+S1	in	[pan]
+O1	plate	0
+S1	empty
+M1	pick-and-place	5:11	5:22
+O1	plate	0
+S2	contains	{spring roll}
+O1	spring roll	1	!
+S1	cooked
+S3	contains	{vegetable oil,garlic,onion,chili pepper,carrot,cabbage,scallion,soy sauce,oyster sauce,white pepper,sugar,salt,flour,spring roll sheet}
+S1	on	[plate]
+//

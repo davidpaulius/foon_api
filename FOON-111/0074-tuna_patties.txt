@@ -1,0 +1,695 @@
+# Source:	https://www.youtube.com/watch?v=3P8QLuWGmNI
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0074-tuna_patties.mp4
+//
+O129	can	0
+S60	sealed
+S195	contains	{tuna}
+O274	can opener	1
+S274	clean
+M21	open	Assumed	Assumed
+O129	can	0
+S60	opened
+S195	contains	{oil,tuna}
+//
+O129	can	1
+S246	opened
+S195	contains	{oil,tuna}
+O3	oil	1
+S43	liquid
+S43	in	[can]
+O32	tuna	1
+S43	shredded
+S4	in	[can]
+O32	strainer	0
+S43	empty
+S43	on	[bowl]
+O32	bowl	0
+S43	empty
+S3	with	[strainer]
+M4	pour	0:00	0:01
+O129	strainer	0
+S195	contains	{tuna}
+S43	on	[bowl]
+O3	oil	1
+S43	liquid
+S43	in	[tuna]
+O32	tuna	1
+S43	shredded
+S4	in	[strainer]
+//
+O129	strainer	1
+S195	contains	{oil,tuna}
+S43	on	[bowl]
+O32	tuna	0
+S43	shredded
+S43	in	[strainer]
+O4	fork	1
+S43	clean
+O3	oil	1
+S43	liquid
+S43	in	[tuna]
+O32	bowl	0
+S43	empty
+S3	with	[strainer]
+M0	press	0:14	0:20
+O129	strainer	1
+S195	contains	{tuna}
+S43	on	[bowl]
+O32	tuna	0
+S43	shredded
+S43	pressed
+S43	in	[strainer]
+O32	bowl	0
+S195	contains	{oil}
+S3	with	[strainer]
+//
+O32	bowl	0
+S195	contains	{oil}
+S3	with	[strainer]
+O129	strainer	1
+S195	contains	{tuna}
+S43	on	[bowl]
+M0	remove	Assumed	Assumed
+O32	bowl	0
+S195	contains	{oil}
+O129	strainer	1
+S195	contains	{tuna}
+//
+O2	mixing bowl	0
+S107	empty
+O129	strainer	1
+S195	contains	{tuna}
+O32	tuna	1
+S43	squeezed
+S43	shredded
+S43	in	[strainer]
+M18	pour	0:21	0:24
+O129	strainer	1
+S195	empty
+S43	dirty
+O2	bowl	0
+S195	contains	{tuna}
+O32	tuna	1
+S43	shredded
+S233	in	[bowl]
+//
+O26	onion	1
+S144	whole
+S43	unpeeled
+S235	on	[cutting board]
+M17	peel	Assumed	Assumed
+O26	onion	1
+S144	whole
+S265	peeled
+S235	on	[cutting board]
+//
+O26	onion	0
+S43	whole
+S265	peeled
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M10	cut	0:31	0:32
+O26	onion	0
+S144	halved
+S265	peeled
+S235	on	[cutting board]
+//
+O26	onion	0
+S144	halved
+S265	peeled
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M10	chop	0:46	0:55
+O26	onion	0
+S144	chopped
+S235	on	[cutting board]
+//
+O83	cutting board	1
+S201	contains	{onion}
+O26	onion	1
+S144	chopped
+S235	on	[cutting board]
+O3	bowl	0
+S43	empty
+M39	scrape	Assumed	Assumed
+O3	bowl	0
+S201	contains	{onion}
+O26	onion	1
+S144	chopped
+S235	in	[bowl]
+O83	cutting board	1
+S201	empty
+S43	dirty
+//
+O3	bowl	1
+S201	contains	{onion}
+O32	onion	1
+S234	chopped
+S233	in	[bowl]
+O2	mixing bowl	0
+S27	contains	{tuna}
+M4	pour	0:56	0:59
+O2	mixing bowl	0
+S27	contains	{tuna,onion}
+O32	onion	1
+S234	chopped
+S233	in	[mixing bowl]
+O3	bowl	1
+S43	empty
+S201	dirty
+//
+O235	garlic press	1
+S23	empty
+S34	closed
+M0	open	Assumed	Assumed
+O235	garlic press	1
+S23	empty
+S34	opened
+//
+O235	garlic press	0
+S23	empty
+S34	opened
+O230	garlic	1
+S43	clove
+S217	peeled
+M31	insert	Assumed	Assumed
+O235	garlic press	0
+S139	contains	{garlic}
+S43	opened
+O230	garlic	1
+S217	peeled	
+S4	clove
+S95	in	[garlic press]
+//
+O51	mixing bowl	0
+S139	contains	{onion,tuna}
+O235	garlic press	1
+S23	contains	{garlic}
+S43	opened
+O230	garlic	1
+S4	clove
+S217	peeled	
+S95	in	[garlic press]
+O293	knife	1
+S23	clean	
+M65	squeeze and scrape	<1:00-1:04,1:05-1:07>
+O51	mixing bowl	0
+S139	contains	{garlic,onion,tuna}
+O230	garlic	1
+S160	minced	
+S84	in	[mixing bowl]
+O235	garlic press	1
+S23	dirty
+S223	closed	
+//
+O3	cutting board	0
+S43	empty
+O4	chive	1
+S43	whole
+S43	leaf
+M0	pick-and-place	Assumed	Assumed
+O3	cutting board	0
+S201	contains	{chive}
+O4	chive	1
+S43	whole
+S43	leaf
+S43	on	[cutting board]
+//
+O4	chive	0
+S43	whole
+S43	leaf
+S43	on	[cutting board]
+O11	knife	1
+S58	clean
+M0	chop	1:09	1:16
+O4	chive	1
+S43	chopped
+S43	on	[cutting board]
+//
+O83	cutting board	1
+S201	contains	{chive}
+O4	chive	1
+S144	chopped
+S235	on	[cutting board]
+O3	bowl	0
+S43	empty
+M39	scrape	Assumed	Assumed
+O3	bowl	0
+S201	contains	{chive}
+O4	chive	1
+S144	chopped
+S235	in	[bowl]
+O83	cutting board	1
+S43	empty
+S201	dirty
+//
+O3	bowl	1
+S201	contains	{chive}
+O4	chive	1
+S144	chopped
+S235	in	[bowl]
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic}
+M0	pour	1:16	1:18
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive}
+O4	chive	1
+S144	chopped
+S235	in	[mixing bowl]
+O3	bowl	1
+S43	empty
+S201	dirty
+//
+O3	cutting board	0
+S43	empty
+O4	parsley	1
+S43	whole
+S43	leaf
+M0	pick-and-place	Assumed	Assumed
+O3	cutting board	0
+S201	contains	{parsley}
+O4	parsley	1
+S43	whole
+S43	leaf
+S43	on	[cutting board]
+//
+O4	parsley	1
+S43	whole
+S43	on	[cutting board]
+O11	knife	1
+S58	clean
+M0	chop	1:20	1:28
+O4	parsley	1
+S43	chopped
+S43	on	[cutting board]
+//
+O83	cutting board	1
+S201	contains	{parsley}
+O4	parsley	1
+S144	chopped
+S235	on	[cutting board]
+O3	bowl	0
+S43	empty
+M39	scrape	Assumed	Assumed
+O3	bowl	0
+S201	contains	{parsley}
+O4	parsley	1
+S144	chopped
+S235	in	[bowl]
+O83	cutting board	1
+S3	empty
+S201	dirty
+//
+O3	bowl	1
+S201	contains	{parsley}
+O4	parsley	1
+S144	chopped
+S235	in	[bowl]
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive}
+M0	pour	1:29	1:31
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley}
+O4	parsley	1
+S144	chopped
+S235	in	[mixing bowl]
+O3	bowl	1
+S3	empty
+S201	dirty
+//
+O60	blender jar	1
+S107	empty
+O4	blender	0
+S43	off
+M4	attach	Assumed	Assumed
+O60	blender jar	1
+S107	empty
+S349	attached to	[blender]
+O4	blender	0
+S32	with	[blender jar]
+//
+O60	blender jar	0
+S107	empty
+S349	attached to	[blender]
+O2	bowl	1
+S195	contains	{oats}
+O3	oats	1
+S43	grain
+S144	uncooked
+S160	in	[bowl]
+M18	pour	1:32	1:36
+O60	blender jar	0
+S195	contains	{oats}
+S349	attached to	[blender]
+O3	oats	1
+S43	grain
+S144	uncooked
+S157	in	[blender jar]
+O2	bowl	1
+S43	empty
+S102	dirty
+//
+O60	blender jar	0
+S195	contains	{oats}
+S349	attached to	[blender]
+O3	blender lid	1
+S43	clean
+M39	cover	1:38	1:40
+O3	blender lid	1
+S43	on	[blender jar]
+O60	blender jar	0
+S43	covered	[blender lid]
+S195	contains	{oats}
+S349	attached to	[blender]
+//
+O4	blender	0
+S32	with	[blender jar]
+O60	blender jar	0
+S43	covered	[blender lid]
+S195	contains	{oats}
+S349	attached to	[blender]
+O3	oats	1
+S43	grain
+S144	uncooked
+S157	in	[blender jar]
+M28	blend	1:43	1:48
+O60	blender jar	0
+S43	covered	[blender lid]
+S195	contains	{oats}
+S349	attached to	[blender]
+O3	oats	1
+S144	crushed
+S144	uncooked
+S43	in	[blender jar]
+//
+O60	blender jar	0
+S43	covered	[blender lid]
+S195	contains	{oats}
+S349	attached to	[blender]
+O3	blender lid	1
+S43	on	[blender jar]
+M0	uncover	2:52	2:53
+O3	blender lid	1
+S43	dirty
+O60	blender jar	0
+S195	contains	{oats}
+S349	attached to	[blender]
+//
+O60	blender jar	0
+S195	contains	{oats}
+S349	attached to	[blender]
+O4	blender	0
+S32	with	[blender jar]
+M4	detach	Assumed	Assumed
+O60	blender jar	0
+S195	contains	{oats}
+O4	blender	0
+S32	off
+//
+O60	blender jar	1
+S195	contains	{oats}
+O3	oats	1
+S144	crushed
+S144	uncooked
+S43	in	[blender jar]
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley}
+M4	pour	1:52	1:55
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley,oats}
+O3	oats	1
+S144	crushed
+S144	uncooked
+S43	in	[mixing bowl]
+O60	blender jar	1
+S4	empty
+S102	dirty
+//
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley,oats}
+O4	spoon	1
+S43	contains	{salt}
+O4	salt	1
+S43	granulated
+S43	in	[spoon]
+M4	pour	1:56	1:58
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt}
+O4	salt	1
+S43	granulated
+S43	in	[mixing bowl]
+//
+O4	spoon	1
+S43	contains	{chili pepper}
+O4	chili pepper	1
+S43	flakes
+S43	in	[spoon]
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt}
+M4	pour	1:58	2:00
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper}
+O4	chili pepper	1
+S43	flakes
+S43	in	[mixing bowl]
+//
+O4	bowl	0
+S43	empty
+O4	egg	1
+S43	whole
+M0	crack	2:00	2:12
+O4	bowl	0
+S43	contains	{egg white and yolk}
+O4	egg white and yolk	1
+S43	raw
+S43	in	[bowl]
+//
+O4	bowl	0
+S43	contains	{egg white and yolk}
+O4	egg white and yolk	1
+S43	raw
+S43	in	[bowl]
+O4	fork	1
+S43	clean
+M0	beat	2:13	2:17
+O4	bowl	0
+S43	contains	{egg white and yolk}
+O4	egg white and yolk	1
+S43	raw
+S43	beaten
+S43	in	[bowl]
+//
+O4	bowl	1
+S43	contains	{egg white and yolk}
+O4	egg white and yolk	1
+S43	raw
+S43	beaten
+S43	in	[bowl]
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper}
+M0	pour	2:19	2:21
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+O4	egg white and yolk	1
+S43	raw
+S43	beaten
+S43	in	[mixing bowl]
+O4	bowl	1
+S4	empty
+S43	dirty
+//
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+O4	egg white and yolk	1
+S4	raw
+S43	beaten
+S43	in	[mixing bowl]
+O4	chili pepper	1
+S43	flakes
+S43	in	[mixing bowl]
+O4	salt	1
+S43	granulated
+S43	in	[mixing bowl]
+O4	oats	1
+S43	crushed
+S43	uncooked
+S43	in	[mixing bowl]
+O4	tuna	1
+S43	shredded
+S43	in	[mixing bowl]
+O4	garlic	1
+S43	minced
+S43	in	[mixing bowl]
+O4	onion	1
+S43	chopped
+S43	in	[mixing bowl]
+O4	parsley	1
+S43	chopped
+S43	in	[mixing bowl]
+O4	chive	1
+S43	chopped
+S43	in	[mixing bowl]
+O4	spoon	1
+S43	clean
+M10	mix	2:23	2:39
+O4	tuna paste	1
+S43	uncooked
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[mixing bowl]
+//
+O2	mixing bowl	0
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+O4	tuna paste	1
+S43	uncooked
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[mixing bowl]
+M0	roll	2:40	2:47
+O4	tuna paste	1
+S43	uncooked
+S43	shaped
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+//
+O4	tuna paste	1
+S43	uncooked
+S43	shaped
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+M0	press	2:47	2:50
+O4	tuna patty	1
+S43	uncooked
+S43	pressed
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+//
+O34	cooking pan	0
+S43	hot
+S30	empty
+S32	on	[stove]
+O3	bottle	1
+S43	contains	{olive oil}
+O4	olive oil	1
+S43	liquid
+S43	in	[bottle]
+M4	pour	2:50	2:53
+O34	cooking pan	0
+S43	hot
+S43	contains	{olive oil}
+S32	on	[stove]
+O4	olive oil	1
+S43	liquid
+S43	in	[cooking pan]
+//
+O34	cooking pan	0
+S43	hot
+S43	contains	{olive oil}
+S32	on	[stove]
+O4	tuna patty	1
+S43	uncooked
+S43	pressed
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+M0	pick-and-place	2:55	2:59
+O4	tuna patty	1
+S43	uncooked
+S43	pressed
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[cooking pan]
+O34	cooking pan	0
+S43	hot
+S43	contains	{tuna patty,olive oil}
+S32	on	[stove]
+//
+O4	stove	0
+S43	on
+S43	with	[cooking pan]
+O4	tuna patty	0
+S43	uncooked
+S43	pressed
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[cooking pan]
+O34	cooking pan	0
+S4	hot
+S43	contains	{tuna patty,olive oil}
+S32	on	[stove]
+O4	olive oil	1
+S43	liquid
+S43	in	[cooking pan]
+M0	cook	Assumed	Assumed
+O3	tuna patty	0
+S43	partly cooked
+S43	pressed
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[cooking pan]
+//
+O34	cooking pan	0
+S4	hot
+S43	contains	{tuna patty,olive oil}
+S32	on	[stove]
+O3	tuna patty	0
+S43	partly cooked
+S43	pressed
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[cooking pan]
+O4	fork	1
+S43	clean
+M0	flip	3:06	3:08
+O3	tuna patty	0
+S43	partly cooked
+S43	pressed
+S4	flipped
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[cooking pan]
+//
+O4	stove	0
+S43	on
+S43	with	[cooking pan]
+O34	cooking pan	0
+S43	hot
+S43	contains	{tuna patty,olive oil}
+S32	on	[stove]
+O4	tuna patty	1
+S43	partly cooked
+S43	pressed
+S4	flipped
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[cooking pan]
+O4	olive oil	1
+S43	liquid
+S43	in	[cooking pan]
+M0	cook	Assumed	Assumed
+O34	cooking pan	0
+S4	hot
+S43	contains	{tuna patty}
+S32	on	[stove]
+O4	tuna patty	1
+S43	cooked
+S43	pressed
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[cooking pan]
+//
+O34	cooking pan	0
+S43	hot
+S43	contains	{tuna patty}
+S32	on	[stove]
+O4	tuna patty	1
+S43	cooked
+S43	pressed
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	in	[cooking pan]
+O3	plate	0
+S43	empty
+O4	fork	1
+S43	clean
+M4	pick-and-place	Assumed	Assumed
+O3	plate	0
+S43	contains	{tuna patty}
+O4	tuna patty	1	!
+S43	cooked
+S43	cooked
+S43	pressed
+S27	contains	{tuna,onion,garlic,chive,parsley,oats,salt,chili pepper,egg white and yolk}
+S43	on	[plate]
+O34	cooking pan	0
+S43	empty
+S43	dirty
+S32	on	[stove]
+//

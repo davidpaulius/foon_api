@@ -1,0 +1,302 @@
+# Source:	https://www.youtube.com/watch?v=v1GIU0WDaRk
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0018-barbecue-style_country_ribs.mp4
+//
+O30	oven	1
+S143	off (ready)
+M59	turn on	0:24	0:27
+O30	oven	1
+S143	on
+//
+O443	cutting board	0
+S143	empty
+O230	garlic	1
+S216	peeled
+S33	whole
+M10	pick-and-place	Assumed	Assumed
+O443	cutting board	0
+S143	contains	{garlic}
+O230	garlic	1
+S33	whole
+S216	peeled
+S143	on	[cutting board]
+//
+O230	garlic	0
+S33	whole
+S216	peeled
+S143	on	[cutting board]
+O293	knife	1
+S23	clean
+M8	chop	0:27	0:35
+O230	garlic	0
+S21	chopped
+S143	on	[cutting board]
+//
+O443	cutting board	0
+S143	empty
+O300	lemon	1
+S262	whole
+M10	pick-and-place	Assumed	Assumed
+O443	cutting board	0
+S143	contains	{lemon}
+O300	lemon	1
+S262	whole
+S143	on	[cutting board]
+//
+O300	lemon	0
+S262	whole
+S143	on	[cutting board]
+O293	knife	1
+S23	clean
+M59	slice	0:36	0:41
+O300	lemon	0
+S239	sliced
+S143	on	[cutting board]
+//
+O443	packet	0
+S258	contains	{ribs}
+O443	ribs	0
+S258	raw
+S43	in	[packet]
+O415	knife	1
+S43	clean
+M43	cut open	Assumed	Assumed
+O443	packet	0
+S43	opened
+S258	contains	{ribs}
+//
+O443	packet	0
+S43	opened
+S258	contains	{ribs}
+O443	ribs	0
+S258	raw
+S43	in	[packet]
+O30	parchment paper	0
+S43	sheet
+S43	on	[surface]
+O30	tongs	1
+S43	clean
+M40	pick-and-place	Assumed	Assumed
+O30	parchment paper	0
+S43	sheet
+S43	contains	{ribs}
+S43	on	[surface]
+O443	ribs	1
+S258	raw
+S43	on	[parchment paper]
+//
+O69	baking tray	0
+S43	empty
+S234	with	[aluminium foil]
+O30	parchment paper	0
+S43	sheet
+S43	contains	{ribs}
+S43	on	[surface]
+O443	ribs	1
+S258	raw
+S43	on	[parchment paper]
+O540	tongs	1
+S23	clean
+M38	pick-and-place	0:42	0:48
+O30	parchment paper	0
+S43	sheet
+S43	dirty
+S43	on	[surface]
+O16	baking tray	0
+S143	contains	{ribs}
+O443	ribs	1
+S258	raw
+S168	on	[baking tray]
+//
+O16	baking tray	0
+S143	contains	{ribs}
+O459	salt	1
+S67	granulated
+S43	in	[container]
+O443	ribs	1
+S258	raw
+S168	on	[baking tray]
+M63	sprinkle	0:52	0:56
+O459	salt	1
+S67	granulated
+S43	on	[ribs]
+O443	ribs	0
+S227	raw
+S43	contains	{salt}
+S168	on	[baking tray]
+//
+O40	cutting board	0
+S43	contains	{garlic}
+O230	garlic	0
+S21	chopped
+S198	on	[cutting board]
+O507	spoon	1
+S23	clean
+M50	scoop	Assumed	Assumed
+O40	cutting board	0
+S43	empty
+S54	dirty
+O507	spoon	1
+S138	contains	{garlic}
+O230	garlic	0
+S21	chopped
+S123	in	[spoon]
+//
+O16	baking tray	0
+S143	contains	{ribs}
+O507	spoon	1
+S138	contains	{garlic}
+O230	garlic	1
+S21	chopped
+S123	in	[spoon]
+O443	ribs	0
+S227	raw
+S43	contains	{salt}
+S168	on	[baking tray]
+M62	spread	0:57	1:02
+O443	ribs	0
+S227	raw
+S43	contains	{salt,garlic}
+S168	on	[baking tray]
+O230	garlic	1
+S21	chopped
+S190	on	[ribs]
+//
+O40	cutting board	0
+S43	contains	{lemon}
+O300	lemon	1
+S239	sliced
+S198	on	[cutting board]
+O443	ribs	0
+S227	raw
+S43	contains	{salt,garlic}
+S168	on	[baking tray]
+O16	baking tray	0
+S143	contains	{ribs}
+M38	pick-and-place	1:03	1:06
+O40	cutting board	0
+S43	empty
+S54	dirty
+O443	ribs	0
+S227	raw
+S43	contains	{salt,garlic,lemon}
+S168	on	[baking tray]
+O300	lemon	1
+S239	sliced
+S190	on	[ribs]
+//
+O16	baking tray	0
+S143	contains	{ribs}
+O371	oven	0
+S167	on
+M45	put inside	1:07	1:12
+O371	oven	0
+S167	on
+S4	with	[baking tray]
+O16	baking tray	0
+S143	contains	{ribs}
+S112	in	[oven]
+//
+O371	oven	0
+S167	on
+S4	with	[baking tray]
+O16	baking tray	0
+S143	contains	{ribs}
+S112	in	[oven]
+O443	ribs	0
+S227	raw
+S43	contains	{salt,garlic,lemon}
+S168	on	[baking tray]
+M10	cook	Assumed	Assumed
+O443	ribs	0
+S227	partly cooked
+S43	contains	{salt,garlic,lemon}
+S168	on	[baking tray]
+//
+O371	oven	0
+S167	on
+S4	with	[baking tray]
+O16	baking tray	0
+S143	contains	{ribs}
+S112	in	[oven]
+M46	remove	Assumed	Assumed
+O371	oven	0
+S165	off
+O16	baking tray	0
+S143	contains	{ribs}
+//
+O16	baking tray	0
+S143	contains	{ribs}
+O443	ribs	0
+S227	partly cooked
+S43	contains	{salt,garlic,lemon}
+S168	on	[baking tray]
+O20	barbecue sauce	1
+S43	thick liquid
+S83	in	[bottle]
+M40	pour	1:26	1:34
+O443	ribs	0
+S227	partly cooked
+S43	contains	{salt,garlic,lemon,barbecue sauce}
+S168	on	[baking tray]
+O20	barbecue sauce	1
+S43	thick liquid
+S83	on	[ribs]
+//
+O16	baking tray	1
+S143	contains	{ribs}
+O371	oven	0
+S167	on
+M38	pick-and-place	Assumed	Assumed
+O371	oven	0
+S167	on
+S4	with	[baking tray]
+O16	baking tray	1
+S143	contains	{ribs}
+S112	in	[oven]
+//
+O371	oven	0
+S167	on
+S4	with	[baking tray]
+O16	baking tray	0
+S143	contains	{ribs}
+S112	in	[oven]
+O443	ribs	0
+S227	partly cooked
+S43	contains	{salt,garlic,lemon,barbecue sauce}
+S168	on	[baking tray]
+M10	cook	Assumed	Assumed
+O443	ribs	0
+S227	barbecued
+S43	contains	{salt,garlic,lemon,barbecue sauce}
+S168	on	[baking tray]
+//
+O371	oven	0
+S167	on
+S4	with	[baking tray]
+O16	baking tray	0
+S143	contains	{ribs}
+S112	in	[oven]
+M46	remove	Assumed	Assumed
+O371	oven	0
+S165	off
+O16	baking tray	0
+S143	contains	{ribs}
+//
+O16	baking tray	0
+S143	contains	{ribs}
+O540	tongs	1
+S23	clean
+O443	ribs	0
+S227	barbecued
+S43	contains	{salt,garlic,lemon,barbecue sauce}
+S168	on	[baking tray]
+O415	plate	0
+S54	empty
+M38	pick-and-place	Assumed	Assumed
+O415	plate	0
+S49	contains	{ribs}
+O443	ribs	0	!
+S227	barbecued
+S43	contains	{salt,garlic,lemon,barbecue sauce}
+S168	on	[plate]
+//

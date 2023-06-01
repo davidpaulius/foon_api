@@ -1,0 +1,646 @@
+# Source:	https://www.youtube.com/watch?v=II2gnuhe0NY
+//
+O5	apple	1
+S275	whole
+O141	colander	0
+S56	empty
+M45	pick-and-place	Assumed	Assumed
+O5	apple	1
+S275	whole
+S93	in	[colander]
+O141	colander	0
+S144	contains	{apple}
+//
+O213	faucet	1
+S171	off
+M78	turn on	Assumed	Assumed
+O213	faucet	1
+S173	on
+O588	water	1
+S67	from faucet
+//
+O213	faucet	0
+S173	on
+O588	water	0
+S66	from	[faucet]
+O141	colander	1
+S29	contains	{apple}
+O5	apple	1
+S275	whole
+S81	in	[colander]
+M81	wash	Assumed	Assumed
+O5	apple	1
+S275	whole
+S272	washed
+S81	in	[colander]
+//
+O213	faucet	1
+S173	on
+O588	water	1
+S67	from faucet
+M77	turn off	Assumed	Assumed
+O213	faucet	1
+S171	off
+//
+O53	bowl	0
+S56	empty
+O141	colander	0
+S29	contains	{apple}
+O5	apple	1
+S275	whole
+S272	washed
+S81	in	[colander]
+M45	pick-and-place	Assumed	Assumed
+O53	bowl	0
+S29	contains	{apple}
+O5	apple	1
+S275	whole
+S81	in	[bowl]
+O141	colander	0
+S46	dirty
+//
+O53	bowl	0
+S144	contains	{apple}
+O5	apple	1
+S275	whole
+S81	in	[bowl]
+O183	cutting board	0
+S56	empty
+S173	on	[surface]
+M45	pick-and-place	Assumed	Assumed
+O183	cutting board	0
+S29	contains	{apple}
+S173	on	[surface]
+O5	apple	1
+S275	whole
+S173	on	[cutting board]
+//
+O5	apple	1
+S275	whole
+S173	on	[cutting board]
+O183	cutting board	0
+S29	contains	{apple}
+S173	on	[surface]
+O404	peeler	1
+S23	clean
+M43	peel	0:29	0:44
+O5	apple	1
+S275	whole
+S222	peeled
+O404	peeler	1
+S46	dirty
+O183	cutting board	0
+S173	on	[surface]
+//
+O5	apple	1
+S275	whole
+S222	peeled
+O183	cutting board	0
+S56	empty
+S173	on	[surface]
+M45	pick-and-place	Assumed	Assumed
+O5	apple	1
+S275	whole
+S222	peeled
+S173	on	[cutting board]
+O183	cutting board	0
+S29	contains	{apple}
+S173	on	[surface]
+//
+O183	cutting board	0
+S29	contains	{apple}
+O5	apple	0
+S222	peeled
+S173	on	[cutting board]
+O300	knife	1
+S23	clean
+M16	cut	0:46	0:50
+O5	apple	0
+S40	cut in pieces
+S173	on	[cutting board]
+//
+O5	apple	0
+S40	cut in pieces
+S173	on	[cutting board]
+O183	cutting board	0
+S29	contains	{apple}
+O300	knife	1
+M16	cut	0:59	1:01
+O5	apple	0
+S40	cut in pieces
+S240	seed removed
+S173	on	[cutting board]
+//
+O5	apple	0
+S40	cut in pieces
+S173	on	[cutting board]
+O183	cutting board	0
+S29	contains	{apple}
+O300	knife	1
+M8	chop	1:05	1:12
+O5	apple	0
+S21	chopped
+S173	on	[cutting board]
+O300	knife	1
+S46	dirty
+//
+O183	cutting board	0
+S29	contains	{apple}
+O5	apple	1
+S21	chopped
+S173	on	[cutting board]
+O53	bowl	0
+S56	empty
+M45	pick-and-place	Assumed	Assumed
+O53	bowl	0
+S29	contains	{apple}
+O5	apple	0
+S21	chopped
+S81	in	[bowl]
+O183	cutting board	0
+S56	empty
+//
+O147	cooking pan	0
+S79	heated
+S173	on	[stove]
+O53	bowl	0
+S29	contains	{butter}
+O68	butter	1
+S258	stick
+S81	in	[bowl]
+M61	scoop and pour	Assumed	Assumed
+O147	cooking pan	0
+S29	contains	{butter}
+S203	on	[stove]
+O68	butter	1
+S35	cubed
+S81	in	[cooking pan]
+//
+O147	cooking pan	0
+S144	contains	{butter}
+S173	on	[stove]
+O519	spatula	1
+S23	clean
+O68	butter	1
+S35	cubed
+S81	in	[pan]
+M36	heated	Assumed	Assumed
+O147	cooking pan	0
+S29	contains	{butter}
+S173	on	[stove]
+O68	butter	1
+S164	melted
+S81	in	[pan]
+//
+O53	bowl	0
+S29	contains	{apple}
+O5	apple	0
+S21	chopped
+S81	in	[bowl]
+O147	cooking pan	0
+S29	contains	{butter}
+S173	on	[stove]
+O68	butter	1
+S164	melted
+S81	in	[pan]
+M47	pour	1:27	1:28
+O147	cooking pan	0
+S29	contains	{butter,apple}
+S173	on	[stove]
+O5	apple	0
+S21	chopped
+S81	in	[cooking pan]
+//
+O53	bowl	0
+S29	contains	{salt}
+O472	salt	1
+S71	granulated
+S81	in	[bowl]
+O147	cooking pan	0
+S29	contains	{butter,apple}
+S173	on	[stove]
+M73	sprinkle	1:29	1:30
+O147	cooking pan	0
+S29	contains	{butter,apple,salt}
+S173	on	[stove]
+O472	salt	1
+S71	granulated
+S81	in	[cooking pan]
+//
+O147	cooking pan	0
+S29	contains	{butter,apple,salt}
+S173	on	[stove]
+O472	salt	1
+S71	granulated
+S81	in	[cooking pan]
+O519	spatula	1
+M75	stir	1:31	1:35
+O472	salt	1
+S164	melted
+S81	in	[cooking pan]
+//
+O53	bowl	1
+S29	contains	{sugar}
+O537	sugar	1
+S274	white
+S71	granulated
+S81	in	[bowl]
+O53	bowl	1
+S29	contains	{brown sugar}
+O60	brown sugar	1
+S71	granulated
+S81	in	[bowl]
+O147	cooking pan	0
+S29	contains	{butter,apple,salt}
+S173	on	[stove]
+M47	pour	1:36	1:40
+O147	cooking pan	0
+S29	contains	{butter,apple,salt,sugar,brown sugar}
+S173	on	[stove]
+O537	sugar	1
+S274	white
+S71	granulated
+S81	in	[cooking pan]
+O60	brown sugar	1
+S71	granulated
+S81	in	[cooking pan]
+//
+O147	cooking pan	0
+S29	contains	{butter,apple,salt,sugar,brown sugar}
+S173	on	[stove]
+O519	spatula	1
+M75	stir	1:41	2:00
+O147	cooking pan	0
+S148	contains	{butter,apple,salt,sugar,brown sugar}
+S173	on	[stove]
+//
+O53	bowl	1
+S29	contains	{cinnamon}
+O124	cinnamon	1
+S81	in	[bowl]
+O147	cooking pan	0
+S29	contains	{butter,apple,salt,sugar,brown sugar}
+S173	on	[stove]
+M50	pour and stir	2:01	2:14
+O147	cooking pan	0
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon}
+S173	on	[stove]
+O124	cinnamon	1
+S81	in	[cooking pan]
+//
+O147	cooking pan	0
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon}
+S173	on	[stove]
+O53	bowl	1
+S29	contains	{water}
+O588	water	1
+S81	in	[bowl]
+M50	pour and stir	2:15	2:36
+O147	cooking pan	0
+S29	contains	{filling}
+S173	on	[stove]
+O8	filling	0
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+O588	water	1
+S81	in	[cooking pan]
+//
+O428	plate	0
+S56	empty
+S23	clean
+O147	cooking pan	1
+S29	contains	{filling}
+S173	on	[stove]
+O8	filling	1
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S81	in	[cooking pan]
+M47	pour	2:37	2:28
+O428	plate	0
+S29	contains	{filling}
+O8	filling	1
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S81	in	[plate]
+O147	cooking pan	1
+S46	dirty
+//
+O77	can	1
+S29	contains	{dough}
+O191	dough	0
+S234	rolled
+S91	in	[can]
+M42	open	Assumed	Assumed
+O77	can	1
+S29	contains	{dough}
+S210	opened
+//
+O543	table	0
+S56	empty
+S23	clean
+O221	flour	1
+S81	in	[bowl]
+O53	bowl	0
+S29	contains	{flour}
+M73	sprinkle	Assumed	Assumed
+O262	table	0
+S29	contains	{flour}
+//
+O262	table	0
+S29	contains	{flour}
+O77	can	1
+S29	contains	{dough}
+S210	opened
+O191	dough	0
+S234	rolled
+S91	in	[can]
+M45	pick-and-place	Assumed	Assumed
+O543	table	0
+S29	contains	{flour,dough}
+O191	dough	0
+S234	rolled
+S173	on	[table]
+//
+O543	table	0
+S29	contains	{flour,dough}
+O191	dough	0
+S234	rolled
+S173	on	[table]
+O461	rolling pin	1
+S23	clean
+M57	roll	3:00	3:10
+O191	dough	0
+S60	flattened
+S173	on	[table]
+//
+O524	spoon	1
+S56	empty
+S23	clean
+O428	plate	0
+S29	contains	{filling}
+O8	filling	1
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S81	in	[plate]
+M60	scoop	Assumed	Assumed
+O524	spoon	1
+S29	contains	{filling}
+O8	filling	1
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S173	on	[spoon]
+//
+O543	table	0
+S29	contains	{flour,dough}
+O191	dough	0
+S60	flattened
+S173	on	[table]
+O524	spoon	1
+S29	contains	{filling}
+O8	filling	1
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S173	on	[spoon]
+M47	pour	3:17	3:21
+O191	dough	0
+S60	flattened
+S29	contains	{filling}
+S173	on	[table]
+O8	filling	1
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S173	on	{dough}
+//
+O191	dough	1
+S60	flattened
+S29	contains	{filling}
+S173	on	[table]
+M30	fold and pinch	3:23	3:34
+O191	dough	1
+S60	flattened
+S29	contains	{filling}
+S64	folded
+S173	on	[table]
+//
+O191	dough	1
+S60	flattened
+S29	contains	{filling}
+S64	folded
+S173	on	[table]
+M29	fold	3:35	4:14
+O7	apple pie	1
+S269	uncooked
+S29	contains	{dough,filling}
+S173	on	[table]
+//
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling}
+S173	on	[table]
+O18	baking tray	0
+S23	clean
+S56	empty
+O488	scraper	1
+S23	clean
+M45	pick-and-place	4:17	4:18
+O18	baking tray	0
+S29	contains	{apple pie}
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling}
+S173	on	[baking tray]
+O488	scraper	1
+S46	dirty
+//
+O201	egg	1
+S270	uncracked
+O53	bowl	0
+S56	empty
+M15	crack	Assumed	Assumed
+O53	bowl	0
+S29	contains	{egg white and yolk}
+O206	egg white and yolk	1
+S81	in	[bowl]
+//
+O53	bowl	0
+S29	contains	{egg white and yolk}
+O206	egg white and yolk	1
+S81	in	[bowl]
+O225	fork	1
+S23	clean
+M41	mix	Assumed	Assumed
+O53	bowl	0
+S148	contains	{egg white and yolk}
+O206	egg white and yolk	1
+S7	beaten
+S81	in	[bowl]
+//
+O292	jug	1
+S144	contains	{milk}
+O345	milk	1
+S81	in	[jug]
+O53	bowl	0
+S148	contains	{egg white and yolk}
+O206	egg white and yolk	1
+S7	beaten
+S81	in	[bowl]
+M47	pour	Assumed	Assumed
+O53	bowl	0
+S29	contains	{egg wash}
+O204	egg wash	0
+S29	contains	{egg white and yolk}
+S81	in	[bowl]
+O345	milk	1
+S81	in	[bowl]
+//
+O63	brush	1
+S23	clean
+O53	bowl	0
+S29	contains	{egg wash}
+O204	egg wash	0
+S29	contains	{egg white and yolk}
+S81	in	[bowl]
+M23	dip	Assumed	Assumed
+O63	brush	1
+S29	contains	{egg wash}
+O204	egg wash	0
+S29	contains	{egg white and yolk}
+S173	on	[brush]
+//
+O63	brush	1
+S29	contains	{egg wash}
+O204	egg wash	0
+S29	contains	{egg white and yolk}
+S173	on	[brush]
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling}
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	{apple pie}
+M6	brush	4:19	4:26
+O204	egg wash	0
+S29	contains	{egg white and yolk}
+S173	on	[apple pie]
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling,egg wash}
+S173	on	[baking tray]
+//
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling,egg wash}
+S173	on	[baking try]
+O18	baking tray	0
+S29	contains	{apple pie}
+O53	bowl	1
+S29	contains	{sugar}
+O537	sugar	1
+S274	white
+S71	granulated
+S81	in	[bowl]
+M73	sprinkle	4:28	4:33
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling,egg wash,sugar}
+S173	on	[baking tray]
+O537	sugar	1
+S274	white
+S71	granulated
+S173	on	[apple pie]
+//
+O300	knife	1
+S23	clean
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling,egg wash,sugar}
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	{apple pie}
+M46	poke	4:35	4:49
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling,egg wash,sugar}
+S225	poked
+S173	on	[baking try]
+O300	knife	1
+S46	dirty
+//
+O379	oven	1
+S171	off
+M78	turn on	Assumed	Assumed
+O379	oven	1
+S173	on
+//
+O379	oven	1
+S173	on
+M51	preheat	Assumed	Assumed
+O379	oven	1
+S173	on
+S229	preheated
+//
+O379	oven	0
+S173	on
+S229	preheated
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling,egg wash,sugar}
+S225	poked
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	{apple pie}
+M45	pick-and-place	Assumed	Assumed
+O379	oven	0
+S173	on
+S229	preheated
+S29	contains	{baking tray}
+O18	baking tray	0
+S29	contains	{apple pie}
+S81	in	[oven]
+//
+O379	oven	0
+S173	on
+S229	preheated
+S29	contains	{baking tray}
+O18	baking tray	0
+S29	contains	{apple pie}
+S81	in	[oven]
+O7	apple pie	0
+S269	uncooked
+S29	contains	{dough,filling,egg wash,sugar}
+S225	poked
+S173	on	[baking tray]
+M1	bake	Assumed	Assumed
+O7	apple pie	0
+S30	cooked
+S173	on	[baking tray]
+O379	oven	0
+S173	on
+S29	contains	{baking tray}
+//
+O379	oven	0
+S173	on
+S29	contains	{apple pie}
+O7	apple pie	0
+S30	cooked
+S173	on	[baking tray]
+O18	baking tray	0
+S29	contains	{apple pie}
+S81	in	[oven]
+M55	remove	Assumed	Assumed
+O379	oven	0
+S171	off
+O18	baking tray	0
+S50	contains	{apple pie}
+//
+O7	apple pie	0
+S30	cooked
+S173	on	[baking tray]
+O18	baking tray	0
+S50	contains	{apple pie}
+O428	plate	0
+S56	empty
+S23	clean
+O561	tongs	1
+S23	clean
+M45	pick-and-place	Assumed	Assumed
+O428	plate	0
+S50	contains	{apple pie}
+O7	apple pie	0
+S30	cooked
+S29	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water,dough,egg wash}
+S173	on	[plate]
+//

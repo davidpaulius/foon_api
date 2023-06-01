@@ -1,0 +1,308 @@
+O26	onion	1
+S323	peeled
+O83	cutting board	0
+S98	empty
+M0	pick-and-place	Assumed	Assumed
+O83	cutting board	0
+S188	contains	{onion}
+O26	onion	1
+S323	peeled
+S221	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{onion}
+O26	onion	0
+S323	peeled
+S221	on	[cutting board]
+O11	knife	1
+S51	clean
+M8	chop	0:20	0:22
+O26	onion	0
+S50	chopped
+S221	on	[cutting board]
+//
+O83	cutting board	1
+S188	contains	{onion}
+O26	onion	1
+S50	chopped
+S221	on	[cutting board]
+O2	bowl	0
+S98	empty
+M4	pour	Assumed	Assumed
+O2	bowl	0
+S182	contains	{onion}
+O26	onion	1
+S50	chopped
+S148	in	[bowl]
+//
+O83	cutting board	0
+S98	empty
+O30	garlic	1
+S53	peeled
+M0	pick-and-place	Assumed	Assumed
+O83	cutting board	0
+S188	contains	{garlic}
+O30	garlic	1
+S53	peeled
+S221	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{garlic}
+O30	garlic	1
+S53	peeled
+S221	on	[cutting board]
+O11	knife	1
+S51	clean
+M8	chop	0:23	0:27
+O30	garlic	0
+S50	chopped
+S221	on	[cutting board]
+//
+O83	cutting board	1
+S188	contains	{garlic}
+O30	garlic	1
+S50	chopped
+S221	on	[cutting board]
+O2	bowl	0
+S98	empty
+M4	pour	Assumed	Assumed
+O2	bowl	0
+S182	contains	{garlic}
+O30	garlic	1
+S50	chopped
+S148	in	[bowl]
+O83	cutting board	1
+S94	dirty
+//
+O156	cilantro	1
+S323	whole
+O83	cutting board	0
+S98	empty
+M0	pick-and-place	Assumed	Assumed
+O83	cutting board	0
+S188	contains	{cilantro}
+O156	cilantro	1
+S323	whole
+S221	on	[cutting board]
+//
+O83	cutting board	0
+S188	contains	{cilantro}
+O156	cilantro	1
+S323	whole
+S221	on	[cutting board]
+O11	knife	1
+S51	clean
+M8	cut	0:28	0:33
+O156	cilantro	0
+S50	chopped
+S221	on	[cutting board]
+//
+O83	cutting board	1
+S188	contains	{cilantro}
+O156	cilantro	1
+S50	chopped
+S221	on	[cutting board]
+O2	bowl	0
+S98	empty
+M4	pour	Assumed	Assumed
+O2	bowl	0
+S182	contains	{cilantro}
+O156	cilantro	1
+S50	chopped
+S148	in	[bowl]
+O83	cutting board	1
+S94	dirty
+//
+O38	stove	0
+S232	on
+O45	pot	0
+S139	empty
+M0	pick-and-place	Assumed	Assumed
+O38	stove	0
+S43	on
+S232	with	[pot]
+O45	pot	0
+S139	heated
+S43	on	[stove]
+//
+O45	pot	0
+S139	heated
+S43	on	[stove]
+O129	can	1
+S182	contains	{black bean}
+O103	black bean	1
+S17	in	[can]
+M4	pour	0:34	0:38
+O45	pot	0
+S182	contains	{black bean}
+S43	on	[stove]
+O103	black bean	1
+S165	in	[pot]
+//
+O45	pot	0
+S182	contains	{black bean}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{onion}
+O26	onion	1
+S50	chopped
+S148	in	[bowl]
+M4	pour	0:40	0:42
+O45	pot	0
+S182	contains	{black bean,onion}
+S43	on	[stove]
+O26	onion	1
+S50	chopped
+S165	in	[pot]
+//
+O45	pot	0
+S182	contains	{black bean,onion}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{garlic}
+O30	garlic	1
+S50	chopped
+S148	in	[bowl]
+M4	pour	0:42	0:44
+O45	pot	0
+S182	contains	{black bean,onion,garlic}
+S43	on	[stove]
+O30	garlic	1
+S50	chopped
+S165	in	[pot]
+//
+O45	pot	0
+S182	contains	{black bean,onion,garlic}
+S43	on	[stove]
+O30	garlic	1
+S50	chopped
+S165	in	[pot]
+O26	onion	1
+S50	chopped
+S165	in	[pot]
+O22	spoon	1
+S51	clean
+O103	black bean	1
+S165	in	[pot]
+M6	cook and stir	0:45	0:49
+O45	pot	0
+S185	contains	{black bean,onion,garlic}
+S43	on	[stove]
+O30	garlic	1
+S50	fried
+S165	in	[pot]
+O26	onion	1
+S50	fried
+S165	in	[pot]
+O103	black bean	1
+S43	partly cooked
+S185	contains	{onion,garlic}
+S165	in	[pot]
+//
+O45	pot	0
+S185	contains	{black bean,onion,garlic}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{cilantro}
+O156	cilantro	1
+S43	chopped
+S148	in	[bowl]
+M4	pour	0:50	0:52
+O45	pot	0
+S182	contains	{black bean,onion,garlic,cilantro}
+S43	on	[stove]
+O156	cilantro	1
+S43	chopped
+S165	in	[pot]
+//
+O45	pot	0
+S182	contains	{black bean,onion,garlic,cilantro}
+S43	on	[stove]
+O2	bowl	1
+S182	contains	{cayenne pepper}
+O19	cayenne pepper	1
+S142	ground
+S43	in	[bowl]
+M2	sprinkle	0:53	0:55
+O45	pot	0
+S182	contains	{black bean,onion,garlic,cilantro,cayenne pepper}
+S43	on	[stove]
+O19	cayenne pepper	1
+S142	ground
+S165	in	[pot]
+//
+O45	pot	0
+S182	contains	{black bean,onion,garlic,cilantro}
+S43	on	[stove]
+O18	salt	1
+S122	granulated
+M2	sprinkle	0:56	0:59
+O45	pot	0
+S182	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
+S43	on	[stove]
+O18	salt	1
+S43	granulated
+S165	in	[pot]
+//
+O45	pot	0
+S182	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
+S43	on	[stove]
+O156	cilantro	1
+S43	chopped
+S165	in	[pot]
+O19	cayenne pepper	1
+S142	ground
+S165	in	[pot]
+O18	salt	1
+S43	granulated
+S165	in	[pot]
+O22	spoon	1
+S51	clean
+O103	black bean	1
+S43	partly cooked
+S185	contains	{onion,garlic}
+S165	in	[pot]
+M6	stir	1:00	1:05
+O45	pot	0
+S185	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
+S43	on	[stove]
+O103	black bean	1
+S43	partly cooked
+S185	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S165	in	[pot]
+//
+O45	pot	0
+S185	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
+S43	on	[stove]
+O103	black bean	1
+S43	partly cooked
+S185	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S165	in	[pot]
+M40	cook	Assumed	Assumed
+O45	pot	0
+S185	contains	{black bean}
+S43	on	[stove]
+O103	black bean	1
+S43	cooked
+S185	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S165	in	[pot]
+//
+O45	pot	0
+S185	contains	{black bean}
+S43	on	[stove]
+O103	black bean	1
+S43	cooked
+S185	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S165	in	[pot]
+O33	ladle	1
+S323	clean
+O30	bowl	1
+S323	empty
+M4	scoop and pour	Assumed	Assumed
+O103	black bean	1	!
+S43	cooked
+S185	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S165	in	[bowl]
+O30	bowl	1
+S185	contains	{black bean}
+//

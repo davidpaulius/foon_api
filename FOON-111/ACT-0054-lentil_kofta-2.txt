@@ -1,0 +1,220 @@
+O2	cooking pan	0
+S2	greased	{vegetable oil}
+S4	on	[stove]
+O2	bowl	1
+S2	contains	{onion}
+O1	onion	1
+S4	chopped
+S2	in	[bowl]
+O2	spatula	1
+S3	clean
+M2	scrape	0:00	0:06
+O2	cooking pan	0
+S2	contains	{vegetable oil,onion}
+S4	on	[stove]
+O1	onion	1
+S4	chopped
+S2	in	[pan]
+//
+O2	cooking pan	0
+S2	contains	{vegetable oil,onion}
+S4	on	[stove]
+O1	onion	0
+S4	chopped
+S2	in	[pan]
+M2	cook	0:14	0:21
+O1	onion	0
+S2	fried
+S3	in	[pan]
+//
+O2	cooking pan	1
+S2	contains	{vegetable oil,onion}
+S4	on	[stove]
+O1	onion	1
+S2	fried
+S43	in	[pan]
+O2	pot	0
+S2	contains	{kofta mix}
+S43	on	[stove]
+M3	pour	0:26	0:29
+O2	pot	0
+S2	contains	{kofta mix,onion}
+S4	on	[stove]
+O1	onion	1
+S3	fried
+S2	in	[pot]
+//
+O2	pot	0
+S2	contains	{kofta mix,onion}
+S4	on	[stove]
+O1	onion	1
+S3	fried
+S2	in	[pot]
+O3	kofta mix	1
+S43	contains	{lentil,bulgur}
+S43	in	[pot]
+O2	spatula	1
+S2	clean
+M2	stir	0:35	0:38
+O2	pot	0
+S2	contains	{kofta mix}
+S4	on	[stove]
+O3	kofta mix	1
+S43	contains	{lentil,bulgur,onion}
+S43	in	[pot]
+//
+O2	pot	1
+S2	contains	{kofta mix}
+S4	on	[stove]
+O2	kofta mix	1
+S43	contains	{lentil,bulgur,onion}
+S3	in	[pot]
+O2	baking tray	00
+S2	empty
+M2	pick-and-place	Assumed	Assumed
+O2	baking tray	0
+S2	contains	{kofta mix}
+O2	kofta mix	1
+S43	contains	{lentil,bulgur,onion}
+S3	in	[baking tray]
+//
+O2	baking tray	0
+S2	contains	{kofta mix}
+O2	kofta mix	1
+S43	contains	{lentil,bulgur,onion}
+S3	in	[baking tray]
+M2	kneed	0:58	1:07
+O2	kofta mix	1
+S3	kneeded
+S3	in	[baking tray]
+//
+O2	baking tray	0
+S2	contains	{kofta mix}
+O2	bowl	1
+S2	contains	{salt}
+O2	salt	1
+S4	granulated
+S2	in	[bowl]
+M2	sprinkle	1:08	1:09
+O2	baking tray	0
+S2	contains	{kofta mix,salt}
+O2	salt	1
+S3	granulated
+S2	in	[baking tray]
+//
+O2	baking tray	0
+S2	contains	{kofta mix,salt}
+O2	bowl	1
+S2	contains	{paprika}
+O2	paprika	1
+S4	ground
+S2	in	[bowl]
+M2	sprinkle	1:10	1:13
+O2	baking tray	0
+S2	contains	{kofta mix,salt,paprika}
+O2	paprika	1
+S3	ground
+S2	in	[baking tray]
+//
+O2	baking tray	0
+S2	contains	{kofta mix,salt,paprika}
+O2	bowl	1
+S2	contains	{scallion}
+O2	scallion	1
+S4	chopped
+S2	in	[bowl]
+M2	sprinkle	1:16	1:19
+O2	baking tray	0
+S2	contains	{kofta mix,salt,paprika,scallion}
+O2	scallion	1
+S3	chopped
+S2	in	[baking tray]
+//
+O2	baking tray	0
+S2	contains	{kofta mix,salt,paprika,scallion}
+O2	kofta mix	1
+S43	contains	{lentil,bulgur,onion}
+S3	in	[baking tray]
+O2	scallion	1
+S3	chopped
+S2	in	[baking tray]
+O2	paprika	1
+S3	ground
+S2	in	[baking tray]
+O2	salt	1
+S3	granulated
+S2	in	[baking tray]
+M2	kneed	1:21	1:44
+O2	kofta mix	1
+S44	kneeded
+S43	contains	{lentil,bulgur,onion,salt,paprika,scallion}
+S3	in	[baking tray]
+O2	scallion	1
+S3	chopped
+S2	in	[kofta mix]
+O2	paprika	1
+S3	ground
+S2	in	[kofta mix]
+O2	salt	1
+S3	granulated
+S2	in	[kofta mix]
+//
+O2	kofta mix	1
+S44	kneeded
+S43	contains	{lentil,bulgur,onion,salt,paprika,scallion}
+S3	in	[baking tray]
+M2	shape	2:24	2:31
+O2	kofta mix	1
+S44	shaped
+S43	contains	{lentil,bulgur,onion,salt,paprika,scallion}
+//
+O2	kofta mix	1
+S44	shaped
+S43	contains	{lentil,bulgur,onion,salt,paprika,scallion}
+O2	glass tray	0
+S2	empty
+M2	pick-and-place	2:35	2:39
+O2	glass tray	0
+S3	contains	{kofta}
+O2	lentil kofta	1
+S43	contains	{lentil,bulgur,onion,salt,paprika,scallion}
+S4	in	[glass tray]
+//
+O2	glass tray	0
+S3	contains	{kofta}
+O2	bowl	1
+S2	contains	{paprika}
+O2	paprika	1
+S53	ground
+S2	in	[bowl]
+O2	lentil kofta	1
+S43	contains	{lentil,bulgur,onion,salt,paprika,scallion}
+S4	in	[glass tray]
+M2	sprinkle	Assumed	Assumed
+O2	lentil kofta	0
+S43	contains	{lentil,bulgur,onion,salt,paprika,scallion}
+S4	contains	{paprika}
+S4	in	[glass tray]
+O2	paprika	1
+S53	ground
+S4	on	[kofta]
+//
+O2	glass tray	0
+S3	contains	{kofta}
+O2	jar	1
+S2	contains	{pickle}
+O2	pickle	1
+S2	in	[jar]
+O2	lentil kofta	0
+S43	contains	{lentil,bulgur,onion,salt,paprika,scallion}
+S4	contains	{paprika}
+S4	in	[glass tray]
+M2	pick-and-place	Assumed	Assumed
+O2	glass tray	0
+S3	contains	{kofta,pickle}
+O2	kofta	0	!
+S43	contains	{lentil,bulgur,onion,salt,paprika,scallion,paprika,pickle}
+S4	in	[glass tray]
+O2	pickle	1
+S2	in	[glass tray]
+//

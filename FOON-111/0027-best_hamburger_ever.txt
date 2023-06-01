@@ -1,0 +1,348 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0027-best_hamburger_ever.mp4
+# Source:	https://www.youtube.com/watch?v=y_BvHnHgI-M
+//
+O23	grill	1
+S215	off (ready)
+M47	preheat	0:31	0:33
+O23	grill	0
+S139	on
+//
+O2	bowl	0
+S98	empty
+S3	on	[surface]
+O3	packet	0
+S43	contains	{ground beef}
+S43	opened
+S3	on	[surface]
+O25	ground beef	1
+S129	raw
+S134	in	[packet]
+M0	pick-and-place	Assumed	Assumed
+O2	bowl	0
+S182	contains	{ground beef}
+S3	on	[surface]
+O25	ground beef	1
+S129	raw
+S148	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{egg white,egg yolk}
+O28	egg white	0
+S81	in	[bowl]
+O28	egg yolk	0
+S81	in	[bowl]
+O91	whisk	1
+M1	beat	Assumed	Assumed
+O28	beaten egg	1
+S81	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{ground beef}
+S3	on	[surface]
+O2	bowl	1
+S182	contains	{onion}
+S3	on	[surface]
+O26	onion	1
+S50	chopped
+S134	in	[bowl]
+O2	bowl	1
+S182	contains	{beaten egg}
+S3	on	[surface]
+O28	beaten egg	1
+S81	in	[bowl]
+O2	bowl	1
+S182	contains	{cheese}
+S3	on	[surface]
+O27	cheese	1
+S123	grated
+S134	in	[bowl]
+O2	bowl	1
+S182	contains	{soup mix}
+S3	on	[surface]
+O171	soup mix	1
+S257	powder
+S134	in	[bowl]
+O2	bowl	1
+S182	contains	{garlic}
+S3	on	[surface]
+O30	garlic	1
+S201	minced
+S134	in	[bowl]
+O2	bowl	1
+S182	contains	{garlic powder}
+S3	on	[surface]
+O30	garlic powder	1
+S201	ground
+S134	in	[bowl]
+O2	bowl	1
+S182	contains	{soy sauce}
+S3	on	[surface]
+O31	soy sauce	1
+S148	in	[bowl]
+O2	bowl	1
+S182	contains	{worcestershire sauce}
+S3	on	[surface]
+O32	worcestershire sauce	1
+S148	in	[bowl]
+O2	bowl	1
+S182	contains	{parsley}
+S3	on	[surface]
+O33	parsley	1
+S96	dried
+S134	in	[bowl]
+O2	bowl	1
+S182	contains	{basil}
+S3	on	[surface]
+O34	basil	1
+S96	dried
+S134	in	[bowl]
+O2	bowl	1
+S182	contains	{oregano}
+S3	on	[surface]
+O35	oregano	1
+S96	dried
+S134	in	[bowl]
+O2	bowl	1
+S182	contains	{rosemary}
+S3	on	[surface]
+O36	rosemary	1
+S96	dried
+S134	in	[bowl]
+M4	pour*	0:39	1:12
+O2	bowl	0
+S182	contains	{ground beef,onion,cheese,beaten egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary}
+S3	on	[surface]
+//
+O2	bowl	0
+S182	contains	{ground beef,onion,cheese,beaten egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary}
+O2	bowl	1
+S182	contains	{salt}
+O18	salt	1
+S122	granulated
+S134	in	[bowl]
+O2	bowl	1
+S182	contains	{black pepper}
+O19	black pepper	1
+S130	ground
+S134	in	[bowl]
+M2	sprinkle*	1:14	1:20
+O2	bowl	0
+S182	contains	{ground beef,onion,cheese,beaten egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+//
+O2	bowl	0
+S182	contains	{ground beef,onion,cheese,beaten egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+O26	ground beef	0
+S50	raw
+S134	in	[bowl]
+O26	onion	0
+S50	chopped
+S134	in	[bowl]
+O28	beaten egg	0
+S81	in	[bowl]
+O27	cheese	0
+S123	grated
+S134	in	[bowl]
+O171	soup mix	0
+S257	powder
+S134	in	[bowl]
+O30	garlic	0
+S201	minced
+S134	in	[bowl]
+O30	garlic powder	0
+S201	ground
+S134	in	[bowl]
+O31	soy sauce	0
+S148	in	[bowl]
+O32	worcestershire sauce	0
+S148	in	[bowl]
+O33	parsley	0
+S96	dried
+S134	in	[bowl]
+O34	basil	0
+S96	dried
+S134	in	[bowl]
+O35	oregano	0
+S96	dried
+S134	in	[bowl]
+O36	rosemary	0
+S96	dried
+S134	in	[bowl]
+O18	salt	0
+S122	granulated
+S134	in	[bowl]
+O19	black pepper	0
+S130	ground
+S134	in	[bowl]
+O37	spatula	1
+M1	mix	1:21	1:26
+O2	bowl	0
+S185	contains	{burger patty mix}
+O30	burger patty mix	1
+S134	contains	{ground beef,onion,cheese,beaten egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S134	raw
+S134	in	[bowl]
+//
+O30	burger patty mix	1
+S134	contains	{ground beef,onion,cheese,beaten egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S134	raw
+S134	in	[bowl]
+M15	shape	1:27	1:45
+O30	beef patty	1
+S134	raw
+//
+O30	beef patty	1
+S134	raw
+O15	plate	0
+S98	empty
+M0	place	Assumed	Assumed
+O15	plate	0
+S14	contains	{beef patty}
+O30	beef patty	1
+S134	raw
+S134	on	[plate]
+//
+O23	grill	0
+S139	on
+O15	plate	0
+S14	contains	{beef patty}
+O30	beef patty	1
+S134	raw
+S134	on	[plate]
+O41	tongs	1
+O37	spatula	1
+M3	scoop and place	1:49	1:50
+O23	grill	0
+S139	on
+S14	contains	{beef patty}
+O30	beef patty	1
+S134	raw
+S134	on	[grill]
+//
+O23	grill	0
+S139	on
+S134	contains	{beef patty}
+O30	beef patty	1
+S134	raw
+S134	on	[grill]
+M0	cook	Assumed	Assumed
+O30	beef patty	1
+S134	partly cooked
+S134	on	[grill]
+//
+O23	grill	0
+S139	on
+S134	contains	{beef patty}
+O30	beef patty	1
+S134	partly cooked
+S134	on	[grill]
+O37	spatula	1
+M11	flip	1:50	1:55
+O30	beef patty	1
+S134	partly cooked
+S43	upside down
+S134	on	[grill]
+//
+O23	grill	0
+S139	on
+S134	contains	{beef patty}
+O30	beef patty	1
+S134	partly cooked
+S43	upside down
+S134	on	[grill]
+M40	cook	Assumed	Assumed
+O30	beef patty	1
+S43	cooked
+S134	on	[grill]
+//
+O51	tomato	0
+S323	whole
+S134	on	[cutting board]
+O11	knife	1
+M8	cut	Assumed	Assumed
+O51	tomato	0
+S290	sliced
+S134	on	[cutting board]
+//
+O43	packet	0
+S43	contains	{hamburger bun}
+S43	opened
+O30	hamburger bun	1
+S134	bun
+S43	in	[packet]
+O30	plate	0
+S31	empty
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S188	contains	{hamburger bun}
+O30	hamburger bun	1
+S134	bun
+S31	on	[plate]
+//
+O15	plate	0
+S188	contains	{hamburger bun}
+O30	beef patty	1
+S134	cooked
+S134	on	[grill]
+O30	hamburger bun	1
+S134	bun
+S31	on	[plate]
+O43	tongs	1
+M0	pick-and-place	Assumed	Assumed
+O30	beef patty	1
+S134	cooked
+S134	on	[hamburger bun]
+O30	hamburger bun	0
+S134	contains	{beef patty}
+S31	on	[plate]
+//
+O43	packet	1
+S43	contains	{lettuce}
+M3	open	Assumed	Assumed
+O43	packet	1
+S43	contains	{lettuce}
+S43	opened
+//
+O15	plate	0
+S188	contains	{hamburger bun}
+O30	hamburger bun	0
+S134	contains	{beef patty}
+S31	on	[plate]
+O87	lettuce	1
+S193	leaf
+S43	in	[packet]
+M0	pick-and-place	Assumed	Assumed
+O30	hamburger bun	0
+S134	contains	{beef patty,lettuce}
+S31	on	[plate]
+O87	lettuce	1
+S193	leaf
+S134	on	[hamburger bun]
+//
+O15	plate	0
+S188	contains	{hamburger bun}
+O51	tomato	1
+S290	sliced
+S134	on	[cutting board]
+O30	hamburger bun	0
+S134	contains	{beef patty,lettuce}
+S31	on	[plate]
+M0	pick-and-place	Assumed	Assumed
+O30	hamburger bun	0
+S134	contains	{beef patty,lettuce,tomato}
+S31	on	[plate]
+//
+O30	hamburger bun	1
+S134	bun
+S31	in	[packet]
+O15	plate	0
+S188	contains	{hamburger bun}
+O30	hamburger bun	0
+S134	contains	{beef patty,lettuce,tomato}
+S31	on	[plate]
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S188	contains	{hamburger}
+O30	hamburger	0	!
+S134	contains	{hamburger bun,beef patty,lettuce,tomato}
+S31	on	[plate]
+//

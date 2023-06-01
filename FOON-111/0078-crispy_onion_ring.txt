@@ -1,0 +1,153 @@
+O375	onion	1
+S38	whole
+O301	knife	1
+S1	clean
+M1	chop	Assumed	Assumed
+O375	onion	1
+S34	ring shaped
+O301	knife	0
+S5	dirty
+//
+O52	bowl	0
+S6	empty
+O588	wheat flour	1
+S12	in	[cup]
+M9	pour	Assumed	Assumed
+O52	bowl	0
+S21	contains	{wheat flour}
+//
+O52	bowl	0
+S21	contains	{wheat flour}
+O14	baking powder	1
+S12	in	[cup]
+M9	pour	Assumed	Assumed
+O52	bowl	0
+S21	contains	{wheat flour,baking powder}
+//
+O52	bowl	0
+S21	contains	{wheat flour,baking powder}
+O470	salt	1
+S12	in	[cup]
+S7	granulated
+M9	pour	Assumed	Assumed
+O52	bowl	0
+S21	contains	{wheat flour,baking powder,salt}
+//
+O52	bowl	0
+S21	contains	{wheat flour,baking powder,salt}
+O593	whisk	1
+S1	clean
+M6	mix	0:35	0:37
+O52	bowl	0
+S22	contains	{wheat flour,baking powder,salt}
+O593	whisk	1
+S5	dirty
+//
+O52	bowl	0
+S22	contains	{wheat flour,baking powder,salt}
+O375	onion	1
+S34	ring shaped
+M6	mix	0:38	0:44
+O375	onion	1
+S35	seasoned	{wheat flour,baking powder,salt}
+//
+O52	bowl	0
+S6	empty
+O202	egg	1
+S37	uncracked
+M2	crack	0:50	0:52
+O52	bowl	0
+S21	contains	{egg white and yolk}
+O202	egg	1
+S3	cracked
+S10	in	[bowl]
+//
+O52	bowl	0
+S21	contains	{egg white and yolk}
+O203	egg beater	0
+S1	clean
+M0	beat	0:53	0:57
+O52	bowl	0
+S21	contains	{beaten egg}
+O203	egg beater	0
+S5	dirty
+//
+O52	bowl	0
+S21	contains	{beaten egg}
+O346	milk	0
+S16	in	[jar]
+M9	pour	0:58	1:01
+O52	bowl	0
+S21	contains	{beaten egg,milk}
+//
+O52	bowl	0
+S21	contains	{beaten egg,milk}
+O221	flour	0
+S12	in	[cup]
+M9	pour	1:04	1:06
+O52	bowl	0
+S21	contains	{beaten egg,milk,flour}
+//
+O52	bowl	0
+S21	contains	{beaten egg,milk,flour}
+O203	egg beater	0
+S1	clean
+M0	beat	1:07	1:12
+O52	bowl	0
+S19	contains	{beaten egg,milk,flour}
+O203	egg beater	0
+S5	dirty
+//
+O52	bowl	0
+S19	contains	{beaten egg,milk,flour}
+O375	onion	1
+S34	ring shaped
+M3	dip	1:25	1:54
+O375	onion	1
+S2	coated	{beaten egg,milk,flour}
+S34	ring shaped
+//
+O375	onion	1
+S2	coated	{beaten egg,milk,flour}
+S34	ring shaped
+O56	breadcrumbs	1
+S10	in	[bowl]
+M6	mix	1:58	2:03
+O375	onion	1
+S2	coated	{beaten egg,milk,flour,breadcrumbs}
+S34	ring shaped
+//
+O527	stove	0
+S27	off
+M18	turn on	Assumed	Assumed
+O527	stove	0
+S28	on
+//
+O527	stove	0
+S28	on
+O148	cooking pan	1
+S21	contains	{oil}
+M8	pick-and-place	Assumed	Assumed
+O527	stove	0
+S28	on
+S32	with	[pan]
+O148	cooking pan	1
+S21	contains	{oil}
+S31	on	[stove]
+//
+O527	stove	0
+S28	on
+S32	with	[pan]
+O148	cooking pan	1
+S21	contains	{oil}
+S31	on	[stove]
+O375	onion	1
+S2	coated	{beaten egg,milk,flour,breadcrumbs}
+S34	ring shaped
+M5	fry	1:58	2:03
+O148	cooking pan	1
+S21	contains	{onion ring}
+O377	onion ring	1	!
+S2	contains	{onion,egg,milk,flour,breadcrumbs}
+S11	in	[cooking pan]
+//

@@ -1,0 +1,192 @@
+O23	grill	0
+S98	off
+M47	light	Assumed	Assumed
+O23	grill	0
+S139	on
+//
+O108	bottle	1
+S182	contains	{worcestershire sauce}
+O32	worcestershire sauce	1
+S147	in	[bottle]
+O2	bowl	0
+S182	contains	{ground beef}
+M2	sprinkle	1:00	1:04
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce}
+O32	worcestershire sauce	1
+S148	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce}
+O108	bottle	1
+S182	contains	{soy sauce}
+O31	soy sauce	1
+S147	in	[bottle]
+M4	pour	1:12	1:23
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce}
+O31	soy sauce	1
+S148	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce}
+O108	bottle	1
+S182	contains	{rice beer}
+O160	rice beer	1
+S147	in	[bottle]
+M4	pour	1:28	1:32
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce,rice beer}
+O160	rice beer	1
+S148	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce,rice beer}
+O108	bottle	1
+S182	contains	{white wine}
+O146	white wine	1
+S147	in	[bottle]
+M4	pour	1:40	1:44
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine}
+O146	white wine	1
+S148	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine}
+O108	bottle	1
+S182	contains	{hot sauce}
+O29	hot sauce	1
+S147	in	[bottle]
+M4	pour	1:50	1:56
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce}
+O29	hot sauce	1
+S148	in	[bowl]
+//
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce}
+O0	sugar	1
+S122	granulated
+S148	in	[bowl]
+M4	pour	1:55	1:58
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+//
+O2	bowl	0
+S182	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+O29	hot sauce	1
+S148	in	[bowl]
+O0	sugar	1
+S122	granulated
+S148	in	[bowl]
+O146	white wine	1
+S148	in	[bowl]
+O160	rice beer	1
+S148	in	[bowl]
+O32	worcestershire sauce	1
+S148	in	[bowl]
+O32	soy sauce	1
+S148	in	[bowl]
+O32	ground beef	1
+S43	uncooked
+S148	in	[bowl]
+M1	mix	2:02	2:23
+O2	bowl	0
+S185	contains	{meat mix}
+O31	meat mix	1
+S43	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	in	[bowl]
+//
+O2	bowl	0
+S185	contains	{meat mix}
+O31	meat mix	1
+S43	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	in	[bowl]
+M23	shape	2:41	2:44
+O25	beef patty	1
+S43	uncooked
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+//
+O25	beef patty	1
+S43	uncooked
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+O23	grill	0
+S139	on
+M0	pick-and-place	3:01	3:07
+O23	grill	0
+S43	on
+S188	contains	{beef patty}
+O25	beef patty	1
+S43	uncooked
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	on	[grill]
+//
+O23	grill	0
+S43	on
+S188	contains	{beef patty}
+O25	beef patty	1
+S43	uncooked
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	on	[grill]
+M40	cook	Assumed	Assumed
+O25	beef patty	1
+S43	partly cooked
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	on	[grill]
+//
+O23	grill	0
+S43	on
+S188	contains	{beef patty}
+O25	beef patty	1
+S43	partly cooked
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	on	[grill]
+O43	turner	1
+S43	clean
+M40	flip	Assumed	Assumed
+O25	beef patty	1
+S43	flipped
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	on	[grill]
+//
+O23	grill	0
+S43	on
+S188	contains	{beef patty}
+O25	beef patty	1
+S43	flipped
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	on	[grill]
+M40	cook	Assumed	Assumed
+O25	beef patty	1
+S43	cooked
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	on	[grill]
+//
+O23	grill	0
+S43	on
+S188	contains	{beef patty}
+O43	turner	1
+S43	clean
+O12	bread	0
+S31	bun
+S226	on	[plate]
+O15	plate	0
+S188	contains	{bread}
+O25	beef patty	1
+S43	cooked
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S43	on	[grill]
+M0	pick-and-place	Assumed	Assumed
+O15	plate	0
+S188	contains	{hamburger}
+O12	bread	0
+S37	contains	{beef patty}
+O30	hamburger	0
+S134	contains	{beef patty}
+S31	on	[plate]
+O25	beef patty	0	!
+S43	cooked
+S243	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S148	on	[bread]
+//

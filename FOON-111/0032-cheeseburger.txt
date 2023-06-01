@@ -1,0 +1,244 @@
+# Source:	https://www.youtube.com/watch?v=SkOm4zZb180
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0032-cheeseburger.mp4
+//
+O365	onion	1
+S216	whole
+M3	peel	Assumed	Assumed
+O365	onion	1
+S216	peeled
+S216	whole
+//
+O180	cutting board	0
+S54	empty
+O365	onion	1
+S216	whole
+S216	peeled
+M38	pick-and-place	Assumed	Assumed
+O180	cutting board	0
+S144	contains	{onion}
+O365	onion	1
+S216	whole
+S216	peeled
+S175	on	[cutting board]
+//
+O180	cutting board	0
+S144	contains	{onion}
+O365	onion	0
+S43	whole
+S216	peeled
+S175	on	[cutting board]
+O293	knife	1
+S23	clean
+M8	chop	0:02	0:12
+O365	onion	0
+S21	minced
+S175	on	[cutting board]
+//
+O180	cutting board	0
+S144	contains	{onion}
+O32	jar	0
+S4	contains	{garlic}
+O230	garlic	1
+S216	minced
+S43	in	[jar]
+M38	pick-and-place	Assumed	Assumed
+O180	cutting board	0
+S144	contains	{onion,garlic}
+O230	garlic	1
+S216	minced
+S175	on	[cutting board]
+//
+O374	packet	0
+S229	sealed
+S138	contains	{ground beef}
+O293	knife	1
+S23	clean
+M17	cut open	Assumed	Assumed
+O374	packet	0
+S32	opened
+S138	contains	{ground beef}
+O293	knife	1
+S45	dirty
+//
+O374	packet	0
+S138	contains	{ground beef}
+S32	opened
+O260	ground beef	1
+S258	uncooked
+S113	in	[packet]
+O51	bowl	0
+S54	empty
+M38	pick-and-place	Assumed	Assumed
+O51	bowl	0
+S138	contains	{ground beef}
+O260	ground beef	1
+S258	uncooked
+S84	in	[bowl]
+//
+O260	ground beef	1
+S258	uncooked
+S84	in	[bowl]
+M30	shape	Assumed	Assumed
+O260	beef patty	1
+S258	uncooked
+//
+O180	cutting board	0
+S144	contains	{onion,garlic}
+O365	onion	0
+S21	minced
+S175	on	[cutting board]
+O230	garlic	0
+S21	minced
+S175	on	[cutting board]
+O260	beef patty	1
+S258	uncooked
+M35	combine	0:14	0:31
+O335	beef patty	1
+S258	uncooked
+S230	contains	{onion,garlic}
+O365	onion	0
+S21	minced
+S175	in	[beef patty]
+O230	garlic	0
+S21	minced
+S175	in	[beef patty]
+//
+O335	beef patty	1
+S258	uncooked
+S230	contains	{onion,garlic}
+O415	plate	0
+S54	empty
+M54	place	Assumed	Assumed
+O415	plate	0
+S144	contains	{beef patty}
+O26	beef patty	1
+S258	uncooked
+S138	contains	{onion,garlic}
+S188	on	[plate]
+//
+O415	plate	0
+S144	contains	{beef patty}
+O26	beef patty	1
+S258	uncooked
+S138	contains	{onion,garlic}
+S188	on	[plate]
+O257	grill	0
+S167	on
+M38	pick-and-place	0:39	0:41
+O257	grill	0
+S167	on
+S144	contains	{beef patty}
+O26	beef patty	1
+S258	uncooked
+S138	contains	{onion,garlic}
+S180	on	[grill]
+//
+O257	grill	0
+S167	on
+S144	contains	{beef patty}
+O26	beef patty	1
+S258	uncooked
+S138	contains	{onion,garlic}
+S180	on	[grill]
+O477	shaker	1
+S138	contains	{salt}
+O459	salt	1
+S67	granulated
+S122	in	[shaker]
+M63	sprinkle	0:45	0:48
+O26	beef patty	1
+S258	uncooked
+S138	contains	{onion,garlic,salt}
+S180	on	[grill]
+//
+O257	grill	0
+S167	on
+S144	contains	{beef patty}
+O26	beef patty	0
+S258	uncooked
+S138	contains	{onion,garlic,salt}
+S180	on	[grill]
+M10	cook	Assumed	Assumed
+O26	beef patty	0
+S209	partly cooked
+S138	contains	{onion,garlic,salt}
+S180	on	[grill]
+//
+O257	grill	0
+S167	on
+S144	contains	{beef patty}
+O26	beef patty	1
+S209	partly cooked
+S138	contains	{onion,garlic,salt}
+S180	on	[grill]
+O552	turner	1
+S23	clean
+M25	flip	1:13	1:16
+O26	beef patty	1
+S58	flipped
+S138	contains	{onion,garlic,salt}
+S180	on	[grill]
+//
+O257	grill	0
+S167	on
+S144	contains	{beef patty}
+O26	beef patty	0
+S58	flipped
+S138	contains	{onion,garlic,salt}
+S180	on	[grill]
+M10	cook	Assumed	Assumed
+O26	beef patty	0
+S29	cooked
+S138	contains	{onion,garlic,salt}
+S180	on	[grill]
+//
+O257	grill	0
+S167	on
+S144	contains	{beef patty}
+O26	beef patty	0
+S29	cooked
+S138	contains	{onion,garlic,salt}
+S180	on	[grill]
+O91	cheese	1
+S239	sliced
+S43	in	[packet]
+M38	pick-and-place	Assumed	Assumed
+O91	cheese	1
+S239	sliced
+S187	on	[patty]
+//
+O53	bread	1
+S15	bun
+O415	plate	0
+S54	empty
+M38	pick-and-place	Assumed	Assumed
+O415	plate	0
+S144	contains	{bread}
+O53	bread	1
+S15	bun
+S188	on	[plate]
+//
+O53	bread	0
+S15	bun
+S188	on	[plate]
+O415	plate	0
+S144	contains	{bread}
+O26	beef patty	0
+S29	cooked
+S138	contains	{onion,garlic,salt}
+S180	on	[grill]
+O552	turner	1
+S23	clean
+M38	pick-and-place	Assumed	Assumed
+O415	plate	0
+S49	contains	{hamburger}
+O53	bread	0
+S144	contains	{beef patty,cheese}
+O266	hamburger	0
+S138	contains	{beef patty,cheese}
+S188	on	[plate]
+O26	beef patty	0	!
+S29	cooked
+S138	contains	{onion,garlic,salt}
+S173	on	[bread]
+//

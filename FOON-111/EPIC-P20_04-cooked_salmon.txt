@@ -1,0 +1,460 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/EPIC-P20_04-cooked_salmon.MP4
+//
+O410	packet	1
+S201	sealed
+S195	contains	{salmon}
+O177	scissors	1
+S58	clean
+M100	cut open	0:35	0:36
+O410	packet	0
+S195	contains	{salmon}
+S43	opened
+//
+O410	packet	0
+S195	contains	{salmon}
+S43	opened
+O198	salmon	1
+S43	raw
+S400	frozen
+S175	in	[packet]
+O2	bowl	0
+S107	empty
+M0	pick-and-place	0:51	1:12
+O2	bowl	0
+S195	contains	{salmon}
+O198	salmon	0
+S43	raw
+S400	frozen
+S160	in	[bowl]
+//
+O2	bowl	1
+S195	contains	{salmon}
+O140	microwave	0
+S232	empty (ready)
+M0	put inside	1:16	1:20
+O2	bowl	1
+S195	contains	{salmon}
+S403	in	[microwave]
+O140	microwave	0
+S232	contains	{bowl}
+//
+O2	bowl	1
+S195	contains	{salmon}
+S403	in	[microwave]
+O140	microwave	0
+S232	with	[bowl]
+O198	salmon	0
+S43	raw
+S400	frozen
+S160	in	[bowl]
+M101	defrost	1:44	2:40
+O198	salmon	0
+S43	raw
+S401	defrosted
+S160	in	[bowl]
+//
+O2	bowl	1
+S193	contains	{salmon}
+S403	in	[microwave]
+O140	microwave	0
+S232	with	[bowl]
+M0	remove	2:50	2:54
+O2	bowl	1
+S193	contains	{salmon}
+O140	microwave	0
+S232	empty
+//
+O83	cutting board	0
+S107	empty
+O2	bowl	0
+S193	contains	{salmon}
+O198	salmon	1
+S43	raw
+S401	defrosted
+S160	in	[bowl]
+M0	pick-and-place	3:35	3:39
+O83	cutting board	0
+S201	contains	{salmon}
+O198	salmon	0
+S43	raw
+S401	defrosted
+S235	on	[cutting board]
+O2	bowl	1
+S193	empty
+S43	dirty
+//
+O198	salmon	1
+S43	raw
+S401	defrosted
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M17	peel	3:40	5:30
+O198	salmon	0
+S43	raw
+S402	skinned
+S235	on	[cutting board]
+//
+O181	faucet	1
+S115	on
+O40	water	0
+S400	from faucet
+O198	salmon	1
+S43	raw
+S402	skinned
+S235	on	[cutting board]
+M53	wash	5:55	6:04
+O198	salmon	0
+S43	raw
+S59	cleaned
+S402	skinned
+//
+O83	cutting board	0
+S107	empty
+O198	salmon	0
+S43	raw
+S402	skinned
+S59	cleaned
+M0	pick-and-place	6:35	6:38
+O83	cutting board	0
+S201	contains	{salmon}
+O198	salmon	0
+S43	raw
+S402	skinned
+S59	cleaned
+S235	on	[cutting board]
+//
+O198	salmon	1
+S43	raw
+S59	cleaned
+S402	skinned
+S235	on	[cutting board]
+O11	knife	1
+S58	clean
+M8	dice	6:40	8:14
+O198	salmon	0
+S43	raw
+S403	diced
+S235	on	[cutting board]
+//
+O83	cutting board	0
+S201	contains	{salmon}
+O198	salmon	1
+S43	raw
+S403	diced
+S235	on	[cutting board]
+O2	bowl	0
+S107	empty
+M0	pick-and-place	8:18	8:30
+O2	bowl	0
+S195	contains	{salmon}
+O83	cutting board	0
+S23	empty
+S107	dirty
+O198	salmon	0
+S43	raw
+S403	diced
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{salmon}
+O108	bottle	1
+S195	contains	{sesame oil}
+S23	opened
+O144	sesame oil	1
+S23	liquid
+S159	in	[bottle]
+M4	pour	8:54	8:58
+O2	bowl	0
+S195	contains	{salmon,sesame oil}
+O144	sesame oil	0
+S23	liquid
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{salmon,sesame oil}
+O166	grinder	1
+S195	contains	{black pepper}
+O19	black pepper	1
+S231	whole
+S167	in	[grinder]
+M7	grind and pour	9:08	9:15
+O2	bowl	0
+S195	contains	{salmon,sesame oil,black pepper}
+O19	black pepper	0
+S400	ground
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{salmon,sesame oil,black pepper}
+O19	black pepper	1
+S400	ground
+S160	in	[bowl]
+O198	salmon	1
+S23	raw
+S403	diced
+S160	in	[bowl]
+O144	sesame oil	1
+S23	liquid
+S160	in	[bowl]
+M1	mix	9:18	9:44
+O2	bowl	0
+S198	contains	{salmon,sesame oil,black pepper}
+O198	salmon	1
+S231	raw
+S123	oiled
+S403	contains	{sesame oil,black pepper}
+S160	in	[bowl]
+//
+O2	bowl	0
+S107	empty
+O108	bottle	1
+S195	contains	{sesame oil}
+S80	opened
+O144	sesame oil	1
+S32	liquid
+S159	in	[bottle]
+M4	pour	10:19	10:22
+O2	bowl	0
+S195	contains	{sesame oil}
+O144	sesame oil	0
+S32	liquid
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{sesame oil}
+O67	jar	0
+S195	contains	{salt}
+O18	salt	1
+S400	granulated
+S168	in	[jar]
+O22	spoon	1
+S107	empty
+M2	sprinkle	10:37	10:43
+O2	bowl	0
+S195	contains	{sesame oil,salt}
+O18	salt	0
+S400	granulated
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{sesame oil,salt}
+O166	grinder	1
+S195	contains	{black pepper}
+O19	black pepper	1
+S32	whole
+S167	in	[grinder]
+M7	grind and pour	10:50	10:54
+O2	bowl	0
+S195	contains	{sesame oil,salt,black pepper}
+O19	black pepper	0
+S400	ground
+S160	in	[bowl]
+//
+O124	ginger	1
+S404	chunk
+O11	knife	1
+S58	clean
+M17	peel	15:22	16:13
+O124	ginger	0
+S265	peeled
+S404	chunk
+//
+O2	bowl	0
+S195	contains	{sesame oil,salt,black pepper}
+O40	grater	1
+S58	clean
+O124	ginger	1
+S265	peeled
+S404	chunk
+M9	grate	16:30	17:45
+O2	bowl	0
+S195	contains	{sesame oil,salt,black pepper,ginger}
+O124	ginger	0
+S400	grated
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{sesame oil,salt,black pepper,ginger}
+O108	bottle	1
+S195	contains	{vegetable oil}
+O94	vegetable oil	1
+S32	liquid
+S159	in	[bottle]
+M4	pour	18:18	19:00
+O2	bowl	0
+S195	contains	{sesame oil,salt,black pepper,ginger,vegetable oil}
+O94	vegetable oil	0
+S32	liquid
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{sesame oil,salt,black pepper,ginger,vegetable oil}
+O19	sesame oil	1
+S32	liquid
+S160	in	[bowl]
+O124	ginger	1
+S400	grated
+S160	in	[bowl]
+O19	black pepper	1
+S400	ground
+S160	in	[bowl]
+O19	salt	1
+S400	granulated
+S160	in	[bowl]
+O94	vegetable oil	1
+S32	liquid
+S160	in	[bowl]
+M6	stir	Assumed	Assumed
+O92	oil mixture	0
+S32	mixed
+S32	liquid
+S403	contains	{sesame oil,salt,black pepper,ginger,vegetable oil}
+S160	in	[bowl]
+//
+O2	bowl	0
+S195	contains	{sesame oil,salt,black pepper,ginger,vegetable oil}
+O92	oil mixture	0
+S32	mixed
+S32	liquid
+S403	contains	{sesame oil,salt,black pepper,ginger,vegetable oil}
+S160	in	[bowl]
+O2	bowl	1
+S198	contains	{salmon,sesame oil,black pepper}
+M4	pour	Assumed	Assumed
+O2	bowl	0
+S198	contains	{salmon,sesame oil,black pepper,ginger,vegetable oil,salt}
+//
+O2	bowl	0
+S198	contains	{salmon,sesame oil,black pepper,ginger,vegetable oil,salt}
+O92	oil mixture	1
+S32	mixed
+S32	liquid
+S403	contains	{sesame oil,salt,black pepper,ginger,vegetable oil}
+S160	in	[bowl]
+O198	salmon	1
+S231	raw
+S123	oiled
+S403	contains	{sesame oil,black pepper}
+S160	in	[bowl]
+M1	mix	19:17	19:37
+O198	salmon	1
+S231	raw
+S123	oiled
+S198	contains	{sesame oil,black pepper,ginger,vegetable oil,salt}
+S160	in	[bowl]
+//
+O38	stove	0
+S229	off (ready)
+M42	turn on	Assumed	Assumed
+O38	stove	0
+S232	on
+//
+O13	cooking pan	1
+S107	empty
+O38	stove	0
+S232	on
+M0	pick-and-place	20:40	20:44
+O13	cooking pan	1
+S151	empty
+S400	on	[stove]
+O38	stove	0
+S400	on
+S248	with	[cooking pan]
+//
+O13	cooking pan	1
+S151	empty
+S400	on	[stove]
+O38	stove	0
+S400	on
+S248	with	[cooking pan]
+M0	preheat	Assumed	Assumed
+O13	cooking pan	1
+S151	empty
+S43	hot
+S400	on	[stove]
+//
+O13	cooking pan	0
+S151	empty
+S43	hot
+S400	on	[stove]
+O108	bottle	1
+S195	contains	{vegetable oil}
+S43	opened
+O94	vegetable oil	1
+S43	liquid
+S159	in	[bottle]
+M4	pour	Assumed	Assumed
+O13	cooking pan	0
+S230	contains	{vegetable oil}
+S32	hot
+S433	on	[stove]
+O94	vegetable oil	0
+S43	liquid
+S176	in	[cooking pan]
+//
+O2	bowl	1
+S198	contains	{salmon,sesame oil,black pepper,oil mixture}
+O198	salmon	1
+S231	raw
+S123	oiled
+S198	contains	{sesame oil,black pepper,ginger,vegetable oil,salt}
+S160	in	[bowl]
+O13	cooking pan	0
+S230	contains	{vegetable oil}
+S32	hot
+S403	on	[stove]
+M4	pour	Assumed	Assumed
+O13	cooking pan	0
+S230	contains	{vegetable oil,salmon}
+S32	hot
+S403	on	[stove]
+O198	salmon	1
+S231	raw
+S123	oiled
+S198	contains	{sesame oil,black pepper,ginger,vegetable oil,salt}
+S160	in	[cooking pan]
+O2	bowl	0
+S43	empty
+S102	dirty
+//
+O38	stove	0
+S400	on
+S248	with	[cooking pan]
+O13	cooking pan	0
+S230	contains	{vegetable oil,salmon}
+S32	hot
+S403	on	[stove]
+O198	salmon	1
+S231	raw
+S123	oiled
+S198	contains	{sesame oil,black pepper,ginger,vegetable oil,salt}
+S160	in	[cooking pan]
+O408	turner	1
+S58	clean
+M93	cook and stir	20:44	31:42
+O198	salmon	1	!
+S32	cooked
+S198	contains	{sesame oil,black pepper,ginger,vegetable oil,salt}
+S160	in	[cooking pan]
+//
+O13	cooking pan	0
+S230	contains	{vegetable oil,salmon}
+S32	hot
+S403	on	[stove]
+O198	salmon	1	
+S32	cooked
+S198	contains	{sesame oil,black pepper,ginger,vegetable oil,salt}
+S160	in	[cooking pan]
+O408	turner	1
+S58	clean
+O0	plate	0
+S43	empty
+M0	scoop and pour	Assumed	Assumed
+O0	plate	0
+S43	contains	{salmon}
+O198	salmon	1	!
+S32	cooked
+S198	contains	{sesame oil,black pepper,ginger,vegetable oil,salt}
+S160	on	[plate]
+//

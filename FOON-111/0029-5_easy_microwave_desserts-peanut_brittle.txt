@@ -1,0 +1,215 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0029-5_easy_microwave_desserts-peanut_brittle.mp4
+# Source:	https://www.youtube.com/watch?v=n2jG2c_ENQ4
+//
+O190	bottle	1
+S182	contains	{corn syrup}
+O1	corn syrup	1
+S194	in	[bottle]
+O190	measuring cup	0
+S4	empty
+M3	pour	Assumed	Assumed
+O190	measuring cup	1
+S182	contains	{corn syrup}
+O1	corn syrup	1
+S194	in	[measuring cup]
+//
+O190	measuring cup	1
+S182	contains	{corn syrup}
+O1	corn syrup	1
+S194	in	[measuring cup]
+O190	measuring cup	1
+S182	contains	{sugar}
+O1	sugar	1
+S43	granulated
+S194	in	[measuring cup]
+O2	bowl	0
+S182	empty
+M4	pour*	Assumed	Assumed
+O2	bowl	0
+S182	contains	{corn syrup,sugar}
+O1	corn syrup	1
+S194	in	[bowl]
+O1	sugar	1
+S43	granulated
+S194	in	[bowl]
+//
+O2	bowl	1
+S182	contains	{corn syrup,sugar}
+O140	microwave	0
+S98	empty (ready)
+M0	put inside	Assumed	Assumed
+O140	microwave	0
+S26	with	[bowl]
+O2	bowl	1
+S182	contains	{corn syrup,sugar}
+S43	in	[microwave]
+//
+O140	microwave	0
+S26	with	[bowl]
+O2	bowl	1
+S182	contains	{corn syrup,sugar}
+S43	in	[microwave]
+M41	heat	Assumed	Assumed
+O2	bowl	0
+S180	contains	{sugar mixture}
+S43	in	[microwave]
+O1	sugar mixture	1
+S43	heated
+S194	in	[bowl]
+//
+O2	bowl	1
+S180	contains	{sugar mixture}
+S43	in	[microwave]
+O140	microwave	0
+S26	with	[bowl]
+M43	remove	Assumed	Assumed
+O2	bowl	1
+S180	contains	{sugar mixture}
+O140	microwave	0
+S26	empty
+//
+O2	bowl	0
+S180	contains	{sugar mixture}
+O2	bowl	1
+S182	contains	{butter}
+O3	butter	1
+S43	cubed
+S148	in	[bowl]
+O22	bowl	1
+S182	contains	{vanilla extract}
+O4	vanilla extract	1
+S101	in	[bowl]
+O64	measuring cup	1
+S182	contains	{peanut}
+O5	peanut	1
+S148	in	[measuring cup]
+M4	pour*	Assumed	Assumed
+O2	bowl	0
+S180	contains	{sugar mixture,butter,vanilla extract,peanut}
+O3	butter	1
+S43	melted
+S148	in	[bowl]
+O5	peanut	1
+S43	roasted
+S148	in	[bowl]
+//
+O2	bowl	0
+S180	contains	{sugar mixture,butter,vanilla extract,peanut}
+O3	butter	0
+S43	melted
+S148	in	[bowl]
+O5	peanut	0
+S43	roasted
+S148	in	[bowl]
+O1	sugar mixture	0
+S43	heated
+S194	in	[bowl]
+O4	vanilla extract	0
+S101	in	[bowl]
+O6	fork	1
+M6	stir*	Assumed	Assumed
+O2	bowl	0
+S185	contains	{peanut brittle mixture}
+O5	peanut brittle mixture	1
+S180	contains	{sugar mixture,butter,vanilla extract,peanut}
+S148	in	[bowl]
+//
+O2	bowl	0
+S185	contains	{peanut brittle mixture}
+O5	peanut brittle mixture	1
+S180	contains	{sugar mixture,butter,vanilla extract,peanut}
+S148	in	[bowl]
+O43	microwave	0
+S43	off (ready)
+M0	pick-and-place	Assumed	Assumed
+O43	microwave	0
+S43	with	[bowl]
+O2	bowl	0
+S185	contains	{peanut brittle mixture}
+S43	in	[microwave]
+//
+O43	microwave	0
+S43	with	[bowl]
+O5	peanut brittle mixture	1
+S180	contains	{sugar mixture,butter,vanilla extract,peanut}
+S148	in	[bowl]
+O2	bowl	0
+S185	contains	{peanut brittle mixture}
+S43	in	[microwave]
+M43	heat	Assumed	Assumed
+O2	bowl	0
+S185	contains	{peanut brittle mixture}
+S43	in	[microwave]
+O5	peanut brittle mixture	1
+S43	heated
+S180	contains	{sugar mixture,butter,vanilla extract,peanut}
+S148	in	[bowl]
+//
+O43	microwave	0
+S43	with	[bowl]
+O2	bowl	1
+S185	contains	{peanut brittle mixture}
+S43	in	[microwave]
+M41	remove	Assumed	Assumed
+O43	microwave	0
+S43	off
+O2	bowl	1
+S185	contains	{peanut brittle mixture}
+//
+O2	bowl	1
+S182	contains	{baking soda}
+O7	baking soda	1
+S148	in	[bowl]
+O2	bowl	0
+S185	contains	{peanut brittle mixture}
+M4	pour	Assumed	Assumed
+O2	bowl	0
+S185	contains	{peanut brittle mixture,baking soda}
+//
+O2	bowl	0
+S185	contains	{peanut brittle mixture,baking soda}
+O5	peanut brittle mixture	0
+S43	heated
+S180	contains	{sugar mixture,butter,vanilla extract,peanut}
+S148	in	[bowl]
+O7	baking soda	1
+S148	in	[bowl]
+O6	fork	1
+M6	stir	Assumed	Assumed
+O5	peanut brittle mixture	0
+S43	heated
+S180	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S148	in	[bowl]
+//
+O2	bowl	1
+S185	contains	{peanut brittle mixture}
+O5	peanut brittle mixture	0
+S43	heated
+S180	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S148	in	[bowl]
+O367	parchment paper	0
+S98	on	[surface]
+M4	pour	Assumed	Assumed
+O367	parchment paper	0
+S207	contains	{peanut brittle mixture}
+S43	on	[surface]
+O5	peanut brittle mixture	1
+S43	heated
+S180	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S148	on	[parchment paper]
+//
+O5	peanut brittle mixture	0
+S43	heated
+S180	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S148	on	[parchment paper]
+O367	parchment paper	0
+S207	contains	{peanut brittle mixture}
+S43	on	[surface]
+M43	sit	Assumed	Assumed
+O367	parchment paper	0
+S207	contains	{peanut brittle}
+S43	on	[surface]
+O5	peanut brittle	0	!
+S180	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S148	on	[sheet]
+//

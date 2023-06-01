@@ -1,0 +1,317 @@
+O51	bowl	0
+S138	contains	{flour}
+O51	bowl	1
+S138	contains	{baking powder,cinnamon,salt}
+O14	baking powder	1
+S221	powder
+S84	in	[bowl]
+O121	cinnamon	1
+S71	ground
+S84	in	[bowl]
+O459	salt	1
+S67	granulated
+S84	in	[bowl]
+M40	pour	0:01:20	0:01:22
+O51	bowl	0
+S138	contains	{flour,baking powder,cinnamon,salt}
+O51	bowl	1
+S45	dirty
+//
+O502	spatula	1
+S23	clean
+O14	baking powder	1
+S221	powder
+S84	in	[bowl]
+O121	cinnamon	1
+S71	ground
+S84	in	[bowl]
+O459	salt	1
+S67	granulated
+S84	in	[bowl]
+O51	bowl	0
+S138	contains	{flour,baking powder,cinnamon,salt}
+M35	mix	0:01:47	0:01:52
+O51	bowl	0
+S142	contains	{flour,baking powder,cinnamon,salt}
+O502	spatula	1
+S45	dirty
+//
+O502	spatula	1
+S45	clean
+O51	bowl	0
+S142	contains	{flour}
+O51	bowl	0
+S138	contains	{chocolate chip}
+O110	chocolate chip	0
+S84	in	[bowl]
+M51	scoop and pour	0:01:54	0:01:58
+O51	bowl	0
+S138	contains	{chocolate chip,flour}
+O502	spatula	1
+S45	dirty
+//
+O502	spatula	1
+S23	clean
+O51	bowl	0
+S138	contains	{chocolate chip,flour}
+O215	flour	0
+S221	powder
+S84	in	[bowl]
+O110	chocolate chip	0
+S84	in	[bowl]
+M35	mix	0:01:58	0:02:16
+O110	chocolate chip	0
+S59	floured	{flour}
+S84	in	[bowl]
+O502	spatula	1
+S45	dirty
+//
+O51	bowl	0
+S54	empty
+O350	mug	1
+S138	contains	{butter}
+O66	butter	1
+S158	melted
+S111	in	[mug]
+M40	pour	0:02:26	0:02:27
+O51	bowl	0
+S138	contains	{butter}
+O66	butter	1
+S158	melted
+S84	in	[bowl]
+O350	mug	1
+S45	dirty
+//
+O51	bowl	0
+S138	contains	{butter}
+O51	bowl	1
+S138	contains	{milk}
+O338	milk	1
+S84	in	[bowl]
+M40	pour	0:02:30	0:02:31
+O51	bowl	0
+S138	contains	{butter,milk}
+O51	bowl	1
+S45	dirty
+//
+O51	bowl	0
+S138	contains	{butter,milk}
+O51	bowl	1
+S138	contains	{egg white and yolk}
+O201	egg white and yolk	1
+S84	in	[bowl]
+M40	pour	0:02:33	0:02:34
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk}
+O51	bowl	1
+S45	dirty
+//
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk}
+O51	bowl	1
+S138	contains	{sour cream}
+O495	sour cream	0
+S84	in	[bowl]
+O502	spatula	1
+S23	clean
+M52	scrape	0:02:38	0:02:40
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream}
+O51	bowl	1
+S45	dirty
+O502	spatula	1
+S45	dirty
+//
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream}
+O48	bottle	1
+S138	contains	{vanilla extract}
+O554	vanilla extract	0
+S83	in	[bottle]
+M40	pour	0:02:55	0:02:56
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract}
+O554	vanilla extract	0
+S84	in	[bowl]
+//
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract}
+O51	bowl	1
+S138	contains	{brown sugar}
+O58	brown sugar	0
+S67	granulated
+S84	in	[bowl]
+M40	pour	0:03:00	0:03:01
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar}
+O51	bowl	1
+S45	dirty
+//
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar}
+O51	bowl	1
+S138	contains	{sugar}
+O518	sugar	0
+S67	granulated
+S84	in	[bowl]
+M40	pour	0:03:03	0:03:04
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+O51	bowl	1
+S45	dirty
+//
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+O66	butter	1
+S158	melted
+S111	in	[mug]
+O338	milk	1
+S84	in	[bowl]
+O201	egg white and yolk	1
+S84	in	[bowl]
+O495	sour cream	0
+S84	in	[bowl]
+O554	vanilla extract	0
+S84	in	[bowl]
+O58	brown sugar	0
+S67	granulated
+S84	in	[bowl]
+O518	sugar	0
+S67	granulated
+S84	in	[bowl]
+O575	whisk	1
+S23	clean
+M2	beat	0:03:06	0:03:14
+O51	bowl	0
+S142	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+O575	whisk	1
+S45	dirty
+//
+O51	bowl	1
+S138	contains	{flour,baking powder,cinnamon,salt}
+O51	bowl	0
+S142	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+M40	pour	0:03:20	0:03:24
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+O51	bowl	1
+S45	dirty
+//
+O51	bowl	0
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+O575	whisk	1
+S23	clean
+M35	mix	0:03:28	0:03:34
+O51	bowl	0
+S142	contains	{muffin batter}
+O347	muffin batter	1
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+S84	in	[bowl]
+O575	whisk	1
+S45	dirty
+//
+O51	bowl	1
+S138	contains	{chocolate chip,flour}
+O110	chocolate chip	0
+S59	floured	{flour}
+S84	in	[bowl]
+O502	spatula	1
+S23	clean
+O51	bowl	0
+S142	contains	{muffin batter}
+M52	scrape	0:03:42	0:03:44
+O51	bowl	0
+S138	contains	{muffin batter,chocolate chip}
+O51	bowl	1
+S45	dirty
+O502	spatula	1
+S45	dirty
+//
+O502	spatula	1
+S45	dirty
+O51	bowl	0
+S138	contains	{muffin batter,chocolate chip}
+O347	muffin batter	1
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+S84	in	[bowl]
+O110	chocolate chip	1
+S59	floured	{flour}
+S84	in	[bowl]
+M26	fold	0:03:46	0:04:08
+O51	bowl	0
+S142	contains	{muffin batter,chocolate chip}
+O347	muffin batter	1
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S84	in	[bowl]
+O502	spatula	1
+S45	dirty
+//
+O349	muffin pan	0
+S54	empty
+O348	muffin cup	1
+S113	in	[packet]
+M38	pick-and-place	Assumed	Assumed
+O349	muffin pan	0
+S162	with	[muffin cup]
+O348	muffin cup	1
+S110	in	[muff]
+//
+O51	bowl	0
+S142	contains	{muffin batter,chocolate chip}
+O347	muffin batter	1
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S84	in	[bowl]
+O349	muffin pan	0
+S162	with	[muffin cup]
+O470	scoop	1
+S23	clean
+M51	scoop and pour	0:04:25	0:04:33
+O347	muffin batter	1
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S109	in	[muff]
+O349	muffin pan	0
+S138	contains	{muffin batter}
+O470	scoop	1
+S45	dirty
+//
+O349	muffin pan	1
+S138	contains	{muffin batter}
+O371	oven	0
+S167	on
+M45	put inside	Assumed	Assumed
+O349	muffin pan	1
+S138	contains	{muffin batter}
+S112	in	[oven]
+O371	oven	0
+S167	on
+S207	with	[pan]
+//
+O349	muffin pan	0
+S138	contains	{muffin batter}
+O347	muffin batter	1
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S109	in	[muff]
+O371	oven	0
+S167	on
+S207	with	[pan]
+M1	bake	Assumed	Assumed
+O349	muffin pan	1
+S48	contains	{chocolate chip muffin}
+S112	in	[oven]
+O112	chocolate chip muffin	0	!
+S3	baked
+S138	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S109	in	[muff]
+//
+O349	muffin pan	1
+S48	contains	{chocolate chip muffin}
+S112	in	[oven]
+O371	oven	0
+S167	on
+S207	with	[pan]
+M46	remove	Assumed	Assumed
+O371	oven	0
+S165	off
+O349	muffin pan	1
+S48	contains	{chocolate chip muffin}
+//

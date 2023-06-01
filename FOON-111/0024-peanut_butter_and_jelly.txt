@@ -1,0 +1,97 @@
+# Source:	https://www.youtube.com/watch?v=8yOJWf3Rr5k
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0024-peanut_butter_and_jelly.mp4
+//
+O3	packet	1
+S43	contains	{bread}
+M3	open	0:50	0:51
+O3	packet	1
+S43	contains	{bread}
+S43	opened
+//
+O3	packet	0
+S43	contains	{bread}
+S43	opened
+O12	bread	1
+S290	sliced
+S43	in	[packet]
+O15	plate	0
+S98	empty
+S433	on	[surface]
+M0	pick-and-place	0:52	0:55
+O15	plate	0
+S188	contains	{bread}
+S433	on	[surface]
+O12	bread	1
+S290	sliced
+S226	on	[plate]
+//
+O67	jar	0
+S182	contains	{peanut butter}
+S433	on	[surface]
+M0	open	1:02	1:04
+O67	jar	0
+S182	contains	{peanut butter}
+S43	opened
+S433	on	[surface]
+//
+O67	jar	0
+S182	contains	{peanut butter}
+S43	opened
+S433	on	[surface]
+O145	peanut butter	0
+S155	in	[jar]
+O12	bread	0
+S290	sliced
+S226	on	[plate]
+O11	knife	1
+M16	scoop and spread	1:04	1:12
+O12	bread	0
+S4	sliced
+S188	contains	{peanut butter}
+S226	on	[plate]
+O145	peanut butter	0
+S155	on	[bread]
+//
+O67	jar	0
+S182	contains	{jelly}
+S433	on	[surface]
+M0	open	Assumed	Assumed
+O67	jar	0
+S143	opened
+S182	contains	{jelly}
+S433	on	[surface]
+//
+O12	bread	0
+S290	sliced
+S226	on	[plate]
+O67	jar	0
+S143	opened
+S182	contains	{jelly}
+S433	on	[surface]
+O57	jelly	0
+S155	in	[jar]
+O11	knife	1
+M16	scoop and spread	1:17	1:29
+O12	bread	0
+S43	sliced
+S188	contains	{jelly}
+S226	on	[plate]
+O57	jelly	0
+S155	on	[bread]
+//
+O12	bread	1
+S43	sliced
+S188	contains	{peanut butter}
+S226	on	[plate]
+O12	bread	1
+S43	sliced
+S188	contains	{jelly}
+S226	on	[plate]
+M0	pick-and-place	Assumed	Assumed
+O59	sandwich	0
+S245	contains	{peanut butter,jelly}
+S226	on	[plate]
+O59	peanut butter and jelly sandwich	0	!
+S245	contains	{bread,peanut butter,jelly}
+S226	on	[plate]
+//

@@ -1,0 +1,276 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/EPIC-P04_24-massaman_curry.MP4
+//
+O45	pot	1
+S107	empty
+O38	stove	0
+S229	off (ready)
+M0	pick-and-place	0:08	0:11
+O45	pot	1
+S107	empty
+S243	on	[stove]
+O38	stove	0
+S229	off (ready)
+S273	with	[pot]
+//
+O38	stove	0
+S229	off (ready)
+S273	with	[pot]
+O45	pot	0
+S107	empty
+S354	on	[stove]
+M42	turn on	0:11	0:20
+O38	stove	0
+S229	on
+S273	with	[pot]
+//
+O38	stove	0
+S229	on
+S273	with	[pot]
+O45	pot	0
+S107	empty
+S354	on	[stove]
+M0	heat	assumed	assumed
+O45	pot	0
+S151	hot
+S43	empty
+S354	on	[stove]
+//
+O369	scale	0
+S243	on	[surface]
+O69	baking tray	0
+S107	empty
+M0	pick-and-place	0:48	0:52
+O69	baking tray	0
+S107	empty
+S354	on	[scale]
+O369	scale	0
+S356	with	[tray]
+S243	on	[surface]
+//
+O179	bag	1
+S354	sealed
+S195	contains	{peanut}
+O5	peanut	0
+S155	in	[bag]
+O177	scissors	0
+S58	clean
+M94	cut open	0:32	0:33
+O179	bag	0
+S195	contains	{peanut}
+//
+O369	scale	0
+S356	with	[tray]
+S243	on	[surface]
+O69	baking tray	0
+S107	empty
+S354	on	[scale]
+O179	packet	1
+S195	contains	{peanut}
+O5	peanut	1
+S155	in	[packet]
+M95	pour	1:06	1:17
+O69	baking tray	0
+S201	contains	{peanut}
+S354	on	[scale]
+O5	peanut	0
+S357	on	[baking tray]
+//
+O306	mortar	1
+S196	contains	{curry paste}
+O45	curry paste	1
+S34	contains	{onion,spice mixture,garlic,lemon grass,shrimp paste,galangal,paprika}
+S34	in	[mortar]
+O45	pot	0
+S151	heated
+S34	on	[stove]
+O37	spatula	1
+S58	clean
+M4	scoop and pour	2:38	2:59
+O306	mortar	0
+S102	dirty
+O45	pot	0
+S195	contains	{curry paste}
+S34	on	[stove]
+O368	curry paste	0
+S34	contains	{onion,spice mixture,garlic,lemon grass,shrimp paste,galangal,paprika}
+S178	in	[pot]
+//
+O181	faucet	0
+S229	off
+M42	turn on	3:43	3:44
+O181	faucet	0
+S359	on
+O43	water	1
+S243	from faucet
+//
+O2	bowl	1
+S107	empty
+O181	faucet	0
+S359	on
+O43	water	1
+S243	from faucet
+M72	fill	3:51	3:53
+O2	bowl	0
+S195	contains	{water}
+O46	water	0
+S160	in	[bowl]
+//
+O179	packet	1
+S195	contains	{coconut milk powder}
+O370	coconut milk powder	0
+S155	in	[bag]
+O2	bowl	0
+S195	contains	{water}
+M4	pour	3:59	4:01
+O370	coconut milk powder	0
+S160	in	[bowl]
+O2	bowl	0
+S195	contains	{water,coconut milk powder}
+//
+O2	bowl	0
+S195	contains	{water,coconut milk powder}
+O370	coconut milk powder	1
+S160	in	[bowl]
+O370	water	1
+S160	in	[bowl]
+O22	spoon	1
+S58	clean
+M6	stir	4:02	5:00
+O2	bowl	0
+S195	contains	{coconut milk}
+O371	coconut milk	0
+S160	in	[bowl]
+//
+O45	pot	0
+S195	contains	{curry paste}
+S34	on	[stove]
+O368	curry paste	0
+S34	contains	{onion,spice mixture,garlic,lemon grass,shrimp paste,galangal,paprika}
+S178	in	[pot]
+O37	spatula	0
+S58	clean
+M1	cook and stir	4:40	4:47
+O45	pot	0
+S193	contains	{curry paste}
+S34	on	[stove]
+//
+O2	bowl	0
+S195	contains	{coconut milk}
+O371	coconut milk	0
+S160	in	[bowl]
+O22	spoon	1
+S107	empty
+M3	scoop	5:01	5:02
+O22	spoon	0
+S195	contains	{coconut milk}
+O371	coconut milk	0
+S181	in	[spoon]
+//
+O45	pot	0
+S193	contains	{curry paste}
+S34	on	[stove]
+O22	spoon	1
+S195	contains	{coconut milk}
+O371	coconut milk	1
+S181	in	[spoon]
+M4	pour	5:02	5:13
+O45	pot	0
+S195	contains	{curry paste,coconut milk}
+S34	on	[stove]
+O371	coconut milk	1
+S178	in	[pot]
+O22	spoon	0
+S102	dirty
+//
+O45	pot	0
+S195	contains	{curry paste,coconut milk}
+S34	on	[stove]
+O368	curry paste	0
+S34	contains	{onion,spice mixture,garlic,lemon grass,shrimp paste,galangal,paprika}
+S178	in	[pot]
+O371	coconut milk	1
+S178	in	[pot]
+O37	spatula	1
+S58	clean
+M1	mix	5:20	5:30
+O45	pot	0
+S193	contains	{curry sauce}
+S34	on	[stove]
+O368	curry sauce	0
+S34	contains	{curry paste,coconut milk}
+S178	in	[pot]
+//
+O372	packet	0
+S34	sealed
+S195	contains	{beefsteak}
+O177	scissors	0
+S58	clean
+M95	cut open	6:03	6:08
+O372	packet	0
+S195	contains	{beefsteak}
+O306	beefsteak	1
+S34	uncooked
+S243	in	[packet]
+//
+O306	beefsteak	1
+S34	uncooked
+S243	in	[packet]
+O177	scissors	1
+S58	clean
+O45	pot	0
+S193	contains	{curry sauce}
+S34	on	[stove]
+M8	cut	6:13	7:37
+O45	pot	0
+S195	contains	{curry sauce,beefsteak}
+S34	on	[stove]
+O148	beefsteak	0
+S361	cut in pieces
+S34	in	[pot]
+//
+O14	oven	0
+S229	off
+O69	baking tray	1
+S201	contains	{peanut}
+S354	on	[scale]
+M0	pick-and-place	7:55	8:00
+O14	oven	0
+S229	off
+S8	with	[baking tray]
+O69	baking tray	1
+S201	contains	{peanut}
+S34	in	[oven]
+//
+O14	oven	0
+S229	off
+S8	with	[baking tray]
+O69	baking tray	1
+S201	contains	{peanut}
+S34	in	[oven]
+M0	turn on	8:00	8:10
+O14	oven	0
+S229	on
+S8	with	[baking tray]
+//
+O45	pot	0
+S195	contains	{curry sauce,beefsteak}
+S34	on	[stove]
+O148	beefsteak	1
+S361	cut in pieces
+S34	in	[pot]
+O368	curry sauce	1
+S34	contains	{curry paste,coconut milk}
+S178	in	[pot]
+O37	spatula	1
+S58	clean
+M93	cook and stir	8:12	8:19
+O45	pot	0
+S193	contains	{massaman curry}
+O368	massaman curry	1	!
+S34	incomplete
+S34	contains	{curry paste,coconut milk,steak}
+S178	in	[pot]
+O148	beefsteak	1
+S361	cooked
+S34	in	[pot]
+//
