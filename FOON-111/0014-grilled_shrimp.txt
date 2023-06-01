@@ -1,222 +1,157 @@
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0014-grilled_shrimp.mp4
 //
-O32	packet	1
-S43	contains	{shrimp}
-S322	sealed
-M0	open	Assumed	Assumed
-O32	packet	1
-S43	contains	{shrimp}
-S322	opened
+O46	bowl	0
+S41	empty
+O308	packet	1
+S23	contains	{shrimp}
+S83	opened
+O397	shrimp	1
+S100	raw
+S65	in	[packet]
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{shrimp}
+O397	shrimp	1
+S100	raw
+S65	in	[bowl]
 //
-O190	bowl	0
-S98	empty
-O32	packet	1
-S43	contains	{shrimp}
-S322	opened
-O16	shrimp	1
-S313	raw
-S4	whole
-S43	in	[packet]
-M0	pour	Assumed	Assumed
-O190	bowl	0
-S182	contains	{shrimp}
-O16	shrimp	1
-S313	raw
-S4	whole
-S157	in	[bowl]
+O170	faucet	1
+S81	on
+O475	water	0
+S51	from	[faucet]
+O46	bowl	0
+S23	contains	{shrimp}
+O397	shrimp	1
+S100	raw
+S65	in	[bowl]
+M64	rinse	Assumed	Assumed
+O397	shrimp	1
+S100	raw
+S137	washed
+S65	in	[bowl]
 //
-O2	faucet	1
-S32	on
-O23	water	0
-S43	from	[faucet]
-O2	bowl	0
-S98	contains	{shrimp}
-O16	shrimp	1
-S313	raw
-S43	in	[bowl]
-M0	rinse	Assumed	Assumed
-O16	shrimp	1
-S313	raw
-S4	whole
-S43	washed
-S43	in	[bowl]
+O344	plate	0
+S41	empty
+O46	bowl	1
+S23	contains	{shrimp}
+O397	shrimp	1
+S100	raw
+S137	washed
+S65	in	[bowl]
+M54	pour	Assumed	Assumed
+O344	plate	0
+S23	contains	{shrimp}
+O397	shrimp	1
+S100	raw
+S81	on	[plate]
 //
-O15	plate	0
-S98	empty
-O2	bowl	1
-S98	contains	{shrimp}
-O16	shrimp	1
-S313	raw
-S4	whole
-S43	washed
-S43	in	[bowl]
-M40	pour	Assumed	Assumed
-O15	plate	0
-S98	contains	{shrimp}
-O16	shrimp	1
-S313	raw
-S4	whole
-S43	on	[plate]
-O2	bowl	1
-S98	empty
-S98	dirty
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+O344	plate	0
+S23	contains	{shrimp}
+O397	shrimp	0
+S100	raw
+S81	on	[plate]
+O216	grinder	1
+S23	contains	{salt}
+O376	salt	1
+S65	in	[grinder]
+O328	pepper mill	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S92	peppercorn
+S65	in	[pepper mill]
+M0	add*	0:02	0:15
+O397	shrimp	0
+S100	raw
+S19	coated	[olive oil,salt,black pepper]
+S81	on	[plate]
+O296	olive oil	1
+S81	on	[shrimp]
+O376	salt	1
+S55	granulated
+S81	on	[shrimp]
+O34	black pepper	1
+S58	ground
+S81	on	[shrimp]
 //
-O108	bottle	1
-S182	contains	{olive oil}
-O17	olive oil	1
-S4	liquid
-S147	in	[bottle]
-O15	plate	0
-S98	contains	{shrimp}
-O16	shrimp	0
-S313	raw
-S4	whole
-S43	on	[plate]
-M0	pour	0:02	0:05
-O16	shrimp	0
-S313	raw
-S4	whole
-S4	contains	{olive oil}
-S43	on	[plate]
-O17	olive oil	1
-S4	liquid
-S147	on	[shrimp]
 //
-O15	plate	0
-S98	contains	{shrimp}
-O16	shrimp	0
-S313	raw
-S4	whole
-S4	contains	{olive oil}
-S43	on	[plate]
-O259	grinder	1
-S139	contains	{salt}
-O459	salt	1
-S67	granulated
-S97	in	[grinder]
-M29	grind and sprinkle	0:07	0:12
-O16	shrimp	0
-S313	raw
-S4	whole
-S4	contains	{olive oil,salt}
-S43	on	[plate]
-O459	salt	1
-S67	granulated
-S147	on	[shrimp]
+O344	plate	0
+S23	contains	{shrimp}
+O397	shrimp	0
+S100	raw
+S19	coated	[olive oil,salt,black pepper]
+S81	on	[plate]
+O452	tongs	1
+S16	clean
+O213	grill	0
+S81	on
+M50	pick-and-place	0:21	0:27
+O397	shrimp	0
+S100	raw
+S19	coated	[olive oil,salt,black pepper]
+S81	on	[grill]
+O213	grill	0
+S81	on
+S23	contains	{shrimp}
 //
-O15	plate	0
-S98	contains	{shrimp}
-O16	shrimp	0
-S313	raw
-S4	whole
-S4	contains	{olive oil,salt}
-S43	on	[plate]
-O259	grinder	1
-S139	contains	{black pepper}
-O38	black pepper	1
-S71	whole
-S43	peppercorn
-S97	in	[grinder]
-M29	grind	0:12	0:15
-O16	shrimp	0
-S313	raw
-S4	whole
-S4	contains	{olive oil,salt,black pepper}
-S43	on	[plate]
-O459	black pepper	1
-S67	ground
-S147	on	[shrimp]
+O213	grill	0
+S81	on
+S23	contains	{shrimp}
+M11	close	Assumed	Assumed
+O213	grill	0
+S81	on
+S17	closed
+S23	contains	{shrimp}
 //
-O23	grill	1
-S188	off (ready)
-M0	light	Assumed	Assumed
-O23	grill	1
-S188	on
+O213	grill	0
+S81	on
+S17	closed
+S23	contains	{shrimp}
+O397	shrimp	0
+S100	raw
+S19	coated	[olive oil,salt,black pepper]
+S81	on	[grill]
+M14	cook	Assumed	Assumed
+O397	shrimp	0
+S24	cooked
+S81	on	[grill]
 //
-O15	plate	0
-S188	contains	{shrimp}
-O16	shrimp	0
-S4	raw
-S4	whole
-S4	contains	{olive oil,salt,black pepper}
-S43	on	[plate]
-O41	tongs	1
-S51	clean
-O23	grill	0
-S188	on
-M0	pick-and-place	0:21	0:27
-O16	shrimp	0
-S4	raw
-S4	whole
-S4	contains	{olive oil,salt,black pepper}
-S43	on	[grill]
-O23	grill	0
-S43	on
-S188	contains	{shrimp}
+O213	grill	0
+S81	on
+S17	closed
+S23	contains	{shrimp}
+M48	open	Assumed	Assumed
+O213	grill	0
+S81	on
+S23	contains	{shrimp}
 //
-O23	grill	0
-S31	on
-S188	contains	{shrimp}
-M22	close	Assumed	Assumed
-O23	grill	0
-S31	on
-S43	closed
-S188	contains	{shrimp}
+O213	grill	0
+S81	on
+S23	contains	{shrimp}
+M91	turn off	Assumed	Assumed
+O213	grill	0
+S78	off
+S23	contains	{shrimp}
 //
-O23	grill	0
-S43	on
-S43	closed
-S188	contains	{shrimp}
-O16	shrimp	0
-S4	raw
-S4	whole
-S4	contains	{olive oil,salt,black pepper}
-S43	on	[grill]
-M40	cook	Assumed	Assumed
-O16	shrimp	0
-S4	whole
-S313	cooked
-S43	on	[grill]
-//
-O23	grill	0
-S31	on
-S43	closed
-S188	contains	{shrimp}
-M22	open	Assumed	Assumed
-O23	grill	0
-S31	on
-S188	contains	{shrimp}
-//
-O23	grill	0
-S31	on
-S188	contains	{shrimp}
-M39	turn off	Assumed	Assumed
-O23	grill	0
-S31	off
-S188	contains	{shrimp}
-//
-O23	grill	0
-S31	off
-S188	contains	{shrimp}
-O16	shrimp	1
-S313	cooked
-S4	whole
-S43	on	[grill]
-O23	plate	0
-S31	empty
-O41	tongs	1
-S51	clean
-M0	pick-and-place	Assumed	Assumed
-O23	grill	0
-S31	off
-O15	plate	0
-S188	contains	{shrimp}
-O16	grilled shrimp	1	!
-S43	cooked
-S43	contains	{shrimp,black pepper,salt,olive oil}
-S32	on	[plate]
-O16	shrimp	1
-S4	whole
-S313	cooked
-S32	on	[plate]
+O213	grill	0
+S78	off
+S23	contains	{shrimp}
+O397	shrimp	1
+S24	cooked
+S81	on	[grill]
+O344	plate	0
+S41	empty
+O452	tongs	1
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O213	grill	0
+S78	off
+O344	plate	0
+S23	contains	{shrimp}
+O397	shrimp	1	17
+S24	cooked
+S81	on	[plate]
 //

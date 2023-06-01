@@ -1,552 +1,340 @@
 # Source:	https://www.youtube.com/watch?v=2a_cJQ3z5oI
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0048-shrimp-mango_salad.mp4
 //
-O48	bottle	1
-S139	contains	{olive oil}
-O362	olive oil	1
-S3	liquid
-S83	in	[bottle]
-O51	bowl	0
-S54	empty
-M40	pour	Assumed	Assumed
-O51	bowl	0
-S139	contains	{olive oil}
-O362	olive oil	1
-S4	liquid
-S84	in	[bowl]
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bowl]
 //
-O51	mixing bowl	0
-S54	empty
-O51	bowl	1
-S139	contains	{olive oil}
-O362	olive oil	1
-S43	liquid
-S84	in	[bowl]
-O507	spoon	1
-S23	clean
-M40	pour and scrape	0:36	0:37
-O51	mixing bowl	0
-S139	contains	{olive oil}
-O362	olive oil	1
-S43	liquid
-S84	in	[mixing bowl]
+O143	cutting board	0
+S16	clean
+O244	lemon	0
+S141	whole
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{lemon}
+O244	lemon	0
+S141	whole
+S81	on	[cutting board]
 //
-O8	cutting board	0
-S11	empty
-O57	lemon	0
-S13	whole
-M4	pick-and-place	Assumed	Assumed
-O8	cutting board	0
-S1	contains	{lemon}
-O57	lemon	0
-S13	whole
-S6	on	[cutting board]
+O240	knife	1
+O244	lemon	0
+S141	whole
+S81	on	[cutting board]
+M20	cut	Assumed	Assumed
+O244	lemon	0
+S60	halved
+S81	on	[cutting board]
 //
-O7	knife	1
-S43	clean
-O57	lemon	0
-S13	whole
-S6	on	[cutting board]
-M23	cut	Assumed	Assumed
-O57	lemon	0
-S9	halved
-S6	on	[cutting board]
+O244	lemon	1
+S60	halved
+S81	on	[cutting board]
+O423	squeezer	0
+S41	empty
+M84	squeeze	Assumed	Assumed
+O423	squeezer	0
+S23	contains	{lemon juice}
+O244	lemon	1
+S124	squeezed
+S81	on	[cutting board]
+O247	lemon juice	1
+S65	in	[squeezer]
 //
-O57	lemon	1
-S9	halved
-S6	on	[cutting board]
-O58	squeezer	0
-S4	empty
-M15	squeeze	Assumed	Assumed
-O58	squeezer	0
-S1	contains	{lemon juice}
-O57	lemon	1
-S43	halved
-S30	squeezed
-S6	on	[cutting board]
-O14	lemon	1
-S43	juice
-S3	in	[squeezer]
-O14	lemon juice	1
-S43	juice
-S3	in	[squeezer]
+O46	bowl	0
+S41	empty
+O247	lemon juice	1
+S65	in	[squeezer]
+O423	squeezer	1
+S23	contains	{lemon juice}
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{lemon juice}
+O247	lemon juice	1
+S65	in	[bowl]
 //
-O2	bowl	0
-S4	empty
-O58	squeezer	1
-S1	contains	{lemon juice}
-O14	lemon	1
-S43	juice
-S3	in	[squeezer]
-M6	pour	Assumed	Assumed
-O2	bowl	0
-S1	contains	{lemon juice}
-O14	lemon	1
-S43	juice
-S3	in	[in bowl]
+O46	bowl	0
+S23	contains	{lemon juice}
+O247	lemon juice	1
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bowl]
+O46	bowl	0
+S41	empty
+M54	pour*	0:38	0:42
+O46	bowl	0
+S23	contains	{olive oil,lemon juice}
 //
-O51	mixing bowl	0
-S54	contains	{olive oil}
-O51	bowl	1
-S139	contains	{lemon juice}
-O14	lemon	1
-S43	juice
-S84	in	[bowl]
-O507	spoon	1
-S23	clean
-M40	pour and scrape	0:39	0:41
-O51	mixing bowl	0
-S1	contains	{olive oil,lemon juice}
-O14	lemon	1
-S43	juice
-S84	in	[mixing bowl]
+O46	bowl	0
+S23	contains	{olive oil,lemon juice}
+O247	lemon juice	1
+S65	in	[bowl]
+O296	olive oil	1
+S65	in	[bowl]
+O416	spoon	1
+M46	mix*	0:43	0:57
+O46	bowl	0
+S23	contains	{vinaigrette}
+O470	vinaigrette	1
+S65	in	[bowl]
 //
-O2	mixing bowl	0
-S1	contains	{olive oil,lemon juice}
-O14	lemon	1
-S43	juice
-S3	in	[mixing bowl]
-O12	olive oil	1
-S30	liquid
-S3	in	[mixing bowl]
-O18	spoon	1
-S43	clean
-M8	mix	0:43	0:57
-O59	vinaigrette	1
-S4	mixed
-S43	contains	{olive oil,lemon juice}
-S3	in	[mixing bowl]
+O143	cutting board	0
+S16	clean
+O101	cilantro	1
+S69	leaf
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{cilantro}
+O101	cilantro	1
+S69	leaf
+S81	on	[cutting board]
 //
-O2	bowl	1
-S1	contains	{salad greens}
-O63	salad greens	1
-S8	washed
-S43	leaf
-S3	in	[bowl]
-O3	salad bowl	0
-S43	empty
-M0	pour and scrape	1:01	1:06
-O3	salad bowl	0
-S1	contains	{salad greens}
-O63	salad greens	1
-S8	washed
-S43	leaf
-S3	in	[salad bowl]
+O240	knife	1
+O101	cilantro	0
+S69	leaf
+S81	on	[cutting board]
+M10	chop	Assumed	Assumed
+O101	cilantro	1
+S14	chopped
+S81	on	[cutting board]
 //
-O180	cutting board	0
-S54	empty
-O119	cilantro	1
-S262	whole
-S43	leaf
-M38	pick-and-place	Assumed	Assumed
-O180	cutting board	0
-S145	contains	{cilantro}
-O119	cilantro	1
-S262	whole
-S43	leaf
-S6	on	[cutting board]
+O46	bowl	0
+S41	empty
+O101	cilantro	1
+S14	chopped
+S81	on	[cutting board]
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{cilantro}
+O101	cilantro	1
+S14	chopped
+S65	in	[bowl]
 //
-O7	knife	1
-S4	clean
-O60	cilantro	0
-S262	whole
-S2	leaf
-S6	on	[cutting board]
-M16	chop	Assumed	Assumed
-O60	cilantro	1
-S27	chopped
-S6	on	[cutting board]
+O143	cutting board	0
+S16	clean
+O397	shrimp	1
+S24	cooked
+S81	on	[plate]
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{shrimp}
+O397	shrimp	1
+S24	cooked
+S81	on	[cutting board]
 //
-O180	cutting board	0
-S145	contains	{cilantro}
-O51	bowl	0
-S54	empty
-O119	cilantro	1
-S27	chopped
-S6	on	[cutting board]
-M38	pick-and-place	Assumed	Assumed
-O51	bowl	0
-S139	contains	{cilantro}
-O119	cilantro	1
-S21	chopped
-S84	in	[bowl]
-O180	cutting board	0
-S43	empty
-S45	dirty
+O240	knife	1
+O397	shrimp	0
+S24	cooked
+S81	on	[cutting board]
+M10	chop	Assumed	Assumed
+O397	shrimp	1
+S24	cooked
+S14	chopped
+S81	on	[cutting board]
 //
-O51	bowl	0
-S139	contains	{cilantro}
-O119	cilantro	1
-S21	chopped
-S84	in	[bowl]
-O2	mixing bowl	0
-S1	contains	{olive oil,lemon juice}
-M64	pour and scrape	1:11	1:13
-O2	mixing bowl	0
-S1	contains	{olive oil,lemon juice,cilantro}
-O119	cilantro	1
-S21	chopped
-S84	in	[mixing bowl]
-O51	bowl	1
-S43	empty
-S45	dirty
+O46	bowl	0
+S41	empty
+O397	shrimp	1
+S24	cooked
+S14	chopped
+S81	on	[cutting board]
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{shrimp}
+O397	shrimp	1
+S24	cooked
+S14	chopped
+S65	in	[bowl]
 //
-O2	mixing bowl	0
-S1	contains	{olive oil,lemon juice,cilantro}
-O119	cilantro	1
-S21	chopped
-S84	in	[mixing bowl]
-O59	vinaigrette	1
-S43	contains	{olive oil,lemon juice}
-S3	in	[mixing bowl]
-O507	spoon	1
-S23	clean
-M35	mix	1:14	1:22
-O59	vinaigrette	1
-S4	mixed
-S43	contains	{olive oil,lemon juice,cilantro}
-S3	in	[mixing bowl]
+O262	mango	0
+S141	whole
+O240	knife	1
+M49	peel	Assumed	Assumed
+O262	mango	0
+S91	peeled
 //
-O8	cutting board	0
-S11	empty
-O30	plate	1
-S4	contains	{shrimp}
-O39	shrimp	1
-S22	cooked
-S43	whole
-S6	on	[plate]
-M4	pour	Assumed	Assumed
-O30	plate	1
-S11	dirty
-S11	empty
-O8	cutting board	0
-S1	contains	{shrimp}
-O39	shrimp	1
-S22	cooked
-S43	whole
-S6	on	[cutting board]
+O143	cutting board	0
+S16	clean
+O262	mango	1
+S91	peeled
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{mango}
+O262	mango	1
+S91	peeled
+S81	on	[cutting board]
 //
-O7	knife	1
-S4	clean
-O31	shrimp	0
-S22	cooked
-S43	whole
-S6	on	[cutting board]
-M16	chop	Assumed	Assumed
-O39	shrimp	1
-S22	cooked
-S27	chopped
-S6	on	[cutting board]
+O240	knife	1
+O262	mango	0
+S91	peeled
+S81	on	[cutting board]
+M10	chop	Assumed	Assumed
+O262	mango	0
+S14	chopped
+S81	on	[cutting board]
 //
-O8	cutting board	1
-S1	contains	{shrimp}
-O39	shrimp	1
-S22	cooked
-S27	chopped
-S6	on	[cutting board]
-O2	bowl	0
-S4	empty
-M4	pour and scrape	Assumed	Assumed
-O2	bowl	0
-S1	contains	{shrimp}
-O39	shrimp	1
-S22	cooked
-S27	chopped
-S3	in	[bowl]
-O8	cutting board	1
-S4	dirty
-S4	empty
+O46	bowl	0
+S41	empty
+O262	mango	1
+S14	chopped
+S81	on	[cutting board]
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{mango}
+O262	mango	1
+S14	chopped
+S65	in	[bowl]
 //
-O3	salad bowl	0
-S1	contains	{salad greens}
-O2	bowl	1
-S1	contains	{shrimp}
-O39	shrimp	1
-S22	cooked
-S27	chopped
-S3	in	[bowl]
-M0	pour and scrape	1:24	1:28
-O3	salad bowl	0
-S1	contains	{salad greens,shrimp}
-O39	shrimp	1
-S22	cooked
-S27	chopped
-S3	in	[salad bowl]
-O8	bowl	1
-S4	dirty
-S4	empty
+O143	cutting board	0
+S16	clean
+O386	scallion	1
+S69	leaf
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{scallion}
+O386	scallion	1
+S69	leaf
+S81	on	[cutting board]
 //
-O8	cutting board	0
-S11	empty
-O61	mango	1
-S10	unpeeled
-S13	whole
-M4	pick-and-place	Assumed	Assumed
-O8	cutting board	0
-S1	contains	{mango}
-O61	mango	1
-S13	whole
-S10	unpeeled
-S6	on	[cutting board]
+O386	scallion	1
+S69	leaf
+S81	on	[cutting board]
+O240	knife	1
+M10	chop	Assumed	Assumed
+O386	scallion	1
+S14	chopped
+S81	on	[cutting board]
 //
-O7	knife	1
-S4	clean
-O61	mango	0
-S13	whole
-S10	unpeeled
-S6	on	[cutting board]
-M16	cut	Assumed	Assumed
-O61	mango	0
-S27	halved
-S43	unpeeled
-S6	on	[cutting board]
-O61	mango	0
-S27	seed
-S6	on	[cutting board]
+O46	bowl	0
+S41	empty
+O386	scallion	1
+S14	chopped
+S81	on	[cutting board]
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{scallion}
+O386	scallion	1
+S14	chopped
+S65	in	[bowl]
 //
-O7	knife	1
-S4	clean
-O61	mango	0
-O61	mango	0
-S27	halved
-S43	unpeeled
-S6	on	[cutting board]
-M0	make slits	Assumed	Assumed
-O61	mango	0
-S43	cut with slits
-S27	halved
-S43	unpeeled
-S6	on	[cutting board]
+O46	bowl	0
+S23	contains	{vinaigrette}
+O46	bowl	1
+S23	contains	{cilantro}
+O101	cilantro	1
+S14	chopped
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{scallion}
+O386	scallion	1
+S14	chopped
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+M0	add*	1:11	1:51
+O46	bowl	0
+S23	contains	{vinaigrette,cilantro,scallion,black pepper,salt}
 //
-O7	knife	1
-S4	clean
-O61	mango	0
-S43	cut with slits
-S27	halved
-S43	unpeeled
-S6	on	[cutting board]
-M0	cut off skin	Assumed	Assumed
-O61	mango	0
-S43	diced
-S6	on	[cutting board]
-O2	mango	0
-S43	skin
-S6	on	[cutting board]
+O46	bowl	0
+S23	contains	{vinaigrette,cilantro,scallion,black pepper,salt}
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O296	olive oil	1
+S65	in	[bowl]
+O247	lemon juice	1
+S65	in	[bowl]
+O101	cilantro	1
+S14	chopped
+S65	in	[bowl]
+O386	scallion	1
+S14	chopped
+S65	in	[bowl]
+O416	spoon	1
+M46	mix*	1:51	1:55
+O46	bowl	0
+S23	contains	{salad dressing}
+O373	salad dressing	1
+S65	in	[bowl]
 //
-O8	cutting board	1
-S4	contains	{mango}
-O61	mango	1
-S43	diced
-S6	on	[cutting board]
-O2	bowl	0
-S4	empty
-M0	pour and scrape	Assumed	Assumed
-O2	bowl	0
-S4	contains	{mango}
-O61	mango	1
-S43	diced
-S6	in	[bowl]
-O8	cutting board	1
-S4	dirty
-S4	empty
+O46	bowl	1
+S23	contains	{spring mix}
+O418	spring mix	1
+S137	washed
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{shrimp}
+O397	shrimp	1
+S24	cooked
+S14	chopped
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{mango}
+O262	mango	1
+S14	chopped
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{salad dressing}
+O373	salad dressing	1
+S65	in	[bowl]
+O372	salad bowl	0
+S41	empty
+M54	pour*	1:03	2:05
+O372	salad bowl	0
+S23	contains	{spring mix,shrimp,mango,salad dressing}
+O418	spring mix	1
+S137	washed
+S65	in	[salad bowl]
+O397	shrimp	1
+S24	cooked
+S14	chopped
+S65	in	[salad bowl]
+O262	mango	1
+S14	chopped
+S65	in	[salad bowl]
+O373	salad dressing	1
+S65	in	[salad bowl]
 //
-O3	salad bowl	0
-S1	contains	{salad greens,shrimp}
-O2	bowl	1
-S4	contains	{mango}
-O61	mango	1
-S43	diced
-S6	in	[bowl]
-M0	pour and scrape	1:31	1:34
-O3	salad bowl	0
-S1	contains	{salad greens,shrimp,mango}
-O61	mango	1
-S43	diced
-S6	in	[salad bowl]
-O2	bowl	1
-S4	dirty
-S4	empty
-//
-O3	knife	1
-S4	clean
-O62	shallot	0
-S2	whole
-S4	unpeeled
-M0	peel	Assumed	Assumed
-O62	shallot	0
-S2	whole
-S4	peeled
-//
-O8	cutting board	0
-S11	empty
-O62	shallot	1
-S2	whole
-S4	peeled
-M4	pick-and-place	Assumed	Assumed
-O8	cutting board	0
-S1	contains	{shallot}
-O62	shallot	1
-S2	whole
-S4	peeled
-S6	on	[cutting board]
-//
-O7	knife	1
-S43	clean
-O62	shallot	0
-S2	whole
-S4	peeled
-S6	on	[cutting board]
-M16	chop	Assumed	Assumed
-O62	shallot	1
-S27	chopped
-S6	on	[cutting board]
-//
-O3	cutting board	1
-S1	contains	{shallot}
-O2	bowl	0
-S4	empty
-O62	shallot	1
-S27	chopped
-S6	on	[cutting board]
-M4	pour and scrape	Assumed	Assumed
-O2	bowl	0
-S1	contains	{shallot}
-O62	shallot	1
-S27	chopped
-S3	in	[bowl]
-O8	cutting board	1
-S4	dirty
-S4	empty
-//
-O2	mixing bowl	0
-S1	contains	{olive oil,lemon juice,cilantro}
-O51	bowl	1
-S139	contains	{shallot}
-O468	shallot	1
-S21	chopped
-S84	in	[bowl]
-O3	spoon	1
-S43	clean
-M64	pour and scrape	1:39	1:42
-O2	mixing bowl	0
-S139	contains	{olive oil,lemon juice,cilantro,shallot}
-O468	shallot	1
-S21	chopped
-S84	in	[mixing bowl]
-O3	bowl	1
-S4	dirty
-S4	empty
-//
-O2	mixing bowl	0
-S139	contains	{olive oil,lemon juice,cilantro,shallot}
-O468	shallot	1
-S21	chopped
-S84	in	[mixing bowl]
-O59	vinaigrette	1
-S43	contains	{olive oil,lemon juice}
-S3	in	[mixing bowl]
-O507	spoon	1
-S23	clean
-M35	mix	1:43	1:46
-O59	vinaigrette	1
-S4	mixed
-S43	contains	{olive oil,lemon juice,cilantro,shallot}
-S3	in	[mixing bowl]
-//
-O2	mixing bowl	0
-S139	contains	{olive oil,lemon juice,cilantro,shallot}
-O51	bowl	0
-S139	contains	{salt}
-O459	salt	1
-S67	granulated
-S84	in	[bowl]
-M64	sprinkle	1:48	1:49
-O2	mixing bowl	0
-S139	contains	{olive oil,lemon juice,cilantro,shallot,salt}
-O459	salt	1
-S67	granulated
-S84	in	[mixing bowl]
-//
-O51	mixing bowl	0
-S139	contains	{olive oil,lemon juice,cilantro,shallot,salt}
-O51	bowl	0
-S139	contains	{black pepper}
-O38	black pepper	1
-S71	ground
-S84	in	[bowl]
-M64	sprinkle	1:50	1:51
-O51	mixing bowl	0
-S139	contains	{olive oil,lemon juice,cilantro,shallot,salt,black pepper}
-O38	black pepper	1
-S71	ground
-S84	in	[mixing bowl]
-//
-O51	mixing bowl	0
-S139	contains	{olive oil,lemon juice,cilantro,shallot,salt,black pepper}
-O59	vinaigrette	1
-S4	mixed
-S43	contains	{olive oil,lemon juice,cilantro,shallot}
-S3	in	[mixing bowl]
-O38	black pepper	1
-S71	ground
-S84	in	[mixing bowl]
-O459	salt	1
-S67	granulated
-S84	in	[mixing bowl]
-M35	mix	1:51	1:55
-O51	mixing bowl	0
-S139	contains	{salad dressing}
-O59	salad dressing	1
-S4	mixed
-S139	contains	{olive oil,lemon juice,cilantro,shallot,salt,black pepper}
-S3	in	[mixing bowl]
-//
-O51	mixing bowl	0
-S139	contains	{olive oil,lemon juice,cilantro,shallot,salt,black pepper}
-O59	salad dressing	1
-S4	mixed
-S139	contains	{olive oil,lemon juice,cilantro,shallot,salt,black pepper}
-S3	in	[mixing bowl]
-O51	salad bowl	0
-S139	contains	{salad greens,shrimp,mango}
-O507	spoon	1
-S23	clean
-M40	pour and scrape	1:56	2:05
-O51	salad bowl	0
-S139	contains	{salad greens,shrimp,mango,salad dressing}
-O59	salad dressing	1
-S4	mixed
-S139	contains	{olive oil,lemon juice,cilantro,shallot,salt,black pepper}
-S3	in	[salad bowl]
-O51	mixing bowl	0
-S139	empty
-S43	dirty
-//
-O51	salad bowl	0
-S139	contains	{salad greens,shrimp,mango,salad dressing}
-O454	salad dressing	1
-S4	mixed
-S139	contains	{olive oil,lemon juice,cilantro,shallot,salt,black pepper}
-S3	in	[salad bowl]
-O321	mango	1
-S21	diced
-S84	in	[salad bowl]
-O480	shrimp	1
-S21	chopped
-S84	in	[salad bowl]
-O508	salad greens	1
-S260	washed
-S43	leaf
-S84	in	[salad bowl]
-O507	spoon	1
-S23	clean
-M35	stir	2:08	2:17
-O51	salad bowl	0
-S139	contains	{salad}
-O19	salad	1
-S43	mixed
-S3	in	[salad bowl]
-O481	shrimp mango salad	1	!
-S1	contains	{salad greens,shrimp,mango,lemon juice,olive oil,cilantro,scallion,black pepper,salt}
-S3	in	[salad bowl]
+O372	salad bowl	0
+S23	contains	{spring mix,shrimp,mango,salad dressing}
+O418	spring mix	1
+S137	washed
+S65	in	[salad bowl]
+O397	shrimp	1
+S24	cooked
+S14	chopped
+S65	in	[salad bowl]
+O262	mango	1
+S14	chopped
+S65	in	[salad bowl]
+O373	salad dressing	1
+S65	in	[salad bowl]
+O416	spoon	1
+M46	mix*	2:08	2:17
+O372	salad bowl	0
+S23	contains	{salad}
+O371	salad	1
+S65	in	[salad bowl]
+O398	shrimp mango salad	0	15
+S23	contains	{spring mix,shrimp,mango,lemon juice,olive oil,cilantro,scallion,black pepper,salt}
+S65	in	[salad bowl]
 //

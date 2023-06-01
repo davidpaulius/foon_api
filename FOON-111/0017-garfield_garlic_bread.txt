@@ -1,132 +1,129 @@
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0017-garfield_garlic_bread.mp4
 //
-O51	bowl	0
-S138	contains	{butter}
-O477	shaker	1
-S138	contains	{garlic salt}
-O237	garlic salt	1
-S43	granulated
-S122	in	[shaker]
-M63	sprinkle	0:03	0:09
-O51	bowl	0
-S138	contains	{butter,garlic salt}
-O237	garlic salt	1
-S43	granulated
-S84	in	[bowl]
+O46	bowl	0
+S23	contains	{butter}
+O63	butter	0
+S120	softened
+S65	in	[bowl]
+O396	shaker	1
+S23	contains	{garlic salt}
+O198	garlic salt	1
+S65	in	[shaker]
+M83	sprinkle	0:03	0:09
+O46	bowl	0
+S23	contains	{butter,garlic salt}
+O198	garlic salt	1
+S65	in	[bowl]
 //
-O51	bowl	0
-S138	contains	{butter,garlic salt}
-O66	butter	1
-S241	softened
-S84	in	[bowl]
-O237	garlic salt	1
-S43	granulated
-S84	in	[bowl]
-O219	fork	1
-S23	clean
-M35	mix	0:11	0:26
-O232	garlic butter	0
-S43	mixed
-S241	softened
-S43	contains	{butter,garlic salt}
-S84	in	[bowl]
+O46	bowl	0
+S23	contains	{butter,garlic salt}
+O63	butter	1
+S120	softened
+S65	in	[bowl]
+O198	garlic salt	1
+S65	in	[bowl]
+O182	fork	1
+S16	clean
+M46	mix	0:11	0:26
+O182	fork	1
+S38	dirty
+O46	bowl	0
+S23	contains	{garlic butter}
+O194	garlic butter	0
+S65	in	[bowl]
 //
-O16	baking tray	0
-S144	empty
-O53	bread	1
-S239	sliced
-M0	pick-and-place	Assumed	Assumed
-O16	baking tray	0
-S144	contains	{bread}
-O53	bread	0
-S239	sliced
-S168	contains	{baking tray}
+O12	baking tray	0
+S41	empty
+O48	bread	1
+S117	sliced
+M50	pick-and-place	Assumed	Assumed
+O12	baking tray	0
+S23	contains	{bread}
+O48	bread	0
+S117	sliced
+S23	contains	{baking tray}
 //
-O51	bowl	0
-S142	contains	{garlic butter}
-O232	garlic butter	1
-S43	mixed
-S241	softened
-S43	contains	{butter,garlic salt}
-S84	in	[bowl]
-O16	baking tray	0
-S144	contains	{bread}
-O53	bread	0
-S239	sliced
-S168	contains	{baking tray}
-O293	knife	1
-S23	clean
-M62	spread	0:32	1:15
-O53	bread	0
-S144	contains	{garlic butter}
-S144	on	[baking tray]
-O232	garlic butter	0
-S43	mixed
-S241	softened
-S173	on	[bread]
+O46	bowl	0
+S23	contains	{garlic butter}
+O194	garlic butter	1
+S65	in	[bowl]
+O12	baking tray	0
+S23	contains	{bread}
+O48	bread	0
+S117	sliced
+S23	contains	{baking tray}
+O240	knife	1
+S16	clean
+M82	spread	0:32	1:15
+O48	bread	0
+S23	contains	{garlic butter}
+S81	on	[baking tray]
+O194	garlic butter	0
+S81	on	[bread]
 //
-O16	baking tray	1
-S144	contains	{bread}
-O371	oven	0
-S167	on
-S43	empty
-M45	put inside	1:20	1:27
-O16	baking tray	1
-S144	contains	{bread}
-S112	in	[oven]
-O371	oven	0
-S167	on
-S4	contains	{baking tray}
+O12	baking tray	1
+S23	contains	{bread}
+O48	bread	0
+S81	on	[baking tray]
+S23	contains	{baking tray}
+O306	oven	0
+S81	on
+M62	put inside	1:20	1:27
+O12	baking tray	1
+S23	contains	{bread}
+S65	in	[oven]
+O306	oven	0
+S81	on
+S23	contains	{baking tray}
 //
-O16	baking tray	0
-S144	contains	{bread}
-S112	in	[oven]
-O371	oven	0
-S167	on
-S4	contains	{baking tray}
-O53	bread	0
-S144	contains	{garlic butter}
-S144	on	[baking tray]
-M1	bake	Assumed	Assumed
-O16	baking tray	0
-S49	contains	{garlic bread}
-S112	in	[oven]
-O231	garlic bread	0
-S43	baked
-S144	on	[baking tray]
+O12	baking tray	0
+S23	contains	{bread}
+S65	in	[oven]
+O306	oven	0
+S81	on
+S23	contains	{baking tray}
+O48	bread	0
+S23	contains	{garlic butter}
+S81	on	[baking tray]
+M2	bake	Assumed	Assumed
+O12	baking tray	0
+S23	contains	{garlic bread}
+S65	in	[oven]
+O193	garlic bread	0
+S81	on	[baking tray]
 //
-O371	oven	0
-S167	on
-S4	contains	{baking tray}
-M45	turn off	Assumed	Assumed
-O371	oven	0
-S167	off
-S4	contains	{baking tray}
+O306	oven	0
+S81	on
+S23	contains	{baking tray}
+M91	turn off	Assumed	Assumed
+O306	oven	0
+S78	off
+S23	contains	{baking tray}
 //
-O16	baking tray	0
-S49	contains	{garlic bread}
-S112	in	[oven]
-O371	oven	0
-S167	off
-S4	contains	{baking tray}
-M46	remove	Assumed	Assumed
-O16	baking tray	0
-S49	contains	{garlic bread}
-O371	oven	0
-S165	off
+O12	baking tray	0
+S23	contains	{garlic bread}
+S65	in	[oven]
+O306	oven	0
+S78	off
+S23	contains	{baking tray}
+M63	remove	Assumed	Assumed
+O12	baking tray	0
+S23	contains	{garlic bread}
+O306	oven	0
+S78	off
 //
-O16	baking tray	0
-S49	contains	{garlic bread}
-O231	garlic bread	0
-S168	on	[baking tray]
-O415	plate	1
-S54	empty
-O3	tongs	1
-S43	clean
-M38	pick-and-place	Assumed	Assumed
-O415	plate	0
-S49	contains	{garlic bread}
-O231	garlic bread	1	!
-S182	contains	{garlic salt,butter,bread}
-S188	on	[plate]
+O12	baking tray	0
+S23	contains	{garlic bread}
+O193	garlic bread	0
+S81	on	[baking tray]
+O344	plate	1
+S41	empty
+O452	tongs	1
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains	{garlic bread}
+O193	garlic bread	1	0
+S23	contains	{garlic salt,butter,bread}
+S81	on	[plate]
 //

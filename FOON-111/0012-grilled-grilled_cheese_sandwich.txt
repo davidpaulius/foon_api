@@ -1,367 +1,308 @@
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0012-grilled-grilled_cheese_sandwich.mp4
 # Source:	https://www.youtube.com/watch?v=RllWJUvrxEY
 //
-O2	bowl	0
-S98	empty
-O27	gruyere	1
-S123	block
-O23	grater	0
-S43	clean
-M4	grate	Assumed	Assumed
-O2	bowl	0
-S182	contains	{gruyere}
-O27	gruyere	1
-S123	grated
-S148	in	[bowl]
-O23	grater	0
-S43	dirty
+O46	bowl	0
+S41	empty
+O77	cheddar	1
+S138	wedge
+O203	grater	0
+S16	clean
+M39	grate	Assumed	Assumed
+O46	bowl	0
+S23	contains	{cheddar}
+O77	cheddar	1
+S56	grated
+S65	in	[bowl]
+O203	grater	0
+S38	dirty
 //
-O2	bowl	0
-S98	empty
-O27	cheddar	1
-S123	block
-O23	grater	0
-S43	clean
-M4	grate	Assumed	Assumed
-O2	bowl	0
-S182	contains	{cheddar}
-O27	cheddar	1
-S123	grated
-S148	in	[bowl]
-O23	grater	0
-S43	dirty
+O46	bowl	0
+S41	empty
+O219	gruyere	1
+S138	wedge
+O203	grater	0
+S16	clean
+M39	grate	Assumed	Assumed
+O46	bowl	0
+S23	contains	{gruyere}
+O219	gruyere	1
+S56	grated
+S65	in	[bowl]
+O203	grater	0
+S38	dirty
 //
-O2	bowl	1
-S182	contains	{cheddar}
-O27	cheddar	1
-S123	grated
-S148	in	[bowl]
-O2	bowl	1
-S182	contains	{gruyere}
-O27	gruyere	1
-S123	grated
-S148	in	[bowl]
-O2	mixing bowl	0
-S98	empty
-M40	pour	1:42	1:44
-O2	mixing bowl	0
-S182	contains	{gruyere,cheddar}
-O27	gruyere	1
-S123	grated
-S148	in	[mixing bowl]
-O27	cheddar	1
-S123	grated
-S148	in	[mixing bowl]
-O2	bowl	1
-S43	empty
-S43	dirty
+O46	bowl	1
+S23	contains	{cheddar}
+O77	cheddar	0
+S56	grated
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{gruyere}
+O219	gruyere	0
+S56	grated
+S65	in	[bowl]
+O46	bowl	0
+S41	empty
+O46	bowl	1
+S23	contains	{dry mustard}
+O289	mustard	1
+S58	ground
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{paprika}
+O314	paprika	1
+S58	ground
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+M54	pour*	1:42	1:53
+O46	bowl	0
+S23	contains	{cheddar,gruyere,mustard,paprika,black pepper}
 //
-O2	mixing bowl	0
-S182	contains	{gruyere,cheddar}
-O2	bowl	1
-S182	contains	{mustard}
-O21	mustard	1
-S43	dried
-S257	ground
-S33	in	[bowl]
-M64	pour	1:48	1:49
-O2	mixing bowl	0
-S182	contains	{gruyere,cheddar,mustard}
-O21	mustard	1
-S43	dried
-S257	ground
-S33	in	[mixing bowl]
-O2	bowl	1
-S43	empty
-S43	dirty
+O46	bowl	0
+S23	contains	{cheddar,gruyere,mustard,paprika,black pepper}
+O289	mustard	1
+S58	ground
+S65	in	[bowl]
+O314	paprika	1
+S58	ground
+S65	in	[bowl]
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+O77	cheddar	1
+S56	grated
+S65	in	[bowl]
+O219	gruyere	1
+S56	grated
+S65	in	[bowl]
+O416	spoon	1
+S16	clean
+M46	mix	1:55	2:02
+O46	bowl	0
+S23	contains	{cheese}
+O78	cheese	0
+S107	seasoned	{mustard,paprika,black pepper}
+S65	in	[bowl]
 //
-O2	mixing bowl	0
-S182	contains	{gruyere,cheddar,mustard}
-O2	bowl	1
-S182	contains	{paprika}
-O21	paprika	1
-S43	dried
-S257	ground
-S33	in	[bowl]
-M64	pour	1:50	1:51
-O2	mixing bowl	0
-S182	contains	{gruyere,cheddar,mustard,paprika}
-O21	paprika	1
-S43	dried
-S257	ground
-S33	in	[mixing bowl]
-O2	bowl	1
-S43	empty
-S43	dirty
+O46	bowl	0
+S23	contains	{cheese}
+O78	cheese	1
+S107	seasoned	{mustard,paprika,black pepper}
+S65	in	[bowl]
+O214	grill spatula	0
+S16	clean
+M83	sprinkle	2:21	2:31
+O214	grill spatula	0
+S23	contains	{cheese}
+O78	cheese	1
+S107	seasoned	{mustard,paprika,black pepper}
+S81	on	[grill spatula]
 //
-O2	mixing bowl	0
-S182	contains	{gruyere,cheddar,mustard,paprika}
-O2	bowl	1
-S182	contains	{black pepper}
-O19	black pepper	1
-S130	ground
-S148	in	[bowl]
-M4	pour	1:52	1:53
-O2	mixing bowl	0
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-O19	black pepper	1
-S130	ground
-S33	in	[mixing bowl]
-O2	bowl	1
-S43	empty
-S43	dirty
+O213	grill	1
+S79	off (ready)
+M44	light	Assumed	Assumed
+O213	grill	0
+S81	on
 //
-O2	mixing bowl	0
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-O21	mustard	1
-S257	ground
-S43	dried
-S33	in	[mixing bowl]
-O20	paprika	1
-S291	ground
-S4	dried
-S33	in	[mixing bowl]
-O19	black pepper	1
-S130	ground
-S33	in	[mixing bowl]
-O20	cheddar	1
-S291	grated
-S33	in	[mixing bowl]
-O20	gruyere	1
-S291	grated
-S33	in	[mixing bowl]
-M1	mix	1:55	2:02
-O27	cheese	0
-S43	mixed
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-S148	in	[mixing bowl]
+O213	grill	0
+S81	on
+O214	grill spatula	1
+S23	contains	{cheese}
+M50	pick-and-place	2:31	2:43
+O213	grill	0
+S81	on
+S23	contains	{grill spatula}
+O214	grill spatula	1
+S23	contains	{cheese}
+S81	on	[grill]
 //
-O2	mixing bowl	0
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-O27	cheese	1
-S43	mixed
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-S148	in	[mixing bowl]
-O37	grill spatula	0
-S125	clean
-M0	sprinkle	2:21	2:31
-O37	grill spatula	0
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-O27	cheese	1
-S43	mixed
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-S148	on	[grill spatula]
-O2	mixing bowl	1
-S43	empty
-S43	dirty
+O213	grill	0
+S81	on
+S23	contains	{grill spatula}
+O48	bread	0
+S117	sliced
+O117	cooking spray	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[spray bottle]
+M81	spray	2:56	3:04
+O48	bread	0
+S23	contains	{olive oil}
+S81	on	[grill]
+O213	grill	0
+S81	on
+S23	contains	{bread}
+O296	olive oil	1
+S81	on	[bread]
 //
-O23	grill	1
-S215	off (ready)
-M47	light	Assumed	Assumed
-O23	grill	0
-S139	on
+O213	grill	0
+S81	on
+S23	contains	{grill spatula}
+O214	grill spatula	0
+S23	contains	{cheese}
+S81	on	[grill]
+O78	cheese	0
+S23	contains	{cheese}
+S81	on	[grill spatula]
+M41	heat	3:08	3:17
+O214	grill spatula	0
+S23	contains	{cheese}
+S81	on	[grill]
+O78	cheese	0
+S23	contains	{cheese}
+S74	melted
+S81	on	[grill spatula]
 //
-O23	grill	0
-S139	on
-O37	grill spatula	1
-S185	contains	{cheese}
-M0	pick-and-place	2:31	2:43
-O23	grill	0
-S139	on
-S296	contains	{grill spatula}
-O37	grill spatula	1
-S185	contains	{cheese}
-S148	on	[grill]
+O213	grill	0
+S81	on
+S23	contains	{bread}
+O452	tongs	1
+S16	clean
+O48	bread	0
+S23	contains	{olive oil}
+S81	on	[grill]
+M32	flip	3:18	3:24
+O452	tongs	1
+S38	dirty
+O48	bread	0
+S130	toasted
+S81	on	[grill]
 //
-O37	plate	0
-S185	contains	{bread}
-O12	bread	0
-S290	sliced
-S4	on	[plate]
-O110	cooking spray	1
-S182	contains	{olive oil}
-O17	olive oil	1
-S4	liquid
-S169	in	[spray bottle]
-M13	spray	2:56	3:04
-O12	bread	0
-S43	sliced
-S216	contains	{olive oil}
-S148	on	[plate]
-O17	olive oil	1
-S3	liquid
-S169	on	[bread]
+O1	aluminium foil	1
+S113	sheet
+O435	table	0
+S41	empty
+M51	place	Assumed	Assumed
+O1	aluminium foil	1
+S81	on	[surface]
+O435	table	0
+S26	covered	{aluminium foil}
 //
-O37	plate	0
-S185	contains	{bread}
-O12	bread	1
-S290	sliced
-S216	contains	{olive oil}
-S4	on	[plate]
-O23	grill	0
-S139	on
-O3	tongs	1
-S3	clean
-M0	pick-and-place	3:06	3:17
-O12	bread	1
-S290	sliced
-S216	contains	{olive oil}
-S4	on	[grill]
-O23	grill	0
-S139	on
-S43	contains	{bread}
-O37	plate	0
-S185	empty
-S43	dirty
+O213	grill	0
+S81	on
+S23	contains	{bread}
+O48	bread	1
+S130	toasted
+S81	on	[grill]
+O1	aluminium foil	1
+S81	on	[surface]
+O452	tongs	1
+S16	clean
+M50	pick-and-place	3:31	3:36
+O213	grill	0
+S81	on
+O48	bread	0
+S130	toasted
+S81	on	[aluminium foil]
+O1	aluminium foil	0
+S23	contains	{bread}
 //
-O23	grill	0
-S139	on
-S43	contains	{bread}
-O12	bread	0
-S290	sliced
-S216	contains	{olive oil}
-S4	on	[grill]
-M0	heat	Assumed	Assumed
-O12	bread	0
-S290	sliced
-S43	partly toasted
-S216	contains	{olive oil}
-S4	on	[grill]
+O214	grill spatula	0
+S23	contains	{cheese}
+S81	on	[grill]
+O78	cheese	0
+S74	melted
+S81	on	[grill spatula]
+O452	tongs	1
+S16	clean
+O48	bread	0
+S130	toasted
+S81	on	[aluminium foil]
+M70	scoop and pour	3:48	3:51
+O214	grill spatula	0
+S38	dirty
+O48	bread	0
+S23	contains	{cheese}
+S81	on	[aluminium foil]
+O78	cheese	1
+S74	melted
+S81	on	[bread]
 //
-O23	grill	0
-S139	on
-S43	contains	{bread}
-O12	bread	1
-S290	sliced
-S43	partly toasted
-S216	contains	{olive oil}
-S4	on	[grill]
-O3	tongs	1
-S3	clean
-M0	flip	3:19	3:23
-O12	bread	1
-S290	sliced
-S43	partly toasted
-S43	flipped
-S216	contains	{olive oil}
-S4	on	[grill]
+O48	bread	0
+S130	toasted
+S81	on	[aluminium foil]
+O48	bread	1
+S23	contains	{cheese}
+S81	on	[aluminium foil]
+O1	aluminium foil	0
+S23	contains	{bread}
+M50	pick-and-place	3:52	3:53
+O379	sandwich	1
+S81	on	[aluminium foil]
+O1	aluminium foil	0
+S23	contains	{sandwich}
 //
-O23	grill	0
-S139	on
-S296	contains	{grill spatula}
-O37	grill spatula	0
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-S148	on	[grill]
-O27	cheese	0
-S43	mixed
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-S148	on	[grill spatula]
-M0	heat	Assumed	Assumed
-O27	cheese	0
-S43	melted
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-S148	on	[grill spatula]
+O379	sandwich	1
+S81	on	[aluminium foil]
+O1	aluminium foil	0
+S23	contains	{sandwich}
+M97	wrap	3:54	3:59
+O1	aluminium foil	0
+S27	covering	{sandwich}
+O379	sandwich	1
+S26	covered	[aluminium foil]
+S66	incomplete
 //
-O23	grill	0
-S139	on
-S296	contains	{bread}
-O12	bread	1
-S290	sliced
-S43	partly toasted
-S43	flipped
-S216	contains	{olive oil}
-S4	on	[grill]
-O41	tongs	1
-S51	clean
-M11	flip	3:18	3:24
-O12	bread	1
-S290	sliced
-S43	toasted
-S216	contains	{olive oil}
-S4	on	[grill]
+O1	aluminium foil	0
+S27	covering	{sandwich}
+O379	sandwich	1
+S26	covered	[aluminium foil]
+S66	incomplete
+O213	grill	0
+S81	on
+M50	pick-and-place	3:59	4:05
+O213	grill	0
+S81	on
+S142	with	[sandwich]
+O379	sandwich	1
+S26	covered	[aluminium foil]
+S66	incomplete
+S81	on	[grill]
 //
-O32	box	1
-S43	contains	{aluminium foil}
-O367	aluminium foil	1
-S212	sheet
-S24	in	[box]
-O41	surface	0
-S43	empty
-M4	tear and place	Assumed	Assumed
-O367	aluminium foil	1
-S212	sheet
-S212	on	[surface]
-O41	surface	0
-S43	covered	[aluminium foil]
+O213	grill	0
+S81	on
+S142	with	[sandwich]
+O379	sandwich	1
+S26	covered	[aluminium foil]
+S81	on	[grill]
+S66	incomplete
+M41	heat	Assumed	Assumed
+O379	sandwich	1
+S26	covered	[aluminium foil]
+S81	on	[grill]
 //
-O23	grill	0
-S139	on
-S296	contains	{bread}
-O12	bread	1
-S290	sliced
-S43	toasted
-S216	contains	{olive oil}
-S148	on	[grill]
-O367	aluminium foil	0
-S43	sheet
-S212	on	[surface]
-O41	tongs	1
-S51	clean
-M0	remove	3:31	3:36
-O23	grill	0
-S139	on
-O12	bread	0
-S290	sliced
-S43	toasted
-S216	contains	{olive oil}
-S212	on	[aluminium foil]
-O24	aluminium foil	0
-S43	sheet
-S188	contains	{bread}
+O213	grill	0
+S81	on
+S142	with	[sandwich]
+O344	plate	0
+S41	empty
+O379	sandwich	1
+S26	covered	[aluminium foil]
+S81	on	[grill]
+O452	tongs	1
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O213	grill	0
+S81	on
+O344	plate	0
+S23	contains	{sandwich}
+O379	sandwich	1
+S26	covered	[aluminium foil]
+S81	on	[plate]
 //
-O37	grill spatula	0
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-S148	on	[grill]
-O27	cheese	0
-S43	melted
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-S148	on	[grill spatula]
-O12	bread	0
-S290	sliced
-S43	toasted
-S216	contains	{olive oil}
-S223	on	[aluminium foil]
-M4	scoop and pour	3:48	3:51
-O12	bread	0
-S290	sliced
-S43	toasted
-S216	contains	{olive oil,cheese}
-S223	on	[aluminium foil]
-O27	cheese	0
-S43	melted
-S182	contains	{gruyere,cheddar,mustard,paprika,black pepper}
-S148	on	[bread]
-O37	grill spatula	0
-S94	dirty
-//
-O24	aluminium foil	0
-S43	sheet
-S188	contains	{bread}
-O12	bread	1
-S290	sliced
-S43	toasted
-S216	contains	{olive oil}
-S223	on	[aluminium foil]
-O12	bread	0
-S290	sliced
-S43	toasted
-S216	contains	{olive oil,cheese}
-S223	on	[aluminium foil]
-M0	pick-and-place	3:52	3:53
-O24	aluminium foil	0
-S188	contains	{sandwich}
-O12	grilled cheese sandwich	1	!
-S43	toasted
-S182	contains	{bread,olive oil,gruyere,cheddar,mustard,paprika,black pepper}
-S223	on	[aluminium foil]
+O344	plate	0
+S23	contains	{sandwich}
+O379	sandwich	1
+S26	covered	[aluminium foil]
+S81	on	[plate]
+M94	unwrap	Assumed	Assumed
+O379	sandwich	1
+S81	on	[plate]
+O215	grilled cheese sandwich	1	4
+S23	contains	{bread,gruyere,cheddar,mustard,paprika,black pepper}
+S81	on	[plate]
 //

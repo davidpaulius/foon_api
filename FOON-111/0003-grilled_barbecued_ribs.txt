@@ -1,240 +1,212 @@
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0003-grilled_barbecued_ribs.mp4
 # Source:	https://www.youtube.com/watch?v=VqBze3vr5xs
 //
-O36	packet	0
-S43	contains	{ribs}
-O69	baking tray	0
-S98	empty
-O100	ribs	1
-S313	raw
-S43	meat
-S21	in	[packet]
-M0	pick-and-place	Assumed	Assumed
-O69	baking tray	0
-S188	contains	{ribs}
-O100	ribs	1
-S313	raw
-S43	meat
-S313	on	[baking tray]
+O308	packet	0
+S23	contains	{rib}
+O363	rib	1
+S100	raw
+S65	in	[packet]
+O240	knife	1
+S16	clean
+M48	open	Assumed	Assumed
+O308	packet	0
+S23	contains	{rib}
+S83	opened
+O240	knife	1
+S38	dirty
 //
-O2	bowl	0
-S182	contains	{salt}
-O18	salt	1
-S143	granulated
-S148	in	[bowl]
-O100	ribs	0
-S313	raw
-S43	meat
-S313	on	[baking tray]
-M2	sprinkle	0:17	0:22
-O100	ribs	0
-S313	raw
-S43	meat
-S43	contains	{salt}
-S313	on	[baking tray]
-O18	salt	1
-S143	granulated
-S148	on	[ribs]
+O308	packet	0
+S23	contains	{rib}
+S83	opened
+O12	baking tray	0
+S41	empty
+O363	rib	1
+S100	raw
+S65	in	[packet]
+M50	pick-and-place	Assumed	Assumed
+O12	baking tray	0
+S23	contains	{rib}
+O363	rib	1
+S100	raw
+S81	on	[baking tray]
 //
-O2	bowl	0
-S182	contains	{black pepper}
-O19	black pepper	1
-S130	ground
-S313	in	[bowl]
-O100	ribs	0
-S313	raw
-S43	meat
-S43	contains	{salt}
-S313	on	[baking tray]
-M2	sprinkle	0:22	0:25
-O100	ribs	0
-S313	raw
-S43	meat
-S43	contains	{salt,black pepper}
-S313	on	[baking tray]
-O19	black pepper	1
-S130	ground
-S313	on	[ribs]
+O46	bowl	0
+S23	contains	{black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O363	rib	1
+S100	raw
+S81	on	[baking tray]
+M0	add*	0:17	0:25
+O363	rib	1
+S100	raw
+S107	seasoned	{salt,black pepper}
+S81	on	[baking tray]
 //
-O14	oven	0
-S218	off (ready)
-M43	turn on	Assumed	Assumed
-O14	oven	0
-S218	on
+O306	oven	0
+S79	off (ready)
+M92	turn on	Assumed	Assumed
+O306	oven	0
+S81	on
 //
-O69	baking tray	1
-S188	contains	{ribs}
-O14	oven	0
-S218	on
-M0	put inside	<0:42-0:47>
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-O69	baking tray	1
-S188	contains	{ribs}
-S313	in	[oven]
+O12	baking tray	1
+S23	contains	{rib}
+O306	oven	0
+S81	on
+M62	put inside	0:42:50	0:4:50
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O12	baking tray	1
+S23	contains	{rib}
+S65	in	[oven]
 //
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-O69	baking tray	1
-S188	contains	{ribs}
-S313	in	[oven]
-O100	ribs	0
-S313	raw
-S43	meat
-S43	contains	{salt,black pepper}
-S313	on	[baking tray]
-M39	bake	Assumed	Assumed
-O100	ribs	0
-S313	partly cooked
-S43	meat
-S43	contains	{salt,black pepper}
-S313	on	[baking tray]
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O12	baking tray	1
+S23	contains	{rib}
+S65	in	[oven]
+O363	rib	0
+S107	seasoned	{salt,black pepper}
+S100	raw
+S81	on	[baking tray]
+M2	bake	Assumed	Assumed
+O363	rib	0
+S86	partly cooked
+S81	on	[baking tray]
 //
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-M39	turn off	Assumed	Assumed
-O14	oven	0
-S218	off
-S7	with	[baking tray]
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+M91	turn off	Assumed	Assumed
+O306	oven	0
+S78	off
+S142	with	[baking tray]
 //
-O14	oven	0
-S218	off
-S7	with	[baking tray]
-O69	baking tray	1
-S188	contains	{ribs}
-S313	in	[oven]
-M0	remove	Assumed	Assumed
-O14	oven	0
-S218	off
-O69	baking tray	1
-S188	contains	{ribs}
+O306	oven	0
+S78	off
+S142	with	[baking tray]
+O12	baking tray	1
+S23	contains	{rib}
+S65	in	[oven]
+M63	remove	Assumed	Assumed
+O306	oven	0
+S78	off
+O12	baking tray	1
+S23	contains	{rib}
 //
-O23	grill	0
-S215	off (ready)
-M47	light	Assumed	Assumed
-O23	grill	0
-S139	on
+O213	grill	0
+S79	off (ready)
+M44	light	Assumed	Assumed
+O213	grill	0
+S81	on
 //
-O23	grill	0
-S139	on
-O100	ribs	1
-S313	partly cooked
-S43	meat
-S43	contains	{salt,black pepper}
-S313	on	[baking tray]
-O41	tongs	1
-S51	clean
-M0	pick-and-place	<1:19-1:29>
-O23	grill	0
-S31	on
-S188	contains	{ribs}
-O100	ribs	0
-S313	partly cooked
-S43	meat
-S43	contains	{salt,black pepper}
-S313	on	[grill]
+O213	grill	0
+S81	on
+O363	rib	1
+S86	partly cooked
+S81	on	[baking tray]
+O452	tongs	1
+S16	clean
+M50	pick-and-place	1:19	1:29
+O213	grill	0
+S81	on
+S23	contains	{rib}
+O363	rib	1
+S86	partly cooked
+S81	on	[grill]
 //
-O2	bowl	0
-S98	empty
-O41	bottle	1
-S43	contains	{barbecue sauce}
-O174	barbecue sauce	1
-S43	thick liquid
-S147	in	[bottle]
-M4	pour*	Assumed	Assumed
-O2	bowl	0
-S182	contains	{barbecue sauce}
-O174	barbecue sauce	1
-S43	thick liquid
-S147	in	[bowl]
+O46	bowl	0
+S41	empty
+O45	bottle	1
+S23	contains	{barbecue sauce}
+O16	barbecue sauce	1
+S65	in	[bottle]
+M54	pour*	Assumed	Assumed
+O46	bowl	0
+S23	contains	{barbecue sauce}
+O16	barbecue sauce	1
+S65	in	[bowl]
 //
-O2	bowl	1
-S182	contains	{barbecue sauce}
-O174	barbecue sauce	1
-S43	thick liquid
-S147	in	[bowl]
-O100	ribs	0
-S313	partly cooked
-S43	meat
-S43	contains	{salt,black pepper}
-S313	on	[grill]
-O93	brush	1
-S51	clean
-M29	brush	<1:31-1:40>
-O100	ribs	0
-S313	partly cooked
-S43	meat
-S43	contains	{salt,black pepper,barbecue sauce}
-S313	on	[grill]
-O174	barbecue sauce	1
-S43	thick liquid
-S147	on	[ribs]
+O46	bowl	1
+S23	contains	{barbecue sauce}
+O16	barbecue sauce	1
+S65	in	[bowl]
+O363	rib	0
+S86	partly cooked
+S81	on	[grill]
+O58	brush	1
+S16	clean
+M8	brush	1:31	1:40
+O363	rib	0
+S86	partly cooked
+S19	coated	{barbecue sauce}
+S81	on	[grill]
 //
-O23	grill	0
-S31	on
-S188	contains	{ribs}
-M22	close	<1:58-2:01>
-O23	grill	0
-S31	on
-S43	closed
-S188	contains	{ribs}
+O213	grill	0
+S81	on
+S23	contains	{rib}
+M11	close	1:58	2:01
+O213	grill	0
+S81	on
+S17	closed
+S23	contains	{rib}
 //
-O23	grill	0
-S31	on
-S43	closed
-S188	contains	{ribs}
-O100	ribs	0
-S313	partly cooked
-S43	meat
-S43	contains	{salt,black pepper,barbecue sauce}
-S313	on	[grill]
-M40	cook	Assumed	Assumed
-O100	ribs	0
-S313	cooked
-S43	meat
-S43	contains	{salt,black pepper,barbecue sauce}
-S313	on	[grill]
+O213	grill	0
+S81	on
+S17	closed
+S23	contains	{rib}
+O363	rib	0
+S86	partly cooked
+S19	coated	{barbecue sauce}
+S81	on	[grill]
+M14	cook	Assumed	Assumed
+O363	rib	0
+S24	cooked
+S19	coated	{barbecue sauce}
+S81	on	[grill]
 //
-O23	grill	0
-S31	on
-S43	closed
-S188	contains	{ribs}
-M4	open	Assumed	Assumed
-O23	grill	0
-S31	on
-S188	contains	{ribs}
+O213	grill	0
+S81	on
+S17	closed
+S23	contains	{rib}
+M48	open	Assumed	Assumed
+O213	grill	0
+S81	on
+S23	contains	{rib}
 //
-O23	grill	0
-S31	on
-S188	contains	{ribs}
-M39	turn off	Assumed	Assumed
-O23	grill	0
-S31	off
-S188	contains	{ribs}
+O213	grill	0
+S81	on
+S23	contains	{rib}
+M91	turn off	Assumed	Assumed
+O213	grill	0
+S78	off
+S23	contains	{rib}
 //
-O23	grill	0
-S31	off
-S188	contains	{ribs}
-O100	ribs	1
-S313	cooked
-S43	meat
-S43	contains	{salt,black pepper,barbecue sauce}
-S313	on	[grill]
-O41	tongs	1
-S51	clean
-O69	baking tray	0
-S98	empty
-M0	pick-and-place	<2:38-2:48>
-O69	baking tray	0
-S10	contains	{ribs}
-O100	ribs	0	!
-S313	cooked
-S43	meat
-S43	contains	{salt,black pepper,barbecue sauce}
-S313	on	[baking tray]
-O23	grill	0
-S31	off
+O213	grill	0
+S78	off
+S23	contains	{rib}
+O363	rib	0
+S24	cooked
+S19	coated	{barbecue sauce}
+S81	on	[grill]
+O452	tongs	1
+S16	clean
+O12	baking tray	0
+S41	empty
+M50	pick-and-place	2:38	2:48
+O12	baking tray	0
+S23	contains	{rib}
+O17	barbecued ribs	1	18
+S24	cooked
+S81	on	[baking tray]
+O213	grill	0
+S78	off
 //

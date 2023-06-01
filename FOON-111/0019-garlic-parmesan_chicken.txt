@@ -1,271 +1,271 @@
 # Source:	https://www.youtube.com/watch?v=KK5pVWejamQ
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0019-garlic-parmesan_chicken.mp4 
 //
-O69	baking tray	0
-S98	empty
-O110	spray can	1
-S140	contains	{vegetable oil}
-O30	vegetable oil	1
-S43	in	[spray can]
-M13	spray	0:22	0:24
-O69	baking tray	0
-S124	coated	[vegetable oil]
-O30	vegetable oil	1
-S43	coating	[baking tray]
+O12	baking tray	0
+S41	empty
+O417	spray can	1
+S23	contains	{vegetable oil}
+O468	vegetable oil	1
+S65	in	[spray can]
+M81	spray	0:22	0:24
+O12	baking tray	0
+S19	coated	[vegetable oil]
+O468	vegetable oil	1
+S20	coating	[baking tray]
 //
-O30	garlic	0
-S53	clove
-S43	on	[cutting board]
-O11	knife	1
-S51	clean
-M8	cut	0:26	0:29
-O30	garlic	0
-S50	chopped
-S43	on	[cutting board]
+O192	garlic	0
+S18	clove
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	0:26	0:29
+O192	garlic	0
+S14	chopped
+S81	on	[cutting board]
 //
-O2	bowl	0
-S98	empty
-O2	bottle	1
-S43	contains	{olive oil}
-O17	olive oil	1
-S147	in	[bottle]
-O30	garlic	1
-S50	chopped
-S43	on	[cutting board]
-M4	add*	0:31	0:38
-O2	bowl	0
-S182	contains	{olive oil}
-O17	olive oil	1
-S148	in	[bowl]
-O30	garlic	1
-S50	chopped
-S148	in	[bowl]
+O46	bowl	0
+S41	empty
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+O192	garlic	1
+S14	chopped
+S81	on	[cutting board]
+M0	add*	0:31	0:38
+O46	bowl	0
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bowl]
+O192	garlic	1
+S14	chopped
+S65	in	[bowl]
 //
-O190	container	0
-S182	contains	{breadcrumb}
-M0	open	Assumed	Assumed
-O190	container	0
-S43	opened
-S182	contains	{breadcrumb}
+O114	container	0
+S23	contains	{breadcrumb}
+M48	open	Assumed	Assumed
+O114	container	0
+S83	opened
+S23	contains	{breadcrumb}
 //
-O190	container	1
-S43	opened
-S182	contains	{breadcrumb}
-O190	measuring cup	0
-S182	empty
-O172	breadcrumb	1
-S157	in	[container]
-M0	pour	Assumed	Assumed
-O190	measuring cup	0
-S182	contains	{breadcrumb}
-O172	breadcrumb	1
-S157	in	[measuring cup]
+O114	container	1
+S83	opened
+S23	contains	{breadcrumb}
+O270	measuring cup	0
+S41	empty
+O50	breadcrumb	1
+S65	in	[container]
+M54	pour	Assumed	Assumed
+O270	measuring cup	0
+S23	contains	{breadcrumb}
+O50	breadcrumb	1
+S65	in	[measuring cup]
 //
-O2	bowl	0
-S98	empty
-O190	measuring cup	1
-S182	contains	{breadcrumb}
-O172	breadcrumb	1
-S157	in	[measuring cup]
-O2	container	1
-S98	contains	{parmesan}
-O172	parmesan	1
-S43	grated
-S157	in 	[container]
-O22	spoon	1
-S182	contains	{basil}
-O34	basil	1
-S43	dried
-S43	leaf
-S168	in	[spoon]
-O22	spoon	1
-S182	contains	{black pepper}
-O19	black pepper	1
-S313	ground
-S168	in	[spoon]
-M4	pour*	0:39	0:55
-O2	bowl	0
-S182	contains	{breadcrumb,basil,black pepper,parmesan}
-O172	breadcrumb	0
-S148	in	[bowl]
-O34	basil	0
-S43	dried
-S43	leaf
-S168	in	[bowl]
-O19	black pepper	0
-S313	ground
-S168	in	[bowl]
-O172	breadcrumb	0
-S157	in	[bowl]
+O46	bowl	0
+S41	empty
+O270	measuring cup	1
+S23	contains	{breadcrumb}
+O50	breadcrumb	1
+S65	in	[measuring cup]
+O114	container	1
+S23	contains	{parmesan}
+O316	parmesan	1
+S56	grated
+S65	in	[container]
+O416	spoon	1
+S23	contains	{basil}
+O18	basil	1
+S40	dried
+S69	leaf
+S65	in	[spoon]
+O416	spoon	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[spoon]
+M54	pour*	0:39	0:55
+O46	bowl	0
+S23	contains	{breadcrumb,basil,black pepper,parmesan}
+O50	breadcrumb	0
+S65	in	[bowl]
+O18	basil	0
+S40	dried
+S69	leaf
+S65	in	[bowl]
+O34	black pepper	0
+S58	ground
+S65	in	[bowl]
+O50	breadcrumb	0
+S65	in	[bowl]
 //
-O34	basil	0
-S43	dried
-S43	leaf
-S155	in	[jar]
-O22	spoon	1
-S51	empty
-O67	jar	0
-S182	contains	{basil}
-M3	scoop	0:46	0:47
-O22	spoon	1
-S182	contains	{basil}
-O34	basil	1
-S43	dried
-S168	in	[spoon]
+O18	basil	0
+S40	dried
+S69	leaf
+S65	in	[jar]
+O416	spoon	1
+S41	empty
+O235	jar	0
+S23	contains	{basil}
+M69	scoop	0:46	0:47
+O416	spoon	1
+S23	contains	{basil}
+O18	basil	1
+S40	dried
+S65	in	[spoon]
 //
-O22	spoon	1
-S51	empty
-O2	container	0
-S182	contains	{black pepper}
-O19	black pepper	0
-S130	ground
-S43	in	[container]
-M3	scoop	0:49	0:51
-O22	spoon	1
-S182	contains	{black pepper}
-O19	black pepper	0
-S313	ground
-S168	in	[spoon]
+O416	spoon	1
+S41	empty
+O114	container	0
+S23	contains	{black pepper}
+O34	black pepper	0
+S58	ground
+S65	in	[container]
+M69	scoop	0:49	0:51
+O416	spoon	1
+S23	contains	{black pepper}
+O34	black pepper	0
+S58	ground
+S65	in	[spoon]
 //
-O2	bowl	0
-S182	contains	{breadcrumb,basil,black pepper,parmesan}
-O172	breadcrumb	1
-S148	in	[bowl]
-O34	basil	1
-S43	dried
-S43	leaf
-S168	in	[bowl]
-O19	black pepper	1
-S313	ground
-S168	in	[bowl]
-O172	breadcrumb	1
-S157	in	[bowl]
-O22	spoon	1
-S51	clean
-M1	mix*	0:55	0:58
-O2	bowl	0
-S182	contains	{breadcrumb mixture}
-O172	breadcrumb mixture	1
-S157	in	[bowl]
+O46	bowl	0
+S23	contains	{breadcrumb,basil,black pepper,parmesan}
+O50	breadcrumb	1
+S65	in	[bowl]
+O18	basil	1
+S40	dried
+S69	leaf
+S65	in	[bowl]
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+O50	breadcrumb	1
+S65	in	[bowl]
+O416	spoon	1
+S16	clean
+M46	mix*	0:55	0:58
+O46	bowl	0
+S23	contains	{breadcrumb mixture}
+O51	breadcrumb mixture	1
+S65	in	[bowl]
 //
-O41	tongs	1
-O88	chicken	1
-S313	raw
-S43	on	[plate]
-O2	bowl	0
-S185	contains	{olive oil,garlic}
-M26	coat	0:59	1:06
-O88	chicken	0
-S313	raw
-S216	coated	[olive oil,garlic]
-S43	in	[bowl]
+O452	tongs	1
+O82	chicken	1
+S100	raw
+S81	on	[plate]
+O46	bowl	0
+S23	contains	{olive oil,garlic}
+M12	coat	0:59	1:06
+O82	chicken	0
+S100	raw
+S19	coated	[olive oil,garlic]
+S65	in	[bowl]
 //
-O41	tongs	1
-O88	chicken	1
-S313	raw
-S216	coated	[olive oil,garlic]
-S43	in	[bowl]
-O2	bowl	0
-S182	contains	{breadcrumb mixture}
-O172	breadcrumb mixture	0
-S157	in	[bowl]
-M26	coat	1:06	1:18
-O88	chicken	0
-S313	raw
-S27	coated	[breadcrumb mixture]
-S157	in	[bowl]
-O172	breadcrumb mixture	0
-S157	coating	[chicken]
+O452	tongs	1
+O82	chicken	1
+S100	raw
+S19	coated	[olive oil,garlic]
+S65	in	[bowl]
+O46	bowl	0
+S23	contains	{breadcrumb mixture}
+O51	breadcrumb mixture	0
+S65	in	[bowl]
+M12	coat	1:06	1:18
+O82	chicken	0
+S100	raw
+S19	coated	[breadcrumb mixture]
+S65	in	[bowl]
+O51	breadcrumb mixture	0
+S20	coating	[chicken]
 //
-O41	tongs	1
-O88	chicken	1
-S313	raw
-S27	coated	[breadcrumb mixture]
-S157	in	[bowl]
-O69	baking tray	0
-S124	coated	[vegetable oil]
-M0	pick-and-place	1:18	1:23
-O69	baking tray	0
-S188	contains	{chicken}
-O88	chicken	1
-S313	raw
-S27	coated	[breadcrumb mixture]
-S168	on	[baking tray]
+O452	tongs	1
+O82	chicken	1
+S100	raw
+S19	coated	[breadcrumb mixture]
+S65	in	[bowl]
+O12	baking tray	0
+S19	coated	[vegetable oil]
+M50	pick-and-place	1:18	1:23
+O12	baking tray	0
+S23	contains	{chicken}
+O82	chicken	1
+S100	raw
+S19	coated	[breadcrumb mixture]
+S81	on	[baking tray]
 //
-O69	baking tray	0
-S188	contains	{chicken}
-O14	oven	0
-S218	on
-M0	put inside	1:27	1:32
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-O69	baking tray	1
-S188	contains	{chicken}
-S43	in	[oven]
+O12	baking tray	0
+S23	contains	{chicken}
+O306	oven	0
+S81	on
+M62	put inside	1:27	1:32
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O12	baking tray	1
+S23	contains	{chicken}
+S65	in	[oven]
 //
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-O69	baking tray	1
-S188	contains	{chicken}
-S43	in	[oven]
-O88	chicken	1
-S27	coated	[breadcrumb mixture]
-S313	raw
-S168	on	[baking tray]
-M39	bake	Assumed	Assumed
-O88	chicken	1
-S27	baked
-S168	on	[baking tray]
-O88	garlic-parmesan chicken	1
-S168	on	[baking tray]
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O12	baking tray	1
+S23	contains	{chicken}
+S65	in	[oven]
+O82	chicken	1
+S19	coated	[breadcrumb mixture]
+S100	raw
+S81	on	[baking tray]
+M2	bake	Assumed	Assumed
+O82	chicken	1
+S1	baked
+S81	on	[baking tray]
+O199	garlic-parmesan chicken	1
+S81	on	[baking tray]
 //
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-M0	turn off	Assumed	Assumed
-O14	oven	0
-S218	off
-S7	with	[baking tray]
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+M91	turn off	Assumed	Assumed
+O306	oven	0
+S78	off
+S142	with	[baking tray]
 //
-O14	oven	0
-S218	off
-S7	with	[baking tray]
-O69	baking tray	1
-S188	contains	{chicken}
-S43	in	[oven]
-M4	remove	Assumed	Assumed
-O14	oven	0
-S218	off
-O69	baking tray	1
-S188	contains	{chicken}
+O306	oven	0
+S78	off
+S142	with	[baking tray]
+O12	baking tray	1
+S23	contains	{chicken}
+S65	in	[oven]
+M63	remove	Assumed	Assumed
+O306	oven	0
+S78	off
+O12	baking tray	1
+S23	contains	{chicken}
 //
-O88	chicken	1
-S27	baked
-S168	on	[baking tray]
-O161	parmesan	1
-S123	grated
-S43	in	[container]
-M2	sprinkle	1:35	1:41
-O88	garlic-parmesan chicken	0
-S43	on	[baking tray]
-O88	chicken	1
-S27	baked
-S43	coated	[parmesan]
-S168	on	[baking tray]
+O82	chicken	1
+S1	baked
+S81	on	[baking tray]
+O316	parmesan	1
+S56	grated
+S65	in	[container]
+M83	sprinkle	1:35	1:41
+O199	garlic-parmesan chicken	0
+S81	on	[baking tray]
+O82	chicken	1
+S1	baked
+S19	coated	[parmesan]
+S81	on	[baking tray]
 //
-O69	baking tray	0
-S188	contains	{chicken}
-O88	garlic-parmesan chicken	1
-S43	on	[baking tray]
-O34	tongs	1
-O32	plate	0
-S313	empty
-M0	pick-and-place	Assumed	Assumed
-O32	plate	0
-S313	contains	{garlic-parmesan chicken}
-O88	garlic-parmesan chicken	1	!
-S182	contains	{breadcrumb,basil,black pepper,parmesan,garlic,olive oil,chicken}
-S43	on	[plate]
+O12	baking tray	0
+S23	contains	{chicken}
+O199	garlic-parmesan chicken	1
+S81	on	[baking tray]
+O452	tongs	1
+O344	plate	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains	{garlic-parmesan chicken}
+O199	garlic-parmesan chicken	1	20
+S23	contains	{breadcrumb,basil,black pepper,parmesan,garlic,olive oil,chicken}
+S81	on	[plate]
 //

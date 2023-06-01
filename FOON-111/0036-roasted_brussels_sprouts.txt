@@ -1,236 +1,236 @@
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0036-roasted_brussel_sprouts.mp4
 # Source:	https://www.youtube.com/watch?v=snQuelNk5cw
 //
-O53	brussel sprout	1
-S94	whole
-S43	uncooked
-S326	in	[strainer]
-O105	strainer	0
-S143	empty
-M0	pick-and-place	Assumed	Assumed
-O105	strainer	0
-S182	contains	{brussel sprout}
-O53	brussel sprout	1
-S94	whole
-S43	uncooked
-S326	in	[strainer]
+O59	brussel sprout	1
+S141	whole
+S133	uncooked
+S65	in	[strainer]
+O426	strainer	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O426	strainer	0
+S23	contains	{brussel sprout}
+O59	brussel sprout	1
+S141	whole
+S133	uncooked
+S65	in	[strainer]
 //
-O2	faucet	1
-S32	on
-O23	water	0
-S43	from	[faucet]
-O105	strainer	0
-S182	contains	{brussel sprout}
-O53	brussel sprout	1
-S94	whole
-S43	uncooked
-S326	in	[strainer]
-M4	rinse	0:32	0:37
-O53	brussel sprout	1
-S32	washed
-S94	whole
-S326	in	[strainer]
+O170	faucet	1
+S81	on
+O475	water	0
+S51	from	[faucet]
+O426	strainer	0
+S23	contains	{brussel sprout}
+O59	brussel sprout	1
+S141	whole
+S133	uncooked
+S65	in	[strainer]
+M64	rinse	0:32	0:37
+O59	brussel sprout	1
+S137	washed
+S141	whole
+S65	in	[strainer]
 //
-O2	cutting board	0
-S143	clean
-O53	brussel sprout	1
-S326	whole
-S43	uncooked
-S143	washed
-S326	in	[strainer]
-M0	pick-and-place	Assumed	Assumed
-O2	cutting board	0
-S182	contains	{brussel sprout}
-O53	brussel sprout	1
-S326	whole
-S43	uncooked
-S143	washed
-S143	on	[cutting board]
+O143	cutting board	0
+S16	clean
+O59	brussel sprout	1
+S141	whole
+S133	uncooked
+S137	washed
+S65	in	[strainer]
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{brussel sprout}
+O59	brussel sprout	1
+S141	whole
+S133	uncooked
+S137	washed
+S81	on	[cutting board]
 //
-O53	brussel sprout	0
-S43	uncooked
-S326	whole
-S143	washed
-S143	on	[cutting board]
-O53	knife	1
-M8	cut	0:40	0:43
-O53	brussel sprout	0
-S51	stem removed
-S43	uncooked
-S143	washed
-S143	on	[cutting board]
+O59	brussel sprout	0
+S133	uncooked
+S141	whole
+S137	washed
+S81	on	[cutting board]
+O240	knife	1
+M20	cut	0:40	0:43
+O59	brussel sprout	0
+S126	stem removed
+S133	uncooked
+S137	washed
+S81	on	[cutting board]
 //
-O53	brussel sprout	0
-S51	stem removed
-S143	washed
-S143	on	[cutting board]
-M0	peel	0:46	0:49
-O53	brussel sprout	0
-S51	peeled
-S143	on	[cutting board]
+O59	brussel sprout	0
+S126	stem removed
+S137	washed
+S81	on	[cutting board]
+M49	peel	0:46	0:49
+O59	brussel sprout	0
+S91	peeled
+S81	on	[cutting board]
 //
-O22	spoon	1
-S51	clean
-O2	bowl	0
-S182	contains	{salt}
-O18	salt	1
-S143	granulated
-S148	in	[bowl]
-M3	scoop	1:07	1:09
-O22	spoon	1
-S182	contains	{salt}
-O18	salt	1
-S143	granulated
-S168	in	[spoon]
+O416	spoon	1
+S16	clean
+O46	bowl	0
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+M69	scoop	1:07	1:09
+O416	spoon	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[spoon]
 //
-O2	bowl	0
-S182	contains	{black pepper}
-O19	black pepper	1
-S326	ground
-S148	in	[bowl]
-O22	spoon	1
-S51	clean
-M3	scoop	Assumed	Assumed
-O22	spoon	1
-S182	contains	{black pepper}
-O19	black pepper	1
-S143	ground
-S168	in	[spoon]
+O46	bowl	0
+S23	contains	{black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+O416	spoon	1
+S16	clean
+M69	scoop	Assumed	Assumed
+O416	spoon	1
+S23	contains	{black pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[spoon]
 //
-O107	plastic bag	0
-S98	empty
-O53	brussel sprout	1
-S43	uncooked
-S51	peeled
-S143	on	[cutting board]
-O108	bottle	1
-S182	contains	{olive oil}
-O17	olive oil	1
-S147	in	[bottle]
-O22	spoon	1
-S182	contains	{salt}
-O18	salt	1
-S143	granulated
-S168	in	[spoon]
-O22	spoon	1
-S182	contains	{pepper}
-O19	black pepper	1
-S326	ground
-S168	in	[spoon]
+O342	plastic bag	0
+S41	empty
+O59	brussel sprout	1
+S133	uncooked
+S91	peeled
+S81	on	[cutting board]
+O45	bottle	1
+S23	contains	{olive oil}
+O296	olive oil	1
+S65	in	[bottle]
+O416	spoon	1
+S23	contains	{salt}
+O376	salt	1
+S55	granulated
+S65	in	[spoon]
+O416	spoon	1
+S23	contains	{pepper}
+O34	black pepper	1
+S58	ground
+S65	in	[spoon]
 M0	add*	0:54	1:15
-O107	plastic bag	0
-S182	contains	{brussel sprout,black pepper,salt,olive oil}
-O53	brussel sprout	1
-S51	peeled
-S143	in	[plastic bag]
-O19	black pepper	1
-S326	ground
-S147	in	[plastic bag]
-O18	salt	1
-S143	granulated
-S147	in	[plastic bag]
-O17	olive oil	1
-S147	in	[plastic bag]
+O342	plastic bag	0
+S23	contains	{brussel sprout,black pepper,salt,olive oil}
+O59	brussel sprout	1
+S91	peeled
+S65	in	[plastic bag]
+O34	black pepper	1
+S58	ground
+S65	in	[plastic bag]
+O376	salt	1
+S55	granulated
+S65	in	[plastic bag]
+O296	olive oil	1
+S65	in	[plastic bag]
 //
-O107	plastic bag	1
-S182	contains	{brussel sprout,black pepper,salt,olive oil}
-O53	brussel sprout	1
-S43	uncooked
-S51	peeled
-S143	in	[plastic bag]
-O19	black pepper	1
-S326	ground
-S147	in	[plastic bag]
-O18	salt	1
-S143	granulated
-S147	in	[plastic bag]
-O17	olive oil	1
-S147	in	[plastic bag]
-M1	shake*	1:16	1:22
-O107	plastic bag	1
-S182	contains	{brussel sprout}
-O53	brussel sprout	1
-S51	seasoned
-S43	uncooked
-S143	in	[plastic bag]
+O342	plastic bag	1
+S23	contains	{brussel sprout,black pepper,salt,olive oil}
+O59	brussel sprout	1
+S133	uncooked
+S91	peeled
+S65	in	[plastic bag]
+O34	black pepper	1
+S58	ground
+S65	in	[plastic bag]
+O376	salt	1
+S55	granulated
+S65	in	[plastic bag]
+O296	olive oil	1
+S65	in	[plastic bag]
+M73	shake*	1:16	1:22
+O342	plastic bag	1
+S23	contains	{brussel sprout}
+O59	brussel sprout	1
+S107	seasoned
+S133	uncooked
+S65	in	[plastic bag]
 //
-O107	plastic bag	1
-S182	contains	{brussel sprout}
-O53	brussel sprout	1
-S51	seasoned
-S43	uncooked
-S143	in	[plastic bag]
-O69	baking tray	0
-S98	empty
-M4	pour	1:23	1:26
-O69	baking tray	0
-S188	contains	{brussel sprout}
-O53	brussel sprout	1
-S143	seasoned
-S43	uncooked
-S143	in	[baking tray]
-O107	plastic bag	1
-S182	dirty
+O342	plastic bag	1
+S23	contains	{brussel sprout}
+O59	brussel sprout	1
+S107	seasoned
+S133	uncooked
+S65	in	[plastic bag]
+O12	baking tray	0
+S41	empty
+M54	pour	1:23	1:26
+O12	baking tray	0
+S23	contains	{brussel sprout}
+O59	brussel sprout	1
+S107	seasoned
+S133	uncooked
+S65	in	[baking tray]
+O342	plastic bag	1
+S38	dirty
 //
-O14	oven	0
-S218	on
-O69	baking tray	1
-S188	contains	{brussel sprout}
-M0	put inside	1:30	1:35
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-O69	baking tray	0
-S188	contains	{brussel sprout}
-S143	in	[oven]
+O306	oven	0
+S81	on
+O12	baking tray	1
+S23	contains	{brussel sprout}
+M62	put inside	1:30	1:35
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O12	baking tray	0
+S23	contains	{brussel sprout}
+S65	in	[oven]
 //
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-O69	baking tray	0
-S188	contains	{brussel sprout}
-S143	in	[oven]
-O53	brussel sprout	0
-S143	seasoned
-S43	uncooked
-S143	in	[baking tray]
-M40	bake	Assumed	Assumed
-O53	brussel sprout	1
-S143	cooked
-S143	in	[baking tray]
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O12	baking tray	0
+S23	contains	{brussel sprout}
+S65	in	[oven]
+O59	brussel sprout	0
+S107	seasoned
+S133	uncooked
+S65	in	[baking tray]
+M2	bake	Assumed	Assumed
+O59	brussel sprout	1
+S24	cooked
+S65	in	[baking tray]
 //
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-M0	turn off	Assumed	Assumed
-O14	oven	0
-S218	off
-S7	with	[baking tray]
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+M91	turn off	Assumed	Assumed
+O306	oven	0
+S78	off
+S142	with	[baking tray]
 //
-O14	oven	0
-S218	off
-S7	with	[baking tray]
-O69	baking tray	0
-S188	contains	{brussel sprout}
-S143	in	[oven]
-M0	remove	Assumed	Assumed
-O14	oven	0
-S98	off
-O69	baking tray	0
-S188	contains	{brussel sprout}
+O306	oven	0
+S78	off
+S142	with	[baking tray]
+O12	baking tray	0
+S23	contains	{brussel sprout}
+S65	in	[oven]
+M63	remove	Assumed	Assumed
+O306	oven	0
+S78	off
+O12	baking tray	0
+S23	contains	{brussel sprout}
 //
-O69	baking tray	0
-S188	contains	{brussel sprout}
-O53	brussel sprout	1
-S143	cooked
-S143	in	[baking tray]
-O41	tongs	1
-O15	plate	0
-S98	empty
-M0	pick-and-place	Assumed	Assumed
-O15	plate	0
-S266	contains	{brussel sprout}
-O53	brussel sprout	1	!
-S143	cooked
-S143	on	[plate]
+O12	baking tray	0
+S23	contains	{brussel sprout}
+O59	brussel sprout	1
+S24	cooked
+S65	in	[baking tray]
+O452	tongs	1
+O344	plate	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains	{brussel sprout}
+O59	brussel sprout	1	22
+S24	cooked
+S81	on	[plate]
 //

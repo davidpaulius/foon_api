@@ -1,399 +1,399 @@
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0020-breakfast_muffins-broke-college-recipes.mp4
 # Source:	https://www.youtube.com/watch?v=2jql8ldThao
 //
-O14	oven	0
-S215	off (ready)
-M42	turn on	0:00	0:02
-O14	oven	0
-S218	on
+O306	oven	0
+S79	off (ready)
+M92	turn on	0:00	0:02
+O306	oven	0
+S81	on
 //
-O135	muffin pan	0
-S98	empty
-O110	cooking spray	1
-S140	contains	{vegetable oil}
-O30	vegetable oil	1
-S43	in	[spray can]
-M13	spray	Assumed	Assumed
-O135	muffin pan	0
-S124	coated	[vegetable oil]
-O30	vegetable oil	1
-S43	coating	[muffin pan]
+O285	muffin pan	0
+S41	empty
+O117	cooking spray	1
+S23	contains	{vegetable oil}
+O468	vegetable oil	1
+S65	in	[spray can]
+M81	spray	Assumed	Assumed
+O285	muffin pan	0
+S19	coated	[vegetable oil]
+O468	vegetable oil	1
+S20	coating	[muffin pan]
 //
-O136	griddle	0
-S43	off (ready)
-M0	turn on	Assumed	Assumed
-O136	griddle	0
-S43	on
+O212	griddle	0
+S79	off (ready)
+M92	turn on	Assumed	Assumed
+O212	griddle	0
+S81	on
 //
-O30	packet	0
-S43	contains	{bacon}
-S313	open
-O136	griddle	0
-S98	on
-O82	bacon	1
-S313	raw
-S43	in	[packet]
-M0	pick-and-place	1:12	1:19
-O136	griddle	0
-S313	on
-S188	contains	{bacon}
-O82	bacon	1
-S313	raw
-S94	on	[griddle]
+O308	packet	0
+S23	contains	{bacon}
+S82	open
+O212	griddle	0
+S81	on
+O8	bacon	1
+S100	raw
+S65	in	[packet]
+M50	pick-and-place	1:12	1:19
+O212	griddle	0
+S81	on
+S23	contains	{bacon}
+O8	bacon	1
+S100	raw
+S81	on	[griddle]
 //
-O136	griddle	0
-S313	on
-S188	contains	{bacon}
-M22	close	1:19	1:21
-O136	griddle	0
-S43	on
-S43	closed
-S259	contains	{bacon}
+O212	griddle	0
+S81	on
+S23	contains	{bacon}
+M11	close	1:19	1:21
+O212	griddle	0
+S81	on
+S17	closed
+S23	contains	{bacon}
 //
-O136	griddle	0
-S43	on
-S43	closed
-S259	contains	{bacon}
-O82	bacon	1
-S313	raw
-S94	on	[griddle]
-M40	cook	Assumed	Assumed
-O82	bacon	1
-S313	fried
-S94	on	[griddle]
+O212	griddle	0
+S81	on
+S17	closed
+S23	contains	{bacon}
+O8	bacon	1
+S100	raw
+S81	on	[griddle]
+M14	cook	Assumed	Assumed
+O8	bacon	1
+S50	fried
+S81	on	[griddle]
 //
-O135	muffin pan	0
-S124	coated	[vegetable oil]
-O28	egg	1
-S317	whole
+O285	muffin pan	0
+S19	coated	[vegetable oil]
+O157	egg	1
+S141	whole
 M19	crack	1:21	1:27
-O135	muffin pan	0
-S182	contains	{egg white,egg yolk}
-O28	egg white	0
-S148	in	[muffin pan]
-O28	egg yolk	0
-S148	in	[muffin pan]
-O32	eggshell	1
+O285	muffin pan	0
+S23	contains	{egg white,egg yolk}
+O162	egg white	0
+S65	in	[muffin pan]
+O164	egg yolk	0
+S65	in	[muffin pan]
+O166	eggshell	1
 //
-O28	egg white	0
-S148	in	[muffin pan]
-O28	egg yolk	0
-S148	in	[muffin pan]
-O6	fork	1
-M1	mix	1:31	1:39
-O28	egg white and yolk	1
-S313	beaten
-S43	in	[muffin pan]
+O162	egg white	0
+S65	in	[muffin pan]
+O164	egg yolk	0
+S65	in	[muffin pan]
+O182	fork	1
+M46	mix	1:31	1:39
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[muffin pan]
 //
-O136	griddle	0
-S43	on
-S43	closed
-S259	contains	{bacon}
-M0	open	Assumed	Assumed
-O136	griddle	0
-S43	on
-S259	contains	{bacon}
+O212	griddle	0
+S81	on
+S17	closed
+S23	contains	{bacon}
+M48	open	Assumed	Assumed
+O212	griddle	0
+S81	on
+S23	contains	{bacon}
 //
-O136	griddle	0
-S43	on
-S259	contains	{bacon}
-M0	turn off	Assumed	Assumed
-O136	griddle	0
-S43	off
-S259	contains	{bacon}
+O212	griddle	0
+S81	on
+S23	contains	{bacon}
+M91	turn off	Assumed	Assumed
+O212	griddle	0
+S78	off
+S23	contains	{bacon}
 //
-O82	bacon	0
-S109	fried
-S109	on	[griddle]
-O136	griddle	0
-S43	off
-S259	contains	{bacon}
-O41	tongs	1
-O83	cutting board	0
-S98	clean
-M0	pick-and-place	Assumed	Assumed
-O136	griddle	0
-S94	off
-O83	cutting board	0
-S188	contains	{bacon}
-O82	bacon	0
-S109	fried
-S109	on	[cutting board]
+O8	bacon	0
+S50	fried
+S81	on	[griddle]
+O212	griddle	0
+S78	off
+S23	contains	{bacon}
+O452	tongs	1
+O143	cutting board	0
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O212	griddle	0
+S78	off
+O143	cutting board	0
+S23	contains	{bacon}
+O8	bacon	0
+S50	fried
+S81	on	[cutting board]
 //
-O32	strainer	1
-S43	contains	{potato}
-O30	potato	1
-S43	whole
-S43	washed
-S43	in	[strainer]
-O4	cutting board	0
-S43	clean
-M0	pick-and-place	Assumed	Assumed
-O30	potato	1
-S43	whole
-S43	on	[cutting board]
-O4	cutting board	0
-S43	contains	{potato}
-O43	strainer	1
-S43	dirty
+O426	strainer	1
+S23	contains	{potato}
+O348	potato	1
+S141	whole
+S137	washed
+S65	in	[strainer]
+O143	cutting board	0
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O348	potato	1
+S141	whole
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{potato}
+O426	strainer	1
+S38	dirty
 //
-O30	potato	0
-S43	whole
-S43	on	[cutting board]
-O11	peeler	1
-M0	peel	Assumed	Assumed
-O406	potato	1
-S69	peeled
-S43	on	[cutting board]
+O348	potato	0
+S141	whole
+S81	on	[cutting board]
+O325	peeler	1
+M49	peel	Assumed	Assumed
+O348	potato	1
+S91	peeled
+S81	on	[cutting board]
 //
-O39	bowl	0
-S43	empty
-O4	grater	1
-M0	place	Assumed	Assumed
-O4	grater	1
-S43	on	[bowl]
-O39	bowl	0
-S43	empty
-S43	under	[grater]
+O46	bowl	0
+S41	empty
+O203	grater	1
+M51	place	Assumed	Assumed
+O203	grater	1
+S81	on	[bowl]
+O46	bowl	0
+S41	empty
+S135	under	[grater]
 //
-O406	potato	1
-S69	peeled
-S43	on	[cutting board]
-O39	bowl	0
-S43	empty
-S43	under	[grater]
-O4	grater	0
-S43	on	[bowl]
-M0	grate	Assumed	Assumed
-O39	bowl	0
-S43	contains	{potato}
-S43	under	[grater]
-O406	potato	1
-S69	grated
-S43	in	[bowl]
-O4	grater	0
-S43	dirty
-S43	on	[bowl]
+O348	potato	1
+S91	peeled
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+S135	under	[grater]
+O203	grater	0
+S81	on	[bowl]
+M39	grate	Assumed	Assumed
+O46	bowl	0
+S23	contains	{potato}
+S135	under	[grater]
+O348	potato	1
+S56	grated
+S65	in	[bowl]
+O203	grater	0
+S38	dirty
+S81	on	[bowl]
 //
-O39	bowl	0
-S43	contains	{potato}
-S43	under	[grater]
-O4	grater	1
-S43	dirty
-S43	on	[bowl]
-M0	remove	Assumed	Assumed
-O39	bowl	0
-S43	contains	{potato}
-O4	grater	1
-S43	dirty
+O46	bowl	0
+S23	contains	{potato}
+S135	under	[grater]
+O203	grater	1
+S38	dirty
+S81	on	[bowl]
+M63	remove	Assumed	Assumed
+O46	bowl	0
+S23	contains	{potato}
+O203	grater	1
+S38	dirty
 //
-O136	griddle	0
-S98	on
-O39	potato	1
-S123	grated
-S43	in	[bowl]
-O6	fork	1
-M0	place and spread	1:45	1:48
-O136	griddle	0
-S43	on
-S188	contains	{potato}
-O39	potato	1
-S123	grated
-S43	uncooked
-S43	on	[griddle]
+O212	griddle	0
+S81	on
+O348	potato	1
+S56	grated
+S65	in	[bowl]
+O182	fork	1
+M52	place and spread	1:45	1:48
+O212	griddle	0
+S81	on
+S23	contains	{potato}
+O348	potato	1
+S56	grated
+S133	uncooked
+S81	on	[griddle]
 //
-O136	griddle	0
-S43	on
-S188	contains	{potato}
-M22	close	1:49	1:50
-O136	griddle	0
-S43	on
-S188	contains	{potato}
-S43	closed
+O212	griddle	0
+S81	on
+S23	contains	{potato}
+M11	close	1:49	1:50
+O212	griddle	0
+S81	on
+S23	contains	{potato}
+S17	closed
 //
-O83	cutting board	0
-S188	contains	{bacon}
-O82	bacon	0
-S109	fried
-S313	on	[cutting board]
-O11	knife	1
-M8	chop	1:50	1:56
-O82	bacon	0
-S109	fried
-S50	chopped
-S313	on	[cutting board]
+O143	cutting board	0
+S23	contains	{bacon}
+O8	bacon	0
+S50	fried
+S81	on	[cutting board]
+O240	knife	1
+M10	chop	1:50	1:56
+O8	bacon	0
+S50	fried
+S14	chopped
+S81	on	[cutting board]
 //
-O136	griddle	0
-S43	on
-S188	contains	{potato}
-S43	closed
-O39	potato	1
-S123	grated
-S43	uncooked
-S43	on	[griddle]
-M40	cook	Assumed	Assumed
-O39	potato	0
-S298	fried
-S43	on	[griddle]
+O212	griddle	0
+S81	on
+S23	contains	{potato}
+S17	closed
+O348	potato	1
+S56	grated
+S133	uncooked
+S81	on	[griddle]
+M14	cook	Assumed	Assumed
+O348	potato	0
+S50	fried
+S81	on	[griddle]
 //
-O136	griddle	0
-S43	on
-S43	closed
-S188	contains	{potato}
-M0	open	Assumed	Assumed
-O136	griddle	0
-S43	on
-S188	contains	{potato}
+O212	griddle	0
+S81	on
+S17	closed
+S23	contains	{potato}
+M48	open	Assumed	Assumed
+O212	griddle	0
+S81	on
+S23	contains	{potato}
 //
-O39	potato	0
-S298	fried
-S43	on	[griddle]
-O136	griddle	0
-S43	on
-S188	contains	{potato}
-M0	turn off	Assumed	Assumed
-O136	griddle	0
-S43	off
-S188	contains	{potato}
+O348	potato	0
+S50	fried
+S81	on	[griddle]
+O212	griddle	0
+S81	on
+S23	contains	{potato}
+M91	turn off	Assumed	Assumed
+O212	griddle	0
+S78	off
+S23	contains	{potato}
 //
-O136	griddle	0
-S43	off
-S188	contains	{potato}
-O41	tongs	1
-O83	cutting board	0
-S98	clean
-M0	pick-and-place	Assumed	Assumed
-O136	griddle	0
-S94	off
-O83	cutting board	0
-S188	contains	{potato}
-O39	potato	0
-S298	fried
-S43	on	[cutting board]
+O212	griddle	0
+S78	off
+S23	contains	{potato}
+O452	tongs	1
+O143	cutting board	0
+S16	clean
+M50	pick-and-place	Assumed	Assumed
+O212	griddle	0
+S78	off
+O143	cutting board	0
+S23	contains	{potato}
+O348	potato	0
+S50	fried
+S81	on	[cutting board]
 //
-O83	cutting board	0
-S188	contains	{potato}
-O39	potato	1
-S298	fried
-S43	on	[cutting board]
-O83	cutting board	0
-S188	contains	{bacon}
-O39	bacon	1
-S298	fried
-S109	chopped
-S43	on	[cutting board]
-M0	combine*	Assumed	Assumed
-O83	cutting board	0
-S188	contains	{potato,bacon}
+O143	cutting board	0
+S23	contains	{potato}
+O348	potato	1
+S50	fried
+S81	on	[cutting board]
+O143	cutting board	0
+S23	contains	{bacon}
+O8	bacon	1
+S50	fried
+S14	chopped
+S81	on	[cutting board]
+M13	combine*	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{potato,bacon}
 //
-O135	muffin pan	0
-S182	contains	{egg white,egg yolk}
-O28	egg white and yolk	1
-S313	beaten
-S43	in	[muffin pan]
-O83	cutting board	0
-S188	contains	{bacon,potato}
-O82	bacon	1
-S43	fried
-S50	chopped
-S313	on	[cutting board]
-O39	potato	1
-S298	fried
-S43	on	[cutting board]
-O11	packet	0
-S43	opened
-S43	contains	{cheddar}
-O43	cheddar	1
-S43	grated
-S43	in	[packet]
-M2	sprinkle*	2:05	2:20
-O135	muffin pan	0
-S182	contains	{egg,bacon,potato,cheddar}
-O83	cutting board	0
-S188	dirty
-O39	potato	1
-S298	fried
-S43	on	[egg white and yolk]
-O82	bacon	1
-S50	chopped
-S43	on	[egg white and yolk]
-O43	cheddar	1
-S43	grated
-S43	on	[egg white and yolk]
+O285	muffin pan	0
+S23	contains	{egg white,egg yolk}
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[muffin pan]
+O143	cutting board	0
+S23	contains	{bacon,potato}
+O8	bacon	1
+S50	fried
+S14	chopped
+S81	on	[cutting board]
+O348	potato	1
+S50	fried
+S81	on	[cutting board]
+O308	packet	0
+S83	opened
+S23	contains	{cheddar}
+O77	cheddar	1
+S56	grated
+S65	in	[packet]
+M83	sprinkle*	2:05	2:20
+O285	muffin pan	0
+S23	contains	{egg,bacon,potato,cheddar}
+O143	cutting board	0
+S38	dirty
+O348	potato	1
+S50	fried
+S81	on	[egg white and yolk]
+O8	bacon	1
+S14	chopped
+S81	on	[egg white and yolk]
+O77	cheddar	1
+S56	grated
+S81	on	[egg white and yolk]
 //
-O135	muffin pan	0
-S182	contains	{egg,bacon,potato,cheddar}
-O28	egg white and yolk	1
-S313	beaten
-S43	in	[muffin pan]
-O39	potato	1
-S298	fried
-S43	on	[egg white and yolk]
-O82	bacon	1
-S50	chopped
-S43	on	[egg white and yolk]
-O43	cheddar	1
-S43	grated
-S43	on	[egg white and yolk]
-O6	fork	1
-M1	mix*	2:20	2:24
-O135	muffin pan	0
-S185	contains	{egg mixture}
-O43	egg mixture	1
-S43	uncooked
-S43	in	[muffin pan]
+O285	muffin pan	0
+S23	contains	{egg,bacon,potato,cheddar}
+O163	egg white and yolk	1
+S4	beaten
+S65	in	[muffin pan]
+O348	potato	1
+S50	fried
+S81	on	[egg white and yolk]
+O8	bacon	1
+S14	chopped
+S81	on	[egg white and yolk]
+O77	cheddar	1
+S56	grated
+S81	on	[egg white and yolk]
+O182	fork	1
+M46	mix*	2:20	2:24
+O285	muffin pan	0
+S23	contains	{egg mixture}
+O159	egg mixture	1
+S133	uncooked
+S65	in	[muffin pan]
 //
-O135	muffin pan	1
-S185	contains	{egg mixture}
-O14	oven	0
-S218	on
-M0	insert	2:25	2:28
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-O135	muffin pan	1
-S185	contains	{egg mixture}
-S43	in	[oven]
+O285	muffin pan	1
+S23	contains	{egg mixture}
+O306	oven	0
+S81	on
+M42	insert	2:25	2:28
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O285	muffin pan	1
+S23	contains	{egg mixture}
+S65	in	[oven]
 //
-O14	oven	0
-S218	on
-S7	with	[baking tray]
-O135	muffin pan	1
-S185	contains	{egg mixture}
-S43	in	[oven]
-O43	egg mixture	1
-S43	uncooked
-S43	in	[muffin pan]
-M39	bake	Assumed	Assumed
-O135	muffin pan	1
-S185	contains	{muffin}
-S43	in	[oven]
-O43	muffin	1
-S43	in	[muffin pan]
+O306	oven	0
+S81	on
+S142	with	[baking tray]
+O285	muffin pan	1
+S23	contains	{egg mixture}
+S65	in	[oven]
+O159	egg mixture	1
+S133	uncooked
+S65	in	[muffin pan]
+M2	bake	Assumed	Assumed
+O285	muffin pan	1
+S23	contains	{muffin}
+S65	in	[oven]
+O282	muffin	1
+S65	in	[muffin pan]
 //
-O14	oven	0
-S218	off
-S7	with	[baking tray]
-O135	muffin pan	1
-S185	contains	{muffin}
-S43	in	[oven]
-M39	remove	Assumed	Assumed
-O135	muffin pan	1
-S185	contains	{muffin}
-O14	oven	0
-S218	off
+O306	oven	0
+S78	off
+S142	with	[baking tray]
+O285	muffin pan	1
+S23	contains	{muffin}
+S65	in	[oven]
+M63	remove	Assumed	Assumed
+O285	muffin pan	1
+S23	contains	{muffin}
+O306	oven	0
+S78	off
 //
-O135	muffin pan	0
-S185	contains	{muffin}
-O43	muffin	1
-S43	in	[muffin pan]
-O11	fork	1
-O15	plate	0
-S98	empty
-M0	pick-and-place	Assumed	Assumed
-O15	plate	0
-S185	contains	{breakfast muffin}
-O130	breakfast muffin	1	!
-S182	contains	{egg,bacon,potato,cheddar,vegetable oil}
-S43	on	[plate]
+O285	muffin pan	0
+S23	contains	{muffin}
+O282	muffin	1
+S65	in	[muffin pan]
+O182	fork	1
+O344	plate	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O344	plate	0
+S23	contains	{breakfast muffin}
+O52	breakfast muffin	1	8
+S23	contains	{egg,bacon,potato,cheddar,vegetable oil}
+S81	on	[plate]
 //

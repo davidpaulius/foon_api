@@ -1,268 +1,268 @@
 # Source:	https://www.youtube.com/watch?v=DkxxITuXZoE
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0034-mushroom_soup.mp4
 //
-O45	pot	0
-S43	hot
-S182	empty
-S32	on	[stove]
-O215	plate	1
-S43	contains	{butter}
-O66	butter	1
-S34	cube
-S33	on	[plate]
-M38	pick-and-place	1:00	1:03
-O420	pot	0
-S43	hot
-S182	contains	{butter}
-S32	on	[stove]
-O66	butter	1
-S34	cube
-S116	in	[pot]
+O346	pot	0
+S64	hot
+S41	empty
+S81	on	[stove]
+O344	plate	1
+S23	contains	{butter}
+O63	butter	1
+S30	cube
+S81	on	[plate]
+M50	pick-and-place	1:00	1:03
+O346	pot	0
+S64	hot
+S23	contains	{butter}
+S81	on	[stove]
+O63	butter	1
+S30	cube
+S65	in	[pot]
 //
-O420	pot	0
-S43	hot
-S138	contains	{butter}
-S197	on	[stove]
-O66	butter	0
-S34	cube
-S116	in	[pot]
-O507	spoon	1
-M62	spread	1:05	1:07
-O66	butter	0
-S158	melted
-S116	in	[pot]
+O346	pot	0
+S64	hot
+S23	contains	{butter}
+S81	on	[stove]
+O63	butter	0
+S30	cube
+S65	in	[pot]
+O416	spoon	1
+M82	spread	1:05	1:07
+O63	butter	0
+S74	melted
+S65	in	[pot]
 //
-O293	knife	1
-S23	clean
-O365	onion	0
-S262	whole
-M37	peel	Assumed	Assumed
-O365	onion	0
-S216	peeled
+O240	knife	1
+S16	clean
+O299	onion	0
+S141	whole
+M49	peel	Assumed	Assumed
+O299	onion	0
+S91	peeled
 //
-O180	cutting board	0
-S54	clean
-O365	onion	1
-S216	peeled
-M38	pick-and-place	Assumed	Assumed
-O180	cutting board	0
-S144	contains	{onion}
-O365	onion	1
-S216	peeled
-S175	on	[cutting board]
+O143	cutting board	0
+S16	clean
+O299	onion	1
+S91	peeled
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{onion}
+O299	onion	1
+S91	peeled
+S81	on	[cutting board]
 //
-O365	onion	0
-S216	peeled
-S175	on	[cutting board]
-O293	knife	1
-M8	chop	Assumed	Assumed
-O365	onion	0
-S21	chopped
-S175	on	[cutting board]
+O299	onion	0
+S91	peeled
+S81	on	[cutting board]
+O240	knife	1
+M10	chop	Assumed	Assumed
+O299	onion	0
+S14	chopped
+S81	on	[cutting board]
 //
-O365	onion	1
-S21	chopped
-S175	on	[cutting board]
-O51	bowl	0
-S54	empty
-M38	pick-and-place	Assumed	Assumed
-O51	bowl	0
-S138	contains	{onion}
-O365	onion	1
-S21	chopped
-S84	in	[bowl]
+O299	onion	1
+S14	chopped
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{onion}
+O299	onion	1
+S14	chopped
+S65	in	[bowl]
 //
-O351	mushroom	0
-S262	whole
-S175	on	[cutting board]
-O293	knife	1
-M59	slice	Assumed	Assumed
-O351	mushroom	0
-S239	sliced
-S175	on	[cutting board]
+O287	mushroom	0
+S141	whole
+S81	on	[cutting board]
+O240	knife	1
+M79	slice	Assumed	Assumed
+O287	mushroom	0
+S117	sliced
+S81	on	[cutting board]
 //
-O51	bowl	0
-S54	empty
-O351	mushroom	1
-S239	sliced
-S175	on	[cutting board]
-M38	pick-and-place	Assumed	Assumed
-O51	bowl	0
-S138	contains	{mushroom}
-O351	mushroom	1
-S239	sliced
-S172	in	[bowl]
+O46	bowl	0
+S41	empty
+O287	mushroom	1
+S117	sliced
+S81	on	[cutting board]
+M50	pick-and-place	Assumed	Assumed
+O46	bowl	0
+S23	contains	{mushroom}
+O287	mushroom	1
+S117	sliced
+S65	in	[bowl]
 //
-O420	pot	0
-S08	hot
-S69	contains	{butter}
-S197	on	[stove]
-O507	spoon	1
-S23	clean
-O51	bowl	1
-S138	contains	{onion}
-O365	onion	1
-S21	chopped
-S84	in	[bowl]
-O51	bowl	1
-S138	contains	{mushroom}
-O351	mushroom	1
-S239	sliced
-S84	in	[bowl]
-M52	add*	1:12	1:23
-O420	pot	0
-S43	hot
-S138	contains	{onion,mushroom}
-S197	on	[stove]
-O365	onion	1
-S21	chopped
-S116	in	[pot]
-O351	mushroom	1
-S239	sliced
-S84	in	[pot]
+O346	pot	0
+S64	hot
+S23	contains	{butter}
+S81	on	[stove]
+O416	spoon	1
+S16	clean
+O46	bowl	1
+S23	contains	{onion}
+O299	onion	1
+S14	chopped
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{mushroom}
+O287	mushroom	1
+S117	sliced
+S65	in	[bowl]
+M0	add*	1:12	1:23
+O346	pot	0
+S64	hot
+S23	contains	{onion,mushroom}
+S81	on	[stove]
+O299	onion	1
+S14	chopped
+S65	in	[pot]
+O287	mushroom	1
+S117	sliced
+S65	in	[pot]
 //
-O420	pot	0
-S43	hot
-S138	contains	{onion,mushroom}
-S197	on	[stove]
-O365	onion	1
-S21	chopped
-S116	in	[pot]
-O351	mushroom	1
-S239	sliced
-S84	in	[pot]
-O507	spoon	1
-M12	cook and stir*	1:25	1:30
-O365	onion	1
-S62	fried
-S116	in	[pot]
-O365	mushroom	1
-S62	cooked
-S116	in	[pot]
+O346	pot	0
+S64	hot
+S23	contains	{onion,mushroom}
+S81	on	[stove]
+O299	onion	1
+S14	chopped
+S65	in	[pot]
+O287	mushroom	1
+S117	sliced
+S65	in	[pot]
+O416	spoon	1
+M16	cook and stir*	1:25	1:30
+O299	onion	1
+S50	fried
+S65	in	[pot]
+O287	mushroom	1
+S24	cooked
+S65	in	[pot]
 //
-O85	carton	0
-S138	contains	{chicken broth}
-M10	open	Assumed	Assumed
-O85	carton	0
-S334	opened
-S138	contains	{chicken broth}
+O73	carton	0
+S23	contains	{chicken broth}
+M48	open	Assumed	Assumed
+O73	carton	0
+S83	opened
+S23	contains	{chicken broth}
 //
-O85	carton	1
-S334	opened
-S138	contains	{chicken broth}
-O97	chicken broth	1
-S87	in	[carton]
-O51	bowl	1
-S138	contains	{flour}
-O215	flour	1
-S221	powder
-S84	in	[bowl]
-O334	measuring cup	0
-S54	empty
-M40	pour*	Assumed	Assumed
-O334	measuring cup	0
-S138	contains	{chicken broth,flour}
-O215	flour	1
-S221	powder
-S103	in	[measuring cup]
-O97	chicken broth	1
-S103	in	[measuring cup]
+O73	carton	1
+S83	opened
+S23	contains	{chicken broth}
+O83	chicken broth	1
+S65	in	[carton]
+O46	bowl	1
+S23	contains	{flour}
+O176	flour	1
+S96	powder
+S65	in	[bowl]
+O270	measuring cup	0
+S41	empty
+M54	pour*	Assumed	Assumed
+O270	measuring cup	0
+S23	contains	{chicken broth,flour}
+O176	flour	1
+S96	powder
+S65	in	[measuring cup]
+O83	chicken broth	1
+S65	in	[measuring cup]
 //
-O334	measuring cup	0
-S138	contains	{chicken broth,flour}
-O215	flour	0
-S221	powder
-S84	in	[bowl]
-O97	chicken broth	0
-S103	in	[measuring cup]
-O575	whisk	1
-M35	mix	1:43	1:50
-O334	measuring cup	0
-S142	contains	{soup stock}
-O494	soup stock	0
-S103	in	[measuring cup]
+O270	measuring cup	0
+S23	contains	{chicken broth,flour}
+O176	flour	0
+S96	powder
+S65	in	[bowl]
+O83	chicken broth	0
+S65	in	[measuring cup]
+O484	whisk	1
+M46	mix	1:43	1:50
+O270	measuring cup	0
+S23	contains	{soup stock}
+O407	soup stock	0
+S65	in	[measuring cup]
 //
-O334	measuring cup	1
-S142	contains	{soup stock}
-O494	soup stock	1
-S103	in	[measuring cup]
-O51	bowl	1
-S138	contains	{milk}
-O338	milk	1
-S84	in	[bowl]
-O51	bowl	1
-S138	contains	{salt,black pepper}
-O459	salt	1
-S67	granulated
-S84	in	[bowl]
-O38	black pepper	1
-S71	ground
-S84	in	[bowl]
-O420	pot	0
-S32	hot
-S142	contains	{onion,mushroom}
-S197	on	[stove]
-M40	pour*	1:53	2:28
-O420	pot	0
-S32	hot
-S138	contains	{onion,mushroom,soup stock,milk,salt,pepper}
-S197	on	[stove]
-O494	soup stock	1
-S116	in	[pot]
-O459	salt	1
-S67	granulated
-S84	in	[pot]
-O38	black pepper	1
-S71	ground
-S84	in	[pot]
-O338	milk	1
-S84	in	[pot]
+O270	measuring cup	1
+S23	contains	{soup stock}
+O407	soup stock	1
+S65	in	[measuring cup]
+O46	bowl	1
+S23	contains	{milk}
+O273	milk	1
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{salt,black pepper}
+O376	salt	1
+S55	granulated
+S65	in	[bowl]
+O34	black pepper	1
+S58	ground
+S65	in	[bowl]
+O346	pot	0
+S64	hot
+S23	contains	{onion,mushroom}
+S81	on	[stove]
+M54	pour*	1:53	2:28
+O346	pot	0
+S64	hot
+S23	contains	{onion,mushroom,soup stock,milk,salt,pepper}
+S81	on	[stove]
+O407	soup stock	1
+S65	in	[pot]
+O376	salt	1
+S55	granulated
+S65	in	[pot]
+O34	black pepper	1
+S58	ground
+S65	in	[pot]
+O273	milk	1
+S65	in	[pot]
 //
-O515	stove	0
-S167	on
-S219	with	[pot]
-O420	pot	0
-S32	hot
-S138	contains	{onion,mushroom,soup stock,milk,salt,pepper}
-S197	on	[stove]
-O494	soup stock	0
-S116	in	[pot]
-O459	salt	0
-S67	granulated
-S84	in	[pot]
-O38	black pepper	0
-S71	ground
-S84	in	[pot]
-O338	milk	0
-S84	in	[pot]
-O507	spoon	1
-M65	cook and stir*	2:29	2:34
-O420	pot	0
-S43	hot
-S142	contains	{soup}
-S197	on	[stove]
-O494	soup	0
-S116	in	[pot]
-O352	mushroom soup	0
-S138	contains	{onion,mushroom,chicken stock,flour,milk,salt,black pepper}
-S116	in	[pot]
+O425	stove	0
+S81	on
+S142	with	[pot]
+O346	pot	0
+S64	hot
+S23	contains	{onion,mushroom,soup stock,milk,salt,pepper}
+S81	on	[stove]
+O407	soup stock	0
+S65	in	[pot]
+O376	salt	0
+S55	granulated
+S65	in	[pot]
+O34	black pepper	0
+S58	ground
+S65	in	[pot]
+O273	milk	0
+S65	in	[pot]
+O416	spoon	1
+M16	cook and stir*	2:29	2:34
+O346	pot	0
+S64	hot
+S23	contains	{soup}
+S81	on	[stove]
+O404	soup	0
+S65	in	[pot]
+O288	mushroom soup	0
+S23	contains	{onion,mushroom,chicken stock,flour,milk,salt,black pepper}
+S65	in	[pot]
 //
-O420	pot	0
-S43	hot
-S142	contains	{soup}
-S197	on	[stove]
-O494	soup	0
-S116	in	[pot]
-O352	mushroom soup	0
-S138	contains	{onion,mushroom,chicken stock,flour,milk,salt,black pepper}
-S116	in	[pot]
-O51	bowl	0
-S54	empty
-O297	ladle	1
-M51	scoop and pour	2:50	2:57
-O51	bowl	0
-S48	contains	{soup}
-O352	mushroom soup	0	!
-S138	contains	{onion,mushroom,chicken stock,flour,milk,salt,black pepper}
-S84	in	[bowl]
+O346	pot	0
+S64	hot
+S23	contains	{soup}
+S81	on	[stove]
+O404	soup	0
+S65	in	[pot]
+O288	mushroom soup	0
+S23	contains	{onion,mushroom,chicken stock,flour,milk,salt,black pepper}
+S65	in	[pot]
+O46	bowl	0
+S41	empty
+O243	ladle	1
+M70	scoop and pour	2:50	2:57
+O46	bowl	0
+S23	contains	{soup}
+O288	mushroom soup	0	1
+S23	contains	{onion,mushroom,chicken stock,flour,milk,salt,black pepper}
+S65	in	[bowl]
 //

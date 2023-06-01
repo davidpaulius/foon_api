@@ -1,211 +1,194 @@
 # Source:	https://www.youtube.com/watch?v=9K3HfJqsY-M
 # Source:	http://foonets.com/foon_subgraphs/subgraphs/0033-miso_soup.mp4
 //
-O83	cutting board	0
-S98	clean
-O121	scallion	1
-S323	stem
-M0	pick-and-place	Assumed	Assume
-O83	cutting board	0
-S188	contains	{scallion}
-O121	scallion	1
-S323	stem
-S221	on	[cutting board]
+O143	cutting board	0
+S16	clean
+O386	scallion	1
+S69	leaf
+M50	pick-and-place	Assumed	Assume
+O143	cutting board	0
+S23	contains	{scallion}
+O386	scallion	1
+S69	leaf
+S81	on	[cutting board]
 //
-O11	knife	1
-S51	clean
-O121	scallion	1
-S323	stem
-S221	on	[cutting board]
-M5	chop	0:09	0:24
-O121	scallion	0
-S50	chopped
-S221	on	[cutting board]
+O240	knife	1
+S16	clean
+O386	scallion	1
+S69	leaf
+S81	on	[cutting board]
+M10	chop	0:09	0:24
+O386	scallion	0
+S14	chopped
+S81	on	[cutting board]
 //
-O121	scallion	1
-S50	chopped
-S221	on	[cutting board]
-O2	bowl	0
-S98	empty
-M4	pour	Assumed	Assumed
-O2	bowl	0
-S182	contains	{scallion}
-O121	scallion	1
-S50	chopped
-S148	in	[bowl]
+O386	scallion	1
+S14	chopped
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+M54	pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{scallion}
+O386	scallion	1
+S14	chopped
+S65	in	[bowl]
 //
-O83	cutting board	0
-S98	clean
-O44	tofu	1
-S323	block
-M0	pick-and-place	Assumed	Assumed
-O83	cutting board	0
-S188	contains	{tofu}
-O44	tofu	1
-S323	block
-S221	on	[cutting board]
+O143	cutting board	0
+S16	clean
+O447	tofu	1
+S6	block
+M50	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S23	contains	{tofu}
+O447	tofu	1
+S6	block
+S81	on	[cutting board]
 //
-O44	tofu	0
-S323	block
-S221	on	[cutting board]
-O11	knife	1
-S51	clean
-M8	cut	0:28	0:44
-O44	tofu	0
-S93	diced
-S221	on	[cutting board]
+O447	tofu	0
+S6	block
+S81	on	[cutting board]
+O240	knife	1
+S16	clean
+M20	cut	0:28	0:44
+O447	tofu	0
+S37	diced
+S81	on	[cutting board]
 //
-O44	tofu	1
-S93	diced
-S221	on	[cutting board]
-O2	bowl	0
-S98	empty
-M18	scrape	Assumed	Assumed
-O2	bowl	0
-S182	contains	{tofu}
-O44	tofu	0
-S93	diced
-S148	in	[bowl]
+O447	tofu	1
+S37	diced
+S81	on	[cutting board]
+O46	bowl	0
+S41	empty
+M71	scrape	Assumed	Assumed
+O46	bowl	0
+S23	contains	{tofu}
+O447	tofu	0
+S37	diced
+S65	in	[bowl]
 //
-O45	pot	0
-S182	empty
-S32	on	[stove]
-O45	measuring cup	1
-S182	contains	{water}
-S32	below	[faucet]
-O23	water	1
-S43	in	[measuring cup]
-M4	pour	0:51	0:55
-O45	pot	0
-S182	contains	{water}
-S32	on	[stove]
-O23	water	1
-S43	in	[pot]
+O346	pot	0
+S41	empty
+S81	on	[stove]
+O270	measuring cup	1
+S23	contains	{water}
+S5	below	[faucet]
+O475	water	1
+S65	in	[measuring cup]
+M54	pour	0:51	0:55
+O346	pot	0
+S23	contains	{water}
+S81	on	[stove]
+O475	water	1
+S65	in	[pot]
 //
-O3	stove	0
-S43	on
-S43	with	[pot]
-O45	pot	0
-S182	contains	{water}
-S32	on	[stove]
-O23	water	1
-S43	in	[pot]
-M0	heat	Assumed	Assumed
-O45	pot	0
-S43	hot
-S182	contains	{water}
-S32	on	[stove]
-O23	water	1
-S43	boiling
-S43	in	[pot]
+O346	pot	0
+S23	contains	{water}
+S64	hot
+S81	on	[stove]
+O46	bowl	1
+S23	contains	{dashi}
+O146	dashi	1
+S65	in	[bowl]
+M54	pour*	1:02	1:05
+O346	pot	0
+S23	contains	{water,dashi}
+S64	hot
+S81	on	[stove]
+O146	dashi	1
+S65	in	[pot]
 //
-O45	pot	0
-S182	contains	{water}
-S43	hot
-S32	on	[stove]
-O2	bowl	1
-S182	contains	{dashi}
-O47	dashi	1
-S148	in	[bowl]
-M4	pour*	1:02	1:05
-O45	pot	0
-S139	contains	{water,dashi}
-S43	hot
-S32	on	[stove]
-O47	dashi	1
-S165	in	[pot]
+O346	pot	0
+S23	contains	{water,dashi}
+S64	hot
+S81	on	[stove]
+O146	dashi	0
+S65	in	[pot]
+O416	spoon	1
+M85	stir*	1:11	1:15:50
+O346	pot	0
+S23	contains	{soup stock}
+S64	hot
+S81	on	[stove]
+O407	soup stock	0
+S23	contains	{dashi}
+S65	in	[pot]
 //
-O45	pot	0
-S139	contains	{water,dashi}
-S43	hot
-S32	on	[stove]
-O47	dashi	0
-S165	in	[pot]
-O22	spoon	1
-M6	stir*	1:11	1:15:50
-O45	pot	0
-S139	contains	{soup stock}
-S43	hot
-S43	on	[stove]
-O47	soup stock	0
-S43	contains	{dashi}
-S165	in	[pot]
+O346	pot	0
+S23	contains	{soup stock}
+S64	hot
+S81	on	[stove]
+O46	bowl	0
+S23	contains	{miso}
+O46	bowl	1
+S23	contains	{tofu}
+O275	miso	1
+S65	in	[bowl]
+O447	tofu	1
+S37	diced
+S65	in	[bowl]
+O46	bowl	1
+S23	contains	{scallion}
+O386	scallion	1
+S14	chopped
+S65	in	[bowl]
+M54	pour*	1:30	2:06
+O346	pot	0
+S23	contains	{soup stock,miso}
+S64	hot
+S81	on	[stove]
+O275	miso	1
+S65	in	[pot]
+O447	tofu	1
+S37	diced
+S65	in	[pot]
+O386	scallion	1
+S14	chopped
+S65	in	[pot]
 //
-O45	pot	0
-S139	contains	{soup stock}
-S43	hot
-S43	on	[stove]
-O2	bowl	0
-S182	contains	{miso}
-O2	bowl	1
-S182	contains	{tofu}
-O48	miso	1
-S148	in	[bowl]
-O44	tofu	1
-S43	diced
-S148	in	[bowl]
-O2	bowl	1
-S182	contains	{scallion}
-O121	scallion	1
-S43	chopped
-S148	in	[bowl]
-M4	pour*	1:30	2:06
-O45	pot	0
-S139	contains	{soup stock,miso}
-S43	hot
-S43	on	[stove]
-O48	miso	1
-S165	in	[pot]
-O44	tofu	1
-S43	diced
-S148	in	[pot]
-O121	scallion	1
-S43	chopped
-S148	in	[pot]
+O425	stove	0
+S81	on
+S142	with	[pot]
+O346	pot	0
+S23	contains	{soup stock,miso}
+S64	hot
+S81	on	[stove]
+O275	miso	0
+S65	in	[pot]
+O447	tofu	0
+S37	diced
+S65	in	[pot]
+O386	scallion	0
+S14	chopped
+S65	in	[pot]
+O416	spoon	1
+M16	cook and stir*	1:36	1:48
+O346	pot	0
+S64	hot
+S23	contains	{soup}
+S81	on	[stove]
+O404	soup	0
+S65	in	[pot]
+O276	miso soup	1
+S23	contains	{dashi,miso,scallion,tofu}
+S65	in	[pot]
 //
-O23	stove	0
-S43	on
-S43	with	[pot]
-O45	pot	0
-S139	contains	{soup stock,miso}
-S43	hot
-S43	on	[stove]
-O48	miso	0
-S165	in	[pot]
-O44	tofu	0
-S43	diced
-S148	in	[pot]
-O121	scallion	0
-S43	chopped
-S148	in	[pot]
-O22	spoon	1
-M6	cook and stir*	1:36	1:48
-O45	pot	0
-S32	hot
-S139	contains	{soup}
-S43	on	[stove]
-O23	soup	0
-S43	in	[pot]
-O47	miso soup	1
-S43	contains	{dashi,miso,scallion,tofu}
-S165	in	[pot]
-//
-O45	pot	0
-S32	hot
-S139	contains	{soup}
-S43	on	[stove]
-O47	miso soup	1
-S43	contains	{dashi,miso,scallion,tofu}
-S165	in	[pot]
-O2	bowl	0
-S98	empty
-O126	ladle	1
-M3	scoop and pour	Assumed	Assumed
-O2	bowl	0
-S139	contains	{soup}
-O23	soup	0
-S43	in	[bowl]
-O47	miso soup	1	!
-S43	contains	{dashi,miso,scallion,tofu}
-S165	in	[bowl]
+O346	pot	0
+S64	hot
+S23	contains	{soup}
+S81	on	[stove]
+O276	miso soup	1
+S23	contains	{dashi,miso,scallion,tofu}
+S65	in	[pot]
+O46	bowl	0
+S41	empty
+O243	ladle	1
+M70	scoop and pour	Assumed	Assumed
+O46	bowl	0
+S23	contains	{soup}
+O404	soup	0
+S65	in	[bowl]
+O276	miso soup	1	1
+S23	contains	{dashi,miso,scallion,tofu}
+S65	in	[bowl]
 //
