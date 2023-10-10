@@ -20,7 +20,12 @@ NOTE: If using this program and/or annotations provided by our lab, please kindl
 # 	to use as base list to be added on.
 
 from __future__ import print_function
-import os, sys, json, getopt, requests
+
+import os 
+import sys
+import json
+import getopt
+import requests
 import tqdm
 
 from datetime import datetime
