@@ -877,31 +877,38 @@ def _checkIfNodeExists(O, H):
 
     return objectExisting
 #enddef	
+
+def _isFOONLoaded():
+    # -- check if a FOON has been loaded based on the number of functional units at level 3:
+    return len(FOON_functionalUnits[-1]) > 0
     
-def _constructFOON(file=None):
+def _constructFOON(graph_file=None):
     # NOTE: entry point function to load a FOON subgraph file, which may either be a .TXT, .PKL or .JSON file:
+
+    # -- we need to set the global variable "file_name" to store the path to the file being loaded:
     global file_name
-    if not file:
-        file = file_name
-    else:
-        file_name = file
+    if not file_name and not graph_file:
+        print('  -- ERROR: No file was provided!')
+        return
+    elif graph_file:
+        file_name = graph_file
 
-    print("\n -- [FOON-fga] : Opening FOON file named '"  + str(file) + "'...")
+    print("\n -- [FOON-fga] : Opening FOON file named '"  + str(file_name) + "'...")
 
-    if '.txt' in file.lower():
-        _loadFOON_txt(file)
+    if '.txt' in file_name.lower():
+        _loadFOON_txt(file_name)
         FOON.print_old_style = True
-    elif '.json' in file.lower():
+    elif '.json' in file_name.lower():
         # -- give a .JSON file, which is typically larger than the average text file, but it structures things neatly:
-        _loadFOON_json(file)
+        _loadFOON_json(file_name)
         FOON.print_old_style = False
-    elif '.pkl' in file.lower():
+    elif '.pkl' in file_name.lower():
         # WARNING: ONLY USE .PKL FILE THAT HAS BEEN PROCESSED ALREADY!!
         # -- users can load a .PKL file containing the structures and references for an already processed universal FOON:
-        _loadFOON_pkl(file)
+        _loadFOON_pkl(file_name)
     else:
         print(' -- WARNING: Wrong file type or format!')
-        print("  -- Skipping: '" + str(file) + "' ...")
+        print("  -- Skipping: '" + str(file_name) + "' ...")
 #enddef
 
 def _loadFOON_txt(file=None):
@@ -1430,7 +1437,7 @@ def _saveFOON_json():
 
     for FU in FOON_lvl3:
         # -- use function already defined in FOON_classes.py file:
-        subgraph_units['functional_units'].append( FU.getFunctionalUnitJSON() )
+        subgraph_units['functional_units'].append( FU.getFunctionalUnit_JSON() )
     if FOON_video_source:
         subgraph_units['source'] = FOON_video_source
 
@@ -1547,9 +1554,9 @@ def _addObjectToFOON(newObject, isInput, D, newFU_lvl3, newFU_lvl2, newFU_lvl1):
         objectIndex = objectExisting
 
     if isInput == True:
-        newFU_lvl2.addObjectNode(nodes_lvl2[objectIndex], is_input=True, is_active_motion=int(D))
+        newFU_lvl2.addObjectNode(nodes_lvl2[objectIndex], is_input=True, is_active_motion=int(D) if D else None)
     else:
-        newFU_lvl2.addObjectNode(nodes_lvl2[objectIndex], is_input=False, is_active_motion=int(D))
+        newFU_lvl2.addObjectNode(nodes_lvl2[objectIndex], is_input=False, is_active_motion=int(D) if D else None)
         newFU_lvl2.getMotion().addNeighbour(nodes_lvl2[objectIndex])
 
     # NOTE: Creating level 1 version of this node:

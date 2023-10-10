@@ -51,6 +51,9 @@ class Thing(object):
     def getLabel(self):
         return self.label
 
+    def getName(self):
+        return self.getLabel()
+
     def getNeighbourList(self):
         return self.neighbours
 
@@ -227,7 +230,7 @@ class Object(Thing):
         return '{}'
 
     def getObjectText(self, motion_descriptor=None, version=2):
-        if not print_new_style or version == 1:
+        if version == 1:
             return self.getObjectText_ver1(motion_descriptor=motion_descriptor)
         else:
             return self.getObjectText_ver2(motion_descriptor=motion_descriptor)
@@ -260,8 +263,8 @@ class Object(Thing):
         text += '</object>' + '\n'
         return text
 
-    # NOTE: this will be used within getFunctionalUnitJSON() method in the FunctionalUnit class below:
-    def getObjectJSON(self, motion_descriptor=None, prints_ingredients=False):
+    # NOTE: this will be used within getFunctionalUnit_JSON() method in the FunctionalUnit class below:
+    def getObject_JSON(self, motion_descriptor=None, prints_ingredients=False):
         object_as_JSON = {}
         object_as_JSON['object_id'] = self.getType()
         object_as_JSON['object_label'] = str(self.getLabel())
@@ -277,7 +280,7 @@ class Object(Thing):
         else:
             object_as_JSON['ingredients'] = []
             for I in self.getIngredients():
-                object_as_JSON['ingredients'].append( I.getObjectJSON(), prints_ingredients=True)
+                object_as_JSON['ingredients'].append( I.getObject_JSON(), prints_ingredients=True)
         if prints_ingredients == False:
             object_as_JSON['object_in_motion'] = str(motion_descriptor)
             object_as_JSON['has_portions'] = 'True' if self.hasPortion else 'False'		
@@ -287,13 +290,13 @@ class Object(Thing):
     # -- these can be switched off using a flag 'flag_recursive_objects' above.
 
     def printObject_lvl1(self, version=2):
-        if not print_new_style or version == 1:
+        if version == 1:
             self.printObject_lvl1_ver1()
         else:
             self.printObject_lvl1_ver2()
 
     def printObject_lvl1_ver1(self, motion_descriptor=None):
-        print("O" + str(self.getObjectType()) + '\t' + self.getObjectLabel() + (('\t' + str(motion_descriptor)) if motion_descriptor else ''))
+        print('O' + (str(self.getObjectType()) if self.getObjectType() else '') + '\t' + self.getObjectLabel() + (('\t' + str(motion_descriptor)) if motion_descriptor else ''))
 
     def printObject_lvl1_ver2(self, print_FU=False, motion_descriptor=None):
         print( str('\t' if print_FU else '') + '<object>' )
@@ -306,15 +309,15 @@ class Object(Thing):
         print( str('\t' if print_FU else '') + '</object>' )
 
     def printObject_lvl2(self, version=2):
-        if not print_new_style or version == 1:
+        if version == 1:
             self.printObject_lvl2_ver1()
         else:
             self.printObject_lvl2_ver2()
 
     def printObject_lvl2_ver1(self, motion_descriptor=None):
-        print("O" + str(self.getObjectType()) + '\t' + self.getObjectLabel() + (('\t' + str(motion_descriptor)) if motion_descriptor else ''))
+        print('O' + (str(self.getObjectType()) if self.getObjectType() else '') + '\t' + self.getObjectLabel() + (('\t' + str(motion_descriptor)) if motion_descriptor else ''))
         for x in range(len(self.getStatesList())):
-            print("S" + str(self.getStateType(x)) + '\t' + self.getStateLabel(x) + (('\t[' + str(self.getRelatedObject(x)) + ']') if self.getRelatedObject(x) else ''))
+            print('S' +  (str(self.getStateType(x)) if self.getStateType(x) else '') + '\t' + self.getStateLabel(x) + (('\t[' + str(self.getRelatedObject(x)) + ']') if self.getRelatedObject(x) else ''))
         #endfor
     #end
 
@@ -334,18 +337,18 @@ class Object(Thing):
         print( str('\t' if print_FU else '') + '</object>' )
 
     def printObject_lvl3(self, version=2):
-        if not print_new_style or version == 1:
+        if version == 1:
             self.printObject_lvl3_ver1()
         else:
             self.printObject_lvl3_ver2()
 
     def printObject_lvl3_ver1(self, motion_descriptor=None):
-        print("O" + str(self.getObjectType()) + '\t' + self.getObjectLabel() + (('\t' + str(motion_descriptor)) if motion_descriptor else ''))
+        print('O' + (str(self.getObjectType()) if self.getObjectType() else '') + '\t' + self.getObjectLabel() + (('\t' + str(motion_descriptor)) if motion_descriptor else ''))
         for x in range(len(self.getStatesList())):
             if 'contains' in self.getStateLabel(x) or 'ingredients' in self.getStateLabel(x):
-                print("S" + str(self.getStateType(x)) + '\t' + self.getStateLabel(x) + '\t' + self.getIngredientsText())
+                print('S' + (str(self.getStateType(x)) if self.getStateType(x) else '') + '\t' + self.getStateLabel(x) + '\t' + self.getIngredientsText())
             else:
-                print('S' + str(self.getStateType(x)) + '\t' + self.getStateLabel(x) + (str('\t ' + '[' + str(self.getRelatedObject(x)) + ']') if self.getRelatedObject(x) else ''))
+                print('S' +  (str(self.getStateType(x)) if self.getStateType(x) else '') + '\t' + self.getStateLabel(x) + (str('\t ' + '[' + str(self.getRelatedObject(x)) + ']') if self.getRelatedObject(x) else ''))
         #endfor
 
     def printObject_lvl3_ver2(self, print_FU=False, motion_descriptor=None):
@@ -410,6 +413,9 @@ class Object(Thing):
                 count += 1
 
         return count == len(self.objectIngredients)
+
+    def isContainer(self):
+        return bool(self.objectIngredients)
 
     def equals_lvl1(self, O):
         return self.getObjectType() == O.getObjectType()
@@ -528,7 +534,7 @@ class FunctionalUnit(object):
         # -- quite simply, a functional unit is empty if it has no Motion node or no Input/Output nodes:
         return not self.motionNode or not self.inputNodes or not self.outputNodes
 
-    def addObjectNode(self, objectNode, is_input, is_active_motion):
+    def addObjectNode(self, objectNode, is_input, is_active_motion=None):
         # NOTE: is_active_motion :- signifies if the object is actively moving (1) or passively / not moving (0)
         #               -- refer to motion taxonomy / motion code works by Paulius et al. 2020, Alibayev et al. 2021
 
@@ -722,14 +728,15 @@ class FunctionalUnit(object):
     def getSuccessRate(self):
         return self.success_rate
 
-    def printMotion(self, version=2):
-        if not print_new_style or version == 1:
+    def printMotion(self, version=1):
+        if version == 1:
             self.printMotion_ver1()
         else:
             self.printMotion_ver2()
 
     def printMotion_ver1(self):
-        text = 'M' + str(self.motionNode.getMotionType())  + '\t' + self.motionNode.getMotionLabel() + '\t' + \
+        text = 'M' + (str(self.motionNode.getMotionType()) if self.motionNode.getMotionType() else '') + '\t' + \
+            (self.motionNode.getMotionLabel() if self.motionNode.getMotionLabel() else '') + '\t' + \
             ( str('<' + str(self.times[0]) + ',' + str(self.times[1]) + '>') if (self.times[0] and self.times[1]) else '<Assumed>')
         if self.success_rate:
             text += '\t' + self.entity + '\t' + str(self.success_rate)
@@ -752,7 +759,7 @@ class FunctionalUnit(object):
         print('</motion>')
 
     def printFunctionalUnit_lvl1(self, version=1):
-        if not print_new_style or version == 1:
+        if version == 1:
             self.printFunctionalUnit_lvl1_ver1()
         else:
             self.printFunctionalUnit_lvl1_ver2()
@@ -775,19 +782,19 @@ class FunctionalUnit(object):
     def printFunctionalUnit_lvl1_ver2(self):
         print('<input_nodes>')
         for T in self.inputNodes:
-            T.printObject_lvl1(print_FU=True, motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
+            T.printObject_lvl1_ver2(print_FU=True, motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
         print('</input_nodes>')
 
         self.printMotion()
 
         print('<output_nodes>')
         for T in self.outputNodes:
-            T.printObject_lvl1(print_FU=True, motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
+            T.printObject_lvl1_ver2(print_FU=True, motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
         print('</output_nodes>')
     #enddef
     
     def printFunctionalUnit_lvl2(self, version=1):
-        if not print_new_style or version == 1:
+        if version == 1:
             self.printFunctionalUnit_lvl2_ver1()
         else:
             self.printFunctionalUnit_lvl2_ver2()
@@ -810,19 +817,19 @@ class FunctionalUnit(object):
     def printFunctionalUnit_lvl2_ver2(self):
         print('<input_nodes>')
         for T in self.inputNodes:
-            T.printObject_lvl2(print_FU=True, motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
+            T.printObject_lvl2_ver2(print_FU=True, motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
         print('</input_nodes>')
 
         self.printMotion()
 
         print('<output_nodes>')
         for T in self.outputNodes:
-            T.printObject_lvl2(print_FU=True, motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
+            T.printObject_lvl2_ver2(print_FU=True, motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
         print('</output_nodes>')
     #enddef
 
     def printFunctionalUnit_lvl3(self, version=1):
-        if not print_new_style or version == 1:
+        if version == 1:
             self.printFunctionalUnit_lvl3_ver1()
         else:
             self.printFunctionalUnit_lvl3_ver2()
@@ -844,14 +851,14 @@ class FunctionalUnit(object):
     def printFunctionalUnit_lvl3_ver2(self):
         print('<input_nodes>')
         for T in self.inputNodes:
-            T.printObject_lvl3(print_FU=True, motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
+            T.printObject_lvl3_ver2(print_FU=True, motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
         print('</input_nodes>')
 
         self.printMotion()
 
         print('<output_nodes>')
         for T in self.outputNodes:
-            T.printObject_lvl3(print_FU=True, motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
+            T.printObject_lvl3_ver2(print_FU=True, motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
         print('</output_nodes>')
     #enddef
 
@@ -889,12 +896,12 @@ class FunctionalUnit(object):
             sentence += _output.getObjectLabel().replace(' ', '_') + ' '
         return sentence
 
-    def getFunctionalUnitJSON(self):
+    def getFunctionalUnit_JSON(self):
         # NOTE: function used to return functional units for a JSON file:
         func_unit_as_JSON = { 'input_nodes' : [], 'motion_node' : None, 'output_nodes' : [] }
 
         for N in self.inputNodes:
-            object_as_JSON = N.getObjectJSON( motion_descriptor=self.inDescriptor[self.inputNodes.index(N)] )
+            object_as_JSON = N.getObject_JSON( motion_descriptor=self.inDescriptor[self.inputNodes.index(N)] )
             func_unit_as_JSON['input_nodes'].append(object_as_JSON)
         
         motion_as_JSON = self.motionNode.getMotionJSON()
@@ -914,7 +921,7 @@ class FunctionalUnit(object):
         func_unit_as_JSON['motion_node'] = motion_as_JSON
 
         for N in self.outputNodes:
-            object_as_JSON = N.getObjectJSON( motion_descriptor=self.outDescriptor[self.outputNodes.index(N)] )
+            object_as_JSON = N.getObject_JSON( motion_descriptor=self.outDescriptor[self.outputNodes.index(N)] )
             func_unit_as_JSON['output_nodes'].append(object_as_JSON)
 
         return func_unit_as_JSON
@@ -983,6 +990,146 @@ class FunctionalUnit(object):
         functional_unit_copy.setTimes(self.getStartTime(), self.getEndTime())
 
         return functional_unit_copy
+    #enddef
+
+    def toSentence(self):
+        # NOTE: this is a function that converts a functional unit into a sentence:
+        # -- for specialized verbs, we need to include additional rules...
+        # -- another idea is to iterate through all objects and ask an LLM to complete and construct a sentence using object names.
+
+        action_verb = self.getMotion().getLabel()
+
+        if action_verb in ['cut', 'slice', 'chop']:
+            # NOTE: sentence format should be like:
+            #   <VERB> <cut_objects> (on <SURFACE>) using <ACTIVE_OBJ>
+
+            # -- the cut object will have the state based on the action:
+            cut_objects, surface = [], None
+            for o in range(len(self.outputNodes)):
+                for st in range(self.outputNodes[o].getNumberOfStates()):
+                    # -- we may have multiple objects being sliced or chopped in one single functional unit,
+                    #       so we need to add them all to a list:
+                    if action_verb in self.outputNodes[o].getStateLabel(st):
+                        cut_objects.append(self.outputNodes[o])
+
+                        # -- now we will review all chopped items and see if they are "in" or "on" some kind of surface:
+                        for st in range(self.outputNodes[o].getNumberOfStates()):
+                            # -- the cut object should be on a cutting surface, which is indicated by its state:
+                            if self.outputNodes[o].getStateLabel(st) == 'on':
+                                surface = self.outputNodes[o].getRelatedObject(st)
+
+            # -- now we will find the item that is being used to perform the cutting (typically it is a knife):
+            utensil = None
+            for i in range(len(self.inputNodes)):
+                if self.getInputDescriptor(i) == 1:
+                    is_ingredient = False
+                    # -- we check if this object's name does not match an object that we identified as being cut:
+                    for o in cut_objects:
+                        if o.getName() == self.inputNodes[i].getName():
+                            is_ingredient = True
+
+                    if not is_ingredient:
+                        utensil = self.inputNodes[i].getName()
+            
+            # -- we will have to correctly format the string in the case where we are chopping more than one ingredient:
+            stuff_being_cut = ''
+            if len(cut_objects) == 1:
+                stuff_being_cut = cut_objects[-1].getName()
+            else:
+                for o in cut_objects:
+                    if o  == cut_objects[-1]:
+                        stuff_being_cut += ' and ' + o.getName()
+                    else:
+                        stuff_being_cut += o.getName() + ', '
+
+            return action_verb.capitalize() + ' ' + stuff_being_cut + \
+                (' on ' + surface if surface else '') + ' with ' + utensil + '.'
+
+        elif action_verb in ['pick', 'place', 'pick-and-place', 'pour', 'sprinkle', 'insert']:
+            # NOTE: sentence format should be like:
+            #   <VERB> <ACTIVE_OBJ> (from <ACTIVE_CONT>) on/into <PASSIVE_OBJ>.
+            
+            if action_verb == 'pick-and-place':
+                action_verb = 'pick and place'
+
+            # -- find the active object that is moving and potentially the container in which it is in/on:
+            moving_objects, src_container = [], None
+            for i in range(len(self.inputNodes)):
+                if self.getInputDescriptor(i) == 1 and not self.inputNodes[i].isContainer():
+                    # -- this is likely to be the object that is moving...
+                    moving_objects.append(self.inputNodes[i].getName())
+                    for st in range(self.inputNodes[i].getNumberOfStates()):
+                        # -- ideally, objects should have a related object that states where it is initially:
+                        if self.inputNodes[i].getStateLabel(st) in ['in', 'on']:
+                            src_container = self.inputNodes[i].getRelatedObject(st)
+
+            # -- now we will find the new container of the ingredient based on it 
+            #       being added to the object's ingredients list:            
+            tgt_container = None
+            for o in range(len(self.outputNodes)):
+                # -- we only consider objects that are being contained in other objects:
+                if self.outputNodes[o].getName() in moving_objects and not self.outputNodes[o].isContainer():
+                    # -- we will find the object in which that ingredient is now found or being placed:
+                    for st in range(self.outputNodes[o].getNumberOfStates()):
+                        # -- ideally, objects should have a related object that states where it is now located:
+                        if self.outputNodes[o].getStateLabel(st) in ['in', 'on']:
+                            tgt_container = self.outputNodes[o].getRelatedObject(st)
+
+            # -- now we need to correctly format the number of ingredients or objects being moved 
+            #       from the source to the target container:
+            active_objects = ''
+            if len(moving_objects) == 1:
+                # -- we only have one object to think about:
+                active_objects = moving_objects[-1]
+            else:
+                # -- we have more than one object being moved or translated:
+                for obj in moving_objects:
+                    if obj == moving_objects[-1]:
+                        active_objects += 'and ' + obj
+                    else:
+                        active_objects += obj + ', '
+
+            return action_verb.capitalize() + ' ' + active_objects + \
+                (' from ' + src_container if src_container else '') + \
+                (' into ' if action_verb in ['pour', 'sprinkle', 'insert'] else ' on ') + tgt_container + '.'
+
+        elif action_verb in ['stir', 'mix']:
+            container, utensil = None, None
+
+            # -- first, we identify the possible container:
+            for i in range(len(self.inputNodes)):
+                if self.inputNodes[i].isContainer():
+                    # -- a container must not have any states where it is "in" something:
+                    valid_container = True
+                    for st in range(self.inputNodes[i].getNumberOfStates()):
+                        if self.inputNodes[i].getStateLabel(st) == 'in':
+                            valid_container = False
+                    if valid_container:
+                        container = self.inputNodes[i]
+
+            # -- next, we find the object that is used for stirring, which should *not* 
+            #   be found in the container:
+            for i in range(len(self.inputNodes)):
+                if self.inputNodes[i].getName() not in container.getIngredients() and not self.inputNodes[i].isContainer() and self.getInputDescriptor(i) == 1:
+                    # -- ideally, the object that stands out is the stirring utensil, as it should not have anything in it:
+                    utensil = self.inputNodes[i]
+
+            # -- construct a sentence fragment listing all ingredient objects:
+            items_being_mixed = ''
+            for i in container.getIngredients():
+                if i == container.getIngredients()[-1]:
+                    items_being_mixed += 'and ' + i
+                else:
+                    items_being_mixed += i + ', '
+
+            return action_verb.capitalize() + ' ' + items_being_mixed + \
+                ' in ' + container.getName() + ' with ' + utensil.getName() + '.'
+
+        # TODO: think about how to construct the sentences for other functional unit types!
+
+        #end
+
+        return None
     #enddef
 
 #endclass

@@ -1,12 +1,11 @@
 # FOON_API: Code for Processing FOON! #
 
-This repository contains code for processing [FOON](https://www.foonets.com) (short for the **functional object-oriented network**) graphs. 
+This repository contains code for processing [FOON](https://www.foonets.com) (short for the **functional object-oriented network**) graphs. FOON was developed by the [USF Robot Perception and Action Lab](https://rpal.cse.usf.edu).
 
-FOON was developed by the [USF Robot Perception and Action Lab](https://rpal.cse.usf.edu). 
+Here, you will find several scripts that are needed to operate on FOON files, which are mainly subgraph files as text files (.TXT), .JSON, or, more recently, .PKL files.
+Examples of subgraphs can be found in the ``FOON-111/`` directory found in this repository.
 
-### Overview
-
-There are several scripts found here that are needed to operate on FOON files, which are mainly subgraph files as text files (.TXT), .JSON, or, more recently, .PKL files. Examples of subgraphs can be found in the ``FOON-111/`` directory found in this repository; they can be visualized using the [FOON_view](https://davidpaulius.github.io/foon_view/) tool.
+Subgraphs can be visualized using the [FOON_view](https://davidpaulius.github.io/foon_view/) tool.
 
 ## License
 
