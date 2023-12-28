@@ -92,14 +92,16 @@ def _usage():
 #enddef
 
 def _run_parser():
+    print('-- [FOON_parser] : Initiating parsing procedure!')
+
     # -- use the defined variables as on the higher scope:
     global source_dir, target_dir
 
     if not source_dir:
-        source_dir = input('-- Enter path to directory / location of UNPARSED files: > ')
+        source_dir = input(' -- Enter path to directory / location of UNPARSED files: > ')
 
     if not target_dir:
-        target_dir = input('-- Enter path to directory / location where PARSED files will be saved to: > ')
+        target_dir = input(' -- Enter path to directory / location where PARSED files will be saved to: > ')
 
     print()
 
@@ -133,7 +135,7 @@ def _run_parser():
         try:
             _file = open('FOON_index.json', 'r')
             index_file = json.load(_file)
-            print("-- Loaded existing 'FOON_index.json' file!")
+            print(" -- [FOON_parser] : Loaded existing 'FOON_index.json' file!")
 
             # NOTE: extract object labels from the index file:
             _objects = index_file['objects'] if 'objects' in index_file else []
@@ -212,7 +214,7 @@ def _run_parser():
                 # NOTE: if you want to pre-load an existing 'motionIndex.txt' (that also includes motion labels 
                 # 	NOT LIMITED TO those in the subgraphs), this is where it will look for it:
                 motion_file = open('FOON-motion_index.txt', 'r')
-                print("-- Loaded 'FOON-motion_index.txt' file!")
+                print(" -- [FOON_parser] : Loaded 'FOON-motion_index.txt' file!")
                 for line in motion_file:
                     line = line.split("\t")
 
@@ -240,7 +242,7 @@ def _run_parser():
                 # NOTE: if you want to pre-load an existing 'stateIndex.txt' (that also includes state labels 
                 # 	NOT LIMITED TO those in the subgraphs), this is where it will look for it:
                 _state = open('FOON-state_index.txt', 'r')
-                print("-- Loaded 'FOON-state_index.txt' file!")
+                print(" -- [FOON_parser] : Loaded 'FOON-state_index.txt' file!")
                 for line in _state:
                     line = line.split("\t")
                     state_label = line[1].lower().rstrip()
@@ -272,7 +274,7 @@ def _run_parser():
         pass
     #end
 
-    print('\n -- Now beginning the parsing phase:')
+    print('\n -- [FOON_parser] : Commencing parsing...')
 
     for F in file_list:
         if 'index' in str(F).lower() or '.txt' not in str(F).lower():
@@ -548,7 +550,7 @@ def _run_parser():
     motionIndex = sorted(list(set(motionIndex)))
     stateIndex = sorted(list(set(stateIndex)))
 
-    print("\n -- Now saving corrected files to '" + target_dir + "'...")
+    print("\n -- [FOON_parser] : Saving corrected files to '" + target_dir + "'...")
 
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
@@ -943,7 +945,7 @@ def _run_parser():
         #endif
     #endif
 
-    print('\n-- FOON_parser.py complete!')
+    print('\n -- [FOON_parser] : Parsing complete!')
 #enddef
 
 
