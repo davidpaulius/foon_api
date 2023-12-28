@@ -249,22 +249,22 @@ class Object(Thing):
             return self.getObjectText_ver2(motion_descriptor=motion_descriptor)
 
     def getObjectText_ver1(self, motion_descriptor=None):
-        _text = "O" + (str(self.getType()) if self.getType() else '0') + '\t' + self.getLabel() + '\t' + str(motion_descriptor)
+        _text = "O" + str(self.getType() if self.getType() else 0) + '\t' + self.getLabel() + '\t' + str(motion_descriptor)
         for x in range(len(self.objectStates)):
             if 'contains' in self.getStateLabel(x) or 'ingredients' in self.getStateLabel(x):
-                _text += "\nS" + (str(self.getStateType(x)) if self.getStateType(x) else '0') + '\t' + self.getStateLabel(x) + '\t' + self.getIngredientsText()
+                _text += "\nS" + str(self.getStateType(x) if self.getStateType(x) else 0) + '\t' + self.getStateLabel(x) + '\t' + self.getIngredientsText()
             else:
-                _text += "\nS" + (str(self.getStateType(x)) if self.getStateType(x) else '0') + '\t' + self.getStateLabel(x) + (('\t[' + str(self.getRelatedObject(x)) + ']') if self.getRelatedObject(x) else '')
+                _text += "\nS" + str(self.getStateType(x) if self.getStateType(x) else 0) + '\t' + self.getStateLabel(x) + (('\t[' + str(self.getRelatedObject(x)) + ']') if self.getRelatedObject(x) else '')
         #endfor
         return _text
 
     def getObjectText_ver2(self, motion_descriptor=None):
         text = str('<object>' + '\n')
-        text += 'object_id = ' + (str(self.getType()) if self.getType() else '0')  + '\n'
+        text += 'object_id = ' + str(self.getType() if self.getType() else 0) + '\n'
         text += "object_label = '" + str(self.getLabel()) + "'\n"
         for x in range(len(self.objectStates)):
             if 'contains' not in self.getStateLabel(x):
-                text += '<state>' + '\t' + 'state_id = ' + (str(self.getStateType(x)) if self.getStateType(x) else '0') + \
+                text += '<state>' + '\t' + 'state_id = ' + str(self.getStateType(x) if self.getStateType(x) else 0) + \
                     '\t' + "state_label = '" + str(self.getStateLabel(x)) + \
                     '\t' + ("relative_object = '" + str(self.getRelatedObject(x) + "'\t") if self.getRelatedObject(x) else '') + \
                     '</state>' + '\n'
