@@ -172,16 +172,29 @@ class Object(Thing):
     def setRelatedObject(self, X, relatedObj):
         self.objectStates[X][2] = relatedObj
 
+    # NOTE: these are just aliased versions of the same functions (operating on ingredients or contained objects):
     def getIngredients(self):
         return list(self.objectIngredients)
 
+    def getContainedObjects(self):
+        return list(self.objectIngredients)
+
     def hasIngredients(self):
+        return self.objectIngredients
+
+    def containsObjects(self):
         return self.objectIngredients
 
     def setIngredients(self, L):
         self.objectIngredients = list(L)
 
     def addIngredient(self, I):
+        self.objectIngredients.append(I)
+
+    def setContainedObjects(self, L):
+        self.objectIngredients = list(L)
+
+    def addContainedObject(self, I):
         self.objectIngredients.append(I)
 
     def checkIfGoal(self):
