@@ -249,7 +249,7 @@ class Object(Thing):
             return self.getObjectText_ver2(motion_descriptor=motion_descriptor)
 
     def getObjectText_ver1(self, motion_descriptor=None):
-        _text = "O" + str(self.getType() if self.getType() else 0) + '\t' + self.getLabel() + '\t' + str(motion_descriptor)
+        _text = "O" + str(self.getType() if self.getType() else 0) + '\t' + self.getLabel() + '\t' + str(motion_descriptor if motion_descriptor else 0)
         for x in range(len(self.objectStates)):
             if 'contains' in self.getStateLabel(x) or 'ingredients' in self.getStateLabel(x):
                 _text += "\nS" + str(self.getStateType(x) if self.getStateType(x) else 0) + '\t' + self.getStateLabel(x) + '\t' + self.getIngredientsText()
@@ -271,7 +271,7 @@ class Object(Thing):
         if self.hasPortion:
             text += 'has_portions = True' + '\n'
         if motion_descriptor:
-            text += 'object_in_motion = ' + str(motion_descriptor) + '\n'
+            text += 'object_in_motion = ' + str(motion_descriptor if motion_descriptor else 0) + '\n'
         text += 'contains=' + str(self.getIngredientsText()) + '\n'
         text += '</object>' + '\n'
         return text
