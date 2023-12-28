@@ -766,13 +766,13 @@ class FunctionalUnit(object):
 
     def printFunctionalUnit_lvl1_ver1(self):
         for T in self.inputNodes:
-            T.printObject_lvl1_ver1(motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
+            T.printObject_lvl1_ver1(motion_descriptor=self.inDescriptor[self.inputNodes.index(T)])
         #endfor
 
         self.printMotion()
 
         for T in self.outputNodes:
-            T.printObject_lvl2_ver1(motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
+            T.printObject_lvl2_ver1(motion_descriptor=self.outDescriptor[self.outputNodes.index(T)])
         #endfor
 
         if self.success_rate:
@@ -782,14 +782,14 @@ class FunctionalUnit(object):
     def printFunctionalUnit_lvl1_ver2(self):
         print('<input_nodes>')
         for T in self.inputNodes:
-            T.printObject_lvl1_ver2(print_FU=True, motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
+            T.printObject_lvl1_ver2(print_FU=True, motion_descriptor=self.inDescriptor[self.inputNodes.index(T)])
         print('</input_nodes>')
 
         self.printMotion()
 
         print('<output_nodes>')
         for T in self.outputNodes:
-            T.printObject_lvl1_ver2(print_FU=True, motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
+            T.printObject_lvl1_ver2(print_FU=True, motion_descriptor=self.outDescriptor[self.outputNodes.index(T)])
         print('</output_nodes>')
     #enddef
     
@@ -801,13 +801,13 @@ class FunctionalUnit(object):
 
     def printFunctionalUnit_lvl2_ver1(self):
         for T in self.inputNodes:
-            T.printObject_lvl2_ver1(motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
+            T.printObject_lvl2_ver1(motion_descriptor=self.inDescriptor[self.inputNodes.index(T)])
         #endfor
 
         self.printMotion()
 
         for T in self.outputNodes:
-            T.printObject_lvl2_ver1(motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
+            T.printObject_lvl2_ver1(motion_descriptor=self.outDescriptor[self.outputNodes.index(T)])
         #endfor
 
         if self.success_rate:
@@ -817,14 +817,14 @@ class FunctionalUnit(object):
     def printFunctionalUnit_lvl2_ver2(self):
         print('<input_nodes>')
         for T in self.inputNodes:
-            T.printObject_lvl2_ver2(print_FU=True, motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
+            T.printObject_lvl2_ver2(print_FU=True, motion_descriptor=self.inDescriptor[self.inputNodes.index(T)])
         print('</input_nodes>')
 
         self.printMotion()
 
         print('<output_nodes>')
         for T in self.outputNodes:
-            T.printObject_lvl2_ver2(print_FU=True, motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
+            T.printObject_lvl2_ver2(print_FU=True, motion_descriptor=self.outDescriptor[self.outputNodes.index(T)])
         print('</output_nodes>')
     #enddef
 
@@ -836,13 +836,13 @@ class FunctionalUnit(object):
     
     def printFunctionalUnit_lvl3_ver1(self):
         for T in self.inputNodes:
-            T.printObject_lvl3_ver1(motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
+            T.printObject_lvl3_ver1(motion_descriptor=self.inDescriptor[self.inputNodes.index(T)])
         #endfor
 
         self.printMotion()
 
         for T in self.outputNodes:
-            T.printObject_lvl3_ver1(motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
+            T.printObject_lvl3_ver1(motion_descriptor=self.outDescriptor[self.outputNodes.index(T)])
         #endfor
 
         if self.success_rate:
@@ -851,14 +851,14 @@ class FunctionalUnit(object):
     def printFunctionalUnit_lvl3_ver2(self):
         print('<input_nodes>')
         for T in self.inputNodes:
-            T.printObject_lvl3_ver2(print_FU=True, motion_descriptor=str(self.inDescriptor[self.inputNodes.index(T)]) )
+            T.printObject_lvl3_ver2(print_FU=True, motion_descriptor=self.inDescriptor[self.inputNodes.index(T)])
         print('</input_nodes>')
 
         self.printMotion()
 
         print('<output_nodes>')
         for T in self.outputNodes:
-            T.printObject_lvl3_ver2(print_FU=True, motion_descriptor=str(self.outDescriptor[self.outputNodes.index(T)]) )
+            T.printObject_lvl3_ver2(print_FU=True, motion_descriptor=self.outDescriptor[self.outputNodes.index(T)])
         print('</output_nodes>')
     #enddef
 
