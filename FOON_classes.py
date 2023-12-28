@@ -249,22 +249,22 @@ class Object(Thing):
             return self.getObjectText_ver2(motion_descriptor=motion_descriptor)
 
     def getObjectText_ver1(self, motion_descriptor=None):
-        _text = "O" + str(self.getType()) + '\t' + self.getLabel() + '\t' + str(motion_descriptor)
+        _text = "O" + (str(self.getType()) if self.getType() else '0') + '\t' + self.getLabel() + '\t' + str(motion_descriptor)
         for x in range(len(self.objectStates)):
             if 'contains' in self.getStateLabel(x) or 'ingredients' in self.getStateLabel(x):
-                _text += "\nS" + str(self.getStateType(x)) + '\t' + self.getStateLabel(x) + '\t' + self.getIngredientsText()
+                _text += "\nS" + (str(self.getStateType(x)) if self.getStateType(x) else '0') + '\t' + self.getStateLabel(x) + '\t' + self.getIngredientsText()
             else:
-                _text += "\nS" + str(self.getStateType(x)) + '\t' + self.getStateLabel(x) + (('\t[' + str(self.getRelatedObject(x)) + ']') if self.getRelatedObject(x) else '')
+                _text += "\nS" + (str(self.getStateType(x)) if self.getStateType(x) else '0') + '\t' + self.getStateLabel(x) + (('\t[' + str(self.getRelatedObject(x)) + ']') if self.getRelatedObject(x) else '')
         #endfor
         return _text
 
     def getObjectText_ver2(self, motion_descriptor=None):
         text = str('<object>' + '\n')
-        text += 'object_id = ' + str(self.getType())  + '\n'
+        text += 'object_id = ' + (str(self.getType()) if self.getType() else '0')  + '\n'
         text += "object_label = '" + str(self.getLabel()) + "'\n"
         for x in range(len(self.objectStates)):
             if 'contains' not in self.getStateLabel(x):
-                text += '<state>' + '\t' + 'state_id = ' + str(self.getStateType(x)) + \
+                text += '<state>' + '\t' + 'state_id = ' + (str(self.getStateType(x)) if self.getStateType(x) else '0') + \
                     '\t' + "state_label = '" + str(self.getStateLabel(x)) + \
                     '\t' + ("relative_object = '" + str(self.getRelatedObject(x) + "'\t") if self.getRelatedObject(x) else '') + \
                     '</state>' + '\n'
@@ -279,11 +279,11 @@ class Object(Thing):
     # NOTE: this will be used within getFunctionalUnit_JSON() method in the FunctionalUnit class below:
     def getObject_JSON(self, motion_descriptor=None, prints_ingredients=False):
         object_as_JSON = {}
-        object_as_JSON['object_id'] = self.getType()
+        object_as_JSON['object_id'] = self.getType() if self.getType() else 0
         object_as_JSON['object_label'] = str(self.getLabel())
         object_as_JSON['object_states'] = []
         for x in range(len(self.objectStates)):
-            state_JSON = {'state_id' : self.getStateType(x), 
+            state_JSON = {'state_id' : self.getStateType(x) if self.getStateType(x) else 0, 
                     'state_label' : str(self.getStateLabel(x)) }
             if self.getRelatedObject(x):
                 state_JSON['relative_object'] = str(self.getRelatedObject(x))
@@ -501,13 +501,13 @@ class Motion(Thing):
         print('</motion>')
 
     def getMotionText(self):
-        text = '\t' + 'motion_id = ' + str(self.getMotionType()) + '\n' 
+        text = '\t' + 'motion_id = ' + str(self.getMotionType() if self.getMotionType() else 0) + '\n' 
         text += '\t' + "motion_label = '" + self.getMotionLabel() + "'\n"
         return text
 
     def getMotionJSON(self):
         motion_as_JSON = {}
-        motion_as_JSON['motion_id'] = str(self.getMotionType()) 
+        motion_as_JSON['motion_id'] = self.getMotionType() if self.getMotionType() else 0 
         motion_as_JSON['motion_label'] = self.getMotionLabel()
         motion_as_JSON['robot_type'] = None
         motion_as_JSON['weight_success'] = None
