@@ -894,7 +894,7 @@ class FunctionalUnit(object):
         return self.outputNodes[x].getObjectText( motion_descriptor=self.outDescriptor[x], version=1 ) + '\n'
 
     def getMotionForFile(self):
-        _string = "M" + str(self.motionNode.getMotionType()) + '\t' + self.motionNode.getMotionLabel() + '\t' + \
+        _string = "M" + str(self.motionNode.getMotionType() if self.motionNode.getMotionType() else 0) + '\t' + self.motionNode.getMotionLabel() + '\t' + \
             ( str('<' + str(self.times[0]) + ',' + str(self.times[1]) + '>') if (self.times[0] and self.times[1]) else '<Assumed>')
         if self.success_rate and self.success_rate > 0:
             _string += '\t' + self.entity + '\t' + str(self.success_rate)
