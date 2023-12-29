@@ -1868,7 +1868,7 @@ def _performGeneralization():
 def _startFOONview():
     try:
         import webbrowser
-        webbrowser.open('http://foonets.com/FOON_view/visualizer.html')
+        webbrowser.open('https://davidpaulius.github.io/foon-view/')
     except ImportError:
         print(" -- WARNING: Missing 'webbrowser' module for this function!")
         return
