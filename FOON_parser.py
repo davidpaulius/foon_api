@@ -1,6 +1,6 @@
 '''
 FOON: Parsing Script (FOON_parser):
-        (last updated: 6th December, 2021):
+        (last updated: 14th January, 2024):
 -------------------------------------------
 -- Written and maintained by: 
     * Md Sadman Sakib (mdsadman@usf.edu)

@@ -1,6 +1,6 @@
 '''
 FOON_classes (Object Definitions for FOON) 
-        (last updated: 15th April, 2022):
+        (last updated: 14th January, 2024):
 -------------------------------------------
 -- Written and maintained by: 
     * David Paulius (davidpaulius@usf.edu / dpaulius@cs.brown.edu)
