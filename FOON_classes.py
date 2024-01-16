@@ -1,6 +1,6 @@
 '''
 FOON_classes (Object Definitions for FOON) 
-        (last updated: 15th January, 2024):
+        (last updated: 14th January, 2024):
 -------------------------------------------
 -- Written and maintained by: 
     * David Paulius (davidpaulius@usf.edu / dpaulius@cs.brown.edu)
@@ -249,7 +249,7 @@ class Object(Thing):
             return self.getObjectText_ver2(motion_descriptor=motion_descriptor)
 
     def getObjectText_ver1(self, motion_descriptor=None):
-        _text = "O" + str(self.getType() if self.getType() else 0) + '\t' + self.getLabel() + '\t' + str(motion_descriptor if motion_descriptor else 0)
+        _text = "O" + str(self.getType() if self.getType() else 0) + '\t' + self.getLabel() + '\t' + str(motion_descriptor if motion_descriptor else 0) + ('\t!' if self.checkIfGoal() else '')
         for x in range(len(self.objectStates)):
             if 'contains' in self.getStateLabel(x) or 'ingredients' in self.getStateLabel(x):
                 _text += "\nS" + str(self.getStateType(x) if self.getStateType(x) else 0) + '\t' + self.getStateLabel(x) + '\t' + self.getIngredientsText()
