@@ -1,6 +1,6 @@
 '''
 FOON_classes (Object Definitions for FOON) 
-        (last updated: 14th January, 2024):
+        (last updated: 15th January, 2024):
 -------------------------------------------
 -- Written and maintained by: 
     * David Paulius (davidpaulius@usf.edu / dpaulius@cs.brown.edu)
@@ -204,7 +204,7 @@ class Object(Thing):
         self.isGoal = True
 
     # NOTE: Printable functions:
-    def getIngredientsText(self, version=2):
+    def getIngredientsText(self, version=1):
         if not flag_recursive_objects or version == 1:
             return self.getIngredientsText_ver_1()
         return self.getIngredientsText_ver_2()
@@ -242,7 +242,7 @@ class Object(Thing):
         #endif
         return '{}'
 
-    def getObjectText(self, motion_descriptor=None, version=2):
+    def getObjectText(self, motion_descriptor=None, version=1):
         if version == 1:
             return self.getObjectText_ver1(motion_descriptor=motion_descriptor)
         else:
@@ -302,7 +302,7 @@ class Object(Thing):
     # NOTE: new print functions to make FOON graphs textually more like markup languages:
     # -- these can be switched off using a flag 'flag_recursive_objects' above.
 
-    def printObject_lvl1(self, version=2, motion_descriptor=None):
+    def printObject_lvl1(self, version=1, motion_descriptor=None):
         if version == 1:
             self.printObject_lvl1_ver1(motion_descriptor=motion_descriptor)
         else:
@@ -321,7 +321,7 @@ class Object(Thing):
             print( str('\t\t' if print_FU else '\t') + 'object_in_motion = ' + str(motion_descriptor) )
         print( str('\t' if print_FU else '') + '</object>' )
 
-    def printObject_lvl2(self, version=2, motion_descriptor=None):
+    def printObject_lvl2(self, version=1, motion_descriptor=None):
         if version == 1:
             self.printObject_lvl2_ver1(motion_descriptor=motion_descriptor)
         else:
@@ -349,7 +349,7 @@ class Object(Thing):
             print( str('\t\t' if print_FU else '\t') + 'object_in_motion = ' + str(motion_descriptor) )
         print( str('\t' if print_FU else '') + '</object>' )
 
-    def printObject_lvl3(self, version=2, motion_descriptor=None):
+    def printObject_lvl3(self, version=1, motion_descriptor=None):
         if version == 1:
             self.printObject_lvl3_ver1(motion_descriptor=motion_descriptor)
         else:
