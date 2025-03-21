@@ -1,7 +1,7 @@
 '''
 FOON: Graph Analyzer (FOON_graph_analyzer):
 -------------------------------------------
--- Written and maintained by: 
+-- Written and maintained by:
     * David Paulius (davidpaulius@usf.edu / dpaulius@cs.brown.edu)
     * Md Sadman Sakib (mdsadman@usf.edu)
 -- Special thanks to undergraduates Kelvin Dong Sheng Pei and Sanjeeth Bhat.
@@ -85,7 +85,7 @@ FOON_oneModeProjection_lvl1 = {}; FOON_oneModeProjection_lvl2 = {}; FOON_oneMode
 objects_oneModeProjection_lvl1 = []; objects_oneModeProjection_lvl2 = []; objects_oneModeProjection_lvl3 = []
 
 FOON_oneModeProjection = [FOON_oneModeProjection_lvl1, FOON_oneModeProjection_lvl2, FOON_oneModeProjection_lvl3]
-objects_oneModeProjection = [objects_oneModeProjection_lvl1, objects_oneModeProjection_lvl2, objects_oneModeProjection_lvl3] 
+objects_oneModeProjection = [objects_oneModeProjection_lvl1, objects_oneModeProjection_lvl2, objects_oneModeProjection_lvl3]
 
 # NOTE: dictionary mapping labels to IDs for objects, motions, and states:
 FOON_objectLabels = {}; FOON_motionLabels = {}; FOON_stateLabels = {}
@@ -95,7 +95,7 @@ FOON_labels = {'objects' : FOON_objectLabels, 'motions' : FOON_motionLabels, 'st
 FOON_objectSenses = {}
 
 # NOTE: the following are dictionaries used for mapping categories to object labels (for generalization of FOON):
-FOON_objectClasses = {} 
+FOON_objectClasses = {}
 
 # NOTE: these lists are used for the generalization of FOON:
 # -- Two "generalized" versions of FOON:
@@ -147,11 +147,11 @@ def _buildInternalMaps():
 
     # -- build mapping between output objects to the units that make them:
     _buildOutputsToUnitMap()
-    
+
     # -- build mapping between functional units whose outputs overlap with another's inputs:
     if flag_buildFunctionalUnitMap:
         _buildFunctionalUnitMap()
-    
+
     # -- building mapping between all objects and the functional units they appear in:
     if flag_buildObjectToUnitMap:
         _buildObjectToUnitMap()
@@ -167,7 +167,7 @@ def _buildOutputsToUnitMap():
     print('  -- Level 2: Output object map complete!')
     _buildOutputsToUnitMap_lvl3()
     print('  -- Level 3: Output object map complete!\n')
-#enddef  	
+#enddef
 
 def _buildOutputsToUnitMap_lvl1():
     global FOON_outputsToUnits_lvl1, nodes_lvl1, FOON_lvl1
@@ -178,7 +178,7 @@ def _buildOutputsToUnitMap_lvl1():
                 for _output in _U.getOutputList():
                     if _input.equals_functions[0](_output):
                         procedures.append(_U); break
-                    #endif	
+                    #endif
                 #endfor
             #endfor
             FOON_outputsToUnits_lvl1[_input] = procedures
@@ -195,7 +195,7 @@ def _buildOutputsToUnitMap_lvl2():
                 for _output in _U.getOutputList():
                     if _input.equals_functions[1](_output):
                         procedures.append(_U); break
-                    #endif	
+                    #endif
                 #endfor
             #endfor
             FOON_outputsToUnits_lvl2[_input] = procedures
@@ -213,7 +213,7 @@ def _buildOutputsToUnitMap_lvl3():
                 for _output in _U.getOutputList():
                     if _input.equals_functions[2](_output):
                         procedures.append(_U); break
-                    #endif	
+                    #endif
                 #endfor
             #endfor
             FOON_outputsToUnits_lvl3[_input] = procedures
@@ -245,7 +245,7 @@ def _buildObjectToUnitMap_lvl1():
                 for _input in _U.getInputList():
                     if _input.equals_functions[0](N):
                         procedures.append(_U); break
-                    #endif	
+                    #endif
                 #endfor
             #endfor
             FOON_objectsToUnits_lvl1[N] = list(set(procedures))
@@ -265,7 +265,7 @@ def _buildObjectToUnitMap_lvl2():
                 for _input in _U.getInputList():
                     if _input.equals_functions[1](N):
                         procedures.append(_U); break
-                    #endif	
+                    #endif
                 #endfor
             #endfor
             FOON_objectsToUnits_lvl2[N] = list(set(procedures))
@@ -286,7 +286,7 @@ def _buildObjectToUnitMap_lvl3():
                 for _input in _U.getInputList():
                     if _input.equals_functions[2](N):
                         procedures.append(_U); break
-                    #endif	
+                    #endif
                 #endfor
             #endfor
             FOON_objectsToUnits_lvl3[N] = list(set(procedures))
@@ -296,7 +296,7 @@ def _buildObjectToUnitMap_lvl3():
 #enddef
 
 def _buildFunctionalUnitMap():
-    # NOTE: create a mapping between functional units to show 
+    # NOTE: create a mapping between functional units to show
     # 	which ones are connected to one another.
     print(' -- [FOON-fga] : Building FU-to-FU dictionaries...')
 
@@ -306,7 +306,7 @@ def _buildFunctionalUnitMap():
     print('  -- Level 2: Functional unit map complete!')
     _buildUnitToUnitMap_lvl3()
     print('  -- Level 3: Functional unit map complete!\n')
-#enddef	
+#enddef
 
 def _buildUnitToUnitMap_lvl1():
     global FOON_functionalUnitMap_lvl1
@@ -317,7 +317,7 @@ def _buildUnitToUnitMap_lvl1():
             candidates = FOON_outputsToUnits_lvl1.get(_input, [])
 
             for C in candidates:
-                if FOON_lvl1.index(C) not in prerequisite_units:	
+                if FOON_lvl1.index(C) not in prerequisite_units:
                     prerequisite_units.append(FOON_lvl1.index(C))
         #endfor
         FOON_functionalUnitMap_lvl1[FOON_lvl1.index(_FU)] = prerequisite_units
@@ -334,7 +334,7 @@ def _buildUnitToUnitMap_lvl2():
             candidates = FOON_outputsToUnits_lvl2.get(_input, [])
 
             for C in candidates:
-                if FOON_lvl2.index(C) not in prerequisite_units:	
+                if FOON_lvl2.index(C) not in prerequisite_units:
                     prerequisite_units.append(FOON_lvl2.index(C))
         #endfor
         FOON_functionalUnitMap_lvl2[FOON_lvl2.index(_FU)] = prerequisite_units
@@ -350,7 +350,7 @@ def _buildUnitToUnitMap_lvl3():
             # -- we already collected the units that create every single input object in FOON:
             candidates = FOON_outputsToUnits_lvl3.get(_input, [])
             for C in candidates:
-                if FOON_lvl3.index(C) not in prerequisite_units:	
+                if FOON_lvl3.index(C) not in prerequisite_units:
                     prerequisite_units.append( FOON_lvl3.index(C) )
         #endfor
         FOON_functionalUnitMap_lvl3[FOON_lvl3.index(_FU)] = prerequisite_units
@@ -424,7 +424,7 @@ def _readIndexFiles():
             FOON_motionLabels[M] = int(FOON_index['motions'][M]['id'])
 
         print('  -- Loaded ' + str(len(FOON_motionLabels)) + ' motion labels!')
-        
+
         return
     #end
 
@@ -477,7 +477,7 @@ def _readIndexFiles():
         #endfor
         _file.close()
     #end
-    
+
     return
 #enddef
 
@@ -499,7 +499,7 @@ def _buildOneModeProjections(hierarchy_level=None):
         _buildOneModeProjection_lvl3()
     else:
         return
-#enddef	
+#enddef
 
 def _buildOneModeProjection_lvl1():
     global objects_oneModeProjection_lvl1, FOON_oneModeProjection_lvl1
@@ -512,7 +512,7 @@ def _buildOneModeProjection_lvl1():
             #endfor
         #endfor
         FOON_oneModeProjection_lvl1[source] = dest
-    #endfor	
+    #endfor
 #enddef
 
 def _buildOneModeProjection_lvl2():
@@ -526,7 +526,7 @@ def _buildOneModeProjection_lvl2():
             #endfor
         #endfor
         FOON_oneModeProjection_lvl2[source] = dest
-    #endfor	
+    #endfor
 #enddef
 
 def _buildOneModeProjection_lvl3():
@@ -540,11 +540,11 @@ def _buildOneModeProjection_lvl3():
             #endfor
         #endfor
         FOON_oneModeProjection_lvl3[source] = dest
-    #endfor	
+    #endfor
 #enddef
 
 def _calculateCentrality(hierarchy_level):
-    # NOTE: Refer to "Networks: An Introduction" by Mark Newman (more info: https://dl.acm.org/doi/book/10.5555/1809753) 
+    # NOTE: Refer to "Networks: An Introduction" by Mark Newman (more info: https://dl.acm.org/doi/book/10.5555/1809753)
     # 	for an excellent overview of this algorithm and many other neat graph theory tricks and concepts.
 
     global file_name, verbose
@@ -554,7 +554,7 @@ def _calculateCentrality(hierarchy_level):
     except ImportError:
         print(" -- ERROR: NumPy not found! Please install NumPy to use this function!")
         return
-    
+
     # -- first, we need to get the one-mode projection so that we can interpret the results after:
     objectList = None; searchMap = None
     if hierarchy_level == 1:
@@ -634,7 +634,7 @@ def _calculateCentrality(hierarchy_level):
 #enddef
 
 def _populateAdjacencyMatrix(hierarchy_level):
-    # NOTE: Refer to "Networks: An Introduction" by Mark Newman (more info: https://dl.acm.org/doi/book/10.5555/1809753) 
+    # NOTE: Refer to "Networks: An Introduction" by Mark Newman (more info: https://dl.acm.org/doi/book/10.5555/1809753)
     # 	for an excellent overview of this algorithm and many other neat graph theory tricks and concepts.
 
     global verbose; searchMap = None
@@ -655,7 +655,7 @@ def _populateAdjacencyMatrix(hierarchy_level):
         return
 
     if not FOON_oneModeProjection_lvl3:
-        _buildOneModeProjections(hierarchy_level=hierarchy_level) 
+        _buildOneModeProjections(hierarchy_level=hierarchy_level)
 
     # -- create an adjacency matrix of size N x N, where N is number of nodes (i.e. both object and motion) :
     oneModeMatrix = np.eye(( len(searchMap) ))
@@ -664,7 +664,7 @@ def _populateAdjacencyMatrix(hierarchy_level):
             oneModeMatrix[src][x] = 1
 
     if verbose:
-        print(' -- [NET-CENT] Adjacency matrix for one-mode projection is as follows:')	
+        print(' -- [NET-CENT] Adjacency matrix for one-mode projection is as follows:')
         print(oneModeMatrix)
 
     return oneModeMatrix
@@ -743,7 +743,7 @@ def _objectFrequencyReport():
 
     global file_name
     _file = open(os.path.splitext(file_name)[0] + '_FOON_object_frequency_report.txt', 'w')
-    
+
     for x in range(len(items)):
         line = items[x].split("\t")
         # -- write everything to the file..
@@ -789,7 +789,7 @@ def _motionFrequencyReport():
 
     global file_name
     _file = open(os.path.splitext(file_name)[0] + '_FOON_motion_frequency_report.txt', 'w')
-    
+
     for x in range(len(items)):
         line = items[x].split("\t")
         # -- write everything to the file..
@@ -818,7 +818,7 @@ def _stateFrequencyReport():
 
     global file_name
     _file = open(os.path.splitext(file_name)[0] + '_FOON_state_frequency_report.txt', 'w')
-    
+
     for x in range(len(items)):
         line = items[x].split("\t")
         # -- write everything to the file..
@@ -863,7 +863,7 @@ def _checkIfNodeExists(O, H):
     if H == 1:
         for N in nodes_lvl1:
             if isinstance(N, FOON.Object) and N.equals_functions[H-1](O):
-                objectExisting = nodes_lvl1.index(N)		
+                objectExisting = nodes_lvl1.index(N)
     elif H == 2:
         for N in nodes_lvl2:
             if isinstance(N, FOON.Object) and N.equals_functions[H-1](O):
@@ -876,12 +876,12 @@ def _checkIfNodeExists(O, H):
         pass
 
     return objectExisting
-#enddef	
+#enddef
 
 def _isFOONLoaded():
     # -- check if a FOON has been loaded based on the number of functional units at level 3:
     return len(FOON_functionalUnits[-1]) > 0
-    
+
 def _constructFOON(graph_file=None):
     # NOTE: entry point function to load a FOON subgraph file, which may either be a .TXT, .PKL or .JSON file:
 
@@ -917,16 +917,16 @@ def _loadFOON_txt(file=None):
     # NOTE: 'FOON_node_count' indicates the number of nodes (i.e. both object AND motion nodes) exist in a universal FOON.
     # -- this number is based on the hierarchy level 3.
     global FOON_node_count
-    
+
     global FOON_video_source, verbose
-    
+
     global FOON_lvl1, FOON_lvl2, FOON_lvl3, nodes_lvl1, nodes_lvl2, nodes_lvl3
 
     stateParts, objectParts, motionParts = [], [], [] # -- objects used to contain the split strings
 
     # -- isInput - flag used to switch between adding to input or output nodes list for each functional unit
     isInput = True
-    
+
     # -- newObject - this stores an object that is in the process of being read; this is important since we can have multiple AND variable states.
     newObject = None
 
@@ -937,7 +937,7 @@ def _loadFOON_txt(file=None):
 
     line_count = 0
 
-    for line in tqdm.tqdm(items, desc='  -- Reading file line '):	
+    for line in tqdm.tqdm(items, desc='  -- Reading file line '):
         line_count += 1
 
         # -- checking flag for verbose (print-outs):
@@ -961,7 +961,7 @@ def _loadFOON_txt(file=None):
 
                 # -- we are adding a new FU, so start from scratch..
                 if _checkIfFUExists(newFU_lvl3, 3) == False:
-                    # NOTE: no matter what, we add new motion nodes; we will have multiple instances everywhere.	
+                    # NOTE: no matter what, we add new motion nodes; we will have multiple instances everywhere.
                     nodes_lvl3.append(newFU_lvl3.getMotion())
                     FOON_lvl3.append(newFU_lvl3)
                     motionsToFunctionalUnits_lvl3[nodes_lvl3.index(newFU_lvl3.getMotion())] = newFU_lvl3
@@ -978,7 +978,7 @@ def _loadFOON_txt(file=None):
                     FOON_lvl1.append(newFU_lvl1)
                     motionsToFunctionalUnits_lvl1[nodes_lvl1.index(newFU_lvl1.getMotion())] = newFU_lvl1
 
-                # -- create an entirely new FU object to proceed with reading new units.			
+                # -- create an entirely new FU object to proceed with reading new units.
                 newFU_lvl1, newFU_lvl2, newFU_lvl3 = FOON.FunctionalUnit(), FOON.FunctionalUnit(), FOON.FunctionalUnit()
 
                 # -- this is the end of a FU so we will now be adding input nodes; set flag to TRUE.
@@ -1049,7 +1049,7 @@ def _loadFOON_txt(file=None):
                     T.addNeighbour(newMotion) # -- make the connection from Object(s) to Motion
 
                 newFU_lvl3.setMotion(newMotion)
-                
+
                 start_time, end_time = None, None
                 success_rate, weighted_entity = None, None
 
@@ -1084,7 +1084,7 @@ def _loadFOON_txt(file=None):
                 if success_rate:
                     newFU_lvl3.setSuccessRate(float(success_rate))
 
-                if weighted_entity:	
+                if weighted_entity:
                     newFU_lvl3.setIndication(weighted_entity)
 
                 # Functional Unit - Level 2:
@@ -1100,7 +1100,7 @@ def _loadFOON_txt(file=None):
                 if success_rate:
                     newFU_lvl2.setSuccessRate(float(success_rate))
 
-                if weighted_entity:	
+                if weighted_entity:
                     newFU_lvl2.setIndication(weighted_entity)
 
                 # Functional Unit - Level 1:
@@ -1116,7 +1116,7 @@ def _loadFOON_txt(file=None):
                 if success_rate:
                     newFU_lvl1.setSuccessRate(float(success_rate))
 
-                if weighted_entity:	
+                if weighted_entity:
                     newFU_lvl1.setIndication(weighted_entity)
 
                 isInput = False	# -- we will now switch over to adding output nodes since we have seen a motion node
@@ -1148,14 +1148,14 @@ def _loadFOON_json(file=None):
     global FOON_node_count
 
     global FOON_video_source, verbose
-    
+
     global FOON_lvl1, FOON_lvl2, FOON_lvl3, nodes_lvl1, nodes_lvl2, nodes_lvl3
 
     # -- objects which will hold the functional unit being read:
     newFU_lvl1, newFU_lvl2, newFU_lvl3 = FOON.FunctionalUnit(), FOON.FunctionalUnit(), FOON.FunctionalUnit()
 
     _file = open(file, 'r'); _json = json.load(_file)
-    for func_unit in _json['functional_units']:	
+    for func_unit in _json['functional_units']:
 
         # -- checking flag for verbose (print-outs):
         if verbose:
@@ -1163,7 +1163,7 @@ def _loadFOON_json(file=None):
 
         for _input in func_unit['input_nodes']:
             # -- level 3 version:
-            newObject = FOON.Object(objectID=int(_input['object_id']), objectLabel=_input['object_label'])
+            newObject = FOON.Object(objectID=int(_input['object_id']), objectN=_input['object_label'])
             for S in _input['object_states']:
                 if 'relative_object' in S:
                     newObject.addNewState( [ int(S['state_id']), S['state_label'], S['relative_object'] ] )
@@ -1190,7 +1190,7 @@ def _loadFOON_json(file=None):
                 else:
                     # -- if not, just stick to object-label-only ingredients as done before
                     newObject.addIngredient(I)
-            
+
             _addObjectToFOON(newObject, True, _input['object_in_motion'], newFU_lvl3, newFU_lvl2, newFU_lvl1)
 
         # NOTE: reading motion node information:
@@ -1258,11 +1258,11 @@ def _loadFOON_json(file=None):
             _addObjectToFOON(newObject, False, _output['object_in_motion'], newFU_lvl3, newFU_lvl2, newFU_lvl1)
 
         if _checkIfFUExists(newFU_lvl3, 3) == False:
-            # NOTE: no matter what, we add new motion nodes; we will have multiple instances everywhere.		
+            # NOTE: no matter what, we add new motion nodes; we will have multiple instances everywhere.
             nodes_lvl3.append(newFU_lvl3.getMotion())
             FOON_lvl3.append(newFU_lvl3)
             motionsToFunctionalUnits_lvl3[nodes_lvl3.index(newFU_lvl3.getMotion())] = newFU_lvl3
-            
+
             # -- we only keep track of the total number of nodes in the LVL3 FOON.
             FOON_node_count += 1
 
@@ -1275,10 +1275,10 @@ def _loadFOON_json(file=None):
             nodes_lvl1.append(newFU_lvl1.getMotion())
             FOON_lvl1.append(newFU_lvl1)
             motionsToFunctionalUnits_lvl1[nodes_lvl1.index(newFU_lvl1.getMotion())] = newFU_lvl1
-            
-        # -- create an entirely new FU object to proceed with reading new units.			
+
+        # -- create an entirely new FU object to proceed with reading new units.
         newFU_lvl1, newFU_lvl2, newFU_lvl3 = FOON.FunctionalUnit(), FOON.FunctionalUnit(), FOON.FunctionalUnit()
-    
+
     #endfor
 
     _file.close() 	# -- Don't forget to close the file once we are done!
@@ -1323,7 +1323,7 @@ def _saveFOON_txt(file_name=None, post_merge=True, skip_PKL=False):
         merged_file = 'universal_FOON.txt'
 
     _file = open(merged_file, 'w')
-    
+
     print(" -- [FOON_to_TXT] : Saving new universal FOON as file '" + (merged_file) + "' ...")
     if verbose:
         print("\n -- [FOON_to_TXT] : Merged FOON functional units as follows:")
@@ -1366,7 +1366,7 @@ def _saveFOON_pkl(file=None):
     print(' -- [FOON_to_PKL] : Saving FOON (nodes and functional units) as .PKL file...')
 
     global FOON_nodes, FOON_functionalUnits, file_name
-    
+
     if not file:
         file = os.path.splitext(file_name)[0] + '.pkl'
     elif file.endswith('.txt'):
@@ -1378,7 +1378,7 @@ def _saveFOON_pkl(file=None):
         try:
             with open(file, 'wb') as F:
                 pickle.dump((FOON_nodes, FOON_functionalUnits), F)
-            
+
             print(" -- [FOON_to_PKL] : Pickle file for FOON stored as 'FOON.pkl'!")
             break
 
@@ -1389,7 +1389,7 @@ def _saveFOON_pkl(file=None):
             if response == 'N':
                 print('  -- [FOON_to_PKL] : File not saved; terminating pickle file dumping process...')
                 break
-            
+
             # -- conservatively increase the recursion limit..
             sys.setrecursionlimit( sys.getrecursionlimit() + 200)
             print('\033[A\033[A')
@@ -1415,7 +1415,7 @@ def _saveFOON_JS():
         _file.write("\"" + line + "\"")
         _file.write(",\n")
     #endfor
-        
+
     _file.write("];")
     _file.close()
 #enddef
@@ -1449,7 +1449,7 @@ def _saveFOON_json():
 
 # NOTE: universal FOON merging operation:
 def _mergeSubgraphs():
-    
+
     global verbose
 
     # -- first, give the directory for merging:
@@ -1459,7 +1459,7 @@ def _mergeSubgraphs():
         directory = config['Paths']['data_source']
     else:
         directory = input(" -- [FOON_MERGE] : Please enter the DIRECTORY with files to be merged with the current FOON: > ")
-    
+
     for root, _, files in os.walk(os.path.abspath(directory)):
         for file in files:
             _file =  os.path.join(root, file)
@@ -1468,7 +1468,7 @@ def _mergeSubgraphs():
             motions = [F for F in nodes_lvl3 if isinstance(F, FOON.Motion)]
             if verbose:
                 print(str(len(nodes_lvl3) - len(motions)) + "," + str(len(motions)))
-                
+
     print(' -- [FOON_MERGE] : Total sum of nodes: ' + str(FOON_node_count) + '\n')
 #enddef
 
@@ -1484,13 +1484,13 @@ def _identifyKitchenItems(file='FOON-input_only_nodes.txt'):
         return []
     else:
         # -- make a copy of the lists needed for retrieval operations:
-        frt._copyDicts({'fu_list' : FOON_functionalUnits, 
-                'nodes_list' : FOON_nodes, 
-                'outputs_to_fu' : FOON_outputsToUnits, 
-                'objs_to_fu' : FOON_objectsToUnits, 
+        frt._copyDicts({'fu_list' : FOON_functionalUnits,
+                'nodes_list' : FOON_nodes,
+                'outputs_to_fu' : FOON_outputsToUnits,
+                'objs_to_fu' : FOON_objectsToUnits,
                 'fu_to_fu' : FOON_functionalUnitMap,
                 'labels' : FOON_labels} )
-                
+
         return frt._loadKitchenList(file)
     #endtry
 #enddef
@@ -1587,7 +1587,7 @@ def _resetFOON(reload=False):
 
     global nodes_lvl1, nodes_lvl2, nodes_lvl3, FOON_nodes
     nodes_lvl1 = []; nodes_lvl2 = []; nodes_lvl3 = []
-    
+
     FOON_nodes = [nodes_lvl1, nodes_lvl2, nodes_lvl3]
 
     global FOON_node_count; FOON_node_count = 0
@@ -1615,7 +1615,7 @@ def _resetMaps():
 
     global motionsToFunctionalUnits_lvl1, motionsToFunctionalUnits_lvl2, motionsToFunctionalUnits_lvl3, motionsToFunctionalUnits
     motionsToFunctionalUnits_lvl1 = {}; motionsToFunctionalUnits_lvl2 = {}; motionsToFunctionalUnits_lvl3 = {}
-    
+
     motionsToFunctionalUnits = [motionsToFunctionalUnits_lvl1, motionsToFunctionalUnits_lvl2, motionsToFunctionalUnits_lvl3]
 #enddef
 
@@ -1628,7 +1628,7 @@ def _findFunctionalUnitClusters(hierarchy_level=None):
 
     # -- identify motions that suggest transfer or movement of objects from one point to another:
     transfer_motion_labels = ['pick-and-place', 'place', 'pour', 'sprinkle', 'add', 'scoop', 'grind']
-    
+
     # -- for a certain level of FOON, we need to iterate through the units to find any that could be condensed into a single, larger hub unit.
     for level in range(len(FOON_functionalUnits)):
         # -- if we only want to load a specific level of FOON, then we skip the other levels:
@@ -1639,7 +1639,7 @@ def _findFunctionalUnitClusters(hierarchy_level=None):
 
         clustered_units = []; clustered_unit_map = {}
 
-        # -- we start with the second unit, and we evaluate whether it can merge it with the previous unit (i.e. the first), 
+        # -- we start with the second unit, and we evaluate whether it can merge it with the previous unit (i.e. the first),
         # 	and we keep exploring and comparing every n-th unit to its (n-1)-th unit till the end.
         # -- or should we start at the end and then bubble all the way to the top?
         for index in range(len(current_FOON) - 1,  0, -1):
@@ -1699,7 +1699,7 @@ def _findFunctionalUnitClusters(hierarchy_level=None):
 
                             #endfor
                         #endfor
-                        
+
                         if truly_overlapping:
                             print('so')
                             # -- let us create the combinational functional unit:
@@ -1708,34 +1708,34 @@ def _findFunctionalUnitClusters(hierarchy_level=None):
 
                             # -- check if the current functional unit already maps to a cluster:
                             current_FU = clustered_unit_map[current_FOON[index]] if current_FOON[index] in clustered_unit_map else current_FOON[index]
-                            prior_FU = clustered_unit_map[_unit] if _unit in clustered_unit_map else _unit				
+                            prior_FU = clustered_unit_map[_unit] if _unit in clustered_unit_map else _unit
 
-                            # -- from the PRIOR functional unit, we need to take ALL of the input nodes and we take ALL BUT the container 
+                            # -- from the PRIOR functional unit, we need to take ALL of the input nodes and we take ALL BUT the container
                             # 	of the output nodes (i.e., the overlapping node that is present in the CURRENT functional unit):
                             for N in range(prior_FU.getNumberOfInputs()):
                                 _input = prior_FU.getInputNodes()[N]
-                                new_functional_unit.addObjectNode(objectNode=_input, is_input=True, 
+                                new_functional_unit.addObjectNode(objectNode=_input, is_input=True,
                                                     is_active_motion=prior_FU.getMotionDescriptor(N, is_input=True))
 
                             for N in range(prior_FU.getNumberOfOutputs()):
                                 _output = prior_FU.getOutputNodes()[N]
                                 if FOON_nodes[level].index(_output) not in containers:
-                                    new_functional_unit.addObjectNode(objectNode=_output, is_input=False, 
+                                    new_functional_unit.addObjectNode(objectNode=_output, is_input=False,
                                                         is_active_motion=prior_FU.getMotionDescriptor(N, is_input=False))
 
-                            # -- from the CURRENT functional unit, we need to take ALL of the output nodes and we take ALL BUT the container 
+                            # -- from the CURRENT functional unit, we need to take ALL of the output nodes and we take ALL BUT the container
                             # 	of the intput nodes (i.e., the overlapping node that is present in the PRIOR functional unit):
                             for N in range(current_FU.getNumberOfInputs()):
                                 _input = current_FU.getInputNodes()[N]
                                 if FOON_nodes[level].index(_input) not in containers:
-                                    new_functional_unit.addObjectNode(objectNode=_input, is_input=True, 
+                                    new_functional_unit.addObjectNode(objectNode=_input, is_input=True,
                                                         is_active_motion=current_FU.getMotionDescriptor(N, is_input=True))
 
                             for N in range(current_FU.getNumberOfOutputs()):
                                 _output = current_FU.getOutputNodes()[N]
-                                new_functional_unit.addObjectNode(objectNode=_output, is_input=False, 
+                                new_functional_unit.addObjectNode(objectNode=_output, is_input=False,
                                                     is_active_motion=current_FU.getMotionDescriptor(N, is_input=False))
-                            
+
                             # -- review all functional units that have been previously mapped to a clustered unit:
                             for key in clustered_unit_map:
                                 if clustered_unit_map[key] == current_FU:
@@ -1769,7 +1769,7 @@ def _findFunctionalUnitClusters(hierarchy_level=None):
 
         FOON_unitClusters[level] = clustered_units
     #endfor
-#enddef	
+#enddef
 
 def _performTreeRetrieval(searchObject=None, searchState=None):
     try:
@@ -1779,16 +1779,16 @@ def _performTreeRetrieval(searchObject=None, searchState=None):
         print('\t-- This module contains the code for all the retrieval operations.')
         print('\t-- Download here: https://bitbucket.org/davidpaulius/foon_api/src/master/')
         return None
-    
+
     global FOON_functionalUnits, FOON_nodes, FOON_outputsToUnits, FOON_objectsToUnits, FOON_functionalUnitMap, FOON_labels
 
     # -- make a copy of the lists needed for retrieval operations:
     frt._copyDicts({'goal_object_type' : searchObject,
             'goal_state_type' : searchState,
-            'fu_list' : FOON_functionalUnits, 
-            'nodes_list' : FOON_nodes, 
-            'outputs_to_fu' : FOON_outputsToUnits, 
-            'objs_to_fu' : FOON_objectsToUnits, 
+            'fu_list' : FOON_functionalUnits,
+            'nodes_list' : FOON_nodes,
+            'outputs_to_fu' : FOON_outputsToUnits,
+            'objs_to_fu' : FOON_objectsToUnits,
             'fu_to_fu' : FOON_functionalUnitMap,
             'labels' : FOON_labels} )
 
@@ -1812,14 +1812,14 @@ def _performExpansion():
         print('\t-- For more information on these approaches, please refer to: https://arxiv.org/abs/1807.02189.')
         print('\t-- Download here: https://bitbucket.org/davidpaulius/foon_api/src/master/')
         return None
-    
+
     global FOON_functionalUnits, FOON_nodes, FOON_outputsToUnits, FOON_objectsToUnits, FOON_functionalUnitMap, FOON_labels, FOON_objectSenses, file_name
 
     # -- make a copy of the lists needed for expansion operation:
-    fgen._copyDicts({'fu_list' : FOON_functionalUnits, 
-            'nodes_list' : FOON_nodes, 
-            'outputs_to_fu' : FOON_outputsToUnits, 
-            'objs_to_fu' : FOON_objectsToUnits, 
+    fgen._copyDicts({'fu_list' : FOON_functionalUnits,
+            'nodes_list' : FOON_nodes,
+            'outputs_to_fu' : FOON_outputsToUnits,
+            'objs_to_fu' : FOON_objectsToUnits,
             'fu_to_fu' : FOON_functionalUnitMap,
             'labels' : FOON_labels,
             'obj_senses' : FOON_objectSenses,
@@ -1827,7 +1827,7 @@ def _performExpansion():
 
     # -- prepare for expansion by prompting user for parameters to go by (viz. threshold value, method of expansion, etc.)
     _response = input(' -- [FOON-gen] : Expand using 1) text-based method or 2) non-text-based method? [1/2] (default: 1) > ')
-    
+
     expanded_file = fgen._expandNetwork_nontext() if _response == "2" else fgen._expandNetwork_text()
 
     return expanded_file
@@ -1847,14 +1847,14 @@ def _performGeneralization():
         print('\t-- For more information on these approaches, please refer to: https://arxiv.org/abs/1807.02189.')
         print('\t-- Download here: https://bitbucket.org/davidpaulius/foon_api/src/master/')
         return None
-    
+
     global FOON_functionalUnits, FOON_nodes, FOON_outputsToUnits, FOON_objectsToUnits, FOON_functionalUnitMap, FOON_labels
 
     # -- make a copy of the lists needed for expansion operation:
-    fgen._copyDicts({'fu_list' : FOON_functionalUnits, 
-            'nodes_list' : FOON_nodes, 
-            'outputs_to_fu' : FOON_outputsToUnits, 
-            'objs_to_fu' : FOON_objectsToUnits, 
+    fgen._copyDicts({'fu_list' : FOON_functionalUnits,
+            'nodes_list' : FOON_nodes,
+            'outputs_to_fu' : FOON_outputsToUnits,
+            'objs_to_fu' : FOON_objectsToUnits,
             'fu_to_fu' : FOON_functionalUnitMap,
             'labels' : FOON_labels} )
 
@@ -1873,7 +1873,7 @@ def _startFOONview():
         print(" -- WARNING: Missing 'webbrowser' module for this function!")
         return
     #endtry
-#enddef	
+#enddef
 
 def _parseStateClustering(file):
     try:
@@ -2004,7 +2004,7 @@ def _start():
 
     # -- load index files for objects, motions, and states:
     _readIndexFiles()
-        
+
     while True:
         print(); option = _displayMenu(); print()
 
@@ -2033,7 +2033,7 @@ def _start():
             print("\t\t1.\tPrint FOON node summary (display total number of object and motion nodes at each level);")
             print("\t\t2.\tPrint FOON functional unit summary (display total number of units at each level);")
             print("\t\t3.\tGenerate label frequency reports (on objects, motions, and states);")
-            
+
             _response = input("  -- Please enter your option or press ENTER to exit : [1-3] > ")
             if _response == "1":
                 print("\n -- Printing details about FOON nodes...")
@@ -2072,7 +2072,7 @@ def _start():
                 _stateFrequencyReport()
             #end
         #end
-    
+
         elif option == "4":
             try:
                 import FOON_generalization as fgen
@@ -2110,7 +2110,7 @@ def _start():
                     print('\t-- This module contains the code for all the retrieval operations.')
                     print('\t-- Download here: https://bitbucket.org/davidpaulius/foon_api/src/master/')
                     return None
-                            
+
                 if searchObject == None or searchState == None:
                     _response = input(' -- Would you like to look up objects and states by name? [Y/N] (default: N) > ')
                     if _response.lower() == 'y':
@@ -2122,20 +2122,20 @@ def _start():
                 if not flag_EXP_complete:
                     # -- prepare for expansion by prompting user for parameters to go by (viz. threshold value, method of expansion, etc.)
                     params = fgen._prepareExpansion()
-    
+
                     _response = input(' -- Expand using 1) regular method or 2) text-based method? [1/2] (default: 2) > ')
-                    if _response == "1":					
+                    if _response == "1":
                         expanded_file = fgen._expandNetwork_nontext(
                             object_similarity_index,
-                            method=params[0], 
+                            method=params[0],
                             threshold=params[1],
                             custom_list=params[2],
                             state_suggestion=params[3]
                         )
                     else:
                         expanded_file = fgen._expandNetwork_text(
-                            object_similarity_index, 
-                            method=params[0], 
+                            object_similarity_index,
+                            method=params[0],
                             threshold=params[1],
                             custom_list=params[2],
                             state_suggestion=params[3]
@@ -2158,11 +2158,11 @@ def _start():
 
             elif _response == "4":
                 if not flag_GEN_complete:
-                    fgen._constructFOON_GEN() 
+                    fgen._constructFOON_GEN()
 
                 # -- perform task tree retrieval using the abstracted (FOON-GEN) FOON:
                 fgen._taskTreeRetrieval_GEN(searchObject, searchState)
-            
+
             elif _response == '5':
                 fgen._randomSearchExperiment(
                     n_trials=2,
@@ -2173,7 +2173,7 @@ def _start():
                 )
             #endif
 
-            
+
         #end
 
         elif option == "5":
@@ -2207,7 +2207,7 @@ def _start():
             print("\t\t2.\tCreate a .JSON file of the loaded universal FOON;")
             print("\t\t3.\tCreate a .JS (JavaScript) file of the loaded universal FOON;")
             print("\t\t4.\tCreate a .TXT file with FOON word2vec sentences;")
-            
+
             _response = input("  -- Please enter your option or press ENTER to exit : [1-4] > ")
 
             if _response == "1":
@@ -2220,7 +2220,7 @@ def _start():
             elif _response == "3":
                 print("-- [FOON_JS] : Writing FOON graph as JavaScript file...")
                 _saveFOON_JS()
-            
+
             elif _response == "4":
                 print("-- Writing FOON functional units as Word2Vec sentences...")
                 _FOONtoSentence()
@@ -2240,7 +2240,7 @@ def _start():
             else:
                 _printAnyNode(_object, hierarchy_level=int(_level))
         #end
-        
+
         elif option == '14':
             # -- simple function to print a functional unit existing in FOON:
             _object = int(input(' -- Please enter a number corresponding to the functional unit\'s position in list: > '))
@@ -2250,7 +2250,7 @@ def _start():
             else:
                 _printAnyFunctionalUnit(_object, hierarchy_level=int(_level))
         #end
-        
+
         elif option == '55':
             # -- simple function to merge two kitchen files together:
             kitchen_1 = _identifyKitchenItems(input(" -- Enter PATH and FILE NAME of kitchen file #1: > "))
@@ -2276,7 +2276,7 @@ def _start():
             print('\n')
             break
         #end
-        
+
         else:
             pass
 #enddef

@@ -1,8 +1,8 @@
 '''
 FOON: Parsing Script (FOON_parser):
-        (last updated: 14th January, 2024):
+        (last updated: 16th January, 2025):
 -------------------------------------------
--- Written and maintained by: 
+-- Written and maintained by:
     * Md Sadman Sakib (mdsadman@usf.edu)
     * David Paulius (davidpaulius@usf.edu / dpaulius@cs.brown.edu)
 -- Special thanks to undergraduate William David Buchanan for assistance with earlier version.
@@ -16,12 +16,12 @@ NOTE: If using this program and/or annotations provided by our lab, please kindl
 # NOTE: this script is used for rebuilding index files used for FOON as well as making
 #	labels consistent among all subgraph files within a given directory.
 # -- Input to this function is simply a path to the folder containing the old, unclean subgraph files.
-# -- You may include older index files ('FOON-state_index.txt', 'FOON-motion_index.txt', and 'FOON-state_index.txt') 
+# -- You may include older index files ('FOON-state_index.txt', 'FOON-motion_index.txt', and 'FOON-state_index.txt')
 # 	to use as base list to be added on.
 
 from __future__ import print_function
 
-import os 
+import os
 import sys
 import json
 import getopt
@@ -34,10 +34,10 @@ from datetime import datetime
 lemmatizer = None
 try:
     from nltk.stem import WordNetLemmatizer
-    lemmatizer = WordNetLemmatizer() 
+    lemmatizer = WordNetLemmatizer()
 
     from nltk.corpus import wordnet
-    
+
 except ImportError:
     print(' -- ERROR: NLTK is not downloaded and available for use!')
     print("\t-- Please install it using 'pip install nltk' and then use 'nltk.download()' from a Python terminal.")
@@ -103,8 +103,6 @@ def _run_parser():
     if not target_dir:
         target_dir = input(' -- Enter path to directory / location where PARSED files will be saved to: > ')
 
-    print()
-
     # -- First, list all files within a certain folder:
     file_list = os.listdir(source_dir)
 
@@ -141,7 +139,7 @@ def _run_parser():
             _objects = index_file['objects'] if 'objects' in index_file else []
             for O in _objects:
                 object_label = str(O)
-                object_ID = int(index_file['objects'][O]['id']) 
+                object_ID = int(index_file['objects'][O]['id'])
 
                 # NOTE: *if present*, sense IDs that are integers refer to Wordnet and sense ID 'C' refers to representation found in Concept-Net:
                 object_sense = None
@@ -159,7 +157,7 @@ def _run_parser():
             for M in _motions:
                 motion_label = str(M)
                 motion_ID = int(index_file['motions'][M]['id'])
-                
+
                 motionIndex.append(motion_label)
                 motion_IDs[motion_label] = motion_ID
 
@@ -181,7 +179,7 @@ def _run_parser():
             # -- in that case, try to load regular .TXT index files:
 
             try:
-                # NOTE: if you want to pre-load an existing 'FOON-state_index.txt' (that also includes 
+                # NOTE: if you want to pre-load an existing 'FOON-state_index.txt' (that also includes
                 # 	objects NOT LIMITED TO those in the subgraphs), this is where it will look for it:
                 object_file = open('FOON-object_index.txt', 'r')
                 print("-- WARNING: 'FOON_index.json' file not found!")
@@ -198,7 +196,7 @@ def _run_parser():
 
                     # NOTE: this refers to the sense for the word in WordNet:
                     if len(line) > 2:
-                        # -- a sense will define the MOST appropriate meaning for the object, 
+                        # -- a sense will define the MOST appropriate meaning for the object,
                         object_senses[object_label] = int(line[2].rstrip())
                     else:
                         # -- by default, we will just use the first (usually only) sense of the word:
@@ -211,7 +209,7 @@ def _run_parser():
                 pass
 
             try:
-                # NOTE: if you want to pre-load an existing 'motionIndex.txt' (that also includes motion labels 
+                # NOTE: if you want to pre-load an existing 'motionIndex.txt' (that also includes motion labels
                 # 	NOT LIMITED TO those in the subgraphs), this is where it will look for it:
                 motion_file = open('FOON-motion_index.txt', 'r')
                 print(" -- [FOON_parser] : Loaded 'FOON-motion_index.txt' file!")
@@ -227,7 +225,7 @@ def _run_parser():
                     # NOTE: this refers to the motion execution criterion.
                     if len(line) > 2:
                         # -- we can describe motions with the following flags:
-                        # 	(L = location-critical, 
+                        # 	(L = location-critical,
                         # 	 S = state-critical,
                         # 	 T = time-critical)
                         motion_categories[motion_label] = str(line[2].rstrip())
@@ -239,7 +237,7 @@ def _run_parser():
                 pass
 
             try:
-                # NOTE: if you want to pre-load an existing 'stateIndex.txt' (that also includes state labels 
+                # NOTE: if you want to pre-load an existing 'stateIndex.txt' (that also includes state labels
                 # 	NOT LIMITED TO those in the subgraphs), this is where it will look for it:
                 _state = open('FOON-state_index.txt', 'r')
                 print(" -- [FOON_parser] : Loaded 'FOON-state_index.txt' file!")
@@ -258,7 +256,7 @@ def _run_parser():
     #endif
 
     # NOTE: lemmatization can often times be erroneous, so we will define a file that contains certain
-    #		object listings as the name they SHOULD have even after lemmatization: 
+    #		object listings as the name they SHOULD have even after lemmatization:
     try:
         path, _ = os.path.split(os.path.realpath(__file__))
         except_file = open(os.path.join(path, 'FOON_parser.exceptions'), 'r')
@@ -320,7 +318,7 @@ def _run_parser():
                     # -- make the right substitution for the object to correct and override the lemmatization
                     #	(e.g. change 'fry' to 'french fries', as they have completely different meanings):
                     object_label = exceptions[object_label]
-                
+
                 if object_label in objectIndex:
                     continue
                 else:
@@ -369,7 +367,7 @@ def _run_parser():
                     if synonym_found:
                         continue
 
-                    # -- if nothing found from r/Synonym relations, then we can try r/InstanceOf, which also tells us certain objects 
+                    # -- if nothing found from r/Synonym relations, then we can try r/InstanceOf, which also tells us certain objects
                     # 	that can be considered as others (e.g. naan can be considered as an instance of bread):
                     query_instanceof = requests.get('http://api.conceptnet.io/query?node=/c/en/' + new_word + '&rel=/r/InstanceOf&other=/c/en').json()
 
@@ -412,7 +410,7 @@ def _run_parser():
                     # NOTE: check the ingredients or state relater labels, which should also be parsed:
 
                     # -- this label is the third item of the state's line:
-                    unparsed_relation = label[2].rstrip()
+                    unparsed_relation = label[2].lower().rstrip()
 
                     objects_to_review, unparsed_objects = [], []
 
@@ -489,7 +487,7 @@ def _run_parser():
                             if synonym_found:
                                 continue
 
-                            # -- if nothing found from r/Synonym relations, then we can try r/InstanceOf, which also tells us certain objects 
+                            # -- if nothing found from r/Synonym relations, then we can try r/InstanceOf, which also tells us certain objects
                             # 	that can be considered as others (e.g. naan can be considered as an instance of bread):
                             query_instanceof = requests.get('http://api.conceptnet.io/query?node=/c/en/' + new_word + '&rel=/r/InstanceOf&other=/c/en').json()
 
@@ -525,7 +523,7 @@ def _run_parser():
                 #endif
 
                 # -- remove asterisk signifying a composite functional unit:
-                label[1] = label[1].replace('*', '')					
+                label[1] = label[1].replace('*', '')
 
                 # --  lemmatize based on part-of-speech (in this case, it should be a verb):
                 if lemmatizer:
@@ -569,7 +567,7 @@ def _run_parser():
 
         unparsed_lines = unparsed_file.readlines()
 
-        print("  -- Saving '" + str(F) + "'...")	
+        print("  -- Saving '" + str(F) + "'...")
 
         for line in unparsed_lines:
             if line.startswith("# Source:") or line.startswith('/'):
@@ -608,7 +606,7 @@ def _run_parser():
                 if len(label) < 3:
                     parsed_line = 'S' + str(state_IDs[state_label]) + '\t' + state_label + '\n'
                 else:
-                    unparsed_relation, unparsed_objects = label[2].rstrip(), None
+                    unparsed_relation, unparsed_objects = label[2].lower().rstrip(), None
                     # -- compile a list of all the ingredients that were found on the line:
                     if '[' in unparsed_relation and ']' in unparsed_relation:
                         unparsed_objects = [ unparsed_relation.split('[')[1].split(']')[0] ]
@@ -681,7 +679,7 @@ def _run_parser():
 
     #endfor
 
-    # NOTE: try using WordNet to guess the appropriate sense of a word, so that the newly updated index 
+    # NOTE: try using WordNet to guess the appropriate sense of a word, so that the newly updated index
     #	will reflect these new additions. This should only be done if NLTK and WordNet are available.
 
     print('\n-- Revising object label senses using WordNet and Concept-Net...\n')
@@ -702,7 +700,7 @@ def _run_parser():
 
         sense_found = False
 
-        # -- first, check to see if there is a 'food' definition for the object:		
+        # -- first, check to see if there is a 'food' definition for the object:
         for synset in object_synsets:
             if 'food' in synset.lexname():
                 object_sense = object_synsets.index(synset) + 1
@@ -868,7 +866,7 @@ def _run_parser():
 
                 else:
                     items = _file.read().splitlines()
-                    
+
                     for line in items:
                         temp = line.split(":")
                         new_category = temp[0]
@@ -885,7 +883,7 @@ def _run_parser():
             #end
 
             category_index['motion_categories'] = {'location_critical' : [], 'state_critical' : [], 'time_critical' : []}
-                
+
             for _item in motion_categories:
                 # NOTE: L - location critical, T - time critical, S - state critical:
                 if motion_categories[_item] == 'L':
@@ -924,7 +922,7 @@ def _run_parser():
 
                 else:
                     items = _file.read().splitlines()
-                        
+
                     for line in items:
                         temp = line.split(":")
                         new_category = temp[0]

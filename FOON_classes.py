@@ -1,8 +1,8 @@
 '''
-FOON_classes (Object Definitions for FOON) 
-        (last updated: 14th January, 2024):
+FOON_classes (Object Definitions for FOON)
+        (last updated: 16th January, 2025):
 -------------------------------------------
--- Written and maintained by: 
+-- Written and maintained by:
     * David Paulius (davidpaulius@usf.edu / dpaulius@cs.brown.edu)
     * Md Sadman Sakib (mdsadman@usf.edu)
 -- Special thanks to undergraduates Kelvin Dong Sheng Pei and Sanjeeth Bhat.
@@ -37,8 +37,8 @@ class Thing(object):
 
     # -- constructor methods for creating Thing object:
     def __init__(self, T=None, L=None):
-        self.type = T	
-        self.label = L 
+        self.type = T
+        self.label = L
         self.neighbours = []
     #enddef
 
@@ -90,7 +90,7 @@ class Object(Thing):
 
     '''
     A object node object.
-    
+
     Constructor Parameters:
         objectID (int): An integer referring to the object's ID
         objectLabel (str): A string referring to the object's label
@@ -156,7 +156,7 @@ class Object(Thing):
         #endfor
         self.objectStates.append(list(T))
         self.sortStates()
-    
+
     def getStateType(self, X):
         return self.objectStates[X][0]
 
@@ -208,7 +208,7 @@ class Object(Thing):
         if not flag_recursive_objects or version == 1:
             return self.getIngredientsText_ver_1()
         return self.getIngredientsText_ver_2()
-    
+
     def getIngredientsText_ver_1(self):
         ingredients_list = self.getIngredients(); ingredients = str()
 
@@ -283,7 +283,7 @@ class Object(Thing):
         object_as_JSON['object_label'] = str(self.getLabel())
         object_as_JSON['object_states'] = []
         for x in range(len(self.objectStates)):
-            state_JSON = {'state_id' : self.getStateType(x) if self.getStateType(x) else 0, 
+            state_JSON = {'state_id' : self.getStateType(x) if self.getStateType(x) else 0,
                     'state_label' : str(self.getStateLabel(x)) }
             if self.getRelatedObject(x):
                 state_JSON['relative_object'] = str(self.getRelatedObject(x))
@@ -296,7 +296,7 @@ class Object(Thing):
                 object_as_JSON['ingredients'].append( I.getObject_JSON(), prints_ingredients=True)
         if prints_ingredients == False:
             object_as_JSON['object_in_motion'] = str(motion_descriptor)
-            object_as_JSON['has_portions'] = 'True' if self.hasPortion else 'False'		
+            object_as_JSON['has_portions'] = 'True' if self.hasPortion else 'False'
         return object_as_JSON
 
     # NOTE: new print functions to make FOON graphs textually more like markup languages:
@@ -316,7 +316,7 @@ class Object(Thing):
         print( str('\t\t' if print_FU else '\t') + 'object_id = ' + str(self.getType()) )
         print( str('\t\t' if print_FU else '\t') + "object_label = '" + str(self.getLabel()) + "'")
         if self.hasPortion:
-            print( str('\t\t' if print_FU else '\t') + 'has_portions = True')		
+            print( str('\t\t' if print_FU else '\t') + 'has_portions = True')
         if print_FU:
             print( str('\t\t' if print_FU else '\t') + 'object_in_motion = ' + str(motion_descriptor) )
         print( str('\t' if print_FU else '') + '</object>' )
@@ -339,12 +339,12 @@ class Object(Thing):
         print( str('\t\t' if print_FU else '\t') + 'object_id = ' + str(self.getType()) )
         print( str('\t\t' if print_FU else '\t') + "object_label = '" + str(self.getLabel()) + "'")
         for x in range(len(self.objectStates)):
-            print( str('\t\t' if print_FU else '\t') + '<state>' + '\t' + 
+            print( str('\t\t' if print_FU else '\t') + '<state>' + '\t' +
                 'state_id =' + str(self.getStateType(x)) + '\t' +
-                "state_label = '" + str(self.getStateLabel(x)) + '\t' + 
+                "state_label = '" + str(self.getStateLabel(x)) + '\t' +
                 ("relative_object = '" + str(self.getRelatedObject(x) + "'\t") if self.getRelatedObject(x) else ' ') + '</state>')
         if self.hasPortion:
-            print( str('\t\t' if print_FU else '\t') + 'has_portions = True')		
+            print( str('\t\t' if print_FU else '\t') + 'has_portions = True')
         if print_FU:
             print( str('\t\t' if print_FU else '\t') + 'object_in_motion = ' + str(motion_descriptor) )
         print( str('\t' if print_FU else '') + '</object>' )
@@ -369,12 +369,12 @@ class Object(Thing):
         print( str('\t\t' if print_FU else '\t') + 'object_id = ' + str(self.getType()) )
         print( str('\t\t' if print_FU else '\t') + "object_label = '" + str(self.getLabel()) + "'")
         for x in range(len(self.objectStates)):
-            print( str('\t\t' if print_FU else '\t') + '<state>' + '\t' + 
-                'state_id=' + str(self.getStateType(x)) + '\t' + 
+            print( str('\t\t' if print_FU else '\t') + '<state>' + '\t' +
+                'state_id=' + str(self.getStateType(x)) + '\t' +
                 "state_label = '" + str(self.getStateLabel(x)) + "'\t" +
                 ("relative_object = '" + str(self.getRelatedObject(x) + "'\t") if self.getRelatedObject(x) else ' ') + '</state>')
         if self.hasPortion:
-            print( str('\t\t' if print_FU else '\t') + 'has_portions = True')		
+            print( str('\t\t' if print_FU else '\t') + 'has_portions = True')
         if print_FU:
             print( str('\t\t' if print_FU else '\t') + 'object_in_motion = ' + str(motion_descriptor) )
         print( str('\t\t' if print_FU else '\t') + 'ingredients = ' + str(self.getIngredientsText()) )
@@ -414,7 +414,7 @@ class Object(Thing):
     def isSameIngredients(self, O):
         if len(self.objectIngredients) != len(O.objectIngredients):
             return False
-        
+
         # -- sort list of ingredients:
         O.objectIngredients.sort()
         self.objectIngredients.sort()
@@ -434,7 +434,7 @@ class Object(Thing):
         return self.getObjectType() == O.getObjectType()
 
     def equals_lvl2(self, O):
-        return self.equals_lvl1(O) and self.isSameStates(O) 
+        return self.equals_lvl1(O) and self.isSameStates(O)
 
     def equals_lvl3(self, O):
         return self.equals_lvl2(O) and self.isSameIngredients(O)
@@ -464,7 +464,7 @@ class Motion(Thing):
 
     '''
     A motion node object.
-    
+
     Constructor Parameters:
         motionID (int): An integer referring to the motion's ID
         motionLabel (str): A string referring to the motion's label
@@ -501,13 +501,13 @@ class Motion(Thing):
         print('</motion>')
 
     def getMotionText(self):
-        text = '\t' + 'motion_id = ' + str(self.getMotionType() if self.getMotionType() else 0) + '\n' 
+        text = '\t' + 'motion_id = ' + str(self.getMotionType() if self.getMotionType() else 0) + '\n'
         text += '\t' + "motion_label = '" + self.getMotionLabel() + "'\n"
         return text
 
     def getMotionJSON(self):
         motion_as_JSON = {}
-        motion_as_JSON['motion_id'] = self.getMotionType() if self.getMotionType() else 0 
+        motion_as_JSON['motion_id'] = self.getMotionType() if self.getMotionType() else 0
         motion_as_JSON['motion_label'] = self.getMotionLabel()
         motion_as_JSON['robot_type'] = None
         motion_as_JSON['weight_success'] = None
@@ -703,7 +703,7 @@ class FunctionalUnit(object):
     def getNumberOfOutputs(self):
         return len(self.outputNodes)
 
-    # NOTE: motion descriptor is the integer in a functional unit describing if an object is in motion 
+    # NOTE: motion descriptor is the integer in a functional unit describing if an object is in motion
     # 	(typically active motion - refer to our work on "motion taxonomy"):
     def getInputDescriptor(self, X=None):
         return self.inDescriptor if X is None else self.inDescriptor[X]
@@ -805,7 +805,7 @@ class FunctionalUnit(object):
             T.printObject_lvl1_ver2(print_FU=True, motion_descriptor=self.outDescriptor[self.outputNodes.index(T)])
         print('</output_nodes>')
     #enddef
-    
+
     def printFunctionalUnit_lvl2(self, version=1):
         if version == 1:
             self.printFunctionalUnit_lvl2_ver1()
@@ -846,7 +846,7 @@ class FunctionalUnit(object):
             self.printFunctionalUnit_lvl3_ver1()
         else:
             self.printFunctionalUnit_lvl3_ver2()
-    
+
     def printFunctionalUnit_lvl3_ver1(self):
         for T in self.inputNodes:
             T.printObject_lvl3_ver1(motion_descriptor=self.inDescriptor[self.inputNodes.index(T)])
@@ -916,7 +916,7 @@ class FunctionalUnit(object):
         for N in self.inputNodes:
             object_as_JSON = N.getObject_JSON( motion_descriptor=self.inDescriptor[self.inputNodes.index(N)] )
             func_unit_as_JSON['input_nodes'].append(object_as_JSON)
-        
+
         motion_as_JSON = self.motionNode.getMotionJSON()
         motion_as_JSON['start_time'] = self.times[0] if self.times[0] else 'Assumed'
         motion_as_JSON['end_time'] = self.times[1] if self.times[1] else 'Assumed'
@@ -972,11 +972,11 @@ class FunctionalUnit(object):
 
     def copyFunctionalUnit(self):
         functional_unit_copy = FunctionalUnit()
-        
+
         # -- copying input nodes:
         for x in range(len(self.inputNodes)):
             original_object = self.inputNodes[x]
-            
+
             # -- create new object node instance:
             object_copy = Object( objectID=original_object.getObjectType(), objectLabel=original_object.getObjectLabel() )
             object_copy.setIngredients( list(original_object.getIngredients()) )
@@ -988,7 +988,7 @@ class FunctionalUnit(object):
         # -- copying output nodes:
         for x in range(len(self.outputNodes)):
             original_object = self.outputNodes[x]
-            
+
             # -- create new object node instance:
             object_copy = Object( objectID=original_object.getObjectType(), objectLabel=original_object.getObjectLabel() )
             object_copy.setIngredients( list(original_object.getIngredients()) )
@@ -1043,7 +1043,7 @@ class FunctionalUnit(object):
 
                     if not is_ingredient:
                         utensil = self.inputNodes[i].getName()
-            
+
             # -- we will have to correctly format the string in the case where we are chopping more than one ingredient:
             stuff_being_cut = ''
             if len(cut_objects) == 1:
@@ -1061,7 +1061,7 @@ class FunctionalUnit(object):
         elif action_verb in ['pick', 'place', 'pick-and-place', 'pour', 'sprinkle', 'insert']:
             # NOTE: sentence format should be like:
             #   <VERB> <ACTIVE_OBJ> (from <ACTIVE_CONT>) on/into <PASSIVE_OBJ>.
-            
+
             if action_verb == 'pick-and-place':
                 action_verb = 'pick and place'
 
@@ -1076,8 +1076,8 @@ class FunctionalUnit(object):
                         if self.inputNodes[i].getStateLabel(st) in ['in', 'on']:
                             src_container = self.inputNodes[i].getRelatedObject(st)
 
-            # -- now we will find the new container of the ingredient based on it 
-            #       being added to the object's ingredients list:            
+            # -- now we will find the new container of the ingredient based on it
+            #       being added to the object's ingredients list:
             tgt_container = None
             for o in range(len(self.outputNodes)):
                 # -- we only consider objects that are being contained in other objects:
@@ -1088,7 +1088,7 @@ class FunctionalUnit(object):
                         if self.outputNodes[o].getStateLabel(st) in ['in', 'on']:
                             tgt_container = self.outputNodes[o].getRelatedObject(st)
 
-            # -- now we need to correctly format the number of ingredients or objects being moved 
+            # -- now we need to correctly format the number of ingredients or objects being moved
             #       from the source to the target container:
             active_objects = ''
             if len(moving_objects) == 1:
@@ -1120,7 +1120,7 @@ class FunctionalUnit(object):
                     if valid_container:
                         container = self.inputNodes[i]
 
-            # -- next, we find the object that is used for stirring, which should *not* 
+            # -- next, we find the object that is used for stirring, which should *not*
             #   be found in the container:
             for i in range(len(self.inputNodes)):
                 if self.inputNodes[i].getName() not in container.getIngredients() and not self.inputNodes[i].isContainer() and self.getInputDescriptor(i) == 1:
@@ -1157,7 +1157,7 @@ class Category(object):
 
     def setID(self, I):
         self.category_ID = I
-        
+
     def getLabel(self):
         return self.category_label
 
@@ -1201,7 +1201,7 @@ class TreeNode(object):
     def setChildren(self, L):
         '''
         Function to set a TreeNode's children to its correct node.
-        '''		
+        '''
         self.children = L
 
     def addChild(self, L):
@@ -1219,7 +1219,7 @@ class TreeNode(object):
     def getUnitsInTreeNode(self):
         '''
         Function to get a TreeNode's functional units ()
-        '''		
+        '''
         return self.units_contained
 
     def setUnitsToTreeNode(self, L):
